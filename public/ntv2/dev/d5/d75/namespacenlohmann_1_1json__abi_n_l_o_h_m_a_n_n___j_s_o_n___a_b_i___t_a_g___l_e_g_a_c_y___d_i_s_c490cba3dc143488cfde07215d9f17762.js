@@ -1,0 +1,7 @@
+var namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c490cba3dc143488cfde07215d9f17762 =
+[
+    [ "begin_tag", "db/df1/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a8520484715a4a892fc6479a5aa50251.html", null ],
+    [ "end_tag", "d8/da5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_01288e769e23a2b5f2b8b21c62715b96.html", null ],
+    [ "would_call_std_begin", "de/d63/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ca9717710504a205749a1bd838f62ea5.html", "de/d63/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ca9717710504a205749a1bd838f62ea5" ],
+    [ "would_call_std_end", "d9/ddc/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_45b27d39b67036e0189eee0f5ef545b7.html", "d9/ddc/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_45b27d39b67036e0189eee0f5ef545b7" ]
+];

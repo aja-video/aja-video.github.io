@@ -1,0 +1,4 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_1ea3c89f499f31b26458e264bf748d2f =
+[
+    [ "type", "df/dc8/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_1ea3c89f499f31b26458e264bf748d2f.html#a94dea316de42e0d58709331d569a9d4d", null ]
+];

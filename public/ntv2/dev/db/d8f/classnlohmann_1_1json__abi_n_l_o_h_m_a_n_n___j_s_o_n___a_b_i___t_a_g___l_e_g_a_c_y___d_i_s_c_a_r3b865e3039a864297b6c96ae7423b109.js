@@ -1,0 +1,6 @@
+var classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r3b865e3039a864297b6c96ae7423b109 =
+[
+    [ "output_vector_adapter", "db/d8f/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r3b865e3039a864297b6c96ae7423b109.html#a2cc507e3d8ef06735f8b3019346f72a3", null ],
+    [ "write_character", "db/d8f/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r3b865e3039a864297b6c96ae7423b109.html#a6157722baf32eeaa9cd13150dc19c218", null ],
+    [ "write_characters", "db/d8f/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r3b865e3039a864297b6c96ae7423b109.html#ab9ecc2a0e4f94ee0561c8d872cc8b358", null ]
+];

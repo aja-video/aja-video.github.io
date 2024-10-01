@@ -1,0 +1,6 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_eb2e0eb1060e0b29628f0da9883bfe23 =
+[
+    [ "CompatibleLimits", "dd/d62/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_eb2e0eb1060e0b29628f0da9883bfe23.html#a0a184608d4574d79f34d0ec1948c15af", null ],
+    [ "RealLimits", "dd/d62/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_eb2e0eb1060e0b29628f0da9883bfe23.html#a285bbfad7e4d4362558d393edd84c2a4", null ],
+    [ "value", "dd/d62/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_eb2e0eb1060e0b29628f0da9883bfe23.html#aaf68e6ffa984b5a6a3666cf963e740c0", null ]
+];
