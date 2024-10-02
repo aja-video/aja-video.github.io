@@ -8,7 +8,7 @@ NTV2 is the developer-facing name for AJA's family of desktop and mobile video I
 
 The open-source NTV2 SDK and driver is available on GitHub: https://github.com/aja-video/libajantv2
 
-- [Latest Release (17.1.0)](/public/) ⭐
-- [Development Branch (main)](/public/ntv2/current/) 🛠️
-- [17.1.0 Release](/public/ntv2/dev/17_1_0)
-- [17.0.1 Release](/public/ntv2/dev/17_0_1)
+- [Latest Release (17.1.0)](/public/ntv2/current/) ⭐
+- [Development Branch (main)](/public/ntv2/dev/) 🛠️
+- [17.1.0 Release](/public/ntv2/17_1_0/)
+- [17.0.1 Release](/public/ntv2/17_0_1/)
