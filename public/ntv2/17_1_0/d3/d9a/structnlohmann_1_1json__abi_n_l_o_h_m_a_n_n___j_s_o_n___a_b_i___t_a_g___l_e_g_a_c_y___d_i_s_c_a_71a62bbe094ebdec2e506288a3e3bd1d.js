@@ -1,0 +1,5 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_71a62bbe094ebdec2e506288a3e3bd1d =
+[
+    [ "laundered_type", "d3/d9a/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_71a62bbe094ebdec2e506288a3e3bd1d.html#ae51394d160eda32595beb622d735979d", null ],
+    [ "value", "d3/d9a/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_71a62bbe094ebdec2e506288a3e3bd1d.html#a13d3cfed8d3f6631accaa30e70c3e893", null ]
+];

@@ -1,0 +1,25 @@
+var structhevc__stream__statistics =
+[
+    [ "avrCopyDuration", "d9/d1f/structhevc__stream__statistics.html#abf254382f485008f3baeefdba76d358c", null ],
+    [ "avrDequeueDuration", "d9/d1f/structhevc__stream__statistics.html#a34ec8980728ce7e5f047193129e98ddb", null ],
+    [ "avrDmaDuration", "d9/d1f/structhevc__stream__statistics.html#a9df20eb137698ede663855a8de85a2e7", null ],
+    [ "avrEnqueueDuration", "d9/d1f/structhevc__stream__statistics.html#a1d942246213e44f47bd57fbbe14019d2", null ],
+    [ "avrSendDuration", "d9/d1f/structhevc__stream__statistics.html#a048b9403a640dcd8ac68226cbe2e847a", null ],
+    [ "avrTransferSize", "d9/d1f/structhevc__stream__statistics.html#a3c7078afe412bb889056b75155d0802d", null ],
+    [ "avrTransferTime", "d9/d1f/structhevc__stream__statistics.html#a8d6fd6d7783f6ef861c74319b8762cef", null ],
+    [ "maxCopyDuration", "d9/d1f/structhevc__stream__statistics.html#ae50be058ce4005bc79b82542201b2923", null ],
+    [ "maxDequeueDuration", "d9/d1f/structhevc__stream__statistics.html#a37528d5be1b0043fa29db284b161b071", null ],
+    [ "maxDmaDuration", "d9/d1f/structhevc__stream__statistics.html#a7570113ec370c2759abbdd30c3f91aa9", null ],
+    [ "maxEnqueueDuration", "d9/d1f/structhevc__stream__statistics.html#adb363eac38caf290b3d9a315a156df43", null ],
+    [ "maxSendDuration", "d9/d1f/structhevc__stream__statistics.html#a46cec10b12cd737ea8253655f27f350d", null ],
+    [ "maxTransferSize", "d9/d1f/structhevc__stream__statistics.html#af8b489da4adad14cebb038209df77690", null ],
+    [ "maxTransferTime", "d9/d1f/structhevc__stream__statistics.html#a1f89088f2c34420fc6009b07cf730bc6", null ],
+    [ "minCopyDuration", "d9/d1f/structhevc__stream__statistics.html#a4d60720a92efc3097f485bb65efe0014", null ],
+    [ "minDequeueDuration", "d9/d1f/structhevc__stream__statistics.html#ab18b7aa6a06c2d90b1c71224737d28e7", null ],
+    [ "minDmaDuration", "d9/d1f/structhevc__stream__statistics.html#ade0b28d47f07311d31d6272dfe47054e", null ],
+    [ "minEnqueueDuration", "d9/d1f/structhevc__stream__statistics.html#a97769531bab88a8c9dc51d100ad58113", null ],
+    [ "minSendDuration", "d9/d1f/structhevc__stream__statistics.html#a2cb6bf2481cd887b6d35df76633f1289", null ],
+    [ "minTransferSize", "d9/d1f/structhevc__stream__statistics.html#a5b5207c192cae1547900c7d469c874f3", null ],
+    [ "minTransferTime", "d9/d1f/structhevc__stream__statistics.html#a714e99801c604eeedb02036c08f35e94", null ],
+    [ "transferCount", "d9/d1f/structhevc__stream__statistics.html#a6292137252272a6ed21534fd5ad937a0", null ]
+];

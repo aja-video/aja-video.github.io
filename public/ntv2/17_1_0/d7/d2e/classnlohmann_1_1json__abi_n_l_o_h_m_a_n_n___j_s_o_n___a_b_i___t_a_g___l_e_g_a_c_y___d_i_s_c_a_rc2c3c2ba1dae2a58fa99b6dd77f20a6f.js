@@ -1,0 +1,6 @@
+var classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rc2c3c2ba1dae2a58fa99b6dd77f20a6f =
+[
+    [ "output_stream_adapter", "d7/d2e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rc2c3c2ba1dae2a58fa99b6dd77f20a6f.html#a5bb6193b5f5e503885d6bde8ffbe8a92", null ],
+    [ "write_character", "d7/d2e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rc2c3c2ba1dae2a58fa99b6dd77f20a6f.html#a9b511f7bde6ba013cdf69638fa2ea062", null ],
+    [ "write_characters", "d7/d2e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rc2c3c2ba1dae2a58fa99b6dd77f20a6f.html#a90cedf5e1c5eae79479e178182d795c3", null ]
+];

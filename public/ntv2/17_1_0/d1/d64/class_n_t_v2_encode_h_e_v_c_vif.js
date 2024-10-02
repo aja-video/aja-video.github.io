@@ -1,0 +1,25 @@
+var class_n_t_v2_encode_h_e_v_c_vif =
+[
+    [ "NTV2EncodeHEVCVif", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a77606fdddb5b397b6a7f741af2fae427", null ],
+    [ "~NTV2EncodeHEVCVif", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a29c73643929d7cda8a4e545ae5b037c4", null ],
+    [ "AVFileThreadStatic", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a09580b86ad07ff1772ebe98539e6c173", null ],
+    [ "AVFileWorker", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#afc7a74a4f7e1fbccc9e5ec7076125fbd", null ],
+    [ "CodecHevcThreadStatic", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a06cdb7d8a146e3f7ca7d1731eb0b0255", null ],
+    [ "CodecHevcWorker", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a8a23c666cf3c230099deed496585c848", null ],
+    [ "GetCodecPreset", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#ac3249fbfda65a9014255cc5b77e9f143", null ],
+    [ "GetStatus", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a80daf1948b867216ea54deab504845b8", null ],
+    [ "Init", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#ad6237037a3861464afbebc763223ae10", null ],
+    [ "Quit", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#afbfa19c1772d5c8a202897acee7ab436", null ],
+    [ "RouteInputSignal", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a3a301bd739dd5eabadda31f8fedb699b", null ],
+    [ "Run", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a1299a2f35214b8e2d3cf634d5a4d0195", null ],
+    [ "SetupAudio", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a9f68c70964934fe883af69a282c4c56f", null ],
+    [ "SetupAutoCirculate", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a0510d712fea6c22e8207f261ce03c310", null ],
+    [ "SetupHostBuffers", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#ac54d6364f9e1e269120ed2ac23082bd5", null ],
+    [ "SetupVideo", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#ab3e9b54c80671e20aa209d53d10ac41d", null ],
+    [ "StartAVFileThread", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#ac9c11d1275a1ce4e9cf34af9e32d0427", null ],
+    [ "StartCodecHevcThread", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#aee9b84e9da9a5ccaf82a2179cb325562", null ],
+    [ "StartVideoInputThread", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a30c5c58b8b29805912859251823514b2", null ],
+    [ "TransferPictureInfo", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a414bc4c04cdbb1d0c169e9912870513e", null ],
+    [ "VideoInputThreadStatic", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a06eaf4c7e0d65a112551d996c5e59e47", null ],
+    [ "VideoInputWorker", "d1/d64/class_n_t_v2_encode_h_e_v_c_vif.html#a2e36c7878e75bd7d8e5abf9cd51419fb", null ]
+];

@@ -1,0 +1,25 @@
+var class_a_j_a_ancillary_data___timecode___a_t_c =
+[
+    [ "AJAAncillaryData_Timecode_ATC", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a75cb26c5ba88b52e724dd05937c26a7a", null ],
+    [ "AJAAncillaryData_Timecode_ATC", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#aa56eaf0d0836899b116a60a56352aed0", null ],
+    [ "AJAAncillaryData_Timecode_ATC", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a94c9573cf5733de5e123d228dca798c2", null ],
+    [ "AJAAncillaryData_Timecode_ATC", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#ae832241a4ee9e86fbcb9817b54fbbd87", null ],
+    [ "~AJAAncillaryData_Timecode_ATC", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a04f2a10ab4d915f04fa98cce42e94263", null ],
+    [ "Clear", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a983c68e82fe7ee738e763c8e26b08a19", null ],
+    [ "GeneratePayloadData", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#af89e7615ee36a4d014aab54bffe661c0", null ],
+    [ "GetDBB", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a158c00c5220d1b298ece20eeb5ba464c", null ],
+    [ "GetDBB1", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a3d03f2edf37ab87c377d039ae3bd5b90", null ],
+    [ "GetDBB1PayloadType", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a944cc5253e71298d2a719456e0ebcf42", null ],
+    [ "GetDBB2", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#ad9f625acb61cb5570e30399ce47c9b42", null ],
+    [ "Init", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a3dabcd104a733b192e64695d525197a6", null ],
+    [ "operator=", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#abcbe673fe1cb71fd60758a9e070f3f75", null ],
+    [ "ParsePayloadData", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a9b1e3b2fe71f579ffed13557d2064672", null ],
+    [ "Print", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a965e7e05451d2270b46ab58433eb40c1", null ],
+    [ "RecognizeThisAncillaryData", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#abaec20a0eb9c0e68e6389d0e5c6bfb98", null ],
+    [ "SetDBB", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#abce7c2792cf634e6eabc8b15ff90de46", null ],
+    [ "SetDBB1", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#aa088fa1252e2afe46750d7c38f509836", null ],
+    [ "SetDBB1PayloadType", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a9293fae2051b4cae0103e0ce54851d70", null ],
+    [ "SetDBB2", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#ad4724d05c120ab66725c7fedd50c734a", null ],
+    [ "m_dbb1", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a831a6aa102a3527d4cd9477c68ce9d70", null ],
+    [ "m_dbb2", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a0458bf94f6e9d78d800e3face0ca2136", null ]
+];

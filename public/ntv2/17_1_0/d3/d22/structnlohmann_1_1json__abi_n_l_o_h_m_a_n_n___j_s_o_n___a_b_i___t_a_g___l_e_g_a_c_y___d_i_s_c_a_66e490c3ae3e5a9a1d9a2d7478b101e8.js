@@ -1,0 +1,5 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_66e490c3ae3e5a9a1d9a2d7478b101e8 =
+[
+    [ "value_type", "d3/d22/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_66e490c3ae3e5a9a1d9a2d7478b101e8.html#a6e1d6321f5521c1a33918a5d17d89385", null ],
+    [ "size", "d3/d22/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_66e490c3ae3e5a9a1d9a2d7478b101e8.html#a4e7373993c9c118c73b60c769eb23dbd", null ]
+];

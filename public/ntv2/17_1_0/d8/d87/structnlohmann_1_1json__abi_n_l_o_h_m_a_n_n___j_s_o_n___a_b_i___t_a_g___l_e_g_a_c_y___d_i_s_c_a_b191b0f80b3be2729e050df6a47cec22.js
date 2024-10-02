@@ -1,0 +1,6 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_b191b0f80b3be2729e050df6a47cec22 =
+[
+    [ "construct", "d8/d87/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_b191b0f80b3be2729e050df6a47cec22.html#a322a118b91e926385c631bb026b403dc", null ],
+    [ "construct", "d8/d87/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_b191b0f80b3be2729e050df6a47cec22.html#a7e059424c43b48bcdcf0624b1593f1a7", null ],
+    [ "construct", "d8/d87/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_b191b0f80b3be2729e050df6a47cec22.html#a5b97052af1bcf20dfad10068f4e9379a", null ]
+];

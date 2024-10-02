@@ -1,0 +1,26 @@
+var class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s =
+[
+    [ "AUTOCIRCULATE_TRANSFER_STATUS", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#aeba4f594d1d44a5dcfaf450eb911eba0", null ],
+    [ "GetBufferLevel", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a98c231186e55ee99c5ebb3f05cec571b", null ],
+    [ "GetCapturedAncByteCount", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#ae413c842b1306e1a792f3dd129127851", null ],
+    [ "GetCapturedAudioByteCount", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a7e6fbb0daffbb7927ff6f6bcfd81204d", null ],
+    [ "GetDroppedFrameCount", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#ada2dfd1c6d50651e44d2d16b0ed07710", null ],
+    [ "GetFrameStamp", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a510dfcb9bc3b431ba3f6c070b8ba4d8e", null ],
+    [ "GetProcessedFrameCount", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#ae58dd663c5bfcdfd1a48097286431878", null ],
+    [ "GetState", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a057be20d4464660e9bf231e0521f764e", null ],
+    [ "GetTransferFrame", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#aa31f0cfaa4bbf0336063d54a9a8bba5f", null ],
+    [ "RPCDecode", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a8287ef655f95feb05809ece69fab0017", null ],
+    [ "RPCEncode", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a17a24b91e5347ed8886406db99e78866", null ],
+    [ "acAncField2TransferSize", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a72177f05e6848c1637d22c542372f175", null ],
+    [ "acAncTransferSize", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#afc5fa629664370a28c7f0ae223c8ca15", null ],
+    [ "acAudioStartSample", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a736cdf27f4cfe2c71d0e5b08e804930e", null ],
+    [ "acAudioTransferSize", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a123161372d2161ec040cda484ae91365", null ],
+    [ "acBufferLevel", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a9ac3cb0ba02ac4382310e3b8e48bf4f5", null ],
+    [ "acFramesDropped", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#afb4d3c8fe74d22f17bd1ceb382f433bc", null ],
+    [ "acFramesProcessed", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a17d4b7ed06e32ee2a404a46bdfa174ab", null ],
+    [ "acFrameStamp", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a029648bfd8a2b4b50e67cd00de5e698f", null ],
+    [ "acHeader", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#ad06b0f3d01eaf8ed03a55d42980d856b", null ],
+    [ "acState", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a0c1bce9ab310111247a278b2a8ed64c0", null ],
+    [ "acTrailer", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a15ea76385b217367723d27a617fbab06", null ],
+    [ "acTransferFrame", "d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#a2ead5c115e49b59c91cbbbd17a0ad5d2", null ]
+];
