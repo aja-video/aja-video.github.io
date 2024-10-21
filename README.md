@@ -21,6 +21,6 @@ Documentation for current and past SDK releases — plus the latest ongoing deve
 This section includes Knowledgebase articles and Application Notes associated with use of the NTV2 SDK.
 
 - [**NTV2 Knowledgebase Articles**](/public/ntv2/knowledgebase/)
-  - [**NTV2 Porting Guide**](ntv2-porting-guide.md)
-    - [**Porting From “NTV2RoutingEntry” to “NTV2InputCrosspointID”**](ntv2-porting-guide-ntv2routingentry.md)
-    - [**Porting “CNTV2Task” to New “AutoCirculateTransfer” API**](ntv2-porting-guide-ntv2task.md)
+  - [**NTV2 Porting Guide**](/public/ntv2/knowledgebase/ntv2-porting-guide.md)
+    - [**Porting From “NTV2RoutingEntry” to “NTV2InputCrosspointID”**](/public/ntv2/knowledgebase/ntv2-porting-guide-ntv2routingentry.md)
+    - [**Porting “CNTV2Task” to New “AutoCirculateTransfer” API**](/public/ntv2/knowledgebase/ntv2-porting-guide-ntv2task.md)
