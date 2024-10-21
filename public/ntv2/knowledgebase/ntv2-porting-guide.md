@@ -2,7 +2,7 @@
 
 This article suggests how to port application code that builds against an older NTV2 SDK to the most recent SDK.
 
-_(Last updated:  October, 2024  --  to include SDK 17.1)_
+_(Last updated:  October, 2024)_
 
 ## Porting from the pre-13.0 “ancient world”
 
@@ -567,3 +567,7 @@ When a “getter” method has a non-constant-reference return argument, we reco
   - **Device Features API:**
     - New `NTV2DeviceCanDoMultiLinkAudio`, `NTV2DeviceGetNumLUTBanks` functions.
 
+## SDK changes after 16.2
+
+The NTV2 SDK became open-source as of version 17.0.
+See the open-source documentation for SDK changes after 17.0.
