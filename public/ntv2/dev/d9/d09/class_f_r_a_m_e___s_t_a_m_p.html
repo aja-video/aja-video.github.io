@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1242</span>
+   &#160;<span id="projectnumber">17.5.0.1348</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1242</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('d9/d09/class_f_r_a_m_e___s_t_a_m_p.htm
 </div><!--header-->
 <div class="contents">
 
-<p>This is returned by the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> function, and is also embedded in the <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> struct returned from <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>. If used as its own <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad518f9ae648ba9059924b2af209047f0" title="Sends a message to the NTV2 driver (the new, improved, preferred way).">CNTV2DriverInterface::NTV2Message</a> (the new API version of the old <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a005ae8f9da8cb418d9d21b7df15a8130">CNTV2Card::GetFrameStamp</a> call), pass the NTV2Channel in the least significant byte of <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab0842555711431b8d49db219ac5a7b4d" title="On exit, contains host OS clock at time of capture/play. On entry, contains NTV2Channel of interest,...">FRAME_STAMP::acFrameTime</a>, and the requested frame in <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad52892587c4869db11e12defdc811714" title="The frame requested (0xFFFFFFFF == &quot;not available&quot;), including for new API (FRAME_STAMP message).">FRAME_STAMP::acRequestedFrame</a>.  
+<p>This class/object reports information about the current and/or requested AutoCirculate frame.  
  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>&gt;</code></p>
@@ -108,10 +108,10 @@ Collaboration diagram for FRAME_STAMP:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a775515a1da0f8d1948165c2304111426"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a775515a1da0f8d1948165c2304111426">FRAME_STAMP</a> ()</td></tr>
-<tr class="memdesc:a775515a1da0f8d1948165c2304111426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a default <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> structure.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a775515a1da0f8d1948165c2304111426">More...</a><br /></td></tr>
+<tr class="memdesc:a775515a1da0f8d1948165c2304111426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a default <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> structure.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a775515a1da0f8d1948165c2304111426">More...</a><br /></td></tr>
 <tr class="separator:a775515a1da0f8d1948165c2304111426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ad5c6be00e76b64dbe63f83206765d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ac7ad5c6be00e76b64dbe63f83206765d">FRAME_STAMP</a> (const <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html">FRAME_STAMP</a> &amp;inObj)</td></tr>
-<tr class="memdesc:ac7ad5c6be00e76b64dbe63f83206765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs me from another <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a>.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ac7ad5c6be00e76b64dbe63f83206765d">More...</a><br /></td></tr>
+<tr class="memdesc:ac7ad5c6be00e76b64dbe63f83206765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs me from another <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a>.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ac7ad5c6be00e76b64dbe63f83206765d">More...</a><br /></td></tr>
 <tr class="separator:ac7ad5c6be00e76b64dbe63f83206765d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6cc5582bb0a48531c8675db1b0039d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#aec6cc5582bb0a48531c8675db1b0039d">~FRAME_STAMP</a> ()</td></tr>
 <tr class="memdesc:aec6cc5582bb0a48531c8675db1b0039d"><td class="mdescLeft">&#160;</td><td class="mdescRight">My destructor.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#aec6cc5582bb0a48531c8675db1b0039d">More...</a><br /></td></tr>
@@ -151,56 +151,58 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a081be12be7ddff9443462a3c4dec97d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d09/class_n_t_v2___h_e_a_d_e_r.html">NTV2_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a081be12be7ddff9443462a3c4dec97d2">acHeader</a></td></tr>
-<tr class="memdesc:a081be12be7ddff9443462a3c4dec97d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The common structure header &ndash; ALWAYS FIRST!  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a081be12be7ddff9443462a3c4dec97d2">More...</a><br /></td></tr>
+<tr class="memdesc:a081be12be7ddff9443462a3c4dec97d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The common message header &ndash; ALWAYS FIRST!  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a081be12be7ddff9443462a3c4dec97d2">More...</a><br /></td></tr>
 <tr class="separator:a081be12be7ddff9443462a3c4dec97d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ee53c45d357396d40bbbbe42b2ac3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/daf/class_n_t_v2___t_r_a_i_l_e_r.html">NTV2_TRAILER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a80ee53c45d357396d40bbbbe42b2ac3b">acTrailer</a></td></tr>
+<tr class="memdesc:a80ee53c45d357396d40bbbbe42b2ac3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The common message trailer &ndash; ALWAYS LAST!  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a80ee53c45d357396d40bbbbe42b2ac3b">More...</a><br /></td></tr>
+<tr class="separator:a80ee53c45d357396d40bbbbe42b2ac3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Requested Frame Information</div></td></tr>
 <tr class="memitem:ab0842555711431b8d49db219ac5a7b4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#acef85b78329461aedf7f31eb7d88ae1e">LWord64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab0842555711431b8d49db219ac5a7b4d">acFrameTime</a></td></tr>
-<tr class="memdesc:ab0842555711431b8d49db219ac5a7b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On exit, contains host OS clock at time of capture/play. On entry, contains <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> of interest, but only for new API <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> message.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab0842555711431b8d49db219ac5a7b4d">More...</a><br /></td></tr>
+<tr class="memdesc:ab0842555711431b8d49db219ac5a7b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(input/ingest/capture only) The absolute timestamp at the VBI when the frame started recording into device SDRAM. Uses the hi-res OS clock (which usually starts at zero at boot-time).  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab0842555711431b8d49db219ac5a7b4d">More...</a><br /></td></tr>
 <tr class="separator:ab0842555711431b8d49db219ac5a7b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52892587c4869db11e12defdc811714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad52892587c4869db11e12defdc811714">acRequestedFrame</a></td></tr>
-<tr class="memdesc:ad52892587c4869db11e12defdc811714"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frame requested (0xFFFFFFFF == "not available"), including for new API (<a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> message).  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad52892587c4869db11e12defdc811714">More...</a><br /></td></tr>
+<tr class="memdesc:ad52892587c4869db11e12defdc811714"><td class="mdescLeft">&#160;</td><td class="mdescRight">On entry for NTV2_TYPE_ACFRAMESTAMP message, the requested frame. Upon exit, 0xFFFFFFFF means "not
+    available".  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad52892587c4869db11e12defdc811714">More...</a><br /></td></tr>
 <tr class="separator:ad52892587c4869db11e12defdc811714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9e363d9c95e94f8134eff29869576a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#a534ffe395307dfbf907806d772223f43">ULWord64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a0d9e363d9c95e94f8134eff29869576a">acAudioClockTimeStamp</a></td></tr>
-<tr class="memdesc:a0d9e363d9c95e94f8134eff29869576a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of 10MHz ticks at moment of play or record, based on 48kHz clock (from register 28).  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a0d9e363d9c95e94f8134eff29869576a">More...</a><br /></td></tr>
+<tr class="memdesc:a0d9e363d9c95e94f8134eff29869576a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(input/ingest/capture only) The absolute timestamp at the VBI when the frame started recording into device SDRAM. Uses the AJA device's audio clock, as expressed through register 28 (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a44465b2926268ea111cf5d357016baefab4cbf1377b1d2d7511773afa564d7a0a">kRegAud1Counter</a>), but extended to 64-bits. (This clock increments 48,000 times per second, and starts at zero at FPGA load at power-up.)  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a0d9e363d9c95e94f8134eff29869576a">More...</a><br /></td></tr>
 <tr class="separator:a0d9e363d9c95e94f8134eff29869576a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc23fd1acd1ae57cc8944b0d0ae83ec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#afc23fd1acd1ae57cc8944b0d0ae83ec4">acAudioExpectedAddress</a></td></tr>
-<tr class="memdesc:afc23fd1acd1ae57cc8944b0d0ae83ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The address that was used to transfer.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#afc23fd1acd1ae57cc8944b0d0ae83ec4">More...</a><br /></td></tr>
+<tr class="memdesc:afc23fd1acd1ae57cc8944b0d0ae83ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio transfer address.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#afc23fd1acd1ae57cc8944b0d0ae83ec4">More...</a><br /></td></tr>
 <tr class="separator:afc23fd1acd1ae57cc8944b0d0ae83ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf104de48c30041147aba1ccd822d15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a6bf104de48c30041147aba1ccd822d15">acAudioInStartAddress</a></td></tr>
-<tr class="memdesc:a6bf104de48c30041147aba1ccd822d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">For record - first position in buffer of audio (includes base offset) &ndash; AudioInAddress at the time this Frame was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a6bf104de48c30041147aba1ccd822d15">More...</a><br /></td></tr>
+<tr class="memdesc:a6bf104de48c30041147aba1ccd822d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">(input/ingest/capture only) Starting audio record head position when this frame was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a6bf104de48c30041147aba1ccd822d15">More...</a><br /></td></tr>
 <tr class="separator:a6bf104de48c30041147aba1ccd822d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab812ffd5ed25c9dd2f8d4c51df64279a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab812ffd5ed25c9dd2f8d4c51df64279a">acAudioInStopAddress</a></td></tr>
-<tr class="memdesc:ab812ffd5ed25c9dd2f8d4c51df64279a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For record - end position (exclusive) in buffer of audio (includes base offset) &ndash; AudioInAddress at the Frame AFTER this Frame was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab812ffd5ed25c9dd2f8d4c51df64279a">More...</a><br /></td></tr>
+<tr class="memdesc:ab812ffd5ed25c9dd2f8d4c51df64279a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(input/ingest/capture only) Ending audio record head position (exclusive) AFTER this frame was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab812ffd5ed25c9dd2f8d4c51df64279a">More...</a><br /></td></tr>
 <tr class="separator:ab812ffd5ed25c9dd2f8d4c51df64279a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18083d98946bb1c0767fd7e6e4fd96b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a18083d98946bb1c0767fd7e6e4fd96b4">acAudioOutStopAddress</a></td></tr>
-<tr class="memdesc:a18083d98946bb1c0767fd7e6e4fd96b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">For play - first position in buffer of audio &ndash; AudioOutAddress at the time this Frame was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a18083d98946bb1c0767fd7e6e4fd96b4">More...</a><br /></td></tr>
+<tr class="memdesc:a18083d98946bb1c0767fd7e6e4fd96b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">(output/playback only) Audio play head position when this frame was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a18083d98946bb1c0767fd7e6e4fd96b4">More...</a><br /></td></tr>
 <tr class="separator:a18083d98946bb1c0767fd7e6e4fd96b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd84f38b8fdc5b27d74d70e8e8507d13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#acd84f38b8fdc5b27d74d70e8e8507d13">acAudioOutStartAddress</a></td></tr>
-<tr class="memdesc:acd84f38b8fdc5b27d74d70e8e8507d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">For play - end position (exclusive) in buffer of audio &ndash; AudioOutAddress at the Frame AFTER it was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#acd84f38b8fdc5b27d74d70e8e8507d13">More...</a><br /></td></tr>
+<tr class="memdesc:acd84f38b8fdc5b27d74d70e8e8507d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">(output/playback only) Audio play head position (exclusive) AFTER this frame was stamped.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#acd84f38b8fdc5b27d74d70e8e8507d13">More...</a><br /></td></tr>
 <tr class="separator:acd84f38b8fdc5b27d74d70e8e8507d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af12d759d4fefb6e320db66fafd5d66a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#af12d759d4fefb6e320db66fafd5d66a4">acTotalBytesTransferred</a></td></tr>
 <tr class="memdesc:af12d759d4fefb6e320db66fafd5d66a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total audio and video bytes transferred.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#af12d759d4fefb6e320db66fafd5d66a4">More...</a><br /></td></tr>
 <tr class="separator:af12d759d4fefb6e320db66fafd5d66a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8269f200430c45717a965663c8163d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ac8269f200430c45717a965663c8163d2">acStartSample</a></td></tr>
-<tr class="memdesc:ac8269f200430c45717a965663c8163d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual start sample when this frame was started in VBI, which may be used to check sync against acAudioInStartAddress (Play) or acAudioOutStartAddress (Record). In record it will always be equal, but in playback if the clocks drift or the user supplies non aligned audio sizes, then this will give the current difference from expected versus actual position. To be useful, playback audio must be clocked in at the correct rate.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ac8269f200430c45717a965663c8163d2">More...</a><br /></td></tr>
+<tr class="memdesc:ac8269f200430c45717a965663c8163d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual audio start sample when this frame was started at the VBI, which may be used to check sync against acAudioInStartAddress or acAudioOutStartAddress. In record it will always be equal, but in playback, if the clocks drift or the user supplies unaligned audio sizes, then this will give the current difference from expected versus actual position. To be useful, playback audio must be clocked in at the correct rate.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ac8269f200430c45717a965663c8163d2">More...</a><br /></td></tr>
 <tr class="separator:ac8269f200430c45717a965663c8163d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ee53c45d357396d40bbbbe42b2ac3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/daf/class_n_t_v2___t_r_a_i_l_e_r.html">NTV2_TRAILER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a80ee53c45d357396d40bbbbe42b2ac3b">acTrailer</a></td></tr>
-<tr class="memdesc:a80ee53c45d357396d40bbbbe42b2ac3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The common structure trailer &ndash; ALWAYS LAST!  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a80ee53c45d357396d40bbbbe42b2ac3b">More...</a><br /></td></tr>
-<tr class="separator:a80ee53c45d357396d40bbbbe42b2ac3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Current (Active) Frame Information</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Current/Active Frame Information</div></td></tr>
 <tr class="memitem:a5ca7400a4119a541b6f5def0fe482e18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a5ca7400a4119a541b6f5def0fe482e18">acTimeCodes</a></td></tr>
 <tr class="memdesc:a5ca7400a4119a541b6f5def0fe482e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intended for capture, this is a sequence of <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html" title="This struct replaces the old RP188_STRUCT.">NTV2_RP188</a> values received from the device (in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#acf70cd3d0e59052892b4fceacf147851" title="These enum values are indexes into the capture/playout AutoCirculate timecode arrays.">NTV2TCIndex</a> order). If empty, no timecodes will be transferred. This field is ignored if <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab257890d32e7a59d2bf10177c18a0abf" title="Use this to AutoCirculate with RP188.">AUTOCIRCULATE_WITH_RP188</a> option is not set.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a5ca7400a4119a541b6f5def0fe482e18">More...</a><br /></td></tr>
 <tr class="separator:a5ca7400a4119a541b6f5def0fe482e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa07b8e243e6cd7979f109783c49986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#acef85b78329461aedf7f31eb7d88ae1e">LWord64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#afaa07b8e243e6cd7979f109783c49986">acCurrentTime</a></td></tr>
-<tr class="memdesc:afaa07b8e243e6cd7979f109783c49986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current processor time, derived from the finest-grained counter available on the host OS. Granularity can vary depending on the HAL. <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a3341ef5a1011d95884c000405b65bf67" title="Current time expressed as a count of 10MHz ticks, based on 48kHz clock (from register 28).">FRAME_STAMP::acAudioClockCurrentTime</a> is the recommended time-stamp to use instead of this.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#afaa07b8e243e6cd7979f109783c49986">More...</a><br /></td></tr>
+<tr class="memdesc:afaa07b8e243e6cd7979f109783c49986"><td class="mdescLeft">&#160;</td><td class="mdescRight">The absolute timestamp at the moment the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> calls were handled in the driver. Uses the hi-res OS clock (which usually starts at zero at boot-time).  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#afaa07b8e243e6cd7979f109783c49986">More...</a><br /></td></tr>
 <tr class="separator:afaa07b8e243e6cd7979f109783c49986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0600fcdf969109cb2aaab18d1a7ac9bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a0600fcdf969109cb2aaab18d1a7ac9bb">acCurrentFrame</a></td></tr>
 <tr class="memdesc:a0600fcdf969109cb2aaab18d1a7ac9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last vertical blank frame for this autocirculate channel (when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> was called)  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a0600fcdf969109cb2aaab18d1a7ac9bb">More...</a><br /></td></tr>
 <tr class="separator:a0600fcdf969109cb2aaab18d1a7ac9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade8f248eb369692b4bd578fd0d4df1fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#acef85b78329461aedf7f31eb7d88ae1e">LWord64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ade8f248eb369692b4bd578fd0d4df1fd">acCurrentFrameTime</a></td></tr>
-<tr class="memdesc:ade8f248eb369692b4bd578fd0d4df1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical blank start of current frame.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ade8f248eb369692b4bd578fd0d4df1fd">More...</a><br /></td></tr>
+<tr class="memdesc:ade8f248eb369692b4bd578fd0d4df1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The VBI timestamp of the current/active frame currently being ingested on the device (capture), or currently going out the SDI connector (playback). Uses the hi-res OS clock (which usually starts at zero at boot-time).  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ade8f248eb369692b4bd578fd0d4df1fd">More...</a><br /></td></tr>
 <tr class="separator:ade8f248eb369692b4bd578fd0d4df1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3341ef5a1011d95884c000405b65bf67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#a534ffe395307dfbf907806d772223f43">ULWord64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a3341ef5a1011d95884c000405b65bf67">acAudioClockCurrentTime</a></td></tr>
-<tr class="memdesc:a3341ef5a1011d95884c000405b65bf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current time expressed as a count of 10MHz ticks, based on 48kHz clock (from register 28).  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a3341ef5a1011d95884c000405b65bf67">More...</a><br /></td></tr>
+<tr class="memdesc:a3341ef5a1011d95884c000405b65bf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">The absolute timestamp at the moment the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> calls were handled in the driver. Uses the AJA device's audio clock, as expressed through register 28 (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a44465b2926268ea111cf5d357016baefab4cbf1377b1d2d7511773afa564d7a0a">kRegAud1Counter</a>), but extended to 64-bits. (This clock increments 48,000 times per second, and starts at zero at FPGA load at power-up.)  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a3341ef5a1011d95884c000405b65bf67">More...</a><br /></td></tr>
 <tr class="separator:a3341ef5a1011d95884c000405b65bf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad946ea43ccd14efac6b957da3220f35f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad946ea43ccd14efac6b957da3220f35f">acCurrentAudioExpectedAddress</a></td></tr>
 <tr class="separator:ad946ea43ccd14efac6b957da3220f35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,20 +219,24 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a19b19706f012e5c448ab0efc15b5605e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains validCount (Playout: on repeated frames, number of reps remaining; Record: drops on frame)  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a19b19706f012e5c448ab0efc15b5605e">More...</a><br /></td></tr>
 <tr class="separator:a19b19706f012e5c448ab0efc15b5605e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68dba28b7a63c08081c4627e7589c09d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#a534ffe395307dfbf907806d772223f43">ULWord64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a68dba28b7a63c08081c4627e7589c09d">acCurrentUserCookie</a></td></tr>
-<tr class="memdesc:a68dba28b7a63c08081c4627e7589c09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frame's <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#a94957844ee15070f0a357e19a911802a" title="Intended for playout, an optional app-specific cookie value that tags this frame, such that if this s...">AUTOCIRCULATE_TRANSFER::acInUserCookie</a> value that was set when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> was called. This can tell clients which frame was on-air at the last VBI.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a68dba28b7a63c08081c4627e7589c09d">More...</a><br /></td></tr>
+<tr class="memdesc:a68dba28b7a63c08081c4627e7589c09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frame's <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#a94957844ee15070f0a357e19a911802a" title="Intended for playout, an optional app-specific cookie value that tags this frame, such that if this s...">AUTOCIRCULATE_TRANSFER::acInUserCookie</a> value that was set when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> was called. This can tell clients which frame was going "on-the-air" (i.e. "out the jack") at the last VBI.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a68dba28b7a63c08081c4627e7589c09d">More...</a><br /></td></tr>
 <tr class="separator:a68dba28b7a63c08081c4627e7589c09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa69a45abd5eae939e35c950cf4bd207b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#aa69a45abd5eae939e35c950cf4bd207b">acFrame</a></td></tr>
-<tr class="memdesc:aa69a45abd5eae939e35c950cf4bd207b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record/capture &ndash; current frame number.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#aa69a45abd5eae939e35c950cf4bd207b">More...</a><br /></td></tr>
+<tr class="memdesc:aa69a45abd5eae939e35c950cf4bd207b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(input/ingest/capture only) Current/active frame number.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#aa69a45abd5eae939e35c950cf4bd207b">More...</a><br /></td></tr>
 <tr class="separator:aa69a45abd5eae939e35c950cf4bd207b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a7115a62d3f6616b8c9f5bdaa34d71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html">NTV2_RP188</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a74a7115a62d3f6616b8c9f5bdaa34d71">acRP188</a></td></tr>
 <tr class="memdesc:a74a7115a62d3f6616b8c9f5bdaa34d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated &ndash; call <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab8337a235dc740725bd1bd0fbe388534" title="Answers with a specific timecode captured in my acTimeCodes member.">FRAME_STAMP::GetInputTimeCode</a> instead.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a74a7115a62d3f6616b8c9f5bdaa34d71">More...</a><br /></td></tr>
 <tr class="separator:a74a7115a62d3f6616b8c9f5bdaa34d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is returned by the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> function, and is also embedded in the <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> struct returned from <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>. If used as its own <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad518f9ae648ba9059924b2af209047f0" title="Sends a message to the NTV2 driver (the new, improved, preferred way).">CNTV2DriverInterface::NTV2Message</a> (the new API version of the old <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a005ae8f9da8cb418d9d21b7df15a8130">CNTV2Card::GetFrameStamp</a> call), pass the NTV2Channel in the least significant byte of <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab0842555711431b8d49db219ac5a7b4d" title="On exit, contains host OS clock at time of capture/play. On entry, contains NTV2Channel of interest,...">FRAME_STAMP::acFrameTime</a>, and the requested frame in <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad52892587c4869db11e12defdc811714" title="The frame requested (0xFFFFFFFF == &quot;not available&quot;), including for new API (FRAME_STAMP message).">FRAME_STAMP::acRequestedFrame</a>. </p>
-<dl class="section note"><dt>Note</dt><dd>This struct uses a constructor to properly initialize itself. Do not use <b>memset</b> or <b>bzero</b> to initialize or "clear" it. </dd></dl>
+<div class="textblock"><p>This class/object reports information about the current and/or requested AutoCirculate frame. </p>
+<p>When used to implement <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a>, it is its own NTV2_TYPE_ACFRAMESTAMP <code>'stmp'</code> message (that replaced the old, obsolete <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a005ae8f9da8cb418d9d21b7df15a8130">CNTV2Card::GetFrameStamp</a> function).</p><ul>
+<li>The <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> of interest is placed into the least significant byte of <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab0842555711431b8d49db219ac5a7b4d" title="(input/ingest/capture only) The absolute timestamp at the VBI when the frame started recording into d...">FRAME_STAMP::acFrameTime</a>,</li>
+<li>The frame number of interest is placed into the <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad52892587c4869db11e12defdc811714" title="On entry for NTV2_TYPE_ACFRAMESTAMP message, the requested frame. Upon exit, 0xFFFFFFFF means &quot;not   ...">FRAME_STAMP::acRequestedFrame</a> field.</li>
+</ul>
+<p>This class/struct is also embedded in the <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> class/object returned from <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> to return information about the just-transferred frame (and the frame being actively recorded or played). </p><dl class="section note"><dt>Note</dt><dd>This struct uses a constructor to properly initialize itself. Do not use <b>memset</b> or <b>bzero</b> to initialize or "clear" it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07762">7762</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07810">7810</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a775515a1da0f8d1948165c2304111426"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a775515a1da0f8d1948165c2304111426">&#9670;&nbsp;</a></span>FRAME_STAMP() <span class="overload">[1/2]</span></h2>
@@ -255,9 +261,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a default <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> structure. </p>
+<p>Constructs a default <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02051">2051</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02053">2053</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -277,15 +283,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs me from another <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a>. </p>
+<p>Constructs me from another <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inObj</td><td>Specifies the <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> to be copied. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inObj</td><td>Specifies the <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> to be copied. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02081">2081</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02083">2083</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -306,7 +312,7 @@ Public Attributes</h2></td></tr>
 
 <p>My destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02111">2111</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02113">2113</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +341,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02275">2275</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02277">2277</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +382,7 @@ Public Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Note that specifying an SDI input source that's not connected to the framestore associated with the channel being AutoCirculated will likely result in a timecode that's not frame-accurate. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02135">2135</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02137">2137</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +411,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02116">2116</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02118">2118</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -452,7 +458,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02153">2153</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02155">2155</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -492,7 +498,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02180">2180</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02182">2182</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -520,7 +526,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>My address casted to an <a class="el" href="../../d4/d09/class_n_t_v2___h_e_a_d_e_r.html" title="All new NTV2 structs start with this common header.">NTV2_HEADER</a> pointer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07899">7899</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07984">7984</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -541,13 +547,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inRHS</td><td>The <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> to be assigned (copied) into me. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inRHS</td><td>The <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> to be assigned (copied) into me. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to me. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02205">2205</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02207">2207</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +580,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02317">2317</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02319">2319</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -604,7 +610,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03824">3824</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03826">3826</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -624,7 +630,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03788">3788</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03790">3790</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -652,7 +658,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02239">2239</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02241">2241</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -693,7 +699,7 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is provided for internal SDK use only. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02188">2188</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02190">2190</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -710,9 +716,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Current time expressed as a count of 10MHz ticks, based on 48kHz clock (from register 28). </p>
+<p>The absolute timestamp at the moment the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> calls were handled in the driver. Uses the AJA device's audio clock, as expressed through register 28 (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a44465b2926268ea111cf5d357016baefab4cbf1377b1d2d7511773afa564d7a0a">kRegAud1Counter</a>), but extended to 64-bits. (This clock increments 48,000 times per second, and starts at zero at FPGA load at power-up.) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07795">7795</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07873">7873</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -728,9 +734,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Number of 10MHz ticks at moment of play or record, based on 48kHz clock (from register 28). </p>
+<p>(input/ingest/capture only) The absolute timestamp at the VBI when the frame started recording into device SDRAM. Uses the AJA device's audio clock, as expressed through register 28 (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a44465b2926268ea111cf5d357016baefab4cbf1377b1d2d7511773afa564d7a0a">kRegAud1Counter</a>), but extended to 64-bits. (This clock increments 48,000 times per second, and starts at zero at FPGA load at power-up.) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07767">7767</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07823">7823</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -746,9 +752,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The address that was used to transfer. </p>
+<p>Audio transfer address. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07768">7768</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07829">7829</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -764,9 +770,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>For record - first position in buffer of audio (includes base offset) &ndash; AudioInAddress at the time this Frame was stamped. </p>
+<p>(input/ingest/capture only) Starting audio record head position when this frame was stamped. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07769">7769</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07830">7830</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -782,9 +788,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>For record - end position (exclusive) in buffer of audio (includes base offset) &ndash; AudioInAddress at the Frame AFTER this Frame was stamped. </p>
+<p>(input/ingest/capture only) Ending audio record head position (exclusive) AFTER this frame was stamped. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07770">7770</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07832">7832</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -800,9 +806,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>For play - end position (exclusive) in buffer of audio &ndash; AudioOutAddress at the Frame AFTER it was stamped. </p>
+<p>(output/playback only) Audio play head position (exclusive) AFTER this frame was stamped. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07772">7772</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07836">7836</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -818,9 +824,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>For play - first position in buffer of audio &ndash; AudioOutAddress at the time this Frame was stamped. </p>
+<p>(output/playback only) Audio play head position when this frame was stamped. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07771">7771</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07834">7834</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +842,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07796">7796</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07880">7880</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -854,7 +860,7 @@ Public Attributes</h2></td></tr>
 
 <p>As set by play. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07797">7797</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07881">7881</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +878,7 @@ Public Attributes</h2></td></tr>
 
 <p>As found by ISR at Call Field0 or Field1 <em>currently</em> being OUTPUT (when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> was called) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07798">7798</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07882">7882</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +896,7 @@ Public Attributes</h2></td></tr>
 
 <p>Last vertical blank frame for this autocirculate channel (when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> was called) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07793">7793</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07868">7868</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -906,9 +912,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vertical blank start of current frame. </p>
+<p>The VBI timestamp of the current/active frame currently being ingested on the device (capture), or currently going out the SDI connector (playback). Uses the hi-res OS clock (which usually starts at zero at boot-time). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07794">7794</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07869">7869</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -926,7 +932,7 @@ Public Attributes</h2></td></tr>
 
 <p>At Call Line# <em>currently</em> being OUTPUT (at the time of the IOCTL_NTV2_GET_FRAMESTAMP) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07799">7799</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07883">7883</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -944,7 +950,7 @@ Public Attributes</h2></td></tr>
 
 <p>Contains validCount (Playout: on repeated frames, number of reps remaining; Record: drops on frame) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07800">7800</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07884">7884</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -960,9 +966,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Current processor time, derived from the finest-grained counter available on the host OS. Granularity can vary depending on the HAL. <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a3341ef5a1011d95884c000405b65bf67" title="Current time expressed as a count of 10MHz ticks, based on 48kHz clock (from register 28).">FRAME_STAMP::acAudioClockCurrentTime</a> is the recommended time-stamp to use instead of this. </p>
+<p>The absolute timestamp at the moment the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> calls were handled in the driver. Uses the hi-res OS clock (which usually starts at zero at boot-time). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07791">7791</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07863">7863</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -978,9 +984,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The frame's <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#a94957844ee15070f0a357e19a911802a" title="Intended for playout, an optional app-specific cookie value that tags this frame, such that if this s...">AUTOCIRCULATE_TRANSFER::acInUserCookie</a> value that was set when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> was called. This can tell clients which frame was on-air at the last VBI. </p>
+<p>The frame's <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#a94957844ee15070f0a357e19a911802a" title="Intended for playout, an optional app-specific cookie value that tags this frame, such that if this s...">AUTOCIRCULATE_TRANSFER::acInUserCookie</a> value that was set when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> was called. This can tell clients which frame was going "on-the-air" (i.e. "out the jack") at the last VBI. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07801">7801</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07885">7885</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -996,9 +1002,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Record/capture &ndash; current frame number. </p>
+<p>(input/ingest/capture only) Current/active frame number. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07803">7803</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07889">7889</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1014,9 +1020,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>On exit, contains host OS clock at time of capture/play. On entry, contains <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> of interest, but only for new API <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> message. </p>
+<p>(input/ingest/capture only) The absolute timestamp at the VBI when the frame started recording into device SDRAM. Uses the hi-res OS clock (which usually starts at zero at boot-time). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07764">7764</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07816">7816</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1032,9 +1038,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The common structure header &ndash; ALWAYS FIRST! </p>
+<p>The common message header &ndash; ALWAYS FIRST! </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07763">7763</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07811">7811</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1056,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The frame requested (0xFFFFFFFF == "not available"), including for new API (<a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> message). </p>
+<p>On entry for NTV2_TYPE_ACFRAMESTAMP message, the requested frame. Upon exit, 0xFFFFFFFF means "not
+    available". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07766">7766</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07820">7820</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1077,7 @@ Public Attributes</h2></td></tr>
 
 <p>Deprecated &ndash; call <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab8337a235dc740725bd1bd0fbe388534" title="Answers with a specific timecode captured in my acTimeCodes member.">FRAME_STAMP::GetInputTimeCode</a> instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07804">7804</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07890">7890</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1086,9 +1093,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The actual start sample when this frame was started in VBI, which may be used to check sync against acAudioInStartAddress (Play) or acAudioOutStartAddress (Record). In record it will always be equal, but in playback if the clocks drift or the user supplies non aligned audio sizes, then this will give the current difference from expected versus actual position. To be useful, playback audio must be clocked in at the correct rate. </p>
+<p>The actual audio start sample when this frame was started at the VBI, which may be used to check sync against acAudioInStartAddress or acAudioOutStartAddress. In record it will always be equal, but in playback, if the clocks drift or the user supplies unaligned audio sizes, then this will give the current difference from expected versus actual position. To be useful, playback audio must be clocked in at the correct rate. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07774">7774</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07839">7839</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1114,7 @@ Public Attributes</h2></td></tr>
 <p>Intended for capture, this is a sequence of <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html" title="This struct replaces the old RP188_STRUCT.">NTV2_RP188</a> values received from the device (in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#acf70cd3d0e59052892b4fceacf147851" title="These enum values are indexes into the capture/playout AutoCirculate timecode arrays.">NTV2TCIndex</a> order). If empty, no timecodes will be transferred. This field is ignored if <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab257890d32e7a59d2bf10177c18a0abf" title="Use this to AutoCirculate with RP188.">AUTOCIRCULATE_WITH_RP188</a> option is not set. </p>
 <dl class="section note"><dt>Note</dt><dd>This field is owned by the SDK, which is responsible for allocating and/or freeing it. Call <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#a6c2f7ced3ade043184d2cb63c2107c51" title="Returns all RP188 timecodes associated with the frame in NTV2TCIndex order.">FRAME_STAMP::GetInputTimeCodes</a> or <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab8337a235dc740725bd1bd0fbe388534" title="Answers with a specific timecode captured in my acTimeCodes member.">FRAME_STAMP::GetInputTimeCode</a> to retrieve the timecodes stored in this field. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07790">7790</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07853">7853</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1132,7 @@ Public Attributes</h2></td></tr>
 
 <p>Total audio and video bytes transferred. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07773">7773</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07838">7838</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1141,9 +1148,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The common structure trailer &ndash; ALWAYS LAST! </p>
+<p>The common message trailer &ndash; ALWAYS LAST! </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07807">7807</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07892">7892</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1164,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html">FRAME_STAMP</a></li>
-    <li class="footer">Generated on Fri Sep 27 2024 16:45:10 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Nov 7 2024 10:27:34 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1242</span>
+   &#160;<span id="projectnumber">17.5.0.1348</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1242</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
   </td>
  </tr>
  </tbody>
@@ -805,6 +805,7 @@ General Operation</h2>
 <p>Clicking on an inspector item in the list replaces the one that’s currently displayed in the main window to the newly-selected one. If the newly-selected inspector was previously in use for the current device, its state will be exactly as it was left. (Only when the device is changed does a new inspector get started in its default state.)</p>
 <p>Right-clicking an inspector item in the list pops up a context menu</p><ul>
 <li>“<b>Move to Separate Window</b>” — Opens or moves the inspector to a separate window. This permits multiple inspectors to be viewed simultaneously.</li>
+<li>“<b>Preferences…</b>” — If present, opens (or activates) the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> dialog, and activates the chosen inspector’s tab.</li>
 </ul>
 <p>Double-clicking on an inspector item in the list does the same thing as choosing the “<b>Move to Separate Window</b>” context menu item.</p>
 <dl class="section note"><dt>Note</dt><dd>Having multiple inspectors open in separate windows increases NTV2 Watcher CPU utilization, and can significantly impact the DMA transfer budget of the device and the PCIe bus.</dd></dl>
@@ -824,7 +825,7 @@ Frame Buffer Inspector</h2>
 <dl class="section note"><dt>Note</dt><dd>Because this inspector reads (via DMA) the entire contents of a frame buffer at the selected channel’s frame rate, it can interfere with any currently running video application, particularly if the additional DMAs exceed the available device or host data transfer budget. Thus, this inspector is not immune from “Heisenbugs” in which the act of monitoring an AJA device affects it and the application(s) under test.</dd></dl>
 <p>In the context of the selected Channel/FrameStore, this inspector…</p><ul>
 <li>…reads (via DMA) the frame buffer into host memory.<ul>
-<li>In <b>Raw</b> mode, or for planar pixel formats, it reads the entire 8MB/16MB/32MB/etc. buffer.</li>
+<li>In <b>Raw</b> mode, or for planar pixel formats, it reads the entire 8MB/16MB/32MB buffer.</li>
 <li>All other views — <b>Line</b>, <b>Component</b>, <b>Waveform</b>, <b>Image</b> — it reads the frame buffer up to and including the last visible raster line.</li>
 </ul>
 </li>
@@ -854,34 +855,45 @@ Frame Buffer Inspector</h2>
 </li>
 <li><b>Image</b> — The visible raster, as an image.</li>
 </ul>
-<dl class="section user"><dt>Frame/Buffer Controls</dt><dd><ul>
-<li><b>FrameStore/Channel</b> — Selects the FrameStore/Channel of interest.</li>
-<li><b>On/Off</b> — Indicates if the FrameStore/Channel is enabled or not. It can be changed using this menu (if not in <b>Auto</b> mode and the device <b>Task Mode</b> is not <b>Standard Tasks</b>).<ul>
+<dl class="section user"><dt>Configuration &amp; Controls</dt><dd><ul>
+<li><b>FrameStore/Channel</b> — Selects the FrameStore (a.k.a. Channel) of interest.</li>
+<li><b>Mode</b> — Indicates/controls the FrameStore’s current mode:<ul>
+<li><b>Off</b> — the FrameStore is disabled (i.e. cannot read or write device SDRAM).<ul>
 <li>See also: <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a086355b86c3de0f733bb98d37f673f77" title="Enables the given FrameStore.">CNTV2Card::EnableChannel</a> , <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad7b7b304fea36b3323f1fb2c75fbf69b" title="Disables the given FrameStore.">CNTV2Card::DisableChannel</a> , <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad7ab43c1f7d53cc2f073b15048146723" title="Answers whether or not the given FrameStore is enabled.">CNTV2Card::IsChannelEnabled</a> , <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fs">FrameStore Operation</a></li>
 </ul>
 </li>
-<li><b>Frame Size</b> Indicator — This shows the discrete size of the frame …&#160;i.e. the location of the frame boundaries in device memory. This will be the “intrinsic” minimum size of 8MB or 16MB, whatever is the largest size required by all device FrameStores (determined by the hardware firmware), and multiplied by 4 or 8 for UHD/4K or UHD2/8K rasters, respectively.</li>
-<li><b>Auto</b> — If checked, the frame number being monitored will automatically follow the input or output (depending on frame-store mode) “current frame” register, and the frame number spin control will be disabled. If this is unchecked, the frame number spin control will be available, and the frame being watched can be manually controlled. When unchecked, many other aspects of the device can be controlled (e.g., <b>Mode</b>, <b>Geometry</b>, <b>Format</b>, <b>Size</b>, etc.), including the ability to manually edit/change the buffer content.</li>
-<li><b>Frame Number</b> spin control: When available, controls which frame to view. When unavailable, indicates the frame being viewed. Frame 0 is the first frame in device memory.<ul>
-<li>Note that this <b>Frame Number</b> in combination with the indicated <b>Frame Size</b> (above) determines the region in device memory being displayed. The offset and length calculation of this region is done in the context of the currently selected <b>FrameStore/Channel</b>.</li>
-<li>For example, if FrameStores 1 and 3 on a <a class="el" href="../../d0/d53/ntv2devices.html#kona5">KONA 5</a> are configured for UHD/2vuy, and FrameStore 2 is configured for 720p/2vuy…<ul>
-<li>Each frame of FrameStores 1 and 3 is 32MB in length.</li>
-<li>Each frame of FrameStore 2 is 8MB in length.</li>
-<li>Therefore, frames 0, 1, 2 and 3 of FrameStore 2 would all lie inside frame 0 of FrameStores 1 and 3.</li>
-<li>Similarly, frames 4, 5, 6 and 7 of FrameStore 2 would all lie inside frame 1 of FrameStores 1 and 3.</li>
-<li>And so on… </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Even though the current frame’s contents may have been written in the context of <em>another</em> <b>FrameStore/Channel</b> (e.g. '2vuy'), this inspector displays the frame’s data in the context of its <em>current</em> <b>FrameStore/Channel</b> (e.g. 'v210'), and thus may appear completely wrong, especially as an Image <b>View Mode</b>.</dd></dl>
-<dl class="section user"><dt>Device/Channel Configuration</dt><dd><ul>
-<li><b>Mode</b> — Indicates/controls the FrameStore’s current mode (Input or Output). It can be changed using this menu (if not in <b>Auto</b> mode and the device <b>Task Mode</b> is not <b>Standard Tasks</b>).<ul>
-<li>Input — the FrameStore’s <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> is set to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abcde4ccd2d4a6ac48298827bdbaac6dc" title="Input (capture) mode, which writes into device SDRAM.">NTV2_MODE_INPUT</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a533ead24b07dddb42981aa9944757f46" title="Capture (input) mode, which writes into device SDRAM.">NTV2_MODE_CAPTURE</a></li>
-<li>Output — the FrameStore’s <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> is set to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a3f42800d2586d5c3caee453e1319fa1a" title="Output (playout, display) mode, which reads from device SDRAM.">NTV2_MODE_OUTPUT</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abec59926c3de1fac4acd02f438a2a634" title="Playout (output) mode, which reads from device SDRAM.">NTV2_MODE_DISPLAY</a></li>
+<li><b>Input</b> — the FrameStore’s <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> is set to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abcde4ccd2d4a6ac48298827bdbaac6dc" title="Input (capture) mode, which writes into device SDRAM.">NTV2_MODE_INPUT</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a533ead24b07dddb42981aa9944757f46" title="Capture (input) mode, which writes into device SDRAM.">NTV2_MODE_CAPTURE</a> (i.e. will write into device SDRAM).</li>
+<li><b>Output</b> — the FrameStore’s <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> is set to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a3f42800d2586d5c3caee453e1319fa1a" title="Output (playout, display) mode, which reads from device SDRAM.">NTV2_MODE_OUTPUT</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abec59926c3de1fac4acd02f438a2a634" title="Playout (output) mode, which reads from device SDRAM.">NTV2_MODE_DISPLAY</a> (i.e. will read from device SDRAM).</li>
 <li>See also: <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0f1f023340d0b4e2f31949ae9684b46d" title="Answers with the current NTV2Mode of the given FrameStore on the AJA device.">CNTV2Card::GetMode</a> , <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9484e167070e800882ca7843033637e2" title="Determines if a given FrameStore on the AJA device will be used to capture or playout video.">CNTV2Card::SetMode</a> , <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fs">FrameStore Operation</a></li>
+<li>The <b>Mode</b> can be changed if not in <b>Auto</b> mode and the device <b>Task Mode</b> is not <b>Standard Tasks</b>.</li>
+</ul>
+</li>
+<li><b>Auto</b>:<ul>
+<li><b><em>checked</em>:</b> The frame being displayed automatically follows the “current frame” register, and the <b>Frame Number</b> control (below) will be disabled.</li>
+<li><b><em>unchecked</em>:</b> The <b>Frame Number</b> control (below) will be available, and the frame being displayed can be manually controlled. Other aspects of the FrameStore can be controlled in this state (e.g., <b>Mode</b>, <b>Video Format</b>, <b>VANC</b>, etc.), including the ability to manually edit/change the buffer content.</li>
+</ul>
+</li>
+<li><b>Frame Number</b>: Indicates which frame in device memory is being displayed.<ul>
+<li>Frame 0 is the first frame in device memory.</li>
+<li>The prefix text in the control indicates the intrinsic <b>Frame Size</b> — 8MB or 16MB, whichever is the largest size required by all device FrameStores (determined by firmware) — and multiplied by 4 for UHD/4K, or by 16 for UHD2/8K rasters.</li>
+<li>The indicated <b>Frame Number</b> and <b>Frame Size</b> determines the region in device memory being sampled and displayed.</li>
+<li>When enabled, the user can adjust/control the <b>Frame Number</b>:<ul>
+<li>Clicking the up-arrow increments the frame number by one. Holding down the mouse button repeatedly increments the frame number.</li>
+<li>Clicking the down-arrow decrements the frame number by one. Holding down the mouse button repeatedly decrements the frame number.</li>
+<li>Clicking on the number allows the user to type in a new value.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Frame Address</b>: Indicates the hexadecimal (base 16) frame address in device memory being read or written by the FrameStore and displayed in the view.<ul>
+<li>Frame address <code>0x00000000</code> is the starting address of the first frame in device memory.</li>
+<li>The indicated <b>Frame Address</b> and the FrameStore’s intrinsic <b>Frame Size</b> determines the region in device memory being sampled and displayed.</li>
+<li>When enabled, the user can adjust/control the <b>Frame Address</b>:<ul>
+<li>Clicking the up-arrow bumps the frame address by the intrinsic frame size (× 4 for UHD/4K or × 16 for UHD2/8K). Holding down the mouse button repeatedly increases the frame address.</li>
+<li>Clicking the down-arrow decreases the frame address by the intrinsic frame size (× 4 for UHD/4K or × 16 for UHD2/8K). Holding down the mouse button repeatedly decreases the frame address.</li>
+<li>Clicking on the number allows a new address to be typed in, including values that don’t align on a frame boundary.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><b>Video Format</b> — Indicates/controls the FrameStore’s current video format. It can be changed using this menu (if not in <b>Auto</b> mode and the device <b>Task Mode</b> is not <b>Standard Tasks</b>).<ul>
@@ -895,7 +907,7 @@ Frame Buffer Inspector</h2>
 <li>See also: <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aeb150e72f3c506d2510a8500eab2c119" title="Retrieves the current VANC mode for the given FrameStore.">CNTV2Card::GetVANCMode</a> , <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abbb0a91d16cddb3fc10a5d867f92e582" title="Sets the VANC mode for the given FrameStore.">CNTV2Card::SetVANCMode</a> , <a class="el" href="../../d7/dcb/ancillarydata.html#vancframegeometries">VANC Frame Geometries</a></li>
 </ul>
 </li>
-<li><b>FB Format</b> — Indicates/controls the FrameStore’s current pixel format. It can be changed using this menu (if not in <b>Auto</b> mode and the device <b>Task Mode</b> is not <b>Standard Tasks</b>).<ul>
+<li><b>Pixel Format</b> — Indicates/controls the FrameStore’s current pixel format. It can be changed using this menu (if not in <b>Auto</b> mode and the device <b>Task Mode</b> is not <b>Standard Tasks</b>).<ul>
 <li>See also: <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a197831a736299e2c68e3f7f0f860387f" title="Returns the current frame buffer format for the given FrameStore on the AJA device.">CNTV2Card::GetFrameBufferFormat</a> , <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a93397b3f49ad2dea97a8555cf15fbeaa" title="Sets the frame buffer format for the given FrameStore on the AJA device.">CNTV2Card::SetFrameBufferFormat</a> , <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161c" title="Identifies a particular video frame buffer format. See Device Frame Buffer Formats for details.">NTV2FrameBufferFormat</a> , <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fs">FrameStore Operation</a> , <a class="el" href="../../d5/d32/dataformats.html#devicefbformats">Device Frame Buffer Formats</a></li>
 </ul>
 </li>
@@ -1045,6 +1057,7 @@ Frame Buffer Inspector</h2>
 <li><b>Copy … (Image)</b> — Copies the frame image (or the selected portion) to the host Clipboard.</li>
 <li><b>Copy … Data (Text)</b> — Copies the frame data (or the currently-selected portion) to the host Clipboard. The data is encoded such that it’s readily usable in C/C++ code, as well as importing into spreadsheet and database programs (.csv).</li>
 <li><b>Copy … Description</b> — Copies a description of the frame data (or the currently-selected portion) to the host Clipboard.</li>
+<li><b>Copy … to Scrap Buffer</b> — Copies raster data into a new tab in the <a class="el" href="../../db/d02/toolsandutilities.html#scraptool">“Scrap Buffer” Tool</a> window. If nothing is currently selected/highlighted, the entire buffer is copied; otherwise only the selected portion of the buffer is copied.</li>
 <li><b>Paste</b> — (<b>Auto</b> mode OFF, and only if an entire frame was previously Copied) — Replaces the current 8/16/32MB frame with the 8/16/32MB frame that was Copied earlier.</li>
 <li><b>Clear</b> — (<b>Auto</b> mode OFF only) — Zeroes the frame (or the currently-selected portion of it).</li>
 <li><b>Select All</b> — Selects everything possible in the current view mode:<ul>
@@ -1251,9 +1264,15 @@ Audio Inspector</h2>
 <li><b>1:16</b> — Shows 16 samples per pixel.</li>
 </ul>
 </li>
+<li><b>Style</b> menu (<b>Waveform</b> View only):<ul>
+<li><b>Points</b> — Draws each sample as an individual dot.</li>
+<li><b>Lines</b> — Draws a line between each sample (makes the waveform easier to see).</li>
+</ul>
+</li>
 <li><b>Copy Waveform</b> — (<b>Waveform</b> View only) — Copies the selected waveform to the host’s clipboard.</li>
 <li><b>Copy Text</b> — (<b>Raw</b> View only) — Copies the selected samples to the host’s clipboard.</li>
 <li><b>Copy All Raw Data</b> — Copies the entire buffer to the host’s clipboard.</li>
+<li><b>Copy to Scrap Buffer</b> — Copies the selected portion of the buffer, or if nothing selected, the entire buffer, into a new tab in the <a class="el" href="../../db/d02/toolsandutilities.html#scraptool">“Scrap Buffer” Tool</a> window.</li>
 <li><b>Paste Raw Data</b> — Pastes the entire buffer into the audio buffer. Available only if previously copied from an Audio inspector view.</li>
 <li><b>Clear</b> — Sets the selected samples in the audio buffer to zero (silence).</li>
 <li><b>Import Audio…</b> — Opens a file-picker dialog to choose an audio file to import and fill the audio buffer.</li>
@@ -1305,10 +1324,7 @@ Ancillary Data Inspector</h2>
 </ul>
 </li>
 <li><b>Show Absent Packets</b> — If checked/ticked (the default), every <a class="el" href="../../db/d02/toolsandutilities.html#inspectoranc-pkt">Packet Display</a> will show missing packets (those that appeared at least once and then not seen again).</li>
-<li><b>Snapshot</b> — This pushbutton is enabled whenever the <a class="el" href="../../db/d02/toolsandutilities.html#scraptool">“Scrap Buffer” Tool</a> tool window is open.<ul>
-<li>Push the button to transmit a frame-accurate snapshot of the Anc buffer(s) into a new tab in the <a class="el" href="../../db/d02/toolsandutilities.html#scraptool">“Scrap Buffer” Tool</a> window.</li>
-</ul>
-</li>
+<li><b>Snapshot</b> — Push the button to transmit a snapshot of the Anc buffer(s) into a new tab in the <a class="el" href="../../db/d02/toolsandutilities.html#scraptool">“Scrap Buffer” Tool</a> window.</li>
 </ul>
 </li>
 </ul>
@@ -1795,22 +1811,12 @@ Registers Inspector</h2>
 <hr  size="50px" />
  <h2><a class="anchor" id="inspectorroute"></a>
 Routing Inspector</h2>
-<div class="image">
-<img src="../../watcher-inspector-routing.png" alt=""/>
-</div>
-<p>The <b>Routing</b> inspector monitors and controls widget signal crosspoint routing as well as widget state (to some degree).</p>
-<dl class="section note"><dt>Note</dt><dd>This inspector replaces the original usingcables utility with this significant difference:<ul>
-<li>RGB and YCbCr output crosspoints are shown in separate sockets. In the old usingcables they were shown as one socket, which caused some confusion.</li>
-</ul>
-</dd></dl>
-<p>The inspector has the following individual panels:</p><ul>
-<li><b>Routing Diagram</b> — Shows the device widgets and signal connections between them.</li>
-<li><b>Code</b> — A text-only representation of the device’s current routing connections. It can display the routing in three different ways:<ul>
-<li><b>C++ Code</b> — C++ code that will produce the current routing configuration using <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaa49e3963887ef83d86ee39e19972b31" title="Connects the given widget signal input (sink) to the given widget signal output (source).">CNTV2Card::Connect</a> calls. This is the default.</li>
-<li><b>Shorthand</b> — Widget connections are shown mnemonically.</li>
-</ul>
-</li>
-<li><b>Routing Registers</b> — A panel containing a list of the device’s routing registers. The register values are editable, and can be changed.</li>
+<p>The <b>Routing</b> inspector monitors and controls widget signal crosspoint routing as well as widget state (to some degree). It has the following tab panels:</p><ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutecables">Cables</a> — Graphically shows the device widgets and signal connections between them.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutecode">C++ Code</a> — Shows the C++ SDK calls that will produce the current routing configuration.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutetext">Shorthand Text</a> — Shows the routing configuration mnemonically.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorrouteregs">Registers</a> — Shows the device’s routing registers. The register values are can be changed.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutexptmap">Crosspoint Map</a> — Shows a crosspoint mapping table with signal sources (outputs) arrayed horizontally, and signal sinks (inputs) arrayed vertically. A checkmark in the matrix indicates a connection.</li>
 </ul>
 <p>Choose <b>Print…</b> from the <b>File</b> menu to print a two-page report of the current routing configuration.</p>
 <p>Choose <b>Copy</b> from the <b>Edit</b> menu to copy a human-readable snapshot of the displayed routing information to the Clipboard.</p>
@@ -1836,8 +1842,13 @@ Routing Inspector</h2>
 <div class="line">AnalogOut &lt;== SDIIn1</div>
 </div><!-- fragment --></li>
 </ul>
-<p><b>Routing Diagram</b></p>
-<p>The <b>Routing Diagram</b> is where routing changes are performed interactively. This is the panel in which most tasks are performed.</p>
+<dl class="section note"><dt>Note</dt><dd>The <b>Routing Inspector</b> has several preference settings in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefscables">Cables Preferences</a> tab in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> dialog.</dd></dl>
+<h3><a class="anchor" id="inspectorroutecables"></a>
+Cables</h3>
+<p>The <b>Cables</b> tab displays a <b>Routing Diagram</b>, where routing changes can be performed interactively. This is the panel in which most routing tasks are most easily performed.</p>
+<div class="image">
+<img src="../../watcher-inspector-routing.png" alt=""/>
+</div>
 <p>There are these principal types of objects in the diagram:</p><ul>
 <li><b>Widgets</b> — These represent the functional widgets implemented in the device firmware, such as FrameStores, SDI Inputs, etc.<ul>
 <li><b>Widget</b>s contain one or more <b>Sockets</b> that represent each of the <b>Widget</b>’s crosspoint connections.</li>
@@ -1972,8 +1983,12 @@ Routing Inspector</h2>
 </ul>
 </li>
 </ul>
-<p><b>Code Panel</b></p>
-<p>The Code Panel shows the device’s current routing configuration in textual form.</p><ul>
+<h3><a class="anchor" id="inspectorroutecode"></a>
+C++ Code</h3>
+<div class="image">
+<img src="../../watcher-inspector-routing-code.png" alt=""/>
+</div>
+<p>The <b>C++ Code</b> tab shows the device’s current routing configuration in C++ SDK function calls.</p><ul>
 <li>It does this in one of two ways:<ul>
 <li><b>C++ Code</b> — shows the SDK calls necessary to produce the routing configuration.</li>
 <li><b>Shorthand</b> — shows the “shorthand” notation for it.</li>
@@ -1995,9 +2010,73 @@ Routing Inspector</h2>
 </ul>
 </li>
 </ul>
-<p><b>Routing Registers Panel</b></p>
-<p>The Registers Panel shows the device’s routing registers. To edit a register’s value, click in its value, change the value, then press Enter (or click elsewhere). If this causes a routing change, the diagram (and code panel) will reflect the change.</p>
-<dl class="section note"><dt>Note</dt><dd>The <b>Routing Inspector</b> has several preference settings in the <b>Cables</b> tab of the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> dialog.</dd></dl>
+<h3><a class="anchor" id="inspectorroutetext"></a>
+Shorthand Text</h3>
+<div class="image">
+<img src="../../watcher-inspector-routing-text.png" alt=""/>
+</div>
+<p>The <b>Shorthand Text</b> tab shows the device’s current routing configuration mnemonically in a textual “shorthand”.</p><ul>
+<li>The text panel is read-only — i.e., its contents cannot be edited.</li>
+<li>It supports dragging text from it for dropping elsewhere (e.g. into a code editor window).</li>
+<li>Left-clicking allows text in the panel to be highlighted (selected) interactively with the mouse.</li>
+<li>Right-clicking pops up a context menu with these commands:<ul>
+<li><b>Copy</b> —&#160;Copies whatever text is highlighted in the panel to the host clipboard.</li>
+<li><b>Select All</b> —&#160;Highlights all of the text in the panel.</li>
+</ul>
+</li>
+<li>Other controls:<ul>
+<li><b>Code</b> Menu — Selects which encoding form to display.</li>
+<li><b>Presets</b> Menu — Shows which preset matches the device’s current routing configuration (if any). Choosing one of the presets will replace the device’s current routing with the selected one.</li>
+<li><b>+</b> Button — Click to define a new preset for the device’s current routing configuration.</li>
+<li><b>-</b> Button — Click to delete the current routing preset.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="inspectorrouteregs"></a>
+Registers</h3>
+<p>The <b>Registers</b> tab shows the device’s routing registers.</p>
+<p>Hovering over a crosspoint selection register value will pop up a “Tool Tip” that shows information about the register’s four possible connections.</p>
+<p>Register values can be edited. Simply click on its value, change it, then press Enter (or click elsewhere). (Pressing ESCape cancels editing, leaving the original value intact.)</p>
+<h3><a class="anchor" id="inspectorroutexptmap"></a>
+Crosspoint Map</h3>
+<div class="image">
+<img src="../../watcher-inspector-routing-xptmap.png" alt=""/>
+</div>
+<p>The <b>Crosspoint Map</b> tab shows a two-dimensional mapping between the device widget’s input crosspoints (arrayed vertically) and output crosspoints (arrayed horizontally).</p>
+<p>The background color of each “cell” in the table — a potential connection — will be one of the following, depending on the currently running device firmware:</p><ul>
+<li><em>dark red</em> — indicates the connection is not implemented;</li>
+<li><em>dark green</em> — indicates the connection is implemented;</li>
+<li><em>black</em> — indicates the device doesn’t have an “implemented crosspoint connections” ROM, and therefore the device and SDK cannot discern whether the connection is actually implemented in firmware or not.</li>
+</ul>
+<p>Standard behaviors:</p><ul>
+<li><b>Hovering</b><ul>
+<li>Hovering the mouse pointer over a column heading will display a “Tool Tip” that gives detailed information about the output crosspoint.</li>
+<li>Hovering the mouse pointer over a row heading will display a “Tool Tip” that gives detailed information about the input crosspoint.</li>
+<li>Hovering the mouse pointer over a cell in the matrix will display a “Tool Tip” that gives detailed information about the actual (if connected) or potential (if not connected) connection.</li>
+</ul>
+</li>
+<li><b>Right-Clicking</b><ul>
+<li>In a cell in the matrix — Displays a context menu:<ul>
+<li><b>Connect</b> — Establishes the connection.</li>
+<li><b>Disconnect</b> — Removes the connection.</li>
+<li><b>Labels</b> — Pops up a submenu for choosing the labels used for the column and row headings:<ul>
+<li><b>Ordinal Values</b> — Displays numeric crosspoint ID values.</li>
+<li><b>Crosspoint Names</b> — Displays the crosspoint names (default).</li>
+<li><b>Enums</b> — Displays the symbolic names used in the SDK.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Double-Clicking</b><ul>
+<li>In a cell in the matrix:<ul>
+<li>Toggles the connection state.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <hr  size="50px" />
  <h2><a class="anchor" id="fillbufferdlog"></a>
 “Fill Buffer” Tool</h2>
@@ -2656,13 +2735,17 @@ NTV2Watcher Preferences</h2>
 <li>Windows and Linux: under the “Help” menu</li>
 </ul>
 <p>Changing any setting stores the new setting, and it takes effect immediately.</p>
-<p><b>General Preferences</b> </p><div class="image">
+<h3><a class="anchor" id="watcherprefsgeneral"></a>
+General Preferences</h3>
+<div class="image">
 <img src="../../watcher-prefs-general.png" alt=""/>
 </div>
 <p>The controls in this panel set general (global) preferences for the NTV2Watcher application.</p><ul>
 <li><b>Pre-Lock Host Buffers</b> — When checked, pre-locks host DMA buffers (which can improve performance).</li>
 </ul>
-<p><b>Color Preferences</b> </p><div class="image">
+<h3><a class="anchor" id="watcherprefscolor"></a>
+Color Preferences</h3>
+<div class="image">
 <img src="../../watcher-prefs-colors.png" alt=""/>
 </div>
 <p>The controls in this panel set the color preferences for several inspectors that display numeric data.</p><ul>
@@ -2670,9 +2753,18 @@ NTV2Watcher Preferences</h2>
 <li><b>Ancillary</b> — For ancillary data, sets the colors used for “unchanged” and “changed” ancillary data.</li>
 <li><b>Audio</b> — For audio data, sets the colors used for “unchanged” and “changed” audio data.</li>
 </ul>
-<p><b>Cables Preferences</b> </p><div class="image">
-<img src="../../watcher-prefs-cables.png" alt=""/>
+<h3><a class="anchor" id="watcherprefsfbs"></a>
+Frame Buffers Preferences</h3>
+<div class="image">
+<img src="../../watcher-prefs-fbs.png" alt=""/>
 </div>
+<p>The controls in this panel set the preferences for the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorframebuffer">Frame Buffer Inspector</a>.</p><ul>
+<li><b>Pixel Tracking</b> — When checked and hovering cursor over the data area, shows FrameStore raster’s pixel/line coordinates in the status bar.</li>
+<li><b>Show Pixel Component Values</b> — When checked and hovering cursor over the data area, shows pixel component values in the status bar.</li>
+<li><b>Show Frame Number control with NTV4 FrameStores</b> — When checked, the <b>Frame Number</b> spin control is also shown with the <b>Frame Address</b> spin control (only for NTV4 FrameStores).</li>
+</ul>
+<h3><a class="anchor" id="watcherprefscables"></a>
+Cables Preferences</h3>
 <p>The controls in this panel set the preferences for the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroute">Routing Inspector</a>.</p><ul>
 <li><b>Allow drag &amp; drop to/from disabled sockets</b> — When checked, allows dragging new connection cables to or from disabled sockets.</li>
 <li><b>FrameStore Preview</b> — When hovering the mouse over a FrameStore widget, you can see previews of the image stored in its current frame buffer.<ul>
@@ -2682,6 +2774,12 @@ NTV2Watcher Preferences</h2>
 </ul>
 </li>
 <li><b>Animate signals in cables</b> — When checked, cables that are actively carrying a signal will display with an animation effect.</li>
+</ul>
+<p><b>Regs Preferences</b> </p><div class="image">
+<img src="../../watcher-prefs-regs.png" alt=""/>
+</div>
+<p>The controls in this panel set the preferences for the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorregs">Registers Inspector</a>.</p><ul>
+<li><b>Write Read-Only Registers</b> — When checked, allows registers that are designated “read-only” to be edited and written.</li>
 </ul>
 <hr  size="50px" />
 <h1><a class="anchor" id="usingsupportlog"></a>
@@ -2835,24 +2933,24 @@ System Report</h2>
  </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793">NTV2_XptHDMIOutInput</a></div><div class="ttdeci">@ NTV2_XptHDMIOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02824">ntv2enums.h:2824</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a></div><div class="ttdeci">@ NTV2_XptSDIIn1DS2</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02542">ntv2enums.h:2542</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut4Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02774">ntv2enums.h:2774</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8">NTV2_XptCSC1VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC1VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02740">ntv2enums.h:2740</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c">NTV2_XptLUT2Input</a></div><div class="ttdeci">@ NTV2_XptLUT2Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02757">ntv2enums.h:2757</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22">NTV2_XptLUT1Input</a></div><div class="ttdeci">@ NTV2_XptLUT1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02756">ntv2enums.h:2756</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee">NTV2_XptFrameBuffer1Input</a></div><div class="ttdeci">@ NTV2_XptFrameBuffer1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02724">ntv2enums.h:2724</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div><div class="ttdeci">@ NTV2_XptSDIIn1</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02506">ntv2enums.h:2506</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772">NTV2_XptCSC2VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC2VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02526">ntv2enums.h:2526</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770">NTV2_XptCSC1VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC1VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02511">ntv2enums.h:2511</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b">NTV2_XptCSC2VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC2VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02742">ntv2enums.h:2742</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412">NTV2_XptAnalogOutInput</a></div><div class="ttdeci">@ NTV2_XptAnalogOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02841">ntv2enums.h:2841</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56">NTV2_XptSDIOut3Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut3Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02772">ntv2enums.h:2772</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793">NTV2_XptHDMIOutInput</a></div><div class="ttdeci">@ NTV2_XptHDMIOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02826">ntv2enums.h:2826</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a></div><div class="ttdeci">@ NTV2_XptSDIIn1DS2</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02544">ntv2enums.h:2544</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut4Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02776">ntv2enums.h:2776</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8">NTV2_XptCSC1VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC1VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02742">ntv2enums.h:2742</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c">NTV2_XptLUT2Input</a></div><div class="ttdeci">@ NTV2_XptLUT2Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02759">ntv2enums.h:2759</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22">NTV2_XptLUT1Input</a></div><div class="ttdeci">@ NTV2_XptLUT1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02758">ntv2enums.h:2758</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee">NTV2_XptFrameBuffer1Input</a></div><div class="ttdeci">@ NTV2_XptFrameBuffer1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02726">ntv2enums.h:2726</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div><div class="ttdeci">@ NTV2_XptSDIIn1</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02508">ntv2enums.h:2508</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772">NTV2_XptCSC2VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC2VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02528">ntv2enums.h:2528</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770">NTV2_XptCSC1VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC1VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02513">ntv2enums.h:2513</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b">NTV2_XptCSC2VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC2VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02744">ntv2enums.h:2744</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412">NTV2_XptAnalogOutInput</a></div><div class="ttdeci">@ NTV2_XptAnalogOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02843">ntv2enums.h:2843</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56">NTV2_XptSDIOut3Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut3Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02774">ntv2enums.h:2774</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Sep 27 2024 16:44:58 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Nov 7 2024 10:27:30 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

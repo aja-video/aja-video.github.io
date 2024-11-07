@@ -129,6 +129,7 @@ var ntv2devicefeatures_8h =
       [ "kDeviceCanDoCustomHancInsertion", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6bab1feb35bef6b167d5dc88442bc11ac50", null ],
       [ "kDeviceCanDoStreamingDMA", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2784a217fb867596d9197cfb484164ef", null ],
       [ "kDeviceHasPWMFanControl", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba437d5f02262a967ad77e94b41363718c", null ],
+      [ "kDeviceROMHasBankSelect", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6bac4c19bec3b0e1bcfb69d0e5921dc1b32", null ],
       [ "kNTV2BoolParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2953652108268e32c4d15eb0ddff77ab", null ],
       [ "kNTV2BoolParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba9ad50404c9c94edea0ba22a5b10b9a95", null ],
       [ "kDeviceCanDo_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba52a2168d75951d111daab3580e181500", null ]

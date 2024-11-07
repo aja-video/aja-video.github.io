@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1242</span>
+   &#160;<span id="projectnumber">17.5.0.1348</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1242</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
   </td>
  </tr>
  </tbody>
@@ -109,7 +109,7 @@ The AJA “Retail” Agent</h1>
 <li>It starts and runs one agent thread per attached device.</li>
 <li>The device agent (thread) continues to run, even if the <b>ControlPanel</b> window is closed.</li>
 </ul>
-<p>If an application sets the task mode (using <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad25fe233858f35998fd06d8d3fbcd958" title="Sets the device&#39;s task mode.">CNTV2Card::SetEveryFrameServices</a>) to <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e" title="2: OEM: Device is configured by controlling application(s), with minimal driver involvement.">NTV2_OEM_TASKS</a> for a particular device, the agent servicing that device bows out, and stops controlling it.</p>
+<p>If an application sets the task mode (using <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad25fe233858f35998fd06d8d3fbcd958" title="Sets the device&#39;s task mode.">CNTV2Card::SetEveryFrameServices</a>) to <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e" title="2: OEM (recommended): device configured by client application(s) with some driver involvement.">NTV2_OEM_TASKS</a> for a particular device, the agent servicing that device bows out, and stops controlling it.</p>
 <dl class="section note"><dt>Note</dt><dd>AJA does not provide a public API for interrogating or controlling the <b>ControlPanel</b> settings.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>OEM applications must not rely on <b>ControlPanel</b> behavior, nor on any device configuration that results from any <b>ControlPanel</b> settings, as these are subject to change without notice. OEM applications must configure the AJA device(s) to meet their application requirements using APIs provided in the NTV2 SDK.</dd></dl>
 <p>Some OEM developers require their application to operate on Linux or Windows without AJA “retail” software installed. This is still supported in version 17.0.</p>
@@ -150,7 +150,7 @@ Acquiring Exclusive Use of an AJA Device</h1>
 <div class="line">}  <span class="comment">//  if acquired ok</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="devsharefullcontrol"></a>
 Getting Full Control Over Device Configuration</h1>
-<p>In addition to ensuring that other applications wonʼt use use the same AJA device, many applications often need to configure the device differently than the Control Panel settings dictate. These applications must disable the retail (<b>AJA ControlPanel</b>) services by running in “OEM mode”, which is done by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad25fe233858f35998fd06d8d3fbcd958" title="Sets the device&#39;s task mode.">CNTV2Card::SetEveryFrameServices</a>, passing it <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e" title="2: OEM: Device is configured by controlling application(s), with minimal driver involvement.">NTV2_OEM_TASKS</a>. To be a good citizen, before changing this setting, the old setting should be saved (by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5a677b37d4abd7daac45c537fa285ac8" title="Retrieves the device&#39;s current &quot;retail service&quot; task mode.">CNTV2Card::GetEveryFrameServices</a>) and restored when the device is released.</p>
+<p>In addition to ensuring that other applications wonʼt use use the same AJA device, many applications often need to configure the device differently than the Control Panel settings dictate. These applications must disable the retail (<b>AJA ControlPanel</b>) services by running in “OEM mode”, which is done by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad25fe233858f35998fd06d8d3fbcd958" title="Sets the device&#39;s task mode.">CNTV2Card::SetEveryFrameServices</a>, passing it <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e" title="2: OEM (recommended): device configured by client application(s) with some driver involvement.">NTV2_OEM_TASKS</a>. To be a good citizen, before changing this setting, the old setting should be saved (by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5a677b37d4abd7daac45c537fa285ac8" title="Retrieves the device&#39;s current &quot;retail service&quot; task mode.">CNTV2Card::GetEveryFrameServices</a>) and restored when the device is released.</p>
 <div class="fragment"><div class="line"><a class="code" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27ea">NTV2EveryFrameTaskMode</a>   savedTaskMode;</div>
 <div class="line">. . .</div>
 <div class="line">theDevice.GetEveryFrameServices (&amp;savedTaskMode);</div>
@@ -185,12 +185,12 @@ Reserving Exclusive Use of a Device by a “Process Family”</h1>
 <div class="ttc" id="antv2publicinterface_8h_html_ad0b318380537ba7609efe35b3dce27ea"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27ea">NTV2EveryFrameTaskMode</a></div><div class="ttdeci">NTV2EveryFrameTaskMode</div><div class="ttdoc">Describes the task mode state. See also: Sharing AJA Devices With Other Applications.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l04288">ntv2publicinterface.h:4288</a></div></div>
 <div class="ttc" id="aclass_c_n_t_v2_card_html_a5a677b37d4abd7daac45c537fa285ac8"><div class="ttname"><a href="../../d7/dfb/class_c_n_t_v2_card.html#a5a677b37d4abd7daac45c537fa285ac8">CNTV2Card::GetEveryFrameServices</a></div><div class="ttdeci">virtual bool GetEveryFrameServices(NTV2EveryFrameTaskMode &amp;outMode)</div><div class="ttdoc">Retrieves the device's current &quot;retail service&quot; task mode.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/ntv2register_8cpp_source.html#l00184">ntv2register.cpp:184</a></div></div>
 <div class="ttc" id="antv2burn_8cpp_html_a328580ade50e0f7d12a29647a3b88d87"><div class="ttname"><a href="../../d5/dd5/ntv2burn_8cpp.html#a328580ade50e0f7d12a29647a3b88d87">kAppSignature</a></div><div class="ttdeci">static const uint32_t kAppSignature(((((uint32_t)( 'B'))&lt;&lt; 24)|(((uint32_t)( 'u'))&lt;&lt; 16)|(((uint32_t)( 'r'))&lt;&lt; 8)|(((uint32_t)( 'n'))&lt;&lt; 0)))</div></div>
-<div class="ttc" id="antv2publicinterface_8h_html_ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e">NTV2_OEM_TASKS</a></div><div class="ttdeci">@ NTV2_OEM_TASKS</div><div class="ttdoc">2: OEM: Device is configured by controlling application(s), with minimal driver involvement.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l04292">ntv2publicinterface.h:4292</a></div></div>
+<div class="ttc" id="antv2publicinterface_8h_html_ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e">NTV2_OEM_TASKS</a></div><div class="ttdeci">@ NTV2_OEM_TASKS</div><div class="ttdoc">2: OEM (recommended): device configured by client application(s) with some driver involvement.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l04292">ntv2publicinterface.h:4292</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Sep 27 2024 16:44:58 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Nov 7 2024 10:27:30 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

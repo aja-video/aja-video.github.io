@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1242</span>
+   &#160;<span id="projectnumber">17.5.0.1348</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1242</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
   </td>
  </tr>
  </tbody>
@@ -133,63 +133,62 @@ $(document).ready(function(){initNavTree('d5/d61/windows_2pnpimpl_8cpp_source.ht
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//  Windows only handles PCIe devices</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (mDevices &amp; <a class="code" href="../../d5/d02/pnp_8h.html#ad2bd5e39ddcfc764ecfcdc4a3ec2ae23ab1834d6d94dc4c03179188fbca40ee8c">AJA_Pnp_PciVideoDevices</a>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        BOOL ok(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        mAddEventHandle = CreateEventW(<a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, FALSE, FALSE, L<span class="stringliteral">&quot;Global\\AJAPNPAddEvent&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (!mAddWaitHandle)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (!RegisterWaitForSingleObject(&amp;mAddWaitHandle, mAddEventHandle, (WAITORTIMERCALLBACK)&amp;<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ac6fc91a802fada408bd858fc9f9b13af">SignaledAddRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>))</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        mRemoveEventHandle = CreateEventW(<a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, FALSE, FALSE, L<span class="stringliteral">&quot;Global\\AJAPNPRemoveEvent&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (!mRemoveWaitHandle)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (!RegisterWaitForSingleObject(&amp;mRemoveWaitHandle, mRemoveEventHandle, (WAITORTIMERCALLBACK)&amp;<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#aa6bf9ecc3bf07df4243f9d898d6f80fb">SignaledRemoveRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>; <span class="comment">//  Nothing installed</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="../../dd/d06/class_a_j_a_pnp_impl.html#add5bc8ff532419974869a64eac77c36d">AJAPnpImpl::Uninstall</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    mCallback = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    mRefCon = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    mDevices = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span>(mAddWaitHandle != <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        UnregisterWait(mAddWaitHandle);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        mAddWaitHandle = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span>(mRemoveWaitHandle != <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        UnregisterWait(mRemoveWaitHandle);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        mRemoveWaitHandle = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../dd/d06/class_a_j_a_pnp_impl.html#a0fb8c49cba248dafb28448e895a50d16">   91</a></span>&#160;<a class="code" href="../../dd/d06/class_a_j_a_pnp_impl.html#a0fb8c49cba248dafb28448e895a50d16">AJAPnpImpl::AddSignaled</a>()</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../da/dbc/class_a_j_a_time.html#a0f93f3d15d35adb657fc1756cebd56e9">AJATime::Sleep</a>(1000);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (mCallback)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        (*(mCallback))(<a class="code" href="../../d5/d02/pnp_8h.html#ad92d505f90de276d9871424f821264ecaec14d29d8e1fd4e85f9630633b89e06c">AJA_Pnp_DeviceAdded</a>, mRefCon);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    RegisterWaitForSingleObject(&amp;mAddWaitHandle, mAddEventHandle, (WAITORTIMERCALLBACK)<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ac6fc91a802fada408bd858fc9f9b13af">SignaledAddRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../dd/d06/class_a_j_a_pnp_impl.html#a2d848a302163404d0bf960a139112ad4">  101</a></span>&#160;<a class="code" href="../../dd/d06/class_a_j_a_pnp_impl.html#a2d848a302163404d0bf960a139112ad4">AJAPnpImpl::RemoveSignaled</a>()</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (mCallback)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        (*(mCallback))(<a class="code" href="../../d5/d02/pnp_8h.html#ad92d505f90de276d9871424f821264eca24514bad6c4e845746309394fde6d7e2">AJA_Pnp_DeviceRemoved</a>, mRefCon);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    RegisterWaitForSingleObject(&amp;mRemoveWaitHandle, mRemoveEventHandle, (WAITORTIMERCALLBACK)<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#aa6bf9ecc3bf07df4243f9d898d6f80fb">SignaledRemoveRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        mAddEventHandle = CreateEventW(<a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, FALSE, FALSE, L<span class="stringliteral">&quot;Global\\AJAPNPAddEvent&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (!mAddEventHandle)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (!RegisterWaitForSingleObject(&amp;mAddWaitHandle, mAddEventHandle, (WAITORTIMERCALLBACK)&amp;<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ac6fc91a802fada408bd858fc9f9b13af">SignaledAddRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        mRemoveEventHandle = CreateEventW(<a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, FALSE, FALSE, L<span class="stringliteral">&quot;Global\\AJAPNPRemoveEvent&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (!mRemoveEventHandle)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (!RegisterWaitForSingleObject(&amp;mRemoveWaitHandle, mRemoveEventHandle, (WAITORTIMERCALLBACK)&amp;<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#aa6bf9ecc3bf07df4243f9d898d6f80fb">SignaledRemoveRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>))</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a7d493d070afd2ab733325fa36d968570">AJA_STATUS_FAIL</a>; <span class="comment">//  Nothing installed</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="../../dd/d06/class_a_j_a_pnp_impl.html#add5bc8ff532419974869a64eac77c36d">AJAPnpImpl::Uninstall</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    mCallback = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    mRefCon = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    mDevices = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span>(mAddWaitHandle != <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        UnregisterWait(mAddWaitHandle);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        mAddWaitHandle = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span>(mRemoveWaitHandle != <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        UnregisterWait(mRemoveWaitHandle);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        mRemoveWaitHandle = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../dd/d06/class_a_j_a_pnp_impl.html#a0fb8c49cba248dafb28448e895a50d16">   90</a></span>&#160;<a class="code" href="../../dd/d06/class_a_j_a_pnp_impl.html#a0fb8c49cba248dafb28448e895a50d16">AJAPnpImpl::AddSignaled</a>()</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../da/dbc/class_a_j_a_time.html#a0f93f3d15d35adb657fc1756cebd56e9">AJATime::Sleep</a>(1000);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (mCallback)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        (*(mCallback))(<a class="code" href="../../d5/d02/pnp_8h.html#ad92d505f90de276d9871424f821264ecaec14d29d8e1fd4e85f9630633b89e06c">AJA_Pnp_DeviceAdded</a>, mRefCon);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    RegisterWaitForSingleObject(&amp;mAddWaitHandle, mAddEventHandle, (WAITORTIMERCALLBACK)<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ac6fc91a802fada408bd858fc9f9b13af">SignaledAddRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../dd/d06/class_a_j_a_pnp_impl.html#a2d848a302163404d0bf960a139112ad4">  100</a></span>&#160;<a class="code" href="../../dd/d06/class_a_j_a_pnp_impl.html#a2d848a302163404d0bf960a139112ad4">AJAPnpImpl::RemoveSignaled</a>()</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (mCallback)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        (*(mCallback))(<a class="code" href="../../d5/d02/pnp_8h.html#ad92d505f90de276d9871424f821264eca24514bad6c4e845746309394fde6d7e2">AJA_Pnp_DeviceRemoved</a>, mRefCon);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    RegisterWaitForSingleObject(&amp;mRemoveWaitHandle, mRemoveEventHandle, (WAITORTIMERCALLBACK)<a class="code" href="../../d5/d61/windows_2pnpimpl_8cpp.html#aa6bf9ecc3bf07df4243f9d898d6f80fb">SignaledRemoveRoutine</a>, <span class="keyword">this</span>, INFINITE, <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_a_j_a_pnp_impl_html_add5bc8ff532419974869a64eac77c36d"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html#add5bc8ff532419974869a64eac77c36d">AJAPnpImpl::Uninstall</a></div><div class="ttdeci">AJAStatus Uninstall(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d23/linux_2pnpimpl_8cpp_source.html#l00062">pnpimpl.cpp:62</a></div></div>
@@ -210,15 +209,15 @@ $(document).ready(function(){initNavTree('d5/d61/windows_2pnpimpl_8cpp_source.ht
 <div class="ttc" id="aclass_a_j_a_pnp_impl_html"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html">AJAPnpImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de8/linux_2pnpimpl_8h_source.html#l00013">pnpimpl.h:13</a></div></div>
 <div class="ttc" id="aclass_a_j_a_pnp_impl_html_ad3b529f2641c5ee61dccb4875d5a8dd3"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html#ad3b529f2641c5ee61dccb4875d5a8dd3">AJAPnpImpl::AJAPnpImpl</a></div><div class="ttdeci">AJAPnpImpl()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d23/linux_2pnpimpl_8cpp_source.html#l00020">pnpimpl.cpp:20</a></div></div>
 <div class="ttc" id="agroup___a_j_a_group_status_html_gga7ae9216ddf243580f7a96ec669f09766adf3e941711cd86947464c5b07bb0dcec"><div class="ttname"><a href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766adf3e941711cd86947464c5b07bb0dcec">AJA_STATUS_NULL</a></div><div class="ttdeci">@ AJA_STATUS_NULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d49/types_8h_source.html#l00387">types.h:387</a></div></div>
-<div class="ttc" id="aclass_a_j_a_pnp_impl_html_a0fb8c49cba248dafb28448e895a50d16"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html#a0fb8c49cba248dafb28448e895a50d16">AJAPnpImpl::AddSignaled</a></div><div class="ttdeci">void AddSignaled(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00091">pnpimpl.cpp:91</a></div></div>
+<div class="ttc" id="aclass_a_j_a_pnp_impl_html_a0fb8c49cba248dafb28448e895a50d16"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html#a0fb8c49cba248dafb28448e895a50d16">AJAPnpImpl::AddSignaled</a></div><div class="ttdeci">void AddSignaled(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00090">pnpimpl.cpp:90</a></div></div>
 <div class="ttc" id="aclass_a_j_a_pnp_impl_html_ab90e63941bb969a8a0504856307673e6"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html#ab90e63941bb969a8a0504856307673e6">AJAPnpImpl::~AJAPnpImpl</a></div><div class="ttdeci">virtual ~AJAPnpImpl(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d23/linux_2pnpimpl_8cpp_source.html#l00025">pnpimpl.cpp:25</a></div></div>
 <div class="ttc" id="apnp_8h_html_ad92d505f90de276d9871424f821264ecaec14d29d8e1fd4e85f9630633b89e06c"><div class="ttname"><a href="../../d5/d02/pnp_8h.html#ad92d505f90de276d9871424f821264ecaec14d29d8e1fd4e85f9630633b89e06c">AJA_Pnp_DeviceAdded</a></div><div class="ttdeci">@ AJA_Pnp_DeviceAdded</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d02/pnp_8h_source.html#l00024">pnp.h:24</a></div></div>
-<div class="ttc" id="aclass_a_j_a_pnp_impl_html_a2d848a302163404d0bf960a139112ad4"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html#a2d848a302163404d0bf960a139112ad4">AJAPnpImpl::RemoveSignaled</a></div><div class="ttdeci">void RemoveSignaled(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00101">pnpimpl.cpp:101</a></div></div>
+<div class="ttc" id="aclass_a_j_a_pnp_impl_html_a2d848a302163404d0bf960a139112ad4"><div class="ttname"><a href="../../dd/d06/class_a_j_a_pnp_impl.html#a2d848a302163404d0bf960a139112ad4">AJAPnpImpl::RemoveSignaled</a></div><div class="ttdeci">void RemoveSignaled(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00100">pnpimpl.cpp:100</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_853fe2b552097df5fdaa18810c9944f4.html">pnp</a></li><li class="navelem"><a class="el" href="../../dir_167371f636e18a064e79877400f67410.html">windows</a></li><li class="navelem"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html">pnpimpl.cpp</a></li>
-    <li class="footer">Generated on Fri Sep 27 2024 16:44:52 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Nov 7 2024 10:27:25 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

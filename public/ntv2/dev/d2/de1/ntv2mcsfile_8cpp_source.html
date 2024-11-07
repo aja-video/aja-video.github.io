@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1242</span>
+   &#160;<span id="projectnumber">17.5.0.1348</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1242</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
   </td>
  </tr>
  </tbody>
@@ -298,11 +298,11 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        {</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="comment">//Insert ELAR</span></div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordtype">string</span> ELARString(<span class="stringliteral">&quot;:02000004000000&quot;</span>);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            ::sprintf(&amp;ELARString[9], <span class="stringliteral">&quot;%04X&quot;</span>, ExtendedBaseAddress);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            ::snprintf(&amp;ELARString[9],<span class="keyword">sizeof</span>(ELARString)-9, <span class="stringliteral">&quot;%04X&quot;</span>, ExtendedBaseAddress);</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">for</span> (i = 1;  i &lt; 13;  i++)</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                checksum += <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a>(ELARString[i]) - 0x30;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            checksum = (~checksum) + 1;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            ::sprintf(&amp;ELARString[13], <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            ::snprintf(&amp;ELARString[13],<span class="keyword">sizeof</span>(ELARString)-13, <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            IRecordOutput(ELARString.c_str());</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            ExtendedBaseAddress++;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            checksum = 0;</div>
@@ -310,26 +310,26 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        iRecord[0] = <span class="charliteral">&#39;:&#39;</span>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        ::sprintf(&amp;iRecord[1], <span class="stringliteral">&quot;%02X&quot;</span>, <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a>(recordSize));</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        ::snprintf(&amp;iRecord[1],<span class="keyword">sizeof</span>(iRecord)-1, <span class="stringliteral">&quot;%02X&quot;</span>, <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a>(recordSize));</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        checksum += <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a>(recordSize);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> addr = baseAddress;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> aa = ((addr &gt;&gt; 8) &amp; 0xff);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        ::sprintf(&amp;iRecord[3], <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        ::snprintf(&amp;iRecord[3],<span class="keyword">sizeof</span>(iRecord)-3, <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        checksum += aa;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        aa = ((addr)&amp; 0xff);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        ::sprintf(&amp;iRecord[5], <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        ::snprintf(&amp;iRecord[5],<span class="keyword">sizeof</span>(iRecord)-5, <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        checksum += aa;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        ::sprintf(&amp;iRecord[7], <span class="stringliteral">&quot;%02X&quot;</span>, recordType);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        ::snprintf(&amp;iRecord[7],<span class="keyword">sizeof</span>(iRecord)-7, <span class="stringliteral">&quot;%02X&quot;</span>, recordType);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        index = 9;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">while</span> (i &lt; <span class="keywordtype">int</span>(recordSize))</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        {</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> dd = bitfileBuffer.<a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html#a1f7e4efabe8f825f5e9cdc57fdae86e1">U8</a>(<span class="keywordtype">int</span>(bitfileBufferNdx++));</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            ::sprintf(&amp;iRecord[index], <span class="stringliteral">&quot;%02X&quot;</span>, dd);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            ::snprintf(&amp;iRecord[index],<span class="keyword">sizeof</span>(iRecord)-index, <span class="stringliteral">&quot;%02X&quot;</span>, dd);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            checksum += dd;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            i++;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            index += 2;</div>
@@ -338,7 +338,7 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        baseAddress += 0x0010;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        checksum = (~checksum) + 1;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        ::sprintf(&amp;iRecord[index], <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        ::snprintf(&amp;iRecord[index],<span class="keyword">sizeof</span>(iRecord)-index, <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        IRecordOutput(iRecord);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }   <span class="comment">//  while bytesLeftToWrite &gt; 0</span></div>
@@ -363,11 +363,11 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        {</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="comment">//Insert ELAR</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordtype">string</span> ELARString(<span class="stringliteral">&quot;:02000004000000&quot;</span>);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            ::sprintf(&amp;ELARString[9], <span class="stringliteral">&quot;%04X&quot;</span>, ExtendedBaseAddress);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            ::snprintf(&amp;ELARString[9],<span class="keyword">sizeof</span>(ELARString)-9, <span class="stringliteral">&quot;%04X&quot;</span>, ExtendedBaseAddress);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">for</span> (i = 1;  i &lt; 13;  i++)</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                checksum += ELARString[i] - 0x30;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            checksum = (~checksum) + 1;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            ::sprintf(&amp;ELARString[13], <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            ::snprintf(&amp;ELARString[13],<span class="keyword">sizeof</span>(ELARString)-13, <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            IRecordOutput(ELARString.c_str());</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            ExtendedBaseAddress++;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            checksum = 0;</div>
@@ -375,25 +375,25 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        iRecord[0] = <span class="charliteral">&#39;:&#39;</span>;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        ::sprintf(&amp;iRecord[1], <span class="stringliteral">&quot;%02X&quot;</span>, <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a>(recordSize));</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        ::snprintf(&amp;iRecord[1],<span class="keyword">sizeof</span>(iRecord)-1, <span class="stringliteral">&quot;%02X&quot;</span>, <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a>(recordSize));</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        checksum += <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a>(recordSize);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> addr = baseAddress;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <a class="code" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> aa = ((addr &gt;&gt; 8) &amp; 0xff);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        ::sprintf(&amp;iRecord[3], <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        ::snprintf(&amp;iRecord[3],<span class="keyword">sizeof</span>(iRecord)-3, <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        checksum += aa;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        aa = ((addr)&amp; 0xff);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        ::sprintf(&amp;iRecord[5], <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        ::snprintf(&amp;iRecord[5],<span class="keyword">sizeof</span>(iRecord)-5, <span class="stringliteral">&quot;%02X&quot;</span>, aa);</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        checksum += aa;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        ::sprintf(&amp;iRecord[7], <span class="stringliteral">&quot;%02X&quot;</span>, recordType);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        ::snprintf(&amp;iRecord[7],<span class="keyword">sizeof</span>(iRecord)-7, <span class="stringliteral">&quot;%02X&quot;</span>, recordType);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        index = 9;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">while</span> (i &lt; <span class="keywordtype">int</span>(recordSize))</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        {</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> dd = mCommentString.at(commentIndex);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            ::sprintf(&amp;iRecord[index], <span class="stringliteral">&quot;%02X&quot;</span>, dd);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            ::snprintf(&amp;iRecord[index],<span class="keyword">sizeof</span>(iRecord)-index, <span class="stringliteral">&quot;%02X&quot;</span>, dd);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            checksum += dd;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            i++;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            index += 2;</div>
@@ -403,7 +403,7 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        baseAddress += 0x0010;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        checksum = (~checksum) + 1;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        ::sprintf(&amp;iRecord[index], <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        ::snprintf(&amp;iRecord[index],<span class="keyword">sizeof</span>(iRecord)-index, <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        IRecordOutput(iRecord);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
@@ -470,12 +470,12 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="../../de/d78/class_c_n_t_v2_m_c_sfile.html#a77fc6818760832338ec0c9859a99d81a">  384</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../de/d78/class_c_n_t_v2_m_c_sfile.html#a77fc6818760832338ec0c9859a99d81a">CNTV2MCSfile::FindExtendedLinearAddressRecord</a> (uint16_t address <span class="comment">/*= 0x0000*/</span>)</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;{</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">string</span> ELARString(<span class="stringliteral">&quot;:02000004000000&quot;</span>);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    ::sprintf(&amp;ELARString[9], <span class="stringliteral">&quot;%04X&quot;</span>, address);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    ::snprintf(&amp;ELARString[9],<span class="keyword">sizeof</span>(ELARString)-9, <span class="stringliteral">&quot;%04X&quot;</span>, address);</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    uint8_t checksum = 0;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1;  i &lt; 13;  i++)</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        checksum += ELARString[i] - 0x30;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    checksum = (~checksum) + 1;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    ::sprintf(&amp;ELARString[13], <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    ::snprintf(&amp;ELARString[13],<span class="keyword">sizeof</span>(ELARString)-13, <span class="stringliteral">&quot;%02X&quot;</span>, checksum);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="comment">// Do a search for a match, don&#39;t search on the checksum</span></div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordtype">string</span> needle(ELARString, 0, 13);</div>
@@ -638,7 +638,7 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div class="ttc" id="antv2utils_8h_html"><div class="ttname"><a href="../../d0/d81/ntv2utils_8h.html">ntv2utils.h</a></div><div class="ttdoc">Declares numerous NTV2 utility functions.</div></div>
 <div class="ttc" id="aclass_c_n_t_v2_m_c_sfile_html_ac5bda78b8413f79d3881c8372e09f26f"><div class="ttname"><a href="../../de/d78/class_c_n_t_v2_m_c_sfile.html#ac5bda78b8413f79d3881c8372e09f26f">CNTV2MCSfile::SetLastError</a></div><div class="ttdeci">virtual void SetLastError(const std::string &amp;inStr, const bool inAppend=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/ntv2mcsfile_8cpp_source.html#l00060">ntv2mcsfile.cpp:60</a></div></div>
 <div class="ttc" id="astruct_intel_record_info_html_af456832b9859b66f99181f2ee9746dc8"><div class="ttname"><a href="../../dd/d82/struct_intel_record_info.html#af456832b9859b66f99181f2ee9746dc8">IntelRecordInfo::recordType</a></div><div class="ttdeci">IntelRecordType recordType</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc8/ntv2mcsfile_8h_source.html#l00042">ntv2mcsfile.h:42</a></div></div>
-<div class="ttc" id="aclass_n_t_v2_buffer_html_a1f7e4efabe8f825f5e9cdc57fdae86e1"><div class="ttname"><a href="../../d5/dc4/class_n_t_v2_buffer.html#a1f7e4efabe8f825f5e9cdc57fdae86e1">NTV2Buffer::U8</a></div><div class="ttdeci">uint8_t U8(const int inIndex) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06536">ntv2publicinterface.h:6536</a></div></div>
+<div class="ttc" id="aclass_n_t_v2_buffer_html_a1f7e4efabe8f825f5e9cdc57fdae86e1"><div class="ttname"><a href="../../d5/dc4/class_n_t_v2_buffer.html#a1f7e4efabe8f825f5e9cdc57fdae86e1">NTV2Buffer::U8</a></div><div class="ttdeci">uint8_t U8(const int inIndex) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06543">ntv2publicinterface.h:6543</a></div></div>
 <div class="ttc" id="antv2bitfile_8h_html"><div class="ttname"><a href="../../da/db1/ntv2bitfile_8h.html">ntv2bitfile.h</a></div><div class="ttdoc">Declares the CNTV2Bitfile class.</div></div>
 <div class="ttc" id="antv2publicinterface_8h_html_a7d396819a750a83ecd7c2e7f8f4898ec"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#a7d396819a750a83ecd7c2e7f8f4898ec">DEC</a></div><div class="ttdeci">#define DEC(__x__)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l05606">ntv2publicinterface.h:5606</a></div></div>
 <div class="ttc" id="aajatypes_8h_html_acde568ab22955f9cdb6a059cd5ba1293"><div class="ttname"><a href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a></div><div class="ttdeci">uint8_t UByte</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de2/ajatypes_8h_source.html#l00250">ajatypes.h:250</a></div></div>
@@ -659,7 +659,7 @@ $(document).ready(function(){initNavTree('d2/de1/ntv2mcsfile_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_d66cab0a9fa222c6d93e473efea2c462.html">src</a></li><li class="navelem"><a class="el" href="../../d2/de1/ntv2mcsfile_8cpp.html">ntv2mcsfile.cpp</a></li>
-    <li class="footer">Generated on Fri Sep 27 2024 16:44:54 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Nov 7 2024 10:27:26 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

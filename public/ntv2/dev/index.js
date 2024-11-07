@@ -152,7 +152,13 @@ var index =
         [ "Mixer/Keyer Inspector", "db/d02/toolsandutilities.html#inspectormixerkeyer", null ],
         [ "LUT Inspector", "db/d02/toolsandutilities.html#inspectorlut", null ],
         [ "Registers Inspector", "db/d02/toolsandutilities.html#inspectorregs", null ],
-        [ "Routing Inspector", "db/d02/toolsandutilities.html#inspectorroute", null ],
+        [ "Routing Inspector", "db/d02/toolsandutilities.html#inspectorroute", [
+          [ "Cables", "db/d02/toolsandutilities.html#inspectorroutecables", null ],
+          [ "C++ Code", "db/d02/toolsandutilities.html#inspectorroutecode", null ],
+          [ "Shorthand Text", "db/d02/toolsandutilities.html#inspectorroutetext", null ],
+          [ "Registers", "db/d02/toolsandutilities.html#inspectorrouteregs", null ],
+          [ "Crosspoint Map", "db/d02/toolsandutilities.html#inspectorroutexptmap", null ]
+        ] ],
         [ "“Fill Buffer” Tool", "db/d02/toolsandutilities.html#fillbufferdlog", null ],
         [ "“EIA/CEA-608 Caption” Tool", "db/d02/toolsandutilities.html#anc608viewer", null ],
         [ "“Register Cycler” Tool", "db/d02/toolsandutilities.html#regautocycler", null ],
@@ -162,7 +168,12 @@ var index =
         [ "“SDK Demos” Tool", "db/d02/toolsandutilities.html#demostool", null ],
         [ "“AJADebug Stats” Tool", "db/d02/toolsandutilities.html#debugstats", null ],
         [ "“AJADebug Log” Tool", "db/d02/toolsandutilities.html#debuglog", null ],
-        [ "NTV2Watcher Preferences", "db/d02/toolsandutilities.html#watcherprefs", null ]
+        [ "NTV2Watcher Preferences", "db/d02/toolsandutilities.html#watcherprefs", [
+          [ "General Preferences", "db/d02/toolsandutilities.html#watcherprefsgeneral", null ],
+          [ "Color Preferences", "db/d02/toolsandutilities.html#watcherprefscolor", null ],
+          [ "Frame Buffers Preferences", "db/d02/toolsandutilities.html#watcherprefsfbs", null ],
+          [ "Cables Preferences", "db/d02/toolsandutilities.html#watcherprefscables", null ]
+        ] ]
       ] ],
       [ "‘supportlog’ Command-Line Utility", "db/d02/toolsandutilities.html#usingsupportlog", null ],
       [ "“AJA System Test”", "db/d02/toolsandutilities.html#usingsystemtest", [

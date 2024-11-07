@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1242</span>
+   &#160;<span id="projectnumber">17.5.0.1348</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1242</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
   </td>
  </tr>
  </tbody>
@@ -254,7 +254,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used by the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a120554f9088d14aad0b96a27177e1f50" title="For devices that support it (see the NTV2DeviceCanDoSDIErrorChecks function in &quot;ntv2devicefeatures....">CNTV2Card::ReadSDIStatistics</a> function.  <a href="../../d9/d7d/class_n_t_v2_s_d_i_in_statistics.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html">FRAME_STAMP</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is returned by the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20" title="Returns precise timing information for the given frame and channel that&#39;s currently AutoCirculating.">CNTV2Card::AutoCirculateGetFrameStamp</a> function, and is also embedded in the <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> struct returned from <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>. If used as its own <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad518f9ae648ba9059924b2af209047f0" title="Sends a message to the NTV2 driver (the new, improved, preferred way).">CNTV2DriverInterface::NTV2Message</a> (the new API version of the old <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a005ae8f9da8cb418d9d21b7df15a8130">CNTV2Card::GetFrameStamp</a> call), pass the NTV2Channel in the least significant byte of <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ab0842555711431b8d49db219ac5a7b4d" title="On exit, contains host OS clock at time of capture/play. On entry, contains NTV2Channel of interest,...">FRAME_STAMP::acFrameTime</a>, and the requested frame in <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#ad52892587c4869db11e12defdc811714" title="The frame requested (0xFFFFFFFF == &quot;not available&quot;), including for new API (FRAME_STAMP message).">FRAME_STAMP::acRequestedFrame</a>.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class/object reports information about the current and/or requested AutoCirculate frame.  <a href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html">AUTOCIRCULATE_TRANSFER_STATUS</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This object is embedded in the <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> struct that's returned from the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> function, and contains status information about the transfer and the state of AutoCirculate.  <a href="../../d9/daa/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s.html#details">More...</a><br /></td></tr>
@@ -613,7 +613,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a14de03aac7d41e74f8832e31389b82b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies AUTOCIRCULATE_TASK struct.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#a14de03aac7d41e74f8832e31389b82b9">More...</a><br /></td></tr>
 <tr class="separator:a14de03aac7d41e74f8832e31389b82b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb050d98135939b6deb8cc148d8473b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aeb050d98135939b6deb8cc148d8473b3">NTV2_TYPE_ACFRAMESTAMP</a>&#160;&#160;&#160;<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ade4546d991f30fff265039ac007f839a">NTV2_FOURCC</a> ('s', 't', 'm', 'p')</td></tr>
-<tr class="memdesc:aeb050d98135939b6deb8cc148d8473b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> struct.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#aeb050d98135939b6deb8cc148d8473b3">More...</a><br /></td></tr>
+<tr class="memdesc:aeb050d98135939b6deb8cc148d8473b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> struct.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#aeb050d98135939b6deb8cc148d8473b3">More...</a><br /></td></tr>
 <tr class="separator:aeb050d98135939b6deb8cc148d8473b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89da661ecf527c558acf6408713227aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a89da661ecf527c558acf6408713227aa">NTV2_TYPE_GETREGS</a>&#160;&#160;&#160;<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ade4546d991f30fff265039ac007f839a">NTV2_FOURCC</a> ('r', 'e', 'g', 'R')</td></tr>
 <tr class="memdesc:a89da661ecf527c558acf6408713227aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies <a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html" title="This is used by the CNTV2Card::ReadRegisters function.">NTV2GetRegisters</a> struct.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#a89da661ecf527c558acf6408713227aa">More...</a><br /></td></tr>
@@ -5896,7 +5896,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5d9cc3296332430122ce409ee6aed972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the given <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a90dc22e05a263fc86576938693bfbb40">NTV2TCIndexes</a> contents into the given set.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#a5d9cc3296332430122ce409ee6aed972">More...</a><br /></td></tr>
 <tr class="separator:a5d9cc3296332430122ce409ee6aed972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22551423b7286a274f545e89ac20a68f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a22551423b7286a274f545e89ac20a68f">operator&lt;&lt;</a> (std::ostream &amp;inOutStream, const <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html">FRAME_STAMP</a> &amp;inObj)</td></tr>
-<tr class="memdesc:a22551423b7286a274f545e89ac20a68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams the given <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> to the specified ostream in a human-readable format.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#a22551423b7286a274f545e89ac20a68f">More...</a><br /></td></tr>
+<tr class="memdesc:a22551423b7286a274f545e89ac20a68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams the given <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> to the specified ostream in a human-readable format.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#a22551423b7286a274f545e89ac20a68f">More...</a><br /></td></tr>
 <tr class="separator:a22551423b7286a274f545e89ac20a68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2d2ae75918f8dc97c338c11b65dd043"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ac2d2ae75918f8dc97c338c11b65dd043">operator&lt;&lt;</a> (std::ostream &amp;inOutStream, const <a class="el" href="../../da/d18/class_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s.html">AUTOCIRCULATE_STATUS</a> &amp;inObj)</td></tr>
 <tr class="memdesc:ac2d2ae75918f8dc97c338c11b65dd043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams the given <a class="el" href="../../da/d18/class_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s.html" title="This is returned from the CNTV2Card::AutoCirculateGetStatus function.">AUTOCIRCULATE_STATUS</a> to the specified ostream in a human-readable format.  <a href="../../d4/dd7/ntv2publicinterface_8h.html#ac2d2ae75918f8dc97c338c11b65dd043">More...</a><br /></td></tr>
@@ -7288,7 +7288,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09290">9290</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09375">9375</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7304,7 +7304,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09306">9306</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09391">9391</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7320,7 +7320,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09320">9320</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09405">9405</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7336,7 +7336,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09318">9318</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09403">9403</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7352,7 +7352,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09319">9319</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09404">9404</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7368,7 +7368,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09330">9330</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09415">9415</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7384,7 +7384,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09331">9331</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09416">9416</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7400,7 +7400,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09329">9329</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09414">9414</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7416,7 +7416,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09309">9309</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09394">9394</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7432,7 +7432,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09307">9307</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09392">9392</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7448,7 +7448,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09311">9311</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09396">9396</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7464,7 +7464,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09314">9314</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09399">9399</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7480,7 +7480,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09310">9310</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09395">9395</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7496,7 +7496,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09313">9313</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09398">9398</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7512,7 +7512,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09312">9312</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09397">9397</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7528,7 +7528,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09327">9327</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09412">9412</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7544,7 +7544,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09328">9328</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09413">9413</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7560,7 +7560,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09317">9317</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09402">9402</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7576,7 +7576,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09315">9315</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09400">9400</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7592,7 +7592,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09316">9316</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09401">9401</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7608,7 +7608,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09333">9333</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09418">9418</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7624,7 +7624,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09334">9334</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09419">9419</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7640,7 +7640,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09335">9335</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09420">9420</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7656,7 +7656,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09336">9336</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09421">9421</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7672,7 +7672,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09337">9337</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09422">9422</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7688,7 +7688,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09338">9338</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09423">9423</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7704,7 +7704,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09332">9332</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09417">9417</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7720,7 +7720,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09323">9323</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09408">9408</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7736,7 +7736,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09326">9326</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09411">9411</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7752,7 +7752,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09325">9325</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09410">9410</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7768,7 +7768,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09321">9321</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09406">9406</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7784,7 +7784,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09324">9324</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09409">9409</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7800,7 +7800,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09322">9322</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09407">9407</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7816,7 +7816,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09308">9308</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09393">9393</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7832,7 +7832,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09303">9303</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09388">9388</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7848,7 +7848,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09302">9302</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09387">9387</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7864,7 +7864,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09284">9284</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09369">9369</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7880,7 +7880,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09342">9342</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09427">9427</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7896,7 +7896,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09341">9341</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09426">9426</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7912,7 +7912,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09513">9513</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09598">9598</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7928,7 +7928,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09510">9510</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09595">9595</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7944,7 +7944,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09512">9512</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09597">9597</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7960,7 +7960,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09508">9508</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09593">9593</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7976,7 +7976,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09511">9511</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09596">9596</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -7992,7 +7992,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09509">9509</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09594">9594</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -8008,7 +8008,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09293">9293</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09378">9378</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -8024,7 +8024,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09299">9299</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09384">9384</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -8040,7 +8040,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09281">9281</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09366">9366</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -8056,7 +8056,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09296">9296</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09381">9381</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -8072,7 +8072,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09287">9287</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09372">9372</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -9610,7 +9610,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09919">9919</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l10004">10004</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -9630,7 +9630,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09918">9918</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l10003">10003</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -9650,7 +9650,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09917">9917</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l10002">10002</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10017,7 +10017,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> to add buffer to queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08680">8680</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08765">8765</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10035,7 +10035,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> to signal on complete. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08681">8681</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08766">8766</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10053,7 +10053,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> buffer completed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08687">8687</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08772">8772</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10071,7 +10071,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> buffer error. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08690">8690</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08775">8775</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10089,7 +10089,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> buffer flushed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08688">8688</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08773">8773</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10107,7 +10107,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> buffer linked. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08686">8686</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08771">8771</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10125,7 +10125,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> buffer queued. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08685">8685</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08770">8770</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10143,7 +10143,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> buffer released. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08689">8689</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08774">8774</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10161,7 +10161,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> to request buffer status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08682">8682</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08767">8767</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10179,7 +10179,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> to flush buffer queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08667">8667</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08752">8752</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10197,7 +10197,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> to initialize the stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08663">8663</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08748">8748</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10215,7 +10215,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> to release stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08664">8664</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08749">8749</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10233,7 +10233,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> to start streaming. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08665">8665</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08750">8750</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10251,7 +10251,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> stream active. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08676">8676</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08761">8761</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10269,7 +10269,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> stream disabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08672">8672</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08757">8757</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10287,7 +10287,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> stream error. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08677">8677</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08762">8762</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10305,7 +10305,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> stream idle. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08675">8675</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08760">8760</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10323,7 +10323,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> stream initialized. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08673">8673</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08758">8758</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10341,7 +10341,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> stream initialized. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08674">8674</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08759">8759</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10359,7 +10359,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> to request stream status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08668">8668</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08753">8753</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10377,7 +10377,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> to stop streaming. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08666">8666</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08751">8751</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10395,7 +10395,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../de/d67/class_n_t_v2_stream_channel.html">NTV2StreamChannel</a> to wait for signal. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08669">8669</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08754">8754</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10413,7 +10413,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> fail. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08694">8694</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08779">8779</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10431,7 +10431,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> invalid parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08697">8697</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08782">8782</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10449,7 +10449,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> driver message failure. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08696">8696</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08781">8781</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10467,7 +10467,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> not the stream onwer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08700">8700</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08785">8785</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10485,7 +10485,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> insufficient resource. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08699">8699</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08784">8784</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10503,7 +10503,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> bad state. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08695">8695</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08780">8780</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10521,7 +10521,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> success. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08693">8693</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08778">8778</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10539,7 +10539,7 @@ Variables</h2></td></tr>
 
 <p>Used in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8f2f31eb5f75de13b0fa93121233da6c" title="Identifies a specific IP-based data stream.">NTV2Stream</a> timeout. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08698">8698</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08783">8783</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -10632,7 +10632,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Identifies <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> struct. </p>
+<p>Identifies <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> struct. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l05470">5470</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
@@ -12677,7 +12677,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06783">6783</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06790">6790</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13127,7 +13127,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2FrameBufferFormat values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08805">8805</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08890">8890</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13145,7 +13145,7 @@ Variables</h2></td></tr>
 
 <p>A handy const iterator for iterating over an NTV2FrameBufferFormatSet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08806">8806</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08891">8891</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13163,7 +13163,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2FrameRate values. New in SDK 17.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08822">8822</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08907">8907</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13181,7 +13181,7 @@ Variables</h2></td></tr>
 
 <p>A handy const iterator for iterating over an NTV2FrameRateSet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08823">8823</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08908">8908</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13199,7 +13199,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2FrameGeometry values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08810">8810</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08895">8895</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13217,7 +13217,7 @@ Variables</h2></td></tr>
 
 <p>A handy const iterator for iterating over an NTV2GeometrySet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08811">8811</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08896">8896</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13249,7 +13249,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2InputSource values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08816">8816</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08901">8901</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13267,7 +13267,7 @@ Variables</h2></td></tr>
 
 <p>A handy const iterator for iterating over an NTV2InputSourceSet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08817">8817</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08902">8902</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13327,7 +13327,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2OutputDestination values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08819">8819</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08904">8904</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13345,7 +13345,7 @@ Variables</h2></td></tr>
 
 <p>A handy const iterator for iterating over an NTV2OutputDestinations. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08820">8820</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08905">8905</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13361,7 +13361,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08807">8807</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08892">8892</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13377,7 +13377,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08808">8808</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08893">8893</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13429,7 +13429,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct ULWord values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07414">7414</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07455">7455</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13495,7 +13495,7 @@ Variables</h2></td></tr>
 
 <p>A mapping of distinct NTV2RegisterNumbers to their corresponding ULWord values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07433">7433</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07474">7474</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13561,7 +13561,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2RegisterNumbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07415">7415</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07456">7456</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13579,7 +13579,7 @@ Variables</h2></td></tr>
 
 <p>A const iterator that iterates over a set of distinct NTV2RegisterNumbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07416">7416</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07457">7457</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13597,7 +13597,7 @@ Variables</h2></td></tr>
 
 <p>A non-constant iterator that iterates over a set of distinct NTV2RegisterNumbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07417">7417</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07458">7458</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13669,7 +13669,7 @@ Variables</h2></td></tr>
 
 <p>A const iterator that iterates over NTV2RegisterValueMap entries. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07434">7434</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07475">7475</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13687,7 +13687,7 @@ Variables</h2></td></tr>
 
 <p>A non-constant iterator that iterates over NTV2RegisterValueMap entries. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07435">7435</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07476">7476</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13756,7 +13756,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000209">Deprecated:</a></b></dt><dd>Formerly used by the <a class="el" href="../../d7/dce/class_c_n_t_v2_signal_router.html" title="This class is a collection of widget input-to-output connections that can be applied all-at-once to a...">CNTV2SignalRouter</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000211">Deprecated:</a></b></dt><dd>Formerly used by the <a class="el" href="../../d7/dce/class_c_n_t_v2_signal_router.html" title="This class is a collection of widget input-to-output connections that can be applied all-at-once to a...">CNTV2SignalRouter</a> </dd></dl>
 
 </div>
 </div>
@@ -13788,7 +13788,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2Standard values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08813">8813</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08898">8898</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13806,7 +13806,7 @@ Variables</h2></td></tr>
 
 <p>A handy const iterator for iterating over an NTV2StandardSet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08814">8814</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08899">8899</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13836,7 +13836,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06879">6879</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06886">6886</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13852,7 +13852,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06880">6880</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06887">6887</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13870,7 +13870,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2TCIndex values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06879">6879</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06886">6886</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13888,7 +13888,7 @@ Variables</h2></td></tr>
 
 <p>A handy const interator for iterating over an NTV2TCIndexes set. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06880">6880</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06887">6887</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13906,7 +13906,7 @@ Variables</h2></td></tr>
 
 <p>An ordered sequence of zero or more <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html" title="This struct replaces the old RP188_STRUCT.">NTV2_RP188</a> structures. An NTV2TCIndex enum value can be used as an index into the list (the list size should equal NTV2_MAX_NUM_TIMECODE_INDEXES). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06871">6871</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06878">6878</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13924,7 +13924,7 @@ Variables</h2></td></tr>
 
 <p>A handy const interator for iterating over an NTV2TimeCodeList. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06874">6874</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06881">6881</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13942,7 +13942,7 @@ Variables</h2></td></tr>
 
 <p>A mapping of NTV2TCIndex enum values to <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html" title="This struct replaces the old RP188_STRUCT.">NTV2_RP188</a> structures. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06876">6876</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06883">6883</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13960,7 +13960,7 @@ Variables</h2></td></tr>
 
 <p>A handy const interator for iterating over NTV2TCIndex/NTV2TimeCodeList pairs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06877">6877</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06884">6884</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -13996,7 +13996,7 @@ Variables</h2></td></tr>
 
 <p>A set of distinct NTV2VideoFormat values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08802">8802</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08887">8887</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -14014,7 +14014,7 @@ Variables</h2></td></tr>
 
 <p>A handy const iterator for iterating over an NTV2VideoFormatSet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08803">8803</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l08888">8888</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15358,7 +15358,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ae6fdf688025da1ce2015c459c8a4472ea63791520f9f3472afab31b7fd871e20f"></a>Hevc_ChangeSequence_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09499">9499</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09584">9584</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15385,7 +15385,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ac8344f9c1c0475cb92ca223333dbb933a8afd8e5d533ce350486b5f4956e77690"></a>Hevc_Command_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09516">9516</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09601">9601</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15407,7 +15407,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a7dd22bf2b4b643b8aa18ea9c784acd6baf07377fb26f92d9696982be7a1cfb221"></a>Hevc_DeviceMode_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09364">9364</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09449">9449</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15430,7 +15430,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a67e2bbd21e0763d7fe7cbc99362fd29dab7cda992cd1cbdc0e16c484ab819a271"></a>Hevc_EhState_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09452">9452</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09537">9537</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15452,7 +15452,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a302bb5786425409af9090c889219efc4a70ceb142e953d6adb9cc49e82f4025f2"></a>Hevc_EncodeMode_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09416">9416</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09501">9501</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15474,7 +15474,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a4f09342e56df0804b2035304d71e4bdbaa435077aadacfee62b5e9b4f19e194d4"></a>Hevc_FirmwareType_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09425">9425</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09510">9510</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15498,7 +15498,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ace7b7867b725e50a3473b450c98d0da9ace371c400e8330090be40d97f4e1b267"></a>Hevc_GpioControl_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09462">9462</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09547">9547</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15520,7 +15520,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a481ebd02b82459d54d9a76269556111daad595d2b507fa20fc435f3de42e3bdff"></a>Hevc_GpioDirection_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09482">9482</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09567">9567</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15542,7 +15542,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="af2140bc407797c891ba526c1dd1a4d2da9fb9b629fc40131e1cc96ca082c9cfe1"></a>Hevc_GpioFunction_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09473">9473</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09558">9558</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15564,7 +15564,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="abf3efd9e24b2d5d37e85fa966c1ff9d7a0c2f4a07e4cf97084666a83f7d0df3a6"></a>Hevc_GpioValue_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09491">9491</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09576">9576</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15588,7 +15588,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ac3a0fd8489e77e7cb3db0f1bfbb5b298a6764fdaad13ac897d42232f7d224e189"></a>Hevc_MainState_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09405">9405</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09490">9490</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15614,7 +15614,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ac8b4503291a571cc68f03916bb1d09aaa4293175ed5977a37386d06841a1f89df"></a>Hevc_MessageId_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09781">9781</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09866">9866</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15636,7 +15636,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a92c7df52ac1dd9660718cd6fd09383c9a39c04fb3047c3567b758ae86a81ab128"></a>Hevc_Stream_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09585">9585</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09670">9670</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15658,7 +15658,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="aee185e5cdf85a0ba8088630cfb093982afc415d41646f97de1de6f26b41a1e03a"></a>Hevc_VifState_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09434">9434</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09519">9519</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15680,7 +15680,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a8962b635a9e0e8aad6079ec4514f9f46a178890770168a06df8a939e471af329c"></a>Hevc_VinState_Size&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09443">9443</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09528">9528</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -16091,11 +16091,11 @@ Variables</h2></td></tr>
 
 <p>Describes the task mode state. See also: <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad0b318380537ba7609efe35b3dce27eaa802616d2c64dd99452fad9287be3341b"></a>NTV2_DISABLE_TASKS&#160;</td><td class="fielddoc"><p>0: Disabled: Device is completely configured by controlling application(s) &ndash; no driver involvement. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad0b318380537ba7609efe35b3dce27eaa802616d2c64dd99452fad9287be3341b"></a>NTV2_DISABLE_TASKS&#160;</td><td class="fielddoc"><p>0: Disabled (never recommended): device configured exclusively by client application(s). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad0b318380537ba7609efe35b3dce27eaab88c9c725762e874d5848c45bc85118d"></a>NTV2_STANDARD_TASKS&#160;</td><td class="fielddoc"><p>1: Standard/Retail: Device is completely controlled by AJA ControlPanel, service/daemon, and driver. </p>
+<tr><td class="fieldname"><a id="ad0b318380537ba7609efe35b3dce27eaab88c9c725762e874d5848c45bc85118d"></a>NTV2_STANDARD_TASKS&#160;</td><td class="fielddoc"><p>1: Standard/Retail: device configured by AJA ControlPanel, service/daemon, and driver. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e"></a>NTV2_OEM_TASKS&#160;</td><td class="fielddoc"><p>2: OEM: Device is configured by controlling application(s), with minimal driver involvement. </p>
+<tr><td class="fieldname"><a id="ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e"></a>NTV2_OEM_TASKS&#160;</td><td class="fielddoc"><p>2: OEM (recommended): device configured by client application(s) with some driver involvement. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad0b318380537ba7609efe35b3dce27eaa6aa763c89854c0083305171dd5acff3b"></a>NTV2_TASK_MODE_INVALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -19214,7 +19214,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A const_iterator that references the entry in the <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> collection, or "end()" if not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03451">3451</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03453">3453</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19241,7 +19241,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A set of unique register numbers contained in the <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> collection. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03442">3442</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03444">3444</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19279,7 +19279,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03427">3427</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03429">3429</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19344,7 +19344,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03351">3351</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03353">3353</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19382,7 +19382,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03372">3372</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03374">3374</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19837,7 +19837,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An NTV2AudioSystemSet having the specified contiguous range of NTV2AudioSystems. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03433">3433</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03435">3435</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19875,7 +19875,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An NTV2ChannelList having the specified contiguous range of channels. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03395">3395</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03397">3397</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19902,7 +19902,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An NTV2ChannelList having the same channels as contained in the specified set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03404">3404</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03406">3406</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19940,7 +19940,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An NTV2ChannelSet having the specified contiguous range of channels. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03378">3378</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03380">3380</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -19967,7 +19967,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An NTV2ChannelSet having the same channels as contained in the specified list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03387">3387</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03389">3389</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -20014,7 +20014,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-constant reference to the given output stream. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03412">3412</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03414">3414</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -21140,11 +21140,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Streams the given <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> to the specified ostream in a human-readable format. </p>
+<p>Streams the given <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> to the specified ostream in a human-readable format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">inOutStream</td><td>Specifies the ostream to use. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inObj</td><td>Specifies the <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This is returned by the CNTV2Card::AutoCirculateGetFrameStamp function, and is also embedded in the A...">FRAME_STAMP</a> to be streamed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inObj</td><td>Specifies the <a class="el" href="../../d9/d09/class_f_r_a_m_e___s_t_a_m_p.html" title="This class/object reports information about the current and/or requested AutoCirculate frame.">FRAME_STAMP</a> to be streamed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -21310,7 +21310,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ostream being used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09231">9231</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09316">9316</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -21396,7 +21396,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ostream being used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09271">9271</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09356">9356</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -21482,7 +21482,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ostream being used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09263">9263</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09348">9348</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -21530,7 +21530,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ostream being used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09215">9215</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09300">9300</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -21570,7 +21570,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-constant reference to the specified output stream. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03460">3460</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03462">3462</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -21732,7 +21732,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ostream being used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09247">9247</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09332">9332</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -21780,7 +21780,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ostream being used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09239">9239</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09324">9324</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -21866,7 +21866,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ostream being used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09223">9223</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l09308">9308</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -22232,7 +22232,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_a1e7971ee2787a8222fe6a5c9384fcca.html">includes</a></li><li class="navelem"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html">ntv2publicinterface.h</a></li>
-    <li class="footer">Generated on Fri Sep 27 2024 16:44:57 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Nov 7 2024 10:27:29 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

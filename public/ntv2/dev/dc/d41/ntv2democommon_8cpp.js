@@ -19,7 +19,6 @@ var ntv2democommon_8cpp =
     [ "String2VANCModeMapConstIter", "dc/d41/ntv2democommon_8cpp.html#a425a6fd39b9c222ac4e26daf7d060409", null ],
     [ "String2VideoFormatMMap", "dc/d41/ntv2democommon_8cpp.html#a6e871e17aacb45e17a15b7726825e451", null ],
     [ "String2VideoFormatMMapCI", "dc/d41/ntv2democommon_8cpp.html#ad974e89b569eb8c480f0dd85b6fd73e7", null ],
-    [ "DeviceFilterString", "dc/d41/ntv2democommon_8cpp.html#a821a56a4141c1ef781d339d98cd681c2", null ],
     [ "gGlobalMutexName", "dc/d41/ntv2democommon_8cpp.html#a1f2f2142422cbc78c8dfa07eacb0426f", null ],
     [ "operator<<", "dc/d41/ntv2democommon_8cpp.html#adeecf882a4405f8b7a4823b07fc09cd0", null ],
     [ "operator<<", "dc/d41/ntv2democommon_8cpp.html#ae199d15689513b0c843b9334ae01be93", null ],

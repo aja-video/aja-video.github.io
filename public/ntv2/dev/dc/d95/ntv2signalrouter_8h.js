@@ -2,6 +2,8 @@ var ntv2signalrouter_8h =
 [
     [ "CNTV2SignalRouter", "d7/dce/class_c_n_t_v2_signal_router.html", "d7/dce/class_c_n_t_v2_signal_router" ],
     [ "PrintCodeConfig", "dc/d0b/struct_c_n_t_v2_signal_router_1_1_print_code_config.html", "dc/d0b/struct_c_n_t_v2_signal_router_1_1_print_code_config" ],
+    [ "GetFrameBufferInputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#a52de40a044d9495d297dcb5427acb912", null ],
+    [ "GetFrameBufferOutputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#a7d71a7e5412063bb68ed21d0436e4487", null ],
     [ "NTV2ActualConnections", "dc/d95/ntv2signalrouter_8h.html#ad996b11eaa8cbb3cb9269611cc8c15f7", null ],
     [ "NTV2ActualConnectionsConstIter", "dc/d95/ntv2signalrouter_8h.html#a17dad91ec996cfe3d44e993559197cdc", null ],
     [ "NTV2Connection", "dc/d95/ntv2signalrouter_8h.html#a79ad16226341f47c2db0276c64289bb5", null ],
@@ -32,8 +34,8 @@ var ntv2signalrouter_8h =
     [ "GetDLInOutputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#aeaabe30a8559ed53869605dfb563e26b", null ],
     [ "GetDLOutInputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#a9d4db096744d964a4c554deb0a4a3bc1", null ],
     [ "GetDLOutOutputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#a8bb3dd7ba953645452e232b6aecd7659", null ],
-    [ "GetFrameBufferInputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#a7b6207ff37a6c379cd1cb91560359246", null ],
-    [ "GetFrameBufferOutputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#accac7e4c31f86d9172e05eb62fbba3a4", null ],
+    [ "GetFrameStoreInputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#a9e6a527e8c57d572dfe1c8b08dd0f191", null ],
+    [ "GetFrameStoreOutputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#a145a50b16d6d592d4c69c26af1158c3a", null ],
     [ "GetInputSourceOutputXpt", "dc/d95/ntv2signalrouter_8h.html#aab28b6ec5325337ed1a5e913beb6a190", null ],
     [ "GetLUTInputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#ab2bfd2c485c0b2008706b28e9df84ba4", null ],
     [ "GetLUTOutputXptFromChannel", "dc/d95/ntv2signalrouter_8h.html#af8e70c0f71fb9b6a3e3617cfdbcd0ff3", null ],
@@ -49,5 +51,6 @@ var ntv2signalrouter_8h =
     [ "operator<<", "dc/d95/ntv2signalrouter_8h.html#a35257a3da5b142bcc27472319f1637fd", null ],
     [ "operator<<", "dc/d95/ntv2signalrouter_8h.html#a3f302f758079bfe5f7802dffabc439b7", null ],
     [ "operator<<", "dc/d95/ntv2signalrouter_8h.html#a219cd4c52b939ca668c4415067b842a6", null ],
+    [ "operator<<", "dc/d95/ntv2signalrouter_8h.html#a570a48b6ed6cf0b66d5def831a5a938d", null ],
     [ "operator<<", "dc/d95/ntv2signalrouter_8h.html#ac18eb32bd12d32c78bfff8531978791a", null ]
 ];

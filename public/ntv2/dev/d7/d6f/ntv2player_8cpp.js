@@ -8,7 +8,6 @@ var ntv2player_8cpp =
     [ "BUFFER_PAGE_ALIGNED", "d7/d6f/ntv2player_8cpp.html#a1fb3557b40d80e25a83ef7012a846cf8", null ],
     [ "gAncMaxSizeBytes", "d7/d6f/ntv2player_8cpp.html#a40b73bbd7a169f4048319334cb450680", null ],
     [ "gAudMaxSizeBytes", "d7/d6f/ntv2player_8cpp.html#a2ff5ff448caf5c4d8c55f786da52153b", null ],
-    [ "GetRP188RegisterForOutput", "d7/d6f/ntv2player_8cpp.html#a6abddfa2d25f7ecb99b9ceb65fc9e4b9", null ],
     [ "gNumFrequencies", "d7/d6f/ntv2player_8cpp.html#aaca575b07221cd94c699f915852c9c30", null ],
     [ "sCurrentAncFileBytes", "d7/d6f/ntv2player_8cpp.html#a3ba23d019cfbd852e3a05bd2db64a2d7", null ],
     [ "sTotalAncFileBytes", "d7/d6f/ntv2player_8cpp.html#aaaa30cec90a90391dfba1f267b608ac3", null ],

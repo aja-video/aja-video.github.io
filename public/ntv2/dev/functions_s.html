@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1242</span>
+   &#160;<span id="projectnumber">17.5.0.1348</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1242</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
   </td>
  </tr>
  </tbody>
@@ -642,9 +642,6 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SetAudioOutputDelay()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a1f293ffa93ad0299a555a68956a5bdaa">CNTV2Card</a>
-</li>
-<li>SetAudioOutputEmbedderState()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#aba23f404d2607225abaab3ee02cf84da">CNTV2Card</a>
 </li>
 <li>SetAudioOutputEraseMode()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a7554d120505204b9e6f9e4adb3fb72a4">CNTV2Card</a>
@@ -1730,7 +1727,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SetRP188()
 : <a class="el" href="d1/d32/class_a_j_a_time_code.html#a46a5747b0e9f1b7e7aa8202534232afb">AJATimeCode</a>
-, <a class="el" href="d4/d28/class_c_r_p188.html#a7d08f78fac4745f48d8b0db2deb8491e">CRP188</a>
+, <a class="el" href="d4/d28/class_c_r_p188.html#a1e42cfbbe9da4ac6345fe75b66d4b37b">CRP188</a>
 </li>
 <li>SetRP188BypassSource()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a8ae468d85e903463544c1552fcff6d96">CNTV2Card</a>
@@ -1798,6 +1795,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SetSDIOutLevelAtoLevelBConversion()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a4878588207bf39f670f04a0109bac79d">CNTV2Card</a>
+</li>
+<li>SetSDIOutputAudioEnabled()
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a647ced0ec897fa930b17f88723ed4b21">CNTV2Card</a>
 </li>
 <li>SetSDIOutputAudioSystem()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a692c2f8b747962d58df9ed2dbc0a9074">CNTV2Card</a>
@@ -2231,10 +2231,10 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="dd/dbf/structhevc__gpio__state.html#a64b703a5d8093dd84b9336c88ae16212">hevc_gpio_state</a>
 </li>
 <li>SetVANCMode()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a387bbe94bc59ee560ae60ebec8d332b5">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#abbb0a91d16cddb3fc10a5d867f92e582">CNTV2Card</a>
 </li>
 <li>SetVANCShiftMode()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a7599cff630fc737368608cd795be2949">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ab83c2fd67d34a1944cac074f87609589">CNTV2Card</a>
 </li>
 <li>setVANCToLegalBlack()
 : <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#a68ad315580e40ccb51fd73fd15551708">NTV2TestPatternGen</a>
@@ -2258,7 +2258,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a1f62ffb8f41ca382f909cc05b2ec8997">CNTV2Card</a>
 </li>
 <li>SetVideoFormat()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ad8bd6d68469a9c5d61b77caae61be002">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16">CNTV2Card</a>
 </li>
 <li>SetVideoFormatForRxTx()
 : <a class="el" href="d5/da5/class_c_n_t_v2_config2110.html#adbdca5fdff69cd4d4990d183011a4f67">CNTV2Config2110</a>
@@ -2279,13 +2279,13 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="de/df6/class_a_j_a_ancillary_data___timecode___v_i_t_c.html#a4e9ca28309fb4b83683816bfff17c918">AJAAncillaryData_Timecode_VITC</a>
 </li>
 <li>SetVPID()
-: <a class="el" href="d6/d36/class_c_n_t_v2_v_p_i_d.html#acfd5169d97b9198977efb7900279f028">CNTV2VPID</a>
+: <a class="el" href="d6/d36/class_c_n_t_v2_v_p_i_d.html#a6c67690032b339718125ecfd7cc9e44e">CNTV2VPID</a>
 </li>
 <li>SetVPIDColorimetry()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a30b975c5bc79e337399e8dfab6e92616">CNTV2Card</a>
 </li>
 <li>SetVPIDData()
-: <a class="el" href="d6/d36/class_c_n_t_v2_v_p_i_d.html#a0490fe5bf47d7d511f0f74ec5d17150e">CNTV2VPID</a>
+: <a class="el" href="d6/d36/class_c_n_t_v2_v_p_i_d.html#a9a1c8833518d73c05d604f2a56fede01">CNTV2VPID</a>
 </li>
 <li>SetVPIDLuminance()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a5ff62f90b4587575d2454ce4113d49d3">CNTV2Card</a>
@@ -3037,7 +3037,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ab7016da569a2f30417a5f699a24aa6de">CNTV2Card</a>
 </li>
 <li>SubscribeOutputVerticalEvent()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ad24678dfaa1e5dc69114e178e67fa1da">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a476ba1ffccabf872d3cda6758b4cff6f">CNTV2Card</a>
 </li>
 <li>substreamid
 : <a class="el" href="df/de4/struct_n_t_v2_dolby_player_1_1_n_t_v2_dolby_b_s_i.html#add1b5d8edf47bf0a4337b8b00b532f82">NTV2DolbyPlayer::NTV2DolbyBSI</a>
@@ -3064,6 +3064,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>sum()
 : <a class="el" href="de/d80/class_a_j_a_moving_avg.html#a554b073abb3bca26b3dfc081be885951">AJAMovingAvg&lt; T &gt;</a>
 </li>
+<li>SupportedOutputXptsForInputXpt()
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ae2558687c95be453cfe5ea5806cc41a5">CNTV2Card</a>
+</li>
 <li>SupportsP2PTarget()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a3e2af10651149c62c51ea778bd1a2227">CNTV2Card</a>
 </li>
@@ -3089,7 +3092,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="dc/def/struct_n_t_v2___c_c708_c_d_p_service_info_section.html#a657ab2c75d1a4a4d344ffc962700c6f0">NTV2_CC708CDPServiceInfoSection</a>
 </li>
 <li>swap()
-: <a class="el" href="de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html#a0f841b2fe9cbb6a2ed8646a82b0ecab7">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
+: <a class="el" href="de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html#a41e6f51f56dddec6db9a26b6326d0ad7">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
 </li>
 <li>swapSourceAndDestination()
 : <a class="el" href="dd/d56/class_n_t_v2_segmented_xfer_info.html#ad92a7aa12b9957fb572690b55dd25fe4">NTV2SegmentedXferInfo</a>
@@ -3124,7 +3127,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 27 2024 16:45:13 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Nov 7 2024 10:27:36 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
