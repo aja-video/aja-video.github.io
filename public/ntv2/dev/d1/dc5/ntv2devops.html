@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1348</span>
+   &#160;<span id="projectnumber">17.5.0.1353</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1353</div>
   </td>
  </tr>
  </tbody>
@@ -1756,7 +1756,7 @@ Multi-Link Audio (32, 48, 64 Audio Channels)</h2>
 <hr  size="50px" />
  <h2><a class="anchor" id="audop-hidden"></a>
 “Hidden” Audio Systems</h2>
-<p>Modern AJA devices intended for “retail” markets, particularly newer <a class="el" href="../../d0/d53/ntv2devices.html#ntv2hwkona">Kona Boards</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ntv2hwio">Io (Thunderbolt) Devices</a>, may have firmware that implements additional “hidden” <b>Audio System</b>s that aren’t reported by the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a22e624db258df962f03a1796e55c5c2b">NTV2DeviceGetNumAudioSystems</a> function:</p><ul>
+<p>Modern AJA devices intended for “retail” markets, particularly newer <a class="el" href="../../d0/d53/ntv2devices.html#ntv2hwkona">KONA Boards</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ntv2hwio">Io (Thunderbolt) Devices</a>, may have firmware that implements additional “hidden” <b>Audio System</b>s that aren’t reported by the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a22e624db258df962f03a1796e55c5c2b">NTV2DeviceGetNumAudioSystems</a> function:</p><ul>
 <li>A <b>Host Audio System</b> for audio input/output to/from the host operating system (see <a class="el" href="../../dd/d86/ntv2devicefeatures_8cpp.html#a738bfb489c95e2de5d0b1a7b7b0cff8e">NTV2DeviceGetHostAudioSystem</a>);</li>
 <li>A “phantom” <b>Mixer Audio System</b> that uses only FIFOs (no audio buffer memory) in order to implement an <a class="el" href="../../d1/dc5/ntv2devops.html#audop-mixer">Audio Mixer</a> (see CNTV2Card::DeviceCanDoAudioMixer and <a class="el" href="../../dd/d86/ntv2devicefeatures_8cpp.html#a3314d50b3deab030752b0ad8613d3878">NTV2DeviceGetAudioMixerSystem</a>).</li>
 </ul>
@@ -1925,7 +1925,7 @@ Determining Firmware Version</h2>
 <p>Older AJA devices prior to the introduction of the <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> have no way of reporting their <b>currently-running firmware date</b> — they can only report the running firmware’s <em>revision number</em> (which was stored in a portion of register 48 and made available by the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad96e076b71c75d40838f708036c958f0" title="Reports the revision number of the currently-running firmware.">CNTV2Card::GetRunningFirmwareRevision</a> function. To correlate the revision number to a date, it must be looked up on the device’s firmware page on the <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/List/Index/25/ntv2-firmware">AJA SDK support site’s KnowledgeBase</a> (not very convenient).</p>
 <ul>
 <li>To determine if a device is capable of reporting its <b>currently-running firmware date</b>, call <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad99a064214045db13f7f6dfc1aa1cc3d">NTV2DeviceCanReportRunningFirmwareDate</a>.</li>
-<li>To determine the <b>currently-installed firmware</b> date, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8" title="Returns the size and time/date stamp of the device&#39;s currently-installed firmware.">CNTV2Card::GetInstalledBitfileInfo</a>.</li>
+<li>To determine the <b>currently-installed firmware</b> date, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8" title="Returns the bitfile size and time/date stamp from the header of the bitfile that&#39;s currently installe...">CNTV2Card::GetInstalledBitfileInfo</a>.</li>
 <li>To test if the fail-safe firmware is currently loaded, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a7a7c6e67da9848dde7856c6279636e37" title="Answers whether or not the &quot;fail-safe&quot; (aka &quot;safe-boot&quot;) bitfile is currently loaded and running in t...">CNTV2Card::IsFailSafeBitfileLoaded</a>.</li>
 </ul>
 <hr  size="50px" />
@@ -2021,7 +2021,7 @@ Fast Bitfile Switching</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Nov 7 2024 10:27:30 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Nov 8 2024 17:12:50 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

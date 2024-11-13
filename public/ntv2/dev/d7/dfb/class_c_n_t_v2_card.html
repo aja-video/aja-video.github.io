@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1348</span>
+   &#160;<span id="projectnumber">17.5.0.1353</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1353</div>
   </td>
  </tr>
  </tbody>
@@ -549,7 +549,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b0ea2edb07778e58a22ec56be094f15"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a6b0ea2edb07778e58a22ec56be094f15">GetPCIFPGAVersionString</a> (void)</td></tr>
 <tr class="separator:a6b0ea2edb07778e58a22ec56be094f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3543fcef1614c5178b663c62720675f8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8">GetInstalledBitfileInfo</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outNumBytes, std::string &amp;outDateStr, std::string &amp;outTimeStr)</td></tr>
-<tr class="memdesc:a3543fcef1614c5178b663c62720675f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size and time/date stamp of the device's currently-installed firmware.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8">More...</a><br /></td></tr>
+<tr class="memdesc:a3543fcef1614c5178b663c62720675f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bitfile size and time/date stamp from the header of the bitfile that's currently installed in device EEPROM.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8">More...</a><br /></td></tr>
 <tr class="separator:a3543fcef1614c5178b663c62720675f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92cf8425053833731fdd8be2b277171e"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a92cf8425053833731fdd8be2b277171e">GetBitfileInfoString</a> (const <a class="el" href="../../de/d75/struct_b_i_t_f_i_l_e___i_n_f_o___s_t_r_u_c_t.html">BITFILE_INFO_STRUCT</a> &amp;inBitFileInfo)</td></tr>
 <tr class="memdesc:a92cf8425053833731fdd8be2b277171e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates and returns an info string with date, time and name for the given inBifFileInfo.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a92cf8425053833731fdd8be2b277171e">More...</a><br /></td></tr>
@@ -2728,7 +2728,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a9819d0163e2a08f3f19b97d12916ef98a3398f2c7745608d97449f09a3917867f"></a>NUM_COLORS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06259">6259</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06276">6276</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -6471,7 +6471,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </dl>
 <dl class="section see"><dt>See also</dt><dd>CNTV2Card::GetAuxRegionOffsetAndSize, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture-dataspace">Auxiliary Data Space Limitations</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05842">5842</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05854">5854</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -9422,7 +9422,7 @@ This function will block and not return until the transfer has finished or faile
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Convenience method for accessing my <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html" title="I&#39;m the base class that undergirds the platform-specific derived classes (from which CNTV2Card is ult...">CNTV2DriverInterface</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06168">6168</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06180">6180</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -18129,7 +18129,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 </table>
 </div><div class="memdoc">
 
-<p>Returns the size and time/date stamp of the device's currently-installed firmware. </p>
+<p>Returns the bitfile size and time/date stamp from the header of the bitfile that's currently installed in device EEPROM. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">outNumBytes</td><td>Receives the size of the installed firmware image, in bytes. </td></tr>
@@ -18139,7 +18139,10 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function has nothing to do with the firmware bitfiles that are currently installed on the local host's file system. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It's possible that the date returned from this function is one calendar day past the date returned from <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a793ddcf534365ffcb567f762ac50ab09" title="Reports the (local Pacific) build date of the currently-running firmware.">CNTV2Card::GetRunningFirmwareDate</a>, which can happen when a firmware compile is started late on one day, and finishes the following day. </dd>
+<dd>
+This function has nothing to do with firmware bitfiles that may be installed on the local host's file system. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a793ddcf534365ffcb567f762ac50ab09" title="Reports the (local Pacific) build date of the currently-running firmware.">CNTV2Card::GetRunningFirmwareDate</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab44b66b34e37f6cad1fa582b0b9c8de3" title="Reports the (local Pacific) build time of the currently-running firmware.">CNTV2Card::GetRunningFirmwareTime</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00303">303</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -20838,7 +20841,7 @@ If the device is capable of reading analog LTC from its reference input connecto
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This date may differ from the build date of the installed firmware if, after erasing or reflashing, the device was never power-cycled to force its FPGA to reload. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab44b66b34e37f6cad1fa582b0b9c8de3" title="Reports the (local Pacific) build time of the currently-running firmware.">CNTV2Card::GetRunningFirmwareTime</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad96e076b71c75d40838f708036c958f0" title="Reports the revision number of the currently-running firmware.">CNTV2Card::GetRunningFirmwareRevision</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#devfw-section">Firmware</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab44b66b34e37f6cad1fa582b0b9c8de3" title="Reports the (local Pacific) build time of the currently-running firmware.">CNTV2Card::GetRunningFirmwareTime</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad96e076b71c75d40838f708036c958f0" title="Reports the revision number of the currently-running firmware.">CNTV2Card::GetRunningFirmwareRevision</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8" title="Returns the bitfile size and time/date stamp from the header of the bitfile that&#39;s currently installe...">CNTV2Card::GetInstalledBitfileInfo</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#devfw-section">Firmware</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02314">2314</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -20972,7 +20975,7 @@ If the device is capable of reading analog LTC from its reference input connecto
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This date may differ from the build date of the installed firmware if, after erasing or reflashing, the device was never power-cycled to force its FPGA to reload. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a793ddcf534365ffcb567f762ac50ab09" title="Reports the (local Pacific) build date of the currently-running firmware.">CNTV2Card::GetRunningFirmwareDate</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad96e076b71c75d40838f708036c958f0" title="Reports the revision number of the currently-running firmware.">CNTV2Card::GetRunningFirmwareRevision</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#devfw-section">Firmware</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a793ddcf534365ffcb567f762ac50ab09" title="Reports the (local Pacific) build date of the currently-running firmware.">CNTV2Card::GetRunningFirmwareDate</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad96e076b71c75d40838f708036c958f0" title="Reports the revision number of the currently-running firmware.">CNTV2Card::GetRunningFirmwareRevision</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8" title="Returns the bitfile size and time/date stamp from the header of the bitfile that&#39;s currently installe...">CNTV2Card::GetInstalledBitfileInfo</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#devfw-section">Firmware</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02343">2343</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -23671,7 +23674,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06549">6549</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06566">6566</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -24091,7 +24094,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06565">6565</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06582">6582</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -36442,6 +36445,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Queue a buffer to the stream. The bufferCookie is a user defined identifier of the buffer used by the stream methods. </p>
 <dl class="section return"><dt>Returns</dt><dd>The queued buffer status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36483,6 +36487,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Remove the oldest buffer released by the streaming engine from the buffer queue. </p>
 <dl class="section return"><dt>Returns</dt><dd>The removed buffer status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36530,6 +36535,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Get the status of the buffer identified by the bufferCookie. </p>
 <dl class="section return"><dt>Returns</dt><dd>The buffer status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36571,6 +36577,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Flush a stream. Remove all the buffers from the stream except a currently active idle buffer. The stream must be in the initialize or idle state. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36601,6 +36608,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 </div><div class="memdoc">
 
 <p>Initialize a stream. Put the stream queue and hardware in a known good state ready for use. Releases all buffers remaining in the queue. At least one new buffer must be queued before starting the stream. </p>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36631,6 +36639,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 </div><div class="memdoc">
 
 <p>Release a stream. Releases all buffers remaining in the queue. </p>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36672,6 +36681,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Start a stream. Put the stream is the active state to start processing queued buffers. For frame based video, the stream will start with the current buffer on the next frame sync. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36713,6 +36723,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Get the current stream status. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36754,6 +36765,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Stop a stream. Put the stream is the idle state. For frame based video, the stream will idle on the buffer on air after the next frame sync. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -36795,6 +36807,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Wait for any stream event. Returns for any state or buffer change. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -38522,7 +38535,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 
 <p>Used for default empty <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> parameters &ndash; do not modify. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06268">6268</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06285">6285</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -38552,7 +38565,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></li>
-    <li class="footer">Generated on Thu Nov 7 2024 10:27:33 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Nov 8 2024 17:12:55 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -80,7 +80,7 @@ var index =
     [ "NTV2 Devices", "d0/d53/ntv2devices.html", [
       [ "Corvid OEM Boards", "d0/d53/ntv2devices.html#ntv2hwcorvid", null ],
       [ "Io (Thunderbolt) Devices", "d0/d53/ntv2devices.html#ntv2hwio", null ],
-      [ "Kona Boards", "d0/d53/ntv2devices.html#ntv2hwkona", null ],
+      [ "KONA Boards", "d0/d53/ntv2devices.html#ntv2hwkona", null ],
       [ "Legacy Devices", "d0/d53/ntv2devices.html#ntv2hwlegacy", null ],
       [ "Breakout Boxes and Cables", "d0/d53/ntv2devices.html#ntv2hwaccessories", [
         [ "101884 Breakout Cable", "d0/d53/ntv2devices.html#aja101884", null ],
@@ -220,6 +220,8 @@ var index =
       [ "NTV2Player8K Demo", "d9/d07/demoapps.html#ntv2player8k", null ],
       [ "NTV2QtMultiInput Demo", "d9/d07/demoapps.html#ntv2qtmultiinput", null ],
       [ "NTV2QtPreview Demo", "d9/d07/demoapps.html#ntv2qtpreview", null ],
+      [ "NTV2QtStreamPreview Demo", "d9/d07/demoapps.html#ntv2qtstreampreview", null ],
+      [ "NTV2StreamPlayer Demo", "d9/d07/demoapps.html#ntv2streamplayer", null ],
       [ "NTV2SwitchBitfile Demo", "d9/d07/demoapps.html#ntv2switchbitfile", null ]
     ] ],
     [ "Data Formats", "d5/d32/dataformats.html", [
@@ -340,6 +342,10 @@ var index =
         [ "Latency Considerations", "d9/d9a/recordplaytechniques.html#autocirculatelowlatency", null ],
         [ "Monitoring AutoCirculate Activity with NTV2Watcher Tool", "d9/d9a/recordplaytechniques.html#autocirculatemon", null ],
         [ "AutoCirculate Diagnostic Messages", "d9/d9a/recordplaytechniques.html#autocirculatemsgs", null ]
+      ] ],
+      [ "Streaming DMA", "d9/d9a/recordplaytechniques.html#streamingdma", [
+        [ "Streaming DMA Capture", "d9/d9a/recordplaytechniques.html#streamingdmacapture", null ],
+        [ "Streaming DMA Playout", "d9/d9a/recordplaytechniques.html#streamingdmaplayout", null ]
       ] ]
     ] ],
     [ "Dual-Link and 3G Overview", "d5/d73/duallinkoverview.html", [

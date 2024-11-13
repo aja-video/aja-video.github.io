@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1348</span>
+   &#160;<span id="projectnumber">17.5.0.1353</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1348</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1353</div>
   </td>
  </tr>
  </tbody>
@@ -595,12 +595,34 @@ AutoCirculate Diagnostic Messages</h2>
 <li><b>Example: </b><code>Input Ch3 initialization failed</code></li>
 <li><b>Problem: </b><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest, designating a contiguous block of frame buffers on the ...">CNTV2Card::AutoCirculateInitForInput</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> failed for another reason.</li>
 <li><b>Solution: </b>Check the host computer’s kernel log for any failure messages originating in the AJA NTV2 kernel driver.<br  />
- &#160; </li>
-</ul>
 </li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<h1><a class="anchor" id="streamingdma"></a>
+Streaming DMA</h1>
+<p>Starting in SDK 17.0, a new API was added to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> class to support asynchronous DMA streaming on a non-real-time host operating system. Video is transferred by DMA in “slices” — small bands, or portions, of the video raster — directly to or from host memory from or to the device.</p>
+<p>The API functions are:</p><ul>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5aeba2e674cc10babd1ebeff2baa0ea7" title="Initialize a stream. Put the stream queue and hardware in a known good state ready for use....">CNTV2Card::StreamChannelInitialize</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aba3e7ac4ba5a90e9636f5e11bd59b4e0" title="Release a stream. Releases all buffers remaining in the queue.">CNTV2Card::StreamChannelRelease</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#adeef809b7948eb4bfeeba70d8e61d4ed" title="Start a stream. Put the stream is the active state to start processing queued buffers....">CNTV2Card::StreamChannelStart</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3cb56247831febcc134d7c675382bd0d" title="Stop a stream. Put the stream is the idle state. For frame based video, the stream will idle on the b...">CNTV2Card::StreamChannelStop</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3f99c25485f78951407a377f7e1fbe56" title="Flush a stream. Remove all the buffers from the stream except a currently active idle buffer....">CNTV2Card::StreamChannelFlush</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0d3c35c09cc3b3d9f0d96bb27bfdad1f" title="Get the current stream status.">CNTV2Card::StreamChannelStatus</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3f609310270252533eebba21c1772627" title="Wait for any stream event. Returns for any state or buffer change.">CNTV2Card::StreamChannelWait</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af6294def75ecda7ce1c00b7adc5eb95b" title="Queue a buffer to the stream. The bufferCookie is a user defined identifier of the buffer used by the...">CNTV2Card::StreamBufferQueue</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#acc2216e8c753635c4810216eff926425" title="Remove the oldest buffer released by the streaming engine from the buffer queue.">CNTV2Card::StreamBufferRelease</a></li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac3e67ba2166179440a679a50bd7019b5" title="Get the status of the buffer identified by the bufferCookie.">CNTV2Card::StreamBufferStatus</a></li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Streaming DMA is intended for use in applications that require extremely low (sub-frame) latency.</dd></dl>
+<h2><a class="anchor" id="streamingdmacapture"></a>
+Streaming DMA Capture</h2>
+<p>Here’s an example of how Streaming DMA works in capture mode:</p>
+<h2><a class="anchor" id="streamingdmaplayout"></a>
+Streaming DMA Playout</h2>
+<p>Here’s an example of how Streaming DMA works in playout mode: </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -622,7 +644,7 @@ AutoCirculate Diagnostic Messages</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Nov 7 2024 10:27:32 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Nov 8 2024 17:12:54 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
