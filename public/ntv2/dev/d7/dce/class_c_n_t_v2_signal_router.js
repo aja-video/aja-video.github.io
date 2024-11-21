@@ -9,6 +9,7 @@ var class_c_n_t_v2_signal_router =
     [ "Deinitialize", "d7/dce/class_c_n_t_v2_signal_router.html#a00481c284fb866aaf31d0619b0421a4d", null ],
     [ "GetAllRoutingRegInfos", "d7/dce/class_c_n_t_v2_signal_router.html#a6fcbbd7efd7ffc30c911e018c7dabf72", null ],
     [ "GetAllWidgetInputs", "d7/dce/class_c_n_t_v2_signal_router.html#af67390c50854d885ee4bce2449dc5272", null ],
+    [ "GetAllWidgetOutputs", "d7/dce/class_c_n_t_v2_signal_router.html#a240f7e19e9c63010bd22a32e9ada1406", null ],
     [ "GetConnectedOutput", "d7/dce/class_c_n_t_v2_signal_router.html#a820f70b56051f140cee84ab5973ac593", null ],
     [ "GetConnections", "d7/dce/class_c_n_t_v2_signal_router.html#a889415630d24318973ccd3ec3c41e44d", null ],
     [ "GetConnectionsFromRegs", "d7/dce/class_c_n_t_v2_signal_router.html#a9a5dfb5673e1d9ee5e730f9153660071", null ],

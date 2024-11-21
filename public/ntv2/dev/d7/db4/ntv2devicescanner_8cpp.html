@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1353</span>
+   &#160;<span id="projectnumber">17.5.0.1387</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1353</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1387</div>
   </td>
  </tr>
  </tbody>
@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('d7/db4/ntv2devicescanner_8cpp.html','.
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -101,6 +102,10 @@ $(document).ready(function(){initNavTree('d7/db4/ntv2devicescanner_8cpp.html','.
 <code>#include &quot;<a class="el" href="../../dc/d54/common_8h_source.html">ajabase/common/common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d42/lock_8h_source.html">ajabase/system/lock.h</a>&quot;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d21/info_8h_source.html">ajabase/system/info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/db8/json_8hpp_source.html">ajabase/common/json.hpp</a>&quot;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db8/file__io_8h_source.html">ajabase/system/file_io.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ntv2devicescanner.cpp:</div>
 <div class="dyncontent">
@@ -110,6 +115,11 @@ Include dependency graph for ntv2devicescanner.cpp:</div>
 </div>
 <p><a href="../../d7/db4/ntv2devicescanner_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ab701e3ac61a85b337ec5c1abaad6742d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db4/ntv2devicescanner_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> = <a class="el" href="../../d4/dc9/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cb0d1ccbac8be171d6db87ace987efc48.html#ae837337641648d4e4381e253dafac500">nlohmann::json</a></td></tr>
+<tr class="separator:ab701e3ac61a85b337ec5c1abaad6742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af4e88207514bf788dd24bd62d5a55fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d6a/ntv2devicescanner_8h.html#aac4bdbad01a2eab48c544830dd930df5">NTV2DeviceInfoList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db4/ntv2devicescanner_8cpp.html#af4e88207514bf788dd24bd62d5a55fa2">GetDeviceInfoList</a> (void)</td></tr>
@@ -144,7 +154,24 @@ Variables</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>(C) 2004-2022 AJA Video Systems, Inc. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab701e3ac61a85b337ec5c1abaad6742d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab701e3ac61a85b337ec5c1abaad6742d">&#9670;&nbsp;</a></span>json</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> =  <a class="el" href="../../d4/dc9/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cb0d1ccbac8be171d6db87ace987efc48.html#ae837337641648d4e4381e253dafac500">nlohmann::json</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="af4e88207514bf788dd24bd62d5a55fa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4e88207514bf788dd24bd62d5a55fa2">&#9670;&nbsp;</a></span>GetDeviceInfoList()</h2>
 
@@ -161,7 +188,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -191,7 +218,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00674">674</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00591">591</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +248,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00649">649</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00566">566</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,7 +278,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00753">753</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00670">670</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +308,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00640">640</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00557">557</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -311,7 +338,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00658">658</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00575">575</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -341,7 +368,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00683">683</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00600">600</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -371,7 +398,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00472">472</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00389">389</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +438,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The output stream. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00771">771</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00688">688</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +463,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -460,7 +487,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -470,7 +497,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_d66cab0a9fa222c6d93e473efea2c462.html">src</a></li><li class="navelem"><a class="el" href="../../d7/db4/ntv2devicescanner_8cpp.html">ntv2devicescanner.cpp</a></li>
-    <li class="footer">Generated on Fri Nov 8 2024 17:12:49 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 20 2024 16:59:39 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

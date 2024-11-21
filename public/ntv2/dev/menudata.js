@@ -309,6 +309,7 @@ var menudata={children:[
 {text:"f",url:"globals_type_f.html#index_f"},
 {text:"h",url:"globals_type_h.html#index_h"},
 {text:"i",url:"globals_type_i.html#index_i"},
+{text:"j",url:"globals_type_j.html#index_j"},
 {text:"l",url:"globals_type_l.html#index_l"},
 {text:"m",url:"globals_type_m.html#index_m"},
 {text:"n",url:"globals_type_n.html#index_n"},

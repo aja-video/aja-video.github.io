@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1353</span>
+   &#160;<span id="projectnumber">17.5.0.1387</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1353</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1387</div>
   </td>
  </tr>
  </tbody>
@@ -603,26 +603,44 @@ AutoCirculate Diagnostic Messages</h2>
 </ul>
 <h1><a class="anchor" id="streamingdma"></a>
 Streaming DMA</h1>
-<p>Starting in SDK 17.0, a new API was added to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> class to support asynchronous DMA streaming on a non-real-time host operating system. Video is transferred by DMA in “slices” — small bands, or portions, of the video raster — directly to or from host memory from or to the device.</p>
-<p>The API functions are:</p><ul>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5aeba2e674cc10babd1ebeff2baa0ea7" title="Initialize a stream. Put the stream queue and hardware in a known good state ready for use....">CNTV2Card::StreamChannelInitialize</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aba3e7ac4ba5a90e9636f5e11bd59b4e0" title="Release a stream. Releases all buffers remaining in the queue.">CNTV2Card::StreamChannelRelease</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#adeef809b7948eb4bfeeba70d8e61d4ed" title="Start a stream. Put the stream is the active state to start processing queued buffers....">CNTV2Card::StreamChannelStart</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3cb56247831febcc134d7c675382bd0d" title="Stop a stream. Put the stream is the idle state. For frame based video, the stream will idle on the b...">CNTV2Card::StreamChannelStop</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3f99c25485f78951407a377f7e1fbe56" title="Flush a stream. Remove all the buffers from the stream except a currently active idle buffer....">CNTV2Card::StreamChannelFlush</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0d3c35c09cc3b3d9f0d96bb27bfdad1f" title="Get the current stream status.">CNTV2Card::StreamChannelStatus</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3f609310270252533eebba21c1772627" title="Wait for any stream event. Returns for any state or buffer change.">CNTV2Card::StreamChannelWait</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af6294def75ecda7ce1c00b7adc5eb95b" title="Queue a buffer to the stream. The bufferCookie is a user defined identifier of the buffer used by the...">CNTV2Card::StreamBufferQueue</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#acc2216e8c753635c4810216eff926425" title="Remove the oldest buffer released by the streaming engine from the buffer queue.">CNTV2Card::StreamBufferRelease</a></li>
-<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac3e67ba2166179440a679a50bd7019b5" title="Get the status of the buffer identified by the bufferCookie.">CNTV2Card::StreamBufferStatus</a></li>
+<p>Starting in SDK 17.0, a new API and <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> firmware was introduced to support asynchronous DMA streaming.</p>
+<p>Unlike traditional block-mode DMA that transfers full-frame video between device SDRAM and host memory at full PCIe speeds, streaming DMA transfers video “slices” — small bands, or portions, of the video raster — directly to/from host memory at the video pixel rate.</p>
+<p>The new API functions are:</p><ul>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5aeba2e674cc10babd1ebeff2baa0ea7" title="Initialize a stream. Put the stream queue and hardware in a known good state ready for use....">CNTV2Card::StreamChannelInitialize</a> — Initializes a stream (by initializing the FrameStore’s streaming DMA engine).</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aba3e7ac4ba5a90e9636f5e11bd59b4e0" title="Release a stream. Releases all buffers remaining in the queue.">CNTV2Card::StreamChannelRelease</a> — Releases all buffers remaining in a stream’s buffer queue.</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#adeef809b7948eb4bfeeba70d8e61d4ed" title="Start a stream. Put the stream is the active state to start processing queued buffers....">CNTV2Card::StreamChannelStart</a> — Starts a stream.</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3cb56247831febcc134d7c675382bd0d" title="Stop a stream. Put the stream is the idle state. For frame based video, the stream will idle on the b...">CNTV2Card::StreamChannelStop</a> — Stops a stream.</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3f99c25485f78951407a377f7e1fbe56" title="Flush a stream. Remove all the buffers from the stream except a currently active idle buffer....">CNTV2Card::StreamChannelFlush</a> — Flushes the stream, removing all buffers (except the currently active idle buffer).</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0d3c35c09cc3b3d9f0d96bb27bfdad1f" title="Get the current stream status.">CNTV2Card::StreamChannelStatus</a> — Gets current status information about a stream.</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3f609310270252533eebba21c1772627" title="Wait for any stream event. Returns for any state or buffer change.">CNTV2Card::StreamChannelWait</a> — Waits for a change in a stream.</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af6294def75ecda7ce1c00b7adc5eb95b" title="Queue a buffer to the stream. The bufferCookie is a user defined identifier of the buffer used by the...">CNTV2Card::StreamBufferQueue</a> — Adds a buffer to a stream’s buffer queue.</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#acc2216e8c753635c4810216eff926425" title="Remove the oldest buffer released by the streaming engine from the buffer queue.">CNTV2Card::StreamBufferRelease</a> — Removes the oldest buffer released by the streaming DMA engine from the stream’s buffer queue.</li>
+<li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac3e67ba2166179440a679a50bd7019b5" title="Get the status of the buffer identified by the bufferCookie.">CNTV2Card::StreamBufferStatus</a> — Gets the status of a buffer.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>Streaming DMA is intended for use in applications that require extremely low (sub-frame) latency.</dd></dl>
-<h2><a class="anchor" id="streamingdmacapture"></a>
-Streaming DMA Capture</h2>
-<p>Here’s an example of how Streaming DMA works in capture mode:</p>
-<h2><a class="anchor" id="streamingdmaplayout"></a>
-Streaming DMA Playout</h2>
-<p>Here’s an example of how Streaming DMA works in playout mode: </p>
+<p>Streaming DMA is ideal for use in applications that require very low (sub-frame) latency.</p>
+<h2><a class="anchor" id="strmcapture"></a>
+Streaming Capture</h2>
+<p>Unlike block-mode DMA transfers, streaming mode captures directly into host memory: </p><div class="image">
+<img src="../../strm-capture.png" alt=""/>
+</div>
+<ul>
+<li>Streaming DMA captures video directly into host memory from the device crosspoint via the FrameStore.</li>
+<li>Streaming DMA “pushes” raster data continuously into host memory at the video pixel rate.</li>
+<li>Host buffers delivered to the streaming API functions are queued and used when the buffer is required by the streaming DMA engine.</li>
+<li>When a buffer has been filled, the driver releases it back to the application so it can be used … then requeued to be re-filled again.</li>
+</ul>
+<h2><a class="anchor" id="strmplayback"></a>
+Streaming Playback</h2>
+<p>Unlike block-mode DMA transfers, streaming mode plays directly from host memory: </p><div class="image">
+<img src="../../strm-playback.png" alt=""/>
+</div>
+<ul>
+<li>Streaming DMA plays video directly from host memory into the device crosspoint via the FrameStore.</li>
+<li>Streaming DMA “pulls” raster data continuously from host memory at the video pixel rate.</li>
+<li>Host buffers are queued to the driver to be used for transfers as the playback proceeds, and the application is notified when the buffers are released.</li>
+<li>Streaming playback requires several buffers to be queued before playback can be started.</li>
+<li>When a buffer’s contents have been transmitted out the FrameStore, the driver releases the buffer back to the application so it can be re-filled … then requeued so its contents can be transmitted. </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -644,7 +662,7 @@ Streaming DMA Playout</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Nov 8 2024 17:12:54 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 20 2024 16:59:42 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

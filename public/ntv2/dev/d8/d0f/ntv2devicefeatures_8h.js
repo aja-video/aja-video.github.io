@@ -80,6 +80,7 @@ var ntv2devicefeatures_8h =
       [ "kDeviceIs64Bit", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba11991544b59e5e3d37a169fc09454a92", null ],
       [ "kDeviceIsDirectAddressable", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba0a45e575764ebe883ce0e110b3bf051d", null ],
       [ "kDeviceIsExternalToHost", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6baca7983addcf5e6d80a8260cfc31cd439", null ],
+      [ "kDeviceIsLocalPhysical", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6bace84ccccba05a6e5cfe9bad52405983e", null ],
       [ "kDeviceIsSupported", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6baf83011a0acb65e954d5257ded0a695e0", null ],
       [ "kDeviceNeedsRoutingSetup", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba9dfce0f69e3880445137bedc929c72e6", null ],
       [ "kDeviceSoftwareCanChangeFrameBufferSize", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba3ec9eed1d4a56ea1b5247ef8361ecc38", null ],
@@ -130,6 +131,7 @@ var ntv2devicefeatures_8h =
       [ "kDeviceCanDoStreamingDMA", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2784a217fb867596d9197cfb484164ef", null ],
       [ "kDeviceHasPWMFanControl", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba437d5f02262a967ad77e94b41363718c", null ],
       [ "kDeviceROMHasBankSelect", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6bac4c19bec3b0e1bcfb69d0e5921dc1b32", null ],
+      [ "kDeviceCanDoVersalSysMon", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba8dfb2d538030397ef3118ec9afae60e6", null ],
       [ "kNTV2BoolParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2953652108268e32c4d15eb0ddff77ab", null ],
       [ "kNTV2BoolParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba9ad50404c9c94edea0ba22a5b10b9a95", null ],
       [ "kDeviceCanDo_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba52a2168d75951d111daab3580e181500", null ]

@@ -114,7 +114,7 @@ var index =
         [ "KONA IP", "d0/d53/ntv2devices.html#konaip", null ],
         [ "KONA LHe Plus", "d0/d53/ntv2devices.html#konalheplus", null ],
         [ "KONA LHi", "d0/d53/ntv2devices.html#konalhi", null ],
-        [ "KONA X", "d0/d53/ntv2devices.html#konax", null ],
+        [ "KONA X™", "d0/d53/ntv2devices.html#konax", null ],
         [ "KONA XM™", "d0/d53/ntv2devices.html#konaxm", null ],
         [ "KONA XPAND™ Breakout Board", "d0/d53/ntv2devices.html#konaxpand", null ],
         [ "T-Tap", "d0/d53/ntv2devices.html#ttap", null ],
@@ -344,8 +344,8 @@ var index =
         [ "AutoCirculate Diagnostic Messages", "d9/d9a/recordplaytechniques.html#autocirculatemsgs", null ]
       ] ],
       [ "Streaming DMA", "d9/d9a/recordplaytechniques.html#streamingdma", [
-        [ "Streaming DMA Capture", "d9/d9a/recordplaytechniques.html#streamingdmacapture", null ],
-        [ "Streaming DMA Playout", "d9/d9a/recordplaytechniques.html#streamingdmaplayout", null ]
+        [ "Streaming Capture", "d9/d9a/recordplaytechniques.html#strmcapture", null ],
+        [ "Streaming Playback", "d9/d9a/recordplaytechniques.html#strmplayback", null ]
       ] ]
     ] ],
     [ "Dual-Link and 3G Overview", "d5/d73/duallinkoverview.html", [

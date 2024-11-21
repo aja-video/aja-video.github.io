@@ -6,7 +6,6 @@ var class_n_t_v2_device_spec_parser =
     [ "DeviceModel", "d3/d9a/class_n_t_v2_device_spec_parser.html#a2ee49eaddfe98ef790486b84c1c77c23", null ],
     [ "DeviceSerial", "d3/d9a/class_n_t_v2_device_spec_parser.html#a42da54916cab70f16c6ef0b4f200765e", null ],
     [ "InfoString", "d3/d9a/class_n_t_v2_device_spec_parser.html#afa2aff738a95e3ed0c05818f389c84a0", null ],
-    [ "IsSupportedScheme", "d3/d9a/class_n_t_v2_device_spec_parser.html#a5461754e51260f90f82949748016ad12", null ],
     [ "Print", "d3/d9a/class_n_t_v2_device_spec_parser.html#aff1aa75fbcc467efba2edaef75f24298", null ],
     [ "PrintErrors", "d3/d9a/class_n_t_v2_device_spec_parser.html#a5259418edecf70840a93936c21dc2ad5", null ],
     [ "Reset", "d3/d9a/class_n_t_v2_device_spec_parser.html#ab24b1ad6492cad3cd35ebbc6821546fd", null ],

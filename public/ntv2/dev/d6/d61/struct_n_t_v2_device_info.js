@@ -25,6 +25,7 @@ var struct_n_t_v2_device_info =
     [ "hdvSupport", "d6/d61/struct_n_t_v2_device_info.html#ad5665b5eea77a4e8583a9e74995977bf", null ],
     [ "ipSupport", "d6/d61/struct_n_t_v2_device_info.html#a1fb88d7439ae7991949c6238910ac6cc", null ],
     [ "isoConvertSupport", "d6/d61/struct_n_t_v2_device_info.html#a193163e1ea7c669f90e539ab23292492", null ],
+    [ "isVirtualDevice", "d6/d61/struct_n_t_v2_device_info.html#a7104858bb59ddbeeebb6eb3d028f67a3", null ],
     [ "ltcInOnRefPort", "d6/d61/struct_n_t_v2_device_info.html#a0ee5eb06cbd692269e53112004ab1e3f", null ],
     [ "ltcInSupport", "d6/d61/struct_n_t_v2_device_info.html#a7fd9941b41f50738aeb27fb62a9793de", null ],
     [ "ltcOutSupport", "d6/d61/struct_n_t_v2_device_info.html#ae115f1e59ff58a903c98e212d453b465", null ],
@@ -64,5 +65,6 @@ var struct_n_t_v2_device_info =
     [ "serialNumber", "d6/d61/struct_n_t_v2_device_info.html#a4c5ae1927fc592f4fa5e46ae64574a27", null ],
     [ "stereoInSupport", "d6/d61/struct_n_t_v2_device_info.html#a1ceaa525da730eb15b3cec880c80541c", null ],
     [ "stereoOutSupport", "d6/d61/struct_n_t_v2_device_info.html#acc3b1e3a226131f0aac9d725e036af3a", null ],
+    [ "vdevUrl", "d6/d61/struct_n_t_v2_device_info.html#a659151df9b2d96c362e7f847ea05fc12", null ],
     [ "vidProcSupport", "d6/d61/struct_n_t_v2_device_info.html#acec6f6025e349dfc5c45423565c7f066", null ]
 ];

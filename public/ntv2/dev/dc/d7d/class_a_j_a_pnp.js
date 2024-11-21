@@ -6,5 +6,6 @@ var class_a_j_a_pnp =
     [ "GetPnpDevices", "dc/d7d/class_a_j_a_pnp.html#a12a14c448ce41d3de2ef98967b17c67b", null ],
     [ "GetRefCon", "dc/d7d/class_a_j_a_pnp.html#ac97db22729444f20e4a352ada0af6385", null ],
     [ "Install", "dc/d7d/class_a_j_a_pnp.html#a279997bb6fc943e59e83b4730f7f3a02", null ],
+    [ "MessageToString", "dc/d7d/class_a_j_a_pnp.html#a6868b76605a5dc469d22ec34ce5577ba", null ],
     [ "Uninstall", "dc/d7d/class_a_j_a_pnp.html#a5beaa08ec9a9706e8842e9362b48857d", null ]
 ];
