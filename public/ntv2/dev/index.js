@@ -129,6 +129,7 @@ var index =
           [ "How to Post Messages", "db/d02/toolsandutilities.html#loggercustom", null ]
         ] ]
       ] ],
+      [ "‘ntv2firmwareinstaller’ Command-Line Utility", "db/d02/toolsandutilities.html#usingfwinstaller", null ],
       [ "“HEVC Monitor”", "db/d02/toolsandutilities.html#hevcmon-about", [
         [ "Control Tab", "db/d02/toolsandutilities.html#hevcmon-tab-control", null ],
         [ "Stream Tab", "db/d02/toolsandutilities.html#hevcmon-tab-stream", null ],

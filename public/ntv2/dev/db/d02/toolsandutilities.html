@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1387</span>
+   &#160;<span id="projectnumber">17.5.0.1392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1387</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1392</div>
   </td>
  </tr>
  </tbody>
@@ -93,22 +93,22 @@ $(document).ready(function(){initNavTree('db/d02/toolsandutilities.html','../../
 <p>The SDK includes a number of tools and utilities that help diagnose issues involving the SDK and AJA devices.</p>
 <p>These all operate the same on all three supported platforms (Linux, MacOS and Windows) and live in the top-level <b>bin</b> folder.</p>
 <ul>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> &ndash; A handy debugging utility that shows the inner workings of NTV2 devices.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> — A handy debugging utility that shows the inner workings of NTV2 devices.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usingajalogger">“AJA Logger”</a> —&#160;A handy viewer for displaying and/or recording messages from the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#usingsystemtest">“AJA System Test”</a> &ndash; Measures the DMA performance of any AJA device attached to the host, as well as the read/write performance of local host storage.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingsystemtest">“AJA System Test”</a> — Measures the DMA performance of any AJA device attached to the host, as well as the read/write performance of local host storage.</li>
 <li><b>Data Rate Calculator</b> calculates DMA performance requirements for various video and pixel formats. It's now universally available for mobile devices:<ul>
 <li><a href="https://itunes.apple.com/us/app/aja-datacalc/id343454572?mt=8">iOS</a></li>
 <li><a href="https://play.google.com/store/apps/details?id=com.aja.datacalc">Android</a></li>
 </ul>
 </li>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> &ndash; Sometimes when diagnosing an issue, AJA’s OEM SDK support staff may request a “register dump” or “register log”. This log file can be generated using <a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> or <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a>. See the Knowledgebase article <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/Article/View/168">How to Generate a ‘Support Log’</a> for more information.</li>
-<li><b>ntv2firmwareinstaller</b> &ndash; A command-line tool used to “flash” new firmware into a connected AJA device. See the Knowledgebase article <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/Article/View/129">NTV2 Firmware Installer Command-Line Utility</a> for details. This tool is included because AJA developers or their customers need to be able to program new firmware on an AJA device, and may not need or have access to the AJA retail services, including the <b>AJA ControlPanel</b>, which is commonly used to perform this task. <dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> requires a somewhat different procedure for checking and updating its firmware. See <a class="el" href="../../d4/d36/hevcsupplement.html">The Corvid HEVC Supplement</a> for more information.</dd></dl>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> — Sometimes when diagnosing an issue, AJA’s OEM SDK support staff may request a “register dump” or “register log”. This log file can be generated using <a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> or <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a>. See the Knowledgebase article at our SDK Support site <a href="https://sdksupport.aja.com/">https://sdksupport.aja.com/</a> for more information.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> — A command-line tool used to “flash” new firmware into a connected AJA device. This tool is included because AJA developers or their customers need to be able to program new firmware on an AJA device, and may not need or have access to the AJA retail services, including the <b>AJA ControlPanel</b>, which is commonly used to perform this task. <dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> requires a somewhat different procedure for checking and updating its firmware. See <a class="el" href="../../d4/d36/hevcsupplement.html">The Corvid HEVC Supplement</a> for more information.</dd></dl>
 </li>
-<li><b>ntv2konaipj2ksetup</b> &ndash; A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
-<li><b>ntv2konaipjsonsetup</b> &ndash; A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
+<li><b>ntv2konaipj2ksetup</b> — A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
+<li><b>ntv2konaipjsonsetup</b> — A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usinglogreader">‘logreader’ Command-Line Utility</a> —&#160;A command-line tool that prints messages from the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usinglogjammer">‘logjammer’ Command-Line Utility</a> —&#160;A command-line tool that generates messages for the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#ntv2thermo">‘ntv2thermo’ Command-Line Utility</a> &ndash; Interrogates and/or controls temperature-related parameters of connected AJA devices.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#ntv2thermo">‘ntv2thermo’ Command-Line Utility</a> — Interrogates and/or controls temperature-related parameters of connected AJA devices.</li>
 </ul>
 <hr  size="50px" />
 <h1><a class="anchor" id="ntv2thermo"></a>
@@ -346,6 +346,72 @@ How to Post Messages</h2>
 <li>Call <a class="el" href="../../db/d56/class_a_j_a_debug.html#a1516564a30573c6a32c8699fc204bbf0">AJADebug::Report</a> to log a message …&#160;or use one of the <a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaabd7cfd000c8d08a32ed1f77eeeb1e6f">AJA_sDEBUG</a>, <a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga1975f7e93899a83cd85bcfe370247bfd">AJA_sINFO</a>, <a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ab8824e0e1e09c8996e3a39cda877">AJA_sNOTICE</a>, etc. macros.</li>
 </ol>
 <hr  size="50px" />
+<h1><a class="anchor" id="usingfwinstaller"></a>
+‘ntv2firmwareinstaller’ Command-Line Utility</h1>
+<dl class="section user"><dt>Description</dt><dd></dd></dl>
+<p>A command-line tool that can install firmware on AJA NTV2 devices.</p>
+<dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
+<div class="fragment"><div class="line">    ntv2firmwareinstaller [OPTION...]  [PATH...]</div>
+<div class="line">      --version                             Shows version &amp; exit</div>
+<div class="line">  -d, --device=index#, serial#, or model    Specifies device to flash</div>
+<div class="line">  -l, --license=license                     Installs firmware license</div>
+<div class="line">  -p, --progress                            Shows installation progress</div>
+<div class="line">  -q, --quiet                               Suppresses status messages</div>
+<div class="line">  -w, --wait                                Require Enter press when done?</div>
+<div class="line">  -i, --info                                Shows bitfile info &amp; exits</div>
+<div class="line"> </div>
+<div class="line">Help options:</div>
+<div class="line">  -?, --help                                Show this help message</div>
+<div class="line">      --usage                               Display brief usage message</div>
+</div><!-- fragment --><dl class="section user"><dt>Determining Installed Firmware</dt><dd></dd></dl>
+<p>To simply display the installed and currently-running firmware, use the <code>&ndash;info</code> parameter.</p>
+<p>In this example on Windows, a Corvid 44 has flashed with newer firmware, but hasn’t yet been power-cycled to load it: </p><div class="fragment"><div class="line">C:&gt; path\to\ntv2firmwareinstaller  -dcorvid44  --info</div>
+<div class="line">  Running FW Rev: 0x2c(44)</div>
+<div class="line"> Running Bitfile: 2024/04/19 11:43:43</div>
+<div class="line">    Main Bitfile: &#39;corvid_44&#39; 2024/09/27 16:17:49  &lt;== NOT CURRENTLY RUNNING -- NEEDS POWER-CYCLE TO TAKE EFFECT</div>
+<div class="line">Failsafe Bitfile: &#39;corvid_44&#39; 2014/08/22 16:59:18</div>
+<div class="line">   Serial Number: &#39;00123456&#39;</div>
+</div><!-- fragment --><dl class="section user"><dt>Obtaining Bitfile Information</dt><dd></dd></dl>
+<p>The <code>&ndash;info</code> parameter can also report information about bitfiles stored on the local host file system.</p>
+<p>This example on a Unix-type host with a KONA X installed displays information about the bitfiles whose names start with “konal”: </p><div class="fragment"><div class="line">$ path/to/ntv2firmwareinstaller  --info /opt/aja/firmware/konal*.bit</div>
+<div class="line">2 bitfile paths specified:</div>
+<div class="line">Bitfile Path                       Device      Date       Time      Design            </div>
+<div class="line">---------------------------------  ----------- ---------- --------  ------------------</div>
+<div class="line">/opt/aja/firmware/konalheplus.bit  KonaLHe+    2018/06/27 12:39:26  lhe_12_pcie</div>
+<div class="line">/opt/aja/firmware/konalhi.bit      KonaLHi     2012/05/21 15:25:30  top_pike</div>
+<div class="line">  Running FW Rev: 0x00(0)</div>
+<div class="line"> Running Bitfile: 2024/03/22 13:53:08</div>
+<div class="line">    Main Bitfile: &#39;konax&#39; 2024/03/22 15:55:36</div>
+<div class="line">Failsafe Bitfile: &#39;konax&#39; 2023/05/26 08:27:26</div>
+<div class="line">   Serial Number: &#39;10421748&#39;</div>
+</div><!-- fragment --><dl class="section user"><dt>Installing Firmware</dt><dd></dd></dl>
+<p>This example on a macOS computer re-installs the T-Tap Pro firmware: </p><div class="fragment"><div class="line">% path/to/ntv2firmwareinstaller  -dttappro  --progress  &quot;/Library/Application Support/AJA/Firmware/ttappro.bit&quot;</div>
+<div class="line">  Running FW Rev: 0x04(4)</div>
+<div class="line"> Running Bitfile: 2021/08/11 10:38:22</div>
+<div class="line">    Main Bitfile: &#39;t_tap_pro&#39; 2021/08/11 12:00:14</div>
+<div class="line">Failsafe Bitfile: &#39;t_tap_pro&#39; 2020/07/14 11:42:00</div>
+<div class="line">   Serial Number: &#39;02092022&#39;</div>
+<div class="line">Installing firmware...</div>
+<div class="line">## NOTE:  CNTV2FirmwareInstallerThread:  Firmware update started</div>
+<div class="line">    bitfile: /Library/Application Support/AJA/Firmware/ttappro.bit</div>
+<div class="line">     device: TTapPro &#39;02092022&#39; on &#39;localhost&#39; at index 0, S/N 02092022</div>
+<div class="line">   firmware: /Library/Application Support/AJA/Firmware/ttappro.bit - 2021/08/11 12:00:14</div>
+<div class="line">Erase status: 100%                  </div>
+<div class="line">Program status: 100%                       </div>
+<div class="line">Program verify: 100%                         </div>
+<div class="line">## NOTE:  CNTV2FirmwareInstallerThread:  Firmware update completed</div>
+<div class="line">    bitfile: /Library/Application Support/AJA/Firmware/ttappro.bit</div>
+<div class="line">     device: TTapPro &#39;02092022&#39; on &#39;localhost&#39; at index 0, S/N 02092022</div>
+<div class="line">   firmware: /Library/Application Support/AJA/Firmware/ttappro.bit - 2021/08/11 12:00:14</div>
+<div class="line">Verifying...          </div>
+<div class="line">  Running FW Rev: 0x04(4)</div>
+<div class="line"> Running Bitfile: 2021/08/11 10:38:22</div>
+<div class="line">    Main Bitfile: &#39;t_tap_pro&#39; 2021/08/11 12:00:14</div>
+<div class="line">Failsafe Bitfile: &#39;t_tap_pro&#39; 2020/07/14 11:42:00</div>
+<div class="line">   Serial Number: &#39;02092022&#39;</div>
+<div class="line">## NOTE:  This host and/or AJA device must be power-cycled for the new firmware to load.</div>
+<div class="line">Firmware installed - OK</div>
+</div><!-- fragment --><hr  size="50px" />
 <h1><a class="anchor" id="hevcmon-about"></a>
 “HEVC Monitor”</h1>
 <p>The NTV2 <b>HEVC Monitor</b> is a development tool that provides setup, control and state information for the <a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> codec board, which is a standard NTV2 video video ingest board coupled with an HEVC hardware codec. The NTV2 driver controls both the NTV2 components and the HEVC codec.</p>
@@ -2950,7 +3016,7 @@ System Report</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 16:59:40 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Nov 22 2024 13:09:28 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

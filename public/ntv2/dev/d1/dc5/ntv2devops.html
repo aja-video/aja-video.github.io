@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1387</span>
+   &#160;<span id="projectnumber">17.5.0.1392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1387</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1392</div>
   </td>
  </tr>
  </tbody>
@@ -1897,7 +1897,7 @@ Loading Firmware</h2>
 <p>If, even after disabling “fast-boot”, the AJA device fails to show up, …</p><ul>
 <li>Try “warm-booting” the PC. If the device is recognized after a warm-boot, then it’s likely a firmware load-time issue.</li>
 <li>Try installing the AJA board into a different PCIe slot on the motherboard. Some manufacturers employ chips that perform intermediate buffering on certain specific PCIe slots that can sometimes cause detection issues. Also beware that some manufacturers use a custom BIOS that has options for configuring PCIe slots, so be sure to check those BIOS settings and adjust them if needed.</li>
-<li>If the device still fails to show up, please <a href="https://sdksupport.aja.com/index.php?/Tickets/Submit">submit a Ticket</a>.</li>
+<li>If the device still fails to show up, please contact AJA Support.</li>
 </ul>
 <p><b>“Warm Boot” Reload</b><br  />
  Some newer AJA devices are capable of reloading the FPGA upon a <b>PCIe Reset</b> — aka a “warm boot”.</p><ul>
@@ -1908,7 +1908,7 @@ Loading Firmware</h2>
  <h2><a class="anchor" id="devfw-flash"></a>
 “Flashing” Firmware</h2>
 <p>AJA provides two ways to “flash” — i.e. update — new firmware into the device’s EEPROM storage:</p><ol type="1">
-<li>Using the <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/Article/View/129">ntv2firmwareinstaller</a> command-line utility, described in <a class="el" href="../../db/d02/toolsandutilities.html">Tools and Utilities</a>.</li>
+<li>Using <a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> command-line utility.</li>
 <li>Using the <b>AJA ControlPanel</b>, which is part of the “retail” software that can be downloaded from <a href="https://www.aja.com/">https://www.aja.com/</a>.</li>
 </ol>
 <p>Once the new firmware has been written into the device EEPROM storage, it won’t “run” until the device FPGA gets reloaded (see <a class="el" href="../../d1/dc5/ntv2devops.html#devfw-loading">Loading Firmware</a> above).</p>
@@ -1917,12 +1917,12 @@ Loading Firmware</h2>
 Determining Firmware Version</h2>
 <dl class="section note"><dt>Note</dt><dd>The <b>currently-running firmware</b> could be different from the <b>currently-installed firmware</b> that’s stored in the EEPROM’s main partition. This can happen if the device wasn’t power-cycled after a firmware update installation, or if the device was booted using its “failsafe” firmware.</dd></dl>
 <p>There are three ways to determine what firmware is installed, and/or which firmware is running on an AJA device:</p><ul>
-<li>the <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/Article/View/129">ntv2firmwareinstaller</a> command line utility, using its <b>&ndash;info</b> option;</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> command line utility, using its <b>&ndash;info</b> option;</li>
 <li>the “Info” or “Firmware” panels of the <b>AJA ControlPanel</b> application (in AJA’s “retail” software);</li>
 <li>programmatically using certain SDK API calls (described below).</li>
 </ul>
 <p>Newer AJA devices (starting with the <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a>) report their <b>currently-running firmware date</b> in register 88, which is made available as numeric date components or a <code>std::string</code> by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a793ddcf534365ffcb567f762ac50ab09" title="Reports the (local Pacific) build date of the currently-running firmware.">CNTV2Card::GetRunningFirmwareDate</a>.</p>
-<p>Older AJA devices prior to the introduction of the <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> have no way of reporting their <b>currently-running firmware date</b> — they can only report the running firmware’s <em>revision number</em> (which was stored in a portion of register 48 and made available by the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad96e076b71c75d40838f708036c958f0" title="Reports the revision number of the currently-running firmware.">CNTV2Card::GetRunningFirmwareRevision</a> function. To correlate the revision number to a date, it must be looked up on the device’s firmware page on the <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/List/Index/25/ntv2-firmware">AJA SDK support site’s KnowledgeBase</a> (not very convenient).</p>
+<p>Older AJA devices prior to the introduction of the <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> have no way of reporting their <b>currently-running firmware date</b> — they can only report the running firmware’s <em>revision number</em> (which was stored in a portion of register 48 and made available by the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad96e076b71c75d40838f708036c958f0" title="Reports the revision number of the currently-running firmware.">CNTV2Card::GetRunningFirmwareRevision</a> function. To correlate the revision number to a date, it must be looked up at <a href="https://github.com/aja-video/ntv2-firmware">https://github.com/aja-video/ntv2-firmware</a> (not very convenient).</p>
 <ul>
 <li>To determine if a device is capable of reporting its <b>currently-running firmware date</b>, call <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad99a064214045db13f7f6dfc1aa1cc3d">NTV2DeviceCanReportRunningFirmwareDate</a>.</li>
 <li>To determine the <b>currently-installed firmware</b> date, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3543fcef1614c5178b663c62720675f8" title="Returns the bitfile size and time/date stamp from the header of the bitfile that&#39;s currently installe...">CNTV2Card::GetInstalledBitfileInfo</a>.</li>
@@ -2021,7 +2021,7 @@ Fast Bitfile Switching</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 16:59:40 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Nov 22 2024 13:09:29 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

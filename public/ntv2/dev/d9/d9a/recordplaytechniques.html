@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1387</span>
+   &#160;<span id="projectnumber">17.5.0.1392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1387</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1392</div>
   </td>
  </tr>
  </tbody>
@@ -379,10 +379,10 @@ Interlaced Versus Progressive Video</h2>
 <p>It is possible (and sometimes even desireable) to transfer each field of interlaced video separately, which can be done by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> every time through the loop (without checking the <b>Buffer Level</b>). See the <a class="el" href="../../d4/d91/class_n_t_v2_field_burn.html" title="I capture individual fields from an interlaced video signal provided to an SDI input....">NTV2FieldBurn</a> demonstration application for more details.</p>
 <h2><a class="anchor" id="autocirculatefieldmode"></a>
 Field-Based Operation</h2>
-<p>Historically, AutoCirculate was always frame-based, but many customers requested the ability to operate in <b>Field Mode</b>. <b>Field Mode</b> was added in <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/Article/View/ntv2sdk152official">SDK 15.2</a>.</p><ul>
+<p>Historically, AutoCirculate was always frame-based, but many customers requested the ability to operate in <b>Field Mode</b>. <b>Field Mode</b> was added in SDK 15.2.</p><ul>
 <li>In <b>Field Mode</b>, all the <em>frame</em> counters in the <a class="el" href="../../da/d18/class_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s.html" title="This is returned from the CNTV2Card::AutoCirculateGetStatus function.">AUTOCIRCULATE_STATUS</a> object are interpreted as <em>fields</em>.</li>
 <li>Use the <code>AUTOCIRCULATE_WITH_FIELDS</code> option when calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest, designating a contiguous block of frame buffers on the ...">CNTV2Card::AutoCirculateInitForInput</a> or NTV2Card::AutoCirculateInitForOutput.</li>
-<li>Also in <a href="https://sdksupport.aja.com/index.php?/Knowledgebase/Article/View/ntv2sdk152official">SDK 15.2</a>, the <a class="el" href="../../d9/d07/demoapps.html#ntv2fieldburn">NTV2FieldBurn Demo</a> was changed to use <b>Field Mode</b>.</li>
+<li>Also in SDK 15.2, the <a class="el" href="../../d9/d07/demoapps.html#ntv2fieldburn">NTV2FieldBurn Demo</a> was changed to use <b>Field Mode</b>.</li>
 </ul>
 <h2><a class="anchor" id="autocirculatelowlatency"></a>
 Latency Considerations</h2>
@@ -662,7 +662,7 @@ Streaming Playback</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 16:59:42 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Nov 22 2024 13:09:44 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

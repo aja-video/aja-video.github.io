@@ -1,5 +1,6 @@
 var NAVTREEINDEX86 =
 {
+"db/d32/class_device_capabilities.html#a9c2deda32fec538b53ab0dfcd67d7b66":[8,0,195,5],
 "db/d32/class_device_capabilities.html#aa7eafeb942947079ef7cb287e7430870":[8,0,195,14],
 "db/d32/class_device_capabilities.html#abc9dc293c526a37d468e2cb185a8b349":[8,0,195,2],
 "db/d32/class_device_capabilities.html#abe8c97f659dfd023641e6ed088fdf652":[8,0,195,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX86 =
 "db/d76/struct_auto_circ_generic_task.html#a994a85bc5912b810d2d858ab6510a188":[8,0,86,5],
 "db/d76/struct_auto_circ_generic_task.html#aa4b0e71953bcfc8a0ccdbed1e2334c62":[8,0,86,3],
 "db/d76/struct_auto_circ_generic_task.html#ab401932d25c9f4df6586999ee2198d91":[8,0,86,2],
-"db/d76/struct_auto_circ_generic_task.html#abc9fee70b399799cf2f117dac811d0e9":[8,0,86,4],
-"db/d76/struct_auto_circ_generic_task.html#aed7dae0fffabd25b0876a974a5dd26ce":[8,0,86,0]
+"db/d76/struct_auto_circ_generic_task.html#abc9fee70b399799cf2f117dac811d0e9":[8,0,86,4]
 };
