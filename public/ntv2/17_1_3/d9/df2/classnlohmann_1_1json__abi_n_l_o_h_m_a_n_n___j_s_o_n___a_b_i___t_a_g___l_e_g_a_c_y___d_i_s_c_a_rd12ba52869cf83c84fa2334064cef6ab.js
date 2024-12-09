@@ -1,0 +1,4 @@
+var classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rd12ba52869cf83c84fa2334064cef6ab =
+[
+    [ "create", "d9/df2/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rd12ba52869cf83c84fa2334064cef6ab.html#a33bc447872c39f8ec1726da870226464", null ]
+];

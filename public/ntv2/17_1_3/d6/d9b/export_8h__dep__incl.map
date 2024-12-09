@@ -1,0 +1,252 @@
+<map id="/home/tcbuilder/buildAgent/work/df8e8cce5bebfd58/libajantv2/ajabase/common/export.h" name="/home/tcbuilder/buildAgent/work/df8e8cce5bebfd58/libajantv2/ajabase/common/export.h">
+<area shape="rect" id="node1" title="Declares system&#45;dependent import/export macros and libraries." alt="" coords="16175,5,16425,61"/>
+<area shape="rect" id="node2" href="$dc/d54/common_8h.html" title="Private include file for all ajabase sources." alt="" coords="7781,317,8032,373"/>
+<area shape="rect" id="node146" href="$d4/d79/public_8h.html" title="Master header for the ajabase library." alt="" coords="16037,109,16288,165"/>
+<area shape="rect" id="node193" href="$d2/d8f/commandline_8h.html" title="Declaration of Command Line classes." alt="" coords="995,421,1245,477"/>
+<area shape="rect" id="node248" href="$da/daf/options__popt_8h.html" title=" " alt="" coords="28645,317,28896,373"/>
+<area shape="rect" id="node249" href="$d5/dc1/timecodeburn_8h.html" title="Declares the AJATimeCodeBurn class." alt="" coords="29289,421,29540,477"/>
+<area shape="rect" id="node250" href="$d0/db4/debugshare_8h.html" title="Declares the constants used for sharing debug messages. These structures are used to gather debug mes..." alt="" coords="16284,213,16535,269"/>
+<area shape="rect" id="node3" href="$d9/db9/audioutilities_8cpp.html" title="Implementation of AJA_GenerateAudioTone function." alt="" coords="1270,421,1525,477"/>
+<area shape="rect" id="node4" href="$df/d0d/commandline_8cpp.html" title="Definition of Command Line classes." alt="" coords="4228,525,4487,581"/>
+<area shape="rect" id="node5" href="$d9/df9/common_8cpp.html" title="Generic helper functions." alt="" coords="5437,421,5688,477"/>
+<area shape="rect" id="node6" href="$d7/dbf/timebase_8cpp.html" title="Implements the AJATimeBase class." alt="" coords="22295,525,22545,581"/>
+<area shape="rect" id="node7" href="$d8/d99/timecode_8cpp.html" title="Implements the AJATimeCode class." alt="" coords="27673,637,27924,693"/>
+<area shape="rect" id="node8" href="$dc/de5/timer_8cpp.html" title="Implements the AJATimer class." alt="" coords="4685,421,4936,477"/>
+<area shape="rect" id="node9" href="$d1/dcf/variant_8cpp.html" title="Implements the AJAVariant class." alt="" coords="2445,421,2696,477"/>
+<area shape="rect" id="node10" href="$d2/d95/videoutilities_8cpp.html" title="Declares the ajabase library&#39;s video utility functions." alt="" coords="12001,421,12255,477"/>
+<area shape="rect" id="node11" href="$db/d68/devicenotifier_8cpp.html" title="Implements the MacOS&#45;specific KonaNotifier and DeviceNotifier classes, which invoke a client&#45;register..." alt="" coords="7779,421,8035,477"/>
+<area shape="rect" id="node12" href="$da/d69/mac_2pnpimpl_8cpp.html" title="Implements the AJAPnpImpl class on the Mac platform." alt="" coords="11573,421,11824,477"/>
+<area shape="rect" id="node13" href="$dc/def/atomic_8cpp.html" title="Implements the AJAAtomic class." alt="" coords="9571,421,9821,477"/>
+<area shape="rect" id="node14" href="$d2/d30/bm_2eventimpl_8h.html" title=" " alt="" coords="2720,421,2971,477"/>
+<area shape="rect" id="node15" href="$d0/dbf/bm_2infoimpl_8h.html" title=" " alt="" coords="6515,421,6765,477"/>
+<area shape="rect" id="node16" href="$de/d60/bm_2lockimpl_8h.html" title=" " alt="" coords="3197,421,3448,477"/>
+<area shape="rect" id="node18" href="$da/dd0/bm_2processimpl_8h.html" title=" " alt="" coords="5663,525,5913,581"/>
+<area shape="rect" id="node19" href="$d9/d9e/bm_2threadimpl_8h.html" title=" " alt="" coords="13264,525,13515,581"/>
+<area shape="rect" id="node20" href="$d1/d00/debug_8cpp.html" title="Implements the AJADebug class." alt="" coords="18248,525,18499,581"/>
+<area shape="rect" id="node21" href="$d9/de0/diskstatus_8cpp.html" title="Implements the AJADiskStatus class." alt="" coords="9997,421,10248,477"/>
+<area shape="rect" id="node22" href="$d2/d14/file__io_8cpp.html" title="Implements the AJAFileIO class based on platform, Windows/Posix." alt="" coords="7913,525,8164,581"/>
+<area shape="rect" id="node23" href="$d3/db3/linux_2eventimpl_8h.html" title="Declares the AJAEventImpl class." alt="" coords="2120,421,2371,477"/>
+<area shape="rect" id="node26" href="$db/d54/linux_2infoimpl_8h.html" title="Declares the AJASystemInfoImpl class." alt="" coords="7173,421,7424,477"/>
+<area shape="rect" id="node29" href="$d8/df8/linux_2lockimpl_8h.html" title="Declares the AJALockImpl class." alt="" coords="3848,421,4099,477"/>
+<area shape="rect" id="node31" href="$dc/db3/linux_2processimpl_8h.html" title="Declares the AJAProcessImpl class." alt="" coords="570,525,830,581"/>
+<area shape="rect" id="node34" href="$da/d8a/linux_2threadimpl_8h.html" title="Declares the AJAThreadImpl class." alt="" coords="9554,525,9806,581"/>
+<area shape="rect" id="node37" href="$d2/d0e/mac_2eventimpl_8h.html" title="Declares the AJAEventImpl class." alt="" coords="1549,421,1800,477"/>
+<area shape="rect" id="node39" href="$dd/dbb/mac_2infoimpl_8h.html" title="Declares the AJASystemInfoImpl class." alt="" coords="5965,421,6216,477"/>
+<area shape="rect" id="node41" href="$de/d36/mac_2lockimpl_8h.html" title="Declares the AJALockImpl class." alt="" coords="4123,421,4373,477"/>
+<area shape="rect" id="node43" href="$dd/d83/mac_2processimpl_8h.html" title="Declares the AJAProcessImpl class." alt="" coords="5383,525,5639,581"/>
+<area shape="rect" id="node45" href="$d6/dc5/mac_2threadimpl_8h.html" title="Declares the AJAThreadImpl class." alt="" coords="6785,525,7036,581"/>
+<area shape="rect" id="node48" href="$da/d4c/systemtime_8cpp.html" title="Implements the AJATime class." alt="" coords="10272,421,10523,477"/>
+<area shape="rect" id="node49" href="$d6/de7/windows_2eventimpl_8h.html" title="Declares the AJAEventImpl class." alt="" coords="1824,421,2096,477"/>
+<area shape="rect" id="node51" href="$d2/d4c/windows_2infoimpl_8h.html" title="Declares the AJASystemInfoImpl class." alt="" coords="6839,421,7099,477"/>
+<area shape="rect" id="node53" href="$d3/da6/windows_2lockimpl_8h.html" title="Declares the AJALockImpl class." alt="" coords="4398,421,4661,477"/>
+<area shape="rect" id="node55" href="$d8/d92/windows_2processimpl_8h.html" title="Declares the AJAProcessImpl class." alt="" coords="5073,525,5359,581"/>
+<area shape="rect" id="node57" href="$d2/d97/windows_2threadimpl_8h.html" title="Declares the AJAThreadImpl class." alt="" coords="11021,525,11299,581"/>
+<area shape="rect" id="node59" href="$d9/de9/ntv2democommon_8h.html" title="This file contains some structures, constants, classes and functions that are used in some of the dem..." alt="" coords="25128,421,25379,477"/>
+<area shape="rect" id="node67" href="$d1/d98/ntv2capture_2main_8cpp.html" title="Demonstration application to capture frames from SDI input." alt="" coords="22649,637,22900,693"/>
+<area shape="rect" id="node80" href="$de/d67/ntv2ccplayer_8cpp.html" title="Implementation of NTV2CCPlayer class." alt="" coords="19740,637,20012,693"/>
+<area shape="rect" id="node81" href="$dc/d41/ntv2democommon_8cpp.html" title="Common implementation code used by many of the demo applications." alt="" coords="9003,525,9253,581"/>
+<area shape="rect" id="node115" href="$d3/d4c/ntv2outputtestpattern_2main_8cpp.html" title="Simple demonstration application to display a fixed test pattern on an AJA device&#39;s output." alt="" coords="14670,637,14951,693"/>
+<area shape="rect" id="node130" href="$de/d2a/ntv2switchbitfile_2main_8cpp.html" title="Demonstration application to change the active bitfile." alt="" coords="23167,421,23417,477"/>
+<area shape="rect" id="node131" href="$d0/dfa/ntv2audio_8cpp.html" title="Implementations of audio&#45;centric CNTV2Card methods." alt="" coords="8059,421,8309,477"/>
+<area shape="rect" id="node132" href="$df/dc3/ntv2autocirculate_8cpp.html" title="Implements the CNTV2Card AutoCirculate API functions." alt="" coords="12549,867,12800,923"/>
+<area shape="rect" id="node133" href="$d6/dd0/ntv2bitfile_8cpp.html" title="Implementation of CNTV2Bitfile class." alt="" coords="11197,421,11448,477"/>
+<area shape="rect" id="node134" href="$df/d0f/ntv2card_8cpp.html" title="Implements several CNTV2Card methods. Other implementation files are &#39;ntv2audio.cpp&#39;,..." alt="" coords="5163,421,5413,477"/>
+<area shape="rect" id="node135" href="$d7/db4/ntv2devicescanner_8cpp.html" title="Implementation of CNTV2DeviceScanner class." alt="" coords="10821,421,11072,477"/>
+<area shape="rect" id="node136" href="$de/d85/ntv2driverinterface_8cpp.html" title="Implements the CNTV2DriverInterface class." alt="" coords="15742,637,15997,693"/>
+<area shape="rect" id="node137" href="$de/d94/ntv2konaflashprogram_8cpp.html" title="Implementation of CNTV2KonaFlashProgram class." alt="" coords="13848,421,14123,477"/>
+<area shape="rect" id="node138" href="$d8/dd5/ntv2nubaccess_8cpp.html" title="Implementation of NTV2Dictionary, NTV2DeviceSpecParser, NTV2RPCClientAPI &amp; NTV2RPCServerAPI classes." alt="" coords="18523,525,18773,581"/>
+<area shape="rect" id="node139" href="$db/d4c/ntv2publicinterface_8cpp.html" title="Implementations of methods declared in &#39;ntv2publicinterface.h&#39;." alt="" coords="12382,421,12637,477"/>
+<area shape="rect" id="node140" href="$d1/d1f/ntv2registerexpert_8cpp.html" title="Implements the CNTV2RegisterExpert class." alt="" coords="16821,525,17072,581"/>
+<area shape="rect" id="node141" href="$d1/d58/ntv2routingexpert_8cpp.html" title="RoutingExpert implementation used within CNTV2SignalRouter." alt="" coords="13589,525,13840,581"/>
+<area shape="rect" id="node142" href="$de/dc8/ntv2signalrouter_8cpp.html" title="CNTV2SignalRouter implementation." alt="" coords="14613,525,14864,581"/>
+<area shape="rect" id="node143" href="$dd/d5a/ntv2supportlogger_8cpp.html" title="Implementation of CNTV2SupportLogger class." alt="" coords="6240,421,6491,477"/>
+<area shape="rect" id="node144" href="$d5/d31/ntv2testpatterngen_8cpp.html" title="Contains the implementation of the NTV2TestPatternGen class." alt="" coords="7499,421,7754,477"/>
+<area shape="rect" id="node145" href="$d6/d9b/ntv2utils_8cpp.html" title="Implementations for the NTV2 utility functions." alt="" coords="10547,421,10797,477"/>
+<area shape="rect" id="node17" href="$d6/dd0/bm_2lockimpl_8cpp.html" title=" " alt="" coords="6511,525,6761,581"/>
+<area shape="rect" id="node24" href="$da/da5/bm_2eventimpl_8cpp.html" title=" " alt="" coords="4799,525,5049,581"/>
+<area shape="rect" id="node25" href="$df/dca/linux_2eventimpl_8cpp.html" title="Implements the AJAEventImpl class on the Linux platform." alt="" coords="4511,525,4774,581"/>
+<area shape="rect" id="node27" href="$dc/dd2/bm_2infoimpl_8cpp.html" title=" " alt="" coords="8188,525,8439,581"/>
+<area shape="rect" id="node28" href="$d8/d64/linux_2infoimpl_8cpp.html" title="Implements the AJASystemInfoImpl class on the Linux platform." alt="" coords="8475,525,8725,581"/>
+<area shape="rect" id="node30" href="$dc/dbe/linux_2lockimpl_8cpp.html" title="Implements the AJALockImpl class on the Linux platform." alt="" coords="7061,525,7313,581"/>
+<area shape="rect" id="node32" href="$d6/d04/bm_2processimpl_8cpp.html" title=" " alt="" coords="392,637,656,693"/>
+<area shape="rect" id="node33" href="$de/d3a/linux_2processimpl_8cpp.html" title="Implements the AJAProcessImpl class on the Linux platform." alt="" coords="5,637,280,693"/>
+<area shape="rect" id="node35" href="$d5/de5/bm_2threadimpl_8cpp.html" title=" " alt="" coords="10509,637,10765,693"/>
+<area shape="rect" id="node36" href="$d4/d78/linux_2threadimpl_8cpp.html" title="Implements the AJAThreadImpl class on the Linux platform." alt="" coords="9771,637,10037,693"/>
+<area shape="rect" id="node38" href="$d8/d56/mac_2eventimpl_8cpp.html" title="Implements the AJAEventImpl class on the Mac platform." alt="" coords="1539,525,1797,581"/>
+<area shape="rect" id="node40" href="$d7/d4a/infoimpl_8mm.html" title="Implements the AJASystemInfoImpl class on the Mac platform." alt="" coords="5937,525,6188,581"/>
+<area shape="rect" id="node42" href="$d2/d64/mac_2lockimpl_8cpp.html" title="Implements the AJALockImpl class on the Mac platform." alt="" coords="7337,525,7588,581"/>
+<area shape="rect" id="node44" href="$d7/d66/mac_2processimpl_8cpp.html" title="Implements the AJAProcessImpl class on the Mac platform." alt="" coords="4802,637,5073,693"/>
+<area shape="rect" id="node46" href="$d2/d9e/pthreadsextra_8cpp.html" title="Declares extra symbols to make the Mac threads implementation look more like Unix." alt="" coords="7055,637,7337,693"/>
+<area shape="rect" id="node47" href="$d2/d87/mac_2threadimpl_8cpp.html" title="Implements the AJAThreadImpl class on the Mac platform." alt="" coords="6493,637,6755,693"/>
+<area shape="rect" id="node50" href="$dd/dca/windows_2eventimpl_8cpp.html" title="Implements the AJAEventImpl class on the Windows platform." alt="" coords="1822,525,2109,581"/>
+<area shape="rect" id="node52" href="$d7/da3/windows_2infoimpl_8cpp.html" title="Implements the AJASystemInfoImpl class on the Windows platform." alt="" coords="6212,525,6487,581"/>
+<area shape="rect" id="node54" href="$d6/deb/windows_2lockimpl_8cpp.html" title="Implements the AJALockImpl class on the Windows platform." alt="" coords="7612,525,7889,581"/>
+<area shape="rect" id="node56" href="$dc/dbf/windows_2processimpl_8cpp.html" title="Implements the AJAProcessImpl class on the Windows platform." alt="" coords="2273,637,2573,693"/>
+<area shape="rect" id="node58" href="$d1/dda/windows_2threadimpl_8cpp.html" title="Implements the AJAThreadImpl class for the Windows platform." alt="" coords="11582,637,11874,693"/>
+<area shape="rect" id="node60" href="$d2/d26/ntv2burn_8h.html" title="Header file for the NTV2Burn demonstration class." alt="" coords="27807,525,28057,581"/>
+<area shape="rect" id="node63" href="$db/d4a/ntv2burn4kquadrant_8h.html" title="Header file for the NTV2Burn4KQuadrant demonstration class." alt="" coords="30991,525,31345,581"/>
+<area shape="rect" id="node66" href="$d0/d81/ntv2capture_8h.html" title="Declares the NTV2Capture class." alt="" coords="25535,525,25785,581"/>
+<area shape="rect" id="node69" href="$dc/d03/ntv2capture4k_8h.html" title="Declares the NTV2Capture class." alt="" coords="26455,525,26734,581"/>
+<area shape="rect" id="node72" href="$d5/dd8/ntv2capture8k_8h.html" title="Declares the NTV2Capture class." alt="" coords="26153,525,26431,581"/>
+<area shape="rect" id="node75" href="$da/d4f/ntv2ccgrabber_8h.html" title="Header file for NTV2CCGrabber demonstration class." alt="" coords="20951,637,21225,693"/>
+<area shape="rect" id="node78" href="$d3/db1/ntv2ccplayer_8h.html" title=" " alt="" coords="19974,525,20231,581"/>
+<area shape="rect" id="node82" href="$d8/dbe/ntv2demohevccommon_8h.html" title="This file contains some structures, constants, classes and functions that are used in some of the hev..." alt="" coords="28812,525,29063,581"/>
+<area shape="rect" id="node97" href="$dc/d6f/ntv2dolbycapture_8h.html" title="Declares the NTV2DolbyCapture class." alt="" coords="25810,525,26129,581"/>
+<area shape="rect" id="node100" href="$d6/dcf/ntv2dolbyplayer_8h.html" title="Header file for NTV2DolbyPlayer demonstration class." alt="" coords="26911,525,27212,581"/>
+<area shape="rect" id="node103" href="$d9/d5a/ntv2enumerateboards_2main_8cpp.html" title="Demonstration application to enumerate the AJA devices for the host system, printing information abou..." alt="" coords="24431,525,24713,581"/>
+<area shape="rect" id="node104" href="$d4/dbd/ntv2fieldburn_8h.html" title="Header file for the NTV2FieldBurn demonstration class." alt="" coords="27519,525,27782,581"/>
+<area shape="rect" id="node107" href="$d6/d05/ntv2framegrabber_8cpp.html" title="Contains the implementation of the NTV2FrameGrabber class." alt="" coords="22324,637,22575,693"/>
+<area shape="rect" id="node108" href="$dc/d0b/ntv2hdrsetup_2main_8cpp.html" title="Demonstration application that shows how to enable HDR capabilities of HDMI out." alt="" coords="25209,525,25460,581"/>
+<area shape="rect" id="node109" href="$d3/de6/konaipjsonparse_8cpp.html" title=" " alt="" coords="24737,525,25084,581"/>
+<area shape="rect" id="node110" href="$d2/d92/konaipjsonsetup_8cpp.html" title=" " alt="" coords="23959,525,24305,581"/>
+<area shape="rect" id="node111" href="$df/dc7/ntv2llburn_8h.html" title="Header file for the low latency NTV2Burn demonstration class." alt="" coords="30180,637,30431,693"/>
+<area shape="rect" id="node114" href="$d4/d79/ntv2outputtestpattern_8h.html" title=" " alt="" coords="21153,525,21529,581"/>
+<area shape="rect" id="node117" href="$de/d40/ntv2player_8h.html" title=" " alt="" coords="28081,525,28332,581"/>
+<area shape="rect" id="node120" href="$d0/dc0/ntv2player4k_8h.html" title="Header file for NTV2Player4K demonstration class." alt="" coords="30366,525,30629,581"/>
+<area shape="rect" id="node123" href="$d9/d37/ntv2player8k_8h.html" title="Header file for NTV2Player8K demonstration class." alt="" coords="30653,525,30915,581"/>
+<area shape="rect" id="node126" href="$d7/df0/ntv2streamplayer_8h.html" title=" " alt="" coords="30021,525,30342,581"/>
+<area shape="rect" id="node129" href="$d4/da7/ntv2streamgrabber_8cpp.html" title="Contains the implementation of the NTV2StreamGrabber class." alt="" coords="21797,637,22153,693"/>
+<area shape="rect" id="node61" href="$d6/dbf/ntv2burn_2main_8cpp.html" title="Demonstration application that &quot;burns&quot; timecode into frames captured from SDI input,..." alt="" coords="27124,637,27375,693"/>
+<area shape="rect" id="node62" href="$d5/dd5/ntv2burn_8cpp.html" title="Implementation of NTV2Burn demonstration class." alt="" coords="25583,637,25833,693"/>
+<area shape="rect" id="node64" href="$da/d8f/ntv2burn4kquadrant_2main_8cpp.html" title="Demonstration application to &quot;burn&quot; timecode into frames captured from SDI input, and play out the mo..." alt="" coords="32885,637,33155,693"/>
+<area shape="rect" id="node65" href="$d0/dc9/ntv2burn4kquadrant_8cpp.html" title="Implementation of NTV2Burn4KQuadrant demonstration class." alt="" coords="29367,637,29737,693"/>
+<area shape="rect" id="node68" href="$de/da9/ntv2capture_8cpp.html" title="Implementation of NTV2Capture class." alt="" coords="23428,637,23689,693"/>
+<area shape="rect" id="node70" href="$d0/dbe/ntv2capture4k_2main_8cpp.html" title="Demonstration application to capture frames from SDI input." alt="" coords="25308,637,25559,693"/>
+<area shape="rect" id="node71" href="$d6/df8/ntv2capture4k_8cpp.html" title="Implementation of NTV2Capture class." alt="" coords="24716,637,25009,693"/>
+<area shape="rect" id="node73" href="$d3/d0e/ntv2capture8k_2main_8cpp.html" title="Demonstration application to capture frames from SDI input." alt="" coords="25033,637,25284,693"/>
+<area shape="rect" id="node74" href="$dc/d6a/ntv2capture8k_8cpp.html" title="Implementation of NTV2Capture class." alt="" coords="24399,637,24692,693"/>
+<area shape="rect" id="node76" href="$d3/dbe/ntv2ccgrabber_2main_8cpp.html" title="Demonstration application that grabs closed&#45;captioning data from frames captured from SDI input (usin..." alt="" coords="20963,755,21213,811"/>
+<area shape="rect" id="node77" href="$d9/dca/ntv2ccgrabber_8cpp.html" title="Implementation of NTV2CCGrabber class." alt="" coords="18871,755,19161,811"/>
+<area shape="rect" id="node79" href="$d8/dc4/ntv2ccplayer_2main_8cpp.html" title="Complex demonstration application that plays synthesized video to SDI output containing NTSC captions..." alt="" coords="20036,637,20287,693"/>
+<area shape="rect" id="node83" href="$d4/d59/ntv2demohevccommon_8cpp.html" title="Common implementation code used by many of the demo applications." alt="" coords="28382,637,28637,693"/>
+<area shape="rect" id="node84" href="$dc/db3/ntv2encodehevc_8h.html" title="Declares the NTV2EncodeHEVC class." alt="" coords="28661,637,28965,693"/>
+<area shape="rect" id="node87" href="$d7/d9c/ntv2encodehevcfile_8h.html" title="Declares the NTV2EncodeHEVCFile class." alt="" coords="29812,637,30156,693"/>
+<area shape="rect" id="node90" href="$d0/d57/ntv2encodehevcfileac_8h.html" title="Declares the NTV2EncodeHEVCFileAc class." alt="" coords="27999,637,28358,693"/>
+<area shape="rect" id="node92" href="$d6/dde/ntv2encodehevcvif_8h.html" title="Declares the NTV2EncodeHEVCVif class." alt="" coords="31946,637,32283,693"/>
+<area shape="rect" id="node95" href="$d8/d3c/ntv2encodehevcvifac_8h.html" title="Declares the NTV2EncodeHEVCVifAc class." alt="" coords="28990,637,29343,693"/>
+<area shape="rect" id="node85" href="$d6/def/ntv2encodehevc_2main_8cpp.html" title="Demonstration application to capture frames from SDI input." alt="" coords="32685,755,32936,811"/>
+<area shape="rect" id="node86" href="$da/d2f/ntv2encodehevc_8cpp.html" title="Implementation of NTV2EncodeHEVC class." alt="" coords="22618,755,22937,811"/>
+<area shape="rect" id="node88" href="$d6/d30/ntv2encodehevcfile_2main_8cpp.html" title="Demonstration application to capture frames from SDI input." alt="" coords="32961,755,33226,811"/>
+<area shape="rect" id="node89" href="$dd/d97/ntv2encodehevcfile_8cpp.html" title="Implementation of NTV2EncodeHEVCFile class." alt="" coords="25663,755,26022,811"/>
+<area shape="rect" id="node91" href="$da/d67/ntv2encodehevcfileac_8cpp.html" title="Implementation of NTV2EncodeHEVCFileAc class." alt="" coords="22961,755,23335,811"/>
+<area shape="rect" id="node93" href="$d4/dcd/ntv2encodehevcvif_2main_8cpp.html" title="Demonstration application to capture frames from SDI input." alt="" coords="33250,755,33513,811"/>
+<area shape="rect" id="node94" href="$df/d0e/ntv2encodehevcvif_8cpp.html" title="Implementation of NTV2EncodeHEVCVif class." alt="" coords="26047,755,26399,811"/>
+<area shape="rect" id="node96" href="$d4/d1e/ntv2encodehevcvifac_8cpp.html" title="Implementation of NTV2EncodeHEVCVifAc class." alt="" coords="27777,755,28145,811"/>
+<area shape="rect" id="node98" href="$de/d55/ntv2dolbycapture_2main_8cpp.html" title="Demonstration application to capture Dolby audio from HDMI input." alt="" coords="23714,637,23966,693"/>
+<area shape="rect" id="node99" href="$d4/d83/ntv2dolbycapture_8cpp.html" title="Implementation of NTV2DolbyCapture class." alt="" coords="24041,637,24375,693"/>
+<area shape="rect" id="node101" href="$d0/df9/ntv2dolbyplayer_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to playout video and Doly audio to HDMI." alt="" coords="26575,637,26825,693"/>
+<area shape="rect" id="node102" href="$d5/d9e/ntv2dolbyplayer_8cpp.html" title="Implementation of NTV2DolbyPlayer class." alt="" coords="26234,637,26550,693"/>
+<area shape="rect" id="node105" href="$de/d5f/ntv2fieldburn_2main_8cpp.html" title="Demonstration application that &quot;burns&quot; timecode into separate fields captured from interlaced SDI inp..." alt="" coords="26849,637,27100,693"/>
+<area shape="rect" id="node106" href="$dc/df1/ntv2fieldburn_8cpp.html" title="Implementation of NTV2FieldBurn demonstration class." alt="" coords="23025,637,23303,693"/>
+<area shape="rect" id="node112" href="$de/ddb/ntv2llburn_2main_8cpp.html" title="Demonstration application that &quot;burns&quot; timecode into frames captured from SDI input,..." alt="" coords="30317,755,30568,811"/>
+<area shape="rect" id="node113" href="$da/d1a/ntv2llburn_8cpp.html" title="Implementation of NTV2LLBurn demonstration class." alt="" coords="30043,755,30293,811"/>
+<area shape="rect" id="node116" href="$da/dbe/ntv2outputtestpattern_8cpp.html" title="Implementation of NTV2OutputTestPattern demonstration class." alt="" coords="21294,637,21685,693"/>
+<area shape="rect" id="node118" href="$dd/d6a/ntv2player_2main_8cpp.html" title="Demonstration application that plays synthesized SD/HD video." alt="" coords="27399,637,27649,693"/>
+<area shape="rect" id="node119" href="$d7/d6f/ntv2player_8cpp.html" title="Implementation of NTV2Player class." alt="" coords="25908,637,26159,693"/>
+<area shape="rect" id="node121" href="$d8/daa/ntv2player4k_2main_8cpp.html" title="Demonstration application that plays synthesized 4K/UHD video." alt="" coords="31095,637,31345,693"/>
+<area shape="rect" id="node122" href="$d2/d98/ntv2player4k_8cpp.html" title="Implementation of ntv2player4k class." alt="" coords="31369,637,31647,693"/>
+<area shape="rect" id="node124" href="$d9/def/ntv2player8k_2main_8cpp.html" title="Demonstration application that plays synthesized 8K/UHD2 video." alt="" coords="31671,637,31921,693"/>
+<area shape="rect" id="node125" href="$db/d11/ntv2player8k_8cpp.html" title="Implementation of ntv2player8k class." alt="" coords="32583,637,32860,693"/>
+<area shape="rect" id="node127" href="$d8/d07/ntv2streamplayer_2main_8cpp.html" title="Demonstration application that plays synthesized SD/HD video." alt="" coords="30455,637,30710,693"/>
+<area shape="rect" id="node128" href="$d2/de1/ntv2streamplayer_8cpp.html" title="Implementation of NTV2StreamPlayer class." alt="" coords="30735,637,31071,693"/>
+<area shape="rect" id="node147" href="$dd/d02/atomic_8h.html" title="Declares the AJAAtomic class." alt="" coords="18945,213,19196,269"/>
+<area shape="rect" id="node169" href="$d8/d25/audioutilities_8h.html" title="Declaration of AJA_GenerateAudioTone function." alt="" coords="1168,213,1419,269"/>
+<area shape="rect" id="node170" href="$d5/d08/buffer_8h.html" title="Implementation of AJABuffer class." alt="" coords="18364,213,18615,269"/>
+<area shape="rect" id="node172" href="$d0/d77/circularbuffer_8h.html" title="Declaration of AJACircularBuffer template class." alt="" coords="28371,317,28621,373"/>
+<area shape="rect" id="node173" href="$da/d09/dpx__hdr_8h.html" title="Declaration of DpxHdr class adapted from STwo&#39;s dpx file I/O." alt="" coords="619,421,869,477"/>
+<area shape="rect" id="node177" href="$db/de2/guid_8h.html" title="Generates a new, unique UUID as an STL string." alt="" coords="7515,213,7765,269"/>
+<area shape="rect" id="node179" href="$d1/dc2/pixelformat_8cpp.html" title="Contains the implementation of the AJAPixelFormat class." alt="" coords="16009,213,16260,269"/>
+<area shape="rect" id="node180" href="$d4/d3c/timebase_8h.html" title="Declares the AJATimeBase class." alt="" coords="31399,421,31649,477"/>
+<area shape="rect" id="node187" href="$dc/d64/videoutilities_8h.html" title="Declares the ajabase library&#39;s video utility functions." alt="" coords="17501,317,17752,373"/>
+<area shape="rect" id="node189" href="$d5/dd0/timer_8h.html" title="Declares the AJATimer class." alt="" coords="105,317,356,373"/>
+<area shape="rect" id="node192" href="$d6/d10/variant_8h.html" title="Declares the AJAVariant class." alt="" coords="2445,317,2696,373"/>
+<area shape="rect" id="node194" href="$d1/dda/wavewriter_8h.html" title="Declares the AJAWavWriter class." alt="" coords="32315,525,32565,581"/>
+<area shape="rect" id="node195" href="$d5/d02/pnp_8h.html" title="Declares the AJAPnp (plug&#45;and&#45;play) class." alt="" coords="16688,213,16939,269"/>
+<area shape="rect" id="node208" href="$db/d16/debug_8h.html" title="Declares the AJADebug class." alt="" coords="12969,317,13220,373"/>
+<area shape="rect" id="node209" href="$d7/d7f/log_8h.html" title="Declares the AJATimeLog class." alt="" coords="19717,421,19968,477"/>
+<area shape="rect" id="node223" href="$d0/df9/diskstatus_8h.html" title="Declares the AJADiskStatus class." alt="" coords="12072,213,12323,269"/>
+<area shape="rect" id="node224" href="$dd/d20/event_8h.html" title="Declares the AJAEvent class." alt="" coords="1919,213,2169,269"/>
+<area shape="rect" id="node225" href="$db/db8/file__io_8h.html" title="Declares the AJAFileIO class." alt="" coords="8840,421,9091,477"/>
+<area shape="rect" id="node227" href="$d4/d21/info_8h.html" title="Declares the AJASystemInfo class." alt="" coords="8265,317,8516,373"/>
+<area shape="rect" id="node231" href="$dd/d42/lock_8h.html" title="Declares the AJALock class." alt="" coords="15475,213,15725,269"/>
+<area shape="rect" id="node234" href="$dc/d18/memory_8h.html" title="Declares the AJAMemory class." alt="" coords="17827,317,18077,373"/>
+<area shape="rect" id="node236" href="$da/d42/process_8h.html" title="Declares the AJAProcess class." alt="" coords="23644,421,23895,477"/>
+<area shape="rect" id="node240" href="$dc/db2/system_8h.html" title="System specific functions." alt="" coords="3360,317,3611,373"/>
+<area shape="rect" id="node242" href="$da/dbc/systemtime_8h.html" title="Declares the AJATime class." alt="" coords="23405,317,23656,373"/>
+<area shape="rect" id="node247" href="$db/dd5/thread_8h.html" title="Declares the AJAThread class." alt="" coords="26961,421,27212,477"/>
+<area shape="rect" id="node148" href="$da/dae/ajarefptr_8h.html" title="Defines the AJARefPtr template class." alt="" coords="20468,317,20719,373"/>
+<area shape="rect" id="node165" href="$d4/dbf/ntv2macdriverinterface_8cpp.html" title=" " alt="" coords="19259,525,19573,581"/>
+<area shape="rect" id="node167" href="$df/d63/ancillarydata_8cpp.html" title="Implementation of the AJAAncillaryData class." alt="" coords="18640,421,18891,477"/>
+<area shape="rect" id="node168" href="$d3/de4/ancillarylist_8cpp.html" title="Implementation of the AJAAncillaryList class." alt="" coords="18915,421,19165,477"/>
+<area shape="rect" id="node149" href="$dd/d65/masterport_8h.html" title="Declares the MasterPort class." alt="" coords="21612,421,21863,477"/>
+<area shape="rect" id="node150" href="$df/dea/ntv2caption608message_8h.html" title="Declares the CNTV2Caption608Message class." alt="" coords="21887,421,22143,477"/>
+<area shape="rect" id="node151" href="$df/dc0/ntv2captionencoder608_8h.html" title="Declares the CNTV2CaptionEncoder608 class." alt="" coords="20469,421,20718,477"/>
+<area shape="rect" id="node152" href="$dc/d2f/ntv2captionencoder708_8h.html" title="Declares the CNTV2CaptionEncoder708 class." alt="" coords="20742,421,20991,477"/>
+<area shape="rect" id="node154" href="$d7/d7b/ntv2captiondecodechannel608_8h.html" title="Declares the CNTV2CaptionDecodeChannel608 class." alt="" coords="22167,421,22462,477"/>
+<area shape="rect" id="node155" href="$d5/d40/ntv2captiondecoder608_8h.html" title="Declares the CNTV2CaptionDecoder608 class." alt="" coords="20627,525,20877,581"/>
+<area shape="rect" id="node156" href="$d7/d0a/ntv2xdscaptiondecodechannel608_8h.html" title="Declares the CNTV2XDSDecodeChannel608 class." alt="" coords="21218,421,21537,477"/>
+<area shape="rect" id="node157" href="$d1/d5d/ntv2captionrenderer_8h.html" title="Declares the CNTV2CaptionRenderer class." alt="" coords="18898,525,19134,581"/>
+<area shape="rect" id="node158" href="$d6/d8f/ntv2nubaccess_8h.html" title="Declares NTV2 &quot;nub&quot; client functions." alt="" coords="19291,421,19541,477"/>
+<area shape="rect" id="node166" href="$de/d4c/ntv2routingexpert_8h.html" title="Declares RoutingExpert class used by CNTV2SignalRouter." alt="" coords="15739,421,16005,477"/>
+<area shape="rect" id="node153" href="$de/dc3/ntv2captiontranslatorchannel608to708_8h.html" title="Declares the CNTV2CaptionTranslatorChannel608to708 class." alt="" coords="20255,525,20603,581"/>
+<area shape="rect" id="node159" href="$d4/dc0/ntv2driverinterface_8h.html" title="Declares the CNTV2DriverInterface base class." alt="" coords="12813,525,13088,581"/>
+<area shape="rect" id="node160" href="$d8/d58/ntv2devicecapabilities_8h.html" title="Declares the DeviceCapabilities class." alt="" coords="13483,637,13779,693"/>
+<area shape="rect" id="node161" href="$d0/da6/ntv2baremetaldriverinterface_8h.html" title="Declares the CNTV2BareMetalDriverInterface class." alt="" coords="12813,637,13144,693"/>
+<area shape="rect" id="node163" href="$d7/da1/ntv2linuxdriverinterface_8h.html" title="Declares the CNTV2LinuxDriverInterface class." alt="" coords="13168,637,13459,693"/>
+<area shape="rect" id="node162" href="$d5/dfe/ntv2baremetaldriverinterface_8cpp.html" title="Implementation of the CNTV2BareMetalDriverInterface class." alt="" coords="12712,755,13059,811"/>
+<area shape="rect" id="node164" href="$df/d10/ntv2linuxdriverinterface_8cpp.html" title="Implementation of the CNTV2LinuxDriverInterface class." alt="" coords="13121,755,13428,811"/>
+<area shape="rect" id="node171" href="$dd/d85/buffer_8cpp.html" title="Implementation of AJABuffer class." alt="" coords="17989,421,18240,477"/>
+<area shape="rect" id="node174" href="$de/d30/dpx__hdr_8cpp.html" title="Implementation of DpxHdr class adapted from STwo&#39;s dpx file I/O." alt="" coords="1129,525,1380,581"/>
+<area shape="rect" id="node175" href="$da/d15/dpxfileio_8h.html" title="Declaration of the AJADPXFileIO class, for low level file I/O." alt="" coords="855,525,1105,581"/>
+<area shape="rect" id="node176" href="$df/dc4/dpxfileio_8cpp.html" title="Implementation of the AJADPXFileIO class, for low level file I/O." alt="" coords="6780,637,7031,693"/>
+<area shape="rect" id="node178" href="$d9/db4/guid_8cpp.html" title="Generates a new, unique UUID as an STL string." alt="" coords="3635,317,3885,373"/>
+<area shape="rect" id="node181" href="$d6/d23/timecode_8h.html" title="Declares the AJATimeCode class." alt="" coords="29441,525,29692,581"/>
+<area shape="rect" id="node182" href="$d0/d74/wavewriter_8cpp.html" title="Implements the AJAWavWriter class." alt="" coords="32308,637,32559,693"/>
+<area shape="rect" id="node183" href="$d4/d23/ancillarydata__timecode_8h.html" title="Declares the AJAAncillaryData_Timecode class." alt="" coords="33549,629,33800,700"/>
+<area shape="rect" id="node184" href="$d5/d41/ancillarydata__timecode__atc_8h.html" title="Declares the AJAAncillaryData_Timecode_ATC class." alt="" coords="33837,748,34088,819"/>
+<area shape="rect" id="node185" href="$d4/d69/ancillarydata__timecode__vitc_8h.html" title="Declares the AJAAncillaryData_Timecode_VITC class." alt="" coords="34112,748,34363,819"/>
+<area shape="rect" id="node186" href="$d9/d0e/ancillarydata__timecode_8cpp.html" title="Implements the AJAAncillaryData_Timecode class." alt="" coords="33537,755,33813,811"/>
+<area shape="rect" id="node188" href="$d7/d52/timecodeburn_8cpp.html" title="Implements the AJATimeCodeBurn class." alt="" coords="27236,525,27495,581"/>
+<area shape="rect" id="node190" href="$d1/d3d/performance_8h.html" title="Declaration of the AJAPerformance class." alt="" coords="293,421,544,477"/>
+<area shape="rect" id="node191" href="$d5/d52/performance_8cpp.html" title="Monitors the operational performance, timing, and stats of an arbitrary module." alt="" coords="294,525,546,581"/>
+<area shape="rect" id="node196" href="$d3/de8/linux_2pnpimpl_8h.html" title="Declares the AJAPnpImpl class." alt="" coords="17227,317,17477,373"/>
+<area shape="rect" id="node198" href="$db/d56/mac_2pnpimpl_8h.html" title="Declares the AJAPnpImpl class." alt="" coords="12695,317,12945,373"/>
+<area shape="rect" id="node199" href="$dd/d83/pnp_8cpp.html" title="Implements the AJAPnp (plug&#45;and&#45;play) class." alt="" coords="12369,317,12620,373"/>
+<area shape="rect" id="node200" href="$d4/d8f/windows_2pnpimpl_8h.html" title="Declares the AJAPnpImpl class." alt="" coords="22537,317,22788,373"/>
+<area shape="rect" id="node202" href="$de/d5a/ntv2qtpreview_8h.html" title="Header file for NTV2QtPreview demo application. Demonstrates how to capture audio/video from NTV2&#45;bas..." alt="" coords="17437,637,17715,693"/>
+<area shape="rect" id="node205" href="$dd/dfe/ntv2streampreview_8h.html" title="Header file for NTV2StreamPreview demo application. Demonstrates how to capture audio/video from NTV2..." alt="" coords="16074,637,16417,693"/>
+<area shape="rect" id="node197" href="$d5/d23/linux_2pnpimpl_8cpp.html" title="Implements the AJAPnpImpl class on the Linux platform." alt="" coords="17664,421,17915,477"/>
+<area shape="rect" id="node201" href="$d5/d61/windows_2pnpimpl_8cpp.html" title="Implements the AJAPnpImpl class on the Windows platform." alt="" coords="22537,421,22788,477"/>
+<area shape="rect" id="node203" href="$d9/d81/ntv2qtpreview_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from a single SDI input and displ..." alt="" coords="15336,755,15587,811"/>
+<area shape="rect" id="node204" href="$d4/d9d/ntv2qtpreview_8cpp.html" title="Implementation of the NTV2QtPreview class." alt="" coords="17430,755,17722,811"/>
+<area shape="rect" id="node206" href="$da/d61/ntv2streampreview_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from a single SDI input and displ..." alt="" coords="14138,755,14403,811"/>
+<area shape="rect" id="node207" href="$dc/dca/ntv2streampreview_8cpp.html" title="Implementation of the NTV2StreamPreview class." alt="" coords="16066,755,16425,811"/>
+<area shape="rect" id="node211" href="$d8/d71/memory_8cpp.html" title="Implements the AJAMemory class." alt="" coords="17288,421,17539,477"/>
+<area shape="rect" id="node212" href="$d3/d35/thread_8cpp.html" title="Implements the AJAThread class." alt="" coords="20043,421,20293,477"/>
+<area shape="rect" id="node213" href="$d6/da4/ancillarydata__cea708_8cpp.html" title="Implements the AJAAncillaryData_Cea708 class." alt="" coords="14475,421,14738,477"/>
+<area shape="rect" id="node214" href="$d8/dd3/ntv2qtmultiinput_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from 1, 2, 3, or 4 SDI inputs and..." alt="" coords="14763,421,15013,477"/>
+<area shape="rect" id="node215" href="$d7/d85/ntv2bitfilemanager_8cpp.html" title="Implementation of CNTV2BitfileManager class." alt="" coords="9278,525,9530,581"/>
+<area shape="rect" id="node216" href="$d2/d09/ntv2csclut_8cpp.html" title="Implements most of CNTV2Card&#39;s CSC/LUT&#45;related functions." alt="" coords="15037,421,15288,477"/>
+<area shape="rect" id="node217" href="$d3/d53/ntv2dma_8cpp.html" title="Implementations of DMA&#45;related CNTV2Card methods." alt="" coords="15312,421,15563,477"/>
+<area shape="rect" id="node218" href="$dd/dbe/ntv2dynamicdevice_8cpp.html" title="Implementations of DMA&#45;related CNTV2Card methods." alt="" coords="12966,421,13223,477"/>
+<area shape="rect" id="node219" href="$d2/de1/ntv2mcsfile_8cpp.html" title="Implementation of CNTV2MCSfile class." alt="" coords="13248,421,13499,477"/>
+<area shape="rect" id="node220" href="$d7/da9/ntv2register_8cpp.html" title="Implements most of CNTV2Card&#39;s register&#45;based functions." alt="" coords="15907,525,16157,581"/>
+<area shape="rect" id="node221" href="$d4/d99/ntv2regroute_8cpp.html" title="CNTV2Card widget routing function implementations." alt="" coords="13573,421,13824,477"/>
+<area shape="rect" id="node222" href="$df/d16/ntv2windriverinterface_8cpp.html" title="Implementation of CNTV2WinDriverInterface." alt="" coords="14147,421,14451,477"/>
+<area shape="rect" id="node210" href="$d9/db8/log_8cpp.html" title="Implements the AJATimeLog class." alt="" coords="19648,525,19899,581"/>
+<area shape="rect" id="node226" href="$dd/d55/options__popt_8cpp.html" title=" " alt="" coords="12333,525,12587,581"/>
+<area shape="rect" id="node228" href="$d7/d8f/info_8cpp.html" title="Implements the AJASystemInfo class." alt="" coords="16659,421,16909,477"/>
+<area shape="rect" id="node229" href="$d2/d2b/ntv2vpid_8h.html" title="Declares the CNTV2VPID class. See SMPTE 352 standard for details." alt="" coords="16232,421,16483,477"/>
+<area shape="rect" id="node230" href="$d4/dd5/ntv2vpid_8cpp.html" title="Implements the CNTV2VPID class. See the SMPTE 352 standard for details." alt="" coords="16283,525,16533,581"/>
+<area shape="rect" id="node232" href="$da/dbe/ajamovingavg_8h.html" title="Declares the AJAMovingAvg class." alt="" coords="18528,317,18779,373"/>
+<area shape="rect" id="node233" href="$de/d93/lock_8cpp.html" title="Implements the AJALock class." alt="" coords="18253,317,18504,373"/>
+<area shape="rect" id="node235" href="$dc/d47/ntv2verticalfilter_8cpp.html" title="Implementations of the VerticalFilterLine and FieldInterpolateLine functions." alt="" coords="18264,421,18515,477"/>
+<area shape="rect" id="node237" href="$d0/d4c/process_8cpp.html" title="Implements the AJAProcess class." alt="" coords="23481,525,23732,581"/>
+<area shape="rect" id="node238" href="$d7/d25/ntv2framegrabber_8h.html" title="Header file for the NTV2FrameGrabber class." alt="" coords="21919,525,22169,581"/>
+<area shape="rect" id="node239" href="$da/d04/ntv2streamgrabber_8h.html" title="Header file for the NTV2StreamGrabber class." alt="" coords="21553,525,21895,581"/>
+<area shape="rect" id="node241" href="$d6/df8/system_8cpp.html" title="System specific helper functions." alt="" coords="3523,421,3773,477"/>
+<area shape="rect" id="node243" href="$d2/d90/konaipj2ksetup_8cpp.html" title=" " alt="" coords="25729,421,26061,477"/>
+<area shape="rect" id="node244" href="$de/dd6/ntv2config2110_8cpp.html" title="Implements the CNTV2Config2110 class." alt="" coords="26085,421,26336,477"/>
+<area shape="rect" id="node245" href="$d6/ddd/ntv2configts2022_8cpp.html" title=" " alt="" coords="26360,421,26611,477"/>
+<area shape="rect" id="node246" href="$df/db6/ntv2serialcontrol_8cpp.html" title="Implements the CNTV2SerialControl class." alt="" coords="25453,421,25704,477"/>
+</map>
