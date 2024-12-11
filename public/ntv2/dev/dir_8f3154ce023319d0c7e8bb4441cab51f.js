@@ -45,9 +45,7 @@ var dir_8f3154ce023319d0c7e8bb4441cab51f =
       [ "AJATimeBase", "d7/d17/class_a_j_a_time_base.html", "d7/d17/class_a_j_a_time_base" ]
     ] ],
     [ "timecode.cpp", "d8/d99/timecode_8cpp.html", "d8/d99/timecode_8cpp" ],
-    [ "timecode.h", "d6/d23/timecode_8h.html", [
-      [ "AJATimeCode", "d1/d32/class_a_j_a_time_code.html", "d1/d32/class_a_j_a_time_code" ]
-    ] ],
+    [ "timecode.h", "d6/d23/timecode_8h.html", "d6/d23/timecode_8h" ],
     [ "timecodeburn.cpp", "d7/d52/timecodeburn_8cpp.html", "d7/d52/timecodeburn_8cpp" ],
     [ "timecodeburn.h", "d5/dc1/timecodeburn_8h.html", [
       [ "AJATimeCodeBurn", "df/d1e/class_a_j_a_time_code_burn.html", "df/d1e/class_a_j_a_time_code_burn" ]

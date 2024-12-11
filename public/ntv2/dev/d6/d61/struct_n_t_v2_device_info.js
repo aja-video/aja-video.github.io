@@ -65,6 +65,7 @@ var struct_n_t_v2_device_info =
     [ "serialNumber", "d6/d61/struct_n_t_v2_device_info.html#a4c5ae1927fc592f4fa5e46ae64574a27", null ],
     [ "stereoInSupport", "d6/d61/struct_n_t_v2_device_info.html#a1ceaa525da730eb15b3cec880c80541c", null ],
     [ "stereoOutSupport", "d6/d61/struct_n_t_v2_device_info.html#acc3b1e3a226131f0aac9d725e036af3a", null ],
+    [ "vdevName", "d6/d61/struct_n_t_v2_device_info.html#a5a8262457e7d04918681f865eb53e9e1", null ],
     [ "vdevUrl", "d6/d61/struct_n_t_v2_device_info.html#a659151df9b2d96c362e7f847ea05fc12", null ],
     [ "vidProcSupport", "d6/d61/struct_n_t_v2_device_info.html#acec6f6025e349dfc5c45423565c7f066", null ]
 ];

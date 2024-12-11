@@ -1352,6 +1352,11 @@ var ntv2publicinterface_8h =
       [ "kRegLEDHDMIInControl", "d4/dd7/ntv2publicinterface_8h.html#ac445f75095c84c136f2b4a7ab1e04d3bab250000ac06191b3588fa59d3b351893", null ],
       [ "kRegLEDHDMIOutControl", "d4/dd7/ntv2publicinterface_8h.html#ac445f75095c84c136f2b4a7ab1e04d3ba856bb9c3aab74d41b4c5feb1b7c3a7cd", null ]
     ] ],
+    [ "NTV2LocalProcBlockRegisters", "d4/dd7/ntv2publicinterface_8h.html#ac93722206f20771644cc3fd569b07d60", [
+      [ "kRegLPRJ45IP", "d4/dd7/ntv2publicinterface_8h.html#ac93722206f20771644cc3fd569b07d60a0dd5f8ed5efed8e0e6237f410191f78b", null ],
+      [ "kRegLPTunnelIP", "d4/dd7/ntv2publicinterface_8h.html#ac93722206f20771644cc3fd569b07d60a8b3971478b0b2b1a6738ccce968f3df2", null ],
+      [ "kRegLPFrameTask", "d4/dd7/ntv2publicinterface_8h.html#ac93722206f20771644cc3fd569b07d60a2e86c6cb133c99469f6a20c8168c64a7", null ]
+    ] ],
     [ "NTV2LUTControlRegisters", "d4/dd7/ntv2publicinterface_8h.html#a4a86af26ec4d3a7d229f6cdfd0c5c18e", [
       [ "kReg1DLUTLoadControl1", "d4/dd7/ntv2publicinterface_8h.html#a4a86af26ec4d3a7d229f6cdfd0c5c18eacaa3f9721ddf629a7d2858ffb18860a1", null ],
       [ "kReg1DLUTLoadControl2", "d4/dd7/ntv2publicinterface_8h.html#a4a86af26ec4d3a7d229f6cdfd0c5c18eadd4730504a8965c8bd89217cb7449c14", null ],
@@ -2505,6 +2510,12 @@ var ntv2publicinterface_8h =
       [ "kLHIRegMaskSDIOutSMPTELevelBMode", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a5958f180389d5f3884daacd671506297", null ],
       [ "kK2RegMaskVPIDInsertionEnable", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a16bb9fabd1527387bdb75ef0d26da1f6", null ],
       [ "kK2RegMaskVPIDInsertionOverwrite", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a2d301887986af19f869cfa090ac36fbb", null ],
+      [ "kK2RegMaskSDIOutDS1Audio_Bit2", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999ab1625564480528b3a19dcf6fde9befb2", null ],
+      [ "kK2RegMaskSDIOutDS1Audio_Bit1", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a2d60fa077426855952ea16bf3a2a2594", null ],
+      [ "kK2RegMaskSDIOutDS1Audio_Bit0", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999aba08496662d140c1a8267405ec260868", null ],
+      [ "kK2RegMaskSDIOutDS2Audio_Bit2", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999abd66bc73dc3dedc75577ba58aaa06654", null ],
+      [ "kK2RegMaskSDIOutDS2Audio_Bit1", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999ae4fec47cda7f1a1b347ce553e5b0c227", null ],
+      [ "kK2RegMaskSDIOutDS2Audio_Bit0", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a7853e4a0165ec6080e99711e8cce49a8", null ],
       [ "kK2RegMaskSDIOutDS1AudioSelect", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999ac86e055d66e5351efdbda628a700cd4c", null ],
       [ "kK2RegMaskSDIOutDS2AudioSelect", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a7112cb2e3451d04bbaaedf7b658363fe", null ],
       [ "kK2RegMaskConverterOutStandard", "d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999aac0f22e44141d01baf9eee909d60ba95", null ],

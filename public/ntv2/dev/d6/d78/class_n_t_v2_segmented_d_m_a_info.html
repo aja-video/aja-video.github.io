@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1392</span>
+   &#160;<span id="projectnumber">17.5.0.1436</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1392</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1436</div>
   </td>
  </tr>
  </tbody>
@@ -144,12 +144,12 @@ Public Attributes</h2></td></tr>
 <li>To DMA a sub-section of a frame, set <a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html#a3bc9cbea77f93945e2b01aa5449d947d" title="Number of active bytes in a row of video.">NTV2SegmentedDMAInfo::acNumActiveBytesPerRow</a> to the number of bytes that comprise one row of the subsection, then <a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html#ab1e76aad5ca0e892db2c46c93d6d9d94" title="Number of segments of size ::AUTOCIRCULATE_TRANSFER::acVideoBuffer.fByteCount to transfer....">NTV2SegmentedDMAInfo::acNumSegments</a> to the number of rows in the subsection, <a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html#aa12e92b3a264dbea68521e454b280bf2" title="Offset, in bytes, between the start of one host segment and the start of the next host segment (i....">NTV2SegmentedDMAInfo::acSegmentHostPitch</a> to the bytes-per-row of the entire frame in host memory, and <a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html#ad65f79dd33702366deb86b2673db672b" title="Offset, in bytes, between the start of one device segment and the start of the next device segment (i...">NTV2SegmentedDMAInfo::acSegmentDevicePitch</a> to the bytes-per-row of the entire frame in device memory. <dl class="section note"><dt>Note</dt><dd>IMPORTANT: For segmented DMAs, the ::AUTOCIRCULATE_TRANSFER::acVideoBuffer.fByteCount field holds the segment byte count (i.e., the number of bytes to transfer per segment.</dd>
 <dd>
 This struct uses a constructor to properly initialize itself. Do not use <b>memset</b> or <b>bzero</b> to initialize or "clear" it. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000018">Todo:</a></b></dt><dd>Create a new field in the <a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html" title="This struct is used to augment the default full-frame AutoCirculate DMA transfer to accommodate multi...">NTV2SegmentedDMAInfo</a> structure to eliminate the necessity of setting ::AUTOCIRCULATE_TRANSFER::acVideoBuffer.fByteCount to store the segmented transfer's bytes-per-segment value.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000017">Todo:</a></b></dt><dd>Create a new field in the <a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html" title="This struct is used to augment the default full-frame AutoCirculate DMA transfer to accommodate multi...">NTV2SegmentedDMAInfo</a> structure to eliminate the necessity of setting ::AUTOCIRCULATE_TRANSFER::acVideoBuffer.fByteCount to store the segmented transfer's bytes-per-segment value.</dd></dl>
 </li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Setting <a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html#ab1e76aad5ca0e892db2c46c93d6d9d94" title="Number of segments of size ::AUTOCIRCULATE_TRANSFER::acVideoBuffer.fByteCount to transfer....">NTV2SegmentedDMAInfo::acNumSegments</a> to 0 or 1 defaults to normal non-segmented DMA behavior (i.e. DMA one complete, packed frame). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07086">7086</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07101">7101</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afa4e0082f317f99c5d199fccd35f7bb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa4e0082f317f99c5d199fccd35f7bb6">&#9670;&nbsp;</a></span>NTV2SegmentedDMAInfo() <span class="overload">[1/2]</span></h2>
@@ -267,7 +267,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>My segment count. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07128">7128</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07143">7143</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if I'm currently active (i.e., I have more than one segment; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07133">7133</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07148">7148</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 
 <p>Number of active bytes in a row of video. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07089">7089</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07104">7104</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -458,7 +458,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 
 <p>Number of segments of size ::AUTOCIRCULATE_TRANSFER::acVideoBuffer.fByteCount to transfer. Zero or 1 means normal (unsegmented) transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07087">7087</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07102">7102</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 
 <p>Offset, in bytes, between the start of one device segment and the start of the next device segment (i.e. device memory bytes-per-row). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07092">7092</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07107">7107</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +494,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 
 <p>Offset, in bytes, between the start of one host segment and the start of the next host segment (i.e. host memory bytes-per-row). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07090">7090</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07105">7105</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d78/class_n_t_v2_segmented_d_m_a_info.html">NTV2SegmentedDMAInfo</a></li>
-    <li class="footer">Generated on Fri Nov 22 2024 13:09:47 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Dec 11 2024 10:27:54 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

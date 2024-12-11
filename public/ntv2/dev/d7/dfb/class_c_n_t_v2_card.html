@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1392</span>
+   &#160;<span id="projectnumber">17.5.0.1436</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1392</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1436</div>
   </td>
  </tr>
  </tbody>
@@ -2029,6 +2029,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63ec3085a25c5fa66190847bd1da27e1 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1792276dd6840c919577a34027e432e inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac1792276dd6840c919577a34027e432e">IsMBSystemReady</a> (void)</td></tr>
 <tr class="separator:ac1792276dd6840c919577a34027e432e inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71d52b98b22b784d0b93f9a85158a99 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#af71d52b98b22b784d0b93f9a85158a99">IsLPSystemReady</a> (void)</td></tr>
+<tr class="separator:af71d52b98b22b784d0b93f9a85158a99 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2be1768c435260c2f4d1632d193734b inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac2be1768c435260c2f4d1632d193734b">Open</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDeviceIndex)</td></tr>
 <tr class="memdesc:ac2be1768c435260c2f4d1632d193734b inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a local/physical AJA device so it can be monitored/controlled.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac2be1768c435260c2f4d1632d193734b">More...</a><br /></td></tr>
 <tr class="separator:ac2be1768c435260c2f4d1632d193734b inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2853,7 +2855,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04502">4502</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04488">4488</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -2881,7 +2883,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04488">4488</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04474">4474</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -5129,7 +5131,7 @@ For <b>playout</b> to IP devices running S2110 firmware, this method will automa
 </dd>
 <dd>
 For <b>capture</b> from IP devices running S2110 firmware, this method will automatically extract <b>VPID</b> and <b>RP188</b> timecode packets from the incoming RTP Anc streams, even if not <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data.">AUTOCIRCULATE_WITH_ANC</a>, or without Anc buffers in the "transferInfo". </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000019">Bug:</a></b></dt><dd>For IP devices running S2110 firmware, this method performs many heap allocations in order to transparently support normal (<b>VPID</b> and <b>RP188</b>) and custom ancillary data. This feature should be re-implemented to use separate, per-channel, private, pre-allocated heaps for the STL objects and other buffers it uses. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000018">Bug:</a></b></dt><dd>For IP devices running S2110 firmware, this method performs many heap allocations in order to transparently support normal (<b>VPID</b> and <b>RP188</b>) and custom ancillary data. This feature should be re-implemented to use separate, per-channel, private, pre-allocated heaps for the STL objects and other buffers it uses. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a431e77d0e1cb52855a80fbbeab954e04" title="Transfers a single frame from the AJA device to the host.">CNTV2Card::DMAReadFrame</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a321815c3e8bed38b2370baa1fb1b5fd0" title="Transfers a single frame from the host to the AJA device.">CNTV2Card::DMAWriteFrame</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00695">695</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
@@ -6520,7 +6522,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 <dl class="section return"><dt>Returns</dt><dd>True if all requested registers were successfully read; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This operation is not guaranteed to be performed atomically. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04630">4630</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04616">4616</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -6569,7 +6571,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 <dl class="section return"><dt>Returns</dt><dd>True if all requested registers were successfully written; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This operation is not guaranteed to be performed atomically. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04619">4619</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04605">4605</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -6968,7 +6970,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abc9dc293c526a37d468e2cb185a8b349">DeviceCapabilities::CanDoConversionMode</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abc9dc293c526a37d468e2cb185a8b349">DeviceCapabilities::CanDoConversionMode</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -6997,7 +6999,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00506">506</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7042,7 +7044,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000038">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00443">443</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7071,7 +7073,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#adeabcb89e0707f506a58f996433e8925">DeviceCapabilities::CanDoFrameBufferFormat</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#adeabcb89e0707f506a58f996433e8925">DeviceCapabilities::CanDoFrameBufferFormat</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00490">490</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7100,7 +7102,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a9c2deda32fec538b53ab0dfcd67d7b66">DeviceCapabilities::CanDoInputSource</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a9c2deda32fec538b53ab0dfcd67d7b66">DeviceCapabilities::CanDoInputSource</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00511">511</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7129,7 +7131,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abe8c97f659dfd023641e6ed088fdf652">DeviceCapabilities::CanDoVideoFormat</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abe8c97f659dfd023641e6ed088fdf652">DeviceCapabilities::CanDoVideoFormat</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00485">485</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7158,7 +7160,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#affd049c2b9cecc40e60db9d9fbe93c0a">DeviceCapabilities::CanDoWidget</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#affd049c2b9cecc40e60db9d9fbe93c0a">DeviceCapabilities::CanDoWidget</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00495">495</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7197,7 +7199,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00475">475</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7226,7 +7228,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7265,7 +7267,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00480">480</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7294,7 +7296,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00460">460</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7333,7 +7335,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00465">465</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7362,7 +7364,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -7401,7 +7403,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00470">470</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
@@ -9459,7 +9461,7 @@ This function will block and not return until the transfer has finished or faile
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04178">4178</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04164">4164</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -9496,7 +9498,7 @@ This function will block and not return until the transfer has finished or faile
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04152">4152</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04138">4138</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -9533,7 +9535,7 @@ This function will block and not return until the transfer has finished or faile
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04165">4165</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04151">4151</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -9570,7 +9572,7 @@ This function will block and not return until the transfer has finished or faile
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04191">4191</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04177">4177</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -10182,7 +10184,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. Swapped the PCI access frame and output frame registers at the next output VBI. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. Swapped the PCI access frame and output frame registers at the next output VBI. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02180">2180</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -10512,7 +10514,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00794">794</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -10551,7 +10553,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00782">782</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -10664,7 +10666,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000070">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af39f58b55895653791913b3d3e9b0902" title="Answers whether or not the specified bidirectional XLR audio connectors are collectively acting as in...">CNTV2Card::GetAnalogAudioTransmitEnable</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000071">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af39f58b55895653791913b3d3e9b0902" title="Answers whether or not the specified bidirectional XLR audio connectors are collectively acting as in...">CNTV2Card::GetAnalogAudioTransmitEnable</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l01673">1673</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -12498,7 +12500,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000096">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a611031170a5dd26e456ed55e05dec9c2" title="Returns the current AutoCirculate status for the given channel.">CNTV2Card::AutoCirculateGetStatus</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a611031170a5dd26e456ed55e05dec9c2" title="Returns the current AutoCirculate status for the given channel.">CNTV2Card::AutoCirculateGetStatus</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -12537,7 +12539,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000080">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03077">3077</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -12566,7 +12568,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03107">3107</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -13266,7 +13268,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dc3/ntv2signalrouting.html">Widget Signal Routing</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a99a725caefb31371d79cab62d695aa7d" title="Answers with the currently connected NTV2OutputCrosspointID for the given NTV2InputCrosspointID.">CNTV2Card::GetConnectedOutput</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad43504643afaeee71bd14fde6f59eabb" title="Answers whether or not the given widget signal input (sink) is connected to another output (source).">CNTV2Card::IsConnected</a> </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000020">Bug:</a></b></dt><dd>If the output is connected to more than one widget input, this function only returns the first one found. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000019">Bug:</a></b></dt><dd>If the output is connected to more than one widget input, this function only returns the first one found. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d99/ntv2regroute_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d4/d99/ntv2regroute_8cpp_source.html">ntv2regroute.cpp</a>.</p>
 
@@ -13608,7 +13610,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function returns valid information only for devices for which <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#af19c72d12b14fc40c38745f35a179215">NTV2DeviceCanDoSDIErrorChecks</a> returns 'true'. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04238">4238</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04224">4224</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -13644,7 +13646,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function returns valid information only for devices for which <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#af19c72d12b14fc40c38745f35a179215">NTV2DeviceCanDoSDIErrorChecks</a> returns 'true'. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04249">4249</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04235">4235</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -13709,7 +13711,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00195">195</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -14117,7 +14119,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04509">4509</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04495">4495</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -14154,7 +14156,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04540">4540</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04526">4526</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -14625,7 +14627,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04183">4183</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04169">4169</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -14653,7 +14655,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04157">4157</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04143">4143</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -14681,7 +14683,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04170">4170</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04156">4156</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -14709,7 +14711,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04196">4196</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04182">4182</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -15304,7 +15306,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00384">384</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00386">386</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -15472,7 +15474,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000095">Deprecated:</a></b></dt><dd>Use CNTV2Card::AutoCirculateGetFrame instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000096">Deprecated:</a></b></dt><dd>Use CNTV2Card::AutoCirculateGetFrame instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -18348,7 +18350,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>Obsolete, do not use. First deprecated in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000102">Deprecated:</a></b></dt><dd>Obsolete, do not use. First deprecated in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03689">3689</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -19204,10 +19206,10 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000103">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Eventually this function will be removed from the class. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000104">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Eventually this function will be removed from the class. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#aef5852308d0853201208edf44bad20ea">NTV2DeviceCanDoMultiFormat</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4e63d1baaef7173535588fbd434f9845" title="Enables or disables multi-format (per channel) device operation. If enabled, each device channel can ...">CNTV2Card::SetMultiFormatMode</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-clocking">Video Output Clocking &amp; Synchronization</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04387">4387</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04373">4373</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -19284,7 +19286,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04708">4708</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04694">4694</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -19491,7 +19493,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00772">772</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -19774,7 +19776,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02174">2174</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -20303,7 +20305,7 @@ If the device is capable of reading analog LTC from its reference input connecto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03119">3119</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -20687,7 +20689,7 @@ If the device is capable of reading analog LTC from its reference input connecto
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0645149b53c3650f09fdcbc7e4a40097" title="Answers with the current parity control for the specified RS422 serial port.">CNTV2Card::GetRS422Parity</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1c4e8be8766fbfedd128891b3a32e149" title="Sets the baud rate of the specified RS422 serial port.">CNTV2Card::SetRS422BaudRate</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#afc493740592804442187ff521df0968f">NTV2DeviceGetNumSerialPorts</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a130a4f011f989382d984cf2b5ab781f4">NTV2DeviceCanDoProgrammableRS422</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04467">4467</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04453">4453</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -20736,7 +20738,7 @@ If the device is capable of reading analog LTC from its reference input connecto
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5cd41a98ab45f157de8d02fbf8f4174d" title="Sets the parity control on the specified RS422 serial port.">CNTV2Card::SetRS422Parity</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a2bb07ab55e063b96f14bfaf93d34eb21" title="Answers with the current baud rate of the specified RS422 serial port.">CNTV2Card::GetRS422BaudRate</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#afc493740592804442187ff521df0968f">NTV2DeviceGetNumSerialPorts</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a130a4f011f989382d984cf2b5ab781f4">NTV2DeviceCanDoProgrammableRS422</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04424">4424</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04410">4410</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -21119,7 +21121,7 @@ If the device is capable of reading analog LTC from its reference input connecto
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04292">4292</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04278">4278</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -21440,7 +21442,7 @@ If the device is capable of reading analog LTC from its reference input connecto
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function returns valid information only for devices for which <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#af19c72d12b14fc40c38745f35a179215">NTV2DeviceCanDoSDIErrorChecks</a> returns 'true'. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04216">4216</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04202">4202</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -21678,7 +21680,7 @@ If the device is capable of reading analog LTC from its reference input connecto
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04334">4334</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04320">4320</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -21831,7 +21833,7 @@ Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a1c7b90df5
 The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a692c2f8b747962d58df9ed2dbc0a9074" title="Sets the device&#39;s NTV2AudioSystem that will provide audio for the given SDI output&#39;s audio embedder....">CNTV2Card::SetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5d85a46821170dfcd356286d96e2478f" title="Sets the Audio System that will supply audio for the given SDI output&#39;s audio embedder for Data Strea...">CNTV2Card::SetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03986">3986</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03981">3981</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -21927,7 +21929,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04366">4366</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04352">4352</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22020,7 +22022,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Manual control will not change the state of the relays if the watchdog timer for the relays is enabled. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04083">4083</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04069">4069</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22068,7 +22070,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04067">4067</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04053">4053</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22152,7 +22154,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04205">4205</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04191">4191</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22188,7 +22190,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function returns valid information only for devices for which <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#af19c72d12b14fc40c38745f35a179215">NTV2DeviceCanDoSDIErrorChecks</a> returns 'true'. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04227">4227</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04213">4213</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22236,7 +22238,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04111">4111</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04097">4097</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22274,7 +22276,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The watchdog timer won't change the state of the relays if they're under manual control. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04055">4055</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04041">4041</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22312,7 +22314,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The timeout interval begins or is reset when a kick sequence is received. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04139">4139</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04125">4125</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -22507,7 +22509,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000017">Todo:</a></b></dt><dd><p class="startdd">Should use bool&amp; parameter instead of a ULWord&amp;. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000016">Todo:</a></b></dt><dd><p class="startdd">Should use bool&amp; parameter instead of a ULWord&amp;. </p>
 <p class="enddd">Should be named GetSMPTE372Enable. </p>
 </dd></dl>
 
@@ -23616,7 +23618,7 @@ This function does not take into account an SDI output that's designated as a "m
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03134">3134</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -24360,7 +24362,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04732">4732</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04718">4718</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -24720,7 +24722,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04727">4727</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04713">4713</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -24903,7 +24905,7 @@ This function does not take into account an SDI output that's designated as a "m
 <p>Restarts the countdown timer to prevent the watchdog timer from timing out. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04045">4045</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04031">4031</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -25496,7 +25498,7 @@ This function does not take into account an SDI output that's designated as a "m
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l00480">480</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -26254,7 +26256,7 @@ This function does not take into account an SDI output that's designated as a "m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04657">4657</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04643">4643</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -26366,7 +26368,7 @@ This function does not take into account an SDI output that's designated as a "m
 <dl class="section return"><dt>Returns</dt><dd>True if all requested data was successfully read; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This operation is not guaranteed to be performed atomically. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04650">4650</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04636">4636</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -26394,7 +26396,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04495">4495</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04481">4481</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -26916,7 +26918,7 @@ This function does not take into account an SDI output that's designated as a "m
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000069">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8942d73022b3a042f3790a040a368162" title="Sets the specified bidirectional XLR audio connectors to collectively act as inputs or outputs.">CNTV2Card::SetAnalogAudioTransmitEnable</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000070">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8942d73022b3a042f3790a040a368162" title="Sets the specified bidirectional XLR audio connectors to collectively act as inputs or outputs.">CNTV2Card::SetAnalogAudioTransmitEnable</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l01665">1665</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -29045,7 +29047,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000055">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -32111,7 +32113,7 @@ If the designated FrameStore/channel is enabled and in <a class="el" href="../..
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000100">Deprecated:</a></b></dt><dd>Use GetLTCInputEnable instead. First deprecated in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>Use GetLTCInputEnable instead. First deprecated in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03684">3684</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -32878,10 +32880,10 @@ If the designated FrameStore/channel is enabled and in <a class="el" href="../..
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000102">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Passing false for inEnable will cause this function to return false (fail). Eventually this function will be removed from the class. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000103">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Passing false for inEnable will cause this function to return false (fail). Eventually this function will be removed from the class. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#aef5852308d0853201208edf44bad20ea">NTV2DeviceCanDoMultiFormat</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a725a1899c9b85e93d03176e281c349" title="Answers if the device is operating in multiple-format per channel (independent channel) mode or not....">CNTV2Card::GetMultiFormatMode</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-clocking">Video Output Clocking &amp; Synchronization</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04379">4379</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04365">4365</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -32958,7 +32960,7 @@ If the designated FrameStore/channel is enabled and in <a class="el" href="../..
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04703">4703</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04689">4689</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -33203,7 +33205,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02164">2164</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -33759,7 +33761,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
 <dl class="section note"><dt>Note</dt><dd>This function only works with programmable RS422 devices. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5cd41a98ab45f157de8d02fbf8f4174d" title="Sets the parity control on the specified RS422 serial port.">CNTV2Card::SetRS422Parity</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a2bb07ab55e063b96f14bfaf93d34eb21" title="Answers with the current baud rate of the specified RS422 serial port.">CNTV2Card::GetRS422BaudRate</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#afc493740592804442187ff521df0968f">NTV2DeviceGetNumSerialPorts</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a130a4f011f989382d984cf2b5ab781f4">NTV2DeviceCanDoProgrammableRS422</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04445">4445</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04431">4431</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -33809,7 +33811,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
 <dl class="section note"><dt>Note</dt><dd>This function only works with programmable RS422 devices. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0645149b53c3650f09fdcbc7e4a40097" title="Answers with the current parity control for the specified RS422 serial port.">CNTV2Card::GetRS422Parity</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1c4e8be8766fbfedd128891b3a32e149" title="Sets the baud rate of the specified RS422 serial port.">CNTV2Card::SetRS422BaudRate</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#afc493740592804442187ff521df0968f">NTV2DeviceGetNumSerialPorts</a>, <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a130a4f011f989382d984cf2b5ab781f4">NTV2DeviceCanDoProgrammableRS422</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04394">4394</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04380">4380</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -33913,7 +33915,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04283">4283</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04269">4269</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -33961,7 +33963,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04260">4260</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04246">4246</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34199,7 +34201,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04325">4325</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04311">4311</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34247,7 +34249,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04315">4315</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04301">4301</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34350,7 +34352,7 @@ Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a1c7b90df5
 The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5d85a46821170dfcd356286d96e2478f" title="Sets the Audio System that will supply audio for the given SDI output&#39;s audio embedder for Data Strea...">CNTV2Card::SetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a36f832d7bff9146754d38c1d7788982e" title="Answers with the device&#39;s Audio System that is currently providing audio for the given SDI output&#39;s a...">CNTV2Card::GetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03949">3949</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03951">3951</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34411,7 +34413,7 @@ Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a1c7b90df5
 The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a36f832d7bff9146754d38c1d7788982e" title="Answers with the device&#39;s Audio System that is currently providing audio for the given SDI output&#39;s a...">CNTV2Card::GetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03976">3976</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03971">3971</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34463,7 +34465,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a692c2f8b747962d58df9ed2dbc0a9074" title="Sets the device&#39;s NTV2AudioSystem that will provide audio for the given SDI output&#39;s audio embedder....">CNTV2Card::SetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a36f832d7bff9146754d38c1d7788982e" title="Answers with the device&#39;s Audio System that is currently providing audio for the given SDI output&#39;s a...">CNTV2Card::GetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04006">4006</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04003">4003</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34607,7 +34609,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04357">4357</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04343">4343</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34655,7 +34657,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04347">4347</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04333">4333</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34748,7 +34750,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Manual control won't change the state of the relays if the watchdog timer for the relays is enabled. Because this call modifies the control register, it sends a "kick" sequence, which has the side effect of restarting the timeout counter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04099">4099</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04085">4085</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34899,7 +34901,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 <dd>
 If the board's jumpers aren't set in the position to enable the watchdog timer, this call will have no effect. See the <b>Hardware Jumpers</b> section in the <a class="el" href="../../d0/d53/ntv2devices.html#corvid24">Corvid 24</a> documentation for more information. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04127">4127</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04113">4113</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -34937,7 +34939,7 @@ If the board's jumpers aren't set in the position to enable the watchdog timer, 
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The timeout interval begins or is reset when a kick sequence is received. This call resets the timeout counter to zero, which will then start counting until this value is reached, triggering the watchdog timer (if it's enabled). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04147">4147</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04133">4133</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -35015,7 +35017,7 @@ The enable bits work on channel pairs, thus a parameter of <a class="el" href=".
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000016">Todo:</a></b></dt><dd><p class="startdd">Should use bool parameter instead of a ULWord. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000015">Todo:</a></b></dt><dd><p class="startdd">Should use bool parameter instead of a ULWord. </p>
 <p class="enddd">Should be named SetSMPTE372Enable. </p>
 </dd></dl>
 
@@ -36207,7 +36209,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04555">4555</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04541">4541</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -37348,7 +37350,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. A <b>false</b> result usually indicates the wait timed out, which is often due to the FrameStore being configured for playout, or if its input is not receiving a valid signal. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000018">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a previous call to Wait. Unfortunately, this is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000017">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a previous call to Wait. Unfortunately, this is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call GetInputVerticalInterruptCount before and after calling this function to verify that an interrupt really occurred;</li>
 <li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to get the event handle, and manually clear the event before calling this function. </li>
 </ul>
@@ -37402,7 +37404,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. A <b>false</b> result usually indicates the wait timed out, which is often due to the FrameStore being configured for playout, or if its input is not receiving a valid signal. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000017">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a previous call to Wait. Unfortunately, this is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000016">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a previous call to Wait. Unfortunately, this is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call GetInputVerticalInterruptCount before and after calling this function to verify that an interrupt really occurred;</li>
 <li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to get the event handle, and manually clear the event before calling this function. </li>
 </ul>
@@ -37457,7 +37459,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. A <b>false</b> result usually indicates the wait timed out. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The device's timing reference source affects how often &ndash; or even if &ndash; the VBI occurs. See <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-clocking">Video Output Clocking &amp; Synchronization</a> for more information. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000016">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a prior call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac05240d99252c18d39dbdba3086ca72e" title="Efficiently sleeps the calling thread/process until the next output VBI for the given field and outpu...">CNTV2Card::WaitForOutputFieldID</a>. This is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000015">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a prior call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac05240d99252c18d39dbdba3086ca72e" title="Efficiently sleeps the calling thread/process until the next output VBI for the given field and outpu...">CNTV2Card::WaitForOutputFieldID</a>. This is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0bdb12e76ec10c94f67387ec47111abf" title="Answers with the number of output vertical interrupts handled by the driver for the given output chan...">CNTV2Card::GetOutputVerticalInterruptCount</a> before and after calling this function to verify that an interrupt really occurred;</li>
 <li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to get the event handle, and manually clear the event before calling this function. </li>
 </ul>
@@ -37514,7 +37516,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 <dl class="section note"><dt>Note</dt><dd>The device's timing reference source affects how often &ndash; or even if &ndash; the VBI occurs. See <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-clocking">Video Output Clocking &amp; Synchronization</a> for more information. </dd>
 <dd>
 For interlaced video, callers that need to know whether the field or frame interrupt occurred should call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac05240d99252c18d39dbdba3086ca72e" title="Efficiently sleeps the calling thread/process until the next output VBI for the given field and outpu...">CNTV2Card::WaitForOutputFieldID</a> instead. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000015">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a prior call to WaitForOutputVerticalInterrupt. This is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000014">Bug:</a></b></dt><dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a prior call to WaitForOutputVerticalInterrupt. This is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0bdb12e76ec10c94f67387ec47111abf" title="Answers with the number of output vertical interrupts handled by the driver for the given output chan...">CNTV2Card::GetOutputVerticalInterruptCount</a> before and after calling this function to verify that an interrupt really occurred;</li>
 <li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to obtain the Windows event <code>HANDLE</code>, and manually clear it before calling this function. </li>
 </ul>
@@ -37700,7 +37702,7 @@ For interlaced video, callers that need to know whether the field or frame inter
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l00481">481</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -38212,7 +38214,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <dl class="section return"><dt>Returns</dt><dd>True if all registers were written successfully; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This operation is not guaranteed to be performed atomically. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04592">4592</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04578">4578</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -38508,7 +38510,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <dl class="section return"><dt>Returns</dt><dd>True if all requested data was successfully written; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This operation is not guaranteed to be performed atomically. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04643">4643</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04629">4629</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
 </div>
 </div>
@@ -38565,7 +38567,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></li>
-    <li class="footer">Generated on Fri Nov 22 2024 13:09:46 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Dec 11 2024 10:27:53 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

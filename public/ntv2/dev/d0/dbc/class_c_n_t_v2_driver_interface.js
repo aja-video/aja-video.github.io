@@ -47,6 +47,7 @@ var class_c_n_t_v2_driver_interface =
     [ "GetSupportedItems", "d0/dbc/class_c_n_t_v2_driver_interface.html#aa8c389406829aa571afcc2d6150f3ccc", null ],
     [ "HevcSendMessage", "d0/dbc/class_c_n_t_v2_driver_interface.html#a595965efc34c96e170a1da3c8c005a88", null ],
     [ "IsDeviceReady", "d0/dbc/class_c_n_t_v2_driver_interface.html#ac703d1dd41260b1a6ce494fd00c941aa", null ],
+    [ "IsLPSystemReady", "d0/dbc/class_c_n_t_v2_driver_interface.html#af71d52b98b22b784d0b93f9a85158a99", null ],
     [ "IsMBSystemReady", "d0/dbc/class_c_n_t_v2_driver_interface.html#ac1792276dd6840c919577a34027e432e", null ],
     [ "IsMBSystemValid", "d0/dbc/class_c_n_t_v2_driver_interface.html#a63ec3085a25c5fa66190847bd1da27e1", null ],
     [ "IsRecordingRegisterWrites", "d0/dbc/class_c_n_t_v2_driver_interface.html#a4352f0ef473ab98ff6f59b378eeab085", null ],
