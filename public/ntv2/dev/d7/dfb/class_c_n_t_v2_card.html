@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1436</span>
+   &#160;<span id="projectnumber">17.5.0.1458</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1436</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
   </td>
  </tr>
  </tbody>
@@ -1121,7 +1121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a858950cb362a1e64ce66844f86e8d31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the raw RP188 data into the DBB/Low/Hi registers for the given SDI output. These values are latched and sent at the next VBI.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a858950cb362a1e64ce66844f86e8d31f">More...</a><br /></td></tr>
 <tr class="separator:a858950cb362a1e64ce66844f86e8d31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1006274c5f87f4be41a527cd11dfe9fc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1006274c5f87f4be41a527cd11dfe9fc">GetRP188Data</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inSDIInput, <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html">NTV2_RP188</a> &amp;outRP188Data)</td></tr>
-<tr class="memdesc:a1006274c5f87f4be41a527cd11dfe9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the raw RP188 data from the DBB/Low/Hi registers for the given SDI input. On newer devices with bi-directional SDI connectors &ndash; see <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> for details &ndash; if the device is configured for...  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a1006274c5f87f4be41a527cd11dfe9fc">More...</a><br /></td></tr>
+<tr class="memdesc:a1006274c5f87f4be41a527cd11dfe9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the raw RP188 data from the DBB/Low/Hi registers for the given SDI input. On newer devices with bi-directional SDI connectors &ndash; see <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> for details &ndash; if the device is configured for...  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a1006274c5f87f4be41a527cd11dfe9fc">More...</a><br /></td></tr>
 <tr class="separator:a1006274c5f87f4be41a527cd11dfe9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ae325e9a0d2f4c74e00e438400f2e7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac2ae325e9a0d2f4c74e00e438400f2e7">SetRP188SourceFilter</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inSDIInput, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inFilterValue)</td></tr>
 <tr class="memdesc:ac2ae325e9a0d2f4c74e00e438400f2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the RP188 DBB filter for the given SDI input.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#ac2ae325e9a0d2f4c74e00e438400f2e7">More...</a><br /></td></tr>
@@ -7687,7 +7687,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The SDI output's <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ac6f9ee67bd7eda647024de39e44843c1">NTV2_RP188Mode</a> must be set to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ac6f9ee67bd7eda647024de39e44843c1a402aee60afaf52714e3a4010f6497d1c">NTV2_RP188_OUTPUT</a>. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac86afd2c387dc921e7bfdb0d49f5f64a" title="Configures the SDI output&#39;s embedder to embed SMPTE 12M timecode obtained from an SDI input,...">CNTV2Card::EnableRP188Bypass</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a858950cb362a1e64ce66844f86e8d31f" title="Writes the raw RP188 data into the DBB/Low/Hi registers for the given SDI output. These values are la...">CNTV2Card::SetRP188Data</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaba4ed33e51a3fc0769bc6dcca4f421a" title="Sets the current RP188 mode – NTV2_RP188_INPUT or NTV2_RP188_OUTPUT – for the given channel.">CNTV2Card::SetRP188Mode</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac86afd2c387dc921e7bfdb0d49f5f64a" title="Configures the SDI output&#39;s embedder to embed SMPTE 12M timecode obtained from an SDI input,...">CNTV2Card::EnableRP188Bypass</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a858950cb362a1e64ce66844f86e8d31f" title="Writes the raw RP188 data into the DBB/Low/Hi registers for the given SDI output. These values are la...">CNTV2Card::SetRP188Data</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaba4ed33e51a3fc0769bc6dcca4f421a" title="Sets the current RP188 mode – NTV2_RP188_INPUT or NTV2_RP188_OUTPUT – for the given channel.">CNTV2Card::SetRP188Mode</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02562">2562</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -10062,7 +10062,7 @@ This function will block and not return until the transfer has finished or faile
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab0452537d818c7dffe3621d8bc696d1e" title="Configures the SDI output&#39;s embedder to embed SMPTE 12M timecode specified in calls to CNTV2Card::Set...">CNTV2Card::DisableRP188Bypass</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac2ae325e9a0d2f4c74e00e438400f2e7" title="Sets the RP188 DBB filter for the given SDI input.">CNTV2Card::SetRP188SourceFilter</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8ae468d85e903463544c1552fcff6d96" title="For the given SDI output that&#39;s in RP188 bypass mode (E-E), specifies the SDI input to be used as a t...">CNTV2Card::SetRP188BypassSource</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab0452537d818c7dffe3621d8bc696d1e" title="Configures the SDI output&#39;s embedder to embed SMPTE 12M timecode specified in calls to CNTV2Card::Set...">CNTV2Card::DisableRP188Bypass</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac2ae325e9a0d2f4c74e00e438400f2e7" title="Sets the RP188 DBB filter for the given SDI input.">CNTV2Card::SetRP188SourceFilter</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8ae468d85e903463544c1552fcff6d96" title="For the given SDI output that&#39;s in RP188 bypass mode (E-E), specifies the SDI input to be used as a t...">CNTV2Card::SetRP188BypassSource</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02571">2571</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -20528,7 +20528,7 @@ If the device is capable of reading analog LTC from its reference input connecto
 </table>
 </div><div class="memdoc">
 
-<p>Reads the raw RP188 data from the DBB/Low/Hi registers for the given SDI input. On newer devices with bi-directional SDI connectors &ndash; see <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> for details &ndash; if the device is configured for... </p>
+<p>Reads the raw RP188 data from the DBB/Low/Hi registers for the given SDI input. On newer devices with bi-directional SDI connectors &ndash; see <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> for details &ndash; if the device is configured for... </p>
 <ul>
 <li><b>input</b>: answers with the last timecode received at the SDI input (subject to the SDI input's RP188 source filter &ndash; see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#afa921117d8dca292a539910e1984e60f" title="Returns the current RP188 filter setting for the given SDI input.">CNTV2Card::GetRP188SourceFilter</a>);</li>
 <li><b>output</b>: answers with the timecode that's to be embedded into the SDI output (usually the last timecode written via <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a858950cb362a1e64ce66844f86e8d31f" title="Writes the raw RP188 data into the DBB/Low/Hi registers for the given SDI output. These values are la...">CNTV2Card::SetRP188Data</a>). <dl class="params"><dt>Parameters</dt><dd>
@@ -20538,7 +20538,7 @@ If the device is capable of reading analog LTC from its reference input connecto
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a858950cb362a1e64ce66844f86e8d31f" title="Writes the raw RP188 data into the DBB/Low/Hi registers for the given SDI output. These values are la...">CNTV2Card::SetRP188Data</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#afa921117d8dca292a539910e1984e60f" title="Returns the current RP188 filter setting for the given SDI input.">CNTV2Card::GetRP188SourceFilter</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a858950cb362a1e64ce66844f86e8d31f" title="Writes the raw RP188 data into the DBB/Low/Hi registers for the given SDI output. These values are la...">CNTV2Card::SetRP188Data</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#afa921117d8dca292a539910e1984e60f" title="Returns the current RP188 filter setting for the given SDI input.">CNTV2Card::GetRP188SourceFilter</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 </li>
 </ul>
 
@@ -20589,7 +20589,7 @@ If the device is capable of reading analog LTC from its reference input connecto
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaba4ed33e51a3fc0769bc6dcca4f421a" title="Sets the current RP188 mode – NTV2_RP188_INPUT or NTV2_RP188_OUTPUT – for the given channel.">CNTV2Card::SetRP188Mode</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaba4ed33e51a3fc0769bc6dcca4f421a" title="Sets the current RP188 mode – NTV2_RP188_INPUT or NTV2_RP188_OUTPUT – for the given channel.">CNTV2Card::SetRP188Mode</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02499">2499</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -20638,7 +20638,7 @@ If the device is capable of reading analog LTC from its reference input connecto
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac2ae325e9a0d2f4c74e00e438400f2e7" title="Sets the RP188 DBB filter for the given SDI input.">CNTV2Card::SetRP188SourceFilter</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#acc01f19ef720383ff6c01e92605c1dea" title="Answers if the SDI output&#39;s RP-188 bypass mode is enabled or not.">CNTV2Card::IsRP188BypassEnabled</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aa8880d94725fcb91d8f9ea36de454f79" title="For the given SDI output that&#39;s in RP188 bypass mode (E-E), answers with the SDI input that&#39;s current...">CNTV2Card::GetRP188BypassSource</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac2ae325e9a0d2f4c74e00e438400f2e7" title="Sets the RP188 DBB filter for the given SDI input.">CNTV2Card::SetRP188SourceFilter</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#acc01f19ef720383ff6c01e92605c1dea" title="Answers if the SDI output&#39;s RP-188 bypass mode is enabled or not.">CNTV2Card::IsRP188BypassEnabled</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aa8880d94725fcb91d8f9ea36de454f79" title="For the given SDI output that&#39;s in RP188 bypass mode (E-E), answers with the SDI input that&#39;s current...">CNTV2Card::GetRP188BypassSource</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02541">2541</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -33611,7 +33611,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This call will have no effect if the SDI output is in "bypass mode". </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1006274c5f87f4be41a527cd11dfe9fc" title="Reads the raw RP188 data from the DBB/Low/Hi registers for the given SDI input. On newer devices with...">CNTV2Card::GetRP188Data</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#acc01f19ef720383ff6c01e92605c1dea" title="Answers if the SDI output&#39;s RP-188 bypass mode is enabled or not.">CNTV2Card::IsRP188BypassEnabled</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab0452537d818c7dffe3621d8bc696d1e" title="Configures the SDI output&#39;s embedder to embed SMPTE 12M timecode specified in calls to CNTV2Card::Set...">CNTV2Card::DisableRP188Bypass</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1006274c5f87f4be41a527cd11dfe9fc" title="Reads the raw RP188 data from the DBB/Low/Hi registers for the given SDI input. On newer devices with...">CNTV2Card::GetRP188Data</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#acc01f19ef720383ff6c01e92605c1dea" title="Answers if the SDI output&#39;s RP-188 bypass mode is enabled or not.">CNTV2Card::IsRP188BypassEnabled</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab0452537d818c7dffe3621d8bc696d1e" title="Configures the SDI output&#39;s embedder to embed SMPTE 12M timecode specified in calls to CNTV2Card::Set...">CNTV2Card::DisableRP188Bypass</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02521">2521</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -33660,7 +33660,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af2b7a76fe6b3ad665e2b45eb2a733119" title="Returns the current RP188 mode – NTV2_RP188_INPUT or NTV2_RP188_OUTPUT – for the given channel.">CNTV2Card::GetRP188Mode</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af2b7a76fe6b3ad665e2b45eb2a733119" title="Returns the current RP188 mode – NTV2_RP188_INPUT or NTV2_RP188_OUTPUT – for the given channel.">CNTV2Card::GetRP188Mode</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02491">2491</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -33709,7 +33709,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#afa921117d8dca292a539910e1984e60f" title="Returns the current RP188 filter setting for the given SDI input.">CNTV2Card::GetRP188SourceFilter</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8ae468d85e903463544c1552fcff6d96" title="For the given SDI output that&#39;s in RP188 bypass mode (E-E), specifies the SDI input to be used as a t...">CNTV2Card::SetRP188BypassSource</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#afa921117d8dca292a539910e1984e60f" title="Returns the current RP188 filter setting for the given SDI input.">CNTV2Card::GetRP188SourceFilter</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8ae468d85e903463544c1552fcff6d96" title="For the given SDI output that&#39;s in RP188 bypass mode (E-E), specifies the SDI input to be used as a t...">CNTV2Card::SetRP188BypassSource</a>, <a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02533">2533</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -38567,7 +38567,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></li>
-    <li class="footer">Generated on Wed Dec 11 2024 10:27:53 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Dec 19 2024 09:28:00 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

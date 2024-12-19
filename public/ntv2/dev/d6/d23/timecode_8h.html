@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1436</span>
+   &#160;<span id="projectnumber">17.5.0.1458</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1436</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
   </td>
  </tr>
  </tbody>
@@ -144,55 +144,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Identifies the timecode format used in <a class="el" href="../../d1/d32/class_a_j_a_time_code.html#a12962ac9241944c66553531e54b140d1">AJATimeCode::QueryString</a>. </p>
-<p>In SDK 17.5, AJA committed to resolving the High Frame-Rate (HFR) timecode display problem. SMPTE ST 12-1 (formerly SMPTE 12M) timecode only allows enough bits to code for up to 30 frames per second (with the standard officially supporting 24, 25, 30 drop-frame (DF) and 30 non-drop). SMPTE ST 12-3 provides a way to encode rates above 30 fps by reusing DBB, field and color frame bits. However, neither standard addresses how timecode is actually presented to a human being, particularly for high frame rates, which has led to multiple <em>de facto</em> "standards" from multiple companies. What follows below is a description of what is henceforth the AJA standard, which is based on HFR presentation in various video tape machines (the binary representation of this is what eventually became SMPTE ST 12-3) as well as software like the Autodesk Suite that requires users to know (and enter) exact frame values.</p>
-<p>Goals of AJA's timecode string presentation:</p><ul>
-<li>Video position is unambiguous and immediately recognizable.</li>
-<li>Fully self-describing (despite not being perfectly unambiguous, e.g. the frame rate can't be known unless the string has the form <code>"HH:MM:SS:FF/FPS"</code>).</li>
-<li>Cannot break existing low frame rate (LFR) timecode use cases.</li>
-<li>Be as forgiving as possible when parsing timecode strings.</li>
-<li>Strict timecode rendering rules:<ul>
-<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2aaf58e9db2cce50ea8c1bffd5be2bc130" title="Legacy notation (e.g. 01:02:03;29 .. 01:02:03:58)">AJA_TIMECODE_LEGACY</a><ul>
-<li>The default, legacy, low frame rate (LFR) timecode presentation.</li>
-<li>Renders timecode in a format that's equivalent to VTR displays (even when running HFR).</li>
-<li><b>hours/minute and minute/second delimiters:</b><ul>
-<li>colon (<code>":"</code>) for non-drop timecode;</li>
-<li>semi-colon (<code>";"</code>) for drop-frame timecode.</li>
-</ul>
-</li>
-<li><b>seconds/frame delimiter:</b><ul>
-<li>a period (<code>"."</code>) if the field flag is 0;</li>
-<li>otherwise identical to the other delimiters if the field flag is 1 (or unknown).</li>
-</ul>
-</li>
-<li>Roll Sequence Examples:<ul>
-<li>Drop Frame: <code>01;02;03.00 01;02;03;00 01;02;03.01</code></li>
-<li>Non-Drop Frame: <code>01:02:03.00 01:02:03:00 01:02:03.01</code></li>
-</ul>
-</li>
-<li>For frame rates greater than 60, the displayed timecode will duplicate in frame pairs (in the case of up to 120 fps).</li>
-</ul>
-</li>
-<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2a4a61de6556e4aab300186f4626abbc57" title="AJA standard notation (e.g. 01;02;03.29 .. 01;02;03;29 .. 01:02:03#58)">AJA_TIMECODE_STANDARD</a><ul>
-<li>An "actual frame" or high frame rate (HFR) presentation</li>
-<li>Converts the SMPTE 12-1 or 12-3 into the native frame count, but uses the <code>"#"</code> delimiter (<em>a la</em> AutoDesk) to clarify it's the "AJA Standard" (and not be confused with <a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2aaf58e9db2cce50ea8c1bffd5be2bc130" title="Legacy notation (e.g. 01:02:03;29 .. 01:02:03:58)">AJA_TIMECODE_LEGACY</a>).</li>
-<li>Same colon/semi-colon rules for the hours/minute and minute/second delimiters as <a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2aaf58e9db2cce50ea8c1bffd5be2bc130" title="Legacy notation (e.g. 01:02:03;29 .. 01:02:03:58)">AJA_TIMECODE_LEGACY</a>.</li>
-<li><b>seconds/frame delimiter:</b> always a pound sign (<code>"#"</code>).</li>
-<li>Roll Sequence Examples:<ul>
-<li>Drop Frame: <code>01;02;03#58 01;02;03#59 01;02;04;00</code></li>
-<li>Non-Drop Frame: <code>01:02:03#58 01:02:03#59 01:02:04#00</code></li>
-</ul>
-</li>
-<li><b>NOTE:</b> This presentation should only be used for high frame rates, as the frame number in LFR timecodes would be the same regardless. If it's a low frame rate, the legacy presentation should always be used.</li>
-<li>For frame rates greater than 60, three padded zeros (<code>"000"</code>) is used for the frame count instead of two (<code>"00"</code>).</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>Notes:</p><ul>
-<li>Code that looks for a colon (<code>":"</code>) or semicolon (<code>";"</code>) in the seconds/frame delimiter position to detect drop/non-drop will need to change, to look at the minute/seconds delimiter if the <code>":"</code> or <code>";"</code> isn't in the seconds/frame spot.</li>
-<li>For HFR, follow SMPTE ST 12-3 interpretation of the binary data; otherwise follow SMPTE ST 12-1 for LFR. </li>
-</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecodedisplay">Timecode Display</a> for details. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab146a6a3623deac0c116322e8e432db2aaf58e9db2cce50ea8c1bffd5be2bc130"></a>AJA_TIMECODE_LEGACY&#160;</td><td class="fielddoc"><p>Legacy notation (e.g. <code>01:02:03;29 .. 01:02:03:58</code>) </p>
 </td></tr>
@@ -200,7 +152,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00068">68</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00016">16</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +162,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_8f3154ce023319d0c7e8bb4441cab51f.html">common</a></li><li class="navelem"><a class="el" href="../../d6/d23/timecode_8h.html">timecode.h</a></li>
-    <li class="footer">Generated on Wed Dec 11 2024 10:27:50 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Dec 19 2024 09:27:54 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

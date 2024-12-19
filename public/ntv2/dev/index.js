@@ -280,11 +280,12 @@ var index =
     [ "SDI Ancillary Data", "d7/dcb/ancillarydata.html", [
       [ "Common Ancillary Data Types", "d7/dcb/ancillarydata.html#ancdatatypes", [
         [ "Embedded Audio", "d7/dcb/ancillarydata.html#ancembeddedaudio", null ],
-        [ "Timecode (RP-188, SMPTE-12M)", "d7/dcb/ancillarydata.html#anctimecode", [
+        [ "Timecode", "d7/dcb/ancillarydata.html#anctimecode", [
           [ "Embedded SDI Timecode Input", "d7/dcb/ancillarydata.html#anctimecodeinput", null ],
           [ "Embedded SDI Timecode Output", "d7/dcb/ancillarydata.html#anctimecodeoutput", null ],
           [ "Analog LTC Input", "d7/dcb/ancillarydata.html#ancanalogltcinput", null ],
-          [ "Analog LTC Output", "d7/dcb/ancillarydata.html#ancanalogltcoutput", null ]
+          [ "Analog LTC Output", "d7/dcb/ancillarydata.html#ancanalogltcoutput", null ],
+          [ "Timecode Display", "d7/dcb/ancillarydata.html#anctimecodedisplay", null ]
         ] ],
         [ "VPID", "d7/dcb/ancillarydata.html#ancvpid", null ],
         [ "Closed-Captions", "d7/dcb/ancillarydata.html#anccaptions", null ]

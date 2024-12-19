@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1436</span>
+   &#160;<span id="projectnumber">17.5.0.1458</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1436</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
   </td>
  </tr>
  </tbody>
@@ -93,11 +93,12 @@ $(document).ready(function(){initNavTree('d7/dcb/ancillarydata.html','../../'); 
 <p><b>CONTENTS:</b></p><ul>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancdatatypes">Common Ancillary Data Types</a><ul>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancembeddedaudio">Embedded Audio</a></li>
-<li><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode (RP-188, SMPTE-12M)</a><ul>
+<li><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecode">Timecode</a><ul>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecodeinput">Embedded SDI Timecode Input</a></li>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecodeoutput">Embedded SDI Timecode Output</a></li>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancanalogltcinput">Analog LTC Input</a></li>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancanalogltcoutput">Analog LTC Output</a></li>
+<li><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecodedisplay">Timecode Display</a></li>
 </ul>
 </li>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancvpid">VPID</a></li>
@@ -126,7 +127,7 @@ Embedded Audio</h2>
 <p>Devices that have <b>Anc Extractor</b> firmware are able to capture the “raw” audio packets from HANC …&#160;then decode them per SMPTE/AES specifications. See <a class="el" href="../../d7/dcb/ancillarydata.html#anccapture">SDI Anc Packet Capture</a> (below) for information on how to do this.</p>
 <hr  size="50px" />
 <h2><a class="anchor" id="anctimecode"></a>
-Timecode (RP-188, SMPTE-12M)</h2>
+Timecode</h2>
 <p>The timecode aspects of NTV2’s SDK and firmware has its origins in the early 2000s — when NTV2 devices were SD-only, and the SMPTE 12M spec was still evolving. FPGA space was very tight in those days, including the number of registers available … which is one reason why the same registers were used for RP-188 capture and playout.</p>
 <ul>
 <li>Two 32-bit registers are required to store a timecode value:<ul>
@@ -401,6 +402,139 @@ Analog LTC Output</h3>
 <li>Call <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad744bcd8136c31703a6edcc7930d5d40">NTV2DeviceGetNumLTCOutputs</a> to discover the number of LTC outputs.</li>
 </ul>
 <hr  size="50px" />
+<h3><a class="anchor" id="anctimecodedisplay"></a>
+Timecode Display</h3>
+<p>In SDK 17.5, AJA committed to resolving the High Frame-Rate (HFR) timecode display problem. SMPTE ST 12-1 (formerly SMPTE 12M) timecode only allows enough bits to code for up to 30 frames per second (with the standard officially supporting 24, 25, 30 drop-frame, and 30 non-drop). SMPTE ST 12-3 provides a way to encode rates above 30 fps by reusing DBB, field and color frame bits. However, neither standard addresses how timecode is actually presented to a human being, particularly for high frame rates, which has led to multiple <em>de facto</em> “standards” from multiple vendors. What follows below is a description of what is henceforth the AJA standard, which is based on HFR presentation in various video tape machines (the binary representation of this is what eventually became SMPTE ST 12-3) as well as software like the Autodesk Suite that requires users to know (and enter) exact frame values.</p>
+<p>The <a class="el" href="../../d1/d32/class_a_j_a_time_code.html" title="Utility class for timecodes.">AJATimeCode</a> class supports 2 types of display conventions. Each is independent of the other, and may be matched as needed.</p><ul>
+<li><b>Frame-Count</b> convention</li>
+<li><b>Delimiter</b> convention</li>
+</ul>
+<p><b>Frame-Count</b> convention applies only to the frame field of a timecode. There are 2 types:</p><ul>
+<li><b>LFR</b> (Standard or Default)<ul>
+<li>Frame values in the frame field are restricted by convention to be less than 30. This supports timecode used in legacy video standards and common in legacy VTRs and hardware.<ul>
+<li>Frame number is unaltered when frame rate is less than or equal to 30 fps.</li>
+<li>Frame number is divided by 2 when frame rate is greater than 30 fps. Fractional frame values are truncated.</li>
+<li>Frame number is divided by 4 when frame rate is greater than 60 fps. Fractional frame values are truncated.</li>
+</ul>
+</li>
+<li>Example: Given a 60 fps non-drop frame rate, the frame roll for frames 0, 1, 2, 3, 4, ... 59, 60 are:<ul>
+<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2aaf58e9db2cce50ea8c1bffd5be2bc130" title="Legacy notation (e.g. 01:02:03;29 .. 01:02:03:58)">AJA_TIMECODE_LEGACY</a> (LFR):<br  />
+ <code>00:00:00:00</code><br  />
+ <code>00:00:00:00</code><br  />
+ <code>00:00:00:01</code><br  />
+ <code>00:00:00:01</code><br  />
+ <code>00:00:00:02</code><br  />
+ <code>…</code><br  />
+ <code>00:00:00:29</code><br  />
+ <code>00:00:01:00</code></li>
+<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2a4a61de6556e4aab300186f4626abbc57" title="AJA standard notation (e.g. 01;02;03.29 .. 01;02;03;29 .. 01:02:03#58)">AJA_TIMECODE_STANDARD</a> (LFR):<br  />
+ <code>00:00:00:00</code><br  />
+ <code>00:00:00.00</code><br  />
+ <code>00:00:00:01</code><br  />
+ <code>00:00:00.01</code><br  />
+ <code>00:00:00:02</code><br  />
+ <code>…</code><br  />
+ <code>00:00:00.29</code><br  />
+ <code>00:00:01:00</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>HFR</b><ul>
+<li>This uses the unaltered frame number in the frame field for both low and high frame rates.</li>
+<li>Example: Given a 60 fps non-drop frame rate, the frame roll for frames 0, 1, 2, 3, 4, … 59, 60 are:<ul>
+<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2aaf58e9db2cce50ea8c1bffd5be2bc130" title="Legacy notation (e.g. 01:02:03;29 .. 01:02:03:58)">AJA_TIMECODE_LEGACY</a> (HFR):<br  />
+ <code>00:00:00:00</code><br  />
+ <code>00:00:00:01</code><br  />
+ <code>00:00:00:02</code><br  />
+ <code>00:00:00:03</code><br  />
+ <code>00:00:00:04</code><br  />
+ <code>…</code><br  />
+ <code>00:00:00:59</code><br  />
+ <code>00:00:01:00</code></li>
+<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2a4a61de6556e4aab300186f4626abbc57" title="AJA standard notation (e.g. 01;02;03.29 .. 01;02;03;29 .. 01:02:03#58)">AJA_TIMECODE_STANDARD</a> (HFR):<br  />
+ <code>00:00:00#00</code><br  />
+ <code>00:00:00#01</code><br  />
+ <code>00:00:00#02</code><br  />
+ <code>00:00:00#03</code><br  />
+ <code>00:00:00#04</code><br  />
+ <code>…</code><br  />
+ <code>00:00:00#59</code><br  />
+ <code>00:00:01#00</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><b>Delimiter</b> convention applies to the delimiter character-sets which separate fields in the timecode presentation. There are 2 types:</p><ul>
+<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2aaf58e9db2cce50ea8c1bffd5be2bc130" title="Legacy notation (e.g. 01:02:03;29 .. 01:02:03:58)">AJA_TIMECODE_LEGACY</a><ul>
+<li>This is the default timecode <b>Delimiter</b> convention and is widely used in legacy applications. It is not preferred because its presentation is ambiguous when converting between frame values and timecode for high frame rate video.</li>
+<li>Non-Drop-frame video uses a colon (<code>":"</code>) as a delimiter between all fields (<em>hours/minutes/seconds/frames</em>).<br  />
+ Example: <code>"01:02:03:04"</code></li>
+<li>Drop-frame video also uses a colon (<code>":"</code>) as a delimiter between fields <em>hours/minutes/seconds</em>, except between fields <em>seconds/frames</em>, which uses a semi-colon (<code>";"</code>).<br  />
+ Example: <code>"01:02:03;04"</code></li>
+<li>This <b>Delimiter</b> convention is the same for both LFR and HFR <b>Frame-Count</b> conventions, which can lead to misinterpretation.</li>
+</ul>
+</li>
+<li><a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2a4a61de6556e4aab300186f4626abbc57" title="AJA standard notation (e.g. 01;02;03.29 .. 01;02;03;29 .. 01:02:03#58)">AJA_TIMECODE_STANDARD</a><ul>
+<li><b>AJA Standard</b> presentation convention is updated and recommended for current and ongoing adoption.<ul>
+<li>Timecode presentation is unambiguous when converting between frame values and timecode strings for high frame rate video.</li>
+<li>Does not break existing low frame rate (LFR) timecode use cases.</li>
+<li>LFR and HFR <b>Frame-Count</b> presentations are distinct and unambiguous.</li>
+</ul>
+</li>
+<li>In both LFR and HFR presentations, the delimiter between <em>hours/minute/second</em> delimiters are the same:<ul>
+<li>Colon (<code>":"</code>) for non-drop-frame timecode;</li>
+<li>Semicolon (<code>";"</code>) for drop-frame timecode.</li>
+</ul>
+</li>
+<li>LFR <b>Frame-Count</b><ul>
+<li><b><em>seconds/frame</em> delimiter:</b><ul>
+<li>identical to the other delimiters if the field flag is 0 (or unknown).</li>
+<li>a period (<code>"."</code>) if the field flag is 1</li>
+</ul>
+</li>
+<li>Roll Sequence Examples:<ul>
+<li>Drop Frame:<br  />
+ <code>01;02;03;00</code><br  />
+ <code>01;02;03.00</code><br  />
+ <code>01;02;03;01</code></li>
+<li>Non-Drop Frame:<br  />
+ <code>01:02:03:00</code><br  />
+ <code>01:02:03.00</code><br  />
+ <code>01:02:03:01</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HFR <b>Frame-Count</b><ul>
+<li><em>seconds/frame</em> delimiter is always a pound sign (<code>"#"</code>)</li>
+<li>Roll Sequence Examples:<ul>
+<li>Drop Frame:<br  />
+ <code>01;02;03#58</code><br  />
+ <code>01;02;03#59</code><br  />
+ <code>01;02;04#00</code></li>
+<li>Non-Drop Frame:<br  />
+ <code>01:02:03#58</code><br  />
+ <code>01:02:03#59</code><br  />
+ <code>01:02:04#00</code></li>
+</ul>
+</li>
+<li>For frame rates greater than 60, three padded zeros (<code>"000"</code>) is used for the frame count instead of two (<code>"00"</code>).<ul>
+<li>Roll Sequence Examples for 120 fps drop frame:<br  />
+ <code>01;02;03#099</code><br  />
+ <code>01;02;03#100</code><br  />
+ <code>01;02;04#101</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>• Code that looks for a colon (<code>":"</code>) or semicolon (<code>";"</code>) in the <em>seconds/frame</em> delimiter position to detect drop/non-drop will need to change, since it doesn’t work with <a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2a4a61de6556e4aab300186f4626abbc57" title="AJA standard notation (e.g. 01;02;03.29 .. 01;02;03;29 .. 01:02:03#58)">AJA_TIMECODE_STANDARD</a>. AJA recommends using the <a class="el" href="../../d1/d32/class_a_j_a_time_code.html#abd81c9e075cecbfb19300dad4ac7d630">AJATimeCode::QueryIsDropFrame</a> method, since it supports all <b>Delimiter</b> conventions presented here. </dd>
+<dd>
+• For HFR, follow SMPTE ST 12-3 interpretation of the binary data; otherwise follow SMPTE ST 12-1 for LFR.</dd></dl>
 <h2><a class="anchor" id="ancvpid"></a>
 VPID</h2>
 <p><b>Input / Record</b></p>
@@ -776,7 +910,7 @@ HD 1080p Dual-Link</h2>
 <div class="ttc" id="aclass_c_n_t_v2_card_html_a22343759cb28b6df7b8dbbe368ba3644"><div class="ttname"><a href="../../d7/dfb/class_c_n_t_v2_card.html#a22343759cb28b6df7b8dbbe368ba3644">CNTV2Card::ReadAnalogLTCInput</a></div><div class="ttdeci">virtual bool ReadAnalogLTCInput(const UWord inLTCInput, RP188_STRUCT &amp;outRP188Data)</div><div class="ttdoc">Reads the current contents of the device's analog LTC input registers.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/ntv2register_8cpp_source.html#l03695">ntv2register.cpp:3695</a></div></div>
 <div class="ttc" id="antv2publicinterface_8h_html_ac2cd24508e310b59ed5ab3d0b0bfd999a26ea01dceabd44eb530ed22f9edf0cd8"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a26ea01dceabd44eb530ed22f9edf0cd8">kRegMaskRP188SourceSelect</a></div><div class="ttdeci">@ kRegMaskRP188SourceSelect</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l01364">ntv2publicinterface.h:1364</a></div></div>
 <div class="ttc" id="antv2devicefeatures_8hh_html_aef5852308d0853201208edf44bad20ea"><div class="ttname"><a href="../../d9/dfb/ntv2devicefeatures_8hh.html#aef5852308d0853201208edf44bad20ea">NTV2DeviceCanDoMultiFormat</a></div><div class="ttdeci">bool NTV2DeviceCanDoMultiFormat(const NTV2DeviceID inDeviceID)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d0f/ntv2devicefeatures_8hpp_source.html#l04247">ntv2devicefeatures.hpp:4247</a></div></div>
-<div class="ttc" id="aclass_n_t_v2___r_p188_html_a94c46c58079d40bae85dac9b7ddb9cd5"><div class="ttname"><a href="../../d9/dba/class_n_t_v2___r_p188.html#a94c46c58079d40bae85dac9b7ddb9cd5">NTV2_RP188::Set</a></div><div class="ttdeci">void Set(const ULWord inDBB=0xFFFFFFFF, const ULWord inLow=0xFFFFFFFF, const ULWord inHigh=0xFFFFFFFF)</div><div class="ttdoc">Sets my fields from the given DBB, low and high ULWord components.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06875">ntv2publicinterface.h:6875</a></div></div>
+<div class="ttc" id="aclass_n_t_v2___r_p188_html_a94c46c58079d40bae85dac9b7ddb9cd5"><div class="ttname"><a href="../../d9/dba/class_n_t_v2___r_p188.html#a94c46c58079d40bae85dac9b7ddb9cd5">NTV2_RP188::Set</a></div><div class="ttdeci">void Set(const ULWord inDBB=0xFFFFFFFF, const ULWord inLow=0xFFFFFFFF, const ULWord inHigh=0xFFFFFFFF)</div><div class="ttdoc">Sets my fields from the given DBB, low and high ULWord components.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06877">ntv2publicinterface.h:6877</a></div></div>
 <div class="ttc" id="antv2publicinterface_8h_html_ac2cd24508e310b59ed5ab3d0b0bfd999ac304d7173d1d6a25c642db4409abcdb7"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999ac304d7173d1d6a25c642db4409abcdb7">kRegMaskRP188DBB</a></div><div class="ttdeci">@ kRegMaskRP188DBB</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l01365">ntv2publicinterface.h:1365</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_aaa90748f5a92082fa4f79c89698d9463"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463">NTV2DeviceID</a></div><div class="ttdeci">NTV2DeviceID</div><div class="ttdoc">Identifies a specific AJA NTV2 device model number. The NTV2DeviceID is actually the PROM part number...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00020">ntv2enums.h:20</a></div></div>
 <div class="ttc" id="antv2publicinterface_8h_html_a44465b2926268ea111cf5d357016baefa07e6e4f750835051f69cca0526bd4167"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#a44465b2926268ea111cf5d357016baefa07e6e4f750835051f69cca0526bd4167">kRegRP188InOut5DBB</a></div><div class="ttdeci">@ kRegRP188InOut5DBB</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l00479">ntv2publicinterface.h:479</a></div></div>
@@ -810,9 +944,9 @@ HD 1080p Dual-Link</h2>
 <div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfaa8aef211eda693c83f1ea31a076842d6"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfaa8aef211eda693c83f1ea31a076842d6">NTV2_FORMAT_UNKNOWN</a></div><div class="ttdeci">@ NTV2_FORMAT_UNKNOWN</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00521">ntv2enums.h:521</a></div></div>
 <div class="ttc" id="astruct_r_p188___s_t_r_u_c_t_html_ad3fa2d972d93cfa6af22add78d9dde35"><div class="ttname"><a href="../../d3/d95/struct_r_p188___s_t_r_u_c_t.html#ad3fa2d972d93cfa6af22add78d9dde35">RP188_STRUCT::DBB</a></div><div class="ttdeci">ULWord DBB</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l04099">ntv2publicinterface.h:4099</a></div></div>
 <div class="ttc" id="astruct_r_p188___s_t_r_u_c_t_html_ade7f71ab1a679a6b1d68d97ff281ad76"><div class="ttname"><a href="../../d3/d95/struct_r_p188___s_t_r_u_c_t.html#ade7f71ab1a679a6b1d68d97ff281ad76">RP188_STRUCT::Low</a></div><div class="ttdeci">ULWord Low</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l04100">ntv2publicinterface.h:4100</a></div></div>
-<div class="ttc" id="aclass_n_t_v2___r_p188_html_a875accf1e5b0c9b817256738eb454f8a"><div class="ttname"><a href="../../d9/dba/class_n_t_v2___r_p188.html#a875accf1e5b0c9b817256738eb454f8a">NTV2_RP188::IsValid</a></div><div class="ttdeci">bool IsValid(void) const</div><div class="ttdoc">Answers true if I'm valid, or false if I'm not valid.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06854">ntv2publicinterface.h:6854</a></div></div>
+<div class="ttc" id="aclass_n_t_v2___r_p188_html_a875accf1e5b0c9b817256738eb454f8a"><div class="ttname"><a href="../../d9/dba/class_n_t_v2___r_p188.html#a875accf1e5b0c9b817256738eb454f8a">NTV2_RP188::IsValid</a></div><div class="ttdeci">bool IsValid(void) const</div><div class="ttdoc">Answers true if I'm valid, or false if I'm not valid.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06856">ntv2publicinterface.h:6856</a></div></div>
 <div class="ttc" id="antv2publicinterface_8h_html_a44465b2926268ea111cf5d357016baefaf441c9108958ceabf9c3b4856f3a692e"><div class="ttname"><a href="../../d4/dd7/ntv2publicinterface_8h.html#a44465b2926268ea111cf5d357016baefaf441c9108958ceabf9c3b4856f3a692e">kRegRP188InOut4DBB</a></div><div class="ttdeci">@ kRegRP188InOut4DBB</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l00396">ntv2publicinterface.h:396</a></div></div>
-<div class="ttc" id="aclass_n_t_v2___r_p188_html"><div class="ttname"><a href="../../d9/dba/class_n_t_v2___r_p188.html">NTV2_RP188</a></div><div class="ttdoc">This struct replaces the old RP188_STRUCT.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06812">ntv2publicinterface.h:6812</a></div></div>
+<div class="ttc" id="aclass_n_t_v2___r_p188_html"><div class="ttname"><a href="../../d9/dba/class_n_t_v2___r_p188.html">NTV2_RP188</a></div><div class="ttdoc">This struct replaces the old RP188_STRUCT.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06814">ntv2publicinterface.h:6814</a></div></div>
 <div class="ttc" id="antv2devicefeatures_8hh_html_ad4ca87b50cb52c351c69ce2a95c8b804"><div class="ttname"><a href="../../d9/dfb/ntv2devicefeatures_8hh.html#ad4ca87b50cb52c351c69ce2a95c8b804">NTV2DeviceCanDoLTCInOnRefPort</a></div><div class="ttdeci">bool NTV2DeviceCanDoLTCInOnRefPort(const NTV2DeviceID inDeviceID)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d0f/ntv2devicefeatures_8hpp_source.html#l04063">ntv2devicefeatures.hpp:4063</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_a8f85ca8efb8928620e1fbb6282a5e686"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8f85ca8efb8928620e1fbb6282a5e686">NTV2VideoFormat</a></div><div class="ttdeci">enum _NTV2VideoFormat NTV2VideoFormat</div><div class="ttdoc">Identifies a particular video format.</div></div>
 <div class="ttc" id="aclass_c_n_t_v2_driver_interface_html_a7e4ebdaf05f325d13582eac32084ee5a"><div class="ttname"><a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7e4ebdaf05f325d13582eac32084ee5a">CNTV2DriverInterface::GetDeviceID</a></div><div class="ttdeci">virtual NTV2DeviceID GetDeviceID(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00407">ntv2driverinterface.cpp:407</a></div></div>
@@ -831,7 +965,7 @@ HD 1080p Dual-Link</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Dec 11 2024 10:27:51 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Dec 19 2024 09:27:56 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1436</span>
+   &#160;<span id="projectnumber">17.5.0.1458</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1436</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
   </td>
  </tr>
  </tbody>
@@ -199,7 +199,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Utility class for timecodes. </p>
 <p>This is a storage and conversion class for timecodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00080">80</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00028">28</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad82ee9aeb4e3f01a3b7f841f443d295f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad82ee9aeb4e3f01a3b7f841f443d295f">&#9670;&nbsp;</a></span>AJATimeCode() <span class="overload">[1/5]</span></h2>
@@ -448,7 +448,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>specifies the frames value. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">timeBase</td><td>frame rate from which to calculate string. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bDropFrame</td><td>true if using drop frame calculation. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standardized frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standard (LFR) frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">addFrame</td><td>number of frames to add when bStdTcForHfr=true (e.g given 60 fps, h=m=s=0 f=29 addFrame=1 -&gt; return=59). </td></tr>
   </table>
   </dd>
@@ -538,7 +538,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame count. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">timeBase</td><td>frame rate from which to calculate hmsf values. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bDropFrame</td><td>true to use drop frame calculation. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standardized frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60 fps) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standard (LFR) frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60 fps) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1234,7 +1234,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Query HFR divide-by-two flag.</p>
 <dl class="section return"><dt>Returns</dt><dd>bStdTc Return true when using standard TC notation for HFR (e.g 01:00:00#59 -&gt; 01:00:00:29), set to true by default </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00172">172</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00122">122</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
 
 </div>
 </div>
@@ -1324,10 +1324,11 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">str</td><td>string in which to place timecode. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">timeBase</td><td>frame rate from which to calculate string. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bDropFrame</td><td>drop frame value for string. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">notation</td><td>sets target output notation for TC delimiters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notation</td><td>specifies <a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2" title="Identifies the timecode format used in AJATimeCode::QueryString.">AJATimecodeNotation</a> for timecode delimiters </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecodedisplay">Timecode Display</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d99/timecode_8cpp_source.html#l00381">381</a> of file <a class="el" href="../../d8/d99/timecode_8cpp_source.html">timecode.cpp</a>.</p>
 
@@ -1382,11 +1383,12 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">str</td><td>string in which to place timecode. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">timeBase</td><td>frame rate from which to calculate string. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bDropFrame</td><td>drop frame value for string. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standardized frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">notation</td><td>sets target output notation for TC delimiters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standard (LFR) frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notation</td><td>specifies <a class="el" href="../../d6/d23/timecode_8h.html#ab146a6a3623deac0c116322e8e432db2" title="Identifies the timecode format used in AJATimeCode::QueryString.">AJATimecodeNotation</a> for timecode delimiters </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcb/ancillarydata.html#anctimecodedisplay">Timecode Display</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d99/timecode_8cpp_source.html#l00299">299</a> of file <a class="el" href="../../d8/d99/timecode_8cpp_source.html">timecode.cpp</a>.</p>
 
@@ -1655,7 +1657,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>specifies the frames value. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">timeBase</td><td>frame rate associated with hmsf. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bDropFrame</td><td>true if forcing dropframe, false otherwise. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standardized frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bStdTcForHfr</td><td>true to use standard (LFR) frame values (1/2 frame values for framerates above 30 fps, 1/4 for rates above 60) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">addFrame</td><td>number of frames to add when using std TC presentation (e.g given 60 fps, 00:00:00.29 addFrame=0 =&gt; set:frame=58 .. 00:00:00:29 addFrame=1 =&gt; set:frame=59). </td></tr>
   </table>
   </dd>
@@ -1786,7 +1788,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00270">270</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d23/timecode_8h_source.html#l00220">220</a> of file <a class="el" href="../../d6/d23/timecode_8h_source.html">timecode.h</a>.</p>
 
 </div>
 </div>
@@ -1845,7 +1847,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d32/class_a_j_a_time_code.html">AJATimeCode</a></li>
-    <li class="footer">Generated on Wed Dec 11 2024 10:27:52 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Dec 19 2024 09:27:59 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
