@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1458</span>
+   &#160;<span id="projectnumber">17.5.0.1492</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
   </td>
  </tr>
  </tbody>
@@ -242,7 +242,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4162ee06376abd896f8246e5af4f8cde inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5281b8689692b78100fc283e43fecfa1 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a5281b8689692b78100fc283e43fecfa1">ResumeAudio</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inFBSize)</td></tr>
 <tr class="separator:a5281b8689692b78100fc283e43fecfa1 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d2b98644c95c319a02c80b633bd9610 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a5d2b98644c95c319a02c80b633bd9610">ReadRegisterMulti</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> numRegs, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> *pOutWhichRegFailed, <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html">NTV2RegInfo</a> aRegs[])</td></tr>
+<tr class="memitem:a5d2b98644c95c319a02c80b633bd9610 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a5d2b98644c95c319a02c80b633bd9610">ReadRegisterMulti</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> numRegs, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> *pOutWhichRegFailed, <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html">NTV2RegInfo</a> aRegs[])</td></tr>
 <tr class="separator:a5d2b98644c95c319a02c80b633bd9610 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af981cc2f6f266b8e0baa7d663dc1e889 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/de2/ajatypes_8h.html#afed41103dbe3723f9095994668dd0af6">Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#af981cc2f6f266b8e0baa7d663dc1e889">SleepMs</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#aeea9a2b23103aa4bdda597a18e5c8cf9">LWord</a> msec)</td></tr>
 <tr class="separator:af981cc2f6f266b8e0baa7d663dc1e889 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,7 +270,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4d1545d21945183efa1965ee798aa5c6 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">This template function reads all or part of the 32-bit contents of a specific register (real or virtual) from the AJA device, and if successful, returns its value automatically casted to the scalar type of the "outValue" parameter.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a4d1545d21945183efa1965ee798aa5c6">More...</a><br /></td></tr>
 <tr class="separator:a4d1545d21945183efa1965ee798aa5c6 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd96af01b57b79caf296fe26ea3c300 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1bd96af01b57b79caf296fe26ea3c300">ReadRegisters</a> (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ace7039d19ef677ec1b2b27ebab902b64">NTV2RegisterReads</a> &amp;inOutValues)</td></tr>
-<tr class="memdesc:a1bd96af01b57b79caf296fe26ea3c300 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the register(s) specified by the given <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> sequence.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1bd96af01b57b79caf296fe26ea3c300">More...</a><br /></td></tr>
+<tr class="memdesc:a1bd96af01b57b79caf296fe26ea3c300 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the register(s) specified by the given <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> sequence.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1bd96af01b57b79caf296fe26ea3c300">More...</a><br /></td></tr>
 <tr class="separator:a1bd96af01b57b79caf296fe26ea3c300 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbb8aca59dfc745b8a441eda8135270e inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/de2/ajatypes_8h.html#a0b94bcde5ffe910695c0e57ea5a4364e">HANDLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">GetInterruptEvent</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a7cdfd0df4994b36cbe0a318bbe294edf">INTERRUPT_ENUMS</a> eInterruptType)</td></tr>
 <tr class="separator:adbb8aca59dfc745b8a441eda8135270e inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,11 +351,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a3b8f3aef99f96a593962787a7a71cb41 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998b21361a832ef936c456d8470946f5 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a998b21361a832ef936c456d8470946f5">GetNumericParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
 <tr class="separator:a998b21361a832ef936c456d8470946f5 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb264144f4d254c08c272d58b5a10ae0 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afb264144f4d254c08c272d58b5a10ae0">GetRegInfoForBoolParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#ac468fe574973684f7be2414eb95827fe">NTV2BoolParamID</a> inParamID, <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo)</td></tr>
-<tr class="memdesc:afb264144f4d254c08c272d58b5a10ae0 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> of the register associated with the given boolean (i.e., "Can Do") device feature.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afb264144f4d254c08c272d58b5a10ae0">More...</a><br /></td></tr>
+<tr class="memitem:afb264144f4d254c08c272d58b5a10ae0 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afb264144f4d254c08c272d58b5a10ae0">GetRegInfoForBoolParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#ac468fe574973684f7be2414eb95827fe">NTV2BoolParamID</a> inParamID, <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo)</td></tr>
+<tr class="memdesc:afb264144f4d254c08c272d58b5a10ae0 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> of the register associated with the given boolean (i.e., "Can Do") device feature.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afb264144f4d254c08c272d58b5a10ae0">More...</a><br /></td></tr>
 <tr class="separator:afb264144f4d254c08c272d58b5a10ae0 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa63e60eb07dbfd99a9fe58f6018a67a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a">GetRegInfoForNumericParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#aa69b4bbd4c57588e27e4946fc295ceea">NTV2NumericParamID</a> inParamID, <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo)</td></tr>
-<tr class="memdesc:aaa63e60eb07dbfd99a9fe58f6018a67a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the <a class="el" href="../../da/dac/struct_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> of the register associated with the given numeric (i.e., "Get Num") device feature.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a">More...</a><br /></td></tr>
+<tr class="memitem:aaa63e60eb07dbfd99a9fe58f6018a67a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a">GetRegInfoForNumericParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#aa69b4bbd4c57588e27e4946fc295ceea">NTV2NumericParamID</a> inParamID, <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo)</td></tr>
+<tr class="memdesc:aaa63e60eb07dbfd99a9fe58f6018a67a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions.">NTV2RegInfo</a> of the register associated with the given numeric (i.e., "Get Num") device feature.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a">More...</a><br /></td></tr>
 <tr class="separator:aaa63e60eb07dbfd99a9fe58f6018a67a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc274343c72951f8caf5a346931dd10a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#acc274343c72951f8caf5a346931dd10a">BumpEventCount</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a7cdfd0df4994b36cbe0a318bbe294edf">INTERRUPT_ENUMS</a> eInterruptType)</td></tr>
 <tr class="memdesc:acc274343c72951f8caf5a346931dd10a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically increments the event count tally for the given interrupt type.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#acc274343c72951f8caf5a346931dd10a">More...</a><br /></td></tr>
@@ -1432,7 +1432,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000247">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000256">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00481">481</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1461,7 +1461,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000248">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000257">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00486">486</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1490,7 +1490,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000249">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000258">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00491">491</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1519,7 +1519,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000250">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000259">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00496">496</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1548,7 +1548,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000256">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000265">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l01165">1165</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1577,7 +1577,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000255">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000264">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l01120">1120</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1606,7 +1606,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000257">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000266">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l01125">1125</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1751,7 +1751,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000253">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000262">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00550">550</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1780,7 +1780,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000243">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000252">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1809,7 +1809,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000245">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000254">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00432">432</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -1838,7 +1838,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000251">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000260">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -2116,7 +2116,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000254">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000263">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00585">585</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -2145,7 +2145,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000244">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000253">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00409">409</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -2174,7 +2174,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000246">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000255">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -2203,7 +2203,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000252">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000261">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html#l00535">535</a> of file <a class="el" href="../../df/d10/ntv2linuxdriverinterface_8cpp_source.html">ntv2linuxdriverinterface.cpp</a>.</p>
 
@@ -2496,7 +2496,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html">CNTV2LinuxDriverInterface</a></li>
-    <li class="footer">Generated on Thu Dec 19 2024 09:28:00 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Jan 13 2025 12:31:45 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

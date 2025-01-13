@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1458</span>
+   &#160;<span id="projectnumber">17.5.0.1492</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
   </td>
  </tr>
  </tbody>
@@ -126,19 +126,20 @@ $(document).ready(function(){initNavTree('d3/d4e/class_n_t_v2_format_descriptor.
   <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#aa9c564febd3448ccd008a638ec1489b7">NTV2FormatDescriptor</a>(const ULWord inNumLines, const ULWord inNumPixels, const ULWord inLinePitch, const ULWord in1stActiveLine=0, const UByte inNumLumaBits=0, const UByte inNumChromaBits=0, const UByte inNumAlphaBits=0)</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a46cef073f94ddb0492f2a055c78ea196">NTV2FormatDescriptor</a>(const NTV2Standard inStandard, const NTV2FrameBufferFormat inFrameBufferFormat, const NTV2VANCMode inVancMode=NTV2_VANCMODE_OFF)</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#aac251d8e2d5e32b2f50f585c5f5b6cbd">NTV2FormatDescriptor</a>(const NTV2VideoFormat inVideoFormat, const NTV2FrameBufferFormat inFrameBufferFormat, const NTV2VANCMode inVancMode=NTV2_VANCMODE_OFF)</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a5123c01ff89b978818bc51fc2e5968a4">numLines</a></td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a7432797d126430f9401cd08aad670d8b">numPixels</a></td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#acbcc27b313ddbfad077e7da7f9d62616">operator==</a>(const NTV2FormatDescriptor &amp;inRHS) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a4e1073fd38429ec36a149134a12d47d0">PlaneToString</a>(const UWord inPlaneIndex0) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a9b62becbda281ad3689428b330e485e7">Print</a>(std::ostream &amp;inOutStream, const bool inDetailed=true) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#aecd64bbe7ce5e36dec576ceb8c09c2f8">PrintSMPTELineNumber</a>(std::ostream &amp;inOutStream, const ULWord inLineOffset, const bool inForTextMode=false) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#aa3dd494b47f342c2d9bca89d2a44ce86">RasterLineToByteOffset</a>(const ULWord inRowIndex0, const UWord inPlaneIndex0=0) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#ab32a773f915adfd785881dad83b58068">NTV2FormatDescriptor</a>(const NTV2FrameSize &amp;inRasterSize, const NTV2PixelFormat inPixelFormat, const NTV2VANCMode inVancMode=NTV2_VANCMODE_OFF)</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a5123c01ff89b978818bc51fc2e5968a4">numLines</a></td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a7432797d126430f9401cd08aad670d8b">numPixels</a></td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#acbcc27b313ddbfad077e7da7f9d62616">operator==</a>(const NTV2FormatDescriptor &amp;inRHS) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a4e1073fd38429ec36a149134a12d47d0">PlaneToString</a>(const UWord inPlaneIndex0) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a9b62becbda281ad3689428b330e485e7">Print</a>(std::ostream &amp;inOutStream, const bool inDetailed=true) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#aecd64bbe7ce5e36dec576ceb8c09c2f8">PrintSMPTELineNumber</a>(std::ostream &amp;inOutStream, const ULWord inLineOffset, const bool inForTextMode=false) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#aa3dd494b47f342c2d9bca89d2a44ce86">RasterLineToByteOffset</a>(const ULWord inRowIndex0, const UWord inPlaneIndex0=0) const</td><td class="entry"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Dec 19 2024 09:28:01 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Jan 13 2025 12:31:45 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

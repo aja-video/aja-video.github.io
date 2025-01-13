@@ -15,6 +15,7 @@ var class_c_n_t_v2_device_scanner =
     [ "GetFirstDeviceWithName", "d2/d67/class_c_n_t_v2_device_scanner.html#ae9dcc8d22c218feebf6151954b98f861", null ],
     [ "GetFirstDeviceWithSerial", "d2/d67/class_c_n_t_v2_device_scanner.html#a1b2b86bf0c26d6885286249d678a3485", null ],
     [ "GetNumDevices", "d2/d67/class_c_n_t_v2_device_scanner.html#ae4e123632e0608375b350e8e1ade876c", null ],
+    [ "GetVirtualDeviceWithName", "d2/d67/class_c_n_t_v2_device_scanner.html#a2ca5c553c050801065dd4a6568271de0", null ],
     [ "IsAlphaNumeric", "d2/d67/class_c_n_t_v2_device_scanner.html#a8093da0f40b062a403262f581c8d5ce2", null ],
     [ "IsAlphaNumeric", "d2/d67/class_c_n_t_v2_device_scanner.html#a7da1170a2f7d31ea4828a4ea895311ee", null ],
     [ "IsDecimalDigit", "d2/d67/class_c_n_t_v2_device_scanner.html#a088b5438de7f6aacd277b469007a588b", null ],

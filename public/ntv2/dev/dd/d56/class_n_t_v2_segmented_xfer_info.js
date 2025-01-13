@@ -24,10 +24,10 @@ var class_n_t_v2_segmented_xfer_info =
     [ "setSourceOffset", "dd/d56/class_n_t_v2_segmented_xfer_info.html#ae76fb6ca0ef58cf17cc56eb50e73ba5f", null ],
     [ "setSourcePitch", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a7ad66631925a89cf282c23ac79dc32c9", null ],
     [ "swapSourceAndDestination", "dd/d56/class_n_t_v2_segmented_xfer_info.html#ad92a7aa12b9957fb572690b55dd25fe4", null ],
-    [ "Direction_BottomToTop", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a13336080413d62d1e9120adf1cf15d2f", null ],
-    [ "Direction_BottomUp", "dd/d56/class_n_t_v2_segmented_xfer_info.html#aeefa285bdecd9b9f848be07b00fcbba1", null ],
-    [ "Direction_Flipped", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a7a558fc42d68fd3fce4844391e9271e7", null ],
-    [ "Direction_Normal", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a6fb973bf1ea8f2895ef2d8d0fa50ba24", null ],
-    [ "Direction_TopDown", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a247718560c6246c3da5fc2bbb5497923", null ],
-    [ "Direction_TopToBottom", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a386cd6f7d9056179e0d7cd851b45e57b", null ]
+    [ "Direction_BottomToTop", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a747c4c584e4255ede6ef24b6a6b7bafa", null ],
+    [ "Direction_BottomUp", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a1cbc4bde29976187de626b27501798f8", null ],
+    [ "Direction_Flipped", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a673cd4017ae2cce3b1593777d08fff8f", null ],
+    [ "Direction_Normal", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a399e84a0d07d67db6216986c835fed74", null ],
+    [ "Direction_TopDown", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a0a0f3fdc091274a92d70177d66f348ac", null ],
+    [ "Direction_TopToBottom", "dd/d56/class_n_t_v2_segmented_xfer_info.html#a3f3546543d7eff88ba3ff863624f8995", null ]
 ];

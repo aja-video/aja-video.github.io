@@ -540,6 +540,8 @@ var ntv2virtualregisters_8h =
       [ "kVRegHDMIOutStatus1", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa2c770ad4f960aac6eba12a161dd21bfc", null ],
       [ "kVRegAudioOutputToneSelect", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa080667bfe7b56a12bd40f57f0274ce30", null ],
       [ "kVRegDynFirmwareUpdateCounts", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daadff10df8c1f2d910b5302ae12f095e51", null ],
+      [ "kVRegPCILinkSpeed", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa30ed61fb184458950692f195f01f8412", null ],
+      [ "kVRegPCILinkWidth", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daaaa768ee8535a1e648767aa3b3a67295d", null ],
       [ "kVRegLastAJA", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daaae24d727e83333cca63cc560ce8e218c", null ],
       [ "kVRegFirstOEM", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daac657ed9cad19a91f827f39f70ee045fe", null ],
       [ "kVRegLast", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa8e28450c3a6c581a452b5c60b0933e66", null ]

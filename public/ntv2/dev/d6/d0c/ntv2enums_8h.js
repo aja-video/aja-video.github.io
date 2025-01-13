@@ -1348,9 +1348,13 @@ var ntv2enums_8h =
       [ "NTV2_FG_720x514", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afac21a4ec056124f104fb32f8c4e95ef0e", null ],
       [ "NTV2_FG_720x612", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa62bfe2df9e9aef229d175be015cc6325", null ],
       [ "NTV2_FG_4x1920x1080", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa6619f37ff724bdb25e1cca75c49b258f", null ],
+      [ "NTV2_FG_3840x2160", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa628cea47274b102b7933f570fb8c3579", null ],
       [ "NTV2_FG_4x2048x1080", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afaa7dc849f68eb8bb1e4e2c87d74ab6961", null ],
+      [ "NTV2_FG_4096x2160", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afacf86b4370995a4330dc20fb640392ee1", null ],
       [ "NTV2_FG_4x3840x2160", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afab7d70544b12b689d30cc6645fefb15e5", null ],
+      [ "NTV2_FG_7680x4320", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afad49a20bd0167b7f16e4dbc8ca08f98e5", null ],
       [ "NTV2_FG_4x4096x2160", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afaa890909a4eb83ae9cca700c5a7f3caee", null ],
+      [ "NTV2_FG_8192x4320", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa373e86acfddf620110ed02f40b020800", null ],
       [ "NTV2_FG_LAST", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afabc795c2111e24685b636248563e5b863", null ],
       [ "NTV2_FG_NUMFRAMEGEOMETRIES", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa9aff57e6be1d2d6a1c9d628cc7a939ad", null ],
       [ "NTV2_FG_INVALID", "d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa55677343d795931f503bebfa68129f81", null ]

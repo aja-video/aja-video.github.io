@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1458</span>
+   &#160;<span id="projectnumber">17.5.0.1492</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9dcc8d22c218feebf6151954b98f861"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d67/class_c_n_t_v2_device_scanner.html#ae9dcc8d22c218feebf6151954b98f861">GetFirstDeviceWithName</a> (const std::string &amp;inNameSubString, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a> &amp;outDevice)</td></tr>
 <tr class="memdesc:ae9dcc8d22c218feebf6151954b98f861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rescans the host, and returns an open <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> instance for the first AJA device whose device identifier name contains the given substring.  <a href="../../d2/d67/class_c_n_t_v2_device_scanner.html#ae9dcc8d22c218feebf6151954b98f861">More...</a><br /></td></tr>
 <tr class="separator:ae9dcc8d22c218feebf6151954b98f861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca5c553c050801065dd4a6568271de0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d67/class_c_n_t_v2_device_scanner.html#a2ca5c553c050801065dd4a6568271de0">GetVirtualDeviceWithName</a> (const std::string &amp;inNameString, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a> &amp;outDevice, const bool inRescan=(!(0)))</td></tr>
+<tr class="memdesc:a2ca5c553c050801065dd4a6568271de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rescans the host, and returns an open <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> instance for the first virtual device with a matching name.  <a href="../../d2/d67/class_c_n_t_v2_device_scanner.html#a2ca5c553c050801065dd4a6568271de0">More...</a><br /></td></tr>
+<tr class="separator:a2ca5c553c050801065dd4a6568271de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b2b86bf0c26d6885286249d678a3485"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d67/class_c_n_t_v2_device_scanner.html#a1b2b86bf0c26d6885286249d678a3485">GetFirstDeviceWithSerial</a> (const std::string &amp;inSerialStr, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a> &amp;outDevice)</td></tr>
 <tr class="memdesc:a1b2b86bf0c26d6885286249d678a3485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rescans the host, and returns an open <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> instance for the first AJA device whose serial number contains the given value.  <a href="../../d2/d67/class_c_n_t_v2_device_scanner.html#a1b2b86bf0c26d6885286249d678a3485">More...</a><br /></td></tr>
 <tr class="separator:a1b2b86bf0c26d6885286249d678a3485"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,7 +278,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00520">520</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -469,7 +472,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string containing the device name that will find the same given device using <a class="el" href="../../d2/d67/class_c_n_t_v2_device_scanner.html#a43517c9c7fedc4d199ef7616ce223276" title="Rescans the host, and returns an open CNTV2Card instance for the AJA device that matches a command li...">CNTV2DeviceScanner::GetFirstDeviceFromArgument</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00369">369</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00388">388</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +557,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000155">Deprecated:</a></b></dt><dd>Use the string version of this function instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00286">286</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -610,7 +613,7 @@ Static Public Member Functions</h2></td></tr>
 </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00310">310</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -756,7 +759,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00283">283</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -786,6 +789,62 @@ Static Public Member Functions</h2></td></tr>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000148">Deprecated:</a></b></dt><dd>Do not use </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ca5c553c050801065dd4a6568271de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca5c553c050801065dd4a6568271de0">&#9670;&nbsp;</a></span>GetVirtualDeviceWithName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CNTV2DeviceScanner::GetVirtualDeviceWithName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>inNameString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a> &amp;&#160;</td>
+          <td class="paramname"><em>outDevice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>inRescan</em> = <code>(!&#160;(0)&#160;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rescans the host, and returns an open <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> instance for the first virtual device with a matching name. </p>
+<dl class="section note"><dt>Note</dt><dd>Only virtual devices are compared. The name is compared case-insensitively (e.g., "KONA5_Playout1" == "kona5_playout1"). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inNameString</td><td>Specifies the virtual device name to search for. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outDevice</td><td>Receives the open, ready-to-use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inRescan</td><td>Will rescan devices before returning the open <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device.">CNTV2Card</a> instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../d7/db4/ntv2devicescanner_8cpp_source.html">ntv2devicescanner.cpp</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1104,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d67/class_c_n_t_v2_device_scanner.html">CNTV2DeviceScanner</a></li>
-    <li class="footer">Generated on Thu Dec 19 2024 09:28:00 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Jan 13 2025 12:31:45 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

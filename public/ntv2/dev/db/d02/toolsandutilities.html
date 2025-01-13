@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1458</span>
+   &#160;<span id="projectnumber">17.5.0.1492</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
   </td>
  </tr>
  </tbody>
@@ -685,11 +685,14 @@ Debug Tab</h2>
 </div><!-- fragment --><hr  size="50px" />
 <h1><a class="anchor" id="usingntv2watcher"></a>
 “NTV2Watcher”</h1>
-<p>This page describes how to use the <b>NTV2 Watcher</b> tool to interactively monitor and control an AJA device.</p>
-<p><a class="el" href="../../db/d02/toolsandutilities.html#inspectorgeneralop">General Operation</a></p><ul>
-<li>Device Selection</li>
-<li>Common Settings</li>
-<li><b>Inspectors</b><ul>
+<p>This page describes how to use the <b>NTV2 Watcher</b> tool to interactively monitor and control an AJA device.</p><ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorgeneralop">General Operation</a><ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watcherdevselect">Device Selection</a></li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watchermenucommands">Menu Commands</a></li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watchercommonsettings">Common Settings</a></li>
+</ul>
+</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watcherinspectors">Inspectors</a><ul>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorframebuffer">Frame Buffer Inspector</a> — Views/edits device frame buffer memory</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#inspectoraudio">Audio Inspector</a> — Views/edits device audio buffer memory</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#inspectoranc">Ancillary Data Inspector</a> — Monitors device ancillary data</li>
@@ -700,12 +703,7 @@ Debug Tab</h2>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorroute">Routing Inspector</a> — Views/edits device widget routing</li>
 </ul>
 </li>
-<li>Global Settings<ul>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> — Sets global preferences</li>
-</ul>
-</li>
-</ul>
-<p><b>Tool Windows:</b></p><ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watchertools">Tool Windows</a><ul>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#fillbufferdlog">“Fill Buffer” Tool</a> — for changing the contents of frame buffer memory</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#anc608viewer">“EIA/CEA-608 Caption” Tool</a> — for viewing/setting EIA608 captions</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#regautocycler">“Register Cycler” Tool</a> — for periodically changing a register value</li>
@@ -715,6 +713,12 @@ Debug Tab</h2>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#demostool">“SDK Demos” Tool</a> — configures and runs demo apps</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#debugstats">“AJADebug Stats” Tool</a> — displays AJA debug stats</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#debuglog">“AJADebug Log” Tool</a> — displays AJA debug logs</li>
+</ul>
+</li>
+<li>Global Settings<ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> — Sets global preferences</li>
+</ul>
+</li>
 </ul>
 <hr  size="50px" />
  <h2><a class="anchor" id="inspectorgeneralop"></a>
@@ -735,32 +739,33 @@ General Operation</h2>
 <li><b>Status Message</b> — Some inspectors will display messages here in certain situations.</li>
 <li><b>Selection Indicator</b> — Some inspectors allow data portions to be selected interactively using the keyboard or mouse. This part of the Status Bar briefly describes the current selection.</li>
 <li><b>Endianness</b> — Some inspectors display 2, 4, or 8-byte numbers. This indicator shows the current endianness of the data display as <b>BE</b> (“Big Endian”) or <b>LE</b> (“Little Endian”).<ul>
-<li>It’s colored Green if it’s the native endianness for the host processor.</li>
-<li>It’s colored Yellow if it’s not native.</li>
+<li>It’s colored <b>Green</b> if it’s the native endianness for the host processor.</li>
+<li>It’s colored <b>Yellow</b> if it’s not native.</li>
 </ul>
 </li>
 <li><b>Die Temperature</b> — Indicates the instantaneous measured die temperature of the device’s FPGA.<ul>
-<li>It’s colored Green if the temperature is at or below normal.</li>
-<li>It’s colored Yellow if the temperature is slightly above normal.</li>
-<li>It’s colored Red if the temperature is significantly above normal.</li>
+<li>It’s colored <b>Green</b> if the temperature is at or below normal.</li>
+<li>It’s colored <b>Yellow</b> if the temperature is slightly above normal.</li>
+<li>It’s colored <b>Red</b> if the temperature is significantly above normal.</li>
 </ul>
 </li>
 <li><b>Refresh Rate</b> — Indicates the actual measured refresh rate of the main window’s active inspector (a moving average).<ul>
 <li>The refresh rate of detached inspector windows is not measured.</li>
 <li>The indicator shows “N/A” when polling is disabled (i.e. when the <b>Poll</b> checkbox is not checked/ticked).</li>
-<li>The indicator is Green if the measured refresh rate is what’s expected:<ul>
+<li>The indicator is <b>Green</b> if the measured refresh rate is what’s expected:<ul>
 <li>For inspectors tied to the VBI, it must be no more than the expected frame rate.</li>
 <li>For all other inspectors, it must be no greater than the polling <b>Interval</b> slider setting.</li>
 </ul>
 </li>
-<li>It’s colored Yellow if the measured rate lags the expected rate by less than about 5%.</li>
-<li>It’s colored Red if the measured rate lags the expected rate by more than approximately 5%.</li>
+<li>It’s colored <b>Yellow</b> if the measured rate lags the expected rate by less than about 5%.</li>
+<li>It’s colored <b>Red</b> if the measured rate lags the expected rate by more than approximately 5%.</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
+<h3><a class="anchor" id="watcherdevselect"></a>
+Device Selection</h3>
 <p>A single instance of <b>NTV2 Watcher</b> monitors and/or controls one AJA device at a time. This panel provides a menu for choosing which AJA device the tool will focus on.</p>
 <p>The top of the menu is populated with devices that are installed or attached directly to the host. It’s followed by the “<b>Manage Other Devices…</b>” command, which opens the <b>Manage Devices</b> tool window. The bottom section of the menu is populated with the <b>Known Remote Devices</b> (see below).</p>
 <p>Choosing a different device in the menu causes <b>NTV2Watcher</b> to stop monitoring the previously-selected device, and starts monitoring the newly-selected one. Depending on the device and its capabilities, the list of available inspectors may change.</p>
@@ -790,7 +795,8 @@ General Operation</h2>
 </li>
 <li><b>Software Devices</b> — to configure AJA “software” devices.</li>
 </ul>
-<dl class="section user"><dt>Menu Commands</dt><dd></dd></dl>
+<h3><a class="anchor" id="watchermenucommands"></a>
+Menu Commands</h3>
 <p>Here’s what’s in the menu bar:</p><ul>
 <li><b>File</b> Menu<ul>
 <li><b>Save As…</b> — Saves (exports) “raw” data for the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorframebuffer">Frame Buffer Inspector</a> and <a class="el" href="../../db/d02/toolsandutilities.html#inspectoraudio">Audio Inspector</a>.</li>
@@ -833,7 +839,8 @@ General Operation</h2>
 </ul>
 </li>
 </ul>
-<dl class="section user"><dt>Common Settings</dt><dd></dd></dl>
+<h3><a class="anchor" id="watchercommonsettings"></a>
+Common Settings</h3>
 <div class="image">
 <img src="../../watcher-commonsettings.png" alt=""/>
 </div>
@@ -862,7 +869,9 @@ General Operation</h2>
 <li><b>Multi-Format Mode</b> — Indicates the device’s “multi-format” mode, and allows it to be changed.</li>
 <li><b>Reference</b> — Indicates the device’s current clock reference setting, and allows it to be changed.</li>
 </ul>
-<dl class="section user"><dt>Inspectors</dt><dd></dd></dl>
+<hr  size="50px" />
+ <h2><a class="anchor" id="watcherinspectors"></a>
+Inspectors</h2>
 <div class="image">
 <img src="../../watcher-inspectorlist.png" alt=""/>
 </div>
@@ -2144,7 +2153,22 @@ Crosspoint Map</h3>
 </li>
 </ul>
 <hr  size="50px" />
- <h2><a class="anchor" id="fillbufferdlog"></a>
+ <h2><a class="anchor" id="watchertools"></a>
+Tool Windows</h2>
+<p>NTV2Watcher also has a number of “Tools” that when activated appear in separate windows that are independent of the main window or detached inspector windows.</p>
+<p>Each Tool has its own particular user interface that’s designed to perform its specific task. To activate (open) or deactivate (close) a Tool, check or un-check it in the <b>View</b> menu:</p><ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#fillbufferdlog">“Fill Buffer” Tool</a> — change the contents of frame buffer memory</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#anc608viewer">“EIA/CEA-608 Caption” Tool</a> — view/set EIA608 captions</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#regautocycler">“Register Cycler” Tool</a> — periodically change a register value</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#tonegenerator">“Tone Generator” Tool</a> — write tone values into an audio buffer</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#memmapdlog">“Memory Map” Tool</a> — show device memory utilization</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#scraptool">“Scrap Buffer” Tool</a> — display arbitrary host buffer content</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#demostool">“SDK Demos” Tool</a> — configure and run an SDK demo apps</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#debugstats">“AJADebug Stats” Tool</a> — display AJA debug stats</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#debuglog">“AJADebug Log” Tool</a> — display AJA debug logs</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Some tools are expensive in terms of CPU utilization, and can cause some inspectors to lag from their expected refresh rate.</dd></dl>
+<h2><a class="anchor" id="fillbufferdlog"></a>
 “Fill Buffer” Tool</h2>
 <p>The <b>“Fill Buffer” Tool</b> is a handy debugging aid for filling device buffer memory with various values and/or patterns.</p>
 <p>One or more frames can be written:</p><ul>
@@ -2999,24 +3023,24 @@ System Report</h2>
  </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793">NTV2_XptHDMIOutInput</a></div><div class="ttdeci">@ NTV2_XptHDMIOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02831">ntv2enums.h:2831</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a></div><div class="ttdeci">@ NTV2_XptSDIIn1DS2</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02549">ntv2enums.h:2549</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut4Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02781">ntv2enums.h:2781</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8">NTV2_XptCSC1VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC1VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02747">ntv2enums.h:2747</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c">NTV2_XptLUT2Input</a></div><div class="ttdeci">@ NTV2_XptLUT2Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02764">ntv2enums.h:2764</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22">NTV2_XptLUT1Input</a></div><div class="ttdeci">@ NTV2_XptLUT1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02763">ntv2enums.h:2763</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee">NTV2_XptFrameBuffer1Input</a></div><div class="ttdeci">@ NTV2_XptFrameBuffer1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02731">ntv2enums.h:2731</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div><div class="ttdeci">@ NTV2_XptSDIIn1</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02513">ntv2enums.h:2513</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772">NTV2_XptCSC2VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC2VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02533">ntv2enums.h:2533</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770">NTV2_XptCSC1VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC1VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02518">ntv2enums.h:2518</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b">NTV2_XptCSC2VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC2VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02749">ntv2enums.h:2749</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412">NTV2_XptAnalogOutInput</a></div><div class="ttdeci">@ NTV2_XptAnalogOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02848">ntv2enums.h:2848</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56">NTV2_XptSDIOut3Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut3Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02779">ntv2enums.h:2779</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793">NTV2_XptHDMIOutInput</a></div><div class="ttdeci">@ NTV2_XptHDMIOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02841">ntv2enums.h:2841</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a></div><div class="ttdeci">@ NTV2_XptSDIIn1DS2</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02553">ntv2enums.h:2553</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut4Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02791">ntv2enums.h:2791</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8">NTV2_XptCSC1VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC1VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02757">ntv2enums.h:2757</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c">NTV2_XptLUT2Input</a></div><div class="ttdeci">@ NTV2_XptLUT2Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02774">ntv2enums.h:2774</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22">NTV2_XptLUT1Input</a></div><div class="ttdeci">@ NTV2_XptLUT1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02773">ntv2enums.h:2773</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee">NTV2_XptFrameBuffer1Input</a></div><div class="ttdeci">@ NTV2_XptFrameBuffer1Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02741">ntv2enums.h:2741</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div><div class="ttdeci">@ NTV2_XptSDIIn1</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02517">ntv2enums.h:2517</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772">NTV2_XptCSC2VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC2VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02537">ntv2enums.h:2537</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770">NTV2_XptCSC1VidRGB</a></div><div class="ttdeci">@ NTV2_XptCSC1VidRGB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02522">ntv2enums.h:2522</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b">NTV2_XptCSC2VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC2VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02759">ntv2enums.h:2759</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412">NTV2_XptAnalogOutInput</a></div><div class="ttdeci">@ NTV2_XptAnalogOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02858">ntv2enums.h:2858</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56">NTV2_XptSDIOut3Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut3Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02789">ntv2enums.h:2789</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Dec 19 2024 09:27:56 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Jan 13 2025 12:31:42 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1458</span>
+   &#160;<span id="projectnumber">17.5.0.1492</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d5/dc4/class_n_t_v2_buffer.html','../.
 </div><!--header-->
 <div class="contents">
 
-<p>A generic user-space buffer object that has an address and a length. Used most often to share an arbitrary-sized chunk of host memory with the NTV2 kernel driver through a <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad518f9ae648ba9059924b2af209047f0" title="Sends a message to the NTV2 driver (the new, improved, preferred way).">CNTV2DriverInterface::NTV2Message</a> call.  
+<p>Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.).  
  <a href="../../d5/dc4/class_n_t_v2_buffer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>&gt;</code></p>
@@ -112,7 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa425770c37baef446deb6dbf96383eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs me from a client-specified byte count. In this case, I assume full responsibility for automatically freeing the memory I allocate.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#aa425770c37baef446deb6dbf96383eec">More...</a><br /></td></tr>
 <tr class="separator:aa425770c37baef446deb6dbf96383eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa64c22343a4f0456f870d4906cf818c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#aa64c22343a4f0456f870d4906cf818c6">NTV2Buffer</a> (const <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;inObj)</td></tr>
-<tr class="memdesc:aa64c22343a4f0456f870d4906cf818c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#aa64c22343a4f0456f870d4906cf818c6">More...</a><br /></td></tr>
+<tr class="memdesc:aa64c22343a4f0456f870d4906cf818c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#aa64c22343a4f0456f870d4906cf818c6">More...</a><br /></td></tr>
 <tr class="separator:aa64c22343a4f0456f870d4906cf818c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e76e5777e2ebcb17cc082c1861e019"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#a00e76e5777e2ebcb17cc082c1861e019">~NTV2Buffer</a> ()</td></tr>
 <tr class="memdesc:a00e76e5777e2ebcb17cc082c1861e019"><td class="mdescLeft">&#160;</td><td class="mdescRight">My destructor. If I'm responsible for the memory, I free it here.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#a00e76e5777e2ebcb17cc082c1861e019">More...</a><br /></td></tr>
@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9410e7c447c02a9f1baf5420c7c16a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Truncates me to the given length. No reallocation takes place.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#a9410e7c447c02a9f1baf5420c7c16a3c">More...</a><br /></td></tr>
 <tr class="separator:a9410e7c447c02a9f1baf5420c7c16a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7646fdd22e61c3d7b3a942f64b50b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#aa7646fdd22e61c3d7b3a942f64b50b6d">operator=</a> (const <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;inRHS)</td></tr>
-<tr class="memdesc:aa7646fdd22e61c3d7b3a942f64b50b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#aa7646fdd22e61c3d7b3a942f64b50b6d">More...</a><br /></td></tr>
+<tr class="memdesc:aa7646fdd22e61c3d7b3a942f64b50b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#aa7646fdd22e61c3d7b3a942f64b50b6d">More...</a><br /></td></tr>
 <tr class="separator:aa7646fdd22e61c3d7b3a942f64b50b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b6d2c3ba87116a4db771cc3b83531da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#a0b6d2c3ba87116a4db771cc3b83531da">Set</a> (const void *pInUserPointer, const size_t inByteCount)</td></tr>
 <tr class="memdesc:a0b6d2c3ba87116a4db771cc3b83531da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets (or resets) me from a client-supplied address and size.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#a0b6d2c3ba87116a4db771cc3b83531da">More...</a><br /></td></tr>
@@ -229,7 +229,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae4ace9de03056b5f744eff619c849a3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#aae4ace9de03056b5f744eff619c849a3">operator T*</a> () const</td></tr>
 <tr class="separator:aae4ace9de03056b5f744eff619c849a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc24aa6dff94ffd36e8a9477d9cb106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#aecc24aa6dff94ffd36e8a9477d9cb106">Segment</a> (<a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;outPtr, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inByteOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inByteCount) const</td></tr>
-<tr class="memdesc:aecc24aa6dff94ffd36e8a9477d9cb106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets an <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance to reference a contiguous segment (portion) of my memory buffer.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#aecc24aa6dff94ffd36e8a9477d9cb106">More...</a><br /></td></tr>
+<tr class="memdesc:aecc24aa6dff94ffd36e8a9477d9cb106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets an <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance to reference a contiguous segment (portion) of my memory buffer.  <a href="../../d5/dc4/class_n_t_v2_buffer.html#aecc24aa6dff94ffd36e8a9477d9cb106">More...</a><br /></td></tr>
 <tr class="separator:aecc24aa6dff94ffd36e8a9477d9cb106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f7e4efabe8f825f5e9cdc57fdae86e1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#a1f7e4efabe8f825f5e9cdc57fdae86e1">U8</a> (const int inIndex) const</td></tr>
 <tr class="separator:a1f7e4efabe8f825f5e9cdc57fdae86e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,34 +325,34 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af50a3abc46669ec5cb7c9c1ba360d489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A generic user-space buffer object that has an address and a length. Used most often to share an arbitrary-sized chunk of host memory with the NTV2 kernel driver through a <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad518f9ae648ba9059924b2af209047f0" title="Sends a message to the NTV2 driver (the new, improved, preferred way).">CNTV2DriverInterface::NTV2Message</a> call. </p>
+<div class="textblock"><p>Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). </p>
 <ul>
-<li>For a static or global buffer, simply construct from the variable: <div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> pFoo [1000];</div>
+<li>For a static or global buffer, simply construct from the variable: <div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> pFoo[1000];</div>
 <div class="line">{</div>
-<div class="line">    <a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> foo (pFoo, <span class="keyword">sizeof</span> (pFoo));</div>
+<div class="line">    <a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> foo (pFoo, <span class="keyword">sizeof</span>(pFoo));</div>
 <div class="line">    . . .</div>
 <div class="line">}   <span class="comment">//  When foo goes out of scope, it won&#39;t try to free pFoo</span></div>
 </div><!-- fragment --></li>
 <li>For stack-based buffers, simply construct from the variable: <div class="fragment"><div class="line">{</div>
-<div class="line">    <a class="code" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> pFoo [100];</div>
-<div class="line">    <a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> foo (pFoo, <span class="keyword">sizeof</span> (pFoo));</div>
+<div class="line">    <a class="code" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> pFoo[100];</div>
+<div class="line">    <a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> foo (pFoo, <span class="keyword">sizeof</span>(pFoo));</div>
 <div class="line">    . . .</div>
-<div class="line">}   <span class="comment">//  No need to do anything, as both foo and pFoo are automatically freed when they go out of scope</span></div>
+<div class="line">}   <span class="comment">//  Both foo and pFoo are automatically freed when they go out of scope</span></div>
 </div><!-- fragment --></li>
-<li>For a buffer you allocate and free yourself: <div class="fragment"><div class="line"><a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a>  foo (<span class="keyword">new</span> Bar [1], <span class="keyword">sizeof</span> (Bar));</div>
+<li>To allocate and free a buffer of 100 Bar's: <div class="fragment"><div class="line"><a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a>  foo (<span class="keyword">new</span> Bar[100], <span class="keyword">sizeof</span>(Bar));</div>
 <div class="line">. . .</div>
-<div class="line">delete [] (Bar*) foo.GetHostPointer ();     <span class="comment">//  You must free the memory yourself</span></div>
+<div class="line">delete [] (Bar*) foo.GetHostPointer();      <span class="comment">//  You must free the memory yourself</span></div>
 </div><!-- fragment --></li>
-<li>For a 2K-byte buffer that's allocated and freed automatically by the SDK: <div class="fragment"><div class="line">{</div>
-<div class="line">    <a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> foo (2048);</div>
+<li>Let the SDK allocate and free a buffer of 100 Bar's: <div class="fragment"><div class="line">{</div>
+<div class="line">    <a class="code" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> foo (100 * <span class="keyword">sizeof</span>(Bar));</div>
 <div class="line">    ::memset (foo.GetHostPointer(), 0, foo.GetByteCount());</div>
 <div class="line">    . . .</div>
-<div class="line">}   <span class="comment">//  The memory is freed automatically when foo goes out of scope</span></div>
+<div class="line">}   <span class="comment">//  Automatically freed when foo goes out of scope</span></div>
 </div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>This struct uses a constructor to properly initialize itself. Do not use <b>memset</b> or <b>bzero</b> to initialize or "clear" it. </dd></dl>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06037">6037</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06094">6094</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aea7014236a75e89c25bb60ea87ace2d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea7014236a75e89c25bb60ea87ace2d8">&#9670;&nbsp;</a></span>NTV2Buffer() <span class="overload">[1/3]</span></h2>
@@ -397,7 +397,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01512">1512</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01632">1632</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01528">1528</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01648">1648</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -453,15 +453,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance. </p>
+<p>Constructs me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inObj</td><td><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance to "deep" copy into me. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inObj</td><td><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance to "deep" copy into me. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01546">1546</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01666">1666</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>My destructor. If I'm responsible for the memory, I free it here. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01591">1591</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01711">1711</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Any memory that I was referencing prior to this call that I was responsible for will automatically be freed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01649">1649</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01769">1769</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00643">643</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00711">711</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string containing a human-readable representation of me. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00326">326</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00394">394</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -604,7 +604,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If my size (in bytes) is not evenly divisible by 2, the very last byte won't get swapped. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01621">1621</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01741">1741</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -628,7 +628,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If my size (in bytes) is not evenly divisible by 4, the very last byte(s) won't get swapped. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01609">1609</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01729">1729</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If my size (in bytes) is not evenly divisible by 8, the very last byte(s) won't get swapped. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01597">1597</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01717">1717</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Offsets and lengths are checked. The function will return false for any overflow or underflow. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01771">1771</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01891">1891</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -748,7 +748,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The offsets and byte counts are checked against the existing sizes of the two buffers. The function will return false for any overflow. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01750">1750</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01870">1870</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -788,7 +788,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01737">1737</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01857">1857</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -816,7 +816,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06587">6587</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06644">6644</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +844,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06586">6586</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06643">6643</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -867,7 +867,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Deallocates my user-space storage (if I own it &ndash; i.e. from a prior call to Allocate). </p>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01683">1683</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01803">1803</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -896,7 +896,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Default page size, in bytes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02030">2030</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02150">2150</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1109,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if I'm currently allocated; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06263">6263</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06320">6320</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1160,7 +1160,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Offsets and lengths are checked. The function will return false for any overflow or underflow. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06289">6289</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06346">6346</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1210,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successfully found; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06163">6163</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06220">6220</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1248,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01849">1849</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01969">1969</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1276,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06585">6585</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06642">6642</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1304,7 +1304,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06584">6584</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06641">6641</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1333,7 +1333,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>My size, in bytes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06111">6111</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06168">6168</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1371,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The host address of the given byte. Returns NULL upon failure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01705">1705</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01825">1825</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1400,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>My user-space host virtual address, as seen by the host process. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06094">6094</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06151">6151</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1430,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>My "raw" user-space host virtual address. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>On 32-bit platforms, the true address is found in the most significant 4 bytes of the ULWord64 value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06106">6106</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06163">6163</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1478,7 +1478,7 @@ template&lt;typename T &gt; </div>
 <dl class="section note"><dt>Note</dt><dd>If a wrap condition exists &ndash; i.e., the contiguous byte range that differs starts near the end and wraps around to near the front &ndash; then 'outByteOffsetFirst' will be greater than 'outByteOffsetLast'. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01949">1949</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02069">2069</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1525,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Byte copying terminates at the first zero byte that's encountered in my buffer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06735">6735</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06792">6792</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1573,7 +1573,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Byte copying terminates at the first zero byte that's encountered in my buffer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00662">662</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00730">730</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1627,7 +1627,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If my length is not evenly divisible by 2, my last byte won't appear in the resulting vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06682">6682</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06739">6739</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1682,7 +1682,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If my length is not evenly divisible by 2, my last byte won't appear in the resulting vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00573">573</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00641">641</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1736,7 +1736,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If my length is not evenly divisible by 4, my last bytes won't appear in the resulting vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06652">6652</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06709">6709</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1791,7 +1791,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If my length is not evenly divisible by 4, my last bytes won't appear in the resulting vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00536">536</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00604">604</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1845,7 +1845,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If my length is not evenly divisible by 8, my last bytes won't appear in the resulting vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06622">6622</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06679">6679</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1900,7 +1900,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If my length is not evenly divisible by 8, my last bytes won't appear in the resulting vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00499">499</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00567">567</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1946,7 +1946,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06704">6704</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06761">6761</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1993,7 +1993,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00610">610</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00678">678</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2022,7 +2022,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Host OS/hardware page size, in bytes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02043">2043</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02163">2163</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2050,7 +2050,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06575">6575</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06632">6632</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2078,7 +2078,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06574">6574</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06631">6631</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2106,7 +2106,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06579">6579</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06636">6636</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2134,7 +2134,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06578">6578</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06635">6635</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2162,7 +2162,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06583">6583</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06640">6640</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2190,7 +2190,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06582">6582</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06639">6639</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2218,7 +2218,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06571">6571</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06628">6628</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2246,7 +2246,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06570">6570</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06627">6627</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2275,7 +2275,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if my host storage was allocated by my Allocate function; otherwise false if my host storage address and size was provided by the client application. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06117">6117</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06174">6174</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2320,7 +2320,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01874">1874</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01994">1994</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2349,7 +2349,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if my user-space pointer is NULL, or my size is zero. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06133">6133</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06190">6190</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2378,7 +2378,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if my host storage was page-aligned when Allocated; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06128">6128</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06185">6185</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2407,7 +2407,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if my host storage was provided by the client application; otherwise false if it was allocated by my Allocate function. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06123">6123</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06180">6180</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2447,7 +2447,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01920">1920</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02040">2040</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2475,7 +2475,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if my host pointer is non-NULL and my byte count is non-zero; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06138">6138</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06195">6195</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2505,7 +2505,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>My host address casted to a const T pointer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06535">6535</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06592">6592</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2533,7 +2533,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>My size, in bytes, as a size_t. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06143">6143</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06200">6200</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2563,7 +2563,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>My host address casted to a non-const T pointer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06540">6540</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06597">6597</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2583,15 +2583,15 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Assigns me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance. </p>
+<p>Assigns me from another <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inRHS</td><td>Specifies the <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance to assign ("deep" copy) to me. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inRHS</td><td>Specifies the <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance to assign ("deep" copy) to me. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01575">1575</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01695">1695</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2620,7 +2620,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the given output stream. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00319">319</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00387">387</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2667,7 +2667,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00758">758</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00826">826</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2714,7 +2714,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00730">730</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00798">798</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2761,7 +2761,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00702">702</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00770">770</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2801,7 +2801,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00786">786</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00854">854</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2831,7 +2831,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03598">3598</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03718">3718</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2851,7 +2851,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03589">3589</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03709">3709</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2887,20 +2887,20 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Resets an <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> instance to reference a contiguous segment (portion) of my memory buffer. </p>
+<p>Resets an <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> instance to reference a contiguous segment (portion) of my memory buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">outPtr</td><td>The <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> to be reset to my sub-segment. Note this receives a reference my segment, not a copy of it. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outPtr</td><td>The <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> to be reset to my sub-segment. Note this receives a reference my segment, not a copy of it. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inByteOffset</td><td>Specifies the offset, in bytes, where the segment starts. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inByteCount</td><td>Specifies the segment length, in bytes. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The specified <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a>. It will be set to null/empty upon failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The specified <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a>. It will be set to null/empty upon failure. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The offset and byte count are both checked against my buffer size. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Using the "outPtr" instance after my destruction will likely cause access violations, heap corruption, etc. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00487">487</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00555">555</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2941,7 +2941,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if both pInUserPointer and inByteCount agree (i.e. if pInUserPointer and inByteCount are both zero, or if they're both non-zero); otherwise false if they don't agree (i.e. one is non-zero and the other is zero, or vice-versa). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Any memory that I was referencing prior to this call that I was responsible for will automatically be freed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01633">1633</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01753">1753</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2989,7 +2989,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if both pInUserPointer and inByteCount agree (i.e. if pInUserPointer and inByteCount are both zero, or if they're both non-zero); otherwise false if they don't agree (i.e. one is non-zero and the other is zero, or vice-versa). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Any memory that I was referencing prior to this call that I was responsible for will automatically be freed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01643">1643</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01763">1763</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3026,7 +3026,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02035">2035</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02155">2155</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3055,7 +3055,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01720">1720</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01840">1840</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3085,7 +3085,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#a43153ca9b8f67325a6d79f9f88931862" title="Converts my contents into a hex-encoded string.">NTV2Buffer::toHexString</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01803">1803</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01923">1923</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3108,16 +3108,16 @@ template&lt;typename T &gt; </div>
 <p>Swaps my underlying buffer with another's. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inBuffer</td><td>Specifies the <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> I'll swap buffers with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inBuffer</td><td>Specifies the <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> I'll swap buffers with. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The buffers must have identical sizes, and must have equal ownership attributes. </dd>
 <dd>
-AJA recommends not using this function to swap NTV2Buffers that were allocated in different executable modules (e.g., on Windows, an <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="A generic user-space buffer object that has an address and a length. Used most often to share an arbi...">NTV2Buffer</a> that was allocated in a DLL with another that was allocated in an EXE). </dd></dl>
+AJA recommends not using this function to swap NTV2Buffers that were allocated in different executable modules (e.g., on Windows, an <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> that was allocated in a DLL with another that was allocated in an EXE). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01830">1830</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01950">1950</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3158,7 +3158,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html#a44645d6aa97a32c6ce687262f3158411" title="Replaces my contents from the given hex-encoded string, resizing me if necessary.">NTV2Buffer::SetFromHexString</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l00412">412</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3187,7 +3187,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01563">1563</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l01683">1683</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3215,7 +3215,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06573">6573</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06630">6630</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3243,7 +3243,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06572">6572</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06629">6629</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3271,7 +3271,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06577">6577</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06634">6634</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3299,7 +3299,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06576">6576</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06633">6633</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3327,7 +3327,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06581">6581</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06638">6638</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3355,7 +3355,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06580">6580</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06637">6637</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3391,7 +3391,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>Bad index values will result in access violation exceptions. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06568">6568</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06625">6625</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3427,7 +3427,7 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>Bad index values will result in access violation exceptions. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06560">6560</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06617">6617</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -3437,13 +3437,13 @@ AJA recommends not using this function to swap NTV2Buffers that were allocated i
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_n_t_v2_buffer_html"><div class="ttname"><a href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a></div><div class="ttdoc">A generic user-space buffer object that has an address and a length. Used most often to share an arbi...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06037">ntv2publicinterface.h:6037</a></div></div>
+<div class="ttc" id="aclass_n_t_v2_buffer_html"><div class="ttname"><a href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a></div><div class="ttdoc">Describes a user-space buffer on the host computer. I have an address and a length,...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd7/ntv2publicinterface_8h_source.html#l06094">ntv2publicinterface.h:6094</a></div></div>
 <div class="ttc" id="aajatypes_8h_html_ad3e6ac24329134f5b4c9993f13328db2"><div class="ttname"><a href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a></div><div class="ttdeci">uint32_t ULWord</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de2/ajatypes_8h_source.html#l00255">ajatypes.h:255</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a></li>
-    <li class="footer">Generated on Thu Dec 19 2024 09:28:01 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Jan 13 2025 12:31:45 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

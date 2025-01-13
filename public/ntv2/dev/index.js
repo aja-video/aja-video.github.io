@@ -97,13 +97,13 @@ var index =
         [ "Corvid 88", "d0/d53/ntv2devices.html#corvid88", null ],
         [ "Corvid HB-R", "d0/d53/ntv2devices.html#corvidhbr", null ],
         [ "Corvid HEVC", "d0/d53/ntv2devices.html#corvidhevc", null ],
-        [ "Io4K Plus", "d0/d53/ntv2devices.html#io4kplus", null ],
-        [ "Io4K (Quad Mode)", "d0/d53/ntv2devices.html#io4kquad", null ],
-        [ "Io4K (UFC Mode)", "d0/d53/ntv2devices.html#io4kufc", null ],
+        [ "Io 4K Plus", "d0/d53/ntv2devices.html#io4kplus", null ],
+        [ "Io 4K (Quad Mode)", "d0/d53/ntv2devices.html#io4kquad", null ],
+        [ "Io 4K (UFC Mode)", "d0/d53/ntv2devices.html#io4kufc", null ],
         [ "Io Express", "d0/d53/ntv2devices.html#ioexpress", null ],
         [ "Io IP", "d0/d53/ntv2devices.html#ioip", null ],
-        [ "IoX3", "d0/d53/ntv2devices.html#iox3", null ],
-        [ "IoXT", "d0/d53/ntv2devices.html#ioxt", null ],
+        [ "Io X3", "d0/d53/ntv2devices.html#iox3", null ],
+        [ "Io XT", "d0/d53/ntv2devices.html#ioxt", null ],
         [ "KONA 1", "d0/d53/ntv2devices.html#kona1", null ],
         [ "KONA 3G (Quad Mode)", "d0/d53/ntv2devices.html#kona3gquad", null ],
         [ "KONA 3G (UFC Mode)", "d0/d53/ntv2devices.html#kona3gufc", null ],
@@ -117,8 +117,8 @@ var index =
         [ "KONA X™", "d0/d53/ntv2devices.html#konax", null ],
         [ "KONA XM™", "d0/d53/ntv2devices.html#konaxm", null ],
         [ "KONA XPAND™ Breakout Board", "d0/d53/ntv2devices.html#konaxpand", null ],
-        [ "T-Tap", "d0/d53/ntv2devices.html#ttap", null ],
-        [ "T-Tap Pro", "d0/d53/ntv2devices.html#ttappro", null ]
+        [ "T-TAP", "d0/d53/ntv2devices.html#ttap", null ],
+        [ "T-TAP Pro", "d0/d53/ntv2devices.html#ttappro", null ]
       ] ]
     ] ],
     [ "Tools and Utilities", "db/d02/toolsandutilities.html", [
@@ -138,7 +138,12 @@ var index =
       [ "‘logjammer’ Command-Line Utility", "db/d02/toolsandutilities.html#usinglogjammer", null ],
       [ "‘logreader’ Command-Line Utility", "db/d02/toolsandutilities.html#usinglogreader", null ],
       [ "“NTV2Watcher”", "db/d02/toolsandutilities.html#usingntv2watcher", [
-        [ "General Operation", "db/d02/toolsandutilities.html#inspectorgeneralop", null ],
+        [ "General Operation", "db/d02/toolsandutilities.html#inspectorgeneralop", [
+          [ "Device Selection", "db/d02/toolsandutilities.html#watcherdevselect", null ],
+          [ "Menu Commands", "db/d02/toolsandutilities.html#watchermenucommands", null ],
+          [ "Common Settings", "db/d02/toolsandutilities.html#watchercommonsettings", null ]
+        ] ],
+        [ "Inspectors", "db/d02/toolsandutilities.html#watcherinspectors", null ],
         [ "Frame Buffer Inspector", "db/d02/toolsandutilities.html#inspectorframebuffer", null ],
         [ "Audio Inspector", "db/d02/toolsandutilities.html#inspectoraudio", null ],
         [ "Ancillary Data Inspector", "db/d02/toolsandutilities.html#inspectoranc", [
@@ -160,6 +165,7 @@ var index =
           [ "Registers", "db/d02/toolsandutilities.html#inspectorrouteregs", null ],
           [ "Crosspoint Map", "db/d02/toolsandutilities.html#inspectorroutexptmap", null ]
         ] ],
+        [ "Tool Windows", "db/d02/toolsandutilities.html#watchertools", null ],
         [ "“Fill Buffer” Tool", "db/d02/toolsandutilities.html#fillbufferdlog", null ],
         [ "“EIA/CEA-608 Caption” Tool", "db/d02/toolsandutilities.html#anc608viewer", null ],
         [ "“Register Cycler” Tool", "db/d02/toolsandutilities.html#regautocycler", null ],

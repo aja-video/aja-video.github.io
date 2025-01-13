@@ -4,6 +4,7 @@ var class_n_t_v2_format_descriptor =
     [ "NTV2FormatDescriptor", "d3/d4e/class_n_t_v2_format_descriptor.html#aa9c564febd3448ccd008a638ec1489b7", null ],
     [ "NTV2FormatDescriptor", "d3/d4e/class_n_t_v2_format_descriptor.html#a46cef073f94ddb0492f2a055c78ea196", null ],
     [ "NTV2FormatDescriptor", "d3/d4e/class_n_t_v2_format_descriptor.html#aac251d8e2d5e32b2f50f585c5f5b6cbd", null ],
+    [ "NTV2FormatDescriptor", "d3/d4e/class_n_t_v2_format_descriptor.html#ab32a773f915adfd785881dad83b58068", null ],
     [ "ByteOffsetToPlane", "d3/d4e/class_n_t_v2_format_descriptor.html#ad895c6a2065ad25e307958aaf0b35637", null ],
     [ "ByteOffsetToRasterLine", "d3/d4e/class_n_t_v2_format_descriptor.html#a783c60490eefdbb399dafec873426764", null ],
     [ "GetBytesPerRow", "d3/d4e/class_n_t_v2_format_descriptor.html#ae01129cd9f4f1a6663fae68b3af421d0", null ],

@@ -532,7 +532,7 @@ var hierarchy =
     [ "NTV2FieldBurn", "d4/d91/class_n_t_v2_field_burn.html", null ],
     [ "NTV2FormatDescriptor", "d3/d4e/class_n_t_v2_format_descriptor.html", null ],
     [ "NTV2FrameData", "d0/df1/class_n_t_v2_frame_data.html", null ],
-    [ "NTV2FrameDimensions", "d4/d43/class_n_t_v2_frame_dimensions.html", null ],
+    [ "NTV2FrameSize", "db/d7c/class_n_t_v2_frame_size.html", null ],
     [ "NTV2GetRegisters", "d1/dfc/class_n_t_v2_get_registers.html", null ],
     [ "NTV2HDMIOutputStatus", "d9/d6e/class_n_t_v2_h_d_m_i_output_status.html", null ],
     [ "NTV2Line21AttributePermutations", "d8/dd0/class_n_t_v2_line21_attribute_permutations.html", null ],
@@ -544,7 +544,7 @@ var hierarchy =
     [ "NTV2Player8K", "dd/d63/class_n_t_v2_player8_k.html", null ],
     [ "NTV2Plugin", "d0/df0/class_n_t_v2_plugin.html", null ],
     [ "NTV2PluginLoader", "d1/dfe/class_n_t_v2_plugin_loader.html", null ],
-    [ "NTV2RegInfo", "da/dac/struct_n_t_v2_reg_info.html", null ],
+    [ "NTV2RegInfo", "d2/d8f/class_n_t_v2_reg_info.html", null ],
     [ "NTV2RoutingEntry", "d4/d90/struct_n_t_v2_routing_entry.html", null ],
     [ "NTV2RoutingTable", "de/df1/struct_n_t_v2_routing_table.html", null ],
     [ "NTV2RPCBase", "d7/d93/class_n_t_v2_r_p_c_base.html", [

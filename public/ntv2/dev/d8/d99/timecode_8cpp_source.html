@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1458</span>
+   &#160;<span id="projectnumber">17.5.0.1492</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1458</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
   </td>
  </tr>
  </tbody>
@@ -553,9 +553,9 @@ $(document).ready(function(){initNavTree('d8/d99/timecode_8cpp_source.html','../
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                    stdTcForHfr = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                </div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                <span class="comment">// if using std timecode, add frame(s) if &#39;.&#39;</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                <span class="keywordflow">if</span> (ajaFrameRate &gt;= <a class="code" href="../../d6/da4/videotypes_8h.html#ab5ce6b3c6714b38b536c83da6f01b309a31e1ea370b5e8bdb39d1cd0a2b6a6623">AJA_FrameRate_10000</a> &amp;&amp; stdTcForHfr == <span class="keyword">true</span> &amp;&amp; theChar == <span class="charliteral">&#39;.&#39;</span>)</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                <span class="keywordflow">if</span> (ajaFrameRate &gt;= <a class="code" href="../../d6/da4/videotypes_8h.html#ab5ce6b3c6714b38b536c83da6f01b309a31e1ea370b5e8bdb39d1cd0a2b6a6623">AJA_FrameRate_10000</a> &amp;&amp; stdTcForHfr &amp;&amp; theChar == <span class="charliteral">&#39;.&#39;</span>)</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                    addFrame = 2;           <span class="comment">// WARNING: possible loss of frame accuracy due to limitaion of TC presentation </span></div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ajaFrameRate &gt;= <a class="code" href="../../d6/da4/videotypes_8h.html#ab5ce6b3c6714b38b536c83da6f01b309a97e91624a6fe401d461a51405fc64e3b">AJA_FrameRate_4795</a> &amp;&amp; stdTcForHfr == <span class="keyword">true</span> &amp;&amp; theChar == <span class="charliteral">&#39;.&#39;</span>)</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ajaFrameRate &gt;= <a class="code" href="../../d6/da4/videotypes_8h.html#ab5ce6b3c6714b38b536c83da6f01b309a97e91624a6fe401d461a51405fc64e3b">AJA_FrameRate_4795</a> &amp;&amp; stdTcForHfr &amp;&amp; theChar == <span class="charliteral">&#39;.&#39;</span>)</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                    addFrame = 1;</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            }</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                </div>
@@ -585,20 +585,20 @@ $(document).ready(function(){initNavTree('d8/d99/timecode_8cpp_source.html','../
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordtype">int</span> results[4] = {0, 0, 0, 0};  <span class="comment">// Temporary array to store the results</span></div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keywordtype">char</span> delim[3] = {0, 0, 0};      <span class="comment">// Holds TC delimiter chars  </span></div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keywordtype">int</span> index = 3;                  <span class="comment">// Start filling from the last slot in the results array</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    uint32_t addFrame = 0;          <span class="comment">// </span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    uint32_t addFrame = 0;</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="comment">// Traverse the string from the end</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = str.length() - 1; i &gt;= 0 &amp;&amp; index &gt;= 0; ) </div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = str.length() - 1; i &gt;= 0 &amp;&amp; index &gt;= 0; ) </div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    {</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="comment">// Skip non-digit characters</span></div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">while</span> (i &gt;= 0 &amp;&amp; !std::isdigit(str[i]))</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">while</span> (i &gt;= 0 &amp;&amp; !<a class="code" href="../../d3/d3a/namespaceaja.html#af567bd1eb313f2bdb941f2618fd64646">aja::is_decimal_digit</a>(str[i]))</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            i--;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="comment">// Find the start of the number</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keywordflow">if</span> (i &gt;= 0 &amp;&amp; std::isdigit(str[i])) </div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keywordflow">if</span> (i &gt;= 0 &amp;&amp; <a class="code" href="../../d3/d3a/namespaceaja.html#af567bd1eb313f2bdb941f2618fd64646">aja::is_decimal_digit</a>(str[i])) </div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        {</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;            <span class="keywordtype">int</span> start = i;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;            <span class="keywordflow">while</span> (start &gt; 0 &amp;&amp; std::isdigit(str[start - 1]))</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;            <span class="keywordtype">size_t</span> start = i;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;            <span class="keywordflow">while</span> (start &gt; 0 &amp;&amp; <a class="code" href="../../d3/d3a/namespaceaja.html#af567bd1eb313f2bdb941f2618fd64646">aja::is_decimal_digit</a>(str[start - 1]))</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                start--;</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;            </div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <span class="keywordflow">if</span> (start &gt; 0 &amp;&amp; index &gt; 0)</div>
@@ -882,6 +882,7 @@ $(document).ready(function(){initNavTree('d8/d99/timecode_8cpp_source.html','../
 <div class="ttc" id="aclass_a_j_a_time_base_html_a44d741a3aea63d9db7b77b73a27a2298"><div class="ttname"><a href="../../d7/d17/class_a_j_a_time_base.html#a44d741a3aea63d9db7b77b73a27a2298">AJATimeBase::GetFramesPerSecondDouble</a></div><div class="ttdeci">double GetFramesPerSecondDouble(void) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dbf/timebase_8cpp_source.html#l00215">timebase.cpp:215</a></div></div>
 <div class="ttc" id="aclass_a_j_a_time_code_html_ad82ee9aeb4e3f01a3b7f841f443d295f"><div class="ttname"><a href="../../d1/d32/class_a_j_a_time_code.html#ad82ee9aeb4e3f01a3b7f841f443d295f">AJATimeCode::AJATimeCode</a></div><div class="ttdeci">AJATimeCode()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d99/timecode_8cpp_source.html#l00044">timecode.cpp:44</a></div></div>
 <div class="ttc" id="avideotypes_8h_html_ab5ce6b3c6714b38b536c83da6f01b309a753b36d1ce0df9226674e2f0f9484dec"><div class="ttname"><a href="../../d6/da4/videotypes_8h.html#ab5ce6b3c6714b38b536c83da6f01b309a753b36d1ce0df9226674e2f0f9484dec">AJA_FrameRate_5000</a></div><div class="ttdeci">@ AJA_FrameRate_5000</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da4/videotypes_8h_source.html#l00226">videotypes.h:226</a></div></div>
+<div class="ttc" id="anamespaceaja_html_af567bd1eb313f2bdb941f2618fd64646"><div class="ttname"><a href="../../d3/d3a/namespaceaja.html#af567bd1eb313f2bdb941f2618fd64646">aja::is_decimal_digit</a></div><div class="ttdeci">bool is_decimal_digit(const char inChr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df9/common_8cpp_source.html#l00516">common.cpp:516</a></div></div>
 <div class="ttc" id="aclass_a_j_a_time_code_html_adc3bdd3c1ca4342cd973f81d3baaf334"><div class="ttname"><a href="../../d1/d32/class_a_j_a_time_code.html#adc3bdd3c1ca4342cd973f81d3baaf334">AJATimeCode::QuerySMPTEString</a></div><div class="ttdeci">void QuerySMPTEString(char *pString, const AJATimeBase &amp;timeBase, bool bDropFrame)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d99/timecode_8cpp_source.html#l00401">timecode.cpp:401</a></div></div>
 <div class="ttc" id="aclass_a_j_a_time_code_html_a3aa7776d743316b27c1972b0dd334072"><div class="ttname"><a href="../../d1/d32/class_a_j_a_time_code.html#a3aa7776d743316b27c1972b0dd334072">AJATimeCode::SetSMPTEString</a></div><div class="ttdeci">void SetSMPTEString(const char *pBufr, const AJATimeBase &amp;timeBase)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d99/timecode_8cpp_source.html#l00549">timecode.cpp:549</a></div></div>
 <div class="ttc" id="aclass_a_j_a_time_code_html_a6e588a164694ba2e6856fb40484def82"><div class="ttname"><a href="../../d1/d32/class_a_j_a_time_code.html#a6e588a164694ba2e6856fb40484def82">AJATimeCode::QueryHmsf</a></div><div class="ttdeci">void QueryHmsf(uint32_t &amp;h, uint32_t &amp;m, uint32_t &amp;s, uint32_t &amp;f, const AJATimeBase &amp;timeBase, bool bDropFrame) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d99/timecode_8cpp_source.html#l00292">timecode.cpp:292</a></div></div>
@@ -904,7 +905,7 @@ $(document).ready(function(){initNavTree('d8/d99/timecode_8cpp_source.html','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_8f3154ce023319d0c7e8bb4441cab51f.html">common</a></li><li class="navelem"><a class="el" href="../../d8/d99/timecode_8cpp.html">timecode.cpp</a></li>
-    <li class="footer">Generated on Thu Dec 19 2024 09:27:49 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Jan 13 2025 12:31:36 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
