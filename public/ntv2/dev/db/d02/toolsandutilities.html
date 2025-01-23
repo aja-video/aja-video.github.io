@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1516</span>
+   &#160;<span id="projectnumber">17.5.0.1517</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1516</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1517</div>
   </td>
  </tr>
  </tbody>
@@ -89,20 +89,18 @@ $(document).ready(function(){initNavTree('db/d02/toolsandutilities.html','../../
 <div class="title">Tools and Utilities </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section user"><dt>Tools and Utilities</dt><dd></dd></dl>
-<p>The SDK includes a number of tools and utilities that help diagnose issues involving the SDK and AJA devices.</p>
-<p>These all operate the same on all three supported platforms (Linux, MacOS and Windows) and live in the top-level <b>bin</b> folder.</p>
-<ul>
+<div class="textblock"><p>The SDK includes a number of tools and utilities that help diagnose issues involving the SDK and AJA devices.</p>
+<p>These all operate the same on all three supported platforms (Linux, MacOS and Windows) and live in the top-level <b>bin</b> folder.</p><ul>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> — A handy debugging utility that shows the inner workings of NTV2 devices.</li>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#usingajalogger">“AJA Logger”</a> —&#160;A handy viewer for displaying and/or recording messages from the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingajalogger">“AJA Logger”</a> —&#160;A handy viewer for displaying and/or recording <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> messages.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usingsystemtest">“AJA System Test”</a> — Measures the DMA performance of any AJA device attached to the host, as well as the read/write performance of local host storage.</li>
 <li><b>Data Rate Calculator</b> calculates DMA performance requirements for various video and pixel formats. It's now universally available for mobile devices:<ul>
-<li><a href="https://itunes.apple.com/us/app/aja-datacalc/id343454572?mt=8">iOS</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=com.aja.datacalc">Android</a></li>
+<li><a href="https://itunes.apple.com/us/app/aja-datacalc/id343454572">iOS</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.aja.AJADataCalc">Android</a></li>
 </ul>
 </li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> — Sometimes when diagnosing an issue, AJA’s OEM SDK support staff may request a “register dump” or “register log”. This log file can be generated using <a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> or <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a>. See the Knowledgebase article at our SDK Support site <a href="https://sdksupport.aja.com/">https://sdksupport.aja.com/</a> for more information.</li>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> — A command-line tool used to “flash” new firmware into a connected AJA device. This tool is included because AJA developers or their customers need to be able to program new firmware on an AJA device, and may not need or have access to the AJA retail services, including the <b>AJA ControlPanel</b>, which is commonly used to perform this task. <dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> requires a somewhat different procedure for checking and updating its firmware. See <a class="el" href="../../d4/d36/hevcsupplement.html">The Corvid HEVC Supplement</a> for more information.</dd></dl>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> — A command-line tool used to “flash” new firmware into a connected AJA device. This tool is included because AJA developers or their customers need to be able to program new firmware on an AJA device, and may not need or have access to the AJA retail services, including the <b>AJA ControlPanel</b>, which is commonly used to perform this task. <dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> requires a somewhat different procedure for checking and updating its firmware. See hevcsupplement for more information.</dd></dl>
 </li>
 <li><b>ntv2konaipj2ksetup</b> — A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
 <li><b>ntv2konaipjsonsetup</b> — A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
@@ -3040,7 +3038,7 @@ System Report</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Jan 22 2025 19:07:49 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jan 23 2025 13:13:32 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

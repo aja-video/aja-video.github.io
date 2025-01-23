@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1516</span>
+   &#160;<span id="projectnumber">17.5.0.1517</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1516</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1517</div>
   </td>
  </tr>
  </tbody>
@@ -113,7 +113,7 @@ Custom Aux Packet Capture</h1>
 <li>After <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> returns, parse the contents of the host Aux buffer(s).<ul>
 <li>AUTOCIRCULATE_TRANSFER::GetCapturedAuxByteCount reports the number of bytes recorded/written into the device frame’s anc buffer region.</li>
 <li>Manually parse the anc data that was recorded and transferred — see <a class="el" href="../../d2/d06/auxiliarydata.html#auxbufferformat">HDMI Aux Buffer Data Format</a>.</li>
-<li>Or use the <a class="el" href="../../de/d4b/ajaanc.html">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#a7a2f425d823df9f88934bacf2130213b" title="Returns all ancillary data packets found in the given F1 and F2 ancillary data buffers.">AJAAuxiliaryList::SetFromDeviceAncBuffers</a> to retrieve the <a class="el" href="../../d7/d92/ancillarydata_8h.html#a2c180fa75e261e39b0691fe2326c20fe">AJAAuxiliaryData</a> packets.</li>
+<li>Or use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#a7a2f425d823df9f88934bacf2130213b" title="Returns all ancillary data packets found in the given F1 and F2 ancillary data buffers.">AJAAuxiliaryList::SetFromDeviceAncBuffers</a> to retrieve the <a class="el" href="../../d7/d92/ancillarydata_8h.html#a2c180fa75e261e39b0691fe2326c20fe">AJAAuxiliaryData</a> packets.</li>
 </ul>
 </li>
 </ul>
@@ -123,7 +123,7 @@ Custom Aux Packet Capture</h1>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a2f2fc32a8fac7f8b10a7f82534f185ae" title="Transfers the contents of the ancillary data buffer(s) from a given frame on the AJA device to the ho...">CNTV2Card::DMAReadAnc</a> to transfer the captured HDMI Aux data to the host.</li>
 <li>Parse the contents of the host Aux buffer(s):<ul>
 <li>Manually parse the aux data that was recorded/transferred — see <a class="el" href="../../d2/d06/auxiliarydata.html#auxbufferformat">HDMI Aux Buffer Data Format</a> (below).</li>
-<li>Or use the <a class="el" href="../../de/d4b/ajaanc.html">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#a0d869d76c4ed7533e0d5d1acfce0b88b" title="Returns all HDMI Aux data packets found in the given F1 and F2 aux data buffers.">AJAAuxiliaryList::SetFromDeviceAuxBuffers</a> to retrieve the <a class="el" href="../../d7/d92/ancillarydata_8h.html#a2c180fa75e261e39b0691fe2326c20fe">AJAAuxiliaryData</a> packets.</li>
+<li>Or use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#a0d869d76c4ed7533e0d5d1acfce0b88b" title="Returns all HDMI Aux data packets found in the given F1 and F2 aux data buffers.">AJAAuxiliaryList::SetFromDeviceAuxBuffers</a> to retrieve the <a class="el" href="../../d7/d92/ancillarydata_8h.html#a2c180fa75e261e39b0691fe2326c20fe">AJAAuxiliaryData</a> packets.</li>
 </ul>
 </li>
 </ul>
@@ -225,7 +225,7 @@ HDMI Auxiliary Data Playout</h1>
 <li>Call <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#ad7480e96337587fd0035a42f6d43b17d" title="Sets my ancillary data buffers for use in a subsequent call to CNTV2Card::AutoCirculateTransfer.">AUTOCIRCULATE_TRANSFER::SetAncBuffers</a> to specify the source host Aux buffer(s).</li>
 <li>Set the contents of the host Aux buffer(s)…<ul>
 <li>Manually write the data — see <a class="el" href="../../d2/d06/auxiliarydata.html#auxbufferformat">HDMI Aux Buffer Data Format</a> (below).</li>
-<li>Or use the <a class="el" href="../../de/d4b/ajaanc.html">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ade6529f821c169268c0a45ec28ac37f3" title="Encodes my AJAAncillaryData packets into the given buffers in the default SDI Anc Buffer Data Format ...">AJAAuxiliaryList::GetTransmitData</a>.</li>
+<li>Or use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ade6529f821c169268c0a45ec28ac37f3" title="Encodes my AJAAncillaryData packets into the given buffers in the default SDI Anc Buffer Data Format ...">AJAAuxiliaryList::GetTransmitData</a>.</li>
 </ul>
 </li>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>.</li>
@@ -235,7 +235,7 @@ HDMI Auxiliary Data Playout</h1>
 <li>Configure the HDMI output’s Aux Inserter (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0fe439f828631a30941bed1a5160d5f3" title="Initializes the given HDMI output&#39;s Aux inserter for custom Aux packet insertion.">CNTV2Card::AuxInsertInit</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a82712068a648e49f5eafd873b7da54af" title="Enables or disables the given HDMI output&#39;s Aux inserter frame buffer reads.">CNTV2Card::AuxInsertSetEnable</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab59c6978950c1fe41d3a9e5933bc1508" title="Configures the Aux inserter for the next frame&#39;s F1 Aux data to embed/transmit.">CNTV2Card::AuxInsertSetReadParams</a>, etc.)</li>
 <li>Set the contents of the host Aux buffer(s)…<ul>
 <li>Manually write the data — see <a class="el" href="../../d2/d06/auxiliarydata.html#auxbufferformat">HDMI Aux Buffer Data Format</a> (below).</li>
-<li>Or use the <a class="el" href="../../de/d4b/ajaanc.html">Ancillary Data Classes</a> to put together an <a class="el" href="../../d6/dc0/ancillarylist_8h.html#a7dab3aeefeaba0fab22c99370f96d2df">AJAAuxiliaryList</a> of packets to send — then call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ab17ca7eaadca19dd75f779c2118a1755" title="Encodes my AJAAuxiliaryData packets into the given buffers in the default HDMI Aux Buffer Data Format...">AJAAuxiliaryList::GetHDMITransmitData</a>.</li>
+<li>Or use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> to put together an <a class="el" href="../../d6/dc0/ancillarylist_8h.html#a7dab3aeefeaba0fab22c99370f96d2df">AJAAuxiliaryList</a> of packets to send — then call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ab17ca7eaadca19dd75f779c2118a1755" title="Encodes my AJAAuxiliaryData packets into the given buffers in the default HDMI Aux Buffer Data Format...">AJAAuxiliaryList::GetHDMITransmitData</a>.</li>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a>.</li>
 </ul>
 </li>
@@ -331,7 +331,7 @@ During capture/input, after transferring the F1 (or F2 for interlace) aux buffer
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Jan 22 2025 19:07:49 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jan 23 2025 13:13:32 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

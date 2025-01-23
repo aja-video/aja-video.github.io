@@ -1,5 +1,24 @@
 var index =
 [
+    [ "The NTV2 Class Library", "index.html#ajantv2sdk", [
+      [ "“libajabase” Classes", "index.html#ajabase", null ],
+      [ "“libajantv2” Class Library", "index.html#ajantv2", [
+        [ "Principal Classes", "index.html#libajantv2-classes", null ],
+        [ "CNTV2DeviceScanner Class", "index.html#libajantv2-devicescanner", null ],
+        [ "CNTV2Card Class", "index.html#libajantv2-card", null ],
+        [ "Device Features API", "index.html#libajantv2-devicefeatures", null ],
+        [ "CNTV2SignalRouter Class", "index.html#libajantv2-signalrouter", null ]
+      ] ],
+      [ "Ancillary Data Classes", "index.html#ajaanc", null ],
+      [ "“libajacc” Closed-Caption Library", "index.html#ajacc", [
+        [ "Decoding CEA-608 Captions", "index.html#ajacc-decoding608", null ],
+        [ "Encoding CEA-608 Captions", "index.html#ajacc-encoding608", null ],
+        [ "Encoding and Decoding SD “Line 21” Waveforms", "index.html#ajacc-line21captioner", null ],
+        [ "Decoding CEA-708 Captions", "index.html#ajacc-decoding708", null ],
+        [ "Encoding CEA-708 Captions", "index.html#ajacc-encoding708", null ],
+        [ "Rendering Captions", "index.html#ajacc-rendering", null ]
+      ] ]
+    ] ],
     [ "Getting Started", "db/d9b/gettingstarted.html", [
       [ "Downloading and Installing the SDK", "db/d9b/gettingstarted.html#gs-downloadinstallsdk", null ],
       [ "Accessing Proprietary Content", "db/d9b/gettingstarted.html#gs-proprietary", null ]
@@ -219,8 +238,8 @@ var index =
         [ "NTV2CCGrabber Demo", "d9/d07/demoapps.html#ntv2ccgrabber", null ],
         [ "NTV2DolbyCapture Demo", "d9/d07/demoapps.html#ntv2dolbycapture", null ],
         [ "HDMI Auxiliary Data Recording", "d9/d07/demoapps.html#ntv2dolbycaptureaux", null ],
-        [ "NTV2QtPreview Demo", "d9/d07/demoapps.html#ntv2qtpreview", null ],
         [ "NTV2QtMultiInput Demo", "d9/d07/demoapps.html#ntv2qtmultiinput", null ],
+        [ "NTV2QtPreview Demo", "d9/d07/demoapps.html#ntv2qtpreview", null ],
         [ "NTV2QtStreamPreview Demo", "d9/d07/demoapps.html#ntv2qtstreampreview", null ]
       ] ],
       [ "Capture & Playout Demos", "d9/d07/demoapps.html#demoappsplaycapture", [
@@ -244,9 +263,7 @@ var index =
         ] ],
         [ "NTV2SwitchBitfile Demo", "d9/d07/demoapps.html#ntv2switchbitfile", null ],
         [ "NTV2HDRSetup Demo", "d9/d07/demoapps.html#ntv2hdrsetup", null ]
-      ] ],
-      [ "Demos, Simple to Complex", "d9/d07/demoapps.html#demoappssimpletocomplex", null ],
-      [ "Demos, Alphabetical", "d9/d07/demoapps.html#demoappsalphabetical", null ]
+      ] ]
     ] ],
     [ "Data Formats", "d5/d32/dataformats.html", [
       [ "Audio Data Formats", "d5/d32/dataformats.html#audioformats", [
@@ -386,47 +403,5 @@ var index =
       [ "Acquiring Exclusive Use of an AJA Device", "dc/d29/devicesharing.html#devshareacquire", null ],
       [ "Getting Full Control Over Device Configuration", "dc/d29/devicesharing.html#devsharefullcontrol", null ],
       [ "Reserving Exclusive Use of a Device by a “Process Family”", "dc/d29/devicesharing.html#devshareprocessfam", null ]
-    ] ],
-    [ "The Corvid HEVC Supplement", "d4/d36/hevcsupplement.html", [
-      [ "Overview", "d4/d36/hevcsupplement.html#hevcoverview", null ],
-      [ "Installing the Hardware", "d4/d36/hevcsupplement.html#hevchardwareinstall", [
-        [ "Installing the HEVC Firmware", "d4/d36/hevcsupplement.html#hevclinuxinstallfirmware", null ],
-        [ "Building for HEVC on Linux", "d4/d36/hevcsupplement.html#hevclinuxbuild", null ]
-      ] ],
-      [ "Installing the HEVC Windows SDK", "d4/d36/hevcsupplement.html#hevcwindowsinstall", [
-        [ "Installing the Windows SDK", "d4/d36/hevcsupplement.html#hevcwindowsinstallsdk", null ],
-        [ "Building the Windows SDK", "d4/d36/hevcsupplement.html#hevcwindowsbuildsdk", null ],
-        [ "Installing the HEVC firmware", "d4/d36/hevcsupplement.html#hevcwindowsinstallfirmware", null ],
-        [ "Running an HEVC Encode", "d4/d36/hevcsupplement.html#hevcwindowsrunencode", null ]
-      ] ],
-      [ "HEVC Impementation", "d4/d36/hevcsupplement.html#hevcimplementation", [
-        [ "The HEVC Files", "d4/d36/hevcsupplement.html#hevcimpl-files", null ],
-        [ "The Kernel Driver", "d4/d36/hevcsupplement.html#hevcimpl-kernel", null ],
-        [ "Initialize", "d4/d36/hevcsupplement.html#hevcimpl-init", null ],
-        [ "Params", "d4/d36/hevcsupplement.html#hevcimpl-params", null ],
-        [ "Control", "d4/d36/hevcsupplement.html#hevcimpl-control", null ],
-        [ "VideoTransfer", "d4/d36/hevcsupplement.html#hevcimpl-vidxfer", null ]
-      ] ]
-    ] ],
-    [ "“libajabase” Classes", "d1/d83/ajabase.html", null ],
-    [ "“libajantv2” Class Library", "d7/dce/ajantv2.html", [
-      [ "Principal Classes", "d7/dce/ajantv2.html#libajantv2-classes", null ],
-      [ "CNTV2DeviceScanner Class", "d7/dce/ajantv2.html#libajantv2-devicescanner", null ],
-      [ "CNTV2Card Class", "d7/dce/ajantv2.html#libajantv2-card", null ],
-      [ "Device Features API", "d7/dce/ajantv2.html#libajantv2-devicefeatures", [
-        [ "‘CanDo’ Functions", "d7/dce/ajantv2.html#libajantv2-cando", null ],
-        [ "‘Has’ Functions", "d7/dce/ajantv2.html#libajantv2-has", null ],
-        [ "‘GetNum’ Functions", "d7/dce/ajantv2.html#libajantv2-getnum", null ]
-      ] ],
-      [ "CNTV2SignalRouter Class", "d7/dce/ajantv2.html#libajantv2-signalrouter", null ]
-    ] ],
-    [ "“libajacc” Closed-Caption Library", "dd/d33/ajacc.html", [
-      [ "Decoding CEA-608 Captions", "dd/d33/ajacc.html#ajacc-decoding608", null ],
-      [ "Encoding CEA-608 Captions", "dd/d33/ajacc.html#ajacc-encoding608", null ],
-      [ "Encoding and Decoding SD “Line 21” Waveforms", "dd/d33/ajacc.html#ajacc-line21captioner", null ],
-      [ "Decoding CEA-708 Captions", "dd/d33/ajacc.html#ajacc-decoding708", null ],
-      [ "Encoding CEA-708 Captions", "dd/d33/ajacc.html#ajacc-encoding708", null ],
-      [ "Rendering Captions", "dd/d33/ajacc.html#ajacc-rendering", null ]
-    ] ],
-    [ "Ancillary Data Classes", "de/d4b/ajaanc.html", null ]
+    ] ]
 ];

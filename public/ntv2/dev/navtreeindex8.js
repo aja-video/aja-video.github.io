@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"d1/dfe/class_n_t_v2_plugin_loader.html#a5a754122d76efdc8703e14b7f0097ce5":[8,0,354,17],
 "d1/dfe/class_n_t_v2_plugin_loader.html#a5bb8480e9d0c15f54955c0184471147d":[8,0,354,22],
 "d1/dfe/class_n_t_v2_plugin_loader.html#a63066b934bdd4471d737b292cd1b8668":[8,0,354,19],
 "d1/dfe/class_n_t_v2_plugin_loader.html#a67f85967b53a4040388414111315cd75":[8,0,354,16],
@@ -16,12 +15,12 @@ var NAVTREEINDEX8 =
 "d1/dfe/class_n_t_v2_plugin_loader.html#af043946e91d61a39e67bae1280bece0d":[8,0,354,9],
 "d1/dfe/class_n_t_v2_plugin_loader.html#afe4abc197953b5f9d22f3c9898815fa8":[8,0,354,8],
 "d1/dfe/class_n_t_v2_plugin_loader.html#afec6822d9339531e3f097379adf960a4":[8,0,354,21],
-"d2/d06/auxiliarydata.html":[0,7],
-"d2/d06/auxiliarydata.html#auxbufferformat":[0,7,2],
-"d2/d06/auxiliarydata.html#auxcapture":[0,7,0],
-"d2/d06/auxiliarydata.html#auxcapture-dataspace":[0,7,0,1],
-"d2/d06/auxiliarydata.html#auxcapture-filter":[0,7,0,0],
-"d2/d06/auxiliarydata.html#auxplayout":[0,7,1],
+"d2/d06/auxiliarydata.html":[0,8],
+"d2/d06/auxiliarydata.html#auxbufferformat":[0,8,2],
+"d2/d06/auxiliarydata.html#auxcapture":[0,8,0],
+"d2/d06/auxiliarydata.html#auxcapture-dataspace":[0,8,0,1],
+"d2/d06/auxiliarydata.html#auxcapture-filter":[0,8,0,0],
+"d2/d06/auxiliarydata.html#auxplayout":[0,8,1],
 "d2/d07/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_58d299f2225b465109772827d82ec957.html":[8,0,0,4],
 "d2/d07/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_58d299f2225b465109772827d82ec957.html":[8,0,0,0,3],
 "d2/d07/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_58d299f2225b465109772827d82ec957.html#a225314dda95fe3689ab2172bdf037269":[8,0,0,4,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "d2/d2b/ntv2vpid_8h.html#a2784ce8f21111deac717c07536619042":[9,0,2,2,0,54,1],
 "d2/d2b/ntv2vpid_8h_source.html":[9,0,2,2,0,54],
 "d2/d30/bm_2eventimpl_8h.html":[9,0,2,1,2,0,1],
-"d2/d30/bm_2eventimpl_8h_source.html":[9,0,2,1,2,0,1]
+"d2/d30/bm_2eventimpl_8h_source.html":[9,0,2,1,2,0,1],
+"d2/d38/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_dc3f9beae45dfd7b6c65f94985a4b1c1.html":[8,0,0,0,0,77]
 };

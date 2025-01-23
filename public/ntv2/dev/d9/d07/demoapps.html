@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1516</span>
+   &#160;<span id="projectnumber">17.5.0.1517</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1516</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1517</div>
   </td>
  </tr>
  </tbody>
@@ -138,6 +138,17 @@ Running the Demos</h2>
 <hr  />
 <h1><a class="anchor" id="demoappsplay"></a>
 Playout Demos</h1>
+<dl class="section user"><dt>Contents</dt><dd><ul>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2outputtestpattern">NTV2OutputTestPattern Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player">NTV2Player Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player4k">NTV2Player4K Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player8k">NTV2Player8K Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2ccplayer">NTV2CCPlayer Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2dolbyplayer">NTV2DolbyPlayer Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2streamplayer">NTV2StreamPlayer Demo</a></li>
+</ul>
+</dd></dl>
+<hr  />
 <h2><a class="anchor" id="ntv2outputtestpattern"></a>
 NTV2OutputTestPattern Demo</h2>
 <p>This command-line program demonstrates how to “push” a single test pattern frame to an AJA device and have it play that video signal forever without further action needed by the host.</p>
@@ -599,6 +610,18 @@ NTV2StreamPlayer Demo</h2>
 </div><!-- fragment --><hr  />
 <h1><a class="anchor" id="demoappscapture"></a>
 Capture Demos</h1>
+<dl class="section user"><dt>Contents</dt><dd><ul>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture">NTV2Capture Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture4k">NTV2Capture4K Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture8k">NTV2Capture8K Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2ccgrabber">NTV2CCGrabber Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2dolbycapture">NTV2DolbyCapture Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtmultiinput">NTV2QtMultiInput Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtpreview">NTV2QtPreview Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtstreampreview">NTV2QtStreamPreview Demo</a></li>
+</ul>
+</dd></dl>
+<hr  />
 <h2><a class="anchor" id="ntv2capture"></a>
 NTV2Capture Demo</h2>
 <p>This simple command-line program shows how to capture video frames provided to an AJA device.</p>
@@ -713,7 +736,7 @@ NTV2CCGrabber Demo</h2>
 </div>
 <p>This shows a screenshot of video from a device while <b>ntv2ccgrabber</b> runs with the <b>&ndash;burn</b> option. The status display turns red if caption data is missing or can’t be decoded, green when present and being decoded properly, and shows other useful status information.</p>
 <p>The <a class="el" href="../../dc/d59/class_n_t_v2_c_c_grabber.html" title="I can decode captions from frames captured from an AJA device in real time. I can optionally play the...">NTV2CCGrabber</a> class demonstrates…</p><ul>
-<li>the <a class="el" href="../../d6/df4/class_c_n_t_v2_caption_decoder608.html">CNTV2CaptionDecoder608</a> and <a class="el" href="../../dc/d4b/class_c_n_t_v2_caption_decoder708.html" title="I am a CEA-708 captioning decoder used primarily to obtain CEA-608 captions carried in CEA-708 anc da...">CNTV2CaptionDecoder708</a> classes provided in the <a class="el" href="../../dd/d33/ajacc.html">“libajacc” Closed-Caption Library</a> to decode CEA-608 or CEA-708 closed-caption data that may be present on a video stream;</li>
+<li>the <a class="el" href="../../d6/df4/class_c_n_t_v2_caption_decoder608.html">CNTV2CaptionDecoder608</a> and <a class="el" href="../../dc/d4b/class_c_n_t_v2_caption_decoder708.html" title="I am a CEA-708 captioning decoder used primarily to obtain CEA-608 captions carried in CEA-708 anc da...">CNTV2CaptionDecoder708</a> classes provided in the <a class="el" href="../../index.html#ajacc">“libajacc” Closed-Caption Library</a> to decode CEA-608 or CEA-708 closed-caption data that may be present on a video stream;</li>
 <li>the custom ancillary data extraction feature of AJA devices (if available);</li>
 <li>using the <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html" title="I am an ordered collection of AJAAncillaryData instances which represent one or more SMPTE 291 data p...">AJAAncillaryList</a> and <a class="el" href="../../dd/de8/class_a_j_a_ancillary_data.html" title="I am the principal class that stores a single SMPTE-291 SDI ancillary data packet OR the digitized co...">AJAAncillaryData</a> classes;</li>
 <li>using a mixer/keyer widget to superimpose graphics with alpha (transparency) over live video;</li>
@@ -721,7 +744,7 @@ NTV2CCGrabber Demo</h2>
 <li>using an <a class="el" href="../../d1/d7d/class_a_j_a_circular_buffer.html" title="I am a circular frame buffer that simplifies implementing a type-safe producer/consumer model for pro...">AJACircularBuffer</a> and the producer/consumer model with AutoCirculate;</li>
 <li>use the <a class="el" href="../../d8/da3/class_c_n_t_v2_caption_renderer.html">CNTV2CaptionRenderer</a> to “burn” decoded caption text into the frame buffer at the correct on-screen location with the proper attributes (color, transparency, etc.).</li>
 </ul>
-<p>This demo uses the <a class="el" href="../../d7/dce/ajantv2.html">“libajantv2” Class Library</a> to ingest video and ancillary data, and the <a class="el" href="../../dd/d33/ajacc.html">“libajacc” Closed-Caption Library</a> to decode US NTSC-based captions:</p><ul>
+<p>This demo uses the <a class="el" href="../../index.html#ajantv2">“libajantv2” Class Library</a> to ingest video and ancillary data, and the <a class="el" href="../../index.html#ajacc">“libajacc” Closed-Caption Library</a> to decode US NTSC-based captions:</p><ul>
 <li><b>525i:</b> EIA-608 “line 21” and/or CEA-608 in VANC;</li>
 <li><b>720p:</b> CEA-608 and/or CEA-708 (“608-in-708” only) in VANC;</li>
 <li><b>1080i5994:</b> CEA-608 or CEA-708 (“608-in-708” only) in VANC;</li>
@@ -857,6 +880,19 @@ HDMI Auxiliary Data Recording</h2>
 <p>In the binary data file, packet data starts at the first byte of each chunk, while subsequent bytes in the chunk after the last packet are zeroed.</p>
 <dl class="section note"><dt>Note</dt><dd>The data fileʼs per-field chunk size is determined by the per-field Anc buffer region size, which is controlled by the driver, and can be queried using <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0ed71a238a94d5d4ed394510a033685d" title="Answers with the offset and size of an ancillary data region within a device frame buffer.">CNTV2Card::GetAncRegionOffsetAndSize</a> or changed using <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4c10417d7698ca8921accace4c17d8ab" title="Sets the capacity of the SDI ANC or HDMI AUX buffers in device frame memory. (Call NTV2DeviceCanDoCus...">CNTV2Card::AncSetFrameBufferSize</a>.</dd></dl>
 <hr  />
+<h2><a class="anchor" id="ntv2qtmultiinput"></a>
+NTV2QtMultiInput Demo</h2>
+<p>This <a href="https://doc.qt.io/" target="_qt">Qt</a>-based GUI demonstration application simultaneously captures and displays four video streams from an AJA 4 or 8 input device (e.g., KONA 4, KONA 3G, Io4K, Corvid 44, Corvid 88, Corvid 24, etc.) in a “4-up” display, with or without audio playout on the host.</p>
+<div class="image">
+<img src="../../ntv2qtmultiinput.png" alt=""/>
+</div>
+<p>Screenshot of the <a href="https://doc.qt.io/" target="_qt">Qt</a>-based <b>ntv2qtmultiinput</b> application running on MacOS.</p>
+<p>It demonstrates...</p><ul>
+<li>how to use the <a class="el" href="../../d1/dbc/class_a_j_a_preview_widget.html">AJAPreviewWidget</a>, a reusable <a href="https://doc.qt.io/" target="_qt">Qt</a>-based GUI element that displays realtime video that's been grabbed from an <a class="el" href="../../d0/df4/class_n_t_v2_frame_grabber.html" title="A QThread that captures audio/video from NTV2-compatible AJA devices and uses Qt signals to emit ARGB...">NTV2FrameGrabber</a> object;</li>
+<li>how to use the <a class="el" href="../../d0/df4/class_n_t_v2_frame_grabber.html" title="A QThread that captures audio/video from NTV2-compatible AJA devices and uses Qt signals to emit ARGB...">NTV2FrameGrabber</a> class, a QThread that captures a video stream from any NTV2-compatible AJA device, and uses <a href="https://doc.qt.io/" target="_qt">Qt</a> signals to emit captured ARGB video frames;</li>
+<li>how to play two channels of audio on the host using <a href="https://doc.qt.io/" target="_qt">Qt</a>’s QAudioOutput class.</li>
+</ul>
+<hr  />
 <h2><a class="anchor" id="ntv2qtpreview"></a>
 NTV2QtPreview Demo</h2>
 <p>This <a href="https://doc.qt.io/" target="_qt">Qt</a>-based GUI demonstration application captures and displays a single video stream from an AJA capture device in a single dialog window, with or without audio playout on the host.</p>
@@ -869,19 +905,6 @@ NTV2QtPreview Demo</h2>
 <li>how to use the <a class="el" href="../../d0/df4/class_n_t_v2_frame_grabber.html" title="A QThread that captures audio/video from NTV2-compatible AJA devices and uses Qt signals to emit ARGB...">NTV2FrameGrabber</a> class, a QThread that captures a video stream from any NTV2-compatible AJA device, and uses <a href="https://doc.qt.io/" target="_qt">Qt</a> signals to emit captured ARGB video frames.</li>
 <li>how to play up to two channels of audio on the host using <a href="https://doc.qt.io/" target="_qt">Qt</a>’s QAudioOutput class.</li>
 <li>how to react to detachment/attachment of AJA devices (e.g., via Thunderbolt) or to input video signal changes.</li>
-</ul>
-<hr  />
-<h2><a class="anchor" id="ntv2qtmultiinput"></a>
-NTV2QtMultiInput Demo</h2>
-<p>This <a href="https://doc.qt.io/" target="_qt">Qt</a>-based GUI demonstration application simultaneously captures and displays four video streams from an AJA 4 or 8 input device (e.g., KONA 4, KONA 3G, Io4K, Corvid 44, Corvid 88, Corvid 24, etc.) in a “4-up” display, with or without audio playout on the host.</p>
-<div class="image">
-<img src="../../ntv2qtmultiinput.png" alt=""/>
-</div>
-<p>Screenshot of the <a href="https://doc.qt.io/" target="_qt">Qt</a>-based <b>ntv2qtmultiinput</b> application running on MacOS.</p>
-<p>It demonstrates...</p><ul>
-<li>how to use the <a class="el" href="../../d1/dbc/class_a_j_a_preview_widget.html">AJAPreviewWidget</a>, a reusable <a href="https://doc.qt.io/" target="_qt">Qt</a>-based GUI element that displays realtime video that's been grabbed from an <a class="el" href="../../d0/df4/class_n_t_v2_frame_grabber.html" title="A QThread that captures audio/video from NTV2-compatible AJA devices and uses Qt signals to emit ARGB...">NTV2FrameGrabber</a> object;</li>
-<li>how to use the <a class="el" href="../../d0/df4/class_n_t_v2_frame_grabber.html" title="A QThread that captures audio/video from NTV2-compatible AJA devices and uses Qt signals to emit ARGB...">NTV2FrameGrabber</a> class, a QThread that captures a video stream from any NTV2-compatible AJA device, and uses <a href="https://doc.qt.io/" target="_qt">Qt</a> signals to emit captured ARGB video frames;</li>
-<li>how to play two channels of audio on the host using <a href="https://doc.qt.io/" target="_qt">Qt</a>’s QAudioOutput class.</li>
 </ul>
 <hr  />
 <h2><a class="anchor" id="ntv2qtstreampreview"></a>
@@ -898,6 +921,15 @@ NTV2QtStreamPreview Demo</h2>
 </dd></dl>
 <h1><a class="anchor" id="demoappsplaycapture"></a>
 Capture &amp; Playout Demos</h1>
+<dl class="section user"><dt>Contents</dt><dd><ul>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2burn">NTV2Burn Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2burn4kquadrant">NTV2Burn4KQuadrant Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2fieldburn">NTV2FieldBurn Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2llburn">NTV2LLBurn Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2overlay">NTV2Overlay Demo</a></li>
+</ul>
+</dd></dl>
+<hr  />
 <h2><a class="anchor" id="ntv2burn"></a>
 NTV2Burn Demo</h2>
 <p>This command-line program captures video provided to the input of an AJA device, “burns” timecode into the video, then plays it out onto an output of that same AJA device. The program will use the timecode embedded in the input signal if it has any; otherwise it “invents” its own timecode. It also embeds whatever timecode it used into the output signal.</p>
@@ -1046,6 +1078,16 @@ NTV2Overlay Demo</h2>
 </div><!-- fragment --><hr  />
 <h1><a class="anchor" id="demoappsmisc"></a>
 Other Demos</h1>
+<dl class="section user"><dt>Contents</dt><dd><ul>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2enumerateboards">NTV2EnumerateBoards Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2konaipjsonsetup">NTV2 JSON Setup Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2konaipj2ksetup">NTV2 J2K Setup Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2encodehevc">NTV2EncodeHEVC Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2switchbitfile">NTV2SwitchBitfile Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2hdrsetup">NTV2HDRSetup Demo</a></li>
+</ul>
+</dd></dl>
+<hr  />
 <h2><a class="anchor" id="ntv2enumerateboards"></a>
 NTV2EnumerateBoards Demo</h2>
 <p>This simple command-line program dumps information about every AJA device found on the local host.</p>
@@ -1283,66 +1325,7 @@ NTV2HDRSetup Demo</h2>
 <li><b>6</b> — Failed: device in use by another application</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="demoappssimpletocomplex"></a>
-Demos, Simple to Complex</h1>
-<ul>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2hdrsetup">NTV2HDRSetup Demo</a> <em>(devices with HDMI v2.0a subset or higher)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2enumerateboards">NTV2EnumerateBoards Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2outputtestpattern">NTV2OutputTestPattern Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture">NTV2Capture Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player">NTV2Player Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2streamplayer">NTV2StreamPlayer Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture4k">NTV2Capture4K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player4k">NTV2Player4K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture8k">NTV2Capture8K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player8k">NTV2Player8K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2burn">NTV2Burn Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2overlay">NTV2Overlay Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2burn4kquadrant">NTV2Burn4KQuadrant Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2fieldburn">NTV2FieldBurn Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2dolbyplayer">NTV2DolbyPlayer Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2dolbycapture">NTV2DolbyCapture Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2llburn">NTV2LLBurn Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2konaipjsonsetup">NTV2 JSON Setup Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> &amp; <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2konaipj2ksetup">NTV2 J2K Setup Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> &amp; <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2encodehevc">NTV2EncodeHEVC Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtpreview">NTV2QtPreview Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtstreampreview">NTV2QtStreamPreview Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtmultiinput">NTV2QtMultiInput Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2switchbitfile">NTV2SwitchBitfile Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2ccgrabber">NTV2CCGrabber Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2ccplayer">NTV2CCPlayer Demo</a></li>
-</ul>
-<h1><a class="anchor" id="demoappsalphabetical"></a>
-Demos, Alphabetical</h1>
-<ul>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2burn">NTV2Burn Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2burn4kquadrant">NTV2Burn4KQuadrant Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture">NTV2Capture Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture4k">NTV2Capture4K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2capture8k">NTV2Capture8K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2ccgrabber">NTV2CCGrabber Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2ccplayer">NTV2CCPlayer Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2dolbycapture">NTV2DolbyCapture Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konahdmi">KONA HDMI</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2dolbyplayer">NTV2DolbyPlayer Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2encodehevc">NTV2EncodeHEVC Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2enumerateboards">NTV2EnumerateBoards Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2fieldburn">NTV2FieldBurn Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2hdrsetup">NTV2HDRSetup Demo</a> <em>(devices with HDMI v2.0a subset or higher)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2konaipjsonsetup">NTV2 JSON Setup Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2llburn">NTV2LLBurn Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2outputtestpattern">NTV2OutputTestPattern Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2overlay">NTV2Overlay Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player">NTV2Player Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player4k">NTV2Player4K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2player8k">NTV2Player8K Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtmultiinput">NTV2QtMultiInput Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtpreview">NTV2QtPreview Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtstreampreview">NTV2QtStreamPreview Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2streamplayer">NTV2StreamPlayer Demo</a> <em>(<a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only)</em></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2switchbitfile">NTV2SwitchBitfile Demo</a> </li>
-</ul>
-</div></div><!-- contents -->
+ </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c490cba3dc143488cfde07215d9f17762_html_ab064565541662d5589ff30c4b941e2f6"><div class="ttname"><a href="../../d5/d75/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c490cba3dc143488cfde07215d9f17762.html#ab064565541662d5589ff30c4b941e2f6">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail2::end</a></div><div class="ttdeci">end_tag end(T &amp;&amp;...)</div></div>
@@ -1369,7 +1352,7 @@ Demos, Alphabetical</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Jan 22 2025 19:07:49 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jan 23 2025 13:13:32 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

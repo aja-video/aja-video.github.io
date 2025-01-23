@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bug_20list_41168',['Bug List',['../de/da5/bug.html',1,'']]]
+  ['capture_20and_20playout_20techniques_41153',['Capture and Playout Techniques',['../d9/d9a/recordplaytechniques.html',1,'index']]]
 ];

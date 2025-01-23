@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['wavewriter_2ecpp_21401',['wavewriter.cpp',['../d0/d74/wavewriter_8cpp.html',1,'']]],
-  ['wavewriter_2eh_21402',['wavewriter.h',['../d1/dda/wavewriter_8h.html',1,'']]]
+  ['xmsupplement_2edox_21388',['xmsupplement.dox',['../d0/d83/xmsupplement_8dox.html',1,'']]]
 ];

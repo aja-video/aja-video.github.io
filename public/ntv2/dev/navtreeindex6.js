@@ -156,7 +156,6 @@ var NAVTREEINDEX6 =
 "d1/d7d/class_a_j_a_circular_buffer.html#acf3cf03fe2e8be24907c537f492b81c0":[8,0,38,10],
 "d1/d7d/class_a_j_a_circular_buffer.html#ad91c3c1ae8b41c139c49d062a05d20ea":[8,0,38,7],
 "d1/d7d/class_a_j_a_circular_buffer.html#ae246118f922eee4adf222c139bcee7ef":[8,0,38,11],
-"d1/d83/ajabase.html":[0,13],
 "d1/d8a/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___d_m_a___e_x___s.html":[8,0,262],
 "d1/d8a/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___d_m_a___e_x___s.html#a06fdc75fd3876918319694fced813079":[8,0,262,7],
 "d1/d8a/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___d_m_a___e_x___s.html#a087d4fa5564427ce70e2e43abd02577d":[8,0,262,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "d1/d9e/class_c_kona_ip_json_parse2110.html#ae776c31eb50732dcd432918f88e956eb":[8,0,137,52],
 "d1/d9e/class_c_kona_ip_json_parse2110.html#aed885641ac383f3b01344bb7f136da22":[8,0,137,16],
 "d1/d9e/class_c_kona_ip_json_parse2110.html#af7460735aed0325da9c23300cb8d400b":[8,0,137,36],
-"d1/d9e/class_c_kona_ip_json_parse2110.html#afa449366c9c9b83329e382a97cd11aa9":[8,0,137,40]
+"d1/d9e/class_c_kona_ip_json_parse2110.html#afa449366c9c9b83329e382a97cd11aa9":[8,0,137,40],
+"d1/d9e/class_c_kona_ip_json_parse2110.html#aff4861e37896d869f8445ed33ca9ebbf":[8,0,137,57]
 };

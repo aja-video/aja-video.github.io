@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['capture_20and_20playout_20techniques_41169',['Capture and Playout Techniques',['../d9/d9a/recordplaytechniques.html',1,'index']]]
+  ['data_20formats_41154',['Data Formats',['../d5/d32/dataformats.html',1,'index']]],
+  ['demonstration_20applications_41155',['Demonstration Applications',['../d9/d07/demoapps.html',1,'index']]],
+  ['deprecated_20list_41156',['Deprecated List',['../da/d58/deprecated.html',1,'']]],
+  ['dual_2dlink_20and_203g_20overview_41157',['Dual-Link and 3G Overview',['../d5/d73/duallinkoverview.html',1,'index']]]
 ];
