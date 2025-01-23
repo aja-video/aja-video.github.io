@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1492</span>
+   &#160;<span id="projectnumber">17.5.0.1516</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1516</div>
   </td>
  </tr>
  </tbody>
@@ -173,9 +173,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1712a4cb3457aeb724d0f4ac27746623"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#a1712a4cb3457aeb724d0f4ac27746623">SetAudioCombineEnable</a> (const bool enable)</td></tr>
 <tr class="memdesc:a1712a4cb3457aeb724d0f4ac27746623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the audio combiner.  <a href="../../d5/da5/class_c_n_t_v2_config2110.html#a1712a4cb3457aeb724d0f4ac27746623">More...</a><br /></td></tr>
 <tr class="separator:a1712a4cb3457aeb724d0f4ac27746623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab44b0d48808cf3230019f62a53cf4990"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#ab44b0d48808cf3230019f62a53cf4990">GetAudioCombineEnable</a> (bool &amp;enable)</td></tr>
-<tr class="memdesc:ab44b0d48808cf3230019f62a53cf4990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the enable/disable state of the audio combiner.  <a href="../../d5/da5/class_c_n_t_v2_config2110.html#ab44b0d48808cf3230019f62a53cf4990">More...</a><br /></td></tr>
-<tr class="separator:ab44b0d48808cf3230019f62a53cf4990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13915a9c89cfaa0e1f223f83e0a6aa33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#a13915a9c89cfaa0e1f223f83e0a6aa33">GetAudioCombineEnable</a> (bool &amp;outEnabled)</td></tr>
+<tr class="memdesc:a13915a9c89cfaa0e1f223f83e0a6aa33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the enable/disable state of the audio combiner.  <a href="../../d5/da5/class_c_n_t_v2_config2110.html#a13915a9c89cfaa0e1f223f83e0a6aa33">More...</a><br /></td></tr>
+<tr class="separator:a13915a9c89cfaa0e1f223f83e0a6aa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892e825db7b33bb6f8d17f45c307dd0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#a892e825db7b33bb6f8d17f45c307dd0f">SetIPServicesControl</a> (const bool enable, const bool forceReconfig)</td></tr>
 <tr class="separator:a892e825db7b33bb6f8d17f45c307dd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31572bb16ac4ff82e475d63711020eaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#a31572bb16ac4ff82e475d63711020eaf">GetIPServicesControl</a> (bool &amp;enable, bool &amp;forceReconfig)</td></tr>
@@ -1379,8 +1379,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab44b0d48808cf3230019f62a53cf4990"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab44b0d48808cf3230019f62a53cf4990">&#9670;&nbsp;</a></span>GetAudioCombineEnable()</h2>
+<a id="a13915a9c89cfaa0e1f223f83e0a6aa33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13915a9c89cfaa0e1f223f83e0a6aa33">&#9670;&nbsp;</a></span>GetAudioCombineEnable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1389,7 +1389,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool CNTV2Config2110::GetAudioCombineEnable </td>
           <td>(</td>
           <td class="paramtype">bool &amp;&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td class="paramname"><em>outEnabled</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1398,13 +1398,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Answers with the enable/disable state of the audio combiner. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Receives true if the audio combiner is enabled; otherwise false if it's disabled. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outEnabled</td><td>Receives true if the audio combiner is enabled; otherwise false if it's disabled. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This only affects 4K RX mode. @detail Normally the audio combiner is off when transmitting 16 audio channels over a single flow. However, it is possible to divide the audio into multiple flows of 4 channels each, so in this case, on the RX side, you would enable the audio combiner so, that it combines all the separate flows into a single 16-channel audio buffer. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#a1712a4cb3457aeb724d0f4ac27746623" title="Enables or disables the audio combiner.">CNTV2Config2110::SetAudioCombineEnable</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This only affects 4K RX mode.</dd></dl>
+<p>Normally the audio combiner is off when transmitting 16 audio channels over a single flow. However, it is possible to divide the audio into multiple flows of 4 channels each, so in this case, on the RX side, enable the audio combiner so, that it combines all the separate flows into a single 16-channel audio buffer. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#a1712a4cb3457aeb724d0f4ac27746623" title="Enables or disables the audio combiner.">CNTV2Config2110::SetAudioCombineEnable</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../de/dd6/ntv2config2110_8cpp_source.html#l01404">1404</a> of file <a class="el" href="../../de/dd6/ntv2config2110_8cpp_source.html">ntv2config2110.cpp</a>.</p>
 
@@ -2700,8 +2700,8 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This only affects 4K RX mode. </dd>
 <dd>
-This parameter can be set in the <a class="el" href="../../d9/d07/demoapps.html#ntv2konaipjsonsetup">NTV2 JSON Setup Demo</a>. Both JSON examples specify it in the "network2110" area. @detail Normally the audio combiner is disabled when transmitting 16 audio channels over a single flow. However, it is possible to divide the audio into multiple flows of 4 channels each, so in this case, on the RX side, you would enable the audio combiner, so that it combines all the separate flows into a single 16-channel audio buffer. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#ab44b0d48808cf3230019f62a53cf4990" title="Answers with the enable/disable state of the audio combiner.">CNTV2Config2110::GetAudioCombineEnable</a> </dd></dl>
+This parameter can be set in the <a class="el" href="../../d9/d07/demoapps.html#ntv2konaipjsonsetup">NTV2 JSON Setup Demo</a>. Both JSON examples specify it in the "network2110" area.</dd></dl>
+<p>Normally the audio combiner is disabled when transmitting 16 audio channels over a single flow. However, it is possible to divide the audio into multiple flows of 4 channels each, so in this case, on the RX side, enable the audio combiner, so that it combines all the separate flows into a single 16-channel audio buffer. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html#a13915a9c89cfaa0e1f223f83e0a6aa33" title="Answers with the enable/disable state of the audio combiner.">CNTV2Config2110::GetAudioCombineEnable</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../de/dd6/ntv2config2110_8cpp_source.html#l01384">1384</a> of file <a class="el" href="../../de/dd6/ntv2config2110_8cpp_source.html">ntv2config2110.cpp</a>.</p>
 
@@ -3541,7 +3541,7 @@ This parameter can be set in the <a class="el" href="../../d9/d07/demoapps.html#
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/da5/class_c_n_t_v2_config2110.html">CNTV2Config2110</a></li>
-    <li class="footer">Generated on Mon Jan 13 2025 12:31:45 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Jan 22 2025 19:07:51 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

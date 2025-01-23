@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1492</span>
+   &#160;<span id="projectnumber">17.5.0.1516</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1516</div>
   </td>
  </tr>
  </tbody>
@@ -1857,7 +1857,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="d3/dd3/class_a_j_a_r_t_p_anc_packet_header.html#ad4cc441cd60e7062ab955e736cc5a5db">AJARTPAncPacketHeader</a>
 </li>
 <li>SetString()
-: <a class="el" href="dc/da4/class_a_j_a_variant.html#a8b3080b7153b064bd80bd5afb1bd3c44">AJAVariant</a>
+: <a class="el" href="dc/da4/class_a_j_a_variant.html#afedf80030a58f851cfcb7493a3306cdb">AJAVariant</a>
 </li>
 <li>SetSuspendHostAudio()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#aeac7faa3db12424a8ab9eb306eb6dc51">CNTV2Card</a>
@@ -1981,6 +1981,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="d4/d91/class_n_t_v2_field_burn.html#a02d6bdd81535b7bf29be879c457437e0">NTV2FieldBurn</a>
 , <a class="el" href="d0/df4/class_n_t_v2_frame_grabber.html#a13236c515f53dd29aba682c44bedb610">NTV2FrameGrabber</a>
 , <a class="el" href="d3/da6/class_n_t_v2_l_l_burn.html#a643c754fe1ea6b9f697ccbdca34388df">NTV2LLBurn</a>
+, <a class="el" href="db/dcc/class_n_t_v2_overlay.html#a49576f38c13d4618363740c70a52d103">NTV2Overlay</a>
 </li>
 <li>SetUpAudio()
 : <a class="el" href="d8/d6d/class_n_t_v2_player4_k.html#ad37b4416410cce98706b5b3dd6364ae8">NTV2Player4K</a>
@@ -2010,6 +2011,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>setupBoard2110()
 : <a class="el" href="d1/dfb/class_c_kona_ip_json_setup.html#aa2c4b36482c273ab353cbc53ae660f44">CKonaIpJsonSetup</a>
+</li>
+<li>SetupCaptureBuffers()
+: <a class="el" href="db/dcc/class_n_t_v2_overlay.html#a0cf5e7609466bf8f48c016090d70c5fb">NTV2Overlay</a>
 </li>
 <li>SetUpConvertMode()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a461bcb52189c02987902c32557261bf2">CNTV2Card</a>
@@ -2077,6 +2081,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetUpOutputVideo()
 : <a class="el" href="d8/d74/class_n_t_v2_c_c_player.html#a44ab2d4f2060062f8566dd06e64eb9c3">NTV2CCPlayer</a>
 </li>
+<li>SetupOverlayBug()
+: <a class="el" href="db/dcc/class_n_t_v2_overlay.html#a4a221fe082b48764816ca7a7b25ebdb0">NTV2Overlay</a>
+</li>
 <li>SetupSDITransmitters()
 : <a class="el" href="d8/d6d/class_n_t_v2_player4_k.html#a3cf06ceaa835aa2d95a767c808e7b05a">NTV2Player4K</a>
 </li>
@@ -2107,7 +2114,12 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>SetUpVideo()
 : <a class="el" href="db/d07/class_n_t_v2_output_test_pattern.html#a75aa97b5647e226e134085f757c2e241">NTV2OutputTestPattern</a>
-, <a class="el" href="d8/d6d/class_n_t_v2_player4_k.html#a01c9665bff625248cbf6a40a64d9e626">NTV2Player4K</a>
+</li>
+<li>SetupVideo()
+: <a class="el" href="db/dcc/class_n_t_v2_overlay.html#a8ab9f7cd3a370f2a0ce835a5797a2d46">NTV2Overlay</a>
+</li>
+<li>SetUpVideo()
+: <a class="el" href="d8/d6d/class_n_t_v2_player4_k.html#a01c9665bff625248cbf6a40a64d9e626">NTV2Player4K</a>
 , <a class="el" href="dd/d63/class_n_t_v2_player8_k.html#a02dc22aab7889482cdef12ce3f23a276">NTV2Player8K</a>
 , <a class="el" href="d8/dc2/class_n_t_v2_player.html#a89660a31583077919d42aff7b29a069b">NTV2Player</a>
 , <a class="el" href="d1/d1e/class_n_t_v2_stream_player.html#ac722ccd8b9776e0f222cd512ea4ccca4">NTV2StreamPlayer</a>
@@ -2155,7 +2167,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a1f62ffb8f41ca382f909cc05b2ec8997">CNTV2Card</a>
 </li>
 <li>SetVideoFormat()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ad8bd6d68469a9c5d61b77caae61be002">CNTV2Card</a>
 </li>
 <li>SetVideoFormatForRxTx()
 : <a class="el" href="d5/da5/class_c_n_t_v2_config2110.html#adbdca5fdff69cd4d4990d183011a4f67">CNTV2Config2110</a>
@@ -2176,7 +2188,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="de/df6/class_a_j_a_ancillary_data___timecode___v_i_t_c.html#a4e9ca28309fb4b83683816bfff17c918">AJAAncillaryData_Timecode_VITC</a>
 </li>
 <li>SetVPID()
-: <a class="el" href="d6/d36/class_c_n_t_v2_v_p_i_d.html#a5ae0b9854a09bae2244b67f7061ded80">CNTV2VPID</a>
+: <a class="el" href="d6/d36/class_c_n_t_v2_v_p_i_d.html#acfd5169d97b9198977efb7900279f028">CNTV2VPID</a>
 </li>
 <li>SetVPIDColorimetry()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a30b975c5bc79e337399e8dfab6e92616">CNTV2Card</a>
@@ -2289,7 +2301,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="d8/def/class_a_j_a_ancillary_list.html#a411dbd64aead3706a3ac6ead5f2b283a">AJAAncillaryList</a>
 </li>
 <li>span_input_adapter()
-: <a class="el" href="d6/d7e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r7651108fe7509e9975e75ba98474e982.html#aa6d0ae30da78904e51a074286c883308">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::span_input_adapter</a>
+: <a class="el" href="d6/d7e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r7651108fe7509e9975e75ba98474e982.html#aa70b01152b865a75dfa6a51e4ece220a">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::span_input_adapter</a>
 </li>
 <li>SRTCaptionInfo()
 : <a class="el" href="de/dea/class_s_r_t_caption_info.html#a0c588ff2146509f4db911cee0bdec8a9">SRTCaptionInfo</a>
@@ -2372,11 +2384,17 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="d8/dc2/class_n_t_v2_player.html#a566747d21ead6804351797b4a30b41bb">NTV2Player</a>
 , <a class="el" href="d1/d1e/class_n_t_v2_stream_player.html#ada78eb532da44ea7e62f616287db4bf8">NTV2StreamPlayer</a>
 </li>
+<li>StartInputThread()
+: <a class="el" href="db/dcc/class_n_t_v2_overlay.html#a8673fa716c94dc5fbfa650104453cd90">NTV2Overlay</a>
+</li>
 <li>startLineNumber()
 : <a class="el" href="de/dea/class_s_r_t_caption_info.html#a643976b8c3b25511e9126aa413675a90">SRTCaptionInfo</a>
 </li>
 <li>startLineOffset()
 : <a class="el" href="de/dea/class_s_r_t_caption_info.html#a5309b03ab63f08e5d32fcbf92fac8514">SRTCaptionInfo</a>
+</li>
+<li>StartOutputThread()
+: <a class="el" href="db/dcc/class_n_t_v2_overlay.html#a4c1c0064181e64fc0d21c672b477bca3">NTV2Overlay</a>
 </li>
 <li>StartPlayoutThread()
 : <a class="el" href="d8/d74/class_n_t_v2_c_c_player.html#ae350f6f371b37ee45ea08644c69499b8">NTV2CCPlayer</a>
@@ -2445,7 +2463,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="db/d56/class_a_j_a_debug.html#a7d6a66a56270550b2b4384fb83546b12">AJADebug</a>
 </li>
 <li>StatGetKeys()
-: <a class="el" href="db/d56/class_a_j_a_debug.html#ada63527fad4cef45e526c50af74154af">AJADebug</a>
+: <a class="el" href="db/d56/class_a_j_a_debug.html#ada0d74990553af6ad440cfd906deab9b">AJADebug</a>
 </li>
 <li>StatGetSequenceNum()
 : <a class="el" href="db/d56/class_a_j_a_debug.html#a4f9da91c0203fbc62406450249447525">AJADebug</a>
@@ -2603,7 +2621,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a492edb902c0cd94cd766dfe669d28619">CNTV2Card</a>
 </li>
 <li>SubscribeInputVerticalEvent()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ab7016da569a2f30417a5f699a24aa6de">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af4d4e2d89009d9ea923e7b9a7de0ea69">CNTV2Card</a>
 </li>
 <li>SubscribeOutputVerticalEvent()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ad24678dfaa1e5dc69114e178e67fa1da">CNTV2Card</a>
@@ -2633,7 +2651,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a4162ee06376abd896f8246e5af4f8cde">CNTV2DriverInterface</a>
 </li>
 <li>swap()
-: <a class="el" href="de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html#aba55adef9d46c7c7193392ef07e809c7">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
+: <a class="el" href="de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html#a41e6f51f56dddec6db9a26b6326d0ad7">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
 , <a class="el" href="db/d7c/class_n_t_v2_frame_size.html#ae226dcf440b28682c47a7829eaccfe7b">NTV2FrameSize</a>
 </li>
 <li>swapSourceAndDestination()
@@ -2663,7 +2681,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 13 2025 12:31:47 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Jan 22 2025 19:07:56 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1492</span>
+   &#160;<span id="projectnumber">17.5.0.1516</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1492</div>
+   <div id="projectbrief">NTV2 SDK 17.5.0.1516</div>
   </td>
  </tr>
  </tbody>
@@ -627,6 +627,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae334dad57ce431202c49106fa5a07b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1f47bac65286af74f64dc68475383c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af7765fc4be9fad0dac1bee106bda00c7">NTV2BreakoutType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1b1f47bac65286af74f64dc68475383c">GetBreakoutHardware</a> (void)</td></tr>
 <tr class="separator:a1b1f47bac65286af74f64dc68475383c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9947dc98402a3726a78292c3af24c44a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9947dc98402a3726a78292c3af24c44a">GetLPExternalPortURLString</a> (std::string &amp;outURLString)</td></tr>
+<tr class="separator:a9947dc98402a3726a78292c3af24c44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce06a7de737357b38ac97f7f5eeb581"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a6ce06a7de737357b38ac97f7f5eeb581">GetLPTunnelPortURLString</a> (std::string &amp;outURLString)</td></tr>
+<tr class="separator:a6ce06a7de737357b38ac97f7f5eeb581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c21b09974ff7b8895282ef5f87be62"><td class="memItemLeft" align="right" valign="top">virtual class <a class="el" href="../../db/d32/class_device_capabilities.html">DeviceCapabilities</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features</a> (void)</td></tr>
 <tr class="separator:a03c21b09974ff7b8895282ef5f87be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a870c96c4e3514ee59fc70a6285c3a217"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a870c96c4e3514ee59fc70a6285c3a217">DeviceCanDoFormat</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ad5d23b1875f7b840e92723d7841995fd">NTV2FrameRate</a> inFR, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54af">NTV2FrameGeometry</a> inFG, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a43dc13753bbda370daa22fa9be5e0f14">NTV2Standard</a> inStd)</td></tr>
@@ -819,9 +823,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d6accfbf2f995aac91d16d16d150829"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9d6accfbf2f995aac91d16d16d150829">SetAudioBufferSize</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af47d7e7811020a2ffdb7f9bf93510018">NTV2AudioBufferSize</a> inValue, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516">NTV2AudioSystem</a> inAudioSystem=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516aa7306a07c062c3733dcc53b3b5e898d0">NTV2_AUDIOSYSTEM_1</a>)</td></tr>
 <tr class="memdesc:a9d6accfbf2f995aac91d16d16d150829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the audio buffer that is used for a given Audio System in the AJA device.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a9d6accfbf2f995aac91d16d16d150829">More...</a><br /></td></tr>
 <tr class="separator:a9d6accfbf2f995aac91d16d16d150829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55dd6f43914a22ca6f8088e2835cd4eb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a55dd6f43914a22ca6f8088e2835cd4eb">SetAudioBufferSize</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af47d7e7811020a2ffdb7f9bf93510018">NTV2AudioBufferSize</a> inMode, const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aeb6c8a56e2c678ab296844a04b061818">NTV2AudioSystemSet</a> &amp;inAudioSystems)</td></tr>
-<tr class="memdesc:a55dd6f43914a22ca6f8088e2835cd4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the audio buffer used for the given Audio System(s).  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a55dd6f43914a22ca6f8088e2835cd4eb">More...</a><br /></td></tr>
-<tr class="separator:a55dd6f43914a22ca6f8088e2835cd4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad7ad4081183f056552e2d3e8af0513"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5ad7ad4081183f056552e2d3e8af0513">SetAudioBufferSize</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af47d7e7811020a2ffdb7f9bf93510018">NTV2AudioBufferSize</a> inSize, const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aeb6c8a56e2c678ab296844a04b061818">NTV2AudioSystemSet</a> &amp;inAudioSystems)</td></tr>
+<tr class="memdesc:a5ad7ad4081183f056552e2d3e8af0513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the audio buffer used for the given Audio System(s).  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a5ad7ad4081183f056552e2d3e8af0513">More...</a><br /></td></tr>
+<tr class="separator:a5ad7ad4081183f056552e2d3e8af0513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed29a4196efa4553703cb3199568f62e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aed29a4196efa4553703cb3199568f62e">GetAudioBufferSize</a> (<a class="el" href="../../d6/d0c/ntv2enums_8h.html#af47d7e7811020a2ffdb7f9bf93510018">NTV2AudioBufferSize</a> &amp;outSize, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516">NTV2AudioSystem</a> inAudioSystem=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516aa7306a07c062c3733dcc53b3b5e898d0">NTV2_AUDIOSYSTEM_1</a>)</td></tr>
 <tr class="memdesc:aed29a4196efa4553703cb3199568f62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the size of the input or output audio buffer being used for a given Audio System on the AJA device.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#aed29a4196efa4553703cb3199568f62e">More...</a><br /></td></tr>
 <tr class="separator:aed29a4196efa4553703cb3199568f62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1217,12 +1221,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6de950b980e17f4c129db09027d2db4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad6de950b980e17f4c129db09027d2db4">SetInputVerticalEventCount</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inCount, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6">NTV2_CHANNEL1</a>)</td></tr>
 <tr class="memdesc:ad6de950b980e17f4c129db09027d2db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets my input interrupt event tally for the given channel.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#ad6de950b980e17f4c129db09027d2db4">More...</a><br /></td></tr>
 <tr class="separator:ad6de950b980e17f4c129db09027d2db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14679e8bbeb0679e3f718785095a0a9d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a14679e8bbeb0679e3f718785095a0a9d">GetOutputFieldID</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> channel, <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ae31d61e5f8328c58eb86af00d16e235d">NTV2FieldID</a> &amp;outFieldID)</td></tr>
-<tr class="memdesc:a14679e8bbeb0679e3f718785095a0a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current field ID of the specified output channel.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a14679e8bbeb0679e3f718785095a0a9d">More...</a><br /></td></tr>
-<tr class="separator:a14679e8bbeb0679e3f718785095a0a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce046ed1d039b8fb4279a3d798d137b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3ce046ed1d039b8fb4279a3d798d137b">GetInputFieldID</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> channel, <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ae31d61e5f8328c58eb86af00d16e235d">NTV2FieldID</a> &amp;outFieldID)</td></tr>
-<tr class="memdesc:a3ce046ed1d039b8fb4279a3d798d137b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current field ID of the specified input channel.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a3ce046ed1d039b8fb4279a3d798d137b">More...</a><br /></td></tr>
-<tr class="separator:a3ce046ed1d039b8fb4279a3d798d137b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc5312452d87a9e2e2c820c42a805e8f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#afc5312452d87a9e2e2c820c42a805e8f">GetOutputFieldID</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel, <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ae31d61e5f8328c58eb86af00d16e235d">NTV2FieldID</a> &amp;outFieldID)</td></tr>
+<tr class="memdesc:afc5312452d87a9e2e2c820c42a805e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current field ID of the specified output channel.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#afc5312452d87a9e2e2c820c42a805e8f">More...</a><br /></td></tr>
+<tr class="separator:afc5312452d87a9e2e2c820c42a805e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8472d61f0080ba656ee50a7bf943dd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aef8472d61f0080ba656ee50a7bf943dd">GetInputFieldID</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel, <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ae31d61e5f8328c58eb86af00d16e235d">NTV2FieldID</a> &amp;outFieldID)</td></tr>
+<tr class="memdesc:aef8472d61f0080ba656ee50a7bf943dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current field ID of the specified input channel.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#aef8472d61f0080ba656ee50a7bf943dd">More...</a><br /></td></tr>
+<tr class="separator:aef8472d61f0080ba656ee50a7bf943dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0599dc483977c64978cae92fb8837252"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0599dc483977c64978cae92fb8837252">WaitForOutputVerticalInterrupt</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6">NTV2_CHANNEL1</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inRepeatCount=1)</td></tr>
 <tr class="memdesc:a0599dc483977c64978cae92fb8837252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efficiently sleeps the calling thread/process until the next one or more field (interlaced video) or frame (progressive or interlaced video) VBIs occur for the specified output channel.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a0599dc483977c64978cae92fb8837252">More...</a><br /></td></tr>
 <tr class="separator:a0599dc483977c64978cae92fb8837252"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2613,8 +2617,10 @@ Auxillary Data</h2></td></tr>
 <tr class="memdesc:adece2350718df5221b1f8c76462755e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers whether the given HDMI input's Aux extractor is enabled/active or not.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#adece2350718df5221b1f8c76462755e8">More...</a><br /></td></tr>
 <tr class="separator:adece2350718df5221b1f8c76462755e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839b180ff265922ffb5b62a524250a94"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a839b180ff265922ffb5b62a524250a94">AuxExtractSetWriteParams</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inHDMIInput, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inFrameNumber, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dcea4bbadec88bf103dcee59248bac12d490">NTV2_CHANNEL_INVALID</a>, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8a">NTV2Framesize</a> inFrameSize=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8aa7e432a90e8d0754eee11f9193ba60cbe">NTV2_FRAMESIZE_INVALID</a>)</td></tr>
+<tr class="memdesc:a839b180ff265922ffb5b62a524250a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the given HDMI input's Aux extractor to receive the next frame's F1 Aux data.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a839b180ff265922ffb5b62a524250a94">More...</a><br /></td></tr>
 <tr class="separator:a839b180ff265922ffb5b62a524250a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2701578cc2a8a922e281d7bfc06caa8f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a2701578cc2a8a922e281d7bfc06caa8f">AuxExtractSetField2WriteParams</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inHDMIInput, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inFrameNumber, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dcea4bbadec88bf103dcee59248bac12d490">NTV2_CHANNEL_INVALID</a>, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8a">NTV2Framesize</a> inFrameSize=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8aa7e432a90e8d0754eee11f9193ba60cbe">NTV2_FRAMESIZE_INVALID</a>)</td></tr>
+<tr class="memdesc:a2701578cc2a8a922e281d7bfc06caa8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the given HDMI input's Aux extractor to receive the next frame's F2 Aux data.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a2701578cc2a8a922e281d7bfc06caa8f">More...</a><br /></td></tr>
 <tr class="separator:a2701578cc2a8a922e281d7bfc06caa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8462243f7a35e2b3bf6da2d8f5dfde69"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8462243f7a35e2b3bf6da2d8f5dfde69">AuxExtractGetWriteInfo</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inHDMIInput, uint64_t &amp;outF1StartAddr, uint64_t &amp;outF1EndAddr, uint64_t &amp;outF2StartAddr, uint64_t &amp;outF2EndAddr)</td></tr>
 <tr class="memdesc:a8462243f7a35e2b3bf6da2d8f5dfde69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the given HDMI input's current Aux extractor info.  <a href="../../d7/dfb/class_c_n_t_v2_card.html#a8462243f7a35e2b3bf6da2d8f5dfde69">More...</a><br /></td></tr>
@@ -2730,7 +2736,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a9819d0163e2a08f3f19b97d12916ef98a3398f2c7745608d97449f09a3917867f"></a>NUM_COLORS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06276">6276</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06280">6280</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -3442,7 +3448,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inHDMIInput</td><td>Specifies the SDI input of interest (e.g., 0=SDIIn1, 1=SDIIn2, etc.). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inSDIInput</td><td>Specifies the SDI input of interest (e.g., 0=SDIIn1, 1=SDIIn2, etc.). </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outIsProgressive</td><td>Receives true if the extractor was configured with a progressive format. Otherwise false. </td></tr>
   </table>
   </dd>
@@ -4698,7 +4704,7 @@ This function logs <a class="el" href="../../d9/d9a/recordplaytechniques.html#au
     <tr><td class="paramdir">[in]</td><td class="paramname">inFrameCount</td><td>Optionally specifies the number of contiguous device frame buffers to be continuously cycled through if zero is specified for both <code>inStartFrameNumber</code> and <code>inEndFrameNumber</code>. Defaults to 7. This value is ignored if a legitimate frame range is specified in the <code>inStartFrameNumber</code> and <code>inEndFrameNumber</code> parameters (see below). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the Audio System to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inOptionFlags</td><td>A bit mask that specifies additional AutoCirculate options (e.g., <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab257890d32e7a59d2bf10177c18a0abf" title="Use this to AutoCirculate with RP188.">AUTOCIRCULATE_WITH_RP188</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a9844fc7ed12b837b5f3a4f39f0e3025e" title="Use this to AutoCirculate with analog LTC.">AUTOCIRCULATE_WITH_LTC</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data.">AUTOCIRCULATE_WITH_ANC</a>, etc.). Defaults to zero (no options). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inNumChannels</td><td>Optionally specifies the number of channels to operate on when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculating the specified channel that was previously initialized by CNTV2Card::AutoCircul...">CNTV2Card::AutoCirculateStart</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a> are called. Defaults to 7. Must be greater than zero. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inNumChannels</td><td>Optionally specifies the number of channels to operate on when <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculating the specified channel that was previously initialized by CNTV2Card::AutoCircul...">CNTV2Card::AutoCirculateStart</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a> are called. Defaults to 1. Must be greater than zero. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inStartFrameNumber</td><td>Specifies the starting frame index number as a zero-based unsigned decimal integer. Defaults to zero. This parameter always overrides <code>inFrameCount</code> if, when specified with <code>inEndFrameNumber</code>, are both non-zero. If specified, must be less than <code>inEndFrameNumber</code> &ndash; see <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-indexing">Frame Buffer Indexing</a> for more information. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inEndFrameNumber</td><td>Specifies the ending frame index number as a zero-based unsigned decimal integer. Defaults to zero. This parameter always overrides <code>inFrameCount</code> if, when specified with <code>inEndFrameNumber</code>, are both non-zero. If specified, must be larger than <code>inStartFrameNumber</code> &ndash; see <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-indexing">Frame Buffer Indexing</a> for more information. </td></tr>
   </table>
@@ -5312,7 +5318,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inHDMIInput</td><td>Specifies the HDMI input of interest (e.g., 0=HDMIIn1, 1=HDMIIn2, etc.). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outF1Size</td><td>Receives the number of bytes of field 2 HDMI AUX data extracted </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outF2Size</td><td>Receives the number of bytes of field 2 HDMI AUX data extracted </td></tr>
   </table>
   </dd>
 </dl>
@@ -5570,7 +5576,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function is provided for capture methods that don't use <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a>. <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> based applications should not call this function. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac2e2dd286f198afd830a08ccb3bd9fe4" title="Enables or disables the given HDMI input&#39;s Aux extractor.">CNTV2Card::AuxExtractSetEnable</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a839b180ff265922ffb5b62a524250a94">CNTV2Card::AuxExtractSetWriteParams</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1e15dbfa3365997a5d98392387e00463" title="Replaces the HDMI packet types to be excluded (filtered) by the given HDMI input&#39;s Aux extractor.">CNTV2Card::AuxExtractSetPacketFilters</a>, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture">Custom Aux Packet Capture</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac2e2dd286f198afd830a08ccb3bd9fe4" title="Enables or disables the given HDMI input&#39;s Aux extractor.">CNTV2Card::AuxExtractSetEnable</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a839b180ff265922ffb5b62a524250a94" title="Configures the given HDMI input&#39;s Aux extractor to receive the next frame&#39;s F1 Aux data.">CNTV2Card::AuxExtractSetWriteParams</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1e15dbfa3365997a5d98392387e00463" title="Replaces the HDMI packet types to be excluded (filtered) by the given HDMI input&#39;s Aux extractor.">CNTV2Card::AuxExtractSetPacketFilters</a>, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture">Custom Aux Packet Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dc5/ntv2aux_8cpp_source.html#l00670">670</a> of file <a class="el" href="../../d2/dc5/ntv2aux_8cpp_source.html">ntv2aux.cpp</a>.</p>
 
@@ -5768,11 +5774,12 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">    @brief      Configures the given HDMI input's Aux extractor to receive the next frame's F2 Aux data.
-    @return     True if successful; otherwise false.
-    @param[in]  inHDMIInput     Specifies the HDMI input of interest (e.g., 0=HDMIIn1, 1=HDMIIn2, etc.).
-</pre><p> Question / TODO: Needs accurate description for extraction, apply to Anc also. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Configures the given HDMI input's Aux extractor to receive the next frame's F2 Aux data. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inHDMIInput</td><td>Specifies the HDMI input of interest as a zero-based index number (e.g., 0 = HDMIIn1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inFrameNumber</td><td>Tells the Aux extractor where to write the received Aux data, specified as a frame number. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inChannel</td><td>Optionally specifies the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> (FrameStore) that's driving the HDMI input, if different from the HDMI input. The default is to use the same <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> that corresponds to the HDMI input (e.g., <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6" title="Specifies channel or FrameStore 1 (or the first item).">NTV2_CHANNEL1</a> == 0 == HDMIIn1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inFrameSize</td><td>Optionally overrides the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8a" title="Kona2/Xena2 specific enums.">NTV2Framesize</a> used to calculate the Aux buffer location in device SDRAM. Defaults to using the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8a" title="Kona2/Xena2 specific enums.">NTV2Framesize</a> of the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> being used. </td></tr>
@@ -5780,7 +5787,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function is provided for capture methods that don't use <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a>. <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> based applications should not call this function. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a839b180ff265922ffb5b62a524250a94">CNTV2Card::AuxExtractSetWriteParams</a>, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture">Custom Aux Packet Capture</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a839b180ff265922ffb5b62a524250a94" title="Configures the given HDMI input&#39;s Aux extractor to receive the next frame&#39;s F1 Aux data.">CNTV2Card::AuxExtractSetWriteParams</a>, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture">Custom Aux Packet Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dc5/ntv2aux_8cpp_source.html#l00785">785</a> of file <a class="el" href="../../d2/dc5/ntv2aux_8cpp_source.html">ntv2aux.cpp</a>.</p>
 
@@ -5929,11 +5936,12 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">    @brief      Configures the given HDMI input's Aux extractor to receive the next frame's F1 Aux data.
-    @return     True if successful; otherwise false.
-    @param[in]  inHDMIInput     Specifies the HDMI input of interest (e.g., 0=HDMIIn1, 1=HDMIIn2, etc.).
-</pre><p> Question / TODO: Needs accurate description for extraction, apply to Anc also. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Configures the given HDMI input's Aux extractor to receive the next frame's F1 Aux data. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inHDMIInput</td><td>Specifies the HDMI input of interest (e.g., 0=HDMIIn1, 1=HDMIIn2, etc.). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inFrameNumber</td><td>Tells the Aux extractor where to write the received Aux data, specified as a frame number. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inChannel</td><td>Optionally specifies the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> (FrameStore) that's driving the HDMI input, if different from the HDMI input. The default is to use the same <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> that corresponds to the HDMI input (e.g., <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6" title="Specifies channel or FrameStore 1 (or the first item).">NTV2_CHANNEL1</a> == 0 == HDMIIn1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inFrameSize</td><td>Optionally overrides the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8a" title="Kona2/Xena2 specific enums.">NTV2Framesize</a> used to calculate the Aux buffer location in device SDRAM. Defaults to using the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7da0d50931cd5e572cb6f926d18dfd8a" title="Kona2/Xena2 specific enums.">NTV2Framesize</a> of the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> being used. </td></tr>
@@ -5941,7 +5949,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function is provided for capture methods that don't use <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a>. <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> based applications should not call this function. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a2701578cc2a8a922e281d7bfc06caa8f">CNTV2Card::AuxExtractSetField2WriteParams</a>, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture">Custom Aux Packet Capture</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a2701578cc2a8a922e281d7bfc06caa8f" title="Configures the given HDMI input&#39;s Aux extractor to receive the next frame&#39;s F2 Aux data.">CNTV2Card::AuxExtractSetField2WriteParams</a>, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture">Custom Aux Packet Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dc5/ntv2aux_8cpp_source.html#l00738">738</a> of file <a class="el" href="../../d2/dc5/ntv2aux_8cpp_source.html">ntv2aux.cpp</a>.</p>
 
@@ -6473,7 +6481,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </dl>
 <dl class="section see"><dt>See also</dt><dd>CNTV2Card::GetAuxRegionOffsetAndSize, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture-dataspace">Auxiliary Data Space Limitations</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05854">5854</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05860">5860</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -6970,9 +6978,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abc9dc293c526a37d468e2cb185a8b349">DeviceCapabilities::CanDoConversionMode</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abc9dc293c526a37d468e2cb185a8b349">DeviceCapabilities::CanDoConversionMode</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00555">555</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -6999,9 +7007,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00506">506</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00560">560</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7044,9 +7052,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00443">443</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00497">497</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7073,9 +7081,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#adeabcb89e0707f506a58f996433e8925">DeviceCapabilities::CanDoFrameBufferFormat</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#adeabcb89e0707f506a58f996433e8925">DeviceCapabilities::CanDoFrameBufferFormat</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00490">490</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00544">544</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7102,9 +7110,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a9c2deda32fec538b53ab0dfcd67d7b66">DeviceCapabilities::CanDoInputSource</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a9c2deda32fec538b53ab0dfcd67d7b66">DeviceCapabilities::CanDoInputSource</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00511">511</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00565">565</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7131,9 +7139,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abe8c97f659dfd023641e6ed088fdf652">DeviceCapabilities::CanDoVideoFormat</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abe8c97f659dfd023641e6ed088fdf652">DeviceCapabilities::CanDoVideoFormat</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00485">485</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00539">539</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7160,9 +7168,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#affd049c2b9cecc40e60db9d9fbe93c0a">DeviceCapabilities::CanDoWidget</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#affd049c2b9cecc40e60db9d9fbe93c0a">DeviceCapabilities::CanDoWidget</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00495">495</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00549">549</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7199,9 +7207,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00475">475</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00529">529</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7228,9 +7236,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00509">509</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7267,9 +7275,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00480">480</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00534">534</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7296,9 +7304,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00460">460</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00514">514</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7335,9 +7343,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00465">465</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00519">519</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7364,9 +7372,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00504">504</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7403,9 +7411,9 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00470">470</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00524">524</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7903,7 +7911,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 <dl class="section note"><dt>Note</dt><dd>On the Windows platform, buffers allocated using GlobalAlloc or VirtualAlloc often won't map properly because these functions allocate the virtual address space but not the memory pages, which only get allocated and committed when the memory gets written (touched). Instead, we recommend using _aligned_malloc for mapped host memory. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a955ab57f0ac21cad21bc085ea66c76a7" title="Unlocks the given host buffer that was previously locked using CNTV2Card::DMABufferLock.">CNTV2Card::DMABufferUnlock</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab833c8324a0c9575cbf59aea46091308" title="Enables or disables automatic buffer locking.">CNTV2Card::DMABufferAutoLock</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad57968e08cadead0f9b8115d59ed8797" title="Unlocks all previously-locked buffers used for DMA transfers.">CNTV2Card::DMABufferUnlockAll</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-locking">Host Buffer Locking</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00466">466</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00472">472</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -7990,7 +7998,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0fec96a75fa2416dc323c010ed8666f3" title="Page-locks the given host buffer to reduce transfer time and CPU usage of DMA transfers.">CNTV2Card::DMABufferLock</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad57968e08cadead0f9b8115d59ed8797" title="Unlocks all previously-locked buffers used for DMA transfers.">CNTV2Card::DMABufferUnlockAll</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-locking">Host Buffer Locking</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00487">487</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00493">493</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -9424,7 +9432,7 @@ This function will block and not return until the transfer has finished or faile
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Convenience method for accessing my <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html" title="I&#39;m the base class that undergirds the platform-specific derived classes (from which CNTV2Card is ult...">CNTV2DriverInterface</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06180">6180</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06184">6184</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -10093,7 +10101,7 @@ This function will block and not return until the transfer has finished or faile
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A reference to my <a class="el" href="../../db/d32/class_device_capabilities.html" title="Convenience class/API for inquiring about device capabilities of physical and virtual devices....">DeviceCapabilities</a> API, for querying my capabilities. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00141">141</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00147">147</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -10184,7 +10192,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. Swapped the PCI access frame and output frame registers at the next output VBI. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. Swapped the PCI access frame and output frame registers at the next output VBI. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02180">2180</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -10514,7 +10522,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00794">794</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -10553,7 +10561,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00782">782</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -10666,7 +10674,7 @@ This function will block and not return until the transfer has finished or faile
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000071">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af39f58b55895653791913b3d3e9b0902" title="Answers whether or not the specified bidirectional XLR audio connectors are collectively acting as in...">CNTV2Card::GetAnalogAudioTransmitEnable</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000072">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af39f58b55895653791913b3d3e9b0902" title="Answers whether or not the specified bidirectional XLR audio connectors are collectively acting as in...">CNTV2Card::GetAnalogAudioTransmitEnable</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l01673">1673</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -12500,7 +12508,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a611031170a5dd26e456ed55e05dec9c2" title="Returns the current AutoCirculate status for the given channel.">CNTV2Card::AutoCirculateGetStatus</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000098">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a611031170a5dd26e456ed55e05dec9c2" title="Returns the current AutoCirculate status for the given channel.">CNTV2Card::AutoCirculateGetStatus</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -12539,7 +12547,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03077">3077</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -12568,7 +12576,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03107">3107</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -13711,7 +13719,7 @@ This function's answer is irrelevant if the Audio-System-wide non-PCM control se
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00195">195</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -15474,7 +15482,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000096">Deprecated:</a></b></dt><dd>Use CNTV2Card::AutoCirculateGetFrame instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Use CNTV2Card::AutoCirculateGetFrame instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -16385,7 +16393,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 <p>Answers with the given HDMI input's video dynamic range and mastering information. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">outFloatValue</td><td>Receives the HDMI input's current <a class="el" href="../../d0/d30/struct_h_d_r_float_values.html">HDRFloatValues</a> data. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outFloatValues</td><td>Receives the HDMI input's current <a class="el" href="../../d0/d30/struct_h_d_r_float_values.html">HDRFloatValues</a> data. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inChannel</td><td>Specifies the HDMI input of interest as an <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> (a zero-based index number). Defaults to NTV2_CHANNEL1. </td></tr>
   </table>
   </dd>
@@ -16433,7 +16441,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 <p>Answers with the given HDMI input's video dynamic range and mastering information. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">outRegValue</td><td>Receives the HDMI input's current <a class="el" href="../../d3/da4/struct_h_d_r_reg_values.html">HDRRegValues</a> data. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outRegValues</td><td>Receives the HDMI input's current <a class="el" href="../../d3/da4/struct_h_d_r_reg_values.html">HDRRegValues</a> data. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inChannel</td><td>Specifies the HDMI input of interest as an <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> (a zero-based index number). Defaults to NTV2_CHANNEL1. </td></tr>
   </table>
   </dd>
@@ -17819,8 +17827,8 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
 
 </div>
 </div>
-<a id="a3ce046ed1d039b8fb4279a3d798d137b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ce046ed1d039b8fb4279a3d798d137b">&#9670;&nbsp;</a></span>GetInputFieldID()</h2>
+<a id="aef8472d61f0080ba656ee50a7bf943dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8472d61f0080ba656ee50a7bf943dd">&#9670;&nbsp;</a></span>GetInputFieldID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -17832,7 +17840,7 @@ This function assumes the device's current <a class="el" href="../../d6/d0c/ntv2
           <td class="memname">bool CNTV2Card::GetInputFieldID </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a>&#160;</td>
-          <td class="paramname"><em>channel</em>, </td>
+          <td class="paramname"><em>inChannel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -18327,6 +18335,63 @@ This function has nothing to do with firmware bitfiles that may be installed on 
 
 </div>
 </div>
+<a id="a9947dc98402a3726a78292c3af24c44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9947dc98402a3726a78292c3af24c44a">&#9670;&nbsp;</a></span>GetLPExternalPortURLString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CNTV2Card::GetLPExternalPortURLString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>outURLString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The Local Proc Managment port URL </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00441">441</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6ce06a7de737357b38ac97f7f5eeb581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce06a7de737357b38ac97f7f5eeb581">&#9670;&nbsp;</a></span>GetLPTunnelPortURLString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CNTV2Card::GetLPTunnelPortURLString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>outURLString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00467">467</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a09861bb6277fc4ec0d020f2e12a934ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09861bb6277fc4ec0d020f2e12a934ab">&#9670;&nbsp;</a></span>GetLTCEmbeddedOutEnable()</h2>
 
@@ -18350,7 +18415,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000102">Deprecated:</a></b></dt><dd>Obsolete, do not use. First deprecated in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000103">Deprecated:</a></b></dt><dd>Obsolete, do not use. First deprecated in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03689">3689</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -18383,7 +18448,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
 <p>Answers true if the device is currently configured to read analog LTC from the reference input connector (instead of reference). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">outEnabled</td><td>Receives true if the device is set to read analog LTC from its reference connector, or false if it's configured to read reference. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outIsEnabled</td><td>Receives true if the device is set to read analog LTC from its reference connector, or false if it's configured to read reference. </td></tr>
   </table>
   </dd>
 </dl>
@@ -19206,7 +19271,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000104">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Eventually this function will be removed from the class. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000105">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Eventually this function will be removed from the class. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#aef5852308d0853201208edf44bad20ea">NTV2DeviceCanDoMultiFormat</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4e63d1baaef7173535588fbd434f9845" title="Enables or disables multi-format (per channel) device operation. If enabled, each device channel can ...">CNTV2Card::SetMultiFormatMode</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-clocking">Video Output Clocking &amp; Synchronization</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04373">4373</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
@@ -19252,7 +19317,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516" title="Used to identify an Audio System on an NTV2 device. See Audio System Operation for more information.">NTV2AudioSystem</a> of interest. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outEnable</td><td>Receives true if multi-link audio mode is currently enabled; otherwise false if disabled. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outEnabled</td><td>Receives true if multi-link audio mode is currently enabled; otherwise false if disabled. </td></tr>
   </table>
   </dd>
 </dl>
@@ -19493,7 +19558,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.2. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00772">772</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -19548,8 +19613,8 @@ This function has nothing to do with firmware bitfiles that may be installed on 
 
 </div>
 </div>
-<a id="a14679e8bbeb0679e3f718785095a0a9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14679e8bbeb0679e3f718785095a0a9d">&#9670;&nbsp;</a></span>GetOutputFieldID()</h2>
+<a id="afc5312452d87a9e2e2c820c42a805e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5312452d87a9e2e2c820c42a805e8f">&#9670;&nbsp;</a></span>GetOutputFieldID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -19561,7 +19626,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
           <td class="memname">bool CNTV2Card::GetOutputFieldID </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a>&#160;</td>
-          <td class="paramname"><em>channel</em>, </td>
+          <td class="paramname"><em>inChannel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -19776,7 +19841,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02174">2174</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -20305,7 +20370,7 @@ If the device is capable of reading analog LTC from its reference input connecto
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03119">3119</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -23618,7 +23683,7 @@ This function does not take into account an SDI output that's designated as a "m
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03134">3134</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -23676,7 +23741,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06566">6566</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06570">6570</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -24096,7 +24161,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06582">6582</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06586">6586</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -25498,7 +25563,7 @@ This function does not take into account an SDI output that's designated as a "m
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000066">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l00480">480</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -26918,7 +26983,7 @@ This function does not take into account an SDI output that's designated as a "m
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000070">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8942d73022b3a042f3790a040a368162" title="Sets the specified bidirectional XLR audio connectors to collectively act as inputs or outputs.">CNTV2Card::SetAnalogAudioTransmitEnable</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000071">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a8942d73022b3a042f3790a040a368162" title="Sets the specified bidirectional XLR audio connectors to collectively act as inputs or outputs.">CNTV2Card::SetAnalogAudioTransmitEnable</a> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l01665">1665</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -27216,8 +27281,8 @@ This function does not take into account an SDI output that's designated as a "m
 
 </div>
 </div>
-<a id="a55dd6f43914a22ca6f8088e2835cd4eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55dd6f43914a22ca6f8088e2835cd4eb">&#9670;&nbsp;</a></span>SetAudioBufferSize() <span class="overload">[1/2]</span></h2>
+<a id="a5ad7ad4081183f056552e2d3e8af0513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad7ad4081183f056552e2d3e8af0513">&#9670;&nbsp;</a></span>SetAudioBufferSize() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -27229,7 +27294,7 @@ This function does not take into account an SDI output that's designated as a "m
           <td class="memname">bool CNTV2Card::SetAudioBufferSize </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af47d7e7811020a2ffdb7f9bf93510018">NTV2AudioBufferSize</a>&#160;</td>
-          <td class="paramname"><em>inMode</em>, </td>
+          <td class="paramname"><em>inSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -27254,7 +27319,7 @@ This function does not take into account an SDI output that's designated as a "m
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inValue</td><td>Specifies the desired size of the capture/playout audio buffer to be used on the AJA device. All modern AJA devices use <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af47d7e7811020a2ffdb7f9bf93510018a6f921b29c066ccab50a3beef071fa826">NTV2_AUDIO_BUFFER_BIG</a> (4 MB). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inSize</td><td>Specifies the desired size of the capture/playout audio buffer to be used on the AJA device. All modern AJA devices use <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af47d7e7811020a2ffdb7f9bf93510018a6f921b29c066ccab50a3beef071fa826">NTV2_AUDIO_BUFFER_BIG</a> (4 MB). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystems</td><td>Specifies the Audio System(s) of interest. </td></tr>
   </table>
   </dd>
@@ -29047,7 +29112,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -29474,7 +29539,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01201">1201</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01207">1207</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -32113,7 +32178,7 @@ If the designated FrameStore/channel is enabled and in <a class="el" href="../..
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>Use GetLTCInputEnable instead. First deprecated in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000102">Deprecated:</a></b></dt><dd>Use GetLTCInputEnable instead. First deprecated in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03684">3684</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -32836,7 +32901,7 @@ If the designated FrameStore/channel is enabled and in <a class="el" href="../..
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inChannels</td><td>Specifies the FrameStore(s) of interest. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inNewValue</td><td>Specifies the desired mode (<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abec59926c3de1fac4acd02f438a2a634" title="Playout (output) mode, which reads from device SDRAM.">NTV2_MODE_DISPLAY</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a533ead24b07dddb42981aa9944757f46" title="Capture (input) mode, which writes into device SDRAM.">NTV2_MODE_CAPTURE</a>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inMode</td><td>Specifies the desired mode (<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abec59926c3de1fac4acd02f438a2a634" title="Playout (output) mode, which reads from device SDRAM.">NTV2_MODE_DISPLAY</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a533ead24b07dddb42981aa9944757f46" title="Capture (input) mode, which writes into device SDRAM.">NTV2_MODE_CAPTURE</a>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -32880,7 +32945,7 @@ If the designated FrameStore/channel is enabled and in <a class="el" href="../..
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000103">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Passing false for inEnable will cause this function to return false (fail). Eventually this function will be removed from the class. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000104">Deprecated:</a></b></dt><dd>Uniformat mode is deprecated starting in SDK 17.0. Passing false for inEnable will cause this function to return false (fail). Eventually this function will be removed from the class. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#aef5852308d0853201208edf44bad20ea">NTV2DeviceCanDoMultiFormat</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a725a1899c9b85e93d03176e281c349" title="Answers if the device is operating in multiple-format per channel (independent channel) mode or not....">CNTV2Card::GetMultiFormatMode</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-clocking">Video Output Clocking &amp; Synchronization</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04365">4365</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
@@ -33205,7 +33270,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>Declared obsolete starting in SDK 16.2. The "PCI Access Frame" register had no effect on the hardware, but was used to store the next/pending output frame. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l02164">2164</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -35630,7 +35695,7 @@ The enable bits work on channel pairs, thus a parameter of <a class="el" href=".
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01203">1203</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01209">1209</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -35970,7 +36035,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <p>Sets the device's video range limiting mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">outValue</td><td>Specifies the NTV2VideoLimiting setting to be used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inValue</td><td>Specifies the NTV2VideoLimiting setting to be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -37046,7 +37111,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 <p>Answers with the set of output (sources) that can legally be connected to the given input (sink). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inInputXpt</td><td>Specifies the input (signal sink) of interest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inInputXptID</td><td>Specifies the input (signal sink) of interest. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outOutputXpts</td><td>Receives the supported outputs (signal sources) for this device. </td></tr>
   </table>
   </dd>
@@ -37702,7 +37767,7 @@ For interlaced video, callers that need to know whether the field or frame inter
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>This function is obsolete. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l00481">481</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -38537,7 +38602,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 
 <p>Used for default empty <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> parameters &ndash; do not modify. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06285">6285</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06289">6289</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -38567,7 +38632,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></li>
-    <li class="footer">Generated on Mon Jan 13 2025 12:31:45 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Jan 22 2025 19:07:51 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -464,8 +464,8 @@ var hierarchy =
     [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::lexer_base< BasicJsonType >", "d5/dd2/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r55d1f2a9f88b9443dd3e1e2826c10039.html", [
       [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::lexer< BasicJsonType, InputAdapterType >", "d3/d64/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r6a6d1fa7794f36990ffa991f7371aa0c.html", null ]
     ] ],
-    [ "MacAddr", "d0/df2/struct_mac_addr.html", null ],
     [ "MACAddr", "d0/d90/struct_m_a_c_addr.html", null ],
+    [ "MacAddr", "d0/df2/struct_mac_addr.html", null ],
     [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::make_void< Ts >", "d1/d11/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_495318eceb3248977b37df380617570a.html", null ],
     [ "MAP_MEMORY", "d5/d5d/struct_m_a_p___m_e_m_o_r_y.html", null ],
     [ "MAP_MEMORY_32", "d6/dd1/struct_m_a_p___m_e_m_o_r_y__32.html", null ],
@@ -539,6 +539,7 @@ var hierarchy =
     [ "NTV2Line21Attributes", "de/d6f/struct_n_t_v2_line21_attributes.html", null ],
     [ "NTV2LLBurn", "d3/da6/class_n_t_v2_l_l_burn.html", null ],
     [ "NTV2OutputTestPattern", "db/d07/class_n_t_v2_output_test_pattern.html", null ],
+    [ "NTV2Overlay", "db/dcc/class_n_t_v2_overlay.html", null ],
     [ "NTV2Player", "d8/dc2/class_n_t_v2_player.html", null ],
     [ "NTV2Player4K", "d8/d6d/class_n_t_v2_player4_k.html", null ],
     [ "NTV2Player8K", "dd/d63/class_n_t_v2_player8_k.html", null ],

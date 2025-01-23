@@ -26,7 +26,7 @@ var class_c_n_t_v2_config2110 =
     [ "Get4KModeEnable", "d5/da5/class_c_n_t_v2_config2110.html#abd6a157c51462d1591e6fb6f46a97abb", null ],
     [ "GetActualSDP", "d5/da5/class_c_n_t_v2_config2110.html#a030a8b5654a98d227a8bbe30da314b2d", null ],
     [ "GetArbiter", "d5/da5/class_c_n_t_v2_config2110.html#ae1f01250c0a40f121cd9e02028ce322c", null ],
-    [ "GetAudioCombineEnable", "d5/da5/class_c_n_t_v2_config2110.html#ab44b0d48808cf3230019f62a53cf4990", null ],
+    [ "GetAudioCombineEnable", "d5/da5/class_c_n_t_v2_config2110.html#a13915a9c89cfaa0e1f223f83e0a6aa33", null ],
     [ "GetBiDirectionalChannels", "d5/da5/class_c_n_t_v2_config2110.html#ac1a9efd89fc7cf9f8d9260353f75bb14", null ],
     [ "GetDecapsulatorAddress", "d5/da5/class_c_n_t_v2_config2110.html#a2167edc0c146afd97cccb1b040ebdd0f", null ],
     [ "GetDepacketizerAddress", "d5/da5/class_c_n_t_v2_config2110.html#afb4daa1f5f6f1b1bec90e2fd9ca53334", null ],
