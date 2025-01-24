@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aab9c8a92522544f5a87d2d5701ef162fc":[9,0,2,1,2,8,27,40],
 "d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaba6760916ca3858640bbc7c0d4cb6220":[9,0,2,1,2,8,27,15],
 "d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aabc02b638d82f6b039ea02fd7e44cbc7a":[9,0,2,1,2,8,27,29],
 "d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aabc3b8f2604a5c5889ac54779c49d3aa2":[9,0,2,1,2,8,27,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d0/de7/struct_windows_version_entry.html":[8,0,452],
 "d0/de7/struct_windows_version_entry.html#a4c878d836aaa7c04294569a101bdfb78":[8,0,452,3],
 "d0/de7/struct_windows_version_entry.html#a92692fd87d47a49da817ad1eb19a0402":[8,0,452,1],
-"d0/de7/struct_windows_version_entry.html#a95f0fd2d530cc411506940fc40470a10":[8,0,452,0],
-"d0/de7/struct_windows_version_entry.html#ae90a816968c61a2d9b602603c75f34af":[8,0,452,2]
+"d0/de7/struct_windows_version_entry.html#a95f0fd2d530cc411506940fc40470a10":[8,0,452,0]
 };

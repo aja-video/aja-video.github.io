@@ -113,6 +113,7 @@ var index =
         [ "KONA 4 (UFC Mode)", "d0/d53/ntv2devices.html#kona4ufc", null ],
         [ "KONA 5", "d0/d53/ntv2devices.html#kona5", null ],
         [ "KONA HDMI", "d0/d53/ntv2devices.html#konahdmi", null ],
+        [ "KONA IP25", "d0/d53/ntv2devices.html#konaip25g", null ],
         [ "KONA LHe Plus", "d0/d53/ntv2devices.html#konalheplus", null ],
         [ "KONA LHi", "d0/d53/ntv2devices.html#konalhi", null ],
         [ "KONA X™", "d0/d53/ntv2devices.html#konax", null ],

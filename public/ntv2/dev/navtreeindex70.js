@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"d7/dfb/class_c_n_t_v2_card.html#ae334dad57ce431202c49106fa5a07b9b":[8,0,160,392],
 "d7/dfb/class_c_n_t_v2_card.html#ae3570f87f8e84d1105cdebaae62b8b5c":[8,0,160,76],
 "d7/dfb/class_c_n_t_v2_card.html#ae3f56e432f6e2284c8c4c67b848b5476":[8,0,160,595],
 "d7/dfb/class_c_n_t_v2_card.html#ae4211e66d3fde6642357b36dbea1a8e4":[8,0,160,702],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba22d6973b9f9c7adfb2406e7ff467545d":[9,0,2,2,0,16,8,109],
 "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2784a217fb867596d9197cfb484164ef":[9,0,2,2,0,16,8,119],
 "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2953652108268e32c4d15eb0ddff77ab":[9,0,2,2,0,16,8,123],
-"d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba29a988ab1afb2af9d48a360f1365a6e0":[9,0,2,2,0,16,8,6],
-"d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2a5cd16d1add118bbde83f9b8acd785f":[9,0,2,2,0,16,8,62]
+"d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba29a988ab1afb2af9d48a360f1365a6e0":[9,0,2,2,0,16,8,6]
 };

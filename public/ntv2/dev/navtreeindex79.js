@@ -1,5 +1,6 @@
 var NAVTREEINDEX79 =
 {
+"da/d09/dpx__hdr_8h.html#aad6f481acbc0e759cf6a085f4432137d":[9,0,2,1,0,14,28],
 "da/d09/dpx__hdr_8h.html#ab35139885113ccd1dfb7ff21c3d2a7d2":[9,0,2,1,0,14,25],
 "da/d09/dpx__hdr_8h.html#ab6a2b194a300473dbbfef0783b36ccd6":[9,0,2,1,0,14,38],
 "da/d09/dpx__hdr_8h.html#ac12e141bebd4652895166885cf3e17f9":[9,0,2,1,0,14,35],
@@ -248,6 +249,5 @@ var NAVTREEINDEX79 =
 "da/d23/ntv2macpublicinterface_8h.html#ab48899087cc647f0f791ed0c459adc53a7cc30c50278cf527f116cb50fd522125":[9,0,2,2,1,2,2,32],
 "da/d23/ntv2macpublicinterface_8h.html#ac2236fea10663e86cdfdefd15d7f13d3":[9,0,2,2,1,2,2,43],
 "da/d23/ntv2macpublicinterface_8h.html#acaf64aa648825d879d0ba897e9b3c9f2":[9,0,2,2,1,2,2,46],
-"da/d23/ntv2macpublicinterface_8h.html#accc2f708c0dbf7773ce8ebca027a1baa":[9,0,2,2,1,2,2,49],
-"da/d23/ntv2macpublicinterface_8h.html#ad410f6070f1830efa481ca3b737a7bc7":[9,0,2,2,1,2,2,54]
+"da/d23/ntv2macpublicinterface_8h.html#accc2f708c0dbf7773ce8ebca027a1baa":[9,0,2,2,1,2,2,49]
 };

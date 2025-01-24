@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"d7/db4/ntv2devicescanner_8cpp.html#af4fe90719ac1d833668a7a08ca622776":[9,0,2,2,1,19,11],
 "d7/db4/ntv2devicescanner_8cpp_source.html":[9,0,2,2,1,19],
 "d7/db6/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_476bfd5cebb5f2c3685413bcd2fce580.html":[8,0,0,1,38],
 "d7/db6/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_476bfd5cebb5f2c3685413bcd2fce580.html":[8,0,0,0,0,38],
@@ -13,8 +14,8 @@ var NAVTREEINDEX66 =
 "d7/dbf/timebase_8cpp.html#abaa119a6ddba1a87c57fc429eb7f7cec":[9,0,2,1,0,29,5],
 "d7/dbf/timebase_8cpp.html#ade9de907cf4ac5bcd253853ed4e8006f":[9,0,2,1,0,29,4],
 "d7/dbf/timebase_8cpp_source.html":[9,0,2,1,0,29],
-"d7/dc4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ef432718a0d067b739901243b9df0979.html":[8,0,0,1,141],
 "d7/dc4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ef432718a0d067b739901243b9df0979.html":[8,0,0,0,0,141],
+"d7/dc4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ef432718a0d067b739901243b9df0979.html":[8,0,0,1,141],
 "d7/dc4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ef432718a0d067b739901243b9df0979.html#a219eb8118e2a2a615783bbe5d94ca20d":[8,0,0,1,141,0],
 "d7/dc4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ef432718a0d067b739901243b9df0979.html#a219eb8118e2a2a615783bbe5d94ca20d":[8,0,0,0,0,141,0],
 "d7/dc7/ntv2debug_8h.html":[9,0,2,2,0,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "d7/dfb/class_c_n_t_v2_card.html#a03e9fd51538e94c4607613f4553463d5":[8,0,160,444],
 "d7/dfb/class_c_n_t_v2_card.html#a04680591ae8cd42278e6da0bea53ed4d":[8,0,160,331],
 "d7/dfb/class_c_n_t_v2_card.html#a0504f7098e238e25728fe166942bb26e":[8,0,160,488],
-"d7/dfb/class_c_n_t_v2_card.html#a0599dc483977c64978cae92fb8837252":[8,0,160,834],
-"d7/dfb/class_c_n_t_v2_card.html#a05ad9f5f1fcf199bfabb07bb38d310d7":[8,0,160,659]
+"d7/dfb/class_c_n_t_v2_card.html#a0599dc483977c64978cae92fb8837252":[8,0,160,834]
 };
