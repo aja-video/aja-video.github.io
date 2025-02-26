@@ -1,0 +1,4 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_bdf8eddcd8d2854343d33575bff3eb81 =
+[
+    [ "operator()", "d6/dde/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_bdf8eddcd8d2854343d33575bff3eb81.html#a60d9a9e25887768a4b903465168b49a0", null ]
+];

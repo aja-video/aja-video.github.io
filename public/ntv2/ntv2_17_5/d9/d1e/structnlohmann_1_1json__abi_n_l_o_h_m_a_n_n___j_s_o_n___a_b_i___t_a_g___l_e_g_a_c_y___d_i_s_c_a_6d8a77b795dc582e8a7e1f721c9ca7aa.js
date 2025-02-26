@@ -1,0 +1,6 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6d8a77b795dc582e8a7e1f721c9ca7aa =
+[
+    [ "minus", "d9/d1e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6d8a77b795dc582e8a7e1f721c9ca7aa.html#acaf415d66133e465a9896aa6f666c770", null ],
+    [ "plus", "d9/d1e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6d8a77b795dc582e8a7e1f721c9ca7aa.html#a1d72bd7ae9600debbfbb7fdba9c59e82", null ],
+    [ "w", "d9/d1e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6d8a77b795dc582e8a7e1f721c9ca7aa.html#ac1583731eece8be195c0db74fd81b747", null ]
+];

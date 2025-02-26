@@ -1,0 +1,8 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_af66a2c46afc3c8f426602ade1289528 =
+[
+    [ "difference_type", "da/d82/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_af66a2c46afc3c8f426602ade1289528.html#a6ec9bad1a8280d6271152c2fcb4a0a43", null ],
+    [ "iterator_category", "da/d82/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_af66a2c46afc3c8f426602ade1289528.html#a30ae4f0045493b863ca7c94f7fe27d1e", null ],
+    [ "pointer", "da/d82/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_af66a2c46afc3c8f426602ade1289528.html#a05c7cab3a5b337195163b3ed61693c2a", null ],
+    [ "reference", "da/d82/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_af66a2c46afc3c8f426602ade1289528.html#a0f9f74e4d9c96daac918dd922301a236", null ],
+    [ "value_type", "da/d82/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_af66a2c46afc3c8f426602ade1289528.html#a5b1c7f04f26740f477af282929ff27fb", null ]
+];

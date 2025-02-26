@@ -1,0 +1,28 @@
+var classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026 =
+[
+    [ "binary_t", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#ada8b70e6d0fb4a6dbb126d957f8ca0ea", null ],
+    [ "number_float_t", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a8d5f19558b898664f861d4b47e90e47e", null ],
+    [ "number_integer_t", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#af630eedd2488c12c3d265442ff77c2f2", null ],
+    [ "number_unsigned_t", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#ac24dcf63e52ab175864b9b26dcab1c02", null ],
+    [ "string_t", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a87484bc9d9efb9b65c0cf18013d133ba", null ],
+    [ "json_sax_dom_parser", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a1908cd75cae687532e8c14534485cf78", null ],
+    [ "json_sax_dom_parser", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a068de22a1fdf47314fb4e0c8354698d6", null ],
+    [ "json_sax_dom_parser", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#ade8563cfa1af4d9a9a1a43c19b4a40e0", null ],
+    [ "~json_sax_dom_parser", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a8c69d21cd7382a2d0c0b55e36a8d178e", null ],
+    [ "binary", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#af74cf5f7b6b38e126fb83db4a1f07f96", null ],
+    [ "boolean", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a5872b3a79869b310cdaaebf07c87f8af", null ],
+    [ "end_array", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a5b60bfa844d10862a8323c4af4131545", null ],
+    [ "end_object", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a123def7d726ecb6d81340ce73b0eaba0", null ],
+    [ "is_errored", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a70a786a105d6d4c281ebfeeb072834e4", null ],
+    [ "key", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a2aeed379df6708479e12ee24c6ea2d9d", null ],
+    [ "null", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a2f661ce16671b3ebe5d5d73ae4fb4815", null ],
+    [ "number_float", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a69087da3b9d272cda3c3dbcdcc871000", null ],
+    [ "number_integer", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#af79b53a4434ce618750a55272b6326e6", null ],
+    [ "number_unsigned", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a2f1a328399700ae548b591af2c88a58d", null ],
+    [ "operator=", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#ae3a8d5ef11e6feea2649b924e367e757", null ],
+    [ "operator=", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a4cb2ae789cb0fc63520008bf1e8cad23", null ],
+    [ "parse_error", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a9453cf74c4722974b00a20d0095e60f1", null ],
+    [ "start_array", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#af01b126dd1fa0a439fcd897833ab134c", null ],
+    [ "start_object", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a226aaea2e80f5abdb530eb421489e39e", null ],
+    [ "string", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html#a137cf379e5a16d566003c47d49d7f294", null ]
+];
