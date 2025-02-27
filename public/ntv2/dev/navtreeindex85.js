@@ -1,6 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daabdbe28afc2dea7df1861510c1172bcac":[9,0,2,2,0,53,5,356],
 "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daac305ce177085165c6c0cd2717f5e5431":[9,0,2,2,0,53,5,466],
 "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daac3e3f9f9493b77f171f764b6c64aa399":[9,0,2,2,0,53,5,59],
 "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daac3ef2699da2e91364dabc6ad3cd5a101":[9,0,2,2,0,53,5,27],
@@ -249,5 +248,6 @@ var NAVTREEINDEX85 =
 "db/d15/ntv2config2022_8h.html":[9,0,2,2,0,9],
 "db/d15/ntv2config2022_8h_source.html":[9,0,2,2,0,9],
 "db/d16/debug_8h.html":[9,0,2,1,2,7],
-"db/d16/debug_8h.html#af15ceba31bbc1f6f2a12ae8c4505d34e":[9,0,2,1,2,7,13]
+"db/d16/debug_8h.html#af15ceba31bbc1f6f2a12ae8c4505d34e":[9,0,2,1,2,7,13],
+"db/d16/debug_8h.html#afdf803a21cd3b17f50f202a4685cd776":[9,0,2,1,2,7,14]
 };

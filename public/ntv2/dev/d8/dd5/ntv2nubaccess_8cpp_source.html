@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1530</span>
+   &#160;<span id="projectnumber">17.6.0.1664</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1530</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.1664</div>
   </td>
  </tr>
  </tbody>
@@ -1069,7 +1069,7 @@ $(document).ready(function(){initNavTree('d8/dd5/ntv2nubaccess_8cpp_source.html'
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;            loadErr &lt;&lt; <span class="stringliteral">&quot;AddDllDirectory &#39;&quot;</span> &lt;&lt; path &lt;&lt; <span class="stringliteral">&quot;&#39; failed: &quot;</span> &lt;&lt; WinErrStr(::GetLastError());</div>
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        }   <span class="comment">//  AddDllDirectory failed</span></div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;        HMODULE h = ::LoadLibraryExA(LPCSTR(path.c_str()), <a class="code" href="../../db/de2/ajatypes_8h.html#a001de14502e8d5f76c164d5d9f410777">AJA_NULL</a>, LOAD_LIBRARY_SEARCH_USER_DIRS);</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;        HMODULE h = ::LoadLibraryExA(LPCSTR(path.c_str()), <a class="code" href="../../db/de2/ajatypes_8h.html#a001de14502e8d5f76c164d5d9f410777">AJA_NULL</a>, LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;        <span class="keywordflow">if</span> (!h)</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;            loadErr &lt;&lt; <span class="stringliteral">&quot;Unable to open &#39;&quot;</span> &lt;&lt; path &lt;&lt; <span class="stringliteral">&quot;&#39;: &quot;</span> &lt;&lt; WinErrStr(::GetLastError());</div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="preprocessor">    #else   //  MacOS or Linux</span></div>
@@ -2553,7 +2553,7 @@ $(document).ready(function(){initNavTree('d8/dd5/ntv2nubaccess_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_d66cab0a9fa222c6d93e473efea2c462.html">src</a></li><li class="navelem"><a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp.html">ntv2nubaccess.cpp</a></li>
-    <li class="footer">Generated on Fri Jan 24 2025 16:08:05 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Feb 26 2025 11:22:06 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

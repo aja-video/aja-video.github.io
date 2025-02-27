@@ -1,6 +1,5 @@
 var NAVTREEINDEX93 =
 {
-"dc/d98/struct_c_c_gen_config.html#a50eea9f925ab5ad4fd99dd908b19df38":[8,0,129,0],
 "dc/d98/struct_c_c_gen_config.html#a5fd7710b50913d9ccbec71887115d0be":[8,0,129,3],
 "dc/d98/struct_c_c_gen_config.html#a77d5a4408585326e228308e3ba786aaf":[8,0,129,4],
 "dc/d98/struct_c_c_gen_config.html#a8363f423ffdaecd88a6f46bc43a9b585":[8,0,129,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX93 =
 "dc/df9/struct_hevc_device_command.html#aa60f784f2e0907186ab69a37af79732a":[8,0,219,8],
 "dc/df9/struct_hevc_device_command.html#aa9e29bd4fb33d9827ce3f0c36b7be56c":[8,0,219,23],
 "dc/df9/struct_hevc_device_command.html#ab7878786c0f78f944ad161460db5463a":[8,0,219,41],
-"dc/df9/struct_hevc_device_command.html#abaa35d7928512f4d3ef3915902c13b59":[8,0,219,7]
+"dc/df9/struct_hevc_device_command.html#abaa35d7928512f4d3ef3915902c13b59":[8,0,219,7],
+"dc/df9/struct_hevc_device_command.html#acd2dfe481ef8dae2e538b61ba452b781":[8,0,219,24]
 };

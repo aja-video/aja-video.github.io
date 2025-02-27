@@ -17,7 +17,6 @@ var struct_player_config =
     [ "fPixelFormat", "da/d16/struct_player_config.html#a0cf57218e167560e015ef3cd981f4514", null ],
     [ "fSuppressAudio", "da/d16/struct_player_config.html#aa60f5b6761eb7056c85351ff3e308fcc", null ],
     [ "fSuppressVideo", "da/d16/struct_player_config.html#ac68493b8fd684716282c76450b313e78", null ],
-    [ "fTransmitHDRType", "da/d16/struct_player_config.html#a0d9b80bb3d56886d04748c931f19dba1", null ],
     [ "fTransmitLTC", "da/d16/struct_player_config.html#aa7d349f7f04a600849ec080eacef233a", null ],
     [ "fVancMode", "da/d16/struct_player_config.html#a7008b55abb849a3a2d7823c9883a639d", null ],
     [ "fVideoFormat", "da/d16/struct_player_config.html#ac3f6017dd323135a1ba2d90a4276bf88", null ]

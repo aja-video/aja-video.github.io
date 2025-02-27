@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.5.0.1530</span>
+   &#160;<span id="projectnumber">17.6.0.1664</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.5.0.1530</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.1664</div>
   </td>
  </tr>
  </tbody>
@@ -348,6 +348,7 @@ How to Post Messages</h2>
 ‘ntv2firmwareinstaller’ Command-Line Utility</h1>
 <dl class="section user"><dt>Description</dt><dd></dd></dl>
 <p>A command-line tool that can install firmware on AJA NTV2 devices.</p>
+<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d53/ntv2devices.html#konaip25g">KONA IP25</a> firmware is <b><em>NOT</em></b> installed using this utility. Instead, it’s installed through its web interface over the local network using the board’s ethernet connector.</dd></dl>
 <dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
 <div class="fragment"><div class="line">    ntv2firmwareinstaller [OPTION...]  [PATH...]</div>
 <div class="line">      --version                             Shows version &amp; exit</div>
@@ -643,7 +644,7 @@ Debug Tab</h2>
 <li><b>Message Index Number</b> (unsigned decimal number)</li>
 <li><b>Process ID</b> (unsigned decimal number)</li>
 <li><b>Thread ID</b> (unsigned decimal number)</li>
-<li><b>Time Stamp</b> (unsigned floating point number)</li>
+<li><b>Time Stamp</b> (unsigned 64-bit number, host OS high-resolution tick count)</li>
 <li><b>Debug Unit</b> (string/name)</li>
 <li><b>Severity</b> (string/name)</li>
 <li><b>Source File</b> (full path, string)</li>
@@ -3038,7 +3039,7 @@ System Report</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Jan 24 2025 16:08:08 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Feb 26 2025 11:22:11 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

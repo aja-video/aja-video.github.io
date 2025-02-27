@@ -1,6 +1,5 @@
 var NAVTREEINDEX90 =
 {
-"dc/d1c/ntv2audiodefines_8h.html#a747a4fdf918bd75dbe65f8d3be8fc8aea227e8416235cd3b43077ca91504a463f":[9,0,2,2,0,3,22,0],
 "dc/d1c/ntv2audiodefines_8h.html#a747a4fdf918bd75dbe65f8d3be8fc8aeaa3e5bed2996d266c61bc094bcef5494e":[9,0,2,2,0,3,22,1],
 "dc/d1c/ntv2audiodefines_8h.html#a8731ab174bc91aa80836793026c73299":[9,0,2,2,0,3,12],
 "dc/d1c/ntv2audiodefines_8h.html#a91945ee8ea195828664a0e25276feb04":[9,0,2,2,0,3,24],
@@ -249,5 +248,6 @@ var NAVTREEINDEX90 =
 "dc/d36/structpopt_alias.html#a80b40d2518a74014cf4dbbd5980e90a6":[8,0,386,1],
 "dc/d36/structpopt_alias.html#a92907c8fe8d1a61b281c21a4c724b7e6":[8,0,386,2],
 "dc/d36/structpopt_alias.html#acc11957cb38d95c51ef7ab5ef75ef7bf":[8,0,386,3],
-"dc/d3f/class_n_t_v2_qt_multi_input.html":[8,0,355]
+"dc/d3f/class_n_t_v2_qt_multi_input.html":[8,0,355],
+"dc/d3f/class_n_t_v2_qt_multi_input.html#a35a23ebc3548f40045833379ccffe316":[8,0,355,4]
 };
