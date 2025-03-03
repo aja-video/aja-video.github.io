@@ -92,6 +92,7 @@ var ntv2devicefeatures_8hpp =
     [ "NTV2DeviceGetMaxTransferCount", "dd/d0f/ntv2devicefeatures_8hpp.html#af0b98720ee2ab3a7c923709881400944", null ],
     [ "NTV2DeviceGetNum2022ChannelsSFP1", "dd/d0f/ntv2devicefeatures_8hpp.html#a0332ee61b96214adcfcb82ce53ac95f8", null ],
     [ "NTV2DeviceGetNum2022ChannelsSFP2", "dd/d0f/ntv2devicefeatures_8hpp.html#a2fc0be789b175be18f239432a88c6fe5", null ],
+    [ "NTV2DeviceGetNum25GSFPs", "dd/d0f/ntv2devicefeatures_8hpp.html#a423ada81102966bf56898327af698e5c", null ],
     [ "NTV2DeviceGetNum4kQuarterSizeConverters", "dd/d0f/ntv2devicefeatures_8hpp.html#a4c415a2aa416327a2e7ce6b792d14713", null ],
     [ "NTV2DeviceGetNumAESAudioInputChannels", "dd/d0f/ntv2devicefeatures_8hpp.html#adbfb5ea117a5b40ce127529a7573aa9d", null ],
     [ "NTV2DeviceGetNumAESAudioOutputChannels", "dd/d0f/ntv2devicefeatures_8hpp.html#ac0cb51e349cd5d7a323da96e5a51c0c8", null ],

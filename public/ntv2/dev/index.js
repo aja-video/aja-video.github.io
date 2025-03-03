@@ -25,10 +25,11 @@ var index =
     ] ],
     [ "NTV2 Device Hardware Operation", "d1/dc5/ntv2devops.html", [
       [ "Introduction", "d1/dc5/ntv2devops.html#vidop-intro", [
-        [ "Device Features", "d1/dc5/ntv2devops.html#vidop-features", null ]
+        [ "Hardware Characteristics", "d1/dc5/ntv2devops.html#vidop-hwchar", null ],
+        [ "Device Features", "d1/dc5/ntv2devops.html#vidop-features", null ],
+        [ "Widgets", "d1/dc5/ntv2devops.html#vidop-widgets", null ]
       ] ],
-      [ "Hardware Characteristics", "d1/dc5/ntv2devops.html#vidop-hwchar", null ],
-      [ "Signal Inputs & Outputs", "d1/dc5/ntv2devops.html#vidop-signalio", [
+      [ "Signal I/O Connectors", "d1/dc5/ntv2devops.html#vidop-signalio", [
         [ "Breakout Boxes and Cables", "d1/dc5/ntv2devops.html#vidop-breakout", null ],
         [ "SDI Connectors", "d1/dc5/ntv2devops.html#vidop-sdi", [
           [ "Bi-Directional SDI Connectors", "d1/dc5/ntv2devops.html#vidop-bidirsdi", null ],
@@ -51,7 +52,6 @@ var index =
         [ "Serial Ports (RS-422)", "d1/dc5/ntv2devops.html#vidop_rs422", null ]
       ] ],
       [ "Video System Operation", "d1/dc5/ntv2devops.html#vidop-section", [
-        [ "Widgets", "d1/dc5/ntv2devops.html#vidop-widgets", null ],
         [ "FrameStore Operation", "d1/dc5/ntv2devops.html#vidop-fs", null ],
         [ "Multi-Format / “Independent” Mode", "d1/dc5/ntv2devops.html#vidop-independent", null ],
         [ "Frame Buffer Access", "d1/dc5/ntv2devops.html#vidop-fbaccess", [
@@ -68,8 +68,11 @@ var index =
         [ "When FrameStores Access the Same Frame Buffer Memory", "d1/dc5/ntv2devops.html#vidop-fbconflict", null ],
         [ "Color Space Converter Operation", "d1/dc5/ntv2devops.html#vidop-csc", null ],
         [ "LUT Operation", "d1/dc5/ntv2devops.html#vidop-lut", null ],
-        [ "Mixer/Keyer Operation", "d1/dc5/ntv2devops.html#vidop-mixerkeyer", null ],
-        [ "High Dynamic Range (HDR) Video", "d1/dc5/ntv2devops.html#vidop-hdr", null ]
+        [ "High Dynamic Range (HDR) Video", "d1/dc5/ntv2devops.html#vidop-hdr", [
+          [ "HDR Playback/Output", "d1/dc5/ntv2devops.html#vidop-hdr-out", null ],
+          [ "HDR Capture/Input", "d1/dc5/ntv2devops.html#vidop-hdr-in", null ]
+        ] ],
+        [ "Mixer/Keyer Operation", "d1/dc5/ntv2devops.html#vidop-mixerkeyer", null ]
       ] ],
       [ "Audio System Operation", "d1/dc5/ntv2devops.html#audop-section", [
         [ "Audio Connectors", "d1/dc5/ntv2devops.html#audop-connectors", [
@@ -148,10 +151,9 @@ var index =
     [ "Tools and Utilities", "db/d02/toolsandutilities.html", [
       [ "‘ntv2thermo’ Command-Line Utility", "db/d02/toolsandutilities.html#ntv2thermo", null ],
       [ "“AJA Logger”", "db/d02/toolsandutilities.html#usingajalogger", [
-        [ "AJA Logger Operation", "db/d02/toolsandutilities.html#logger-operation", [
-          [ "Enable/Disable Message Groups Dialog", "db/d02/toolsandutilities.html#loggerconfig", null ],
-          [ "How to Post Messages", "db/d02/toolsandutilities.html#loggercustom", null ]
-        ] ]
+        [ "AJA Logger Operation", "db/d02/toolsandutilities.html#logger-operation", null ],
+        [ "Enable/Disable Message Groups Dialog", "db/d02/toolsandutilities.html#loggerconfig", null ],
+        [ "How to Post Messages", "db/d02/toolsandutilities.html#loggercustom", null ]
       ] ],
       [ "‘ntv2firmwareinstaller’ Command-Line Utility", "db/d02/toolsandutilities.html#usingfwinstaller", null ],
       [ "“HEVC Monitor”", "db/d02/toolsandutilities.html#hevcmon-about", [
@@ -198,7 +200,10 @@ var index =
         [ "“Scrap Buffer” Tool", "db/d02/toolsandutilities.html#scraptool", null ],
         [ "“SDK Demos” Tool", "db/d02/toolsandutilities.html#demostool", null ],
         [ "“AJADebug Stats” Tool", "db/d02/toolsandutilities.html#debugstats", null ],
-        [ "“AJADebug Log” Tool", "db/d02/toolsandutilities.html#debuglog", null ],
+        [ "“AJADebug Log” Tool", "db/d02/toolsandutilities.html#debuglog", [
+          [ "Enable/Disable Message Groups Dialog", "db/d02/toolsandutilities.html#watcher-loggerconfig", null ],
+          [ "How to Post Messages", "db/d02/toolsandutilities.html#watcher-loggercustom", null ]
+        ] ],
         [ "NTV2Watcher Preferences", "db/d02/toolsandutilities.html#watcherprefs", [
           [ "General Preferences", "db/d02/toolsandutilities.html#watcherprefsgeneral", null ],
           [ "Color Preferences", "db/d02/toolsandutilities.html#watcherprefscolor", null ],
@@ -359,9 +364,10 @@ var index =
       [ "HDMI Aux Buffer Data Format", "d2/d06/auxiliarydata.html#auxbufferformat", null ]
     ] ],
     [ "Widget Signal Routing", "d0/dc3/ntv2signalrouting.html", [
-      [ "End-to-End (E-E) Routing", "d0/dc3/ntv2signalrouting.html#recipes_endtoend", null ],
+      [ "End-to-End (E-E) Routing", "d0/dc3/ntv2signalrouting.html#recipes_etoe", null ],
       [ "Routing for Capture", "d0/dc3/ntv2signalrouting.html#recipes_capture", null ],
-      [ "Routing for Playout", "d0/dc3/ntv2signalrouting.html#recipes_playout", null ]
+      [ "Routing for Playout", "d0/dc3/ntv2signalrouting.html#recipes_playout", null ],
+      [ "Routing for Simultaneous Capture & Playout", "d0/dc3/ntv2signalrouting.html#recipes_endtoend", null ]
     ] ],
     [ "Capture and Playout Techniques", "d9/d9a/recordplaytechniques.html", [
       [ "Playout Basics", "d9/d9a/recordplaytechniques.html#playoutbasics", null ],

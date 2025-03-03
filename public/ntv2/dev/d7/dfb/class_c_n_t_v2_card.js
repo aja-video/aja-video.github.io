@@ -465,6 +465,7 @@ var class_c_n_t_v2_card =
     [ "GetSerialNumberHigh", "d7/dfb/class_c_n_t_v2_card.html#ac603582579d0d6cb86de1b5e290964f7", null ],
     [ "GetSerialNumberLow", "d7/dfb/class_c_n_t_v2_card.html#ae60b532f04b571656945ab982ea0b8bb", null ],
     [ "GetSerialNumberString", "d7/dfb/class_c_n_t_v2_card.html#afed904183be599e5977e1e6d8f0b8884", null ],
+    [ "GetSFPURLs", "d7/dfb/class_c_n_t_v2_card.html#aa21cd536804cce20e5fa70e449871371", null ],
     [ "GetSmpte372", "d7/dfb/class_c_n_t_v2_card.html#a33b712861cab6151e0855cba88b98d14", null ],
     [ "GetStandard", "d7/dfb/class_c_n_t_v2_card.html#a9eff0e54cc71a335108de9d6064f2891", null ],
     [ "GetStereoCompressorFlipLeftHorz", "d7/dfb/class_c_n_t_v2_card.html#a07d1ee72a04f7c3c60b1568297232d8a", null ],

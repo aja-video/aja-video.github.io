@@ -215,7 +215,8 @@ var NAVTREEINDEX3 =
 "d0/dc0/ntv2player4k_8h_source.html":[9,0,2,3,21,2],
 "d0/dc3/ntv2signalrouting.html":[0,9],
 "d0/dc3/ntv2signalrouting.html#recipes_capture":[0,9,1],
-"d0/dc3/ntv2signalrouting.html#recipes_endtoend":[0,9,0],
+"d0/dc3/ntv2signalrouting.html#recipes_endtoend":[0,9,3],
+"d0/dc3/ntv2signalrouting.html#recipes_etoe":[0,9,0],
 "d0/dc3/ntv2signalrouting.html#recipes_playout":[0,9,2],
 "d0/dc5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_13af72db382c49ec44038bbdebd672d3.html":[8,0,0,0,0,107],
 "d0/dc5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_13af72db382c49ec44038bbdebd672d3.html":[8,0,0,1,107],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d0/de1/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3706f83f109344dcd8845150e1190800.html":[8,0,0,1,64],
 "d0/de7/struct_windows_version_entry.html":[8,0,452],
 "d0/de7/struct_windows_version_entry.html#a4c878d836aaa7c04294569a101bdfb78":[8,0,452,3],
-"d0/de7/struct_windows_version_entry.html#a92692fd87d47a49da817ad1eb19a0402":[8,0,452,1],
-"d0/de7/struct_windows_version_entry.html#a95f0fd2d530cc411506940fc40470a10":[8,0,452,0]
+"d0/de7/struct_windows_version_entry.html#a92692fd87d47a49da817ad1eb19a0402":[8,0,452,1]
 };

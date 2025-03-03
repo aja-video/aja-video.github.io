@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1664</span>
+   &#160;<span id="projectnumber">17.6.0.1681</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1664</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.1681</div>
   </td>
  </tr>
  </tbody>
@@ -631,6 +631,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9947dc98402a3726a78292c3af24c44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ce06a7de737357b38ac97f7f5eeb581"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a6ce06a7de737357b38ac97f7f5eeb581">GetLPTunnelPortURLString</a> (std::string &amp;outURLString)</td></tr>
 <tr class="separator:a6ce06a7de737357b38ac97f7f5eeb581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21cd536804cce20e5fa70e449871371"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aa21cd536804cce20e5fa70e449871371">GetSFPURLs</a> (std::vector&lt; std::string &gt; &amp;sfpURLStrings)</td></tr>
+<tr class="separator:aa21cd536804cce20e5fa70e449871371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c21b09974ff7b8895282ef5f87be62"><td class="memItemLeft" align="right" valign="top">virtual class <a class="el" href="../../db/d32/class_device_capabilities.html">DeviceCapabilities</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features</a> (void)</td></tr>
 <tr class="separator:a03c21b09974ff7b8895282ef5f87be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a870c96c4e3514ee59fc70a6285c3a217"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a870c96c4e3514ee59fc70a6285c3a217">DeviceCanDoFormat</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ad5d23b1875f7b840e92723d7841995fd">NTV2FrameRate</a> inFR, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54af">NTV2FrameGeometry</a> inFG, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a43dc13753bbda370daa22fa9be5e0f14">NTV2Standard</a> inStd)</td></tr>
@@ -2744,7 +2746,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a9819d0163e2a08f3f19b97d12916ef98a3398f2c7745608d97449f09a3917867f"></a>NUM_COLORS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06286">6286</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06287">6287</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -6489,7 +6491,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </dl>
 <dl class="section see"><dt>See also</dt><dd>CNTV2Card::GetAuxRegionOffsetAndSize, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture-dataspace">Auxiliary Data Space Limitations</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05866">5866</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05867">5867</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -6988,7 +6990,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abc9dc293c526a37d468e2cb185a8b349">DeviceCapabilities::CanDoConversionMode</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00553">553</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00584">584</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7017,7 +7019,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00558">558</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00589">589</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7062,7 +7064,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00495">495</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00526">526</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7091,7 +7093,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#adeabcb89e0707f506a58f996433e8925">DeviceCapabilities::CanDoFrameBufferFormat</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00542">542</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00573">573</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7120,7 +7122,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a9c2deda32fec538b53ab0dfcd67d7b66">DeviceCapabilities::CanDoInputSource</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00563">563</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00594">594</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7149,7 +7151,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#abe8c97f659dfd023641e6ed088fdf652">DeviceCapabilities::CanDoVideoFormat</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00537">537</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00568">568</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7178,7 +7180,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#affd049c2b9cecc40e60db9d9fbe93c0a">DeviceCapabilities::CanDoWidget</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00547">547</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00578">578</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7217,7 +7219,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00527">527</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00558">558</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7246,7 +7248,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00507">507</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00538">538</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7285,7 +7287,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00532">532</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00563">563</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7314,7 +7316,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00512">512</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00543">543</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7353,7 +7355,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00517">517</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00548">548</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7382,7 +7384,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00533">533</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7421,7 +7423,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>This function is obsolete. Do not use it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00522">522</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00553">553</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -7919,7 +7921,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 <dl class="section note"><dt>Note</dt><dd>On the Windows platform, buffers allocated using GlobalAlloc or VirtualAlloc often won't map properly because these functions allocate the virtual address space but not the memory pages, which only get allocated and committed when the memory gets written (touched). Instead, we recommend using _aligned_malloc for mapped host memory. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a955ab57f0ac21cad21bc085ea66c76a7" title="Unlocks the given host buffer that was previously locked using CNTV2Card::DMABufferLock.">CNTV2Card::DMABufferUnlock</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab833c8324a0c9575cbf59aea46091308" title="Enables or disables automatic buffer locking.">CNTV2Card::DMABufferAutoLock</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad57968e08cadead0f9b8115d59ed8797" title="Unlocks all previously-locked buffers used for DMA transfers.">CNTV2Card::DMABufferUnlockAll</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-locking">Host Buffer Locking</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00472">472</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00473">473</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -8006,7 +8008,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0fec96a75fa2416dc323c010ed8666f3" title="Page-locks the given host buffer to reduce transfer time and CPU usage of DMA transfers.">CNTV2Card::DMABufferLock</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad57968e08cadead0f9b8115d59ed8797" title="Unlocks all previously-locked buffers used for DMA transfers.">CNTV2Card::DMABufferUnlockAll</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-locking">Host Buffer Locking</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00493">493</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00494">494</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -9440,7 +9442,7 @@ This function will block and not return until the transfer has finished or faile
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Convenience method for accessing my <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html" title="I&#39;m the base class that undergirds the platform-specific derived classes (from which CNTV2Card is ult...">CNTV2DriverInterface</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06190">6190</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06191">6191</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -10109,7 +10111,7 @@ This function will block and not return until the transfer has finished or faile
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A reference to my <a class="el" href="../../db/d32/class_device_capabilities.html" title="Convenience class/API for inquiring about device capabilities of physical and virtual devices....">DeviceCapabilities</a> API, for querying my capabilities. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00147">147</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l00148">148</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -22276,7 +22278,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal Inputs &amp; Outputs</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal I/O Connectors</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03817">3817</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -22621,6 +22623,34 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 <dl class="section return"><dt>Returns</dt><dd>True if successful (and valid); otherwise false. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa21cd536804cce20e5fa70e449871371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21cd536804cce20e5fa70e449871371">&#9670;&nbsp;</a></span>GetSFPURLs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CNTV2Card::GetSFPURLs </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sfpURLStrings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00493">493</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -23038,7 +23068,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 <dl class="section note"><dt>Note</dt><dd>This function returns valid results for devices with or without bi-directional SDIs. </dd>
 <dd>
 This function does not take into account an SDI output that's designated as a "monitor" (i.e. <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a78831cd341766c2efd0dfe9c9dc8619ea4bd51fa59153966d49bf524353b7b229">NTV2WidgetType_SDIMonOut</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a000096cdf1eb36b50c8e55c406f24befac0652c7f833a7338699456bffaf23b1d">NTV2_WgtSDIMonOut1</a>). </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal Inputs &amp; Outputs</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal I/O Connectors</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03829">3829</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -23835,7 +23865,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06576">6576</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06577">6577</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -24255,7 +24285,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06592">6592</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06593">6593</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -29643,7 +29673,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01207">1207</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01208">1208</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -35033,7 +35063,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>After switching a bidirectional SDI connector from output to input (i.e., inEnable = false), it may take the hardware on the device up to approximately 10 frames to synchronize with the input signal such that the device can accurately report the video format seen at the input. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal Inputs &amp; Outputs</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal I/O Connectors</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03796">3796</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -35083,7 +35113,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> ha
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>After switching a bidirectional SDI connector from output to input (i.e., inEnable = false), it may take the hardware on the device up to approximately 10 frames to synchronize with the input signal such that the device can accurately report the video format seen at the input. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal Inputs &amp; Outputs</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#add0bea97e5bae91256afa64381ff57de">NTV2DeviceHasBiDirectionalSDI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-signalio">Signal I/O Connectors</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l03808">3808</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
 
@@ -35865,7 +35895,7 @@ The enable bits work on channel pairs, thus a parameter of <a class="el" href=".
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01209">1209</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l01210">1210</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -38772,7 +38802,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 
 <p>Used for default empty <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length,...">NTV2Buffer</a> parameters &ndash; do not modify. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06295">6295</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06296">6296</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -38802,7 +38832,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></li>
-    <li class="footer">Generated on Wed Feb 26 2025 11:22:14 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Feb 28 2025 18:37:31 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
