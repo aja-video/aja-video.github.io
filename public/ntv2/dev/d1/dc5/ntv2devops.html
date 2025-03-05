@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1681</span>
+   &#160;<span id="projectnumber">17.6.0.1688</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1681</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.1688</div>
   </td>
  </tr>
  </tbody>
@@ -1339,6 +1339,9 @@ HDR Capture/Input</h3>
 <div class="line"><span class="keyword">const</span> <a class="code" href="../../d6/d0c/ntv2enums_8h.html#ad2ba03f62db349923f530191677c6436">NTV2VPIDColorimetry</a> colorimetry = vpidAInfo.GetColorimetry();</div>
 <div class="line"><span class="keyword">const</span> <a class="code" href="../../d6/d0c/ntv2enums_8h.html#ab929cba52b9df12b8b55dcfa164dc14b">NTV2VPIDLuminance</a>   luminance   = vpidAInfo.GetLuminance();</div>
 </div><!-- fragment --><p>Alternatively, if <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> is streaming input video (with <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data.">AUTOCIRCULATE_WITH_ANC</a>), a per-frame <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html" title="I am an ordered collection of AJAAncillaryData instances which represent one or more SMPTE 291 data p...">AJAAncillaryList</a> can be built from its <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#a7a2f425d823df9f88934bacf2130213b" title="Returns all ancillary data packets found in the given F1 and F2 ancillary data buffers.">AJAAncillaryList::SetFromDeviceAncBuffers</a> function. The <a class="el" href="../../d7/dcb/ancillarydata.html#ancvpid">VPID</a> packet (assuming present) can be obtained from the list (via <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#af8f05acf73744669b085463d0d258d5a" title="Answers with the AJAAncillaryData object having the given DataID and SecondaryID, at the given index.">AJAAncillaryList::GetAncillaryDataWithID</a>), and its 4-byte payload used to create the <a class="el" href="../../d6/d36/class_c_n_t_v2_v_p_i_d.html" title="A convenience class that simplifies encoding or decoding the 4-byte VPID payload that can be read or ...">CNTV2VPID</a> instance for decoding, as above.</p>
+<p><b>HDMI</b></p>
+<p>If the device includes HDMI Aux Extractor firmware, then complete HDR sideband information can be captured, including the Dynamic Range and Mastering Info-frame and the static metadata descriptors as defined in CTA-861.3 and HDMI v2.0a, as well as the vendor-specific HDR10+ Info-frame data per video frame.</p>
+<p>See <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture">Custom Aux Packet Capture</a> for more information.</p>
 <p><b>Dolby Vision</b></p>
 <p>To detect if incoming video from an HDMI input is encoded using Dolby Vision, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae1bc1fa5a367424114fe33737acafdf7" title="Answers with the given HDMI input&#39;s Dolby Vision flag is set.">CNTV2Card::GetHDMIInDolbyVision</a>.</p>
 <hr  size="50px" />
@@ -2064,7 +2067,7 @@ Fast Bitfile Switching</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Feb 28 2025 18:37:29 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Mar 5 2025 11:06:32 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

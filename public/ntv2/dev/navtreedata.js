@@ -158,7 +158,7 @@ var NAVTREEINDEX =
 "d7/d92/ancillarydata_8h.html#a84fe65047c830dc442d36c26ff0ddc33aca7c1a7de5ada96d21d9bce55019e0a6",
 "d7/da9/ntv2register_8cpp.html#a46fa7ec6c55bee11f5d7dc9f6a584415",
 "d7/dce/class_c_n_t_v2_signal_router.html#af7de092b660ffd501c6d8a9b5b11342b",
-"d7/dfb/class_c_n_t_v2_card.html#a3d28e351567379e011189fce0f184f18",
+"d7/dfb/class_c_n_t_v2_card.html#a3cb56247831febcc134d7c675382bd0d",
 "d7/dfb/class_c_n_t_v2_card.html#a8574d5532e7c8cb56cac9c9e03ed9862",
 "d7/dfb/class_c_n_t_v2_card.html#acf904ffdd4a560917801add2008528f3",
 "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9ac5325d02e836fc179a42d05a3665ae6c",
