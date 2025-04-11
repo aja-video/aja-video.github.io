@@ -150,6 +150,7 @@ var ntv2utils_8cpp =
     [ "NTV2CrosspointToString", "d6/d9b/ntv2utils_8cpp.html#a4de214edd6653c822fbb1e123715d80b", null ],
     [ "NTV2DeviceCanDoFormat", "d6/d9b/ntv2utils_8cpp.html#ac4e0c5a070e2b4917841ee73875fa7e9", null ],
     [ "NTV2DeviceIDToString", "d6/d9b/ntv2utils_8cpp.html#afccf54af6c1923a3997e5faf9bcd6f2e", null ],
+    [ "NTV2DieTempScaleToString", "d6/d9b/ntv2utils_8cpp.html#a4c7f56746daf0418ab5524df60b0bf13", null ],
     [ "NTV2DownConvertModeToString", "d6/d9b/ntv2utils_8cpp.html#ad8c41693100059b646e814b8a76138db", null ],
     [ "NTV2EmbeddedAudioClockToString", "d6/d9b/ntv2utils_8cpp.html#aa576cc5cf0f5b3ed3f8500ae741a9709", null ],
     [ "NTV2EmbeddedAudioInputToString", "d6/d9b/ntv2utils_8cpp.html#a5b23e5f5c5746cff3ba6aeacf65722d7", null ],

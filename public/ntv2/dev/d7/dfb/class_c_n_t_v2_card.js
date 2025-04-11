@@ -516,7 +516,6 @@ var class_c_n_t_v2_card =
     [ "IsAudioChannelPairPresent", "d7/dfb/class_c_n_t_v2_card.html#a9038702316afd529f3bda2f94dff2607", null ],
     [ "IsAudioInputRunning", "d7/dfb/class_c_n_t_v2_card.html#abd4414dee29a0ce3926e60a16640a58c", null ],
     [ "IsAudioOutputRunning", "d7/dfb/class_c_n_t_v2_card.html#a4cf4089fc092af267a96d5c11de114f2", null ],
-    [ "IsBreakoutBoardConnected", "d7/dfb/class_c_n_t_v2_card.html#a28c7e0e845c7836c043b2e0cc3ddcc73", null ],
     [ "IsBufferSizeSetBySW", "d7/dfb/class_c_n_t_v2_card.html#a823512d06ac37d8f553b943ddaa13654", null ],
     [ "IsChannelEnabled", "d7/dfb/class_c_n_t_v2_card.html#ad7ab43c1f7d53cc2f073b15048146723", null ],
     [ "IsConnected", "d7/dfb/class_c_n_t_v2_card.html#ad43504643afaeee71bd14fde6f59eabb", null ],

@@ -1,6 +1,5 @@
 var ntv2nubtypes_8h =
 [
-    [ "NTV2NUBPORT", "d8/de5/ntv2nubtypes_8h.html#a1911f5faa68ccd5039bb8b957eee5734", null ],
     [ "NTV2NubProtocolVersion", "d8/de5/ntv2nubtypes_8h.html#a16e533b103d2fb6c1ec23bf9d47a66dd", null ],
     [ "kDisableByteSwap", "d8/de5/ntv2nubtypes_8h.html#ac2aa9fdeee2ff3152bdb21620d1e66a4", null ],
     [ "kEnableByteSwapIfNeeded", "d8/de5/ntv2nubtypes_8h.html#aceeb3c7715491a29a653b8592887ba10", null ],

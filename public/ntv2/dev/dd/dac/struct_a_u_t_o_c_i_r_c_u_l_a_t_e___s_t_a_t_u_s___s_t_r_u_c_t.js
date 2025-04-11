@@ -1,7 +1,11 @@
 var struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t =
 [
     [ "RPCDecode", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#ab1fc11a7f6fd5ce1ae7869580365f598", null ],
+    [ "RPCDecodeClient", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#ab013e61cc5314b54f75b1afb4daef0e8", null ],
+    [ "RPCDecodeServer", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#aa58cc4e2eda2ca9823afe06d383e965e", null ],
     [ "RPCEncode", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#addc3023a8e900e5cb056e0f2c6a6e260", null ],
+    [ "RPCEncodeClient", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#ad9739a728a3c9f5b442044622193cae2", null ],
+    [ "RPCEncodeServer", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#ab96b71fafbdfbadd2fa8befefed82834", null ],
     [ "activeFrame", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#a1d18eaa15909872007fdc8a512e9a46c", null ],
     [ "audioClockCurrentTime", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#a68cb101f815cc78bd3633b4afead13bb", null ],
     [ "audioClockStartTime", "dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#a4a3e13c0c893c4b4029a9019f8e304a5", null ],

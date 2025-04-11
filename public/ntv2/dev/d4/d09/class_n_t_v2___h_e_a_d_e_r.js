@@ -13,6 +13,10 @@ var class_n_t_v2___h_e_a_d_e_r =
     [ "IsValid", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#aa9b10831b0ee1a1f0586f4ad3686fbbc", null ],
     [ "Print", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a6820af07749e8b18f5c1c56eb504ea72", null ],
     [ "RPCDecode", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#ad290c203916bfa318083321a6096f267", null ],
+    [ "RPCDecodeClient", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#ad9a7bcfde259fc844034015a6520fde1", null ],
+    [ "RPCDecodeServer", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a5e20c901fb83fb6d15ea32a6a49fc9dc", null ],
     [ "RPCEncode", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a68cb467dacee8160c41763a69c76d901", null ],
+    [ "RPCEncodeClient", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a32bfc57beded53d46725bd44b472f72e", null ],
+    [ "RPCEncodeServer", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a819ab27bdcaee237ea239b22d2ea8e76", null ],
     [ "SetConnectionID", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#aadae1466d881d03bef884c6c5ba2f366", null ]
 ];

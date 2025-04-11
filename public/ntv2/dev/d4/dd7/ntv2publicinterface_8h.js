@@ -311,9 +311,17 @@ var ntv2publicinterface_8h =
     [ "NTV2_PROGRAM_DONE_BIT", "d4/dd7/ntv2publicinterface_8h.html#a3eba9d3dbc327af1509732e5e425e1ec", null ],
     [ "NTV2_PROGRAM_READY_BIT", "d4/dd7/ntv2publicinterface_8h.html#a9c3613374a750fdde00d1a50f4d8bc84", null ],
     [ "NTV2_PROGRAM_RESET_BIT", "d4/dd7/ntv2publicinterface_8h.html#a109dcd699656050756e06e587d61d220", null ],
+    [ "NTV2_RPC_BUFFER_CODEC_DECLS", "d4/dd7/ntv2publicinterface_8h.html#aa2e92bfa1bcb316ddd3681050734d437", null ],
+    [ "NTV2_RPC_BUFFER_DECODE2_DECL", "d4/dd7/ntv2publicinterface_8h.html#adc554709ffa2b0d39a5b730e4e3e37c7", null ],
+    [ "NTV2_RPC_BUFFER_DECODE_DECL", "d4/dd7/ntv2publicinterface_8h.html#a1c451c2b58c05b98ff64ad6c9177e9e3", null ],
+    [ "NTV2_RPC_BUFFER_ENCODE_DECL", "d4/dd7/ntv2publicinterface_8h.html#a32567d49fe97f6bac06c13a13cdce95a", null ],
     [ "NTV2_RPC_CODEC_DECLS", "d4/dd7/ntv2publicinterface_8h.html#a1d465cb410216ac95cabea9e4e49aea7", null ],
     [ "NTV2_RPC_DECODE_DECL", "d4/dd7/ntv2publicinterface_8h.html#ae9848d5bc725d544b854d4d5476443b4", null ],
+    [ "NTV2_RPC_DECODECLIENT_DECL", "d4/dd7/ntv2publicinterface_8h.html#ace589182b0ea1ee05bacb215542f3dfa", null ],
+    [ "NTV2_RPC_DECODESERVER_DECL", "d4/dd7/ntv2publicinterface_8h.html#a70d98083f13b144446bde378e84fb145", null ],
     [ "NTV2_RPC_ENCODE_DECL", "d4/dd7/ntv2publicinterface_8h.html#a72717e9e53b34c7885f7fb240fa031d4", null ],
+    [ "NTV2_RPC_ENCODECLIENT_DECL", "d4/dd7/ntv2publicinterface_8h.html#a12a5b403de4ff31ae2c6e7c6f2cbe541", null ],
+    [ "NTV2_RPC_ENCODESERVER_DECL", "d4/dd7/ntv2publicinterface_8h.html#abbe5f996a2ba0f5d54c376b66e81e479", null ],
     [ "NTV2_STREAM_BUFFER_QUEUE", "d4/dd7/ntv2publicinterface_8h.html#ab0e5ac07e107428fd49543721333e692", null ],
     [ "NTV2_STREAM_BUFFER_RELEASE", "d4/dd7/ntv2publicinterface_8h.html#a9de3d56afa7ed0d77bb4ba78bdd3c668", null ],
     [ "NTV2_STREAM_BUFFER_STATE_COMPLETED", "d4/dd7/ntv2publicinterface_8h.html#a6973a99e0b0d5cb37881eb8a22f12b26", null ],
@@ -1413,7 +1421,8 @@ var ntv2publicinterface_8h =
       [ "kRegMaskIPOut1Active", "d4/dd7/ntv2publicinterface_8h.html#a6e780fdc0e3462ea67bf0ba67c5a5409a75e9efa93ca77b5311328c4ecf884a48", null ],
       [ "kRegMaskIPOut2Active", "d4/dd7/ntv2publicinterface_8h.html#a6e780fdc0e3462ea67bf0ba67c5a5409a521834154f28529a983225a176828629", null ],
       [ "kRegMaskIPOut3Active", "d4/dd7/ntv2publicinterface_8h.html#a6e780fdc0e3462ea67bf0ba67c5a5409ada426f56c3c549a9074091f70ef498cb", null ],
-      [ "kRegMaskIPOut4Active", "d4/dd7/ntv2publicinterface_8h.html#a6e780fdc0e3462ea67bf0ba67c5a5409aeaa39c69d055dbd6b7fd7b224da5245c", null ]
+      [ "kRegMaskIPOut4Active", "d4/dd7/ntv2publicinterface_8h.html#a6e780fdc0e3462ea67bf0ba67c5a5409aeaa39c69d055dbd6b7fd7b224da5245c", null ],
+      [ "kRegMaskIPIsKey", "d4/dd7/ntv2publicinterface_8h.html#a6e780fdc0e3462ea67bf0ba67c5a5409a0b2dfbfa966a4feb78567f3dd6bcfe52", null ]
     ] ],
     [ "NTV2LocalProcRegisterShift", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579a", [
       [ "kRegShiftIPIn1Enabled", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579aada0e1de92720789069acc8ba3be4805c", null ],
@@ -1427,7 +1436,8 @@ var ntv2publicinterface_8h =
       [ "kRegShiftIPOut1Active", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579aa5916d0678b881a18643c6120952ddcec", null ],
       [ "kRegShiftIPOut2Active", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579aa2dd1c6627736856a1e23d04251f72b24", null ],
       [ "kRegShiftIPOut3Active", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579aae8ecd5d38a435d1590198b3e0e3b30a6", null ],
-      [ "kRegShiftIPOut4Active", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579aae4eced5ecc39e854daecdbd0c0bd04e2", null ]
+      [ "kRegShiftIPOut4Active", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579aae4eced5ecc39e854daecdbd0c0bd04e2", null ],
+      [ "kRegShiftIPIsKey", "d4/dd7/ntv2publicinterface_8h.html#a18f3e694a8c0238b30b411bc6b48579aab81df9ba91186f308df9589702f36217", null ]
     ] ],
     [ "NTV2LUTControlRegisters", "d4/dd7/ntv2publicinterface_8h.html#a4a86af26ec4d3a7d229f6cdfd0c5c18e", [
       [ "kReg1DLUTLoadControl1", "d4/dd7/ntv2publicinterface_8h.html#a4a86af26ec4d3a7d229f6cdfd0c5c18eacaa3f9721ddf629a7d2858ffb18860a1", null ],

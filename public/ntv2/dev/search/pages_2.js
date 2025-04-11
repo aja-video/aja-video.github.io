@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['data_20formats_41292',['Data Formats',['../d5/d32/dataformats.html',1,'index']]],
-  ['demonstration_20applications_41293',['Demonstration Applications',['../d9/d07/demoapps.html',1,'index']]],
-  ['deprecated_20list_41294',['Deprecated List',['../da/d58/deprecated.html',1,'']]],
-  ['dual_2dlink_20and_203g_20overview_41295',['Dual-Link and 3G Overview',['../d5/d73/duallinkoverview.html',1,'index']]]
+  ['data_20formats_41326',['Data Formats',['../d5/d32/dataformats.html',1,'index']]],
+  ['demonstration_20applications_41327',['Demonstration Applications',['../d9/d07/demoapps.html',1,'index']]],
+  ['deprecated_20list_41328',['Deprecated List',['../da/d58/deprecated.html',1,'']]],
+  ['dual_2dlink_20and_203g_20overview_41329',['Dual-Link and 3G Overview',['../d5/d73/duallinkoverview.html',1,'index']]]
 ];

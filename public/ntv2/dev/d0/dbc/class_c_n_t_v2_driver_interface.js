@@ -40,7 +40,7 @@ var class_c_n_t_v2_driver_interface =
     [ "GetOverlappedMode", "d0/dbc/class_c_n_t_v2_driver_interface.html#ab4708edad868bb672ca5062da530a451", null ],
     [ "GetPackageInformation", "d0/dbc/class_c_n_t_v2_driver_interface.html#ac0c68296aded1858a0ade846ba970e55", null ],
     [ "GetRecordedRegisterWrites", "d0/dbc/class_c_n_t_v2_driver_interface.html#af010575a29b1b050d7ee9dfe453fcdc0", null ],
-    [ "GetRegInfoForBoolParam", "d0/dbc/class_c_n_t_v2_driver_interface.html#afb264144f4d254c08c272d58b5a10ae0", null ],
+    [ "GetRegInfoForBoolParam", "d0/dbc/class_c_n_t_v2_driver_interface.html#a2bac73a145d7eeee7ff40c6ee6544c79", null ],
     [ "GetRegInfoForNumericParam", "d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a", null ],
     [ "GetShareMode", "d0/dbc/class_c_n_t_v2_driver_interface.html#a9de1bad3f4a25fb5e71175e2b9be1219", null ],
     [ "GetStreamingApplication", "d0/dbc/class_c_n_t_v2_driver_interface.html#ad101bc5fd0969e255993a973bd8e7f11", null ],

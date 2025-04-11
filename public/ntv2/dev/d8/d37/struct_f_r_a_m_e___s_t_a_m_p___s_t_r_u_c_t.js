@@ -1,7 +1,11 @@
 var struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t =
 [
     [ "RPCDecode", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#aa60d7460e47fb2ec41f862f3ac3d8f4f", null ],
+    [ "RPCDecodeClient", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#ab6e91a328a1851bc8ea61abf10c731de", null ],
+    [ "RPCDecodeServer", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#a78e7c83b3ee245b4539556761f3a17bb", null ],
     [ "RPCEncode", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#a9d8c8e6112a809debc7680856299954f", null ],
+    [ "RPCEncodeClient", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#ade15ddd5a2f4f88b385ca81c16fed3d6", null ],
+    [ "RPCEncodeServer", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#a0f57ed0aeeabe3362172a6ee6b98c6f5", null ],
     [ "audioClockCurrentTime", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#af2dce50edf6ba822af45503717a57582", null ],
     [ "audioClockTimeStamp", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#ad6f851a1586d15075c788a26ec2aff44", null ],
     [ "audioExpectedAddress", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#afb0ff1395be7d4c6e4e547e302075203", null ],

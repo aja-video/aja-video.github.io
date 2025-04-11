@@ -389,6 +389,7 @@ var index =
         [ "Interlaced Versus Progressive Video", "d9/d9a/recordplaytechniques.html#autocirculateinterlace", null ],
         [ "Field-Based Operation", "d9/d9a/recordplaytechniques.html#autocirculatefieldmode", null ],
         [ "Latency Considerations", "d9/d9a/recordplaytechniques.html#autocirculatelowlatency", null ],
+        [ "AutoCirculating Multiple Channels", "d9/d9a/recordplaytechniques.html#autocirculateganging", null ],
         [ "Monitoring AutoCirculate Activity with NTV2Watcher Tool", "d9/d9a/recordplaytechniques.html#autocirculatemon", null ],
         [ "AutoCirculate Diagnostic Messages", "d9/d9a/recordplaytechniques.html#autocirculatemsgs", null ]
       ] ],

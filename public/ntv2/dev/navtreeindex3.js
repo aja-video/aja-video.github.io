@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aab914d72eada7d66c7f50b8a3fa99714b":[9,0,2,1,2,8,27,65],
 "d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aab9c8a92522544f5a87d2d5701ef162fc":[9,0,2,1,2,8,27,40],
 "d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaba6760916ca3858640bbc7c0d4cb6220":[9,0,2,1,2,8,27,15],
 "d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aabc02b638d82f6b039ea02fd7e44cbc7a":[9,0,2,1,2,8,27,29],
@@ -87,6 +88,7 @@ var NAVTREEINDEX3 =
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a21249f2b521c494f74fcb27bcb0769da":[8,0,168,96],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a2376118ffd779ee2893264b6ea8360fd":[8,0,168,59],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a2714fdc53fa5b964c0e800cbcf04748e":[8,0,168,9],
+"d0/dbc/class_c_n_t_v2_driver_interface.html#a2bac73a145d7eeee7ff40c6ee6544c79":[8,0,168,40],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a2bd012590927413231c4545dede7f9d8":[8,0,168,84],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a2d33b7c97ae9368ae31517201f7b1f5d":[8,0,168,56],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a2d9b3983dcf38307b82121c1a9635b72":[8,0,168,64],
@@ -172,7 +174,6 @@ var NAVTREEINDEX3 =
 "d0/dbc/class_c_n_t_v2_driver_interface.html#af71d52b98b22b784d0b93f9a85158a99":[8,0,168,47],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#af981cc2f6f266b8e0baa7d663dc1e889":[8,0,168,73],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#afb2068bfeaa8b8240ebd4067b596ee37":[8,0,168,61],
-"d0/dbc/class_c_n_t_v2_driver_interface.html#afb264144f4d254c08c272d58b5a10ae0":[8,0,168,40],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#afddf8d74959e9b3f9318cf3ec24c83ee":[8,0,168,16],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#afee620a25452e14d0d03ab62fc121f45":[8,0,168,32],
 "d0/dbc/ntv2caption708serviceinfo_8h.html":[9,0,1,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d0/de1/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3706f83f109344dcd8845150e1190800.html":[8,0,0,0,0,64],
 "d0/de1/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3706f83f109344dcd8845150e1190800.html":[8,0,0,1,64],
 "d0/de7/struct_windows_version_entry.html":[8,0,452],
-"d0/de7/struct_windows_version_entry.html#a4c878d836aaa7c04294569a101bdfb78":[8,0,452,3],
-"d0/de7/struct_windows_version_entry.html#a92692fd87d47a49da817ad1eb19a0402":[8,0,452,1]
+"d0/de7/struct_windows_version_entry.html#a4c878d836aaa7c04294569a101bdfb78":[8,0,452,3]
 };

@@ -1,7 +1,11 @@
 var struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t =
 [
     [ "RPCDecode", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a01975093c0ae4f8976a570ddba159dbe", null ],
+    [ "RPCDecodeClient", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a719ef9f3f8533f70e4cf9c1053749db5", null ],
+    [ "RPCDecodeServer", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a112135c2e057afa9ad2394d38185642a", null ],
     [ "RPCEncode", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#ae8624a078d70b1d091a5d6f3e823e199", null ],
+    [ "RPCEncodeClient", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a393eb62be54dfcfe7866d46be4871312", null ],
+    [ "RPCEncodeServer", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a2146b73cefe4e22176df718eaf677422", null ],
     [ "audioBuffer", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a7d3970652183d906a62e933e8b3d8038", null ],
     [ "audioBufferSize", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a163f75612f732f9176078882ea0f8906", null ],
     [ "audioNumChannels", "d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a9db24acb51e06e60c613b8729d8440db", null ],

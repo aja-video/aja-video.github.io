@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1688</span>
+   &#160;<span id="projectnumber">17.6.0.1781</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1688</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.1781</div>
   </td>
  </tr>
  </tbody>
@@ -742,10 +742,14 @@ General Operation</h2>
 <li>It’s colored <b>Yellow</b> if it’s not native.</li>
 </ul>
 </li>
-<li><b>Die Temperature</b> — Indicates the instantaneous measured die temperature of the device’s FPGA.<ul>
-<li>It’s colored <b>Green</b> if the temperature is at or below normal.</li>
-<li>It’s colored <b>Yellow</b> if the temperature is slightly above normal.</li>
-<li>It’s colored <b>Red</b> if the temperature is significantly above normal.</li>
+<li><b>Die Temperature</b> — Indicates the instantaneous measured die temperature of the device’s FPGA, in degrees Celcius by default.<ul>
+<li>The color changes depending on the temperature; it’s <b>Green</b> if the temperature is at or below normal; <b>Yellow</b> if slightly above normal; or <b>Red</b> if significantly above normal.</li>
+<li>Hovering the mouse pointer over the temperature display pops up a tooltip that reveals additional thermal details about the device:<ul>
+<li>The die temperature given in both Celcius and Fahrenheit.</li>
+<li>A notice if the temperature is slightly above normal (warm) or warning if significantly above normal.</li>
+</ul>
+</li>
+<li>Right-clicking on the temperature display pops up a menu for choosing the desired temperature scale. Choose either “Celcius” or “Fahrenheight”. The new setting is remembered for subsequent launches of NTV2Watcher.</li>
 </ul>
 </li>
 <li><b>Refresh Rate</b> — Indicates the actual measured refresh rate of the main window’s active inspector (a moving average).<ul>
@@ -3039,7 +3043,7 @@ System Report</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Mar 5 2025 11:06:32 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Apr 10 2025 17:36:19 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

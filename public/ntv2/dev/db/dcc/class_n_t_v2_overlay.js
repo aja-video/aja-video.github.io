@@ -5,6 +5,7 @@ var class_n_t_v2_overlay =
     [ "Init", "db/dcc/class_n_t_v2_overlay.html#ad421dbafb84327002241cc76ce0a793d", null ],
     [ "InputThread", "db/dcc/class_n_t_v2_overlay.html#a9107ba030d05d2f8df0b0ae3cceb0733", null ],
     [ "InputThreadStatic", "db/dcc/class_n_t_v2_overlay.html#a6e67e6e0dc6da33b71e4152979622eb4", null ],
+    [ "IsInputSignalRGB", "db/dcc/class_n_t_v2_overlay.html#a818b34eccaefd497f4881f87bcbbe751", null ],
     [ "OutputThread", "db/dcc/class_n_t_v2_overlay.html#a77bc53604df53b5969867989d6295539", null ],
     [ "OutputThreadStatic", "db/dcc/class_n_t_v2_overlay.html#a021629165b1211542aa15bfdcaac2cd3", null ],
     [ "Quit", "db/dcc/class_n_t_v2_overlay.html#ae8c0b2deb75cdc5ba6ce04284e501f5c", null ],

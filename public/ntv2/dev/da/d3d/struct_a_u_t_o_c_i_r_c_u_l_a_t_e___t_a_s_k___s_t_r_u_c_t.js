@@ -1,7 +1,11 @@
 var struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t =
 [
     [ "RPCDecode", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#a9b8fadc2957df0364a27dda2bc4f1e85", null ],
+    [ "RPCDecodeClient", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#a39d8764f9197714d5720a4d056e0a149", null ],
+    [ "RPCDecodeServer", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#af80c8333cfd180ca81fc3c0bf870d81d", null ],
     [ "RPCEncode", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#ad9823f762365632d555a32d77fe7f4bb", null ],
+    [ "RPCEncodeClient", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#ade55b19a6cb4b9a90653007af82e3843", null ],
+    [ "RPCEncodeServer", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#a0feeec67760d0e360f755fa16e705f9d", null ],
     [ "maxTasks", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#abc4ddd755b73bf24a1dfefe78718593b", null ],
     [ "numTasks", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#a0994b289ad651f189781a1502abb7417", null ],
     [ "reserved0", "da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#afb93c0b35afc9847cd473fd64d6e23b9", null ],

@@ -13,5 +13,9 @@ var class_n_t_v2_get_registers =
     [ "ResetUsing", "d1/dfc/class_n_t_v2_get_registers.html#aa1356c2f337dc7ca635302b117f75486", null ],
     [ "ResetUsing", "d1/dfc/class_n_t_v2_get_registers.html#a581f7c8bd022cb2b1889aa38faed3ea3", null ],
     [ "RPCDecode", "d1/dfc/class_n_t_v2_get_registers.html#a0c0e86ce30b2cc10d05bb983068c24a6", null ],
-    [ "RPCEncode", "d1/dfc/class_n_t_v2_get_registers.html#ae2b5601d4a236ebc2cdcc89ff8346425", null ]
+    [ "RPCDecodeClient", "d1/dfc/class_n_t_v2_get_registers.html#a877937d8c60a5893659da68ef6688af4", null ],
+    [ "RPCDecodeServer", "d1/dfc/class_n_t_v2_get_registers.html#a211d1705c507b0c1bfe04a32081eccac", null ],
+    [ "RPCEncode", "d1/dfc/class_n_t_v2_get_registers.html#ae2b5601d4a236ebc2cdcc89ff8346425", null ],
+    [ "RPCEncodeClient", "d1/dfc/class_n_t_v2_get_registers.html#ad1c77d7d07291c6ae56a2794fd61163e", null ],
+    [ "RPCEncodeServer", "d1/dfc/class_n_t_v2_get_registers.html#a8b07f2fc03664a288fa5aa3dfa6ada11", null ]
 ];
