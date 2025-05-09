@@ -2,6 +2,7 @@ var ntv2llburn_8cpp =
 [
     [ "AsCU8Ptr", "da/d1a/ntv2llburn_8cpp.html#abadd7c2018f6fce24c3e5c794556ade3", null ],
     [ "AsULWordPtr", "da/d1a/ntv2llburn_8cpp.html#a482b38205336a6988d569518ae69a443", null ],
+    [ "HOST_AUDIO_BUFFER_SIZE", "da/d1a/ntv2llburn_8cpp.html#a1a7b9b27259616180873ede614ecbd54", null ],
     [ "NTV2_ANCSIZE_MAX", "da/d1a/ntv2llburn_8cpp.html#a77d04af4ca51b4865256c2589e7332d6", null ],
     [ "CLEAR_DEVICE_ANC_BUFFER_AFTER_READ", "da/d1a/ntv2llburn_8cpp.html#aa8a98b9661845db12df6cdb1d9a1b144", null ],
     [ "CLEAR_HOST_ANC_BUFFER_BEFORE_READ", "da/d1a/ntv2llburn_8cpp.html#a267e1ed3244a9c079fd8e26994f89971", null ],

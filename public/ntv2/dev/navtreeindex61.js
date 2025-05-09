@@ -1,5 +1,11 @@
 var NAVTREEINDEX61 =
 {
+"d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa7d2e54997f8f1f5215135e06871dab48":[9,0,2,1,0,40,7,14],
+"d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa8170d8c4ce68b9881b58ca7bac5c72ce":[9,0,2,1,0,40,7,10],
+"d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa841614c3d1779c987fecfef10c072594":[9,0,2,1,0,40,7,94],
+"d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa8cfcc6515b33419961e81b070cc3b01d":[9,0,2,1,0,40,7,19],
+"d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa8da35b8c69c7db8cef79e98230fc73c5":[9,0,2,1,0,40,7,48],
+"d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa90e7e7a1d8e04f5b85673a31b0c89bd0":[9,0,2,1,0,40,7,51],
 "d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa918ddbaab2d206760184a82dca232951":[9,0,2,1,0,40,7,8],
 "d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa94e94e15a9c26acf3b71af840719970e":[9,0,2,1,0,40,7,5],
 "d6/da4/videotypes_8h.html#a0d3c1e186e4d31ac850de488b8e38e2fa94f16540331f6272e7aa939d15fbbf56":[9,0,2,1,0,40,7,40],
@@ -243,11 +249,5 @@ var NAVTREEINDEX61 =
 "d6/dc0/ancillarylist_8h.html#ad38bd05bdf1f566b9663f553ab5b3c10":[9,0,2,0,0,15,14],
 "d6/dc0/ancillarylist_8h.html#ad864d6eb9779b12191024de22e0d276d":[9,0,2,0,0,15,5],
 "d6/dc0/ancillarylist_8h.html#ad88fde5877e29113cb4e6c6e7fd73f46":[9,0,2,0,0,15,7],
-"d6/dc0/ancillarylist_8h.html#adb64bfe44d7bd562120ea94bbc2bf6f2":[9,0,2,0,0,15,13],
-"d6/dc0/ancillarylist_8h.html#adffcad0c8be6542440510d753d9f0ad9":[9,0,2,0,0,15,3],
-"d6/dc0/ancillarylist_8h.html#af0aba4d5c2d9167139976b04b469c3dc":[9,0,2,0,0,15,2],
-"d6/dc0/ancillarylist_8h_source.html":[9,0,2,0,0,15],
-"d6/dc0/struct_dolby_capture_config.html":[8,0,198],
-"d6/dc0/struct_dolby_capture_config.html#a0d1f05d7bf8ee01369daf9f3130a51b2":[8,0,198,4],
-"d6/dc0/struct_dolby_capture_config.html#a6905f0209a38ca4fbbc0486fbdd18d71":[8,0,198,1]
+"d6/dc0/ancillarylist_8h.html#adb64bfe44d7bd562120ea94bbc2bf6f2":[9,0,2,0,0,15,13]
 };

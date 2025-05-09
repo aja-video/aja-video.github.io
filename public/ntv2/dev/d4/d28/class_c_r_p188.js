@@ -42,7 +42,7 @@ var class_c_r_p188 =
     [ "InitBurnIn", "d4/d28/class_c_r_p188.html#a5740ee626d7ae19d4913b81a0f5cdb1d", null ],
     [ "IsFreshRP188", "d4/d28/class_c_r_p188.html#affcbbab91501fe09661749f9ff1041f2", null ],
     [ "MaxFramesPerDay", "d4/d28/class_c_r_p188.html#ae8033a0e931d178095f49d9f65c5129f", null ],
-    [ "operator==", "d4/d28/class_c_r_p188.html#af95a210565004fad0c95c419ed1a3875", null ],
+    [ "operator==", "d4/d28/class_c_r_p188.html#adb8368ca0d84faeac6cf9b73791d4e15", null ],
     [ "SetBFGBits", "d4/d28/class_c_r_p188.html#a8e49e2b863aa7d67a37b89a03eb62384", null ],
     [ "SetBinaryGroup", "d4/d28/class_c_r_p188.html#a205f0c865f8de8a40fe11b189d3a452e", null ],
     [ "SetColorFrame", "d4/d28/class_c_r_p188.html#aae19696e4305be4bc4aa706e11e686c5", null ],
