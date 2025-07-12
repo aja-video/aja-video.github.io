@@ -1,0 +1,27 @@
+var combase_8h =
+[
+    [ "_AMOVIESETUP_FILTER", "d0/dde/struct___a_m_o_v_i_e_s_e_t_u_p___f_i_l_t_e_r.html", "d0/dde/struct___a_m_o_v_i_e_s_e_t_u_p___f_i_l_t_e_r" ],
+    [ "CBaseObject", "d1/d2d/class_c_base_object.html", "d1/d2d/class_c_base_object" ],
+    [ "CUnknown", "d9/d89/class_c_unknown.html", "d9/d89/class_c_unknown" ],
+    [ "CFactoryTemplate", "db/d4c/class_c_factory_template.html", "db/d4c/class_c_factory_template" ],
+    [ "DECLARE_IUNKNOWN", "de/de7/combase_8h.html#a7fd6b0a81be665f6112bae83cdec3842", null ],
+    [ "INONDELEGATINGUNKNOWN_DEFINED", "de/de7/combase_8h.html#ad15e82b8fe1fe25966ff2b09761e7145", null ],
+    [ "AMOVIESETUP_FILTER", "de/de7/combase_8h.html#a16606b7a4702bfa17de48f75398a03d4", null ],
+    [ "AMOVIESETUP_MEDIATYPE", "de/de7/combase_8h.html#a49a044b29fa5cc2632cb3344603621ca", null ],
+    [ "AMOVIESETUP_PIN", "de/de7/combase_8h.html#a3900c49018a63e3522c39a3061dc6138", null ],
+    [ "LPAMOVIESETUP_FILTER", "de/de7/combase_8h.html#aba15fa1e7d0f859a4e14edcc6c5e6ac3", null ],
+    [ "LPAMOVIESETUP_MEDIATYPE", "de/de7/combase_8h.html#a47b7d9826af417b2f0e6a6705813b30e", null ],
+    [ "LPAMOVIESETUP_PIN", "de/de7/combase_8h.html#af2309ee61d37f2112e5b2e2d7e3b2767", null ],
+    [ "LPFNInitRoutine", "de/de7/combase_8h.html#a4ffd32e6f7a6bc02ebbe9c64e9178d6f", null ],
+    [ "LPFNNewCOMObject", "de/de7/combase_8h.html#a2d3bb1a3a870aacb2fd6f2ca5e8145d1", null ],
+    [ "PAMOVIESETUP_FILTER", "de/de7/combase_8h.html#a1b1f38a8618d64a77d911370df557920", null ],
+    [ "PAMOVIESETUP_MEDIATYPE", "de/de7/combase_8h.html#ac3a4da4688f85424219b6bccbf9b80d7", null ],
+    [ "PAMOVIESETUP_PIN", "de/de7/combase_8h.html#a80dde6308d1e0882ad47fa93c70d0aad", null ],
+    [ "PNDUNKNOWN", "de/de7/combase_8h.html#a5cc57e914d8e86b8ddbd33bec1cfe6fd", null ],
+    [ "DECLARE_INTERFACE", "de/de7/combase_8h.html#aed89b0115c6414f6ca0fed8a2bfefd39", null ],
+    [ "GetInterface", "de/de7/combase_8h.html#aa2242bdf630a29b743a3de7939fce99d", null ],
+    [ "LoadOLEAut32", "de/de7/combase_8h.html#a9d355624aa53cbb3783f626ff124748c", null ],
+    [ "g_amPlatform", "de/de7/combase_8h.html#afb8ea24a027b8bdf16d517af3ae8b634", null ],
+    [ "g_hInst", "de/de7/combase_8h.html#af03f36c7876ed17a936f00434a9236c4", null ],
+    [ "g_osInfo", "de/de7/combase_8h.html#a01475874bf81ba112731a0c6fb61ee80", null ]
+];

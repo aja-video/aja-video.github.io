@@ -1,0 +1,5 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7633178604aa0b1781ef13907da270d2 =
+[
+    [ "object_t", "d9/ded/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7633178604aa0b1781ef13907da270d2.html#a0eb1a14c838ca88e392e553d5b28a951", null ],
+    [ "value", "d9/ded/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7633178604aa0b1781ef13907da270d2.html#ae5c8b2c642ebfdaac9b9dc002b82337a", null ]
+];

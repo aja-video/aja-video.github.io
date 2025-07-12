@@ -1,0 +1,4 @@
+var structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_5f55318649f88390ddb8401a1c28ab6e =
+[
+    [ "type", "d1/dcd/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_5f55318649f88390ddb8401a1c28ab6e.html#a7751546e8bfe3910699e450c73478950", null ]
+];
