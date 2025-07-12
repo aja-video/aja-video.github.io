@@ -17,7 +17,7 @@ Documentation for current and past SDK releases — plus the latest ongoing deve
   - [17.1.0 Release](/public/ntv2/17_1_0/)
   - [17.0.1 Release](/public/ntv2/17_0_1/)
 - **New:**
-  - 🛠 [17.6.0 Beta](/public/ntv2/17_5_0/) (“beta”)
+  - 🛠 [17.6.0 Beta](/public/ntv2/17_6_0/) (“beta”)
   - 🛠 [Development](/public/ntv2/dev/) (“beta”)
 
 ### NTV2 SDK Knowledgebase
