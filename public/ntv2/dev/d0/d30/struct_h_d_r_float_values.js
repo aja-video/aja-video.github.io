@@ -1,5 +1,9 @@
 var struct_h_d_r_float_values =
 [
+    [ "setFromRegValues", "d0/d30/struct_h_d_r_float_values.html#afe95778c8186bcefe117fbf20201c159", null ],
+    [ "toRegValues", "d0/d30/struct_h_d_r_float_values.html#acbf75395664a17a51849cc42e7548c6e", null ],
+    [ "validPrimariesAndWhitePoint", "d0/d30/struct_h_d_r_float_values.html#a1ca7be1da1c0a004acaa7b15232a6199", null ],
+    [ "zero", "d0/d30/struct_h_d_r_float_values.html#ac19e5459402945648dc8507bbde96ac2", null ],
     [ "bluePrimaryX", "d0/d30/struct_h_d_r_float_values.html#a8effbfc0a4a83e8ca2c33456b5b39f78", null ],
     [ "bluePrimaryY", "d0/d30/struct_h_d_r_float_values.html#a8f53cec9999d3dae2f4dd30c5573a0e9", null ],
     [ "electroOpticalTransferFunction", "d0/d30/struct_h_d_r_float_values.html#a45937dcd441d157ef2e8e4240f4cc519", null ],

@@ -1,5 +1,9 @@
 var struct_h_d_r_reg_values =
 [
+    [ "setBT2020", "d3/da4/struct_h_d_r_reg_values.html#a61fc40c14787793ede034bbef3879409", null ],
+    [ "setDCIP3", "d3/da4/struct_h_d_r_reg_values.html#abde9a1548e5c95005a4fa165471aaf2a", null ],
+    [ "validPrimariesAndWhitePoint", "d3/da4/struct_h_d_r_reg_values.html#aed6696a529fdbc80adda78eb8099cf29", null ],
+    [ "zero", "d3/da4/struct_h_d_r_reg_values.html#a5697dcb6e0bd65a31c792f8ad57c586a", null ],
     [ "bluePrimaryX", "d3/da4/struct_h_d_r_reg_values.html#a62678f2d2f639a6a1e753344fdddf151", null ],
     [ "bluePrimaryY", "d3/da4/struct_h_d_r_reg_values.html#ab50da23cded7aa595502af2785e4a9dc", null ],
     [ "electroOpticalTransferFunction", "d3/da4/struct_h_d_r_reg_values.html#ad5ee7ff007584b8e70e6eac30b3ed27e", null ],

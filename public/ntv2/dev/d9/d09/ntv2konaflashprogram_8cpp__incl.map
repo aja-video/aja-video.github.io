@@ -1,62 +1,60 @@
 <map id="/home/tcbuilder/buildAgent/work/df8e8cce5bebfd58/libajantv2/ajantv2/src/ntv2konaflashprogram.cpp" name="/home/tcbuilder/buildAgent/work/df8e8cce5bebfd58/libajantv2/ajantv2/src/ntv2konaflashprogram.cpp">
-<area shape="rect" id="node1" title="Implementation of CNTV2KonaFlashProgram class." alt="" coords="2861,5,3136,61"/>
-<area shape="rect" id="node2" href="$d1/dbd/ntv2konaflashprogram_8h.html" title="Declares the CNTV2KonaFlashProgram class." alt="" coords="2245,109,2425,136"/>
-<area shape="rect" id="node24" href="$d4/d18/ntv2endian_8h.html" title="Defines a number of handy byte&#45;swapping macros." alt="" coords="2473,557,2580,584"/>
-<area shape="rect" id="node53" href="$d6/d50/ntv2registersmb_8h.html" title="Defines the KonaIP/IoIP registers." alt="" coords="2820,109,2961,136"/>
-<area shape="rect" id="node54" href="$db/d16/debug_8h.html" title="Declares the AJADebug class." alt="" coords="2791,632,2972,659"/>
-<area shape="rect" id="node57" href="$da/dbc/systemtime_8h.html" title="Declares the AJATime class." alt="" coords="2892,259,3111,285"/>
-<area shape="rect" id="node58" href="$dc/d54/common_8h.html" title="Private include file for all ajabase sources." alt="" coords="3198,707,3405,733"/>
-<area shape="rect" id="node60" title=" " alt="" coords="3185,109,3244,136"/>
-<area shape="rect" id="node3" href="$df/d4b/ntv2card_8h.html" title="Declares the CNTV2Card class." alt="" coords="1561,259,1652,285"/>
-<area shape="rect" id="node11" title=" " alt="" coords="1501,931,1560,957"/>
-<area shape="rect" id="node12" title=" " alt="" coords="1536,781,1616,808"/>
-<area shape="rect" id="node15" title=" " alt="" coords="2059,781,2122,808"/>
-<area shape="rect" id="node45" title=" " alt="" coords="133,557,206,584"/>
-<area shape="rect" id="node46" title=" " alt="" coords="2473,184,2569,211"/>
-<area shape="rect" id="node47" title=" " alt="" coords="2593,184,2679,211"/>
-<area shape="rect" id="node48" title=" " alt="" coords="2703,184,2766,211"/>
-<area shape="rect" id="node49" href="$d7/dc7/ntv2debug_8h.html" title=" " alt="" coords="145,707,247,733"/>
-<area shape="rect" id="node50" href="$d6/dc8/ntv2mcsfile_8h.html" title="Declares the CNTV2MCSfile class." alt="" coords="95,483,206,509"/>
-<area shape="rect" id="node51" href="$d3/df0/ntv2spiinterface_8h.html" title="Declares the CNTV2SpiFlash and CNTV2AxiSpiFlash classes." alt="" coords="1653,184,1793,211"/>
-<area shape="rect" id="node52" href="$da/db1/ntv2bitfile_8h.html" title="Declares the CNTV2Bitfile class." alt="" coords="346,483,446,509"/>
-<area shape="rect" id="node4" href="$d3/d7d/ntv2macdriverinterface_8h.html" title="Implements the MacOS&#45;specific flavor of CNTV2DriverInterface." alt="" coords="873,333,1060,360"/>
-<area shape="rect" id="node26" href="$d0/d81/ntv2utils_8h.html" title="Declares numerous NTV2 utility functions." alt="" coords="1341,557,1432,584"/>
-<area shape="rect" id="node41" href="$dc/d95/ntv2signalrouter_8h.html" title="Declares CNTV2SignalRouter class." alt="" coords="2575,632,2715,659"/>
-<area shape="rect" id="node44" href="$d8/d58/ntv2devicecapabilities_8h.html" title="Declares the DeviceCapabilities class." alt="" coords="1167,333,1348,360"/>
-<area shape="rect" id="node5" href="$d4/dd7/ntv2publicinterface_8h.html" title="Declares enums and structs used by all platform drivers and the SDK." alt="" coords="997,707,1157,733"/>
-<area shape="rect" id="node20" href="$da/d23/ntv2macpublicinterface_8h.html" title="Declares MacOS&#45;only enums used by the Mac driver and the SDK." alt="" coords="691,408,879,435"/>
-<area shape="rect" id="node22" href="$d4/dc0/ntv2driverinterface_8h.html" title="Declares the CNTV2DriverInterface base class." alt="" coords="987,408,1146,435"/>
-<area shape="rect" id="node6" href="$db/de2/ajatypes_8h.html" title="Declares the most fundamental data types used by NTV2. Since Windows NT was the first principal devel..." alt="" coords="1403,856,1493,883"/>
-<area shape="rect" id="node8" href="$d6/d0c/ntv2enums_8h.html" title="Enumerations for controlling NTV2 devices." alt="" coords="435,781,541,808"/>
-<area shape="rect" id="node10" href="$d6/dd9/ajaexport_8h.html" title="Defines the import/export macros for producing DLLs or LIBs." alt="" coords="531,931,627,957"/>
-<area shape="rect" id="node13" title=" " alt="" coords="2715,781,2757,808"/>
-<area shape="rect" id="node14" title=" " alt="" coords="1983,781,2033,808"/>
-<area shape="rect" id="node16" title=" " alt="" coords="955,781,1029,808"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1053,781,1112,808"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1137,781,1207,808"/>
-<area shape="rect" id="node19" href="$da/df0/ntv2virtualregisters_8h.html" title="Declares enums for virtual registers used in all platform drivers and the SDK." alt="" coords="768,781,931,808"/>
-<area shape="rect" id="node7" title=" " alt="" coords="2417,931,2487,957"/>
-<area shape="rect" id="node9" href="$d6/db1/ntv2version_8h.html" title="Defines for the NTV2 SDK version number, used by ajantv2/includes/ntv2enums.h. See the ajantv2/includ..." alt="" coords="769,856,879,883"/>
-<area shape="rect" id="node21" title=" " alt="" coords="523,483,645,509"/>
-<area shape="rect" id="node23" href="$d8/de5/ntv2nubtypes_8h.html" title="Declares data types and structures used in NTV2 &quot;nub&quot; packets." alt="" coords="2432,483,2555,509"/>
-<area shape="rect" id="node25" href="$d6/d8f/ntv2nubaccess_8h.html" title="Declares NTV2 &quot;nub&quot; client functions." alt="" coords="1747,483,1877,509"/>
-<area shape="rect" id="node30" href="$dd/d42/lock_8h.html" title="Declares the AJALock class." alt="" coords="2129,557,2297,584"/>
-<area shape="rect" id="node38" href="$d8/d0f/ntv2devicefeatures_8h.html" title="Declares device capability functions." alt="" coords="433,632,593,659"/>
-<area shape="rect" id="node40" title=" " alt="" coords="823,483,897,509"/>
-<area shape="rect" id="node36" href="$da/dae/ajarefptr_8h.html" title="Defines the AJARefPtr template class." alt="" coords="1900,557,2105,584"/>
-<area shape="rect" id="node27" href="$d9/d61/ntv2videodefines_8h.html" title="Declares common video macros and structs used in the SDK." alt="" coords="1580,632,1727,659"/>
-<area shape="rect" id="node28" href="$dc/df4/ntv2formatdescriptor_8h.html" title="Declares the NTV2FormatDescriptor class." alt="" coords="1073,632,1244,659"/>
-<area shape="rect" id="node29" href="$de/d26/ntv2m31enums_8h.html" title="Enumerations for controlling NTV2 devices with m31 HEVC encoders." alt="" coords="1319,632,1455,659"/>
-<area shape="rect" id="node31" href="$d4/d79/public_8h.html" title="Master header for the ajabase library." alt="" coords="2400,707,2589,733"/>
-<area shape="rect" id="node35" title=" " alt="" coords="2172,632,2247,659"/>
-<area shape="rect" id="node32" href="$db/db5/export_8h.html" title="Declares system&#45;dependent import/export macros and libraries." alt="" coords="2880,781,3072,808"/>
-<area shape="rect" id="node33" title=" " alt="" coords="2437,781,2480,808"/>
-<area shape="rect" id="node34" href="$d9/d49/types_8h.html" title="Declares common types used in the ajabase library." alt="" coords="2504,781,2691,808"/>
-<area shape="rect" id="node37" href="$dd/d02/atomic_8h.html" title="Declares the AJAAtomic class." alt="" coords="2005,632,2147,659"/>
-<area shape="rect" id="node39" href="$d9/dfb/ntv2devicefeatures_8hh.html" title="Declares NTV2DeviceCanDo... and NTV2DeviceGetNum... functions. This module is included at compile tim..." alt="" coords="323,707,491,733"/>
-<area shape="rect" id="node42" title=" " alt="" coords="2781,781,2856,808"/>
-<area shape="rect" id="node43" title=" " alt="" coords="2715,707,2789,733"/>
-<area shape="rect" id="node55" title=" " alt="" coords="3107,707,3173,733"/>
-<area shape="rect" id="node56" href="$d0/db4/debugshare_8h.html" title="Declares the constants used for sharing debug messages. These structures are used to gather debug mes..." alt="" coords="2865,707,3082,733"/>
-<area shape="rect" id="node59" title=" " alt="" coords="3325,781,3392,808"/>
+<area shape="rect" id="node1" title="Implementation of CNTV2KonaFlashProgram class." alt="" coords="2955,5,3229,61"/>
+<area shape="rect" id="node2" href="$d1/dbd/ntv2konaflashprogram_8h.html" title="Declares the CNTV2KonaFlashProgram class." alt="" coords="386,109,566,136"/>
+<area shape="rect" id="node24" href="$d4/d18/ntv2endian_8h.html" title="Defines a number of handy byte&#45;swapping macros." alt="" coords="2489,557,2596,584"/>
+<area shape="rect" id="node51" href="$d6/d50/ntv2registersmb_8h.html" title="Defines the KonaIP/IoIP registers." alt="" coords="2913,109,3055,136"/>
+<area shape="rect" id="node52" href="$db/d16/debug_8h.html" title="Declares the AJADebug class." alt="" coords="2785,632,2967,659"/>
+<area shape="rect" id="node55" href="$da/dbc/systemtime_8h.html" title="Declares the AJATime class." alt="" coords="3033,259,3252,285"/>
+<area shape="rect" id="node56" href="$dc/d54/common_8h.html" title="Private include file for all ajabase sources." alt="" coords="3314,707,3521,733"/>
+<area shape="rect" id="node58" title=" " alt="" coords="3327,109,3385,136"/>
+<area shape="rect" id="node3" href="$df/d4b/ntv2card_8h.html" title="Declares the CNTV2Card class." alt="" coords="941,259,1032,285"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1585,931,1644,957"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1601,781,1681,808"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2229,781,2291,808"/>
+<area shape="rect" id="node43" title=" " alt="" coords="175,557,249,584"/>
+<area shape="rect" id="node44" title=" " alt="" coords="44,184,140,211"/>
+<area shape="rect" id="node45" title=" " alt="" coords="164,184,249,211"/>
+<area shape="rect" id="node46" title=" " alt="" coords="274,184,337,211"/>
+<area shape="rect" id="node47" href="$d7/dc7/ntv2debug_8h.html" title=" " alt="" coords="298,707,401,733"/>
+<area shape="rect" id="node48" href="$d6/dc8/ntv2mcsfile_8h.html" title="Declares the CNTV2MCSfile class." alt="" coords="202,483,313,509"/>
+<area shape="rect" id="node49" href="$d3/df0/ntv2spiinterface_8h.html" title="Declares the CNTV2SpiFlash and CNTV2AxiSpiFlash classes." alt="" coords="541,184,681,211"/>
+<area shape="rect" id="node50" href="$da/db1/ntv2bitfile_8h.html" title="Declares the CNTV2Bitfile class." alt="" coords="389,483,489,509"/>
+<area shape="rect" id="node4" href="$d3/d7d/ntv2macdriverinterface_8h.html" title="Implements the MacOS&#45;specific flavor of CNTV2DriverInterface." alt="" coords="763,333,949,360"/>
+<area shape="rect" id="node26" href="$d0/d81/ntv2utils_8h.html" title="Declares numerous NTV2 utility functions." alt="" coords="1223,557,1313,584"/>
+<area shape="rect" id="node39" href="$dc/d95/ntv2signalrouter_8h.html" title="Declares CNTV2SignalRouter class." alt="" coords="2365,632,2505,659"/>
+<area shape="rect" id="node42" href="$d8/d58/ntv2devicecapabilities_8h.html" title="Declares the DeviceCapabilities class." alt="" coords="1027,333,1208,360"/>
+<area shape="rect" id="node5" href="$d4/dd7/ntv2publicinterface_8h.html" title="Declares enums and structs used by all platform drivers and the SDK." alt="" coords="1099,707,1259,733"/>
+<area shape="rect" id="node20" href="$da/d23/ntv2macpublicinterface_8h.html" title="Declares MacOS&#45;only enums used by the Mac driver and the SDK." alt="" coords="681,408,869,435"/>
+<area shape="rect" id="node22" href="$d4/dc0/ntv2driverinterface_8h.html" title="Declares the CNTV2DriverInterface base class." alt="" coords="1038,408,1197,435"/>
+<area shape="rect" id="node6" href="$db/de2/ajatypes_8h.html" title="Declares the most fundamental data types used by NTV2. Since Windows NT was the first principal devel..." alt="" coords="1385,856,1476,883"/>
+<area shape="rect" id="node8" href="$d6/d0c/ntv2enums_8h.html" title="Enumerations for controlling NTV2 devices." alt="" coords="551,781,657,808"/>
+<area shape="rect" id="node10" href="$d6/dd9/ajaexport_8h.html" title="Defines the import/export macros for producing DLLs or LIBs." alt="" coords="581,931,677,957"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2432,781,2475,808"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1928,781,1979,808"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1020,781,1095,808"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1119,781,1177,808"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1202,781,1273,808"/>
+<area shape="rect" id="node19" href="$da/df0/ntv2virtualregisters_8h.html" title="Declares enums for virtual registers used in all platform drivers and the SDK." alt="" coords="833,781,996,808"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2254,931,2325,957"/>
+<area shape="rect" id="node9" href="$d6/db1/ntv2version_8h.html" title="Defines for the NTV2 SDK version number, used by ajantv2/includes/ntv2enums.h. See the ajantv2/includ..." alt="" coords="574,856,685,883"/>
+<area shape="rect" id="node21" title=" " alt="" coords="565,483,686,509"/>
+<area shape="rect" id="node23" href="$d8/de5/ntv2nubtypes_8h.html" title="Declares data types and structures used in NTV2 &quot;nub&quot; packets." alt="" coords="2252,483,2375,509"/>
+<area shape="rect" id="node25" href="$d6/d8f/ntv2nubaccess_8h.html" title="Declares NTV2 &quot;nub&quot; client functions." alt="" coords="1560,483,1691,509"/>
+<area shape="rect" id="node30" href="$dd/d42/lock_8h.html" title="Declares the AJALock class." alt="" coords="1969,557,2137,584"/>
+<area shape="rect" id="node36" href="$d8/d0f/ntv2devicefeatures_8h.html" title="Declares device capability functions." alt="" coords="543,632,703,659"/>
+<area shape="rect" id="node38" title=" " alt="" coords="1081,483,1156,509"/>
+<area shape="rect" id="node27" href="$d9/d61/ntv2videodefines_8h.html" title="Declares common video macros and structs used in the SDK." alt="" coords="1689,632,1836,659"/>
+<area shape="rect" id="node28" href="$dc/df4/ntv2formatdescriptor_8h.html" title="Declares the NTV2FormatDescriptor class." alt="" coords="1183,632,1353,659"/>
+<area shape="rect" id="node29" href="$de/d26/ntv2m31enums_8h.html" title=" " alt="" coords="1479,632,1615,659"/>
+<area shape="rect" id="node31" href="$d4/d79/public_8h.html" title="Master header for the ajabase library." alt="" coords="3100,707,3289,733"/>
+<area shape="rect" id="node35" title=" " alt="" coords="2063,632,2137,659"/>
+<area shape="rect" id="node32" href="$db/db5/export_8h.html" title="Declares system&#45;dependent import/export macros and libraries." alt="" coords="3191,781,3383,808"/>
+<area shape="rect" id="node33" title=" " alt="" coords="3124,781,3167,808"/>
+<area shape="rect" id="node34" href="$d9/d49/types_8h.html" title="Declares common types used in the ajabase library." alt="" coords="2913,781,3100,808"/>
+<area shape="rect" id="node37" href="$d9/dfb/ntv2devicefeatures_8hh.html" title="Declares NTV2DeviceCanDo... and NTV2DeviceGetNum... functions. This module is included at compile tim..." alt="" coords="476,707,644,733"/>
+<area shape="rect" id="node40" title=" " alt="" coords="2663,781,2737,808"/>
+<area shape="rect" id="node41" title=" " alt="" coords="2567,707,2641,733"/>
+<area shape="rect" id="node53" title=" " alt="" coords="3009,707,3076,733"/>
+<area shape="rect" id="node54" href="$d0/db4/debugshare_8h.html" title="Declares the constants used for sharing debug messages. These structures are used to gather debug mes..." alt="" coords="2767,707,2985,733"/>
+<area shape="rect" id="node57" title=" " alt="" coords="3457,781,3524,808"/>
 </map>

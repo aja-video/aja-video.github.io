@@ -163,7 +163,9 @@ var index =
       ] ],
       [ "‘logjammer’ Command-Line Utility", "db/d02/toolsandutilities.html#usinglogjammer", null ],
       [ "‘logreader’ Command-Line Utility", "db/d02/toolsandutilities.html#usinglogreader", null ],
+      [ "‘ntv2route’ Command-Line Utility", "db/d02/toolsandutilities.html#usingntv2route", null ],
       [ "“NTV2Watcher”", "db/d02/toolsandutilities.html#usingntv2watcher", [
+        [ "Obtaining NTV2Watcher", "db/d02/toolsandutilities.html#watcherobtain", null ],
         [ "General Operation", "db/d02/toolsandutilities.html#inspectorgeneralop", [
           [ "Device Selection", "db/d02/toolsandutilities.html#watcherdevselect", null ],
           [ "Menu Commands", "db/d02/toolsandutilities.html#watchermenucommands", null ],
@@ -189,9 +191,11 @@ var index =
           [ "C++ Code", "db/d02/toolsandutilities.html#inspectorroutecode", null ],
           [ "Shorthand Text", "db/d02/toolsandutilities.html#inspectorroutetext", null ],
           [ "Registers", "db/d02/toolsandutilities.html#inspectorrouteregs", null ],
-          [ "Crosspoint Map", "db/d02/toolsandutilities.html#inspectorroutexptmap", null ]
+          [ "Crosspoint Map", "db/d02/toolsandutilities.html#inspectorroutexptmap", null ],
+          [ "Routing Presets", "db/d02/toolsandutilities.html#inspectorroutepresets", null ]
         ] ],
         [ "Tool Windows", "db/d02/toolsandutilities.html#watchertools", null ],
+        [ "“Manage Devices” Tool", "db/d02/toolsandutilities.html#watcherdevmgr", null ],
         [ "“Fill Buffer” Tool", "db/d02/toolsandutilities.html#fillbufferdlog", null ],
         [ "“EIA/CEA-608 Caption” Tool", "db/d02/toolsandutilities.html#anc608viewer", null ],
         [ "“Register Cycler” Tool", "db/d02/toolsandutilities.html#regautocycler", null ],
@@ -208,8 +212,9 @@ var index =
           [ "General Preferences", "db/d02/toolsandutilities.html#watcherprefsgeneral", null ],
           [ "Color Preferences", "db/d02/toolsandutilities.html#watcherprefscolor", null ],
           [ "Frame Buffers Preferences", "db/d02/toolsandutilities.html#watcherprefsfbs", null ],
-          [ "Cables Preferences", "db/d02/toolsandutilities.html#watcherprefscables", null ]
-        ] ]
+          [ "Routing Preferences", "db/d02/toolsandutilities.html#watcherprefscables", null ]
+        ] ],
+        [ "Command Line Parameters", "db/d02/toolsandutilities.html#watchercmdline", null ]
       ] ],
       [ "‘supportlog’ Command-Line Utility", "db/d02/toolsandutilities.html#usingsupportlog", null ],
       [ "“AJA System Test”", "db/d02/toolsandutilities.html#usingsystemtest", [
@@ -246,7 +251,8 @@ var index =
         [ "HDMI Auxiliary Data Recording", "d9/d07/demoapps.html#ntv2dolbycaptureaux", null ],
         [ "NTV2QtMultiInput Demo", "d9/d07/demoapps.html#ntv2qtmultiinput", null ],
         [ "NTV2QtPreview Demo", "d9/d07/demoapps.html#ntv2qtpreview", null ],
-        [ "NTV2QtStreamPreview Demo", "d9/d07/demoapps.html#ntv2qtstreampreview", null ]
+        [ "NTV2QtStreamPreview Demo", "d9/d07/demoapps.html#ntv2qtstreampreview", null ],
+        [ "NTV2VCAM Demo", "d9/d07/demoapps.html#ntv2vcam", null ]
       ] ],
       [ "Capture & Playout Demos", "d9/d07/demoapps.html#demoappsplaycapture", [
         [ "NTV2Burn Demo", "d9/d07/demoapps.html#ntv2burn", null ],
@@ -257,16 +263,6 @@ var index =
       ] ],
       [ "Other Demos", "d9/d07/demoapps.html#demoappsmisc", [
         [ "NTV2EnumerateBoards Demo", "d9/d07/demoapps.html#ntv2enumerateboards", null ],
-        [ "NTV2 JSON Setup Demo", "d9/d07/demoapps.html#ntv2konaipjsonsetup", null ],
-        [ "NTV2 J2K Setup Demo", "d9/d07/demoapps.html#ntv2konaipj2ksetup", null ],
-        [ "NTV2EncodeHEVC Demo", "d9/d07/demoapps.html#ntv2encodehevc", [
-          [ "Overview", "d9/d07/demoapps.html#ntv2encodehevc-overview", null ],
-          [ "Build and Run", "d9/d07/demoapps.html#ntv2encodehevc-build", null ],
-          [ "Design", "d9/d07/demoapps.html#ntv2encodehevc-design", null ],
-          [ "Thread Model", "d9/d07/demoapps.html#ntv2encodehevc-threads", null ],
-          [ "Startup and Shutdown", "d9/d07/demoapps.html#ntv2encodehevc-startupshutdown", null ],
-          [ "Future Development", "d9/d07/demoapps.html#ntv2encodehevc-futuredev", null ]
-        ] ],
         [ "NTV2SwitchBitfile Demo", "d9/d07/demoapps.html#ntv2switchbitfile", null ],
         [ "NTV2HDRSetup Demo", "d9/d07/demoapps.html#ntv2hdrsetup", null ]
       ] ]

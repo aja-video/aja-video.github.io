@@ -2746,6 +2746,7 @@ var ntv2enums_8h =
     [ "VPIDBitDepth", "d6/d0c/ntv2enums_8h.html#a39658b4ba8eecf31c1f9c585b3fac9e5", [
       [ "VPIDBitDepth_8", "d6/d0c/ntv2enums_8h.html#a39658b4ba8eecf31c1f9c585b3fac9e5afcf85313ebe0b77abb2645ac123fb3ce", null ],
       [ "VPIDBitDepth_10_Full", "d6/d0c/ntv2enums_8h.html#a39658b4ba8eecf31c1f9c585b3fac9e5a5af5ebb4dd69203f48c368abf8bd2340", null ],
+      [ "VPIDBitDepth_10_Full_ST292", "d6/d0c/ntv2enums_8h.html#a39658b4ba8eecf31c1f9c585b3fac9e5ae2b7c7ad57a2c38b461217fe8d4f58c8", null ],
       [ "VPIDBitDepth_10", "d6/d0c/ntv2enums_8h.html#a39658b4ba8eecf31c1f9c585b3fac9e5a6fa2edbbdbf2266a48912c39f4d1ae81", null ],
       [ "VPIDBitDepth_12", "d6/d0c/ntv2enums_8h.html#a39658b4ba8eecf31c1f9c585b3fac9e5a9f62b874826039fb7b8a6a68546617f2", null ],
       [ "VPIDBitDepth_12_Full", "d6/d0c/ntv2enums_8h.html#a39658b4ba8eecf31c1f9c585b3fac9e5aa4bc3dd00ee4aecd400475c1bee8dfc6", null ]

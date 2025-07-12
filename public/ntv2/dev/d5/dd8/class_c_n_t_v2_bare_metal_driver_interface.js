@@ -25,7 +25,6 @@ var class_c_n_t_v2_bare_metal_driver_interface =
     [ "GetDMADriverBufferPhysicalAddress", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#abe1d852af6fe704241df159c43a48ca3", null ],
     [ "GetDMANumDriverBuffers", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#abb09520f88741ac340d1e07c3289b8fc", null ],
     [ "GetInterruptCount", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a7f27054630cadd54ee9c45215a5a2ff8", null ],
-    [ "HevcSendMessage", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a0f0f236134cc4c0edc2db34a1f463a39", null ],
     [ "MapDMADriverBuffer", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab60675251286b526f8ced86a9fc7ff9a", null ],
     [ "MapDNXRegisters", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a42321c9716e8c47dde88faf76a2dfa9b", null ],
     [ "MapFrameBuffers", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab8516022f95576a4decdfc17d16bff95", null ],

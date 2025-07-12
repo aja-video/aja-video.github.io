@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -415,7 +415,7 @@ NTV2CCPlayer Demo</h2>
 <div class="line">                                                                       e.g.      0-6    -- frames 0 thru 6 (inclusive)</div>
 <div class="line">                                         Defaults to the lowest-numbered unused 7 frames.</div>
 <div class="line"> </div>
-<div class="line">-n, --noline21                           Don<span class="stringliteral">&#39;t encode/embed &quot;analog&quot; caption data into line 21 (SD only).</span></div>
+<div class="line">-<a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>, --noline21                           Don<span class="stringliteral">&#39;t encode/embed &quot;analog&quot; caption data into line 21 (SD only).</span></div>
 <div class="line"><span class="stringliteral">                                         By default, for SD output, ntv2ccplayer will encode &quot;analog&quot; CC data into line 21.</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">--no608                                  Don&#39;</span>t transmit CEA608 anc data packet(s).</div>
@@ -435,7 +435,7 @@ NTV2CCPlayer Demo</h2>
 <div class="line"><span class="stringliteral">                                                         TX3 | tx3      Text channel 3.</span></div>
 <div class="line"><span class="stringliteral">                                                         TX4 | tx4      Text channel 4.</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">-e exit|loop|idle[,...]                  Specifies what happens when the last specified text file&#39;</span>s contents have been queued for playout.</div>
+<div class="line"><span class="stringliteral">-e exit|loop|idle[,...]                  Specifies what happens when the last specified text file&#39;</span>s contents have been queued <a class="code" href="../../de/d7b/dllentry_8cpp.html#a11610537ed3fcc7a653ac9450206e0c6">for</a> playout.</div>
 <div class="line">--<a class="code" href="../../d5/d75/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c490cba3dc143488cfde07215d9f17762.html#ab064565541662d5589ff30c4b941e2f6">end</a>=exit|loop|idle[,...]               Legal values:   exit     Terminates ntv2ccplayer after all text files have played. (Default)</div>
 <div class="line">                                                         loop     Replay the caption text file(s) forever.</div>
 <div class="line">                                                         idle     Continue to play frames indefinitely, but without captions.</div>
@@ -613,6 +613,7 @@ Capture Demos</h1>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtmultiinput">NTV2QtMultiInput Demo</a></li>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtpreview">NTV2QtPreview Demo</a></li>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2qtstreampreview">NTV2QtStreamPreview Demo</a></li>
+<li><a class="el" href="../../d9/d07/demoapps.html#ntv2vcam">NTV2VCAM Demo</a></li>
 </ul>
 </dd></dl>
 <hr  />
@@ -913,6 +914,42 @@ NTV2QtStreamPreview Demo</h2>
 </ul>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only! <hr  />
 </dd></dl>
+<h2><a class="anchor" id="ntv2vcam"></a>
+NTV2VCAM Demo</h2>
+<p>This demo implements a <b>Virtual WebCam</b> on <b>Linux</b> through the <b>V4L2 loopback</b> interface, and on <b>Windows</b> through the <b>DirectShow</b> interface. It uses <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatecapture">AutoCirculate Capture</a> to perform the streaming of video and audio.</p>
+<ul>
+<li><b>Linux Implementation:</b> A command-line program that when run (with <em>root</em> privileges), it connects the NTV2VCAM instance into the V4L2 subsystem through V4L2’s loopback API, which creates a virtual video device that V4L2 applications can read from like any other V4L2 video source. It also makes the audio stream available to applications through the ALSA loopback facility.<ul>
+<li><b>Command line usage:</b> <div class="fragment"><div class="line">ntv2vcam  [options...]</div>
+<div class="line"> </div>
+<div class="line">--version                  Display the SDK version information and exit.</div>
+<div class="line"> </div>
+<div class="line">-d|--device {spec}         Specifies the device to use.</div>
+<div class="line">                           Defaults to first device (index 0).</div>
+<div class="line"> </div>
+<div class="line">-c|--channel  {number}     Specifies the framestore/channel to use (1 thru 8).</div>
+<div class="line">                           Defaults to channel 1.</div>
+<div class="line"> </div>
+<div class="line">-p|--pixelFormat {spec}    Specifies the frame buffer pixel format to use.</div>
+<div class="line">                           Defaults to 8-bit YCbCr.</div>
+<div class="line">                           Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div>
+<div class="line"> </div>
+<div class="line">--hdmi                     Use first HDMI input instead of first SDI input.</div>
+<div class="line"> </div>
+<div class="line">-i|--vdev  {devicePath}    Specifies V4L2 loopback video device (defaults to /dev/video1).</div>
+<div class="line"> </div>
+<div class="line">-u|--adev  {audioSpec}     Specifies ALSA audio device (defaults to hw:Loopback,1,1).</div>
+<div class="line"> </div>
+<div class="line">-a|--audiolinks  {number}  Number of SDI audio links (0=silence or 1-4). Defaults to 1.</div>
+<div class="line"> </div>
+<div class="line">-?|--help|--usage          Shows command usage and options.</div>
+</div><!-- fragment --></li>
+</ul>
+</li>
+<li><p class="startli"><b>Windows Implementation:</b> A DLL that when registered (with <em>Administrator</em> privileges) allows <b>DirectShow</b> applications to stream video and audio from an NTV2 device.</p>
+<dl class="section note"><dt>Note</dt><dd>The parameters that stipulate device, channel, pixel format, etc. are hard-coded in the Windows-specific source code to capture from the first device’s first SDI input through the first Channel/FrameStore as 8-bit YCbCr. To change any of these parameters, the source code must be changed, the DLL rebuilt, and re-registered.</dd></dl>
+<p>See the <b>README.md</b> (in <code>demos/ntv2vcam</code>) for detailed instructions on how to build, run and troubleshoot this demo. </p><hr  />
+</li>
+</ul>
 <h1><a class="anchor" id="demoappsplaycapture"></a>
 Capture &amp; Playout Demos</h1>
 <dl class="section user"><dt>Contents</dt><dd><ul>
@@ -1074,9 +1111,6 @@ NTV2Overlay Demo</h2>
 Other Demos</h1>
 <dl class="section user"><dt>Contents</dt><dd><ul>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2enumerateboards">NTV2EnumerateBoards Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2konaipjsonsetup">NTV2 JSON Setup Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2konaipj2ksetup">NTV2 J2K Setup Demo</a></li>
-<li><a class="el" href="../../d9/d07/demoapps.html#ntv2encodehevc">NTV2EncodeHEVC Demo</a></li>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2switchbitfile">NTV2SwitchBitfile Demo</a></li>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2hdrsetup">NTV2HDRSetup Demo</a></li>
 </ul>
@@ -1091,174 +1125,6 @@ NTV2EnumerateBoards Demo</h2>
 <li>explore the various kinds of device information that can be obtained from the <a class="el" href="../../d6/d61/struct_n_t_v2_device_info.html">NTV2DeviceInfo</a> structure;</li>
 <li>how to get device information using the “device features” API thatʼs provided in the “ntv2boardfeatures.h” header file.</li>
 </ul>
-<hr  />
-<h2><a class="anchor" id="ntv2konaipjsonsetup"></a>
-NTV2 JSON Setup Demo</h2>
-<p>This Qt-based command-line program shows how to configure the network parameters for any of the konaipʼs physical SFP cages from a JSON data file.</p>
-<p>The program demonstrates…</p><ul>
-<li>how to detect if the AJA device is an IP device;</li>
-<li>how to determine if the MicroBlaze on the device is up and running;</li>
-<li>how to set the network configuration parameters for each of the SFP cages on the device.</li>
-</ul>
-<p>Changes in SDK 14.0</p><ul>
-<li>'Enable2022_7' is moved from the 'sfps' block to a global setting</li>
-<li>'networkPathDifferential' is moved from the 'receive' block to a global setting.</li>
-<li>'Protocol' is added, and is required to configure 2110 channels. Various 2110-only fields have been added too.</li>
-<li>'LinkAEnable' and 'LinkBEnable' fields have been added to both 'receive' and 'transmit' sections. If 'Enable2022_7' is set true, then both these settings are automatically true. For 2022-6, Tx and Rx can be on the top SFP (linkAEnable=true, linkBEnable=false) or on the bottom SFP. Since this functionality is now supported using the '4 channel rx/tx' firmware, support for the '2 plus 2' firmware is now discontinued.</li>
-</ul>
-<p>In the list of keyords below, an 'IP string' refers to something like '239.0.1.123'</p>
-<p><b>Keywords in the scripts:</b> </p><div class="fragment"><div class="line">                            2022-6 2022-2   2110</div>
-<div class="line">Protocol                                     x      2110 | 2022</div>
-<div class="line">Enable2022_7                  x                     <span class="keyword">true</span> | <span class="keyword">false</span></div>
-<div class="line">networkPathDifferential       x                     decimal number (milliseconds)</div>
-<div class="line"> </div>
-<div class="line">sfps</div>
-<div class="line">    designator                x      x       x      top | bottom</div>
-<div class="line">    IPAddress                 x      x       x      IP <span class="keywordtype">string</span></div>
-<div class="line">    SubnetMask                x      x       x      IP <span class="keywordtype">string</span></div>
-<div class="line">    Router                    x      x       x      IP <span class="keywordtype">string</span></div>
-<div class="line"> </div>
-<div class="line">receive</div>
-<div class="line">    designator                x      x        x     channel1 | channel2 | channel3 | channel4</div>
-<div class="line">    stream                                    x     video | audio1</div>
-<div class="line">    LinkAEnable               x      x              <span class="keyword">true</span> | <span class="keyword">false</span></div>
-<div class="line">    primarySrcPort            x      x        x     decimal number</div>
-<div class="line">    primarySrcIPAddress       x      x        x     IP <span class="keywordtype">string</span></div>
-<div class="line">    primaryDestPort           x      x        x     decimal number</div>
-<div class="line">    primaryDestIPAddress      x      x        x     IP <span class="keywordtype">string</span></div>
-<div class="line">    primaryFilter             x      x        x     hex number (vlan 0x01 | SrcIP 0x02 | DestIP 0x04 | SrcPort 0x08 | DestPort 0x10 | ssrc 0x20)</div>
-<div class="line">    LinkBEnable               x      x              <span class="keyword">true</span> | <span class="keyword">false</span></div>
-<div class="line">    secondarySrcPort          x                     decimal number</div>
-<div class="line">    secondarySrcIPAddress     x                     IP <span class="keywordtype">string</span></div>
-<div class="line">    secondaryDestPort         x                     decimal number</div>
-<div class="line">    secondaryDestIPAddress    x                     IP <span class="keywordtype">string</span></div>
-<div class="line">    secondaryFilter           x                     hex number (vlan 0x01 | SrcIP 0x02 | DestIP 0x04 | SrcPort 0x08 | DestPort 0x10 | ssrc 0x20)</div>
-<div class="line">    playoutDelay              x      x        x     decimal number (milliseconds)</div>
-<div class="line">    vlan                      x      x        x     decimal number</div>
-<div class="line">    ssrc                      x      x        x     decimal number</div>
-<div class="line">    payload                                   x     decimal number (payload type)</div>
-<div class="line">    videoFormat                               x     format <a class="code" href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#acde1dbefcd5a086f80a12964a9494390ab45cffe084dd3d20d928bee85e7b0f21">string</a> (e.g. <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa8c7f7ad429946587d642011444ec601c">NTV2_FORMAT_1080i_5994</a>)</div>
-<div class="line">    payloadLen                                x     decimal number (expert use only)</div>
-<div class="line">    lastPayloadLen                            x     decimal number (expert use only)</div>
-<div class="line">    pktsPerLine                               x     decimal number (expert use only)</div>
-<div class="line">    Enable                    x      x        x     <span class="keyword">true</span> | <span class="keyword">false</span></div>
-<div class="line"> </div>
-<div class="line">transmit</div>
-<div class="line">    designator                x      x        x     channel1 | channel2 | channel3 | channel4</div>
-<div class="line">    stream                                    x     video | audio 1</div>
-<div class="line">    LinkAEnable               x      x              <span class="keyword">true</span> | <span class="keyword">false</span></div>
-<div class="line">    primaryLocalPort          x      x        x     decimal number</div>
-<div class="line">    primaryRemoteIPAddress    x      x        x     IP <span class="keywordtype">string</span></div>
-<div class="line">    primaryRemotePort         x      x        x     decimal number</div>
-<div class="line">    LinkBEnable               x      x              <span class="keyword">true</span> | <span class="keyword">false</span></div>
-<div class="line">    secondaryLocalPort        x                     decimal number</div>
-<div class="line">    secondaryRemoteIPAddress  x                     IP <span class="keywordtype">string</span></div>
-<div class="line">    secondaryRemotePort       x                     IP <span class="keywordtype">string</span></div>
-<div class="line">    ssrc                      x      x        x     decimnal number</div>
-<div class="line">    ttl                       x      x        x     decimal number</div>
-<div class="line">    tos                       x      x        x     decimal number</div>
-<div class="line">    payload                                   x     decimal number (payload type)</div>
-<div class="line">    videoFormat                               x     format <a class="code" href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#acde1dbefcd5a086f80a12964a9494390ab45cffe084dd3d20d928bee85e7b0f21">string</a> (e.g. <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa8c7f7ad429946587d642011444ec601c">NTV2_FORMAT_1080i_5994</a>)</div>
-<div class="line">    payloadLen                                x     decimal number (expert use only)</div>
-<div class="line">    lastPayloadLen                            x     decimal number (expert use only)</div>
-<div class="line">    pktsPerLine                               x     decimal number (expert use only)</div>
-<div class="line">    Enable                    x      x        x     <span class="keyword">true</span> | <span class="keyword">false</span></div>
-</div><!-- fragment --><hr  />
-<h2><a class="anchor" id="ntv2konaipj2ksetup"></a>
-NTV2 J2K Setup Demo</h2>
-<p>This command-line program shows how to configure the encoder or decoder for the KONA IP 2022-2 configuration.</p>
-<p>The program demonstrates…</p><ul>
-<li>how to detect if the AJA device is an IP device;</li>
-<li>how to determine if the MicroBlaze on the device is up and running;</li>
-<li>how to set the J2K decoder and/or encoder parameters.</li>
-</ul>
-<hr  />
-<h2><a class="anchor" id="ntv2encodehevc"></a>
-NTV2EncodeHEVC Demo</h2>
-<h3><a class="anchor" id="ntv2encodehevc-overview"></a>
-Overview</h3>
-<p>The NTV2 encode HEVC application demonstrates capture of live video from an SDI source to a raw HEVC disk file using the <a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> board. Encode HEVC programs the hardware using the NTV2 classes library, including using the new HEVC extensions to encode video. The hardware is managed by the NTV2 driver which provides the functions to manage streaming video to the classes library.</p>
-<p><b>ntv2encodehevc</b> is a command line application with options to control the NTV2 and HEVC configuration. While in operation, the NTV2 components can be monitored using the <b>Watcher</b> and <b>Cables</b> applications. The HEVC codec can be monitored using the NTV2 <b>HEVC Monitor</b> application.</p>
-<h3><a class="anchor" id="ntv2encodehevc-build"></a>
-Build and Run</h3>
-<p><b>ntv2encodehevc</b> is located in the <code>demoapps</code> folder of the NTV2 distribution. It uses the <a class="el" href="../../d4/deb/class_n_t_v2_encode_h_e_v_c.html" title="Instances of me capture frames in real time from a video signal provided to an input of an AJA device...">NTV2EncodeHEVC</a> class from the <code>democlasses</code> folder to do the video setup and capture. The application has standard build files for each supported platform. The <b>ntv2encodehevc</b> executable is built to the standard "bin" folder. See the NTV2 SDK installation guide for more platform specific build information.</p>
-<p><b>ntv2encodehevc</b> should be run from the command line. Without optional parameters it will detect the input format of the SDI input video and if a matching preset is available, compress it in 8-bit 4:2:0 format. By default, the codec will be configured in single stream mode. If the input is UHD, use the <code>–q</code> option to indicate that the four SDI inputs should be treated as a single UHD stream.</p>
-<div class="fragment"><div class="line">$ ./ntv2encodehevc</div>
-<div class="line">Capture: M31_FILE_1280X720_420_8_5994p</div>
-<div class="line"> </div>
-<div class="line">           Capture  Capture</div>
-<div class="line">   Frames   Frames   Buffer</div>
-<div class="line">Processed  Dropped    Level</div>
-<div class="line">     3595        0        1</div>
-<div class="line"> </div>
-<div class="line">Capture last frame number 3663</div>
-<div class="line">Output last frame number 3663</div>
-</div><!-- fragment --><p>The Encode HEVC application can also compress multiple streams of various formats. Run an instance of the application for each stream and specify the <code>–c[1-4]</code> option to indicate which stream to configure. For instance, <code>$ ./ntv2encodehevc –c3</code> configures the codec to compress using stream 3.</p>
-<p>The format of the encoded stream can be set using the <b>–f</b> option. Use the <b>–lf</b> option to list the supported formats.</p>
-<div class="fragment"><div class="line">$ ./ntv2encodehevc –lf</div>
-<div class="line">M31 Formats</div>
-<div class="line">0:  8 Bit YCbCr 420 Planar</div>
-<div class="line">1:  10 Bit YCbCr 420 Planar</div>
-<div class="line">2:  8 Bit YCbCr 422 Planar</div>
-<div class="line">3:  10 Bit YCbCr 422 Planar</div>
-</div><!-- fragment --><p>The codec preset used to encode the stream can be set using the <b>–p</b> option. Use the <b>–lp</b> option to list the supported presets. This option will override the automatic stream format detection.</p>
-<div class="fragment"><div class="line">$ ./ntv2encodehevc -lp</div>
-<div class="line">M31 Presets</div>
-<div class="line">0:  FILE 1280x720 420 Planar 8 Bit 50p</div>
-<div class="line">1:  FILE 1280x720 420 Planar 8 Bit 59.94p</div>
-<div class="line">2:  FILE 1280x720 422 Planar 10 Bit 50p</div>
-<div class="line">3:  FILE 1280x720 422 Planar 10 Bit 59.94p</div>
-<div class="line">4:  FILE 1920x1080 420 Planar 8 Bit 50p</div>
-<div class="line">5:  FILE 1920x1080 420 Planar 8 Bit 59.94p</div>
-<div class="line">6:  FILE 1920x1080 422 Planar 10 Bit 50p</div>
-<div class="line">7:  FILE 1920x1080 422 Planar 10 Bit 59.94p</div>
-<div class="line">8:  FILE 3840x2160 420 Planar 8 Bit 50p</div>
-<div class="line">9:  FILE 3840x2160 420 Planar 8 Bit 59.94p</div>
-<div class="line">10:  FILE 3840x2160 420 Planar 10 Bit 50p</div>
-<div class="line">11:  FILE 3840x2160 420 Planar 10 Bit 59.94p</div>
-<div class="line">12:  FILE 3840x2160 422 Planar 8 Bit 50p</div>
-<div class="line">13:  FILE 3840x2160 422 Planar 8 Bit 59.94p</div>
-<div class="line">14:  FILE 3840x2160 422 Planar 10 Bit 50p</div>
-<div class="line">15:  FILE 3840x2160 422 Planar 10 Bit 59.94p</div>
-</div><!-- fragment --><p>The Encode HEVC application can output audio capture from the SDI input stream in the file <code>raw.aiff</code> by specifying the <code>–a[1-16]</code> option. The file format is 16-bit 48 kHz PCM with 1-16 channels.</p>
-<p>The HEVC codec supports picture data added to the HEVC stream. Use the <b>–i</b> option to activate this feature. The data contains a sequence identifier, presentation time and optional data that can include supplemental enhancement information (SEI). The codec also outputs stream information that contains the picture sequence identifier, presentation time, etc. The stream information for each frame is written to the <code>raw.txt</code> file.</p>
-<p>The <b>–t</b> option adds two timecode burns to the video. The top burn is based on the count of frames compressed. The bottom burn is the SMPTE-12 (RP-188) timecode from the SDI stream.</p>
-<p>Encode HEVC captures the SDI video input, encode it as HEVC and writes the file <code>raw.hevc</code> to the default directory. If the codec is configured for multistream compression, the file will be <code>raw_1.hevc</code>, <code>raw_2.hevc</code>, etc. To stop the capture type Ctrl-c. The <code>raw.hevc</code> file can be viewed using <b>ffplay</b> (install from the internet). For HD video use:</p>
-<div class="fragment"><div class="line">$ ffplay raw.hevc</div>
-</div><!-- fragment --><p>For UHD streams, the video display can be scaled using:</p>
-<div class="fragment"><div class="line">$ ffplay –vf “scale=1920:1080” raw.hevc</div>
-</div><!-- fragment --><p>HEVC playback is a CPU intensive process and may not run in real-time. Use the s-key during <b>ffplay</b> to enter single frame mode. The space-key resumes normal playback.</p>
-<h3><a class="anchor" id="ntv2encodehevc-design"></a>
-Design</h3>
-<p><b>ntv2encodehevc</b> captures uncompressed video from the SDI input and writes an HEVC compressed file. The current data flow captures the uncompressed video to system memory to allow video processing by the application before being HEVC encoded.</p>
-<div class="image">
-<img src="../../hevcdataflow-75.png" alt=""/>
-</div>
-<p>The Encode HEVC application configures the video FPGA and HEVC codec based on the specified codec preset. This determines the NTV2 video format and the frame buffer format used to capture the video. It also determines the raster and pixel format expected by the codec. The preset also configures the characteristics of the video compression. Code could be added to modify these codec parameters before processing starts to change bit rates, etc.</p>
-<h3><a class="anchor" id="ntv2encodehevc-threads"></a>
-Thread Model</h3>
-<p>Encode HEVC uses a simple threading model to move the captured SDI video from the NTV2 frame buffer to system buffers, the HEVC codec, and finally the output file. The threads move data to and from the HEVC board using DMA.</p>
-<p>The video input thread uses <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> to move each captured video frame from the FPGA frame buffer to the video input system memory ring.</p>
-<p>The video process thread represents some arbitrary video processing controlled by the application. This could involve CPU, GPU, etc. processing, and for this application produces a result in the same video and pixel format as the original. The example currently does a simple data copy of each video frame from the video input ring to the video raw ring.</p>
-<p>The codec raw thread uses NTV2 RawTransfer to move each raw video frame from the video raw ring to the hardware codec where the video is compressed.</p>
-<p>The codec HEVC thread uses NTV2 EncTransfer() to move each compressed video frame from the hardware codec to the video HEVC ring.</p>
-<p>The file writer thread uses standard C library file functions to write each compressed video frame from the video HEVC ring to the <code>raw.hevc</code> output file.</p>
-<h3><a class="anchor" id="ntv2encodehevc-startupshutdown"></a>
-Startup and Shutdown</h3>
-<p><b>ntv2encodehevc</b> configures the HEVC codec to run in asynchronous mode. This makes stream startup simple, as the codec waits for data to begin compression. However the codec is particular about how it is shutdown to avoid an error state. This is not as important when encoding a single stream, since the codec can be reset between shutdown and subsequent startups. However this will not be possible when encoding multiple streams that do not all start and stop at the same time.</p>
-<p>The current model used to stop the codec is to mark the last frame to be encoded, and have each thread monitor its progress through the pipeline. After processing the last frame, each thread discontinues further frame processing and the pipeline starves. So far, it does not appear that the codec requires raw frames to the flush the encoded data after the last frame has been received. Once the last HEVC frame has been transferred from the codec, it can be moved cleanly to the stop state.</p>
-<h3><a class="anchor" id="ntv2encodehevc-futuredev"></a>
-Future Development</h3>
-<p>The first version of the <b>ntv2encodehevc</b> demonstrates encoding of a single video stream in various HD and UHD formats and pixel resolutions. Future work could include:</p><ul>
-<li>More tested formats such as NTSC, PAL, 1080i...</li>
-<li>More tested frame rates</li>
-<li>Audio and ancillary data</li>
-<li>Multistream (running multiple copies of the application)</li>
-<li>Support for encoding from the codec SDI interface (vif)</li>
-<li>HEVC parameter settings</li>
-<li>Non-SDI rasters</li>
-</ul>
-<p>Multistream would demonstrate independent control of codec streams. Using the codec SDI inputs would support the current data flow model and also allow the pixel format of the system-based video processing to be different than the encoded pixel format. HEVC parameter changes would include setting the desired HEVC data rate.</p>
 <hr  />
 <h2><a class="anchor" id="ntv2switchbitfile"></a>
 NTV2SwitchBitfile Demo</h2>
@@ -1329,7 +1195,8 @@ NTV2HDRSetup Demo</h2>
 <div class="ttc" id="antv2ccplayer_8h_html_a1628f5fb3c7f477f12765d18e18d03dfa28eb6dabb88db1392bad44f7e02180d0"><div class="ttname"><a href="../../d3/db1/ntv2ccplayer_8h.html#a1628f5fb3c7f477f12765d18e18d03dfa28eb6dabb88db1392bad44f7e02180d0">AtEndAction_Idle</a></div><div class="ttdeci">@ AtEndAction_Idle</div><div class="ttdoc">Repeat the file list (must Ctrl-C to terminate)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/db1/ntv2ccplayer_8h_source.html#l00031">ntv2ccplayer.h:31</a></div></div>
 <div class="ttc" id="antv2caption608types_8h_html_a94b2b6d3194991337751caf77314e3cea816c1ec9372f0e544f67179492e5ece2"><div class="ttname"><a href="../../db/d80/ntv2caption608types_8h.html#a94b2b6d3194991337751caf77314e3cea816c1ec9372f0e544f67179492e5ece2">NTV2_CC608_CC4</a></div><div class="ttdeci">@ NTV2_CC608_CC4</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d80/ntv2caption608types_8h_source.html#l00087">ntv2caption608types.h:87</a></div></div>
 <div class="ttc" id="antv2caption608types_8h_html_a94b2b6d3194991337751caf77314e3cea60b4685641d4ee848488ffc0b95ab89a"><div class="ttname"><a href="../../db/d80/ntv2caption608types_8h.html#a94b2b6d3194991337751caf77314e3cea60b4685641d4ee848488ffc0b95ab89a">NTV2_CC608_CC2</a></div><div class="ttdeci">@ NTV2_CC608_CC2</div><div class="ttdoc">Caption channel 2, the secondary caption channel.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d80/ntv2caption608types_8h_source.html#l00085">ntv2caption608types.h:85</a></div></div>
-<div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfa8c7f7ad429946587d642011444ec601c"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa8c7f7ad429946587d642011444ec601c">NTV2_FORMAT_1080i_5994</a></div><div class="ttdeci">@ NTV2_FORMAT_1080i_5994</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00541">ntv2enums.h:541</a></div></div>
+<div class="ttc" id="apstream_8cpp_html_a7d46b74409bd32b539089ef4721ea544"><div class="ttname"><a href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a></div><div class="ttdeci">unsigned int n</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d0c/pstream_8cpp_source.html#l00148">pstream.cpp:148</a></div></div>
+<div class="ttc" id="adllentry_8cpp_html_a11610537ed3fcc7a653ac9450206e0c6"><div class="ttname"><a href="../../de/d7b/dllentry_8cpp.html#a11610537ed3fcc7a653ac9450206e0c6">for</a></div><div class="ttdeci">for(int i=0;i&lt; g_cTemplates;i++)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7b/dllentry_8cpp_source.html#l00202">dllentry.cpp:202</a></div></div>
 <div class="ttc" id="antv2caption608types_8h_html_a94b2b6d3194991337751caf77314e3cea07b0a3247ac64227c7deca3253f6ded7"><div class="ttname"><a href="../../db/d80/ntv2caption608types_8h.html#a94b2b6d3194991337751caf77314e3cea07b0a3247ac64227c7deca3253f6ded7">NTV2_CC608_Text2</a></div><div class="ttdeci">@ NTV2_CC608_Text2</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d80/ntv2caption608types_8h_source.html#l00091">ntv2caption608types.h:91</a></div></div>
 <div class="ttc" id="anamespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434_html_acde1dbefcd5a086f80a12964a9494390ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#acde1dbefcd5a086f80a12964a9494390ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_t::string</a></div><div class="ttdeci">@ string</div><div class="ttdoc">string value</div></div>
 <div class="ttc" id="antv2caption608types_8h_html_a2e9adb03af9d5ec72e82569059abbca3a7a87f30dcc861dbca628cc3e94a8aeb0"><div class="ttname"><a href="../../db/d80/ntv2caption608types_8h.html#a2e9adb03af9d5ec72e82569059abbca3a7a87f30dcc861dbca628cc3e94a8aeb0">NTV2_CC608_CapModeUnknown</a></div><div class="ttdeci">@ NTV2_CC608_CapModeUnknown</div><div class="ttdoc">Unknown or invalid caption mode.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d80/ntv2caption608types_8h_source.html#l00126">ntv2caption608types.h:126</a></div></div>
@@ -1346,7 +1213,7 @@ NTV2HDRSetup Demo</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:45 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:15 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -766,7 +766,7 @@ Macros</h2></td></tr>
 <tr class="separator:a9a8fe3009f53d14ac4b48600a2606fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70d7244eea52c8bb5716545e54050bb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a70d7244eea52c8bb5716545e54050bb5">JSON_HEDLEY_ASSUME</a>(expr)&#160;&#160;&#160;<a class="el" href="../../d5/db8/json_8hpp.html#a2edb8d037ad5cbac818c86aca317226a">JSON_HEDLEY_STATIC_CAST</a>(void, expr)</td></tr>
 <tr class="separator:a70d7244eea52c8bb5716545e54050bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06401b258ef03263f2aec48029dc8b03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a06401b258ef03263f2aec48029dc8b03">JSON_HEDLEY_UNREACHABLE_RETURN</a>(value)&#160;&#160;&#160;return (value)</td></tr>
+<tr class="memitem:a06401b258ef03263f2aec48029dc8b03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a06401b258ef03263f2aec48029dc8b03">JSON_HEDLEY_UNREACHABLE_RETURN</a>(value)&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a744afe7ed202c068698b0775a5d6db5a">return</a> (value)</td></tr>
 <tr class="separator:a06401b258ef03263f2aec48029dc8b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d5705bd7bd14855c3ef5b98305c5fb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a2d5705bd7bd14855c3ef5b98305c5fb4">JSON_HEDLEY_UNREACHABLE</a>()&#160;&#160;&#160;<a class="el" href="../../d5/db8/json_8hpp.html#a70d7244eea52c8bb5716545e54050bb5">JSON_HEDLEY_ASSUME</a>(0)</td></tr>
 <tr class="separator:a2d5705bd7bd14855c3ef5b98305c5fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -878,11 +878,11 @@ Macros</h2></td></tr>
 <tr class="separator:a9daee0ea9922680180cf794c47fa0672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c274f6db2e65c1b66c7d41b06ad690f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(exception)&#160;&#160;&#160;std::abort()</td></tr>
 <tr class="separator:a6c274f6db2e65c1b66c7d41b06ad690f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a985d3b82445302c57257f6432f261fe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a985d3b82445302c57257f6432f261fe9">JSON_TRY</a>&#160;&#160;&#160;if(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>)</td></tr>
+<tr class="memitem:a985d3b82445302c57257f6432f261fe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a985d3b82445302c57257f6432f261fe9">JSON_TRY</a>&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a>(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>)</td></tr>
 <tr class="separator:a985d3b82445302c57257f6432f261fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6954bec49ed2a2dfb938c1131c82740a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a6954bec49ed2a2dfb938c1131c82740a">JSON_CATCH</a>(exception)&#160;&#160;&#160;if(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
+<tr class="memitem:a6954bec49ed2a2dfb938c1131c82740a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a6954bec49ed2a2dfb938c1131c82740a">JSON_CATCH</a>(exception)&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a>(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
 <tr class="separator:a6954bec49ed2a2dfb938c1131c82740a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5478b7564e65634cc69432ed3cb6490e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a5478b7564e65634cc69432ed3cb6490e">JSON_INTERNAL_CATCH</a>(exception)&#160;&#160;&#160;if(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
+<tr class="memitem:a5478b7564e65634cc69432ed3cb6490e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a5478b7564e65634cc69432ed3cb6490e">JSON_INTERNAL_CATCH</a>(exception)&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a>(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
 <tr class="separator:a5478b7564e65634cc69432ed3cb6490e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f131cff49da1989667220173fbeae6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a69f131cff49da1989667220173fbeae6">JSON_ASSERT</a>(x)&#160;&#160;&#160;assert(x)</td></tr>
 <tr class="separator:a69f131cff49da1989667220173fbeae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -897,7 +897,7 @@ Macros</h2></td></tr>
 <tr class="separator:a80b7254e63f199a1f656f07ae551f632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af62f70922a57ffa728d579d3c7963bf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#af62f70922a57ffa728d579d3c7963bf5">NLOHMANN_JSON_EXPAND</a>(x)&#160;&#160;&#160;x</td></tr>
 <tr class="separator:af62f70922a57ffa728d579d3c7963bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc0845ecb0987d16963a81f34bb0d94d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#afc0845ecb0987d16963a81f34bb0d94d">NLOHMANN_JSON_GET_MACRO</a>(_1,  _2,  _3,  _4,  _5,  _6,  _7,  _8,  _9,  _10,  _11,  _12,  _13,  _14,  _15,  _16,  _17,  _18,  _19,  _20,  _21,  _22,  _23,  _24,  _25,  _26,  _27,  _28,  _29,  _30,  _31,  _32,  _33,  _34,  _35,  _36,  _37,  _38,  _39,  _40,  _41,  _42,  _43,  _44,  _45,  _46,  _47,  _48,  _49,  _50,  _51,  _52,  _53,  _54,  _55,  _56,  _57,  _58,  _59,  _60,  _61,  _62,  _63,  _64,  NAME, ...)&#160;&#160;&#160;NAME</td></tr>
+<tr class="memitem:afc0845ecb0987d16963a81f34bb0d94d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#afc0845ecb0987d16963a81f34bb0d94d">NLOHMANN_JSON_GET_MACRO</a>(_1,  _2,  _3,  _4,  _5,  _6,  _7,  _8,  _9,  _10,  _11,  _12,  _13,  _14,  _15,  _16,  _17,  _18,  _19,  _20,  _21,  _22,  _23,  _24,  _25,  _26,  _27,  _28,  _29,  _30,  _31,  _32,  _33,  _34,  _35,  _36,  _37,  _38,  _39,  _40,  _41,  _42,  _43,  _44,  _45,  _46,  _47,  _48,  _49,  _50,  _51,  _52,  _53,  _54,  _55,  _56,  _57,  _58,  _59,  _60,  _61,  _62,  _63,  _64,  <a class="el" href="../../de/de4/wxdebug_8h.html#a82b5ac398088bbf39add8f99dac3818b">NAME</a>, ...)&#160;&#160;&#160;<a class="el" href="../../de/de4/wxdebug_8h.html#a82b5ac398088bbf39add8f99dac3818b">NAME</a></td></tr>
 <tr class="separator:afc0845ecb0987d16963a81f34bb0d94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9495fb0e6d683bfa654ed646495b408a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/json_8hpp.html#a9495fb0e6d683bfa654ed646495b408a">NLOHMANN_JSON_PASTE</a>(...)</td></tr>
 <tr class="separator:a9495fb0e6d683bfa654ed646495b408a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1400,7 +1400,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a317c5f5c5869cd52867012a584c6dfd7"><td class="memTemplItemLeft" align="right" valign="top">OutStringType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#a317c5f5c5869cd52867012a584c6dfd7">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::concat</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a317c5f5c5869cd52867012a584c6dfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8c4356b99d0410dbeb223967893e09"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType &gt; </td></tr>
-<tr class="memitem:a0b8c4356b99d0410dbeb223967893e09"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#a0b8c4356b99d0410dbeb223967893e09">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::from_json</a> (const BasicJsonType &amp;j, typename std::nullptr_t &amp;n)</td></tr>
+<tr class="memitem:a0b8c4356b99d0410dbeb223967893e09"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#a0b8c4356b99d0410dbeb223967893e09">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::from_json</a> (const BasicJsonType &amp;j, typename std::nullptr_t &amp;<a class="el" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>)</td></tr>
 <tr class="separator:a0b8c4356b99d0410dbeb223967893e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab854520be0a7cfb9d78a9becc793c1b0"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename ArithmeticType , enable_if_t&lt; std::is_arithmetic&lt; ArithmeticType &gt;::value &amp;&amp;!std::is_same&lt; ArithmeticType, typename BasicJsonType::boolean_t &gt;::value, int &gt;  = 0&gt; </td></tr>
 <tr class="memitem:ab854520be0a7cfb9d78a9becc793c1b0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#ab854520be0a7cfb9d78a9becc793c1b0">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::get_arithmetic_value</a> (const BasicJsonType &amp;j, ArithmeticType &amp;val)</td></tr>
@@ -1612,7 +1612,7 @@ Functions</h2></td></tr>
 <tr class="separator:a408e1c3a80f989d61137707fe2ddb04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a001d408a9a89c980f55a5877a2e63676"><td class="memItemLeft" align="right" valign="top">cached_power&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df7/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cf4e82d37c664571e0b00cae563f3ace3.html#a001d408a9a89c980f55a5877a2e63676">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::dtoa_impl::get_cached_power_for_binary_exponent</a> (int e)</td></tr>
 <tr class="separator:a001d408a9a89c980f55a5877a2e63676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58760cb1af4ea7eaa6c4742e713a5847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df7/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cf4e82d37c664571e0b00cae563f3ace3.html#a58760cb1af4ea7eaa6c4742e713a5847">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::dtoa_impl::find_largest_pow10</a> (const std::uint32_t n, std::uint32_t &amp;pow10)</td></tr>
+<tr class="memitem:a58760cb1af4ea7eaa6c4742e713a5847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df7/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cf4e82d37c664571e0b00cae563f3ace3.html#a58760cb1af4ea7eaa6c4742e713a5847">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::dtoa_impl::find_largest_pow10</a> (const std::uint32_t <a class="el" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>, std::uint32_t &amp;pow10)</td></tr>
 <tr class="separator:a58760cb1af4ea7eaa6c4742e713a5847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee32f589a295f3585f835922388c621e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df7/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cf4e82d37c664571e0b00cae563f3ace3.html#aee32f589a295f3585f835922388c621e">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::dtoa_impl::grisu2_round</a> (char *buf, int len, std::uint64_t dist, std::uint64_t delta, std::uint64_t rest, std::uint64_t ten_k)</td></tr>
 <tr class="separator:aee32f589a295f3585f835922388c621e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1637,10 +1637,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a1ffdb84a9728dc96615e5039e4353b3d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/dc9/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cb0d1ccbac8be171d6db87ace987efc48.html#a1ffdb84a9728dc96615e5039e4353b3d">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::to_string</a> (const basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt; &amp;j)</td></tr>
 <tr class="memdesc:a1ffdb84a9728dc96615e5039e4353b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">user-defined to_string function for JSON values  <a href="../../d4/dc9/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cb0d1ccbac8be171d6db87ace987efc48.html#a1ffdb84a9728dc96615e5039e4353b3d">More...</a><br /></td></tr>
 <tr class="separator:a1ffdb84a9728dc96615e5039e4353b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34564a82fc9e26b8115351f5f04c298c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/dc9/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cb0d1ccbac8be171d6db87ace987efc48.html#ae837337641648d4e4381e253dafac500">nlohmann::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dce/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cbaa514f09256cc9790aaee9c2b81a139.html#a34564a82fc9e26b8115351f5f04c298c">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::literals::json_literals::operator&quot;&quot;_json</a> (const char *s, std::size_t n)</td></tr>
+<tr class="memitem:a34564a82fc9e26b8115351f5f04c298c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/dc9/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cb0d1ccbac8be171d6db87ace987efc48.html#ae837337641648d4e4381e253dafac500">nlohmann::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dce/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cbaa514f09256cc9790aaee9c2b81a139.html#a34564a82fc9e26b8115351f5f04c298c">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::literals::json_literals::operator&quot;&quot;_json</a> (const char *s, std::size_t <a class="el" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>)</td></tr>
 <tr class="memdesc:a34564a82fc9e26b8115351f5f04c298c"><td class="mdescLeft">&#160;</td><td class="mdescRight">user-defined string literal for JSON values  <a href="../../d3/dce/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cbaa514f09256cc9790aaee9c2b81a139.html#a34564a82fc9e26b8115351f5f04c298c">More...</a><br /></td></tr>
 <tr class="separator:a34564a82fc9e26b8115351f5f04c298c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a369094329b4ffdeeee00c578faf81b9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html#ab592ea51e62649b119778214765ddea8">nlohmann::json::json_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dce/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cbaa514f09256cc9790aaee9c2b81a139.html#a369094329b4ffdeeee00c578faf81b9b">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::literals::json_literals::operator&quot;&quot;_json_pointer</a> (const char *s, std::size_t n)</td></tr>
+<tr class="memitem:a369094329b4ffdeeee00c578faf81b9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html#ab592ea51e62649b119778214765ddea8">nlohmann::json::json_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dce/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cbaa514f09256cc9790aaee9c2b81a139.html#a369094329b4ffdeeee00c578faf81b9b">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::literals::json_literals::operator&quot;&quot;_json_pointer</a> (const char *s, std::size_t <a class="el" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>)</td></tr>
 <tr class="memdesc:a369094329b4ffdeeee00c578faf81b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">user-defined string literal for JSON pointer  <a href="../../d3/dce/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_cbaa514f09256cc9790aaee9c2b81a139.html#a369094329b4ffdeeee00c578faf81b9b">More...</a><br /></td></tr>
 <tr class="separator:a369094329b4ffdeeee00c578faf81b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af67b64f2bfa0030ad0168bf97a167e0e"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename, typename... &gt; class ObjectType, template&lt; typename, typename... &gt; class ArrayType, class StringType , class BooleanType , class NumberIntegerType , class NumberUnsignedType , class NumberFloatType , template&lt; typename &gt; class AllocatorType, template&lt; typename, typename=void &gt; class JSONSerializer, class BinaryType , class CustomBaseClass &gt; </td></tr>
@@ -1747,7 +1747,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">exception</td><td>)</td>
-          <td>&#160;&#160;&#160;if(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a>(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5030,7 +5030,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">value</td><td>)</td>
-          <td>&#160;&#160;&#160;return (value)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a744afe7ed202c068698b0775a5d6db5a">return</a> (value)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5276,7 +5276,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">exception</td><td>)</td>
-          <td>&#160;&#160;&#160;if(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a>(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5344,7 +5344,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JSON_TRY&#160;&#160;&#160;if(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>)</td>
+          <td class="memname">#define JSON_TRY&#160;&#160;&#160;<a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a>(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6253,7 +6253,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME, </td>
+          <td class="paramname"><a class="el" href="../../de/de4/wxdebug_8h.html#a82b5ac398088bbf39add8f99dac3818b">NAME</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -6264,7 +6264,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;NAME</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../de/de4/wxdebug_8h.html#a82b5ac398088bbf39add8f99dac3818b">NAME</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -20280,7 +20280,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_8f3154ce023319d0c7e8bb4441cab51f.html">common</a></li><li class="navelem"><a class="el" href="../../d5/db8/json_8hpp.html">json.hpp</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:41 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:11 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

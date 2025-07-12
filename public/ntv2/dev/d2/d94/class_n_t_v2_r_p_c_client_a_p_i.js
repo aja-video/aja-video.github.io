@@ -22,7 +22,7 @@ var class_n_t_v2_r_p_c_client_a_p_i =
     [ "NTV2GetSupportedRemote", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#ade567b46e39ef69edc04e8d1528df95a", null ],
     [ "NTV2MessageRemote", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#af56d511fbea10f143fe6375e1a058ddc", null ],
     [ "NTV2OpenRemote", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#aae44a8f1f889e4e0374f1e24ad70ba6f", null ],
-    [ "NTV2QueryDevices", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#a1bf18905174c05249faa27be677e0cf8", null ],
+    [ "NTV2QueryDevices", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#afd317af33de44d70ff590503228d7a32", null ],
     [ "NTV2ReadRegisterMultiRemote", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#aa0b9f13f3c4adc0bac57d643daf62783", null ],
     [ "NTV2ReadRegisterRemote", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#a1b279ed7a3a697453711db42c230f096", null ],
     [ "NTV2WaitForInterruptRemote", "d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#af13e444c27fa697635bdedc7d34a6fc7", null ],

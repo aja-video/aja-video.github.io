@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('dc/def/atomic_8cpp_source.html','../..
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #pragma warning(push)</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #pragma warning(disable: 4311)</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #pragma warning(disable: 4312)</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)InterlockedExchangePointer((<span class="keywordtype">void</span>* <span class="keyword">volatile</span>*)pTarget, (<span class="keywordtype">void</span>*)pValue);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)<a class="code" href="../../db/d8e/streams_8h.html#a0d7f3b5264ded4cd9db09e02a8fc94b9">InterlockedExchangePointer</a>((<span class="keywordtype">void</span>* <span class="keyword">volatile</span>*)pTarget, (<span class="keywordtype">void</span>*)pValue);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #pragma warning(pop)</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -273,12 +273,13 @@ $(document).ready(function(){initNavTree('dc/def/atomic_8cpp_source.html','../..
 <div class="ttc" id="aclass_a_j_a_atomic_html_a7c18e6c7d5c64c294ae1ddb0f70ac266"><div class="ttname"><a href="../../d7/d1e/class_a_j_a_atomic.html#a7c18e6c7d5c64c294ae1ddb0f70ac266">AJAAtomic::Increment</a></div><div class="ttdeci">static int32_t Increment(int32_t volatile *pTarget)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/def/atomic_8cpp_source.html#l00082">atomic.cpp:82</a></div></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="../../dc/d54/common_8h.html">common.h</a></div><div class="ttdoc">Private include file for all ajabase sources.</div></div>
 <div class="ttc" id="aatomic_8h_html"><div class="ttname"><a href="../../dd/d02/atomic_8h.html">atomic.h</a></div><div class="ttdoc">Declares the AJAAtomic class.</div></div>
+<div class="ttc" id="astreams_8h_html_a0d7f3b5264ded4cd9db09e02a8fc94b9"><div class="ttname"><a href="../../db/d8e/streams_8h.html#a0d7f3b5264ded4cd9db09e02a8fc94b9">InterlockedExchangePointer</a></div><div class="ttdeci">#define InterlockedExchangePointer(Target, Value)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d8e/streams_8h_source.html#l00059">streams.h:59</a></div></div>
 <div class="ttc" id="aclass_a_j_a_atomic_html_a3edabfe0ecc312f276411996fc63e7f1"><div class="ttname"><a href="../../d7/d1e/class_a_j_a_atomic.html#a3edabfe0ecc312f276411996fc63e7f1">AJAAtomic::Decrement</a></div><div class="ttdeci">static int32_t Decrement(int32_t volatile *pTarget)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/def/atomic_8cpp_source.html#l00095">atomic.cpp:95</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_2a5fa578bf70f724f924d7f0ed01f20c.html">system</a></li><li class="navelem"><a class="el" href="../../dc/def/atomic_8cpp.html">atomic.cpp</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:35 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:06 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

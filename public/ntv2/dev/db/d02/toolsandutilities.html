@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -100,10 +100,7 @@ $(document).ready(function(){initNavTree('db/d02/toolsandutilities.html','../../
 </ul>
 </li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> — Sometimes when diagnosing an issue, AJA’s OEM SDK support staff may request a “register dump” or “register log”. This log file can be generated using <a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a> or <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a>. See the Knowledgebase article at our SDK Support site <a href="https://sdksupport.aja.com/">https://sdksupport.aja.com/</a> for more information.</li>
-<li><a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> — A command-line tool used to “flash” new firmware into a connected AJA device. This tool is included because AJA developers or their customers need to be able to program new firmware on an AJA device, and may not need or have access to the AJA retail services, including the <b>AJA ControlPanel</b>, which is commonly used to perform this task. <dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a> requires a somewhat different procedure for checking and updating its firmware. See hevcsupplement for more information.</dd></dl>
-</li>
-<li><b>ntv2konaipj2ksetup</b> — A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
-<li><b>ntv2konaipjsonsetup</b> — A command-line tool used to configure the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> from a JSON configuration file.</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> — A command-line tool used to “flash” new firmware into a connected AJA device. This tool is included because AJA developers or their customers need to be able to program new firmware on an AJA device, and may not need or have access to the AJA retail services, including the <b>AJA ControlPanel</b>, which is commonly used to perform this task.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usinglogreader">‘logreader’ Command-Line Utility</a> —&#160;A command-line tool that prints messages from the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usinglogjammer">‘logjammer’ Command-Line Utility</a> —&#160;A command-line tool that generates messages for the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#ntv2thermo">‘ntv2thermo’ Command-Line Utility</a> — Interrogates and/or controls temperature-related parameters of connected AJA devices.</li>
@@ -682,9 +679,65 @@ Debug Tab</h2>
 <p><b>Example:</b> To emit the default output, omit the <b>&ndash;format</b> or <b>-f</b> option, or do this: </p><div class="fragment"><div class="line">$ ./bin/logreader  --format &quot;%I\t%p\t%t\t%T\t%D\t%S\t%P\t%L\t%M\n&quot;</div>
 </div><!-- fragment --><p><b>Example:</b> To emit the default output, but use a <b>Comma</b> instead of a <b>Horizontal Tab</b> character as the field delimiter: </p><div class="fragment"><div class="line">$ ./bin/logreader  --format &quot;%I,%p,%t,%T,%D,%S,%P,%L,%M\n&quot;</div>
 </div><!-- fragment --><hr  size="50px" />
+<h1><a class="anchor" id="usingntv2route"></a>
+‘ntv2route’ Command-Line Utility</h1>
+<dl class="section user"><dt>Description</dt><dd></dd></dl>
+<p>A command-line tool that can change the widget routing configuration on an AJA device using textual routing specifications stored in files.</p>
+<dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
+<div class="fragment"><div class="line">ntv2route [OPTION...]</div>
+<div class="line">  -d, --device=index#|serial#|model      device to use</div>
+<div class="line">  -r, --restore {pathToPresetFile}       restore routing from file</div>
+<div class="line">      --noreplace                        don&#39;t replace current routing when restoring</div>
+<div class="line">  -s, --save {pathToPresetFile}          save routing to file</div>
+<div class="line">  -c  --cpp                              write C++ code when saving</div>
+<div class="line">  -v  --verbose                          verbose mode?</div>
+<div class="line">      --diff                             show routing changes</div>
+<div class="line">      --dumprom                          dump xpt connection ROM &amp; exit</div>
+<div class="line">      --version                          show version &amp; exit</div>
+<div class="line">Help options:</div>
+<div class="line">  -?, --help                             Show this help message</div>
+<div class="line">      --usage                            Show brief usage message</div>
+</div><!-- fragment --><dl class="section user"><dt>Exit Codes</dt><dd></dd></dl>
+<p>If successful, the program will exit with zero; otherwise it will return a non-zero value.</p>
+<div class="fragment"><div class="line">0      Success -- no error</div>
+<div class="line">1      Bad parameter(s)</div>
+<div class="line">2      No such device</div>
+<div class="line">3      Conflicting options</div>
+<div class="line">(see the source code for other values)</div>
+</div><!-- fragment --><dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
+<p>By default, <b>ntv2route</b> works with the first device found on the local host: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --restore path/to/file</div>
+</div><!-- fragment --><p>This is no different than specifying device zero: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --device 0</div>
+</div><!-- fragment --><p>You can also specify a device by model name. For example, if a Kona4 was installed in the host system: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --device kona4</div>
+</div><!-- fragment --><p>You can also specify a device by serial number: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --device 00T12345</div>
+</div><!-- fragment --><dl class="section user"><dt>“Shorthand” Routing Preset Files</dt><dd></dd></dl>
+<p>Routing preset files can contain “Shorthand” routing specifications. This representation is found in “Support Logs” generated by <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> or the <a class="el" href="../../db/d02/toolsandutilities.html#usingsupportlog">‘supportlog’ Command-Line Utility</a>. Shorthand routing specs are also found in the “Shorthand Text” tab of the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroute">Routing Inspector</a> in <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a>.</p>
+<p>Here’s an example of this “Shorthand”: </p><div class="fragment"><div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56">NTV2_XptSDIOut3Input</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a4c3d2f8a7bd425569a5c60e6035adafb">NTV2_XptFrameBuffer3YUV</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a49271656a151f9761fb869fc9cdb2209">NTV2_XptFrameBuffer4YUV</a></div>
+</div><!-- fragment --><dl class="section user"><dt>“C++ Code” Routing Preset Files</dt><dd></dd></dl>
+<p>Routing preset files can also contain C++ code that make calls to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaa49e3963887ef83d86ee39e19972b31" title="Connects the given widget signal input (sink) to the given widget signal output (source).">CNTV2Card::Connect</a>. This type of routing specification is found in the “C++ Code” tab of the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroute">Routing Inspector</a> in <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a>.</p>
+<p>Here’s an example: </p><div class="fragment"><div class="line">device.Connect (<a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56">NTV2_XptSDIOut3Input</a>, <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a4c3d2f8a7bd425569a5c60e6035adafb">NTV2_XptFrameBuffer3YUV</a>);</div>
+<div class="line">device.Connect (<a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a>, <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a49271656a151f9761fb869fc9cdb2209">NTV2_XptFrameBuffer4YUV</a>);</div>
+</div><!-- fragment --><dl class="section user"><dt>Restoring a Routing Config from a File</dt><dd></dd></dl>
+<p>Use the <code>&ndash;restore</code> option to specify the path to the file that contains the routing specifications: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --restore path/to/routing_specs</div>
+</div><!-- fragment --><dl class="section user"><dt>Augmenting (Adding To) Existing Routing Configurations</dt><dd></dd></dl>
+<p>Use the <code>&ndash;noreplace</code> option to add one or more connections to the existing ones: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --noreplace  --restore path/to/routes_to_add</div>
+</div><!-- fragment --><p>This would connect FrameStore1’s YUV output to the HDMI output without affecting any other connections: </p><div class="fragment"><div class="line">$ echo &quot;NTV2_XptHDMIOutInput &lt;== NTV2_XptFrameBuffer1YUV&quot; | ./bin/ntv2route  --noreplace</div>
+</div><!-- fragment --><p>Note that it’s possible with the <code>&ndash;noreplace</code> option to perform a “do nothing” or “no-op” operation by specifying an empty file: </p><div class="fragment"><div class="line">$ echo -n &quot;&quot; | ./bin/ntv2route  --noreplace</div>
+</div><!-- fragment --><dl class="section user"><dt>Disconnect All Existing Connections</dt><dd></dd></dl>
+<p>To clear all existing widget interconnections, simply specify an empty file: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --restore /dev/null</div>
+</div><!-- fragment --><p> …or pipe nothing into the <b>ntv2route</b> program: </p><div class="fragment"><div class="line">$ echo -n &quot;&quot; | ./bin/ntv2route</div>
+</div><!-- fragment --><dl class="section user"><dt>Saving Current Routing Configuration</dt><dd></dd></dl>
+<p>To save the current routing configuration, use the <code>&ndash;save</code> option: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --save path/to/file</div>
+</div><!-- fragment --><p> By default, the file will contain “shorthand” routing specifications.</p>
+<p>To save the current routing configuration with C++ code, add the <code>&ndash;cpp</code> option: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --cpp  --save path/to/file</div>
+</div><!-- fragment --><dl class="section user"><dt>Dump Crosspoint Connect ROM</dt><dd></dd></dl>
+<p>For devices that have crosspoint connect ROMs, the connections that are implemented in firmware can be dumped using the <code>&ndash;dumprom</code> option: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --dumprom</div>
+</div><!-- fragment --><p> The connections are listed on the standard output stream.</p>
+<hr  size="50px" />
 <h1><a class="anchor" id="usingntv2watcher"></a>
 “NTV2Watcher”</h1>
 <p>This page describes how to use the <b>NTV2 Watcher</b> tool to interactively monitor and control an AJA device.</p><ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watcherobtain">Obtaining NTV2Watcher</a></li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#inspectorgeneralop">General Operation</a><ul>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#watcherdevselect">Device Selection</a></li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#watchermenucommands">Menu Commands</a></li>
@@ -712,13 +765,25 @@ Debug Tab</h2>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#demostool">“SDK Demos” Tool</a> — configures and runs demo apps</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#debugstats">“AJADebug Stats” Tool</a> — displays AJA debug stats</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#debuglog">“AJADebug Log” Tool</a> — displays AJA debug logs</li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watcherdevmgr">“Manage Devices” Tool</a> — manage remote and virtual devices</li>
 </ul>
 </li>
 <li>Global Settings<ul>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> — Sets global preferences</li>
 </ul>
 </li>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watchercmdline">Command Line Parameters</a></li>
 </ul>
+<hr  size="50px" />
+ <h2><a class="anchor" id="watcherobtain"></a>
+Obtaining NTV2Watcher</h2>
+<p>Pre-built versions of NTV2Watcher are posted to GitHub.</p><ol type="1">
+<li>Point your browser <a href="https://github.com/aja-video/libajantv2/tags">here</a>.</li>
+<li>Click on the desired release version.</li>
+<li>Expand the <b>Assets</b> heading.</li>
+<li>Download the pre-built SDK for the desired platform.</li>
+<li>Expand/Unzip the downloaded file, and navigate into its ‘<b>bin</b>’ folder.</li>
+</ol>
 <hr  size="50px" />
  <h2><a class="anchor" id="inspectorgeneralop"></a>
 General Operation</h2>
@@ -769,39 +834,19 @@ General Operation</h2>
 </ul>
 <h3><a class="anchor" id="watcherdevselect"></a>
 Device Selection</h3>
-<p>A single instance of <b>NTV2 Watcher</b> monitors and/or controls one AJA device at a time. This panel provides a menu for choosing which AJA device the tool will focus on.</p>
-<p>The top of the menu is populated with devices that are installed or attached directly to the host. It’s followed by the “<b>Manage Other Devices…</b>” command, which opens the <b>Manage Devices</b> tool window. The bottom section of the menu is populated with the <b>Known Remote Devices</b> (see below).</p>
-<p>Choosing a different device in the menu causes <b>NTV2Watcher</b> to stop monitoring the previously-selected device, and starts monitoring the newly-selected one. Depending on the device and its capabilities, the list of available inspectors may change.</p>
-<p><b>“Manage Devices” Window</b></p>
-<div class="image">
-<img src="../../watcher-deviceselection.png" alt=""/>
-</div>
-<p>This tool window is for…</p><ul>
-<li><b>Remote Devices</b> — to find remote devices on other hosts in your LAN to monitor and/or control:<ul>
-<li>To add a remote device to the list of <b>Known Remote Devices</b>:<ul>
-<li>Type its IP address or DNS name in the provided text box.</li>
-<li>If the remote “nub” uses a port number other than 7575, enter its port number in the <b>Port:</b> box.</li>
-<li>When NTV2Watcher is able to successfully communicate with the remote “nub”, the <b>Add</b> button will become enabled.</li>
-<li>Click <b>Add</b> to add the remote device to the <b>Known Remote Devices</b> list.</li>
+<p>A single <b>NTV2 Watcher</b> application instance monitors and/or controls one AJA device at a time. This panel provides a menu for choosing which AJA device the tool will focus on.</p><ul>
+<li><em>Local/Physical Devices</em> — The top of the menu is populated with local physical devices that are installed in or attached to the local host.</li>
+<li>“<b>Rescan Local Devices…</b>” — forcibly rescans the local physical devices on the local host.</li>
+<li><em>Remote/Virtual Devices</em> — The remote and/or virtual devices that were discovered or created in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherdevmgr">“Manage Devices” Tool</a> dialog window.</li>
+<li>“<b>Manage Remote Devices…</b>” — opens the <a class="el" href="../../db/d02/toolsandutilities.html#watcherdevmgr">“Manage Devices” Tool</a> window.</li>
+<li>“<b>Close Device</b>” — forcibly closes the device that <b>NTV2Watcher</b> is currently monitoring.</li>
 </ul>
-</li>
-<li>To remove a remote device from the <b>Known Remote Devices</b> list:<ul>
-<li>Right-click on the remote device to be removed.</li>
-<li>Choose the appropriate <b>Remove</b> command from the menu.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><b>Publish Devices</b> — to publish a locally attached/installed host device (to allow other hosts to connect to it).<ul>
-<li>This runs or stops a local “NTV2 Nub” server.</li>
-</ul>
-</li>
-<li><b>Software Devices</b> — to configure AJA “software” devices.</li>
-</ul>
+<p>Selecting a different device in the menu causes <b>NTV2Watcher</b> to stop monitoring the previously-selected device, and starts monitoring the newly-selected one. Depending on the newly-chosen device’s capabilities, the list of available inspectors may change.</p>
 <h3><a class="anchor" id="watchermenucommands"></a>
 Menu Commands</h3>
 <p>Here’s what’s in the menu bar:</p><ul>
 <li><b>File</b> Menu<ul>
+<li><b>Open SupportLog…</b> — Opens support log as a software device. (Requires “ntv2swdevice” plugin to be installed.)</li>
 <li><b>Save As…</b> — Saves (exports) “raw” data for the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorframebuffer">Frame Buffer Inspector</a> and <a class="el" href="../../db/d02/toolsandutilities.html#inspectoraudio">Audio Inspector</a>.</li>
 <li><b>Print…</b> — Prints the diagram and code panels for the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroute">Routing Inspector</a>.</li>
 <li><b>Quit</b> (Linux &amp; Windows only) — Closes/exits the tool.</li>
@@ -825,12 +870,6 @@ Menu Commands</h3>
 <li><b>SDK Demos</b> — Shows/Hides the <a class="el" href="../../db/d02/toolsandutilities.html#demostool">“SDK Demos” Tool</a>.</li>
 <li><b><a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> Stats</b> — Shows/Hides the <a class="el" href="../../db/d02/toolsandutilities.html#debugstats">“AJADebug Stats” Tool</a>.</li>
 <li><b><a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> Log</b> — Shows/Hides the <a class="el" href="../../db/d02/toolsandutilities.html#debuglog">“AJADebug Log” Tool</a>.</li>
-<li><b>Register Name</b> — <em>(IP Device inspectors only)</em> —&#160;Shows/Hides register names.</li>
-<li><b>Hex Reg Numbers</b> — <em>(IP Device inspectors only)</em> —&#160;Toggles showing IP Device register numbers in hexadecimal or decimal.</li>
-<li><b>Register Address</b> — <em>(IP Device inspectors only)</em> —&#160;Displays IP Device registers as a hexadecimal (BAR) address.</li>
-<li><b>Register Offset</b> — <em>(IP Device inspectors only)</em> —&#160;Displays IP Device registers as a byte offset (from base address).</li>
-<li><b>Register Number</b> — <em>(IP Device inspectors only)</em> —&#160;Displays IP Device registers as an index number (normally ¼ the byte offset).</li>
-<li><b>Register Number Offset</b> — <em>(IP Device inspectors only)</em> —&#160;.</li>
 </ul>
 </li>
 <li><b>Help</b> Menu<ul>
@@ -1898,7 +1937,7 @@ Routing Inspector</h2>
 </ul>
 <p>Choose <b>Print…</b> from the <b>File</b> menu to print a two-page report of the current routing configuration.</p>
 <p>Choose <b>Copy</b> from the <b>Edit</b> menu to copy a human-readable snapshot of the displayed routing information to the Clipboard.</p>
-<p>This inspector will accept plain text either pasted in (using the <b>Paste</b> command from the <b>Edit</b> menu), or by dropping it in (using drag-and-drop) from another application. To be interpreted correctly as a set of routing connections, the text must syntactically conform to:</p><ul>
+<p>This inspector will accept plain text either pasted in (using the <b>Paste</b> command from the <b>Edit</b> menu), or by dropping it in (using drag-and-drop) from another application, or by dropping a file containing such text. To be interpreted correctly as a set of routing connections, the text must syntactically conform to:</p><ul>
 <li><b>C++ Statements</b> — One or more lines, each containing a call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaa49e3963887ef83d86ee39e19972b31" title="Connects the given widget signal input (sink) to the given widget signal output (source).">CNTV2Card::Connect</a> : <div class="fragment"><div class="line">device.Connect (<a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee">NTV2_XptFrameBuffer1Input</a>, <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a>);</div>
 <div class="line">device.Connect (<a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8">NTV2_XptCSC1VidInput</a>, <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a>);</div>
 <div class="line">device.Connect (<a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b">NTV2_XptCSC2VidInput</a>, <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a>);</div>
@@ -1909,7 +1948,16 @@ Routing Inspector</h2>
 <div class="line">device.Connect (<a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793">NTV2_XptHDMIOutInput</a>, <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a>);</div>
 <div class="line">device.Connect (<a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ab138b943a989ccf74ad365c11eafd412">NTV2_XptAnalogOutInput</a>, <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a>);</div>
 </div><!-- fragment --></li>
-<li><b>Shorthand Notation</b> — One or more lines having the “shorthand” notation: <div class="fragment"><div class="line">FB1 &lt;== SDIIn1</div>
+<li><b>Shorthand Notation</b> (SDK 17.5 or later) — One or more lines having this format: <div class="fragment"><div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4ac4aee26674a8a4ae84d209468d5333ee">NTV2_XptFrameBuffer1Input</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8">NTV2_XptCSC1VidInput</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a5721f66168fd1d223ba1d555f0f9de2b">NTV2_XptCSC2VidInput</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a03333436d304aa4dac93723056b3ad22">NTV2_XptLUT1Input</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a62f59d93ac6159cd58f73ea085aa0770">NTV2_XptCSC1VidRGB</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c">NTV2_XptLUT2Input</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a45fdfe2568c2c0095115c99d757cb772">NTV2_XptCSC2VidRGB</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a04689c4ed3081db9cd6c99365285fc56">NTV2_XptSDIOut3Input</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a></div>
+<div class="line"><a class="code" href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793">NTV2_XptHDMIOutInput</a> &lt;== <a class="code" href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16aeb92ee9e88c84198ee883600cddaaa02">NTV2_XptSDIIn1</a></div>
+</div><!-- fragment --></li>
+<li><b>Shorthand Notation</b> (SDK 17.1 or earlier) — One or more lines having this format: <div class="fragment"><div class="line">FB1 &lt;== SDIIn1</div>
 <div class="line">CSC1 &lt;== SDIIn1</div>
 <div class="line">CSC2 &lt;== SDIIn1DS2</div>
 <div class="line">LUT1 &lt;== CSC1RGB</div>
@@ -1918,9 +1966,9 @@ Routing Inspector</h2>
 <div class="line">SDIOut4 &lt;== SDIIn1DS2</div>
 <div class="line">HDMIOutQ1 &lt;== SDIIn1</div>
 <div class="line">AnalogOut &lt;== SDIIn1</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --> This notation is still acceptable in NTV2Watcher versions newer than SDK 17.1.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>The <b>Routing Inspector</b> has several preference settings in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefscables">Cables Preferences</a> tab in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> dialog.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The <b>Routing Inspector</b> has several preference settings in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefscables">Routing Preferences</a> tab in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> dialog.</dd></dl>
 <h3><a class="anchor" id="inspectorroutecables"></a>
 Cables</h3>
 <p>The <b>Cables</b> tab displays a <b>Routing Diagram</b>, where routing changes can be performed interactively. This is the panel in which most routing tasks are most easily performed.</p>
@@ -2155,11 +2203,29 @@ Crosspoint Map</h3>
 </ul>
 </li>
 </ul>
+<h3><a class="anchor" id="inspectorroutepresets"></a>
+Routing Presets</h3>
+<p>In the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutecables">Cables</a> view, any desired routing configuration can be saved or restored as a <b>Routing Preset</b>.</p>
+<p>All <b>Routing Preset</b>s are stored in files in a designated <em>Presets Folder</em> on the local host file system.</p><ul>
+<li>By default, at launch, NTV2Watcher creates the “<b>AJA Routing Presets</b>” folder in the current user’s home directory.</li>
+<li>A different folder/location can be specified in the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefscables">Routing Preferences</a> tab of the <a class="el" href="../../db/d02/toolsandutilities.html#watcherprefs">NTV2Watcher Preferences</a> dialog.</li>
+</ul>
+<p>Each <b>Routing Preset</b>’s name matches the name of its corresponding text file (minus its <code>.preset</code> extension).</p>
+<p>The <b>Routing Preset</b> file’s contents is the same “shorthand” format seen in the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutetext">Shorthand Text</a> tab.</p>
+<p>Files inside the <em>Presets Folder</em> that don’t have the <code>.preset</code> extension, or those with “illegal” file names, or those that don’t contain legitimate “shorthand” routing notation are skipped and ignored.</p>
+<p>The <em>Presets Folder</em> is monitored for changes, so that the preset list used in the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutecables">Cables</a> view stays coherent with the folder’s contents. This makes it possible, for example, to:</p><ul>
+<li>change a preset’s routing configuration by editing or changing the file’s contents;</li>
+<li>rename a preset by renaming its file;</li>
+<li>delete a preset by deleting its file;</li>
+<li>add a preset by creating a <code>.preset</code> file (that contains legitimate routing configuration “shorthand”).</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd><b>Routing Preset</b>s from older pre-17.6 NTV2Watcher versions are not retained. If needed, they must be recreated manually. AJA apologizes for the inconvenience.</dd></dl>
 <hr  size="50px" />
  <h2><a class="anchor" id="watchertools"></a>
 Tool Windows</h2>
 <p>NTV2Watcher also has a number of “Tools” that when activated appear in separate windows that are independent of the main window or detached inspector windows.</p>
 <p>Each Tool has its own particular user interface that’s designed to perform its specific task. To activate (open) or deactivate (close) a Tool, check or un-check it in the <b>View</b> menu:</p><ul>
+<li><a class="el" href="../../db/d02/toolsandutilities.html#watcherdevmgr">“Manage Devices” Tool</a> — access remote and/or virtual devices</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#fillbufferdlog">“Fill Buffer” Tool</a> — change the contents of frame buffer memory</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#anc608viewer">“EIA/CEA-608 Caption” Tool</a> — view/set EIA608 captions</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#regautocycler">“Register Cycler” Tool</a> — periodically change a register value</li>
@@ -2171,6 +2237,30 @@ Tool Windows</h2>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#debuglog">“AJADebug Log” Tool</a> — display AJA debug logs</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Some tools are expensive in terms of CPU utilization, and can cause some inspectors to lag from their expected refresh rate.</dd></dl>
+<h2><a class="anchor" id="watcherdevmgr"></a>
+“Manage Devices” Tool</h2>
+<p>The <b>Manage Devices</b> tool allows the discovery of devices on other hosts, and/or access virtual devices implemented by way of software plugins.</p>
+<div class="image">
+<img src="../../watcher-deviceselection.png" alt=""/>
+</div>
+<p>This tool window has two tabs:</p><ul>
+<li><b>Remote Devices</b> — to find remote devices on other hosts in your LAN to monitor and/or control:<ul>
+<li>To add a remote device to the list of <b>Known Remote Devices</b>:<ul>
+<li>Type its IP address or DNS-resolvable name in the “NTV2 Nub Host:” box.</li>
+<li>If the remote “nub” uses a port number other than 50325, enter its port number in the <b>Port:</b> box.</li>
+<li>When NTV2Watcher is able to successfully communicate with the remote “nub”, the <b>Add</b> button will become enabled.</li>
+<li>Click <b>Add</b> to add the remote device(s) to the <b>Known Remote Devices</b> list.</li>
+</ul>
+</li>
+<li>To remove a remote device from the <b>Known Remote Devices</b> list:<ul>
+<li>Right-click on the remote device to be removed.</li>
+<li>Choose the <b>Remove</b> command from the menu.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Plugins</b> — This tab can be used to load and configure signed NTV2 software plugins, and thereby add remote or virtual device(s) of their creation to the “Known Remote Devices” list.</li>
+</ul>
 <h2><a class="anchor" id="fillbufferdlog"></a>
 “Fill Buffer” Tool</h2>
 <p>The <b>“Fill Buffer” Tool</b> is a handy debugging aid for filling device buffer memory with various values and/or patterns.</p>
@@ -2857,7 +2947,10 @@ Frame Buffers Preferences</h3>
 <li><b>Show Frame Number control with NTV4 FrameStores</b> — When checked, the <b>Frame Number</b> spin control is also shown with the <b>Frame Address</b> spin control (only for NTV4 FrameStores).</li>
 </ul>
 <h3><a class="anchor" id="watcherprefscables"></a>
-Cables Preferences</h3>
+Routing Preferences</h3>
+<div class="image">
+<img src="../../watcher-prefs-routing.png" alt=""/>
+</div>
 <p>The controls in this panel set the preferences for the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroute">Routing Inspector</a>.</p><ul>
 <li><b>Allow drag &amp; drop to/from disabled sockets</b> — When checked, allows dragging new connection cables to or from disabled sockets.</li>
 <li><b>FrameStore Preview</b> — When hovering the mouse over a FrameStore widget, you can see previews of the image stored in its current frame buffer.<ul>
@@ -2867,6 +2960,14 @@ Cables Preferences</h3>
 </ul>
 </li>
 <li><b>Animate signals in cables</b> — When checked, cables that are actively carrying a signal will display with an animation effect.</li>
+<li><b>Routing Presets Folder:</b><ul>
+<li>Displays the path to the currently designated <em>Presets Folder</em> that’s storing <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutepresets">Routing Presets</a>.</li>
+<li>The default <em>Presets Folder</em> is “AJA Routing Presets” in the current user’s home directory.</li>
+<li><b>…</b> —&#160;Reveals the contents of the <em>Presets Folder</em> using the host’s native file browser.</li>
+<li><b>Change…</b> — Change the <em>Presets Folder</em>.</li>
+<li><b>Restore Default…</b> — Restores the default <em>Presets Folder</em>. Note that this will not copy any presets from the former <em>Presets Folder</em>. (You can do this manually using the local host file browser.)</li>
+</ul>
+</li>
 </ul>
 <p><b>Regs Preferences</b> </p><div class="image">
 <img src="../../watcher-prefs-regs.png" alt=""/>
@@ -2875,11 +2976,24 @@ Cables Preferences</h3>
 <li><b>Write Read-Only Registers</b> — When checked, allows registers that are designated “read-only” to be edited and written.</li>
 </ul>
 <hr  size="50px" />
+ <h2><a class="anchor" id="watchercmdline"></a>
+Command Line Parameters</h2>
+<p>NTV2Watcher can be started from the command line, and has several parameters and options that control its behavior.</p>
+<dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
+<div class="fragment"><div class="line">ntv2watcher [OPTION...]</div>
+<div class="line">  -d | --device {devSpec|urlSpec}   Open specified device at startup</div>
+<div class="line">  --nodevice                        Don&#39;t open device at startup</div>
+<div class="line">  -v | --verbose                    Copy AJADebug messages to stdout/stderr</div>
+<div class="line">  --version                         Show version &amp; exit</div>
+<div class="line">  -h,| --help                       Display this help screen</div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>On MacOS, the path to the NTV2Watcher executable leads into the application bundle:<br  />
+ <code>~/Downloads/ntv2sdkmac</code></dd></dl>
 <h1><a class="anchor" id="usingsupportlog"></a>
 ‘supportlog’ Command-Line Utility</h1>
-<dl class="section user"><dt>Description</dt><dd></dd></dl>
-<p>A command-line tool that generates a support log file that contains state information about the device and driver for one or more AJA devices, and can optionally capture device SDRAM contents into a separate binary dump file.</p>
-<dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
+<p><code></code></p>
+<p><code></p><dl class="section user"><dt>Description</dt><dd></dd></dl>
+<p>A command-line tool that generates a support log file that contains state information about the device and driver for one or more AJA devices, and can optionally capture device SDRAM contents into a separate binary dump file.</code></p>
+<p><code></p><dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
 <div class="fragment"><div class="line">supportlog [OPTION...]</div>
 <div class="line">  -d, --device=index#|serial#|model      device to use</div>
 <div class="line">  -s, --stdout                           dump to stdout instead of file?</div>
@@ -2890,32 +3004,38 @@ Cables Preferences</h3>
 <div class="line">Help options:</div>
 <div class="line">  -?, --help                             Show this help message</div>
 <div class="line">      --usage                            Show brief usage message</div>
-</div><!-- fragment --><ul>
-<li>The executable is shipped pre-built with the SDK, and appears in the “<b>bin</b>” directory.</li>
-<li>Source code is provided in the Linux SDK.</li>
-</ul>
-<dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
+</div><!-- fragment --><p></code></p>
+<p><code></p><dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
 <p>By default, <b>supportlog</b> generates a support log for the first device found. </p><div class="fragment"><div class="line">$ ./bin/supportlog</div>
-</div><!-- fragment --><p>This is no different than specifying device zero: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 0</div>
-</div><!-- fragment --><p>You can also specify a device by model name. For example, if a Kona4 was installed in the host system: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device kona4</div>
-</div><!-- fragment --><p>You can also specify a device by serial number: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 00T12345</div>
-</div><!-- fragment --><dl class="section user"><dt>Log Files</dt><dd></dd></dl>
+</div><!-- fragment --><p></code></p>
+<p><code>This is no different than specifying device zero: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 0</div>
+</div><!-- fragment --><p></code></p>
+<p><code>You can also specify a device by model name. For example, if a Kona4 was installed in the host system: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device kona4</div>
+</div><!-- fragment --><p></code></p>
+<p><code>You can also specify a device by serial number: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 00T12345</div>
+</div><!-- fragment --><p></code></p>
+<p><code></p><dl class="section user"><dt>Log Files</dt><dd></dd></dl>
 <p>Files are always written into the currently logged-in user’s home directory: </p><div class="fragment"><div class="line">$ ls ~/*log</div>
 <div class="line">-rw-r--r--  1 demo  staff   130K Sep 20 15:53 /Users/demo/aja_supportlog_0_1537484005.log</div>
 <div class="line">-rw-r--r--  1 demo  staff   226K Sep 20 15:53 /Users/demo/aja_supportlog_1_1537484005.log</div>
 <div class="line">-rw-r--r--  1 demo  staff   272K Sep 20 15:53 /Users/demo/aja_supportlog_2_1537484005.log</div>
-</div><!-- fragment --><p>The name of the log file contains the device index number, and a 10-digit number that’s based on the date and time it was generated. If the host file system enumerates files lexically by name, within a single device index’s group, they should appear sorted oldest-to-newest.</p>
-<p>To write a log file to a specific directory with a different name, use the “<code>&ndash;stdout</code>” option along with standard shell redirection directives to pipe the output into the desired file and path: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --stdout  &gt;./my_support_log.txt</div>
-</div><!-- fragment --><dl class="section user"><dt>Delaying Log Capture</dt><dd></dd></dl>
+</div><!-- fragment --><p></code></p>
+<p><code>The name of the log file contains the device index number, and a 10-digit number that’s based on the date and time it was generated. If the host file system enumerates files lexically by name, within a single device index’s group, they should appear sorted oldest-to-newest.</code></p>
+<p><code>To write a log file to a specific directory with a different name, use the “<code>&ndash;stdout</code>” option along with standard shell redirection directives to pipe the output into the desired file and path: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --stdout  &gt;./my_support_log.txt</div>
+</div><!-- fragment --><p></code></p>
+<p><code></p><dl class="section user"><dt>Delaying Log Capture</dt><dd></dd></dl>
 <p>Sometimes it’s desirable to capture the log after a certain length of time, often to give the operator time to change something. Use the “<code>&ndash;wait</code>” option to specify a delay time. For example, to capture a log after delaying 10 seconds: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --wait 10</div>
-</div><!-- fragment --><dl class="section user"><dt>Capturing Device SDRAM Contents</dt><dd></dd></dl>
-<p>If AJA SDK Support requests a snapshot of the device’s SDRAM contents, use the “<code>&ndash;sdram</code>” option.</p>
-<dl class="section note"><dt>Note</dt><dd>The resulting dump file will be quite large. Be sure the host storage volume on which your home directory resides has plenty of free space.</dd></dl>
+</div><!-- fragment --><p></code></p>
+<p><code></p><dl class="section user"><dt>Capturing Device SDRAM Contents</dt><dd></dd></dl>
+<p>If AJA SDK Support requests a snapshot of the device’s SDRAM contents, use the “<code>&ndash;sdram</code>” option.</code></p>
+<p><code></p><dl class="section note"><dt>Note</dt><dd>The resulting dump file will be quite large. Be sure the host storage volume on which your home directory resides has plenty of free space.</dd></dl>
 <hr  size="50px" />
+<p></code></p>
+<p><code></code></p>
 <h1><a class="anchor" id="usingsystemtest"></a>
 “AJA System Test”</h1>
-<p>This page describes how to use the <b>AJA System Test</b> utility to measure the read/write performance of an AJA device and/or local host disk storage.</p>
-<dl class="section user"><dt>General Operation</dt><dd></dd></dl>
+<p><code> This page describes how to use the <b>AJA System Test</b> utility to measure the read/write performance of an AJA device and/or local host disk storage.</code></p>
+<p><code></p><dl class="section user"><dt>General Operation</dt><dd></dd></dl>
 <p>The user interface consists of a single main window, with…</p><ul>
 <li><b>Write</b> and <b>Read</b> progress indicators featured prominently in the middle.</li>
 <li>The big, green <b>Start</b> button, which starts a test running. When a test is running, it becomes a large, red <b>Stop</b> button.</li>
@@ -2923,7 +3043,8 @@ Cables Preferences</h3>
 <li><b>Settings</b> (on the left). These allow you to choose resolution, file size, codec type, device, target disk, etc.</li>
 <li>A graph icon (at the bottom) to toggle the display of performance charts.</li>
 </ul>
-<p>The <b>Settings</b> panel (on the left) makes it easy to both see and change the relevant test settings. Click on the heading to change the setting.</p><ul>
+<p></code></p>
+<p><code>The <b>Settings</b> panel (on the left) makes it easy to both see and change the relevant test settings. Click on the heading to change the setting.</p><ul>
 <li><b>Resolution</b> — Selects the video format (and frame dimensions) of interest. (For device tests, the available formats may vary depending on the selected device capabilities.)</li>
 <li><b>Test File Size</b> — Selects the size of the test file to be created and used in the test. Choose from 256MB to 16GB.</li>
 <li><b>Codec Type</b> — Selects the codec type to be used in the test. Choose from a variety of uncompressed YUV or RGB formats, and many compressed formats.</li>
@@ -2933,13 +3054,16 @@ Cables Preferences</h3>
 <li><b>AJA Device</b> — Selects an AJA device to test.</li>
 <li><b>Settings</b> — Used to configure other lesser-used settings (see below).</li>
 </ul>
+<p></code></p>
+<p><code></code></p>
 <h2><a class="anchor" id="systest-disk"></a>
 System Disk Test</h2>
-<div class="image">
+<p><code> </p><div class="image">
 <img src="../../systest-disktest.png" alt=""/>
 </div>
-<p>The <b>System Disk Test</b> measures the read/write performance of local host storage.</p>
-<p>To measure disk performance for a particular local host volume…</p><ol type="1">
+<p></code></p>
+<p><code>The <b>System Disk Test</b> measures the read/write performance of local host storage.</code></p>
+<p><code>To measure disk performance for a particular local host volume…</p><ol type="1">
 <li>Choose a video <b>Resolution</b>.</li>
 <li>Choose a <b>Test File Size</b>.</li>
 <li>Choose a <b>Codec Type</b>.</li>
@@ -2951,13 +3075,16 @@ System Disk Test</h2>
 <li>Click the <b>F/Sec</b> button to view the performance as a frame rate, in frames per second.</li>
 <li>Click the graph icon at the bottom to reveal charts of the read/write performance over time.</li>
 </ul>
+<p></code></p>
+<p><code></code></p>
 <h2><a class="anchor" id="systest-dev"></a>
 AJA Device Test</h2>
-<div class="image">
+<p><code> </p><div class="image">
 <img src="../../systest-devicetest.png" alt=""/>
 </div>
-<p>The <b>AJA Device Test</b> measures the hostʼs-deviceʼs DMA read/write performance.</p>
-<p>To measure DMA performance for a particular device…</p><ol type="1">
+<p></code></p>
+<p><code>The <b>AJA Device Test</b> measures the hostʼs-deviceʼs DMA read/write performance.</code></p>
+<p><code>To measure DMA performance for a particular device…</p><ol type="1">
 <li>Choose a video <b>Resolution</b>.</li>
 <li>Choose a <b>Pixel Format</b>.</li>
 <li>Choose a device.</li>
@@ -2968,13 +3095,16 @@ AJA Device Test</h2>
 <li>Click the <b>F/Sec</b> button to view the performance as a frame rate, in frames per second.</li>
 <li>Click the graph icon at the bottom to reveal charts of the read/write performance over time.</li>
 </ul>
+<p></code></p>
+<p><code></code></p>
 <h2><a class="anchor" id="systest-devdisk"></a>
 Disk + Device Test</h2>
-<div class="image">
+<p><code> </p><div class="image">
 <img src="../../systest-diskdevicetest.png" alt=""/>
 </div>
-<p>The <b>Disk + Device Test</b> measures more “real-world” read/write performance by performing DMA reads followed by host disk writes (for capture), and host disk reads followed by DMA writes (for playout).</p>
-<p>To measure combined DMA and host disk I/O performance…</p><ol type="1">
+<p></code></p>
+<p><code>The <b>Disk + Device Test</b> measures more “real-world” read/write performance by performing DMA reads followed by host disk writes (for capture), and host disk reads followed by DMA writes (for playout).</code></p>
+<p><code>To measure combined DMA and host disk I/O performance…</p><ol type="1">
 <li>Choose a video <b>Resolution</b>.</li>
 <li>Choose a <b>Test File Size</b>.</li>
 <li>Choose a <b>Codec Type</b>.</li>
@@ -2988,46 +3118,58 @@ Disk + Device Test</h2>
 <li>Click the <b>F/Sec</b> button to view the performance as a frame rate, in frames per second.</li>
 <li>Click the graph icon at the bottom to reveal charts of the read/write performance over time.</li>
 </ul>
+<p></code></p>
+<p><code></code></p>
 <h2><a class="anchor" id="systest-settings"></a>
 Other Settings</h2>
-<div class="image">
+<p><code> </p><div class="image">
 <img src="../../systest-settings.png" alt=""/>
 </div>
-<p>The “Settings” dialog box is used to configure other lesser-used settings.</p>
-<ul>
+<p></code></p>
+<p><code>The “Settings” dialog box is used to configure other lesser-used settings.</code></p>
+<p><code></p><ul>
 <li><b>Start Test</b> — Configures whether the test runs once (the default) or continuously.</li>
 <li><b>Disk Test</b> — Configures the Disk Test to create and use one “File per Frame” or use one “Single file” for all frames. Defaults to “Single file”.</li>
 <li><b>Disk Cache</b> — Enables or disables the local host operating systemʼs disk cache. Defaults to “Disable”.</li>
 <li><b>Disk Mode</b> — Configures the Disk Test to measure “Read/Write”, “Write-only” or “Read-only (write once)” performance. Defaults to “Read/Write”.</li>
 <li><b>DMA Mode</b> — Configures the Device Test to use one (“Single Engine”) or two (“Dual Engines”) DMA engines. Defaults to “Dual Engines”.</li>
 </ul>
+<p></code></p>
+<p><code></code></p>
 <h2><a class="anchor" id="systest-report"></a>
 System Report</h2>
-<div class="image">
+<p><code> </p><div class="image">
 <img src="../../systest-report.png" alt=""/>
 </div>
-<p>The <b>System Report</b> shows detailed information about the host system and the attached AJA device(s) that may affect read/write performance.</p>
-<p>To export a <b>.pdf</b> file that contains the report…</p><ol type="1">
+<p></code></p>
+<p><code>The <b>System Report</b> shows detailed information about the host system and the attached AJA device(s) that may affect read/write performance.</code></p>
+<p><code>To export a <b>.pdf</b> file that contains the report…</p><ol type="1">
 <li>Be sure the <b>Generate System Report File (.spx)</b> checkbox is unchecked (clear).</li>
 <li>Click <b>Save</b>.</li>
 <li>A folder-picker dialog box will appear. Choose a folder in which to save the PDF file, then click <b>Open</b>.</li>
 </ol>
-<p>To export a <b>.spx</b> file that contains the full report of the host system configuration…</p><ol type="1">
+<p></code></p>
+<p><code>To export a <b>.spx</b> file that contains the full report of the host system configuration…</p><ol type="1">
 <li>Be sure the <b>Generate System Report File (.spx)</b> checkbox is checked (ticked).</li>
 <li>Click <b>Save</b>.</li>
 <li>A folder-picker dialog box will appear. Choose a folder in which to save the SPX file, then click <b>Open</b>.</li>
 </ol>
-<p>To copy all or part of the report text out of the report window…</p><ol type="1">
+<p></code></p>
+<p><code>To copy all or part of the report text out of the report window…</p><ol type="1">
 <li>Left-click and drag through the text in the window, or right-click and choose <b>Select All</b> (or press Ctrl-A).</li>
 <li>Right-click and choose <b>Copy</b> (or press Ctrl-C).</li>
 <li>You may now paste (using Ctrl-V) the copied text into a document being edited in another running application.</li>
 </ol>
-<hr  size="50px" />
- </div></div><!-- contents -->
+<p></code></p>
+<p><code></p><hr  size="50px" />
+<p> </code></p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a49271656a151f9761fb869fc9cdb2209"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a49271656a151f9761fb869fc9cdb2209">NTV2_XptFrameBuffer4YUV</a></div><div class="ttdeci">@ NTV2_XptFrameBuffer4YUV</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02565">ntv2enums.h:2565</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a11599852b7ead0c7220b2cbcbfcb1793">NTV2_XptHDMIOutInput</a></div><div class="ttdeci">@ NTV2_XptHDMIOutInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02843">ntv2enums.h:2843</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16ab63f2f0117d9eef9be2157b4b6baf7e2">NTV2_XptSDIIn1DS2</a></div><div class="ttdeci">@ NTV2_XptSDIIn1DS2</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02555">ntv2enums.h:2555</a></div></div>
+<div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a4c3d2f8a7bd425569a5c60e6035adafb"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a4c3d2f8a7bd425569a5c60e6035adafb">NTV2_XptFrameBuffer3YUV</a></div><div class="ttdeci">@ NTV2_XptFrameBuffer3YUV</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02563">ntv2enums.h:2563</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a9ebb0bb1096185ae9077938f2558573f">NTV2_XptSDIOut4Input</a></div><div class="ttdeci">@ NTV2_XptSDIOut4Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02793">ntv2enums.h:2793</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a2539e52aeba549c535358d52c04906a8">NTV2_XptCSC1VidInput</a></div><div class="ttdeci">@ NTV2_XptCSC1VidInput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02759">ntv2enums.h:2759</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a8c757863040a131ff5aa4e0e93284fd4a837064097eb86a9284c2a7effe26459c">NTV2_XptLUT2Input</a></div><div class="ttdeci">@ NTV2_XptLUT2Input</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02776">ntv2enums.h:2776</a></div></div>
@@ -3043,7 +3185,7 @@ System Report</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:44 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:13 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

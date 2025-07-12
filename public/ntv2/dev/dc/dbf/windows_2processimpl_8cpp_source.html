@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -152,11 +152,11 @@ $(document).ready(function(){initNavTree('dc/dbf/windows_2processimpl_8cpp_sourc
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="../../d9/d3c/class_a_j_a_process_impl.html#a6777af0cdf1cc150a333996656da546b">AJAProcessImpl::Activate</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* pWindow)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// handle &quot;ends in&quot; by looking for * at beginning of string</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* pName = pWindow;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../dc/d6e/amvideo_8cpp.html#ae622e6915f2e78c44f138c31d9433178">pName</a> = pWindow;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> bEnum = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span>(*pName == <span class="charliteral">&#39;*&#39;</span>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span>(*<a class="code" href="../../dc/d6e/amvideo_8cpp.html#ae622e6915f2e78c44f138c31d9433178">pName</a> == <span class="charliteral">&#39;*&#39;</span>)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        pName++;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../dc/d6e/amvideo_8cpp.html#ae622e6915f2e78c44f138c31d9433178">pName</a>++;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        bEnum = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    HWND hWindow = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('dc/dbf/windows_2processimpl_8cpp_sourc
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="../../dc/dbf/windows_2processimpl_8cpp.html#af5a643daab014d7fc8552ed9b59e3aa1">hFoundWindow</a> = <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        bFound = !EnumWindows(<a class="code" href="../../dc/dbf/windows_2processimpl_8cpp.html#a72e2cbeb53d0438fee72a542e5e725a0">findFunc</a>, (LPARAM)pName);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        bFound = !EnumWindows(<a class="code" href="../../dc/dbf/windows_2processimpl_8cpp.html#a72e2cbeb53d0438fee72a542e5e725a0">findFunc</a>, (LPARAM)<a class="code" href="../../dc/d6e/amvideo_8cpp.html#ae622e6915f2e78c44f138c31d9433178">pName</a>);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        hWindow = <a class="code" href="../../dc/dbf/windows_2processimpl_8cpp.html#af5a643daab014d7fc8552ed9b59e3aa1">hFoundWindow</a>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span>(!bFound)</div>
@@ -224,6 +224,7 @@ $(document).ready(function(){initNavTree('dc/dbf/windows_2processimpl_8cpp_sourc
 <div class="ttc" id="atypes_8h_html_a7da8d7c5e3dc31d31e8d285d1f4d6d24"><div class="ttname"><a href="../../d9/d49/types_8h.html#a7da8d7c5e3dc31d31e8d285d1f4d6d24">NUMELMS</a></div><div class="ttdeci">#define NUMELMS(aa)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d49/types_8h_source.html#l00430">types.h:430</a></div></div>
 <div class="ttc" id="awindows_2processimpl_8cpp_html_a72e2cbeb53d0438fee72a542e5e725a0"><div class="ttname"><a href="../../dc/dbf/windows_2processimpl_8cpp.html#a72e2cbeb53d0438fee72a542e5e725a0">findFunc</a></div><div class="ttdeci">BOOL CALLBACK findFunc(HWND hWnd, LPARAM lParam)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dbf/windows_2processimpl_8cpp_source.html#l00044">processimpl.cpp:44</a></div></div>
 <div class="ttc" id="aclass_a_j_a_process_impl_html_a6777af0cdf1cc150a333996656da546b"><div class="ttname"><a href="../../d9/d3c/class_a_j_a_process_impl.html#a6777af0cdf1cc150a333996656da546b">AJAProcessImpl::Activate</a></div><div class="ttdeci">static bool Activate(uint64_t handle)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d04/bm_2processimpl_8cpp_source.html#l00043">processimpl.cpp:43</a></div></div>
+<div class="ttc" id="aamvideo_8cpp_html_ae622e6915f2e78c44f138c31d9433178"><div class="ttname"><a href="../../dc/d6e/amvideo_8cpp.html#ae622e6915f2e78c44f138c31d9433178">pName</a></div><div class="ttdeci">CHAR * pName</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d6e/amvideo_8cpp_source.html#l00026">amvideo.cpp:26</a></div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="../../d5/dd0/timer_8h.html">timer.h</a></div><div class="ttdoc">Declares the AJATimer class.</div></div>
 <div class="ttc" id="awindows_2processimpl_8cpp_html_af5a643daab014d7fc8552ed9b59e3aa1"><div class="ttname"><a href="../../dc/dbf/windows_2processimpl_8cpp.html#af5a643daab014d7fc8552ed9b59e3aa1">hFoundWindow</a></div><div class="ttdeci">static HWND hFoundWindow</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dbf/windows_2processimpl_8cpp_source.html#l00042">processimpl.cpp:42</a></div></div>
 <div class="ttc" id="aclass_a_j_a_process_impl_html_ab04306c3b47607203b14a12c50a179f3"><div class="ttname"><a href="../../d9/d3c/class_a_j_a_process_impl.html#ab04306c3b47607203b14a12c50a179f3">AJAProcessImpl::IsValid</a></div><div class="ttdeci">static bool IsValid(uint64_t pid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d04/bm_2processimpl_8cpp_source.html#l00034">processimpl.cpp:34</a></div></div>
@@ -235,7 +236,7 @@ $(document).ready(function(){initNavTree('dc/dbf/windows_2processimpl_8cpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_2a5fa578bf70f724f924d7f0ed01f20c.html">system</a></li><li class="navelem"><a class="el" href="../../dir_0cc7e674a10c8be9c17fc197df151ee1.html">windows</a></li><li class="navelem"><a class="el" href="../../dc/dbf/windows_2processimpl_8cpp.html">processimpl.cpp</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:35 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:06 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

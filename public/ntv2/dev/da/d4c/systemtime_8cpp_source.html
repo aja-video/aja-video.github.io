@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -453,8 +453,8 @@ $(document).ready(function(){initNavTree('da/d4c/systemtime_8cpp_source.html','.
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            {sMonThreadID = 0;  <span class="keywordflow">return</span> <span class="keyword">true</span>;}</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">if</span> (sMonThreadID != <a class="code" href="../../d2/db9/class_a_j_a_thread.html#ad0cd865bd21238313724e39d7c027d40">AJAThread::GetThreadId</a>())</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n(0);  n &lt; sNumPercentiles;  n++)</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                sCounts[n] = 0;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>(0);  <a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a> &lt; sNumPercentiles;  <a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>++)</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                sCounts[<a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>] = 0;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        sMonThreadID = <a class="code" href="../../d2/db9/class_a_j_a_thread.html#ad0cd865bd21238313724e39d7c027d40">AJAThread::GetThreadId</a>();</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    }</div>
@@ -462,10 +462,10 @@ $(document).ready(function(){initNavTree('da/d4c/systemtime_8cpp_source.html','.
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    std::string AJATime::GetSleepStats (<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    {</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        std::ostringstream oss;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n(0);  n &lt; sNumCounts;  n++)</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">if</span> (sCounts[n])</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>(0);  <a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a> &lt; sNumCounts;  <a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>++)</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">if</span> (sCounts[<a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>])</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                oss &lt;&lt; sCounts[n] &lt;&lt; <span class="stringliteral">&quot;\t&lt; &quot;</span> &lt;&lt; sPercentiles[n] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                oss &lt;&lt; sCounts[<a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>] &lt;&lt; <span class="stringliteral">&quot;\t&lt; &quot;</span> &lt;&lt; sPercentiles[<a class="code" href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a>] &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            }</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordflow">return</span> oss.str();</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
@@ -479,6 +479,7 @@ $(document).ready(function(){initNavTree('da/d4c/systemtime_8cpp_source.html','.
 <div class="ttc" id="aclass_a_j_a_thread_html_ad0cd865bd21238313724e39d7c027d40"><div class="ttname"><a href="../../d2/db9/class_a_j_a_thread.html#ad0cd865bd21238313724e39d7c027d40">AJAThread::GetThreadId</a></div><div class="ttdeci">static uint64_t GetThreadId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d35/thread_8cpp_source.html#l00180">thread.cpp:180</a></div></div>
 <div class="ttc" id="aclass_a_j_a_time_html_aaa767729940de564d545aeabfc0b258e"><div class="ttname"><a href="../../da/dbc/class_a_j_a_time.html#aaa767729940de564d545aeabfc0b258e">AJATime::GetSystemSeconds</a></div><div class="ttdeci">static double GetSystemSeconds(void)</div><div class="ttdoc">Returns the current value of the host's high-resolution clock, in seconds.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4c/systemtime_8cpp_source.html#l00193">systemtime.cpp:193</a></div></div>
 <div class="ttc" id="anamespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434_html_a14b59b9b8b6f511cdd6bb3e7c8b228ce"><div class="ttname"><a href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#a14b59b9b8b6f511cdd6bb3e7c8b228ce">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::void</a></div><div class="ttdeci">j template void())</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db8/json_8hpp_source.html#l04893">json.hpp:4893</a></div></div>
+<div class="ttc" id="apstream_8cpp_html_a7d46b74409bd32b539089ef4721ea544"><div class="ttname"><a href="../../d3/d0c/pstream_8cpp.html#a7d46b74409bd32b539089ef4721ea544">n</a></div><div class="ttdeci">unsigned int n</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d0c/pstream_8cpp_source.html#l00148">pstream.cpp:148</a></div></div>
 <div class="ttc" id="aclass_a_j_a_time_html_affe23e471241a0fa21deee13aa2d7589"><div class="ttname"><a href="../../da/dbc/class_a_j_a_time.html#affe23e471241a0fa21deee13aa2d7589">AJATime::GetSystemMicroseconds</a></div><div class="ttdeci">static uint64_t GetSystemMicroseconds(void)</div><div class="ttdoc">Returns the current value of the host's high-resolution clock, in microseconds.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4c/systemtime_8cpp_source.html#l00221">systemtime.cpp:221</a></div></div>
 <div class="ttc" id="aclass_a_j_a_time_html_a0f93f3d15d35adb657fc1756cebd56e9"><div class="ttname"><a href="../../da/dbc/class_a_j_a_time.html#a0f93f3d15d35adb657fc1756cebd56e9">AJATime::Sleep</a></div><div class="ttdeci">static void Sleep(const int32_t inMilliseconds)</div><div class="ttdoc">Suspends execution of the current thread for a given number of milliseconds.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4c/systemtime_8cpp_source.html#l00284">systemtime.cpp:284</a></div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="../../d5/dd0/timer_8h.html">timer.h</a></div><div class="ttdoc">Declares the AJATimer class.</div></div>
@@ -501,7 +502,7 @@ $(document).ready(function(){initNavTree('da/d4c/systemtime_8cpp_source.html','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_2a5fa578bf70f724f924d7f0ed01f20c.html">system</a></li><li class="navelem"><a class="el" href="../../da/d4c/systemtime_8cpp.html">systemtime.cpp</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:36 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:06 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

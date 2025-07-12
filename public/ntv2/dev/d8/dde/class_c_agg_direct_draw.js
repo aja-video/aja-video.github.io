@@ -1,0 +1,28 @@
+var class_c_agg_direct_draw =
+[
+    [ "CAggDirectDraw", "d8/dde/class_c_agg_direct_draw.html#a78a57f1f674074b982eec4263e64f7fa", null ],
+    [ "~CAggDirectDraw", "d8/dde/class_c_agg_direct_draw.html#ad9b2c1f058513bb13d74c6cc7c191a64", null ],
+    [ "Compact", "d8/dde/class_c_agg_direct_draw.html#af823708c834fc1251bd482b8d52ba2fc", null ],
+    [ "CreateClipper", "d8/dde/class_c_agg_direct_draw.html#a78b226e8fabca38375fb7ee8d3c729c2", null ],
+    [ "CreatePalette", "d8/dde/class_c_agg_direct_draw.html#ac98129093a4ed7ca296798f767885597", null ],
+    [ "CreateSurface", "d8/dde/class_c_agg_direct_draw.html#a5119d987824eeac5b6bdad10acaa93e8", null ],
+    [ "DuplicateSurface", "d8/dde/class_c_agg_direct_draw.html#a2c12b33dd05789d0e6e68c7509550686", null ],
+    [ "EnumDisplayModes", "d8/dde/class_c_agg_direct_draw.html#a391217fabfb11c02f60eb81109cfaedc", null ],
+    [ "EnumSurfaces", "d8/dde/class_c_agg_direct_draw.html#a6fe8648edd27680c10a3d8a9b046b1bb", null ],
+    [ "FlipToGDISurface", "d8/dde/class_c_agg_direct_draw.html#aa5008f54cb5494e540ea1fcb643675f0", null ],
+    [ "GetCaps", "d8/dde/class_c_agg_direct_draw.html#a85daf8b99b82bc978d74b3d8c9560da3", null ],
+    [ "GetDisplayMode", "d8/dde/class_c_agg_direct_draw.html#a0803adaad5955298b01f40c5c243c5fb", null ],
+    [ "GetFourCCCodes", "d8/dde/class_c_agg_direct_draw.html#a1215827a88bfc301951e92f77d00b70f", null ],
+    [ "GetGDISurface", "d8/dde/class_c_agg_direct_draw.html#a5a7528915f8f547f5078c0fa0e1e252c", null ],
+    [ "GetMonitorFrequency", "d8/dde/class_c_agg_direct_draw.html#a2fb41db690c1ba16d406a9af4b3c197e", null ],
+    [ "GetScanLine", "d8/dde/class_c_agg_direct_draw.html#a2abca6eb92eae694822d66f1f4ec99a0", null ],
+    [ "GetVerticalBlankStatus", "d8/dde/class_c_agg_direct_draw.html#a13ab0dc14cfdfe5a679afee08d66f273", null ],
+    [ "Initialize", "d8/dde/class_c_agg_direct_draw.html#a730d8dc5717eaf672528fc56c14f787c", null ],
+    [ "NonDelegatingQueryInterface", "d8/dde/class_c_agg_direct_draw.html#acc61e1c2192d828fef2f3353e9af03e8", null ],
+    [ "RestoreDisplayMode", "d8/dde/class_c_agg_direct_draw.html#a7dcbdf154ea29c3e24b4c64c2a2206be", null ],
+    [ "SetCooperativeLevel", "d8/dde/class_c_agg_direct_draw.html#a413b7c25b31eb2fe7bf246e98c3d4b7a", null ],
+    [ "SetDirectDraw", "d8/dde/class_c_agg_direct_draw.html#ab2fbffc3b8aafd529d9c48a1bcc036cf", null ],
+    [ "SetDisplayMode", "d8/dde/class_c_agg_direct_draw.html#a999ebd0366d86f7da5560b13f64d0418", null ],
+    [ "WaitForVerticalBlank", "d8/dde/class_c_agg_direct_draw.html#a4d2a639814cf5802c6cd2671404ad6b1", null ],
+    [ "m_pDirectDraw", "d8/dde/class_c_agg_direct_draw.html#ae495729c5ed6410bb1b00fe1f66b77cc", null ]
+];

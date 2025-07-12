@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -151,9 +151,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3f09f3344fce1ee7552eb35d081344a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0426b206439709f27ae62c547dd764f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#af0426b206439709f27ae62c547dd764f">ControlDriverDebugMessages</a> (<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a70f9fa2dfa717969561a2c3880eab378">NTV2_DriverDebugMessageSet</a> msgSet, bool enable)</td></tr>
 <tr class="separator:af0426b206439709f27ae62c547dd764f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f0f236134cc4c0edc2db34a1f463a39"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a0f0f236134cc4c0edc2db34a1f463a39">HevcSendMessage</a> (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#af9e1fe03d2f5c3ac3e92f3ad09e11c72">HevcMessageHeader</a> *pMessage)</td></tr>
-<tr class="memdesc:a0f0f236134cc4c0edc2db34a1f463a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an HEVC message to the NTV2 driver.  <a href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a0f0f236134cc4c0edc2db34a1f463a39">More...</a><br /></td></tr>
-<tr class="separator:a0f0f236134cc4c0edc2db34a1f463a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b183f4d19f1dbf3b9f73857c12c28c7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a5b183f4d19f1dbf3b9f73857c12c28c7">SetupBoard</a> (void)</td></tr>
 <tr class="separator:a5b183f4d19f1dbf3b9f73857c12c28c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21f8b73cc80b668df7226b5f3994468"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ad21f8b73cc80b668df7226b5f3994468">DmaWriteWithOffsets</a> (<a class="el" href="../../d6/d0c/ntv2enums_8h.html#abdd81eb2dc51631d7c5be63ab18de80f">NTV2DMAEngine</a> <a class="el" href="../../da/d23/ntv2macpublicinterface_8h.html#a1c4713ab7abefe5b7d715940da35cc8c">DMAEngine</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> frameNumber, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> *pFrameBuffer, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> offsetSrc, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> offsetDest, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> bytes)</td></tr>
@@ -203,6 +200,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb09520f88741ac340d1e07c3289b8fc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#abb09520f88741ac340d1e07c3289b8fc">GetDMANumDriverBuffers</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> *pNumDmaDriverBuffers)</td></tr>
 <tr class="separator:abb09520f88741ac340d1e07c3289b8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a737d0d5b5296b22cca59d2a12c489ba2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a737d0d5b5296b22cca59d2a12c489ba2">SetAudioOutputMode</a> (<a class="el" href="../../d6/d0c/ntv2enums_8h.html#ac6e2f13bf6479bd420455ed8f1b0047f">NTV2_GlobalAudioPlaybackMode</a> mode)</td></tr>
+<tr class="memdesc:a737d0d5b5296b22cca59d2a12c489ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined(NTV2_DEPRECATE_17_6)  <a href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a737d0d5b5296b22cca59d2a12c489ba2">More...</a><br /></td></tr>
 <tr class="separator:a737d0d5b5296b22cca59d2a12c489ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a626385243b189e20fc5e0849062cd5b4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a626385243b189e20fc5e0849062cd5b4">GetAudioOutputMode</a> (<a class="el" href="../../d6/d0c/ntv2enums_8h.html#ac6e2f13bf6479bd420455ed8f1b0047f">NTV2_GlobalAudioPlaybackMode</a> *mode)</td></tr>
 <tr class="separator:a626385243b189e20fc5e0849062cd5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +230,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abedcc16fefe372d340f9e0050134f80c inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5743bf2ed1d109e23d9c78fd56eefe inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a6e5743bf2ed1d109e23d9c78fd56eefe">StreamBufferOps</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel, <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;inBuffer, <a class="el" href="../../db/de2/ajatypes_8h.html#a534ffe395307dfbf907806d772223f43">ULWord64</a> bufferCookie, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> flags, <a class="el" href="../../da/d92/class_n_t_v2_stream_buffer.html">NTV2StreamBuffer</a> &amp;status)</td></tr>
 <tr class="separator:a6e5743bf2ed1d109e23d9c78fd56eefe inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c022aba20c349441d24fa81e956b749 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a0c022aba20c349441d24fa81e956b749">MailBufferOps</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel, <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;inBuffer, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> dataSize, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> flags, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> delay, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> timeout, <a class="el" href="../../d6/dfc/class_n_t_v2_mail_buffer.html">NTV2MailBuffer</a> &amp;status)</td></tr>
+<tr class="separator:a0c022aba20c349441d24fa81e956b749 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d9b3983dcf38307b82121c1a9635b72 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a2d9b3983dcf38307b82121c1a9635b72">ReadRP188Registers</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel, <a class="el" href="../../d3/d95/struct_r_p188___s_t_r_u_c_t.html">RP188_STRUCT</a> *pRP188Data)</td></tr>
 <tr class="separator:a2d9b3983dcf38307b82121c1a9635b72 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a54c845174b156d197a09a488936f5e inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a0a54c845174b156d197a09a488936f5e">GetDescription</a> (void) const</td></tr>
@@ -768,7 +768,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01295">1295</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01277">1277</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01336">1336</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01318">1318</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +910,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01418">1418</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01400">1400</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1247,7 +1247,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01222">1222</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01204">1204</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1315,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01258">1258</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01240">1240</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1377,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01370">1370</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01352">1352</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1405,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01205">1205</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01187">1187</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1432,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000241">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000256">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -1461,7 +1461,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000242">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000257">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -1490,7 +1490,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000243">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000258">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00474">474</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -1519,7 +1519,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000244">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000259">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00479">479</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -1548,9 +1548,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000250">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000265">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01161">1161</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01143">1143</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1577,9 +1577,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000249">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000264">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01114">1114</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01096">1096</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1606,9 +1606,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000251">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000266">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01119">1119</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01101">1101</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1662,45 +1662,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f0f236134cc4c0edc2db34a1f463a39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0f236134cc4c0edc2db34a1f463a39">&#9670;&nbsp;</a></span>HevcSendMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CNTV2BareMetalDriverInterface::HevcSendMessage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#af9e1fe03d2f5c3ac3e92f3ad09e11c72">HevcMessageHeader</a> *&#160;</td>
-          <td class="paramname"><em>pMessage</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sends an HEVC message to the NTV2 driver. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pMessage</td><td>Points to the HevcMessageHeader that contains the HEVC message. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False. This must be implemented by the platform-specific subclass. </dd></dl>
-
-<p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a595965efc34c96e170a1da3c8c005a88">CNTV2DriverInterface</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01094">1094</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
-
-</div>
-</div>
 <a id="ab60675251286b526f8ced86a9fc7ff9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab60675251286b526f8ced86a9fc7ff9a">&#9670;&nbsp;</a></span>MapDMADriverBuffer()</h2>
 
@@ -1724,7 +1685,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01127">1127</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01109">1109</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1751,7 +1712,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000247">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000262">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00537">537</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -1780,7 +1741,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000237">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000252">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00335">335</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -1809,7 +1770,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000239">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000254">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00411">411</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -1838,7 +1799,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000245">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000260">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00484">484</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -2034,7 +1995,9 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01200">1200</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p>defined(NTV2_DEPRECATE_17_6) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01182">1182</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2089,7 +2052,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01175">1175</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l01157">1157</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2116,7 +2079,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000248">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000263">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00574">574</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -2145,7 +2108,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000238">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000253">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -2174,7 +2137,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000240">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000255">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -2203,7 +2166,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000246">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000261">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html#l00520">520</a> of file <a class="el" href="../../d5/dfe/ntv2baremetaldriverinterface_8cpp_source.html">ntv2baremetaldriverinterface.cpp</a>.</p>
 
@@ -2338,7 +2301,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00135">135</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00136">136</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2362,7 +2325,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00137">137</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00138">138</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2386,7 +2349,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00138">138</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00139">139</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2410,7 +2373,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00131">131</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00132">132</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2434,7 +2397,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00132">132</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00133">133</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2458,7 +2421,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00134">134</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00135">135</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2482,7 +2445,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00136">136</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html#l00137">137</a> of file <a class="el" href="../../d0/da6/ntv2baremetaldriverinterface_8h_source.html">ntv2baremetaldriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2496,7 +2459,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html">CNTV2BareMetalDriverInterface</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:47 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:17 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

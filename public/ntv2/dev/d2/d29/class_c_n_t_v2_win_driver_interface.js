@@ -17,7 +17,6 @@ var class_c_n_t_v2_win_driver_interface =
     [ "DriverSetBitFileInformation", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a81835817d03bf9de4f26ea45d326f330", null ],
     [ "GetAudioOutputMode", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a43dcfb35e1c37a787c28f8a36c33a467", null ],
     [ "GetInterruptCount", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a960fe4769b6ac89fe81022d564be98f3", null ],
-    [ "HevcSendMessage", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a65a336e1fbd79101b6f03743492a9f02", null ],
     [ "MapFrameBuffers", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a8446c3f20011f09b6db5996a34d4ff93", null ],
     [ "MapMemory", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a144e14b9e9e7a04415d41991c4c96e41", null ],
     [ "MapRegisters", "d2/d29/class_c_n_t_v2_win_driver_interface.html#af2198ee77f32ef62ededbbbd022666cd", null ],

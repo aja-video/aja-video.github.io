@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('d4/d9d/ntv2qtpreview_8cpp_source.html'
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }   <span class="comment">//  for each radio button</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">        #if defined (INCLUDE_AJACC)</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">bool</span> hasCustomAnc (mDevice.features().CanDoCustomAnc());</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">bool</span> hasCustomAnc (mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features</a>().CanDoCustomAnc());</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="../../d4/d9d/ntv2qtpreview_8cpp.html#aa5b124100b877850fd5d78a476c322be">QButtonIterator</a> iter (mCaptionButtonGroup-&gt;buttons());  iter.hasNext();  )</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                iter.next()-&gt;setEnabled(hasCustomAnc);</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">        #endif  //  defined (INCLUDE_AJACC)</span></div>
@@ -362,9 +362,9 @@ $(document).ready(function(){initNavTree('d4/d9d/ntv2qtpreview_8cpp_source.html'
 <div class="ttc" id="antv2qtpreview_8h_html"><div class="ttname"><a href="../../de/d5a/ntv2qtpreview_8h.html">ntv2qtpreview.h</a></div><div class="ttdoc">Header file for NTV2QtPreview demo application. Demonstrates how to capture audio/video from NTV2-bas...</div></div>
 <div class="ttc" id="antv2enums_8h_html_ac5dbe58ce5dcc94682e0012abc6124f1a72b4a1868ec18d81c2d55cfd48d69e3d"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#ac5dbe58ce5dcc94682e0012abc6124f1a72b4a1868ec18d81c2d55cfd48d69e3d">NTV2_INPUTSOURCE_INVALID</a></div><div class="ttdeci">@ NTV2_INPUTSOURCE_INVALID</div><div class="ttdoc">The invalid video input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l01270">ntv2enums.h:1270</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_af2e7d3c0b0d9c114ede26255880c8b58"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#af2e7d3c0b0d9c114ede26255880c8b58">NTV2_IS_VALID_INPUT_SOURCE</a></div><div class="ttdeci">#define NTV2_IS_VALID_INPUT_SOURCE(_inpSrc_)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l01277">ntv2enums.h:1277</a></div></div>
-<div class="ttc" id="antv2utils_8h_html_a8f29d302ef261071e659c6947d0d06a4"><div class="ttname"><a href="../../d0/d81/ntv2utils_8h.html#a8f29d302ef261071e659c6947d0d06a4">GetNTV2InputSourceForIndex</a></div><div class="ttdeci">NTV2InputSource GetNTV2InputSourceForIndex(const ULWord inIndex0, const NTV2IOKinds inKinds=NTV2_IOKINDS_SDI)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9b/ntv2utils_8cpp_source.html#l05290">ntv2utils.cpp:5290</a></div></div>
+<div class="ttc" id="antv2utils_8h_html_a8f29d302ef261071e659c6947d0d06a4"><div class="ttname"><a href="../../d0/d81/ntv2utils_8h.html#a8f29d302ef261071e659c6947d0d06a4">GetNTV2InputSourceForIndex</a></div><div class="ttdeci">NTV2InputSource GetNTV2InputSourceForIndex(const ULWord inIndex0, const NTV2IOKinds inKinds=NTV2_IOKINDS_SDI)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9b/ntv2utils_8cpp_source.html#l05124">ntv2utils.cpp:5124</a></div></div>
 <div class="ttc" id="antv2utils_8h_html"><div class="ttname"><a href="../../d0/d81/ntv2utils_8h.html">ntv2utils.h</a></div><div class="ttdoc">Declares numerous NTV2 utility functions.</div></div>
-<div class="ttc" id="antv2utils_8h_html_a54606203278c23f2bf47c400d20eab2d"><div class="ttname"><a href="../../d0/d81/ntv2utils_8h.html#a54606203278c23f2bf47c400d20eab2d">NTV2VideoFormatToString</a></div><div class="ttdeci">std::string NTV2VideoFormatToString(const NTV2VideoFormat inValue, const bool inUseFrameRate=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9b/ntv2utils_8cpp_source.html#l06804">ntv2utils.cpp:6804</a></div></div>
+<div class="ttc" id="antv2utils_8h_html_a54606203278c23f2bf47c400d20eab2d"><div class="ttname"><a href="../../d0/d81/ntv2utils_8h.html#a54606203278c23f2bf47c400d20eab2d">NTV2VideoFormatToString</a></div><div class="ttdeci">std::string NTV2VideoFormatToString(const NTV2VideoFormat inValue, const bool inUseFrameRate=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9b/ntv2utils_8cpp_source.html#l06638">ntv2utils.cpp:6638</a></div></div>
 <div class="ttc" id="antv2framegrabber_8h_html_a8abfd9b6f23ca593d75c1585ae293306"><div class="ttname"><a href="../../d7/d25/ntv2framegrabber_8h.html#a8abfd9b6f23ca593d75c1585ae293306">QTPREVIEW_WIDGET_Y</a></div><div class="ttdeci">#define QTPREVIEW_WIDGET_Y</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/ntv2framegrabber_8h_source.html#l00036">ntv2framegrabber.h:36</a></div></div>
 <div class="ttc" id="aclass_c_n_t_v2_card_html"><div class="ttname"><a href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></div><div class="ttdoc">I interrogate and control an AJA video/audio capture/playout device.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d4b/ntv2card_8h_source.html#l00028">ntv2card.h:28</a></div></div>
 <div class="ttc" id="apnp_8h_html_ad92d505f90de276d9871424f821264eca24514bad6c4e845746309394fde6d7e2"><div class="ttname"><a href="../../d5/d02/pnp_8h.html#ad92d505f90de276d9871424f821264eca24514bad6c4e845746309394fde6d7e2">AJA_Pnp_DeviceRemoved</a></div><div class="ttdeci">@ AJA_Pnp_DeviceRemoved</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d02/pnp_8h_source.html#l00025">pnp.h:25</a></div></div>
@@ -388,7 +388,7 @@ $(document).ready(function(){initNavTree('d4/d9d/ntv2qtpreview_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_957939c99aa964633a97cef056d70db5.html">demos</a></li><li class="navelem"><a class="el" href="../../dir_fa04bf88e79b2c2756206906ee9d2b5f.html">ntv2qtpreview</a></li><li class="navelem"><a class="el" href="../../d4/d9d/ntv2qtpreview_8cpp.html">ntv2qtpreview.cpp</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:41 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:10 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

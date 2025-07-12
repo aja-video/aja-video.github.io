@@ -25,7 +25,6 @@ var class_c_n_t_v2_linux_driver_interface =
     [ "GetDMADriverBufferPhysicalAddress", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#a64ab8a316773d0d6eeeaccc41b102ef0", null ],
     [ "GetDMANumDriverBuffers", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#abf34f3749a27e86bc5a9f024ed9e52aa", null ],
     [ "GetInterruptCount", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#a30d47e3399da8cb5c008ad13ca876216", null ],
-    [ "HevcSendMessage", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#ab7d0837c42b873d42d7d246c11c39294", null ],
     [ "MapDMADriverBuffer", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#a1c334626a33aa223bf693b6fc10ca441", null ],
     [ "MapDNXRegisters", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#ae95fdf9edfde745e8cb0189fcfc40468", null ],
     [ "MapFrameBuffers", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#aeec7d10616215fc514e46a746d3ad0c7", null ],

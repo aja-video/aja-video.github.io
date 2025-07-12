@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DBL()
 : <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#abbc8e02b4fc7bcad2d20efee1449ff00">NTV2Buffer</a>
 </li>
+<li>Deactivate()
+: <a class="el" href="de/d17/class_c_base_property_page.html#a8b1ba9f53972184a1f15b1cda021da81">CBasePropertyPage</a>
+</li>
 <li>Deallocate()
 : <a class="el" href="d1/d4f/class_c_n_t_v2_register_expert.html#a235443496cbace2a1c7e5889466c365a">CNTV2RegisterExpert</a>
 , <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#a11f78925cd242abb9fb459bce814595f">NTV2Buffer</a>
@@ -110,6 +113,16 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DebugTime()
 : <a class="el" href="db/d56/class_a_j_a_debug.html#a922d2e347368d09cd1a291d0a4421d82">AJADebug</a>
 </li>
+<li>DecideAllocator()
+: <a class="el" href="dc/d8e/class_c_base_output_pin.html#ac1400a45e707b980fa6a53949cd8462f">CBaseOutputPin</a>
+, <a class="el" href="da/d43/class_c_pull_pin.html#ae3a7ccbac9ffea26a32bba88abd612b1">CPullPin</a>
+</li>
+<li>DecideBufferSize()
+: <a class="el" href="dc/d8e/class_c_base_output_pin.html#ab3ee3af64c87385b9e345a63807e6742">CBaseOutputPin</a>
+, <a class="el" href="db/d30/class_c_transform_filter.html#abc56d5a53f2e69ee5f28ea88bb149fc7">CTransformFilter</a>
+, <a class="el" href="d1/d80/class_c_transform_output_pin.html#ad29d2ca8053968743389749632bf1d9e">CTransformOutputPin</a>
+, <a class="el" href="d5/dff/class_c_trans_in_place_filter.html#a2851f201118b8b972be4f53c417ac574">CTransInPlaceFilter</a>
+</li>
 <li>DecodeCaptionData()
 : <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a4b8df3caa5735182a4b7f406e7ee56d7">CNTV2CaptionDecoder608</a>
 </li>
@@ -121,6 +134,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 , <a class="el" href="de/df6/class_a_j_a_ancillary_data___timecode___v_i_t_c.html#a2c96fa3bd41fe2fd9c69ec5212486914">AJAAncillaryData_Timecode_VITC</a>
 , <a class="el" href="d8/d24/class_c_n_t_v2_line21_captioner.html#ad7e9693728b15c940de26ec0f2cb075a">CNTV2Line21Captioner</a>
 </li>
+<li>Decommit()
+: <a class="el" href="df/d60/class_c_base_allocator.html#a95d10d25461739419d25241964b352eb">CBaseAllocator</a>
+</li>
 <li>DecompressAncPacket()
 : <a class="el" href="db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html#a8a894b75df6a6f9a2623ab4f395d2141">CNTV2SMPTEAncData</a>
 </li>
@@ -130,11 +146,11 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DecrementCount()
 : <a class="el" href="dd/d35/class_a_j_a_debug_stat.html#a42b06094bea6dc552cf3b2059f2c630d">AJADebugStat</a>
 </li>
-<li>defaultFrameRateForTimecodeFormat()
-: <a class="el" href="d4/d28/class_c_r_p188.html#a27f5bbc035419990692231b264f58715">CRP188</a>
-</li>
 <li>DefaultFrameRateForTimecodeFormat()
 : <a class="el" href="d4/d28/class_c_r_p188.html#a0fa92b79f4af71fe1df7916c59fea2f7">CRP188</a>
+</li>
+<li>defaultFrameRateForTimecodeFormat()
+: <a class="el" href="d4/d28/class_c_r_p188.html#a27f5bbc035419990692231b264f58715">CRP188</a>
 </li>
 <li>defaultMinimumDuration()
 : <a class="el" href="d0/d82/class_s_r_t_captions.html#a92010b3d65cd58a63e4142834e54f9f9">SRTCaptions</a>
@@ -156,16 +172,36 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 : <a class="el" href="d5/d18/class_c_n_t_v2_caption708_service.html#a10e8aef9b2de2a483c60fa4ce58d0d12">CNTV2Caption708Service</a>
 </li>
 <li>Delete()
-: <a class="el" href="dd/d63/class_a_j_a_file_i_o.html#a82fabf4da2015b116834d2a3ed03dd1e">AJAFileIO</a>
+: <a class="el" href="dd/d63/class_a_j_a_file_i_o.html#a77b0aaaeaa0c4118c66ab2dcaae5a878">AJAFileIO</a>
 </li>
 <li>DeleteAncillaryData()
 : <a class="el" href="d8/def/class_a_j_a_ancillary_list.html#aacee435c31dc34e07af147e1c02e9d46">AJAAncillaryList</a>
+</li>
+<li>DeleteAttachedSurface()
+: <a class="el" href="dd/d76/class_c_agg_draw_surface.html#a329287fe76ea016b6d44cd9fa650f1cd">CAggDrawSurface</a>
 </li>
 <li>DeleteWindow()
 : <a class="el" href="da/d64/class_c_n_t_v2_caption_translator_channel608to708.html#a5ba59c3dd12e82f4e8837c7f2bc4789a">CNTV2CaptionTranslatorChannel608to708</a>
 </li>
 <li>DeleteWindows()
 : <a class="el" href="d5/d18/class_c_n_t_v2_caption708_service.html#a70572821ef85c7b1669e25292dd17c39">CNTV2Caption708Service</a>
+</li>
+<li>Deliver()
+: <a class="el" href="dc/d8e/class_c_base_output_pin.html#a5ae25864d97ec222c6f6ac555609e12f">CBaseOutputPin</a>
+</li>
+<li>DeliverBeginFlush()
+: <a class="el" href="dc/d8e/class_c_base_output_pin.html#a7c68063f0b354649316ae23666bfa5b4">CBaseOutputPin</a>
+, <a class="el" href="df/d08/class_c_dynamic_output_pin.html#ada0863ca914b2dde47c7057ca47c84a9">CDynamicOutputPin</a>
+</li>
+<li>DeliverEndFlush()
+: <a class="el" href="dc/d8e/class_c_base_output_pin.html#a6408274e6fb0fd23165c5d0e50d5aa1a">CBaseOutputPin</a>
+, <a class="el" href="df/d08/class_c_dynamic_output_pin.html#a8a1bf74917f895001df664b8687513e1">CDynamicOutputPin</a>
+</li>
+<li>DeliverEndOfStream()
+: <a class="el" href="dc/d8e/class_c_base_output_pin.html#ab6ff038939896930c9de257467e64c44">CBaseOutputPin</a>
+</li>
+<li>DeliverNewSegment()
+: <a class="el" href="dc/d8e/class_c_base_output_pin.html#a4f18983467623e8032e1740cd9a3a4b5">CBaseOutputPin</a>
 </li>
 <li>DemoCommonInitializer()
 : <a class="el" href="dc/df7/class_demo_common_initializer.html#acbfda2ca73c12e569565dd8cae6c273c">DemoCommonInitializer</a>
@@ -288,6 +324,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>diagnostics()
 : <a class="el" href="dc/d4b/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_re58e64432bfa7408c1f87288e49980d9.html#a740000baaddd47f813c6b1e17ecb791b">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::exception</a>
 </li>
+<li>DialogProc()
+: <a class="el" href="de/d17/class_c_base_property_page.html#aae1ee499563732d634249f160dfc9154">CBasePropertyPage</a>
+</li>
 <li>DIDSIDToString()
 : <a class="el" href="dd/de8/class_a_j_a_ancillary_data.html#a6791b6b48fc8aae15000cf6bd809aefb">AJAAncillaryData</a>
 </li>
@@ -336,10 +375,25 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 : <a class="el" href="db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#ab51be8701cd1083254f3b8303de57372">AUTOCIRCULATE_TRANSFER</a>
 </li>
 <li>Disconnect()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a680ae8777c63f26ebc51058b55c5e547">CNTV2Card</a>
+: <a class="el" href="d8/d75/class_c_base_pin.html#a52ca726d5aa99d743ade3552dd19f886">CBasePin</a>
+, <a class="el" href="df/d08/class_c_dynamic_output_pin.html#ae03b2a3a1b55cee29ce4ad8268a7df46">CDynamicOutputPin</a>
+, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a680ae8777c63f26ebc51058b55c5e547">CNTV2Card</a>
+, <a class="el" href="da/d43/class_c_pull_pin.html#a5ee9cc598247b18ac4dce8cbab7ae839">CPullPin</a>
+</li>
+<li>DisconnectInternal()
+: <a class="el" href="d8/d75/class_c_base_pin.html#acebafb4ca5dcbda8d65e29a1f7b8bfa8">CBasePin</a>
 </li>
 <li>DisplayData()
 : <a class="el" href="d5/d40/class_c_n_t_v2_kona_flash_program.html#a732787c1c1fe2f3bf52be1a5573c5607">CNTV2KonaFlashProgram</a>
+</li>
+<li>DisplayPinInfo()
+: <a class="el" href="d8/d75/class_c_base_pin.html#a451285e2597eec24eca42b10f2ffab2d">CBasePin</a>
+</li>
+<li>DisplaySampleTimes()
+: <a class="el" href="db/d39/class_c_draw_image.html#a56c5709cccd1252333e86e664bdbebde">CDrawImage</a>
+</li>
+<li>DisplayTypeInfo()
+: <a class="el" href="d8/d75/class_c_base_pin.html#a23f76ec4605812256417974f3b5a6c71">CBasePin</a>
 </li>
 <li>DisplayWindows()
 : <a class="el" href="d5/d18/class_c_n_t_v2_caption708_service.html#ad35b0f8ffb3c12fa5a1f74a654e49a4a">CNTV2Caption708Service</a>
@@ -398,7 +452,7 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DmaTransfer()
 : <a class="el" href="d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ad07cb5fd812e93a3265c9bf135254ac8">CNTV2BareMetalDriverInterface</a>
 , <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a5f6e741cb331b401258df896ca30d003">CNTV2DriverInterface</a>
-, <a class="el" href="de/d6b/class_c_n_t_v2_linux_driver_interface.html#a4f05c5579c9c26608aee8ac710639a43">CNTV2LinuxDriverInterface</a>
+, <a class="el" href="de/d6b/class_c_n_t_v2_linux_driver_interface.html#a0c7f75f05deccbfb58525c2fff342524">CNTV2LinuxDriverInterface</a>
 , <a class="el" href="dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a8c6a08b2484ca0864cc1e55b981e76b7">CNTV2MacDriverInterface</a>
 , <a class="el" href="d2/d29/class_c_n_t_v2_win_driver_interface.html#a6c1145dc35dbdd96a9edd1f1a1cd0c6c">CNTV2WinDriverInterface</a>
 </li>
@@ -415,7 +469,7 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af476915ad0be7fce076370af2130a7d9">CNTV2Card</a>
 </li>
 <li>DMAWriteFrame()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a321815c3e8bed38b2370baa1fb1b5fd0">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ac934506fbbcd5b8c1394375d7db79d41">CNTV2Card</a>
 </li>
 <li>DmaWriteFrameDriverBuffer()
 : <a class="el" href="d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab38decac38aa3e3b2dab7e517bf9d19a">CNTV2BareMetalDriverInterface</a>
@@ -445,6 +499,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 : <a class="el" href="d5/d18/class_c_n_t_v2_caption708_service.html#a1a83549bb88bf9a4c5298b89302dbd83">CNTV2Caption708Service</a>
 , <a class="el" href="d6/daf/class_c_n_t_v2_caption708_window.html#afdba1ca2632285dfa8a7aa054f6f1abe">CNTV2Caption708Window</a>
 </li>
+<li>DoBufferProcessingLoop()
+: <a class="el" href="de/dc3/class_c_source_stream.html#abfdf2b8e4bd063c896247318388fd7e6">CSourceStream</a>
+</li>
 <li>DoCarriageReturn()
 : <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#ad9059f1bbecc463f775956357f5b0684">CNTV2CaptionDecodeChannel608</a>
 , <a class="el" href="da/d64/class_c_n_t_v2_caption_translator_channel608to708.html#a43c4c672adf67662691f01a675f5b4cd">CNTV2CaptionTranslatorChannel608to708</a>
@@ -455,6 +512,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DoCR()
 : <a class="el" href="d5/d18/class_c_n_t_v2_caption708_service.html#ae1713249b02b7d13994adf8f002abd1c">CNTV2Caption708Service</a>
 , <a class="el" href="d6/daf/class_c_n_t_v2_caption708_window.html#a8a4e91e8062015c5a37c5efe6e2f95c3">CNTV2Caption708Window</a>
+</li>
+<li>DoCreateWindow()
+: <a class="el" href="db/dbd/class_c_base_window.html#a689cd1a79dabf5bb351197457326b6e1">CBaseWindow</a>
 </li>
 <li>DoDeleteToEndOfRow()
 : <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#a3546c9115ad9cd946caff3c1f9520355">CNTV2CaptionDecodeChannel608</a>
@@ -473,10 +533,10 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 , <a class="el" href="da/d64/class_c_n_t_v2_caption_translator_channel608to708.html#a4af4ce3b5cd5ade8bfc59af10e1d4eb2">CNTV2CaptionTranslatorChannel608to708</a>
 </li>
 <li>DoesDirectoryContain()
-: <a class="el" href="dd/d63/class_a_j_a_file_i_o.html#a86ee6d8a5629105ee8e55ad0ebdf4829">AJAFileIO</a>
+: <a class="el" href="dd/d63/class_a_j_a_file_i_o.html#a4b0d057569ddd515db872e481de96e30">AJAFileIO</a>
 </li>
 <li>DoesDirectoryExist()
-: <a class="el" href="dd/d63/class_a_j_a_file_i_o.html#a4d9621ed4b7d74acc808602ddcc9a8f7">AJAFileIO</a>
+: <a class="el" href="dd/d63/class_a_j_a_file_i_o.html#a59f5c3bda42070a842a6441918c7161d">AJAFileIO</a>
 </li>
 <li>DoETX()
 : <a class="el" href="d5/d18/class_c_n_t_v2_caption708_service.html#ade442f2e772c1431f1dffa2c0d7bdf4f">CNTV2Caption708Service</a>
@@ -490,6 +550,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 : <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#a7733de484698cd4fe5834a6182922f34">CNTV2CaptionDecodeChannel608</a>
 , <a class="el" href="da/d64/class_c_n_t_v2_caption_translator_channel608to708.html#a180c41381be198a93a5c8e8a2988b276">CNTV2CaptionTranslatorChannel608to708</a>
 </li>
+<li>DoGetWindowStyle()
+: <a class="el" href="d0/d4d/class_c_base_control_window.html#aea32c298346bb948a80d1bf8d24c7d07">CBaseControlWindow</a>
+</li>
 <li>DoHCR()
 : <a class="el" href="d5/d18/class_c_n_t_v2_caption708_service.html#a5270328b10e7e90e6be400b0a926f4e4">CNTV2Caption708Service</a>
 , <a class="el" href="d6/daf/class_c_n_t_v2_caption708_window.html#a96e5dd2c0f5371b7cfdcd3e1961a896d">CNTV2Caption708Window</a>
@@ -499,6 +562,15 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 </li>
 <li>DolbyPlayerConfig()
 : <a class="el" href="d8/d9a/struct_dolby_player_config.html#a20877510d2230615921ee70458e83fc7">DolbyPlayerConfig</a>
+</li>
+<li>DoneWithWindow()
+: <a class="el" href="db/dbd/class_c_base_window.html#a1639c2751be79af04f4ce943319a3884">CBaseWindow</a>
+</li>
+<li>DoRealisePalette()
+: <a class="el" href="db/dbd/class_c_base_window.html#a39d8fa753bb660238de1361a29756d5c">CBaseWindow</a>
+</li>
+<li>DoRenderSample()
+: <a class="el" href="df/d7f/class_c_base_renderer.html#ae399e66a624ab1b0166d96dede572d54">CBaseRenderer</a>
 </li>
 <li>DoResumeCaptionLoading()
 : <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#ac222cecea9956eff98381f9366453bed">CNTV2CaptionDecodeChannel608</a>
@@ -514,15 +586,24 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 : <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#a151072ec82a0922d2f22c3506f235133">CNTV2CaptionDecodeChannel608</a>
 , <a class="el" href="da/d64/class_c_n_t_v2_caption_translator_channel608to708.html#ad6cd3e761057180984dd21b152eea5d7">CNTV2CaptionTranslatorChannel608to708</a>
 </li>
+<li>DoSetWindowForeground()
+: <a class="el" href="db/dbd/class_c_base_window.html#abb52decaf403aeef5971783c5b20bde2">CBaseWindow</a>
+</li>
+<li>DoSetWindowStyle()
+: <a class="el" href="d0/d4d/class_c_base_control_window.html#a39a2218c5af455973ea5870c61f5baa6">CBaseControlWindow</a>
+</li>
+<li>DoShowWindow()
+: <a class="el" href="db/dbd/class_c_base_window.html#a57f6b7a39f6e0acc752a841354dd2786">CBaseWindow</a>
+</li>
 <li>DoTextRestart()
 : <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#a267061f1b0346199269b59352d776494">CNTV2CaptionDecodeChannel608</a>
 , <a class="el" href="da/d64/class_c_n_t_v2_caption_translator_channel608to708.html#a38da12d190bd2af21c390d6e97b75125">CNTV2CaptionTranslatorChannel608to708</a>
 </li>
 <li>Download12BitLUTToHW()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af98c2afe9bd803f60d3ea2214284b3b3">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a981715566a2cef0f947190bf76b646b5">CNTV2Card</a>
 </li>
 <li>DownloadLUTToHW()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af0748f1f3b3a5a6abbdd96edc640ca85">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a6ee8e68ea5ca041144366eedf70be977">CNTV2Card</a>
 </li>
 <li>DpxHdr()
 : <a class="el" href="d4/d24/class_dpx_hdr.html#a8abf8c169a07716b4f179d3b3a7383ac">DpxHdr</a>
@@ -548,6 +629,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DrawColorQuadrantFrameTsi2()
 : <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#aef4ba6a3ad2ca107490b35af38cfc7ea">NTV2TestPatternGen</a>
 </li>
+<li>DrawImage()
+: <a class="el" href="db/d39/class_c_draw_image.html#ab2cbbdb638124c3db636d8c32cebca28">CDrawImage</a>
+</li>
 <li>drawIt()
 : <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#ac5c4044a66ac97265c3b91024a4744e5">NTV2TestPatternGen</a>
 </li>
@@ -564,7 +648,7 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 : <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#a2dd4c217ffd2740bef3b266e1e2ec2b8">NTV2TestPatternGen</a>
 </li>
 <li>DrawTestPattern()
-: <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#a43665453d0ca4207d11ef9c9c45da0ff">NTV2TestPatternGen</a>
+: <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#ad99a0142487bd200f2f5e4ec85a2c03e">NTV2TestPatternGen</a>
 </li>
 <li>DrawTestPatternNarrowHLG()
 : <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#a34b456b47df037b12fababb20188029c">NTV2TestPatternGen</a>
@@ -574,6 +658,10 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 </li>
 <li>DrawTestPatternWidePQ()
 : <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#a11e3af8ef515f4fdc4e8eec83fc796b5">NTV2TestPatternGen</a>
+</li>
+<li>DrawVideoImageHere()
+: <a class="el" href="db/d39/class_c_draw_image.html#ae0c6839b0907b83762265485c0e9e853">CDrawImage</a>
+, <a class="el" href="d0/dd3/class_c_image_palette.html#a1e96e226444438551f74fdf721e3dccd">CImagePalette</a>
 </li>
 <li>DrawYCbCrFrame()
 : <a class="el" href="d3/dc1/class_n_t_v2_test_pattern_gen.html#a78d81fe5e55aed3c077e28ca0c66d0f7">NTV2TestPatternGen</a>
@@ -625,6 +713,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DumpDeviceSDRAM()
 : <a class="el" href="d6/d25/class_c_n_t_v2_support_logger.html#afbf8e9f89a42d894a12db67d609e491a">CNTV2SupportLogger</a>
 </li>
+<li>DumpLinkedList()
+: <a class="el" href="dd/d62/class_c_a_m_schedule.html#ad40fb3cfe9031f79f5fef12d03a28ab5">CAMSchedule</a>
+</li>
 <li>DumpMemory()
 : <a class="el" href="d6/d59/class_c_n_t_v2_caption_log_config.html#a641905917df035cd7b938692f67d66e6">CNTV2CaptionLogConfig</a>
 </li>
@@ -633,6 +724,12 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 </li>
 <li>DumpYBytes_2vuy()
 : <a class="el" href="d6/d59/class_c_n_t_v2_caption_log_config.html#ace68adc2be47e7edd6af5c308928f694">CNTV2CaptionLogConfig</a>
+</li>
+<li>DuplicateSurface()
+: <a class="el" href="d8/dde/class_c_agg_direct_draw.html#a2c12b33dd05789d0e6e68c7509550686">CAggDirectDraw</a>
+</li>
+<li>Duration()
+: <a class="el" href="da/d43/class_c_pull_pin.html#a5d89a962126f4363a3ec97b2f784f8c7">CPullPin</a>
 </li>
 <li>duration()
 : <a class="el" href="de/dea/class_s_r_t_caption_info.html#a6fdcffa1231c410da6401d2eeca58305">SRTCaptionInfo</a>
@@ -646,13 +743,16 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DynamicRangeString()
 : <a class="el" href="d6/d36/class_c_n_t_v2_v_p_i_d.html#ade3ddfd8abaf6a9f5e10668a33638f0c">CNTV2VPID</a>
 </li>
+<li>DynamicReconnect()
+: <a class="el" href="df/d08/class_c_dynamic_output_pin.html#a057e75570cbcf40ca562f0ac4bb325a0">CDynamicOutputPin</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 9 2025 14:09:53 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:31 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,0 +1,28 @@
+var winutil_8h =
+[
+    [ "CBaseWindow", "db/dbd/class_c_base_window.html", "db/dbd/class_c_base_window" ],
+    [ "CDrawImage", "db/d39/class_c_draw_image.html", "db/d39/class_c_draw_image" ],
+    [ "tagDIBDATA", "df/d48/structtag_d_i_b_d_a_t_a.html", "df/d48/structtag_d_i_b_d_a_t_a" ],
+    [ "CImageSample", "db/d4b/class_c_image_sample.html", "db/d4b/class_c_image_sample" ],
+    [ "CImageAllocator", "d5/de7/class_c_image_allocator.html", "d5/de7/class_c_image_allocator" ],
+    [ "CImagePalette", "d0/dd3/class_c_image_palette.html", "d0/dd3/class_c_image_palette" ],
+    [ "CImageDisplay", "d2/d2a/class_c_image_display.html", "d2/d2a/class_c_image_display" ],
+    [ "HEIGHT", "df/d97/winutil_8h.html#ae56175e77e5fe7e8b151669e0ffd592c", null ],
+    [ "REALIZEPALETTE", "df/d97/winutil_8h.html#af37019f822cfdbff541671c75b6cd3a6", null ],
+    [ "SHOWSTAGE", "df/d97/winutil_8h.html#ab6d6a509197eba6cb3d49c731fa67968", null ],
+    [ "SHOWSTAGETOP", "df/d97/winutil_8h.html#a38d6a7e3802a0d6c02281d560064cc5e", null ],
+    [ "WIDTH", "df/d97/winutil_8h.html#a9978c9be0f4161638ec49b4eda697d42", null ],
+    [ "DIBDATA", "df/d97/winutil_8h.html#abe70eb61be0cd30035b38b64bf033d51", null ],
+    [ "CheckVideoInfo2Type", "df/d97/winutil_8h.html#ae7202e31a4daeb9bef173a9c3db1597b", null ],
+    [ "CheckVideoInfoType", "df/d97/winutil_8h.html#af8a720f5409cdd11164a279059c01f53", null ],
+    [ "ConvertVideoInfoToVideoInfo2", "df/d97/winutil_8h.html#a96e2187a631b507651e4773bf31d0e7b", null ],
+    [ "CAPTION", "df/d97/winutil_8h.html#ae5de5e992bdc7532c7c240954a3db292", null ],
+    [ "DEFHEIGHT", "df/d97/winutil_8h.html#a82a42596b29857d5822b770cc18de246", null ],
+    [ "DEFWIDTH", "df/d97/winutil_8h.html#a37657f8f22181c41024f1d7d1d4b8a7e", null ],
+    [ "hMEMORY", "df/d97/winutil_8h.html#a32fec42979da8a14e7cd0796af617006", null ],
+    [ "PALETTE_VERSION", "df/d97/winutil_8h.html#a72d6c44e263b95a0e4c9c67ffe3cdfb1", null ],
+    [ "PALVERSION", "df/d97/winutil_8h.html#a86e8628c16751b3d1bad5b08eec0febe", null ],
+    [ "PROFILESTR", "df/d97/winutil_8h.html#aa25e76db60a720be2b031bd4fe9cd3b0", null ],
+    [ "TIMELENGTH", "df/d97/winutil_8h.html#a899cc5f762143c226e2f8b3167bcbd8e", null ],
+    [ "VIDEO_COLOUR", "df/d97/winutil_8h.html#abba1e365379462fc69597c37d1a760d0", null ]
+];

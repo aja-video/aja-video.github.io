@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 544;
+var viewWidth = 696;
 var viewHeight = 285;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,15 +54,15 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>/home/tcbuilder/buildAgent/work/df8e8cce5bebfd58/libajantv2/ajabase/pnp/windows/pnpimpl.cpp</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-281 540,-281 540,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-281 692,-281 692,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Implements the AJAPnpImpl class on the Windows platform.">
-<polygon fill="#bfbfbf" stroke="black" points="135,-235.5 135,-276.5 323,-276.5 323,-235.5 135,-235.5"/>
-<text text-anchor="start" x="143" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/tcbuilder/buildAgent</text>
-<text text-anchor="start" x="143" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00">/work/df8e8cce5bebfd58/libajantv2</text>
-<text text-anchor="middle" x="229" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ajabase/pnp/windows/pnpimpl.cpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="249,-235.5 249,-276.5 437,-276.5 437,-235.5 249,-235.5"/>
+<text text-anchor="start" x="257" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/tcbuilder/buildAgent</text>
+<text text-anchor="start" x="257" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00">/work/df8e8cce5bebfd58/libajantv2</text>
+<text text-anchor="middle" x="343" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ajabase/pnp/windows/pnpimpl.cpp</text>
 </a>
 </g>
 </g>
@@ -70,173 +70,302 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../d4/d8f/windows_2pnpimpl_8h.html" target="_top" xlink:title="Declares the AJAPnpImpl class.">
-<polygon fill="white" stroke="black" points="88,-168.5 88,-198.5 210,-198.5 210,-168.5 88,-168.5"/>
-<text text-anchor="start" x="96" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/pnp/windows</text>
-<text text-anchor="middle" x="149" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">/pnpimpl.h</text>
+<polygon fill="white" stroke="black" points="121,-168.5 121,-198.5 243,-198.5 243,-168.5 121,-168.5"/>
+<text text-anchor="start" x="129" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/pnp/windows</text>
+<text text-anchor="middle" x="182" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">/pnpimpl.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M206.72,-235.36C196.18,-226.08 183.59,-214.98 172.86,-205.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="174.9,-202.66 165.08,-198.67 170.27,-207.91 174.9,-202.66"/>
+<path fill="none" stroke="midnightblue" d="M298.15,-235.36C274.79,-225.13 246.4,-212.7 223.54,-202.69"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="224.67,-199.36 214.11,-198.56 221.86,-205.78 224.67,-199.36"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="../../da/dbc/systemtime_8h.html" target="_top" xlink:title="Declares the AJATime class.">
-<polygon fill="white" stroke="black" points="228,-174 228,-193 392,-193 392,-174 228,-174"/>
-<text text-anchor="middle" x="310" y="-181" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/system/systemtime.h</text>
+<polygon fill="white" stroke="black" points="261,-174 261,-193 425,-193 425,-174 261,-174"/>
+<text text-anchor="middle" x="343" y="-181" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/system/systemtime.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M251.56,-235.36C264.49,-224.11 280.48,-210.19 292.47,-199.76"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="294.79,-202.38 300.03,-193.17 290.19,-197.1 294.79,-202.38"/>
+<path fill="none" stroke="midnightblue" d="M343,-235.36C343,-225.3 343,-213.1 343,-203.18"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="346.5,-203.17 343,-193.17 339.5,-203.17 346.5,-203.17"/>
+</g>
+<!-- Node13 -->
+<g id="node13" class="node">
+<title>Node13</title>
+<g id="a_node13"><a xlink:href="../../db/d16/debug_8h.html" target="_top" xlink:title="Declares the AJADebug class.">
+<polygon fill="white" stroke="black" points="394,-112.5 394,-131.5 530,-131.5 530,-112.5 394,-112.5"/>
+<text text-anchor="middle" x="462" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/system/debug.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node13 -->
+<g id="edge13" class="edge">
+<title>Node1&#45;&gt;Node13</title>
+<path fill="none" stroke="midnightblue" d="M387.75,-235.26C404.13,-226.2 421.66,-214.07 434,-199 447.61,-182.38 454.94,-158.54 458.65,-142.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="462.14,-142.4 460.67,-131.91 455.28,-141.03 462.14,-142.4"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="88,-112.5 88,-131.5 158,-131.5 158,-112.5 88,-112.5"/>
-<text text-anchor="middle" x="123" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">Windows.h</text>
+<polygon fill="white" stroke="#bfbfbf" points="102,-112.5 102,-131.5 172,-131.5 172,-112.5 102,-112.5"/>
+<text text-anchor="middle" x="137" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">Windows.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M142.84,-168.4C139.26,-160.2 134.7,-149.78 130.86,-140.99"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="133.99,-139.42 126.78,-131.66 127.58,-142.22 133.99,-139.42"/>
+<path fill="none" stroke="midnightblue" d="M171.34,-168.4C164.86,-159.84 156.57,-148.87 149.75,-139.86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="152.37,-137.52 143.55,-131.66 146.79,-141.74 152.37,-137.52"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d5/d02/pnp_8h.html" target="_top" xlink:title="Declares the AJAPnp (plug&#45;and&#45;play) class.">
-<polygon fill="white" stroke="black" points="176,-112.5 176,-131.5 282,-131.5 282,-112.5 176,-112.5"/>
-<text text-anchor="middle" x="229" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/pnp/pnp.h</text>
+<polygon fill="white" stroke="black" points="190,-112.5 190,-131.5 296,-131.5 296,-112.5 190,-112.5"/>
+<text text-anchor="middle" x="243" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/pnp/pnp.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M167.96,-168.4C180.42,-159.13 196.7,-147.03 209.31,-137.65"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="211.42,-140.43 217.36,-131.66 207.25,-134.82 211.42,-140.43"/>
+<path fill="none" stroke="midnightblue" d="M196.46,-168.4C205.59,-159.49 217.42,-147.95 226.86,-138.74"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="229.41,-141.15 234.12,-131.66 224.52,-136.13 229.41,-141.15"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="../../d4/d79/public_8h.html" target="_top" xlink:title="Master header for the ajabase library.">
-<polygon fill="white" stroke="black" points="198,-56.5 198,-75.5 340,-75.5 340,-56.5 198,-56.5"/>
-<text text-anchor="middle" x="269" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/common/public.h</text>
+<polygon fill="white" stroke="black" points="172,-56.5 172,-75.5 314,-75.5 314,-56.5 172,-56.5"/>
+<text text-anchor="middle" x="243" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/common/public.h</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M235.61,-112.08C241.26,-104.46 249.54,-93.26 256.45,-83.94"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="259.38,-85.87 262.52,-75.75 253.75,-81.7 259.38,-85.87"/>
+<path fill="none" stroke="midnightblue" d="M243,-112.08C243,-105.01 243,-94.86 243,-85.99"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="246.5,-85.75 243,-75.75 239.5,-85.75 246.5,-85.75"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="../../db/db5/export_8h.html" target="_top" xlink:title="Declares system&#45;dependent import/export macros and libraries.">
-<polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 144,-19.5 144,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="72" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/common/export.h</text>
+<polygon fill="white" stroke="black" points="392,-0.5 392,-19.5 536,-19.5 536,-0.5 392,-0.5"/>
+<text text-anchor="middle" x="464" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/common/export.h</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M237.78,-56.44C204.07,-47.2 150.2,-32.44 113.07,-22.26"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="113.64,-18.78 103.07,-19.52 111.79,-25.54 113.64,-18.78"/>
+<path fill="none" stroke="midnightblue" d="M278.02,-56.44C316.25,-47.1 377.57,-32.12 419.26,-21.93"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="420.26,-25.29 429.15,-19.52 418.6,-18.49 420.26,-25.29"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="162,-0.5 162,-19.5 206,-19.5 206,-0.5 162,-0.5"/>
-<text text-anchor="middle" x="184" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">string</text>
+<polygon fill="white" stroke="#bfbfbf" points="264,-0.5 264,-19.5 308,-19.5 308,-0.5 264,-0.5"/>
+<text text-anchor="middle" x="286" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">string</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M255.34,-56.32C242.08,-47.9 221.73,-34.97 206.15,-25.07"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="207.94,-22.06 197.62,-19.65 204.19,-27.97 207.94,-22.06"/>
+<path fill="none" stroke="midnightblue" d="M250.1,-56.08C256.24,-48.38 265.27,-37.03 272.74,-27.65"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="275.54,-29.75 279.03,-19.75 270.06,-25.39 275.54,-29.75"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="224,-0.5 224,-19.5 256,-19.5 256,-0.5 224,-0.5"/>
-<text text-anchor="middle" x="240" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">list</text>
+<polygon fill="white" stroke="#bfbfbf" points="214,-0.5 214,-19.5 246,-19.5 246,-0.5 214,-0.5"/>
+<text text-anchor="middle" x="230" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">list</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node5&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M264.21,-56.08C260.24,-48.69 254.47,-37.95 249.57,-28.81"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="252.51,-26.91 244.7,-19.75 246.35,-30.22 252.51,-26.91"/>
+<path fill="none" stroke="midnightblue" d="M240.85,-56.08C239.13,-48.93 236.65,-38.64 234.5,-29.69"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="237.85,-28.65 232.11,-19.75 231.04,-30.29 237.85,-28.65"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="274.5,-0.5 274.5,-19.5 321.5,-19.5 321.5,-0.5 274.5,-0.5"/>
-<text text-anchor="middle" x="298" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
+<polygon fill="white" stroke="#bfbfbf" points="326.5,-0.5 326.5,-19.5 373.5,-19.5 373.5,-0.5 326.5,-0.5"/>
+<text text-anchor="middle" x="350" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node5&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M273.79,-56.08C277.76,-48.69 283.53,-37.95 288.43,-28.81"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="291.65,-30.22 293.3,-19.75 285.49,-26.91 291.65,-30.22"/>
+<path fill="none" stroke="midnightblue" d="M260.19,-56.32C277.35,-47.66 303.95,-34.24 323.75,-24.25"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="325.5,-27.28 332.85,-19.65 322.35,-21.04 325.5,-27.28"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="340,-0.5 340,-19.5 378,-19.5 378,-0.5 340,-0.5"/>
-<text text-anchor="middle" x="359" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">map</text>
+<polygon fill="white" stroke="#bfbfbf" points="0,-0.5 0,-19.5 38,-19.5 38,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="19" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">map</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node5&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M283.46,-56.32C297.5,-47.9 319.05,-34.97 335.54,-25.07"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="337.8,-27.8 344.58,-19.65 334.2,-21.8 337.8,-27.8"/>
+<path fill="none" stroke="midnightblue" d="M201.07,-56.46C163.3,-48.52 106.11,-35.91 47.94,-20.09"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="48.78,-16.69 38.21,-17.41 46.93,-23.44 48.78,-16.69"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="../../d9/d49/types_8h.html" target="_top" xlink:title="Declares common types used in the ajabase library.">
-<polygon fill="white" stroke="black" points="396,-0.5 396,-19.5 536,-19.5 536,-0.5 396,-0.5"/>
-<text text-anchor="middle" x="466" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/common/types.h</text>
+<polygon fill="white" stroke="black" points="56,-0.5 56,-19.5 196,-19.5 196,-0.5 56,-0.5"/>
+<text text-anchor="middle" x="126" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/common/types.h</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node5&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M300.22,-56.44C333.93,-47.2 387.8,-32.44 424.93,-22.26"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="426.21,-25.54 434.93,-19.52 424.36,-18.78 426.21,-25.54"/>
+<path fill="none" stroke="midnightblue" d="M224.46,-56.44C205.38,-47.64 175.43,-33.81 153.56,-23.72"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="155,-20.53 144.45,-19.52 152.07,-26.88 155,-20.53"/>
 </g>
 <!-- Node12&#45;&gt;Node5 -->
 <g id="edge12" class="edge">
 <title>Node12&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M308.19,-173.65C305.29,-160.12 299.11,-133.6 291,-112 287.52,-102.74 282.79,-92.82 278.61,-84.66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="281.66,-82.95 273.9,-75.74 275.47,-86.22 281.66,-82.95"/>
+<path fill="none" stroke="midnightblue" d="M339.85,-173.94C334.37,-159.86 322.03,-131.47 305,-112 294.22,-99.67 279.47,-88.8 267.06,-80.82"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="268.87,-77.83 258.53,-75.55 265.2,-83.79 268.87,-77.83"/>
+</g>
+<!-- Node13&#45;&gt;Node5 -->
+<g id="edge17" class="edge">
+<title>Node13&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M427.3,-112.44C389.42,-103.1 328.65,-88.12 287.34,-77.93"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="288.09,-74.51 277.54,-75.52 286.41,-81.31 288.09,-74.51"/>
+</g>
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="564,-56.5 564,-75.5 614,-75.5 614,-56.5 564,-56.5"/>
+<text text-anchor="middle" x="589" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">stdio.h</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge14" class="edge">
+<title>Node13&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M482.12,-112.44C503.02,-103.56 535.93,-89.56 559.72,-79.45"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="561.14,-82.65 568.97,-75.52 558.4,-76.21 561.14,-82.65"/>
+</g>
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="632,-56.5 632,-75.5 688,-75.5 688,-56.5 632,-56.5"/>
+<text text-anchor="middle" x="660" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">sstream</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node15 -->
+<g id="edge15" class="edge">
+<title>Node13&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M493.37,-112.44C528.26,-102.93 584.61,-87.56 621.97,-77.37"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="623.25,-80.65 631.97,-74.64 621.41,-73.9 623.25,-80.65"/>
+</g>
+<!-- Node16 -->
+<g id="node16" class="node">
+<title>Node16</title>
+<g id="a_node16"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="332,-56.5 332,-75.5 364,-75.5 364,-56.5 332,-56.5"/>
+<text text-anchor="middle" x="348" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">set</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node16 -->
+<g id="edge16" class="edge">
+<title>Node13&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M443.94,-112.44C424.88,-103.42 394.7,-89.12 373.29,-78.98"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="374.67,-75.76 364.14,-74.64 371.67,-82.09 374.67,-75.76"/>
+</g>
+<!-- Node17 -->
+<g id="node17" class="node">
+<title>Node17</title>
+<g id="a_node17"><a xlink:href="../../d0/db4/debugshare_8h.html" target="_top" xlink:title="Declares the constants used for sharing debug messages. These structures are used to gather debug mes...">
+<polygon fill="white" stroke="black" points="382.5,-56.5 382.5,-75.5 545.5,-75.5 545.5,-56.5 382.5,-56.5"/>
+<text text-anchor="middle" x="464" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">ajabase/system/debugshare.h</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node17 -->
+<g id="edge18" class="edge">
+<title>Node13&#45;&gt;Node17</title>
+<path fill="none" stroke="midnightblue" d="M462.33,-112.08C462.59,-105.01 462.97,-94.86 463.3,-85.99"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="466.8,-85.87 463.68,-75.75 459.81,-85.61 466.8,-85.87"/>
+</g>
+<!-- Node17&#45;&gt;Node6 -->
+<g id="edge19" class="edge">
+<title>Node17&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M464,-56.08C464,-49.01 464,-38.86 464,-29.99"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="467.5,-29.75 464,-19.75 460.5,-29.75 467.5,-29.75"/>
+</g>
+<!-- Node17&#45;&gt;Node7 -->
+<g id="edge22" class="edge">
+<title>Node17&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M435.8,-56.44C403.72,-46.71 351.48,-30.86 317.93,-20.69"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="318.75,-17.28 308.17,-17.73 316.72,-23.98 318.75,-17.28"/>
+</g>
+<!-- Node17&#45;&gt;Node9 -->
+<g id="edge23" class="edge">
+<title>Node17&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M445.94,-56.44C427.43,-47.68 398.42,-33.94 377.14,-23.86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="378.51,-20.63 367.98,-19.52 375.52,-26.96 378.51,-20.63"/>
+</g>
+<!-- Node18 -->
+<g id="node18" class="node">
+<title>Node18</title>
+<g id="a_node18"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="554,-0.5 554,-19.5 610,-19.5 610,-0.5 554,-0.5"/>
+<text text-anchor="middle" x="582" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">stddef.h</text>
+</a>
+</g>
+</g>
+<!-- Node17&#45;&gt;Node18 -->
+<g id="edge20" class="edge">
+<title>Node17&#45;&gt;Node18</title>
+<path fill="none" stroke="midnightblue" d="M482.7,-56.44C501.94,-47.64 532.15,-33.81 554.2,-23.72"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="555.75,-26.86 563.39,-19.52 552.84,-20.5 555.75,-26.86"/>
+</g>
+<!-- Node19 -->
+<g id="node19" class="node">
+<title>Node19</title>
+<g id="a_node19"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="628.5,-0.5 628.5,-19.5 681.5,-19.5 681.5,-0.5 628.5,-0.5"/>
+<text text-anchor="middle" x="655" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">stdint.h</text>
+</a>
+</g>
+</g>
+<!-- Node17&#45;&gt;Node19 -->
+<g id="edge21" class="edge">
+<title>Node17&#45;&gt;Node19</title>
+<path fill="none" stroke="midnightblue" d="M494.26,-56.44C528.01,-46.9 582.58,-31.47 618.62,-21.28"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="619.6,-24.65 628.27,-18.56 617.69,-17.91 619.6,-24.65"/>
 </g>
 </g>
 </svg>

@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('d5/d61/windows_2pnpimpl_8cpp.html','..
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">pnpimpl.cpp File Reference</div>  </div>
@@ -96,6 +97,7 @@ $(document).ready(function(){initNavTree('d5/d61/windows_2pnpimpl_8cpp.html','..
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d4/d8f/windows_2pnpimpl_8h_source.html">ajabase/pnp/windows/pnpimpl.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/dbc/systemtime_8h_source.html">ajabase/system/systemtime.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d16/debug_8h_source.html">ajabase/system/debug.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pnpimpl.cpp:</div>
 <div class="dyncontent">
@@ -105,41 +107,64 @@ Include dependency graph for pnpimpl.cpp:</div>
 </div>
 <p><a href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad7da0783050d3c9d1db7f46c441373f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ad7da0783050d3c9d1db7f46c441373f7">PNPFAIL</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138dab476e3258a7b7190f1b93c1e87a26d87">AJA_DebugSeverity_Error</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:ad7da0783050d3c9d1db7f46c441373f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65089b711da8a758a087fb040e7234f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ae65089b711da8a758a087fb040e7234f">PNPWARN</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da8fd944aa450a9a4312ecf4c7dc43bc2b">AJA_DebugSeverity_Warning</a>,	__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:ae65089b711da8a758a087fb040e7234f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82ba186dd0ba9945fd5800557dc7b53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ad82ba186dd0ba9945fd5800557dc7b53">PNPNOTE</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da547a010457c25785d90a7d9ec9432efc">AJA_DebugSeverity_Notice</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:ad82ba186dd0ba9945fd5800557dc7b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ffbae1535cdf6e9e72080940cc2e81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#a77ffbae1535cdf6e9e72080940cc2e81">PNPINFO</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da21394c9adef2bff13667e13a7baa765d">AJA_DebugSeverity_Info</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a77ffbae1535cdf6e9e72080940cc2e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40975cb52435415c7ff8e4c004be4bda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#a40975cb52435415c7ff8e4c004be4bda">PNPDBG</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da4f3df5e517edb3bb6694db27dbd4c71e">AJA_DebugSeverity_Debug</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a40975cb52435415c7ff8e4c004be4bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac6fc91a802fada408bd858fc9f9b13af"><td class="memItemLeft" align="right" valign="top">void CALLBACK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#ac6fc91a802fada408bd858fc9f9b13af">SignaledAddRoutine</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a> lpParam, BOOLEAN TimerOrWaitFired)</td></tr>
-<tr class="separator:ac6fc91a802fada408bd858fc9f9b13af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6bf9ecc3bf07df4243f9d898d6f80fb"><td class="memItemLeft" align="right" valign="top">void CALLBACK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#aa6bf9ecc3bf07df4243f9d898d6f80fb">SignaledRemoveRoutine</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a> lpParam, BOOLEAN TimerOrWaitFired)</td></tr>
-<tr class="separator:aa6bf9ecc3bf07df4243f9d898d6f80fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc6e91a6175253a16362bcf6418ed52"><td class="memItemLeft" align="right" valign="top">static void CALLBACK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#a6cc6e91a6175253a16362bcf6418ed52">SignaledAddRoutine</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a> lpParam, BOOLEAN TimerOrWaitFired)</td></tr>
+<tr class="separator:a6cc6e91a6175253a16362bcf6418ed52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641f16e4f6c34f5ea7116af40398dd8a"><td class="memItemLeft" align="right" valign="top">static void CALLBACK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html#a641f16e4f6c34f5ea7116af40398dd8a">SignaledRemoveRoutine</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a> lpParam, BOOLEAN TimerOrWaitFired)</td></tr>
+<tr class="separator:a641f16e4f6c34f5ea7116af40398dd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements the <a class="el" href="../../dd/d06/class_a_j_a_pnp_impl.html">AJAPnpImpl</a> class on the Windows platform. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>(C) 2011-2022 AJA Video Systems, Inc. All rights reserved. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac6fc91a802fada408bd858fc9f9b13af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6fc91a802fada408bd858fc9f9b13af">&#9670;&nbsp;</a></span>SignaledAddRoutine()</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a40975cb52435415c7ff8e4c004be4bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40975cb52435415c7ff8e4c004be4bda">&#9670;&nbsp;</a></span>PNPDBG</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CALLBACK SignaledAddRoutine </td>
+          <td class="memname">#define PNPDBG</td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a>&#160;</td>
-          <td class="paramname"><em>lpParam</em>, </td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da4f3df5e517edb3bb6694db27dbd4c71e">AJA_DebugSeverity_Debug</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad7da0783050d3c9d1db7f46c441373f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7da0783050d3c9d1db7f46c441373f7">&#9670;&nbsp;</a></span>PNPFAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BOOLEAN&#160;</td>
-          <td class="paramname"><em>TimerOrWaitFired</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#define PNPFAIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138dab476e3258a7b7190f1b93c1e87a26d87">AJA_DebugSeverity_Error</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -148,14 +173,78 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa6bf9ecc3bf07df4243f9d898d6f80fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6bf9ecc3bf07df4243f9d898d6f80fb">&#9670;&nbsp;</a></span>SignaledRemoveRoutine()</h2>
+<a id="a77ffbae1535cdf6e9e72080940cc2e81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ffbae1535cdf6e9e72080940cc2e81">&#9670;&nbsp;</a></span>PNPINFO</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CALLBACK SignaledRemoveRoutine </td>
+          <td class="memname">#define PNPINFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da21394c9adef2bff13667e13a7baa765d">AJA_DebugSeverity_Info</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad82ba186dd0ba9945fd5800557dc7b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82ba186dd0ba9945fd5800557dc7b53">&#9670;&nbsp;</a></span>PNPNOTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNPNOTE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da547a010457c25785d90a7d9ec9432efc">AJA_DebugSeverity_Notice</a>,		__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae65089b711da8a758a087fb040e7234f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65089b711da8a758a087fb040e7234f">&#9670;&nbsp;</a></span>PNPWARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNPWARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa589eee74c7114b32aff7e8515e05d7f5">AJA_DebugUnit_PnP</a>, <a class="el" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138da8fd944aa450a9a4312ecf4c7dc43bc2b">AJA_DebugSeverity_Warning</a>,	__func__ &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a6cc6e91a6175253a16362bcf6418ed52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc6e91a6175253a16362bcf6418ed52">&#9670;&nbsp;</a></span>SignaledAddRoutine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CALLBACK SignaledAddRoutine </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a>&#160;</td>
           <td class="paramname"><em>lpParam</em>, </td>
@@ -172,9 +261,52 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a641f16e4f6c34f5ea7116af40398dd8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641f16e4f6c34f5ea7116af40398dd8a">&#9670;&nbsp;</a></span>SignaledRemoveRoutine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CALLBACK SignaledRemoveRoutine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a>&#160;</td>
+          <td class="paramname"><em>lpParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOLEAN&#160;</td>
+          <td class="paramname"><em>TimerOrWaitFired</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp_source.html">pnpimpl.cpp</a>.</p>
 
 </div>
 </div>
@@ -184,7 +316,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_853fe2b552097df5fdaa18810c9944f4.html">pnp</a></li><li class="navelem"><a class="el" href="../../dir_167371f636e18a064e79877400f67410.html">windows</a></li><li class="navelem"><a class="el" href="../../d5/d61/windows_2pnpimpl_8cpp.html">pnpimpl.cpp</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:41 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:11 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

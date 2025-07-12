@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -122,9 +122,9 @@ Macros</h2></td></tr>
 <tr class="separator:a82bc84981d3e9f3cec1402a8f2565eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a577abd1d5c56024db267ecf0a1545bc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/types_8h.html#a577abd1d5c56024db267ecf0a1545bc6">AJA_UNUSED</a>(_x_)&#160;&#160;&#160;(void)_x_;</td></tr>
 <tr class="separator:a577abd1d5c56024db267ecf0a1545bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd34d9d15e81efca9232d461f0bc280e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/types_8h.html#acd34d9d15e81efca9232d461f0bc280e">AJA_CHECK_NULL</a>(_ptr_,  _res_)&#160;&#160;&#160;{ if (__ptr__ == <a class="el" href="../../d4/dd5/ntv2vpid_8cpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { return _res_; } }</td></tr>
+<tr class="memitem:acd34d9d15e81efca9232d461f0bc280e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/types_8h.html#acd34d9d15e81efca9232d461f0bc280e">AJA_CHECK_NULL</a>(_ptr_,  _res_)&#160;&#160;&#160;{ <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a> (__ptr__ == <a class="el" href="../../d4/dd5/ntv2vpid_8cpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a744afe7ed202c068698b0775a5d6db5a">return</a> _res_; } }</td></tr>
 <tr class="separator:acd34d9d15e81efca9232d461f0bc280e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14831668fb718be3f1f0c464bfcf331a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/types_8h.html#a14831668fb718be3f1f0c464bfcf331a">AJA_RETURN_STATUS</a>(_status_)&#160;&#160;&#160;{ const <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> s = _status_; if (s != <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>) { return s; } }</td></tr>
+<tr class="memitem:a14831668fb718be3f1f0c464bfcf331a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/types_8h.html#a14831668fb718be3f1f0c464bfcf331a">AJA_RETURN_STATUS</a>(_status_)&#160;&#160;&#160;{ const <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> s = _status_; <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a> (s != <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>) { <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a744afe7ed202c068698b0775a5d6db5a">return</a> s; } }</td></tr>
 <tr class="separator:a14831668fb718be3f1f0c464bfcf331a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da8d7c5e3dc31d31e8d285d1f4d6d24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/types_8h.html#a7da8d7c5e3dc31d31e8d285d1f4d6d24">NUMELMS</a>(aa)&#160;&#160;&#160;(sizeof(aa)/sizeof((aa)[0]))</td></tr>
 <tr class="separator:a7da8d7c5e3dc31d31e8d285d1f4d6d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,7 +211,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ if (__ptr__ == <a class="el" href="../../d4/dd5/ntv2vpid_8cpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { return _res_; } }</td>
+          <td></td><td>&#160;&#160;&#160;{ <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a> (__ptr__ == <a class="el" href="../../d4/dd5/ntv2vpid_8cpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a744afe7ed202c068698b0775a5d6db5a">return</a> _res_; } }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,7 +417,7 @@ Enumerations</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_status_</td><td>)</td>
-          <td>&#160;&#160;&#160;{ const <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> s = _status_; if (s != <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>) { return s; } }</td>
+          <td>&#160;&#160;&#160;{ const <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> s = _status_; <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a> (s != <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a>) { <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a744afe7ed202c068698b0775a5d6db5a">return</a> s; } }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -525,7 +525,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_8f3154ce023319d0c7e8bb4441cab51f.html">common</a></li><li class="navelem"><a class="el" href="../../d9/d49/types_8h.html">types.h</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:41 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:11 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

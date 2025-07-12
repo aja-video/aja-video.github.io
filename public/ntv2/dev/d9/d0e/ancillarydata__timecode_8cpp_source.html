@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d9/d0e/ancillarydata__timecode_8cpp_so
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a812fefc743bd9a116b6f1aeb19873c05ac61ce6b5505e5ea17ea917fe5d569b98">kNumTimeDigits</a>; i++)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a89dce24104f99943a2990056e844bb3e">m_timeDigits</a>[i] = inRHS.<a class="code" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a89dce24104f99943a2990056e844bb3e">m_timeDigits</a>[i];</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        for (i = 0; i &lt; <a class="code" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ac95ab5a9e768744d159d2a709364520fa955011c08cc0b7680a4c71e11ce41829">kNumBinaryGroups</a>; i++)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="../../de/d7b/dllentry_8cpp.html#a11610537ed3fcc7a653ac9450206e0c6">for</a> (i = 0; i &lt; <a class="code" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ac95ab5a9e768744d159d2a709364520fa955011c08cc0b7680a4c71e11ce41829">kNumBinaryGroups</a>; i++)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ac191c110690146b24466d0146a4b78e9">m_binaryGroup</a>[i] = inRHS.<a class="code" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ac191c110690146b24466d0146a4b78e9">m_binaryGroup</a>[i];</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -801,6 +801,7 @@ $(document).ready(function(){initNavTree('d9/d0e/ancillarydata__timecode_8cpp_so
 <div class="ttc" id="aclass_a_j_a_ancillary_data___timecode_html_a162414988cdd1ee5634a5d906acc9de1"><div class="ttname"><a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a162414988cdd1ee5634a5d906acc9de1">AJAAncillaryData_Timecode::GetDropFrameFlag</a></div><div class="ttdeci">virtual AJAStatus GetDropFrameFlag(bool &amp;bFlag, AJAAncillaryData_Timecode_Format tcFmt=AJAAncillaryData_Timecode_Format_Unknown) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00413">ancillarydata_timecode.cpp:413</a></div></div>
 <div class="ttc" id="anamespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434_html_a14b59b9b8b6f511cdd6bb3e7c8b228ce"><div class="ttname"><a href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#a14b59b9b8b6f511cdd6bb3e7c8b228ce">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::void</a></div><div class="ttdeci">j template void())</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db8/json_8hpp_source.html#l04893">json.hpp:4893</a></div></div>
 <div class="ttc" id="aclass_a_j_a_ancillary_data___timecode_html_ab514ca939c6edc66fa88003ae204d99f"><div class="ttname"><a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ab514ca939c6edc66fa88003ae204d99f">AJAAncillaryData_Timecode::SetBinaryGroupHexValue</a></div><div class="ttdeci">virtual AJAStatus SetBinaryGroupHexValue(uint8_t digitNum, uint8_t hexValue, uint8_t mask=0x0f)</div><div class="ttdoc">Sets my raw &quot;Binary Group&quot; hex values.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00255">ancillarydata_timecode.cpp:255</a></div></div>
+<div class="ttc" id="adllentry_8cpp_html_a11610537ed3fcc7a653ac9450206e0c6"><div class="ttname"><a href="../../de/d7b/dllentry_8cpp.html#a11610537ed3fcc7a653ac9450206e0c6">for</a></div><div class="ttdeci">for(int i=0;i&lt; g_cTemplates;i++)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7b/dllentry_8cpp_source.html#l00202">dllentry.cpp:202</a></div></div>
 <div class="ttc" id="aclass_a_j_a_ancillary_data___timecode_html_a812fefc743bd9a116b6f1aeb19873c05ab73e0fb5dd51386ec8604fc134577910"><div class="ttname"><a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a812fefc743bd9a116b6f1aeb19873c05ab73e0fb5dd51386ec8604fc134577910">AJAAncillaryData_Timecode::kTcFrameUnits</a></div><div class="ttdeci">@ kTcFrameUnits</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00271">ancillarydata_timecode.h:271</a></div></div>
 <div class="ttc" id="aclass_a_j_a_ancillary_data___timecode_html_a655a8ec33c49d23f237d064d00fe9387"><div class="ttname"><a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a655a8ec33c49d23f237d064d00fe9387">AJAAncillaryData_Timecode::GetBinaryGroupHexValue</a></div><div class="ttdeci">virtual AJAStatus GetBinaryGroupHexValue(uint8_t digitNum, uint8_t &amp;hexValue, uint8_t mask=0x0f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00267">ancillarydata_timecode.cpp:267</a></div></div>
 <div class="ttc" id="aclass_a_j_a_ancillary_data___timecode_html_a812fefc743bd9a116b6f1aeb19873c05a704ac14c74df9b0b19e656dda09fc870"><div class="ttname"><a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a812fefc743bd9a116b6f1aeb19873c05a704ac14c74df9b0b19e656dda09fc870">AJAAncillaryData_Timecode::kTcSecondUnits</a></div><div class="ttdeci">@ kTcSecondUnits</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00273">ancillarydata_timecode.h:273</a></div></div>
@@ -859,7 +860,7 @@ $(document).ready(function(){initNavTree('d9/d0e/ancillarydata__timecode_8cpp_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_b59e94d4ad5c664834b28d5f17def224.html">ajaanc</a></li><li class="navelem"><a class="el" href="../../dir_28b49ea1c9eb64da81b2c96a9f6a24f4.html">src</a></li><li class="navelem"><a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp.html">ancillarydata_timecode.cpp</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:34 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:04 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

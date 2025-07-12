@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.1906</span>
+   &#160;<span id="projectnumber">17.6.0.2190</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.1906</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
   </td>
  </tr>
  </tbody>
@@ -141,48 +141,53 @@ How to Capture 1080p50/60 Video</h1>
 <p><b>Code Example</b></p>
 <div class="fragment"><div class="line"><span class="comment">//  This will work with devices that answer \c true for ::NTV2DeviceCanDo3GLevelConversion</span></div>
 <div class="line"><span class="keywordtype">bool</span>    is3Gb(<span class="keyword">false</span>);</div>
-<div class="line">mVideoFormat = mDevice.GetSDIInputVideoFormat (mInputChannel, <span class="keyword">false</span>);</div>
-<div class="line">mDevice.GetSDIInput3GbPresent (is3Gb, mInputChannel);</div>
+<div class="line"><a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a24e4a25ab5afcd0ba8831f434ccad643">mVideoFormat</a> = mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#ae6a81466382639a861bda059752452ae">GetSDIInputVideoFormat</a> (<a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a>, <span class="keyword">false</span>);</div>
+<div class="line">mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#a152b9318938b3aa6ce8430e4de730292">GetSDIInput3GbPresent</a> (is3Gb, <a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a>);</div>
 <div class="line"><span class="keywordflow">if</span> (is3Gb)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">switch</span> (mVideoFormat)</div>
+<div class="line">    <span class="keywordflow">switch</span> (<a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a24e4a25ab5afcd0ba8831f434ccad643">mVideoFormat</a>)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">case</span> <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa70bccda2ef4b06c4ffa0c7431a9a8c82">NTV2_FORMAT_1080i_5000</a>:</div>
-<div class="line">            mDevice.SetSDIInLevelBtoLevelAConversion (mInputChannel, <span class="keyword">true</span>);</div>
-<div class="line">            mVideoFormat = <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa3c82d3ef6196da2b1173559741d0e8e3">NTV2_FORMAT_1080p_5000_A</a>;</div>
+<div class="line">            mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#a4f649da2bf579d80082200e368781271">SetSDIInLevelBtoLevelAConversion</a> (<a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a>, <span class="keyword">true</span>);</div>
+<div class="line">            <a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a24e4a25ab5afcd0ba8831f434ccad643">mVideoFormat</a> = <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa3c82d3ef6196da2b1173559741d0e8e3">NTV2_FORMAT_1080p_5000_A</a>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa8c7f7ad429946587d642011444ec601c">NTV2_FORMAT_1080i_5994</a>:</div>
-<div class="line">            mDevice.SetSDIInLevelBtoLevelAConversion (mInputChannel, <span class="keyword">true</span>);</div>
-<div class="line">            mVideoFormat = <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfaf50613d99979788533b5dfa5f477bbdc">NTV2_FORMAT_1080p_5994_A</a>;</div>
+<div class="line">            mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#a4f649da2bf579d80082200e368781271">SetSDIInLevelBtoLevelAConversion</a> (<a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a>, <span class="keyword">true</span>);</div>
+<div class="line">            <a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a24e4a25ab5afcd0ba8831f434ccad643">mVideoFormat</a> = <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfaf50613d99979788533b5dfa5f477bbdc">NTV2_FORMAT_1080p_5994_A</a>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa6eeef2fd74bdc3744cde9074aebd3bc0">NTV2_FORMAT_1080i_6000</a>:</div>
-<div class="line">            mDevice.SetSDIInLevelBtoLevelAConversion (mInputChannel, <span class="keyword">true</span>);</div>
-<div class="line">            mVideoFormat = <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa237e8bc89e01867d585a59f488bdaa6a">NTV2_FORMAT_1080p_6000_A</a>;</div>
+<div class="line">            mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#a4f649da2bf579d80082200e368781271">SetSDIInLevelBtoLevelAConversion</a> (<a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a>, <span class="keyword">true</span>);</div>
+<div class="line">            <a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a24e4a25ab5afcd0ba8831f434ccad643">mVideoFormat</a> = <a class="code" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa237e8bc89e01867d585a59f488bdaa6a">NTV2_FORMAT_1080p_6000_A</a>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
-<div class="line">            mDevice.SetSDIInLevelBtoLevelAConversion (mInputChannel, <span class="keyword">false</span>);</div>
+<div class="line">            mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#a4f649da2bf579d80082200e368781271">SetSDIInLevelBtoLevelAConversion</a> (<a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a>, <span class="keyword">false</span>);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
-<div class="line">    mDevice.SetSDIInLevelBtoLevelAConversion (mInputChannel, <span class="keyword">false</span>);</div>
+<div class="line">    mDevice.<a class="code" href="../../d7/dfb/class_c_n_t_v2_card.html#a4f649da2bf579d80082200e368781271">SetSDIInLevelBtoLevelAConversion</a> (<a class="code" href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a>, <span class="keyword">false</span>);</div>
 </div><!-- fragment --><h1><a class="anchor" id="aja6g12g"></a>
 6G and 12G</h1>
 <p>Some newer AJA devices have SDI connectors that support 6G and 12G, which allows a single cable to carry 4K/UHD, even at high-frame-rates or bit depths. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_c_n_t_v2_card_html_a4f649da2bf579d80082200e368781271"><div class="ttname"><a href="../../d7/dfb/class_c_n_t_v2_card.html#a4f649da2bf579d80082200e368781271">CNTV2Card::SetSDIInLevelBtoLevelAConversion</a></div><div class="ttdeci">virtual bool SetSDIInLevelBtoLevelAConversion(const NTV2ChannelSet &amp;inSDIInputs, const bool inEnable)</div><div class="ttdoc">Enables or disables 3G level B to 3G level A conversion at the SDI input(s).</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/ntv2register_8cpp_source.html#l04333">ntv2register.cpp:4333</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfa8c7f7ad429946587d642011444ec601c"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa8c7f7ad429946587d642011444ec601c">NTV2_FORMAT_1080i_5994</a></div><div class="ttdeci">@ NTV2_FORMAT_1080i_5994</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00541">ntv2enums.h:541</a></div></div>
+<div class="ttc" id="antv2vcam_8cpp_html_a24e4a25ab5afcd0ba8831f434ccad643"><div class="ttname"><a href="../../d5/d74/ntv2vcam_8cpp.html#a24e4a25ab5afcd0ba8831f434ccad643">mVideoFormat</a></div><div class="ttdeci">mVideoFormat</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d74/ntv2vcam_8cpp_source.html#l00801">ntv2vcam.cpp:801</a></div></div>
+<div class="ttc" id="antv2vcam_8cpp_html_a8fc05b0ad38d8f92bc16ba7665978083"><div class="ttname"><a href="../../d5/d74/ntv2vcam_8cpp.html#a8fc05b0ad38d8f92bc16ba7665978083">mInputChannel</a></div><div class="ttdeci">mInputChannel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d74/ntv2vcam_8cpp_source.html#l01010">ntv2vcam.cpp:1010</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfa237e8bc89e01867d585a59f488bdaa6a"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa237e8bc89e01867d585a59f488bdaa6a">NTV2_FORMAT_1080p_6000_A</a></div><div class="ttdeci">@ NTV2_FORMAT_1080p_6000_A</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00564">ntv2enums.h:564</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfa3c82d3ef6196da2b1173559741d0e8e3"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa3c82d3ef6196da2b1173559741d0e8e3">NTV2_FORMAT_1080p_5000_A</a></div><div class="ttdeci">@ NTV2_FORMAT_1080p_5000_A</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00562">ntv2enums.h:562</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfa70bccda2ef4b06c4ffa0c7431a9a8c82"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa70bccda2ef4b06c4ffa0c7431a9a8c82">NTV2_FORMAT_1080i_5000</a></div><div class="ttdeci">@ NTV2_FORMAT_1080i_5000</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00540">ntv2enums.h:540</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfaf50613d99979788533b5dfa5f477bbdc"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfaf50613d99979788533b5dfa5f477bbdc">NTV2_FORMAT_1080p_5994_A</a></div><div class="ttdeci">@ NTV2_FORMAT_1080p_5994_A</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00563">ntv2enums.h:563</a></div></div>
+<div class="ttc" id="aclass_c_n_t_v2_card_html_ae6a81466382639a861bda059752452ae"><div class="ttname"><a href="../../d7/dfb/class_c_n_t_v2_card.html#ae6a81466382639a861bda059752452ae">CNTV2Card::GetSDIInputVideoFormat</a></div><div class="ttdeci">virtual NTV2VideoFormat GetSDIInputVideoFormat(NTV2Channel inChannel, bool inIsProgressive=(0))</div><div class="ttdoc">Returns the video format of the signal that is present on the given SDI input source.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/ntv2register_8cpp_source.html#l03450">ntv2register.cpp:3450</a></div></div>
 <div class="ttc" id="antv2enums_8h_html_aed10f029a5332ade780fff81b5db8bdfa6eeef2fd74bdc3744cde9074aebd3bc0"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa6eeef2fd74bdc3744cde9074aebd3bc0">NTV2_FORMAT_1080i_6000</a></div><div class="ttdeci">@ NTV2_FORMAT_1080i_6000</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l00542">ntv2enums.h:542</a></div></div>
+<div class="ttc" id="aclass_c_n_t_v2_card_html_a152b9318938b3aa6ce8430e4de730292"><div class="ttname"><a href="../../d7/dfb/class_c_n_t_v2_card.html#a152b9318938b3aa6ce8430e4de730292">CNTV2Card::GetSDIInput3GbPresent</a></div><div class="ttdeci">virtual bool GetSDIInput3GbPresent(bool &amp;outValue, const NTV2Channel channel)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/ntv2register_8cpp_source.html#l03678">ntv2register.cpp:3678</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri May 9 2025 14:09:46 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Jul 11 2025 20:30:16 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

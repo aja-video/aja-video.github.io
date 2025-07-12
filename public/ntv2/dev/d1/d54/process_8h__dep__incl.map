@@ -1,5 +1,5 @@
 <map id="/home/tcbuilder/buildAgent/work/df8e8cce5bebfd58/libajantv2/ajabase/system/process.h" name="/home/tcbuilder/buildAgent/work/df8e8cce5bebfd58/libajantv2/ajabase/system/process.h">
-<area shape="rect" id="node1" title="Declares the AJAProcess class." alt="" coords="5001,5,5252,61"/>
+<area shape="rect" id="node1" title="Declares the AJAProcess class." alt="" coords="5172,5,5423,61"/>
 <area shape="rect" id="node2" href="$da/dd0/bm_2processimpl_8h.html" title=" " alt="" coords="5,109,256,165"/>
 <area shape="rect" id="node3" href="$d1/d00/debug_8cpp.html" title="Implements the AJADebug class." alt="" coords="280,109,531,165"/>
 <area shape="rect" id="node4" href="$dc/db3/linux_2processimpl_8h.html" title="Declares the AJAProcessImpl class." alt="" coords="555,109,815,165"/>
@@ -33,7 +33,8 @@
 <area shape="rect" id="node47" href="$db/d11/ntv2player8k_8cpp.html" title="Implementation of ntv2player8k class." alt="" coords="9431,109,9708,165"/>
 <area shape="rect" id="node48" href="$d2/de1/ntv2streamplayer_8cpp.html" title="Implementation of NTV2StreamPlayer class." alt="" coords="9732,109,10068,165"/>
 <area shape="rect" id="node49" href="$da/d04/ntv2streamgrabber_8h.html" title="Header file for the NTV2StreamGrabber class." alt="" coords="10092,109,10433,165"/>
-<area shape="rect" id="node54" href="$de/d85/ntv2driverinterface_8cpp.html" title="Implements the CNTV2DriverInterface class." alt="" coords="10458,109,10713,165"/>
+<area shape="rect" id="node54" href="$d1/d61/ntv2vcam_8h.html" title="Header file for NTV2VCAM demonstration class." alt="" coords="10461,109,10712,165"/>
+<area shape="rect" id="node57" href="$de/d85/ntv2driverinterface_8cpp.html" title="Implements the CNTV2DriverInterface class." alt="" coords="10737,109,10991,165"/>
 <area shape="rect" id="node5" href="$d6/d04/bm_2processimpl_8cpp.html" title=" " alt="" coords="260,213,524,269"/>
 <area shape="rect" id="node6" href="$de/d3a/linux_2processimpl_8cpp.html" title="Implements the AJAProcessImpl class on the Linux platform." alt="" coords="548,213,823,269"/>
 <area shape="rect" id="node8" href="$d7/d66/mac_2processimpl_8cpp.html" title="Implements the AJAProcessImpl class on the Mac platform." alt="" coords="847,213,1118,269"/>
@@ -43,14 +44,16 @@
 <area shape="rect" id="node32" href="$d6/d05/ntv2framegrabber_8cpp.html" title="Contains the implementation of the NTV2FrameGrabber class." alt="" coords="6972,213,7223,269"/>
 <area shape="rect" id="node33" href="$d4/da1/ntv2qtmultiinput_8h.html" title="Header file for NTV2QtMultiInput demonstration application. Demonstrates how to capture several SDI A..." alt="" coords="7247,213,7555,269"/>
 <area shape="rect" id="node36" href="$de/d5a/ntv2qtpreview_8h.html" title="Header file for NTV2QtPreview demo application. Demonstrates how to capture audio/video from NTV2&#45;bas..." alt="" coords="7580,213,7857,269"/>
-<area shape="rect" id="node34" href="$d8/dd3/ntv2qtmultiinput_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from 1, 2, 3, or 4 SDI inputs and..." alt="" coords="6967,317,7217,373"/>
-<area shape="rect" id="node35" href="$de/d73/ntv2qtmultiinput_8cpp.html" title="Implementation of the NTV2QtMultiInput class." alt="" coords="7241,317,7564,373"/>
-<area shape="rect" id="node37" href="$d9/d81/ntv2qtpreview_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from a single SDI input and displ..." alt="" coords="7591,317,7841,373"/>
-<area shape="rect" id="node38" href="$d4/d9d/ntv2qtpreview_8cpp.html" title="Implementation of the NTV2QtPreview class." alt="" coords="7866,317,8158,373"/>
+<area shape="rect" id="node34" href="$d8/dd3/ntv2qtmultiinput_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from 1, 2, 3, or 4 SDI inputs and..." alt="" coords="6968,317,7219,373"/>
+<area shape="rect" id="node35" href="$de/d73/ntv2qtmultiinput_8cpp.html" title="Implementation of the NTV2QtMultiInput class." alt="" coords="7243,317,7565,373"/>
+<area shape="rect" id="node37" href="$d9/d81/ntv2qtpreview_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from a single SDI input and displ..." alt="" coords="7592,317,7843,373"/>
+<area shape="rect" id="node38" href="$d4/d9d/ntv2qtpreview_8cpp.html" title="Implementation of the NTV2QtPreview class." alt="" coords="7867,317,8159,373"/>
 <area shape="rect" id="node41" href="$de/ddb/ntv2llburn_2main_8cpp.html" title="Demonstration application that &quot;burns&quot; timecode into frames captured from SDI input,..." alt="" coords="7881,213,8132,269"/>
 <area shape="rect" id="node42" href="$da/d1a/ntv2llburn_8cpp.html" title="Implementation of NTV2LLBurn demonstration class." alt="" coords="8156,213,8407,269"/>
-<area shape="rect" id="node50" href="$dd/dfe/ntv2streampreview_8h.html" title="Header file for NTV2StreamPreview demo application. Demonstrates how to capture audio/video from NTV2..." alt="" coords="9905,213,10247,269"/>
-<area shape="rect" id="node53" href="$d4/da7/ntv2streamgrabber_8cpp.html" title="Contains the implementation of the NTV2StreamGrabber class." alt="" coords="10271,213,10627,269"/>
-<area shape="rect" id="node51" href="$da/d61/ntv2streampreview_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from a single SDI input and displ..." alt="" coords="9775,317,10041,373"/>
-<area shape="rect" id="node52" href="$dc/dca/ntv2streampreview_8cpp.html" title="Implementation of the NTV2StreamPreview class." alt="" coords="10065,317,10423,373"/>
+<area shape="rect" id="node50" href="$dd/dfe/ntv2streampreview_8h.html" title="Header file for NTV2StreamPreview demo application. Demonstrates how to capture audio/video from NTV2..." alt="" coords="9715,213,10058,269"/>
+<area shape="rect" id="node53" href="$d4/da7/ntv2streamgrabber_8cpp.html" title="Contains the implementation of the NTV2StreamGrabber class." alt="" coords="10082,213,10438,269"/>
+<area shape="rect" id="node51" href="$da/d61/ntv2streampreview_2main_8cpp.html" title="Demonstration application that uses AutoCirculate to capture frames from a single SDI input and displ..." alt="" coords="9586,317,9851,373"/>
+<area shape="rect" id="node52" href="$dc/dca/ntv2streampreview_8cpp.html" title="Implementation of the NTV2StreamPreview class." alt="" coords="9875,317,10234,373"/>
+<area shape="rect" id="node55" href="$df/dca/ntv2vcam_2main_8cpp.html" title="Implementation of NTV2VCAM class." alt="" coords="10463,213,10713,269"/>
+<area shape="rect" id="node56" href="$d5/d74/ntv2vcam_8cpp.html" title="Implementation of NTV2VCAM class." alt="" coords="10737,213,10988,269"/>
 </map>
