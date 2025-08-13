@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.2190</span>
+   &#160;<span id="projectnumber">18.0.0.2322</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
   </td>
  </tr>
  </tbody>
@@ -103,7 +103,7 @@ Dual Stream 3G</h1>
 <h1><a class="anchor" id="ajalevelb"></a>
 Newer AJA Devices Handle Level B Differently</h1>
 <p>On the wire, the speed of Level A and Level B are the same (148 MHz). For Level A, the lines of the image are received at the AJA device’s SDI input one at a time. The speed of the SDI input crosspoint is changed to 148 MHz so that the frame store can write the data into memory at the same rate it comes in. For Level B, lines are received as an even/odd pair at a 74 MHz rate. In this case it would be necessary to store one line temporarily while the other is being written into the frame store. Older AJA devices (e.g., <a class="el" href="../../d0/d53/ntv2devices.html#kona3gufc">KONA 3G (UFC Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#kona3gquad">KONA 3G (Quad Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#corvid24">Corvid 24</a>, etc.), lack a FIFO to do this, so instead, two frame stores are used to write both lines into memory simultaneously at a 74 MHz rate. (This was how AJA engineers were able to graft the “new” Level B signals onto their existing designs.) This is why you must use two frame stores for Level B signals on the <a class="el" href="../../d0/d53/ntv2devices.html#kona3gufc">KONA 3G (UFC Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#kona3gquad">KONA 3G (Quad Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#corvid24">Corvid 24</a>, and other devices of that era &ndash; and must also call the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a62f77a32f8042d370e01a425d36a8d53" title="Enables or disables the device&#39;s SMPTE-372 (dual-link) mode (used for older 3G-levelB-capable devices...">CNTV2Card::SetSmpte372</a> function to “gang” the frame stores.</p>
-<p>Level B is handled much easier with newer AJA devices (e.g., <a class="el" href="../../d0/d53/ntv2devices.html#io4kquad">Io 4K (Quad Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#io4kufc">Io 4K (UFC Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#io4kquad">Io 4K (Quad Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#io4kufc">Io 4K (UFC Mode)</a>, <a class="el" href="../../d0/d53/ntv2devices.html#corvid44">Corvid 44</a>, <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a>, etc.). Simply route the SDI input directly to a single frame store, then configure the SDI input to <b>3G Level B</b>.</p>
+<p>Level B is handled much easier with newer AJA devices. Simply route the SDI input directly to a single frame store, then configure the SDI input to <b>3G Level B</b>.</p>
 <dl class="section note"><dt>Note</dt><dd><b>IMPORTANT:</b><br  />
 When writing software to handle Level A and Level B formats, there’s a difference between <b>NTV2_FORMAT_1080p_6000</b> (which is synonymous with <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa9488048d09abc7fd597c052ca21fe922">NTV2_FORMAT_1080p_6000_B</a>), and <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa237e8bc89e01867d585a59f488bdaa6a">NTV2_FORMAT_1080p_6000_A</a>. The former was a way for AJA’s older devices with slower FPGAs to process high frame rate progressive formats, which was done by using two Frame Stores, each running at 30 Hz, to handle a 60 Hz signal.<br  />
  <br  />
@@ -187,7 +187,7 @@ How to Capture 1080p50/60 Video</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Jul 11 2025 20:30:16 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Aug 13 2025 12:20:36 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

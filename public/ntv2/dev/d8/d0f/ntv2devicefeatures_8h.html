@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.2190</span>
+   &#160;<span id="projectnumber">18.0.0.2322</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
   </td>
  </tr>
  </tbody>
@@ -369,9 +369,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9add8a0f6aed7a1b2eeabbabeb4ea38139">kDeviceGetNumBufferedAudioSystems</a>, 
 <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a9b19471c4d45c01c0f62a15dc37d4da4">kDeviceGetNumTSIMuxers</a>, 
 <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9ad6235d6a14ab488b608d60082248ea71">kDeviceGetSPIFlashVersion</a>, 
-<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a7eaf8b4def426e57849cb0300c0a942f">kNTV2NumericParam_LAST</a>, 
+<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9ae38b49217ecfea79ee657a874f4d6e8e">kDeviceGetGenlockVersion</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a29dffb5df3f5a58fba8e9d1fda2e9c56">kNTV2NumericParam_COUNT</a> = kNTV2NumericParam_LAST-kNTV2NumericParam_FIRST, 
+&#160;&#160;<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a7eaf8b4def426e57849cb0300c0a942f">kNTV2NumericParam_LAST</a>, 
+<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a29dffb5df3f5a58fba8e9d1fda2e9c56">kNTV2NumericParam_COUNT</a> = kNTV2NumericParam_LAST-kNTV2NumericParam_FIRST, 
 <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a1f616dcbfb19368309d2435d882e8668">kDeviceGetNum_INVALID</a> = kNTV2NumericParam_LAST
 <br />
  }</td></tr>
@@ -567,7 +568,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html#l00263">263</a> of file <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html#l00264">264</a> of file <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>.</p>
 
 </div>
 </div>
@@ -587,7 +588,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html#l00229">229</a> of file <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html#l00230">230</a> of file <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>.</p>
 
 </div>
 </div>
@@ -877,9 +878,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a998b1ee0fa67c2d454c3995b77295c6ba3da207e1f399f14856d9011f7c68b1f5"></a>kDeviceHasBiDirectionalAnalogAudio&#160;</td><td class="fielddoc"><p>True if device has a bi-directional analog audio connector. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a998b1ee0fa67c2d454c3995b77295c6ba6c55ee8bc8796267c1159bbb00043b06"></a>kDeviceHasGenlockv2&#160;</td><td class="fielddoc"><p>True if device has version 2 genlock hardware and/or firmware. </p>
+<tr><td class="fieldname"><a id="a998b1ee0fa67c2d454c3995b77295c6ba6c55ee8bc8796267c1159bbb00043b06"></a>kDeviceHasGenlockv2&#160;</td><td class="fielddoc"><p>True if device has version 2 genlock hardware and/or firmware. (Deprecate &ndash; use kDeviceGetGenlockVersion) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a998b1ee0fa67c2d454c3995b77295c6ba3c2cdd62b17bbeeac27ab01f4c378eea"></a>kDeviceHasGenlockv3&#160;</td><td class="fielddoc"><p>True if device has version 3 genlock hardware and/or firmware. </p>
+<tr><td class="fieldname"><a id="a998b1ee0fa67c2d454c3995b77295c6ba3c2cdd62b17bbeeac27ab01f4c378eea"></a>kDeviceHasGenlockv3&#160;</td><td class="fielddoc"><p>True if device has version 3 genlock hardware and/or firmware. (Deprecate &ndash; use kDeviceGetGenlockVersion) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a998b1ee0fa67c2d454c3995b77295c6ba2f5b6fb03c3c28694264acca3f01bea9"></a>kDeviceHasHeadphoneJack&#160;</td><td class="fielddoc"><p>True if device has a headphone jack. </p>
 </td></tr>
@@ -992,7 +993,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a6c83b79e38f0f98f6f2502036d379d9dab7a645e240103065997d69e1cbe0ba2e"></a>kNTV2EnumsID_INVALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html#l00236">236</a> of file <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html#l00237">237</a> of file <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>.</p>
 
 </div>
 </div>
@@ -1112,6 +1113,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a626af21d6dff88a48d411505622ce9d9a9b19471c4d45c01c0f62a15dc37d4da4"></a>kDeviceGetNumTSIMuxers&#160;</td><td class="fielddoc"><p>The number of TSI muxers on the device. (New in SDK 17.0) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a626af21d6dff88a48d411505622ce9d9ad6235d6a14ab488b608d60082248ea71"></a>kDeviceGetSPIFlashVersion&#160;</td><td class="fielddoc"><p>The SPI-flash version on the device. (New in SDK 17.1) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a626af21d6dff88a48d411505622ce9d9ae38b49217ecfea79ee657a874f4d6e8e"></a>kDeviceGetGenlockVersion&#160;</td><td class="fielddoc"><p>The version number of the device's genlock hardware/firmware. (New in SDK 17.6) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a626af21d6dff88a48d411505622ce9d9a7eaf8b4def426e57849cb0300c0a942f"></a>kNTV2NumericParam_LAST&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a626af21d6dff88a48d411505622ce9d9a29dffb5df3f5a58fba8e9d1fda2e9c56"></a>kNTV2NumericParam_COUNT&#160;</td><td class="fielddoc"></td></tr>
@@ -2451,7 +2454,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_a1e7971ee2787a8222fe6a5c9384fcca.html">includes</a></li><li class="navelem"><a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html">ntv2devicefeatures.h</a></li>
-    <li class="footer">Generated on Fri Jul 11 2025 20:30:11 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Aug 13 2025 12:20:31 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

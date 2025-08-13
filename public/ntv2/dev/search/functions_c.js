@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['largestkeysize_26522',['largestKeySize',['../d6/d01/class_n_t_v2_dictionary.html#a86f7792e08a6a14f4f684e81f6b658b1',1,'NTV2Dictionary']]],
-  ['largestpossiblevalue_26523',['largestPossibleValue',['../de/d80/class_a_j_a_moving_avg.html#a14523ff8ac93e1defc4ed9dc694d6e62',1,'AJAMovingAvg']]],
-  ['largestvaluesize_26524',['largestValueSize',['../d6/d01/class_n_t_v2_dictionary.html#afd5fa54ab1776335bb92a9f8db4c5a7d',1,'NTV2Dictionary']]],
-  ['lastframe_26525',['lastFrame',['../dd/de5/class_n_t_v2_a_c_frame_range.html#ac53ab08d6ee7db8cdceabc87b6da0205',1,'NTV2ACFrameRange']]],
+  ['largestkeysize_26523',['largestKeySize',['../d6/d01/class_n_t_v2_dictionary.html#a86f7792e08a6a14f4f684e81f6b658b1',1,'NTV2Dictionary']]],
+  ['largestpossiblevalue_26524',['largestPossibleValue',['../de/d80/class_a_j_a_moving_avg.html#a14523ff8ac93e1defc4ed9dc694d6e62',1,'AJAMovingAvg']]],
+  ['largestvaluesize_26525',['largestValueSize',['../d6/d01/class_n_t_v2_dictionary.html#afd5fa54ab1776335bb92a9f8db4c5a7d',1,'NTV2Dictionary']]],
   ['lastvalue_26526',['LastValue',['../da/d91/class_a_j_a_run_average.html#ab810e4b5012c69122a19483e2a1ed317',1,'AJARunAverage']]],
   ['left_26527',['left',['../dc/d69/class_s_r_t_window.html#a9a2dab61d9b165cb21427c53c1865191',1,'SRTWindow']]],
   ['lexer_26528',['lexer',['../d3/d64/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r6a6d1fa7794f36990ffa991f7371aa0c.html#a5c14d4538996549f803010e4be110b78',1,'nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::lexer::lexer(InputAdapterType &amp;&amp;adapter, bool ignore_comments_=false) noexcept'],['../d3/d64/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r6a6d1fa7794f36990ffa991f7371aa0c.html#a47c922b5bebe8f9e112887d37c5c9f8e',1,'nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::lexer::lexer(const lexer &amp;)=delete'],['../d3/d64/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r6a6d1fa7794f36990ffa991f7371aa0c.html#a2c57ef6c004513da675f1baa20fa6cbc',1,'nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::lexer::lexer(lexer &amp;&amp;)=default']]],

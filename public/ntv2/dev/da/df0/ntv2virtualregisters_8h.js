@@ -48,6 +48,8 @@ var ntv2virtualregisters_8h =
       [ "kVRegGlobalAudioPlaybackMode", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa8e5e62c71f498d6adc77b6780312c938", null ],
       [ "kVRegFlashProgramKey", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daad5ab3c4bebd11edb21b91495b1ea4a03", null ],
       [ "kVRegStrictTiming", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daadf020c3b4bbcc6f5a9a226607b91f91c", null ],
+      [ "kVRegCCPlayerBufSizeKB", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daab8cdf4499b3ac92b86c3f405d7f8655a", null ],
+      [ "kVRegCCPlayerCustomPkt", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa19acdaf633bc2e0103d8c667066fbd3f", null ],
       [ "kVRegDriverType", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa12f93b4cd91ab012b4e593158647a8c7", null ],
       [ "kVRegInputSelect", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daadb09f8ed7b2f368d615aa8605a646c52", null ],
       [ "kVRegSecondaryFormatSelect", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daab611d26a7911df27b7568c82fccf684d", null ],

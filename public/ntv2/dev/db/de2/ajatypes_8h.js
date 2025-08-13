@@ -75,6 +75,7 @@ var ajatypes_8h =
     [ "NTV2_UNUSED", "db/de2/ajatypes_8h.html#a9e21162470c97562f23ec46db01569a8", null ],
     [ "NTV2_USE_CPLUSPLUS11", "db/de2/ajatypes_8h.html#a4fce54a229188a7deca56f9f6b5cc9bb", null ],
     [ "NTV2_USE_STDINT", "db/de2/ajatypes_8h.html#acb93e1f935d038d670f0cc1cc691ce13", null ],
+    [ "NTV2_WILL_BE_DEPRECATED", "db/de2/ajatypes_8h.html#a74fa6124adfd99122e549de085c730aa", null ],
     [ "NTV2_WRITEREG_PROFILING", "db/de2/ajatypes_8h.html#a5a26a9569eb6b71c3096a81edf6d4fcd", null ],
     [ "POINTER_32", "db/de2/ajatypes_8h.html#a22b3415ae34adf9ba8cc3b735a9294b3", null ],
     [ "AJASocket", "db/de2/ajatypes_8h.html#acf47f507a97e22d7bd2fbbe9e51d6e09", null ],

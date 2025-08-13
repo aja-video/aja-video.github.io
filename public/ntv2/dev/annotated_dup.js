@@ -462,7 +462,6 @@ var annotated_dup =
     [ "NTV2StreamPreview", "d5/dff/class_n_t_v2_stream_preview.html", "d5/dff/class_n_t_v2_stream_preview" ],
     [ "NTV2TestPatternGen", "d3/dc1/class_n_t_v2_test_pattern_gen.html", "d3/dc1/class_n_t_v2_test_pattern_gen" ],
     [ "NTV2VirtualData", "d7/d18/class_n_t_v2_virtual_data.html", "d7/d18/class_n_t_v2_virtual_data" ],
-    [ "OptionEntry", "de/dd9/struct_option_entry.html", "de/dd9/struct_option_entry" ],
     [ "optionStackEntry", "da/dfb/structoption_stack_entry.html", "da/dfb/structoption_stack_entry" ],
     [ "PACKAGE_INFO_STRUCT", "d4/de9/struct_p_a_c_k_a_g_e___i_n_f_o___s_t_r_u_c_t.html", "d4/de9/struct_p_a_c_k_a_g_e___i_n_f_o___s_t_r_u_c_t" ],
     [ "PATGen", "d7/d1c/class_p_a_t_gen.html", "d7/d1c/class_p_a_t_gen" ],

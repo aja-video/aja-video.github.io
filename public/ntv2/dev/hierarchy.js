@@ -787,7 +787,6 @@ var hierarchy =
     [ "numpunct", null, [
       [ "ThousandsSeparator", "de/dba/struct_thousands_separator.html", null ]
     ] ],
-    [ "OptionEntry", "de/dd9/struct_option_entry.html", null ],
     [ "optionStackEntry", "da/dfb/structoption_stack_entry.html", null ],
     [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::ordered_map< Key, T, IgnoredLess, Allocator >", "da/dca/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_56c8ff605660db4fcdd1a6d47784ec6d.html", null ],
     [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::ordered_map< Key, T, IgnoredLess, Allocator >", "da/dca/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_56c8ff605660db4fcdd1a6d47784ec6d.html", null ],

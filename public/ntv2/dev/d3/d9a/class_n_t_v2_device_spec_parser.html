@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.2190</span>
+   &#160;<span id="projectnumber">18.0.0.2322</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab24b1ad6492cad3cd35ebbc6821546fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/class_n_t_v2_device_spec_parser.html#ab24b1ad6492cad3cd35ebbc6821546fd">Reset</a> (const std::string inSpec=&quot;&quot;)</td></tr>
 <tr class="memdesc:ab24b1ad6492cad3cd35ebbc6821546fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets me, then parses the given device specification.  <a href="../../d3/d9a/class_n_t_v2_device_spec_parser.html#ab24b1ad6492cad3cd35ebbc6821546fd">More...</a><br /></td></tr>
 <tr class="separator:ab24b1ad6492cad3cd35ebbc6821546fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49b831c7877da8396d0b68cd12aad02"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/class_n_t_v2_device_spec_parser.html#ac49b831c7877da8396d0b68cd12aad02">MakeDeviceSpec</a> (const bool urlEncodeQuery) const</td></tr>
+<tr class="separator:ac49b831c7877da8396d0b68cd12aad02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e05f9fd194ae0aeb8b0f217b8ece34"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/class_n_t_v2_device_spec_parser.html#a72e05f9fd194ae0aeb8b0f217b8ece34">MakeQueryString</a> (const bool urlEncode) const</td></tr>
+<tr class="separator:a72e05f9fd194ae0aeb8b0f217b8ece34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31c5033e7970bf512fa6a9e533193385"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/class_n_t_v2_device_spec_parser.html#a31c5033e7970bf512fa6a9e533193385">Resource</a> (const bool inStripLeadSlash=<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>) const</td></tr>
 <tr class="separator:a31c5033e7970bf512fa6a9e533193385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5259418edecf70840a93936c21dc2ad5"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/class_n_t_v2_device_spec_parser.html#a5259418edecf70840a93936c21dc2ad5">PrintErrors</a> (std::ostream &amp;oss) const</td></tr>
@@ -127,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>One-stop shop for parsing device specifications. (New in SDK 16.3) I do very little in the way of validating semantics. I simply do the parsing &amp; provide the info needed to load &amp; operate plugins. </p>
 <dl class="section note"><dt>Note</dt><dd>Not thread-safe. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html#l00145">145</a> of file <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html">ntv2nubaccess.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html#l00155">155</a> of file <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html">ntv2nubaccess.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a766ef76800c5f168da423edb76a75a5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a766ef76800c5f168da423edb76a75a5f">&#9670;&nbsp;</a></span>NTV2DeviceSpecParser()</h2>
@@ -168,7 +172,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00525">525</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
 
 </div>
 </div>
@@ -188,7 +192,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00478">478</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00534">534</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
 
 </div>
 </div>
@@ -216,7 +220,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html#l00169">169</a> of file <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html">ntv2nubaccess.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html#l00181">181</a> of file <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html">ntv2nubaccess.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +248,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html#l00168">168</a> of file <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html">ntv2nubaccess.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html#l00180">180</a> of file <a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html">ntv2nubaccess.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +268,49 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00518">518</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac49b831c7877da8396d0b68cd12aad02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49b831c7877da8396d0b68cd12aad02">&#9670;&nbsp;</a></span>MakeDeviceSpec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NTV2DeviceSpecParser::MakeDeviceSpec </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>urlEncodeQuery</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>reconstituted device spec </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00462">462</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a72e05f9fd194ae0aeb8b0f217b8ece34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e05f9fd194ae0aeb8b0f217b8ece34">&#9670;&nbsp;</a></span>MakeQueryString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NTV2DeviceSpecParser::MakeQueryString </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>urlEncode</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>reconstituted query string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00497">497</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
 
 </div>
 </div>
@@ -314,7 +360,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00485">485</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html#l00541">541</a> of file <a class="el" href="../../d8/dd5/ntv2nubaccess_8cpp_source.html">ntv2nubaccess.cpp</a>.</p>
 
 </div>
 </div>
@@ -371,7 +417,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d9a/class_n_t_v2_device_spec_parser.html">NTV2DeviceSpecParser</a></li>
-    <li class="footer">Generated on Fri Jul 11 2025 20:30:20 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Aug 13 2025 12:20:40 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

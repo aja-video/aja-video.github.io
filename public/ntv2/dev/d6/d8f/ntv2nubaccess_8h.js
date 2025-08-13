@@ -67,5 +67,15 @@ var ntv2nubaccess_8h =
     [ "NTV2RPCAPI", "d6/d8f/ntv2nubaccess_8h.html#af8f2e850fe8bc9ee7d7a93ea4c8295db", null ],
     [ "operator<<", "d6/d8f/ntv2nubaccess_8h.html#a84231857dc46c055ff10659df25a12ed", null ],
     [ "operator<<", "d6/d8f/ntv2nubaccess_8h.html#a156f5da1143ef2136b647c6f83b7c0a5", null ],
-    [ "operator<<", "d6/d8f/ntv2nubaccess_8h.html#a84749b9add30a1557e41fc5db1717452", null ]
+    [ "operator<<", "d6/d8f/ntv2nubaccess_8h.html#a84749b9add30a1557e41fc5db1717452", null ],
+    [ "gBaseConstructCount", "d6/d8f/ntv2nubaccess_8h.html#a8122eb22a440840f0c1162975efc0fa7", null ],
+    [ "gBaseDestructCount", "d6/d8f/ntv2nubaccess_8h.html#ac75b55ef4d5490bf5d74e4e48911008f", null ],
+    [ "gClientConstructCount", "d6/d8f/ntv2nubaccess_8h.html#a71e2f4921ecb45145e5e09532a56c6d1", null ],
+    [ "gClientDestructCount", "d6/d8f/ntv2nubaccess_8h.html#a6fb1ad738b84b84b01fd38ca88e90de3", null ],
+    [ "gLoaderConstructCount", "d6/d8f/ntv2nubaccess_8h.html#aab997dabe8b6dd39fd6aaf3a0e06d817", null ],
+    [ "gLoaderDestructCount", "d6/d8f/ntv2nubaccess_8h.html#a06a92c40d248c6622412d03973ad5397", null ],
+    [ "gPluginConstructCount", "d6/d8f/ntv2nubaccess_8h.html#a4064b6e2c40405151f64c2f39508e6c9", null ],
+    [ "gPluginDestructCount", "d6/d8f/ntv2nubaccess_8h.html#aa57b3ef2b8a64fe9dab51f33d1a78cba", null ],
+    [ "gServerConstructCount", "d6/d8f/ntv2nubaccess_8h.html#a41f383adbb72533d01e6aefbd6dcb669", null ],
+    [ "gServerDestructCount", "d6/d8f/ntv2nubaccess_8h.html#ae49739401626fccf42194716569a7aa6", null ]
 ];

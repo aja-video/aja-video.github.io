@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.2190</span>
+   &#160;<span id="projectnumber">18.0.0.2322</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
   </td>
  </tr>
  </tbody>
@@ -176,7 +176,9 @@ $(document).ready(function(){initNavTree('d5/d40/class_c_n_t_v2_kona_flash_progr
   <tr><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a771fe110709ae2019de20d09a7c4fb20">AutoCirculateGetFrameStamp</a>(const NTV2Channel inChannel, const ULWord inFrameNumber, FRAME_STAMP &amp;outFrameInfo)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a611031170a5dd26e456ed55e05dec9c2">AutoCirculateGetStatus</a>(const NTV2Channel inChannel, AUTOCIRCULATE_STATUS &amp;outStatus)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb">AutoCirculateInitForInput</a>(const NTV2Channel inChannel, const UWord inFrameCount=7, const NTV2AudioSystem inAudioSystem=NTV2_AUDIOSYSTEM_INVALID, const ULWord inOptionFlags=0, const UByte inNumChannels=1, const UWord inStartFrameNumber=0, const UWord inEndFrameNumber=0)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c">AutoCirculateInitForOutput</a>(const NTV2Channel inChannel, const UWord inFrameCount=7, const NTV2AudioSystem inAudioSystem=NTV2_AUDIOSYSTEM_INVALID, const ULWord inOptionFlags=0, const UByte inNumChannels=1, const UWord inStartFrameNumber=0, const UWord inEndFrameNumber=0)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac40088a143b0b15a6a04fdda5511d678">AutoCirculateInitForInput</a>(const NTV2Channel inChannel, const NTV2ACFrameRange &amp;inFrameRange, const NTV2AudioSystem inAudioSystem=NTV2_AUDIOSYSTEM_INVALID, const ULWord inOptionFlags=0, const UByte inNumChannels=1)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c">AutoCirculateInitForOutput</a>(const NTV2Channel inChannel, const UWord inFrameCount=7, const NTV2AudioSystem inAudioSystem=NTV2_AUDIOSYSTEM_INVALID, const ULWord inOptionFlags=0, const UByte inNumChannels=1, const UWord inStartFrameNumber=0, const UWord inEndFrameNumber=0)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03dcfe6af43d2f393066572d6d702d59">AutoCirculateInitForOutput</a>(const NTV2Channel inChannel, const NTV2ACFrameRange &amp;inFrameRange, const NTV2AudioSystem inAudioSystem=NTV2_AUDIOSYSTEM_INVALID, const ULWord inOptionFlags=0, const UByte inNumChannels=1)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac72c740b4978e6be464d4075cc7c11b5">AutoCirculatePause</a>(const NTV2Channel inChannel, const UWord inAtFrameNum=0xFFFF)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac243eceb6a37f174eadf73bc20040d20">AutoCirculatePreRoll</a>(const NTV2Channel inChannel, const ULWord inPreRollFrames)</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a36316f23f45caaee19820629a9f0e4db">AutoCirculateResume</a>(const NTV2Channel inChannel, const bool inClearDropCount=(0))</td><td class="entry"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -1195,7 +1197,7 @@ $(document).ready(function(){initNavTree('d5/d40/class_c_n_t_v2_kona_flash_progr
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jul 11 2025 20:30:18 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Aug 13 2025 12:20:39 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
