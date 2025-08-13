@@ -213,6 +213,7 @@ var ntv2devicefeatures_8h =
       [ "kDeviceGetNumBufferedAudioSystems", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9add8a0f6aed7a1b2eeabbabeb4ea38139", null ],
       [ "kDeviceGetNumTSIMuxers", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a9b19471c4d45c01c0f62a15dc37d4da4", null ],
       [ "kDeviceGetSPIFlashVersion", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9ad6235d6a14ab488b608d60082248ea71", null ],
+      [ "kDeviceGetGenlockVersion", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9ae38b49217ecfea79ee657a874f4d6e8e", null ],
       [ "kNTV2NumericParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a7eaf8b4def426e57849cb0300c0a942f", null ],
       [ "kNTV2NumericParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a29dffb5df3f5a58fba8e9d1fda2e9c56", null ],
       [ "kDeviceGetNum_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a1f616dcbfb19368309d2435d882e8668", null ]

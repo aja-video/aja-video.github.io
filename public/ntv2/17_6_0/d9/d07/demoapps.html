@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.2190</span>
+   &#160;<span id="projectnumber">17.6.0.2323</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2323</div>
   </td>
  </tr>
  </tbody>
@@ -716,11 +716,15 @@ NTV2Capture8K Demo</h2>
 <div class="line">-d|--device  {spec}               Specifies the device to use by index number, serial number or <span class="keyword">generic</span> model name.</div>
 <div class="line">                                  Defaults to first device (index 0).</div>
 <div class="line">                                  If model name specified, uses lowest-numbered matching device.</div>
+<div class="line"> </div>
 <div class="line">-c|--channel  {number}            Specifies the framestore/channel to use. Must be an <span class="keywordtype">unsigned</span> integer <a class="code" href="../../df/de3/namespacenlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c75e212d5c8f09083425e5e17ede7f434.html#a293335671dbcb50fb0ab933f2a04a1b1a2063c1608d6e0baf80249c42e2be5804">value</a>, 1 or 5.</div>
 <div class="line">                                  Defaults to channel 1.</div>
+<div class="line"> </div>
 <div class="line">-p|--pixelFormat {formatSpec}     Specifies the pixel format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div>
+<div class="line"> </div>
 <div class="line">-m|--multiFormat                  Enables multichannel/multiformat mode, and shares the device with other processes.</div>
 <div class="line">                                  By <span class="keywordflow">default</span>, it assumes full control over the device.</div>
+<div class="line"> </div>
 <div class="line">-?|--help|--usage                 Shows how to use <span class="keyword">this</span> command.</div>
 </div><!-- fragment --><hr  />
 <h2><a class="anchor" id="ntv2ccgrabber"></a>
@@ -1023,12 +1027,17 @@ NTV2Burn4KQuadrant Demo</h2>
 <div class="line">-i|--input {spec}           Specifies the input/capture device by index number, serial number or <span class="keyword">generic</span> model name.</div>
 <div class="line">                            Defaults to first device (index 0).</div>
 <div class="line">                            If model name specified, uses lowest-numbered matching device.</div>
+<div class="line"> </div>
 <div class="line">-o|--output {spec}          Specifies the output/playout device by index number, serial number or <span class="keyword">generic</span> model name.</div>
 <div class="line">                            Defaults to first device (index 0).</div>
 <div class="line">                            If model name specified, uses lowest-numbered matching device.</div>
+<div class="line"> </div>
 <div class="line">-t|--tcsource {tcSource}    Specifies the timecode source. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available sources.</div>
+<div class="line"> </div>
 <div class="line">-p|--pixelFormat {spec}     Specifies the pixel format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div>
+<div class="line"> </div>
 <div class="line">--noaudio                   Omits audio.</div>
+<div class="line"> </div>
 <div class="line">-?|--help|--usage           Shows how to use <span class="keyword">this</span> command.</div>
 </div><!-- fragment --><hr  />
 <h2><a class="anchor" id="ntv2fieldburn"></a>
@@ -1051,10 +1060,15 @@ NTV2FieldBurn Demo</h2>
 <div class="line">-d|--device {spec}        Specifies the device to use by index number, serial number or <span class="keyword">generic</span> model name.</div>
 <div class="line">                          Defaults to first device (index 0).</div>
 <div class="line">                          If model name specified, uses lowest-numbered matching device.</div>
+<div class="line"> </div>
 <div class="line">-i|--input  {source}      Specifies the SDI video source as an <span class="keywordtype">unsigned</span> integer number 1 thru 8.</div>
+<div class="line"> </div>
 <div class="line">-p|--pixelFormat {spec}   Specifies the pixel format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div>
+<div class="line"> </div>
 <div class="line">-m|--multiChannel         Enables multichannel/multiformat mode, and shares the device with other processes.</div>
+<div class="line"> </div>
 <div class="line">--noaudio                 Omits audio.</div>
+<div class="line"> </div>
 <div class="line">-?|--help|--usage         Shows how to use <span class="keyword">this</span> command.</div>
 </div><!-- fragment --><hr  />
 <h2><a class="anchor" id="ntv2llburn"></a>
@@ -1075,11 +1089,17 @@ NTV2LLBurn Demo</h2>
 <div class="line">-d|--device {spec}          Specifies the device to use by index number, serial number or <span class="keyword">generic</span> model name.</div>
 <div class="line">                            Defaults to first device (index 0).</div>
 <div class="line">                            If model name specified, uses lowest-numbered matching device.</div>
+<div class="line"> </div>
 <div class="line">-i|--input {inputSource}    Specifies the SDI video source as an <span class="keywordtype">unsigned</span> integer number 1 thru 8.</div>
+<div class="line"> </div>
 <div class="line">-t|--tcsource {tcSource}    Specifies the timecode source. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available sources.</div>
+<div class="line"> </div>
 <div class="line">-p|--pixelFormat {spec}     Specifies the pixel format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div>
+<div class="line"> </div>
 <div class="line">-m|--multiChannel           Enables multichannel/multiformat mode, and shares the device with other processes.</div>
+<div class="line"> </div>
 <div class="line">--noaudio                   Omits audio.</div>
+<div class="line"> </div>
 <div class="line">-?|--help|--usage           Shows how to use <span class="keyword">this</span> command.</div>
 </div><!-- fragment --><hr  />
 <h2><a class="anchor" id="ntv2overlay"></a>
@@ -1143,8 +1163,11 @@ NTV2SwitchBitfile Demo</h2>
 <div class="line">-d|--device {spec}    Specifies the device to use by index number, serial number or <span class="keyword">generic</span> model name.</div>
 <div class="line">                      Defaults to first device (index 0).</div>
 <div class="line">                      If model name specified, uses lowest-numbered matching device.</div>
+<div class="line"> </div>
 <div class="line">-l|--load {devID}     Specifies the ID of the device firmware to load (hexadecimal value).</div>
+<div class="line"> </div>
 <div class="line">-v|--verbose          Specifies verbose output.</div>
+<div class="line"> </div>
 <div class="line">-?|--help|--usage     Shows how to use <span class="keyword">this</span> command.</div>
 </div><!-- fragment --><hr  />
 <h2><a class="anchor" id="ntv2hdrsetup"></a>
@@ -1162,18 +1185,25 @@ NTV2HDRSetup Demo</h2>
 <div class="line">-d|--device {spec}          Specifies the device to use by index number, serial number or <span class="keyword">generic</span> model name.</div>
 <div class="line">                            Defaults to first device (index 0).</div>
 <div class="line">                            If model name specified, uses lowest-numbered matching device.</div>
+<div class="line"> </div>
 <div class="line">-e|--eotf  {spec}           Specifies the EOTF to use:</div>
 <div class="line">                                0: Traditional gamma SD</div>
 <div class="line">                                1: Traditional gamma HD</div>
 <div class="line">                                2: SMPTE ST 2084</div>
 <div class="line">                                3: HLG</div>
+<div class="line"> </div>
 <div class="line">-l|--luminance              Specifies the luminance to use:</div>
 <div class="line">                                0: Non-constant luminance</div>
 <div class="line">                                1: Constant luminance.</div>
+<div class="line"> </div>
 <div class="line">--dolbyvision               Enables Dolby Vision signaling bit.</div>
+<div class="line"> </div>
 <div class="line">--nohdr                     Disables HDMI HDR output.</div>
+<div class="line"> </div>
 <div class="line">-v|--verbose                Verbose output.</div>
+<div class="line"> </div>
 <div class="line">--version                   Displays the version and exits.</div>
+<div class="line"> </div>
 <div class="line">-?|--help|--usage           Shows how to use <span class="keyword">this</span> command.</div>
 </div><!-- fragment --><p>Exit codes:</p><ul>
 <li><b>0</b> — Success (no errors)</li>
@@ -1213,7 +1243,7 @@ NTV2HDRSetup Demo</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Jul 11 2025 20:30:15 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Aug 13 2025 12:32:08 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

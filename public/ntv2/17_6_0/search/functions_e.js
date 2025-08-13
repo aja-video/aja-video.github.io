@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['name_26674',['name',['../dc/d4b/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_re58e64432bfa7408c1f87288e49980d9.html#a4e885f3f77e339d3762828136788868c',1,'nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::exception::name()'],['../dd/d43/class_a_j_a_performance.html#aa220454d408ab3e8e878c29f7874eea9',1,'AJAPerformance::Name()'],['../d8/d75/class_c_base_pin.html#a07adc1b9c51ffb35fc625f9039fefe57',1,'CBasePin::Name()']]],
-  ['namedstatkeys_26675',['NamedStatKeys',['../dd/d35/class_a_j_a_debug_stat.html#a70b704f033123dff2d3fa52e9d872261',1,'AJADebugStat']]],
+  ['name_26673',['name',['../dc/d4b/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_re58e64432bfa7408c1f87288e49980d9.html#a4e885f3f77e339d3762828136788868c',1,'nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::exception::name()'],['../d2/d81/class_a_j_a_command_line_parser.html#a09c26a9c511b88237e2fad30243bcd0d',1,'AJACommandLineParser::Name()'],['../dd/d43/class_a_j_a_performance.html#aa220454d408ab3e8e878c29f7874eea9',1,'AJAPerformance::Name()'],['../d8/d75/class_c_base_pin.html#a07adc1b9c51ffb35fc625f9039fefe57',1,'CBasePin::Name()']]],
+  ['namedstatkeys_26674',['NamedStatKeys',['../dd/d35/class_a_j_a_debug_stat.html#a70b704f033123dff2d3fa52e9d872261',1,'AJADebugStat']]],
+  ['names_26675',['Names',['../d4/d9b/class_a_j_a_command_line_option.html#abc267c74ac1541cff5595c358fc037a0',1,'AJACommandLineOption']]],
   ['nanoseconds100toframes_26676',['Nanoseconds100ToFrames',['../d7/d17/class_a_j_a_time_base.html#adb5c64b2b3fe79e01dc40fb742704bbc',1,'AJATimeBase']]],
   ['new_26677',['New',['../d5/d41/class_c_cmd_queue.html#a7159e0ee3cf00f42aaf20a30dd75d5c8',1,'CCmdQueue']]],
   ['newdata_26678',['NewData',['../d1/d9d/class_c_n_t_v2_x_d_s_decode_channel608.html#a4e78967ad5fc57136c89ef00160b9a33',1,'CNTV2XDSDecodeChannel608']]],

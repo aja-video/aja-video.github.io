@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">17.6.0.2190</span>
+   &#160;<span id="projectnumber">17.6.0.2323</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 17.6.0.2190</div>
+   <div id="projectbrief">NTV2 SDK 17.6.0.2323</div>
   </td>
  </tr>
  </tbody>
@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('db/d02/toolsandutilities.html','../../
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usingfwinstaller">‘ntv2firmwareinstaller’ Command-Line Utility</a> — A command-line tool used to “flash” new firmware into a connected AJA device. This tool is included because AJA developers or their customers need to be able to program new firmware on an AJA device, and may not need or have access to the AJA retail services, including the <b>AJA ControlPanel</b>, which is commonly used to perform this task.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usinglogreader">‘logreader’ Command-Line Utility</a> —&#160;A command-line tool that prints messages from the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#usinglogjammer">‘logjammer’ Command-Line Utility</a> —&#160;A command-line tool that generates messages for the <a class="el" href="../../db/d56/class_a_j_a_debug.html">AJADebug</a> facility.</li>
+<li>ntv2route — A command-line tool that reads or writes widget routing preset files.</li>
 <li><a class="el" href="../../db/d02/toolsandutilities.html#ntv2thermo">‘ntv2thermo’ Command-Line Utility</a> — Interrogates and/or controls temperature-related parameters of connected AJA devices.</li>
 </ul>
 <hr  size="50px" />
@@ -112,13 +113,19 @@ $(document).ready(function(){initNavTree('db/d02/toolsandutilities.html','../../
 <p>A command-line tool that interrogates and/or controls temperature-related parameters of connected AJA devices.</p>
 <dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
 <div class="fragment"><div class="line">ntv2thermo [OPTION...]</div>
+<div class="line"> </div>
 <div class="line">  -d, --device=index#|serial#|model      device to use</div>
+<div class="line"> </div>
 <div class="line">  -f, --format=brief|verbose|json        desired format</div>
+<div class="line"> </div>
 <div class="line">  -s, --scale=celsius|fahrenheit         desired scale</div>
+<div class="line"> </div>
 <div class="line">      --fan=read|off|on|lo|med|hi|auto   desired fan setting</div>
+<div class="line"> </div>
 <div class="line">      --version                          show version and exit</div>
-<div class="line">Help options:</div>
+<div class="line"> </div>
 <div class="line">  -?, --help                             Show this help message</div>
+<div class="line"> </div>
 <div class="line">      --usage                            Show brief usage message</div>
 </div><!-- fragment --><ul>
 <li>Anything specified after a command line option switch is case insensitive (e.g., <code>cElSiUs == Celsius</code>).</li>
@@ -682,20 +689,30 @@ Debug Tab</h2>
 <h1><a class="anchor" id="usingntv2route"></a>
 ‘ntv2route’ Command-Line Utility</h1>
 <dl class="section user"><dt>Description</dt><dd></dd></dl>
-<p>A command-line tool that can change the widget routing configuration on an AJA device using textual routing specifications stored in files.</p>
+<p>A command-line tool that can change the widget routing configuration on an AJA device using textual routing specifications stored in “preset files”.</p>
 <dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
 <div class="fragment"><div class="line">ntv2route [OPTION...]</div>
+<div class="line"> </div>
 <div class="line">  -d, --device=index#|serial#|model      device to use</div>
+<div class="line"> </div>
 <div class="line">  -r, --restore {pathToPresetFile}       restore routing from file</div>
+<div class="line"> </div>
 <div class="line">      --noreplace                        don&#39;t replace current routing when restoring</div>
+<div class="line"> </div>
 <div class="line">  -s, --save {pathToPresetFile}          save routing to file</div>
+<div class="line"> </div>
 <div class="line">  -c  --cpp                              write C++ code when saving</div>
+<div class="line"> </div>
 <div class="line">  -v  --verbose                          verbose mode?</div>
+<div class="line"> </div>
 <div class="line">      --diff                             show routing changes</div>
+<div class="line"> </div>
 <div class="line">      --dumprom                          dump xpt connection ROM &amp; exit</div>
+<div class="line"> </div>
 <div class="line">      --version                          show version &amp; exit</div>
-<div class="line">Help options:</div>
+<div class="line"> </div>
 <div class="line">  -?, --help                             Show this help message</div>
+<div class="line"> </div>
 <div class="line">      --usage                            Show brief usage message</div>
 </div><!-- fragment --><dl class="section user"><dt>Exit Codes</dt><dd></dd></dl>
 <p>If successful, the program will exit with zero; otherwise it will return a non-zero value.</p>
@@ -704,7 +721,8 @@ Debug Tab</h2>
 <div class="line">2      No such device</div>
 <div class="line">3      Conflicting options</div>
 <div class="line">(see the source code for other values)</div>
-</div><!-- fragment --><dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>By using the <code>.preset</code> file name extension for the preset files, and by keeping them in <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> ’s designated <em>Presets Folder</em>, they’ll be readily available for use in the <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroute">Routing Inspector</a>. See <a class="el" href="../../db/d02/toolsandutilities.html#inspectorroutepresets">Routing Presets</a> for more information.</dd></dl>
+<dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
 <p>By default, <b>ntv2route</b> works with the first device found on the local host: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --restore path/to/file</div>
 </div><!-- fragment --><p>This is no different than specifying device zero: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --device 0</div>
 </div><!-- fragment --><p>You can also specify a device by model name. For example, if a Kona4 was installed in the host system: </p><div class="fragment"><div class="line">$ ./bin/ntv2route  --device kona4</div>
@@ -2269,7 +2287,7 @@ Tool Windows</h2>
 <li><b>End Frame</b> — Determines the last frame to be written.</li>
 <li><b>All Frames</b> — Check this to quickly select all frames on the device to be written.</li>
 </ul>
-<p>There are currently three ways to fill buffer memory:</p><ol type="1">
+<p>There are currently four ways to fill buffer memory:</p><ol type="1">
 <li><b>Numeric Value</b> — Fills one or more buffers with any 8, 16, 32 or 64-bit numeric value. <div class="image">
 <img src="../../watcher-tool-fill-num.png" alt=""/>
 </div>
@@ -2295,7 +2313,7 @@ Tool Windows</h2>
 </div>
  Note that the frame buffer(s) are written immediately after making any changes or selections in the panel.<ul>
 <li><b>Display Text</b> — A text edit box for specifying the text to be rendered.</li>
-<li><b>Blit Over Test Pattern</b> — Renders the text <em>after</em> [re]writing the test pattern into the frame buffer(s).</li>
+<li><b>Blit Over Test Pattern</b> — Renders the text <em>after</em> [re]writing the current test pattern (from the <b>Color</b> tab) into the frame buffer(s).</li>
 <li><b>Y</b> and <b>X</b> Position — Starting position where text rendering begins in the frame. The coordinate units depend on the <b>Use Pixel Position</b> checkbox.</li>
 <li><b>Use Pixel Position</b> — Determines the position coordinate units where the text is rendered.<ul>
 <li>Unchecked — use CEA608 row/column coordinates.</li>
@@ -2981,19 +2999,24 @@ Command Line Parameters</h2>
 <p>NTV2Watcher can be started from the command line, and has several parameters and options that control its behavior.</p>
 <dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
 <div class="fragment"><div class="line">ntv2watcher [OPTION...]</div>
+<div class="line"> </div>
 <div class="line">  -d | --device {devSpec|urlSpec}   Open specified device at startup</div>
+<div class="line"> </div>
 <div class="line">  --nodevice                        Don&#39;t open device at startup</div>
+<div class="line"> </div>
 <div class="line">  -v | --verbose                    Copy AJADebug messages to stdout/stderr</div>
+<div class="line"> </div>
 <div class="line">  --version                         Show version &amp; exit</div>
+<div class="line"> </div>
 <div class="line">  -h,| --help                       Display this help screen</div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>On MacOS, the path to the NTV2Watcher executable leads into the application bundle:<br  />
- <code>~/Downloads/ntv2sdkmac</code></dd></dl>
+ <code>~/Downloads/ntv2sdkmac…/bin/ntv2watcher.app/Contents/MacOS/ntv2watcher</code></dd></dl>
+<hr  size="50px" />
 <h1><a class="anchor" id="usingsupportlog"></a>
 ‘supportlog’ Command-Line Utility</h1>
-<p><code></code></p>
-<p><code></p><dl class="section user"><dt>Description</dt><dd></dd></dl>
-<p>A command-line tool that generates a support log file that contains state information about the device and driver for one or more AJA devices, and can optionally capture device SDRAM contents into a separate binary dump file.</code></p>
-<p><code></p><dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
+<dl class="section user"><dt>Description</dt><dd></dd></dl>
+<p>A command-line tool that generates a support log file that contains state information about the device and driver for one or more AJA devices, and can optionally capture device SDRAM contents into a separate binary dump file.</p>
+<dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
 <div class="fragment"><div class="line">supportlog [OPTION...]</div>
 <div class="line">  -d, --device=index#|serial#|model      device to use</div>
 <div class="line">  -s, --stdout                           dump to stdout instead of file?</div>
@@ -3004,38 +3027,28 @@ Command Line Parameters</h2>
 <div class="line">Help options:</div>
 <div class="line">  -?, --help                             Show this help message</div>
 <div class="line">      --usage                            Show brief usage message</div>
-</div><!-- fragment --><p></code></p>
-<p><code></p><dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
+</div><!-- fragment --><dl class="section user"><dt>Device Selection</dt><dd></dd></dl>
 <p>By default, <b>supportlog</b> generates a support log for the first device found. </p><div class="fragment"><div class="line">$ ./bin/supportlog</div>
-</div><!-- fragment --><p></code></p>
-<p><code>This is no different than specifying device zero: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 0</div>
-</div><!-- fragment --><p></code></p>
-<p><code>You can also specify a device by model name. For example, if a Kona4 was installed in the host system: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device kona4</div>
-</div><!-- fragment --><p></code></p>
-<p><code>You can also specify a device by serial number: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 00T12345</div>
-</div><!-- fragment --><p></code></p>
-<p><code></p><dl class="section user"><dt>Log Files</dt><dd></dd></dl>
+</div><!-- fragment --><p>This is no different than specifying device zero: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 0</div>
+</div><!-- fragment --><p>You can also specify a device by model name. For example, if a Kona4 was installed in the host system: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device kona4</div>
+</div><!-- fragment --><p>You can also specify a device by serial number: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --device 00T12345</div>
+</div><!-- fragment --><dl class="section user"><dt>Log Files</dt><dd></dd></dl>
 <p>Files are always written into the currently logged-in user’s home directory: </p><div class="fragment"><div class="line">$ ls ~/*log</div>
 <div class="line">-rw-r--r--  1 demo  staff   130K Sep 20 15:53 /Users/demo/aja_supportlog_0_1537484005.log</div>
 <div class="line">-rw-r--r--  1 demo  staff   226K Sep 20 15:53 /Users/demo/aja_supportlog_1_1537484005.log</div>
 <div class="line">-rw-r--r--  1 demo  staff   272K Sep 20 15:53 /Users/demo/aja_supportlog_2_1537484005.log</div>
-</div><!-- fragment --><p></code></p>
-<p><code>The name of the log file contains the device index number, and a 10-digit number that’s based on the date and time it was generated. If the host file system enumerates files lexically by name, within a single device index’s group, they should appear sorted oldest-to-newest.</code></p>
-<p><code>To write a log file to a specific directory with a different name, use the “<code>&ndash;stdout</code>” option along with standard shell redirection directives to pipe the output into the desired file and path: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --stdout  &gt;./my_support_log.txt</div>
-</div><!-- fragment --><p></code></p>
-<p><code></p><dl class="section user"><dt>Delaying Log Capture</dt><dd></dd></dl>
+</div><!-- fragment --><p>The name of the log file contains the device index number, and a 10-digit number that’s based on the date and time it was generated. If the host file system enumerates files lexically by name, within a single device index’s group, they should appear sorted oldest-to-newest.</p>
+<p>To write a log file to a specific directory with a different name, use the “<code>&ndash;stdout</code>” option along with standard shell redirection directives to pipe the output into the desired file and path: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --stdout  &gt;./my_support_log.txt</div>
+</div><!-- fragment --><dl class="section user"><dt>Delaying Log Capture</dt><dd></dd></dl>
 <p>Sometimes it’s desirable to capture the log after a certain length of time, often to give the operator time to change something. Use the “<code>&ndash;wait</code>” option to specify a delay time. For example, to capture a log after delaying 10 seconds: </p><div class="fragment"><div class="line">$ ./bin/supportlog  --wait 10</div>
-</div><!-- fragment --><p></code></p>
-<p><code></p><dl class="section user"><dt>Capturing Device SDRAM Contents</dt><dd></dd></dl>
-<p>If AJA SDK Support requests a snapshot of the device’s SDRAM contents, use the “<code>&ndash;sdram</code>” option.</code></p>
-<p><code></p><dl class="section note"><dt>Note</dt><dd>The resulting dump file will be quite large. Be sure the host storage volume on which your home directory resides has plenty of free space.</dd></dl>
+</div><!-- fragment --><dl class="section user"><dt>Capturing Device SDRAM Contents</dt><dd></dd></dl>
+<p>If AJA SDK Support requests a snapshot of the device’s SDRAM contents, use the “<code>&ndash;sdram</code>” option.</p>
+<dl class="section note"><dt>Note</dt><dd>The resulting dump file will be quite large. Be sure the host storage volume on which your home directory resides has plenty of free space.</dd></dl>
 <hr  size="50px" />
-<p></code></p>
-<p><code></code></p>
 <h1><a class="anchor" id="usingsystemtest"></a>
 “AJA System Test”</h1>
-<p><code> This page describes how to use the <b>AJA System Test</b> utility to measure the read/write performance of an AJA device and/or local host disk storage.</code></p>
-<p><code></p><dl class="section user"><dt>General Operation</dt><dd></dd></dl>
+<p>This page describes how to use the <b>AJA System Test</b> utility to measure the read/write performance of an AJA device and/or local host disk storage.</p>
+<dl class="section user"><dt>General Operation</dt><dd></dd></dl>
 <p>The user interface consists of a single main window, with…</p><ul>
 <li><b>Write</b> and <b>Read</b> progress indicators featured prominently in the middle.</li>
 <li>The big, green <b>Start</b> button, which starts a test running. When a test is running, it becomes a large, red <b>Stop</b> button.</li>
@@ -3043,8 +3056,7 @@ Command Line Parameters</h2>
 <li><b>Settings</b> (on the left). These allow you to choose resolution, file size, codec type, device, target disk, etc.</li>
 <li>A graph icon (at the bottom) to toggle the display of performance charts.</li>
 </ul>
-<p></code></p>
-<p><code>The <b>Settings</b> panel (on the left) makes it easy to both see and change the relevant test settings. Click on the heading to change the setting.</p><ul>
+<p>The <b>Settings</b> panel (on the left) makes it easy to both see and change the relevant test settings. Click on the heading to change the setting.</p><ul>
 <li><b>Resolution</b> — Selects the video format (and frame dimensions) of interest. (For device tests, the available formats may vary depending on the selected device capabilities.)</li>
 <li><b>Test File Size</b> — Selects the size of the test file to be created and used in the test. Choose from 256MB to 16GB.</li>
 <li><b>Codec Type</b> — Selects the codec type to be used in the test. Choose from a variety of uncompressed YUV or RGB formats, and many compressed formats.</li>
@@ -3054,16 +3066,13 @@ Command Line Parameters</h2>
 <li><b>AJA Device</b> — Selects an AJA device to test.</li>
 <li><b>Settings</b> — Used to configure other lesser-used settings (see below).</li>
 </ul>
-<p></code></p>
-<p><code></code></p>
 <h2><a class="anchor" id="systest-disk"></a>
 System Disk Test</h2>
-<p><code> </p><div class="image">
+<div class="image">
 <img src="../../systest-disktest.png" alt=""/>
 </div>
-<p></code></p>
-<p><code>The <b>System Disk Test</b> measures the read/write performance of local host storage.</code></p>
-<p><code>To measure disk performance for a particular local host volume…</p><ol type="1">
+<p>The <b>System Disk Test</b> measures the read/write performance of local host storage.</p>
+<p>To measure disk performance for a particular local host volume…</p><ol type="1">
 <li>Choose a video <b>Resolution</b>.</li>
 <li>Choose a <b>Test File Size</b>.</li>
 <li>Choose a <b>Codec Type</b>.</li>
@@ -3075,16 +3084,13 @@ System Disk Test</h2>
 <li>Click the <b>F/Sec</b> button to view the performance as a frame rate, in frames per second.</li>
 <li>Click the graph icon at the bottom to reveal charts of the read/write performance over time.</li>
 </ul>
-<p></code></p>
-<p><code></code></p>
 <h2><a class="anchor" id="systest-dev"></a>
 AJA Device Test</h2>
-<p><code> </p><div class="image">
+<div class="image">
 <img src="../../systest-devicetest.png" alt=""/>
 </div>
-<p></code></p>
-<p><code>The <b>AJA Device Test</b> measures the hostʼs-deviceʼs DMA read/write performance.</code></p>
-<p><code>To measure DMA performance for a particular device…</p><ol type="1">
+<p>The <b>AJA Device Test</b> measures the hostʼs-deviceʼs DMA read/write performance.</p>
+<p>To measure DMA performance for a particular device…</p><ol type="1">
 <li>Choose a video <b>Resolution</b>.</li>
 <li>Choose a <b>Pixel Format</b>.</li>
 <li>Choose a device.</li>
@@ -3095,16 +3101,13 @@ AJA Device Test</h2>
 <li>Click the <b>F/Sec</b> button to view the performance as a frame rate, in frames per second.</li>
 <li>Click the graph icon at the bottom to reveal charts of the read/write performance over time.</li>
 </ul>
-<p></code></p>
-<p><code></code></p>
 <h2><a class="anchor" id="systest-devdisk"></a>
 Disk + Device Test</h2>
-<p><code> </p><div class="image">
+<div class="image">
 <img src="../../systest-diskdevicetest.png" alt=""/>
 </div>
-<p></code></p>
-<p><code>The <b>Disk + Device Test</b> measures more “real-world” read/write performance by performing DMA reads followed by host disk writes (for capture), and host disk reads followed by DMA writes (for playout).</code></p>
-<p><code>To measure combined DMA and host disk I/O performance…</p><ol type="1">
+<p>The <b>Disk + Device Test</b> measures more “real-world” read/write performance by performing DMA reads followed by host disk writes (for capture), and host disk reads followed by DMA writes (for playout).</p>
+<p>To measure combined DMA and host disk I/O performance…</p><ol type="1">
 <li>Choose a video <b>Resolution</b>.</li>
 <li>Choose a <b>Test File Size</b>.</li>
 <li>Choose a <b>Codec Type</b>.</li>
@@ -3118,52 +3121,42 @@ Disk + Device Test</h2>
 <li>Click the <b>F/Sec</b> button to view the performance as a frame rate, in frames per second.</li>
 <li>Click the graph icon at the bottom to reveal charts of the read/write performance over time.</li>
 </ul>
-<p></code></p>
-<p><code></code></p>
 <h2><a class="anchor" id="systest-settings"></a>
 Other Settings</h2>
-<p><code> </p><div class="image">
+<div class="image">
 <img src="../../systest-settings.png" alt=""/>
 </div>
-<p></code></p>
-<p><code>The “Settings” dialog box is used to configure other lesser-used settings.</code></p>
-<p><code></p><ul>
+<p>The “Settings” dialog box is used to configure other lesser-used settings.</p>
+<ul>
 <li><b>Start Test</b> — Configures whether the test runs once (the default) or continuously.</li>
 <li><b>Disk Test</b> — Configures the Disk Test to create and use one “File per Frame” or use one “Single file” for all frames. Defaults to “Single file”.</li>
 <li><b>Disk Cache</b> — Enables or disables the local host operating systemʼs disk cache. Defaults to “Disable”.</li>
 <li><b>Disk Mode</b> — Configures the Disk Test to measure “Read/Write”, “Write-only” or “Read-only (write once)” performance. Defaults to “Read/Write”.</li>
 <li><b>DMA Mode</b> — Configures the Device Test to use one (“Single Engine”) or two (“Dual Engines”) DMA engines. Defaults to “Dual Engines”.</li>
 </ul>
-<p></code></p>
-<p><code></code></p>
 <h2><a class="anchor" id="systest-report"></a>
 System Report</h2>
-<p><code> </p><div class="image">
+<div class="image">
 <img src="../../systest-report.png" alt=""/>
 </div>
-<p></code></p>
-<p><code>The <b>System Report</b> shows detailed information about the host system and the attached AJA device(s) that may affect read/write performance.</code></p>
-<p><code>To export a <b>.pdf</b> file that contains the report…</p><ol type="1">
+<p>The <b>System Report</b> shows detailed information about the host system and the attached AJA device(s) that may affect read/write performance.</p>
+<p>To export a <b>.pdf</b> file that contains the report…</p><ol type="1">
 <li>Be sure the <b>Generate System Report File (.spx)</b> checkbox is unchecked (clear).</li>
 <li>Click <b>Save</b>.</li>
 <li>A folder-picker dialog box will appear. Choose a folder in which to save the PDF file, then click <b>Open</b>.</li>
 </ol>
-<p></code></p>
-<p><code>To export a <b>.spx</b> file that contains the full report of the host system configuration…</p><ol type="1">
+<p>To export a <b>.spx</b> file that contains the full report of the host system configuration…</p><ol type="1">
 <li>Be sure the <b>Generate System Report File (.spx)</b> checkbox is checked (ticked).</li>
 <li>Click <b>Save</b>.</li>
 <li>A folder-picker dialog box will appear. Choose a folder in which to save the SPX file, then click <b>Open</b>.</li>
 </ol>
-<p></code></p>
-<p><code>To copy all or part of the report text out of the report window…</p><ol type="1">
+<p>To copy all or part of the report text out of the report window…</p><ol type="1">
 <li>Left-click and drag through the text in the window, or right-click and choose <b>Select All</b> (or press Ctrl-A).</li>
 <li>Right-click and choose <b>Copy</b> (or press Ctrl-C).</li>
 <li>You may now paste (using Ctrl-V) the copied text into a document being edited in another running application.</li>
 </ol>
-<p></code></p>
-<p><code></p><hr  size="50px" />
-<p> </code></p>
-</div></div><!-- contents -->
+<hr  size="50px" />
+ </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div class="ttc" id="antv2enums_8h_html_a7446502a7d2e8ea13394b3a4cdaa5b16a49271656a151f9761fb869fc9cdb2209"><div class="ttname"><a href="../../d6/d0c/ntv2enums_8h.html#a7446502a7d2e8ea13394b3a4cdaa5b16a49271656a151f9761fb869fc9cdb2209">NTV2_XptFrameBuffer4YUV</a></div><div class="ttdeci">@ NTV2_XptFrameBuffer4YUV</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0c/ntv2enums_8h_source.html#l02565">ntv2enums.h:2565</a></div></div>
@@ -3185,7 +3178,7 @@ System Report</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Jul 11 2025 20:30:13 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Aug 13 2025 12:32:08 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -52,7 +52,9 @@ var index =
         [ "Serial Ports (RS-422)", "d1/dc5/ntv2devops.html#vidop_rs422", null ]
       ] ],
       [ "Video System Operation", "d1/dc5/ntv2devops.html#vidop-section", [
-        [ "FrameStore Operation", "d1/dc5/ntv2devops.html#vidop-fs", null ],
+        [ "FrameStore Operation", "d1/dc5/ntv2devops.html#vidop-fs", [
+          [ "FrameStore Widget", "d1/dc5/ntv2devops.html#vidop-fswidget", null ]
+        ] ],
         [ "Multi-Format / “Independent” Mode", "d1/dc5/ntv2devops.html#vidop-independent", null ],
         [ "Frame Buffer Access", "d1/dc5/ntv2devops.html#vidop-fbaccess", [
           [ "Frame Buffer Indexing", "d1/dc5/ntv2devops.html#vidop-indexing", null ],
@@ -360,10 +362,15 @@ var index =
       [ "HDMI Aux Buffer Data Format", "d2/d06/auxiliarydata.html#auxbufferformat", null ]
     ] ],
     [ "Widget Signal Routing", "d0/dc3/ntv2signalrouting.html", [
-      [ "End-to-End (E-E) Routing", "d0/dc3/ntv2signalrouting.html#recipes_etoe", null ],
+      [ "End-to-End (E-E) Routing", "d0/dc3/ntv2signalrouting.html#recipes_etoe", [
+        [ "SD/HD YCbCr SDI End-to-End Pass-Through", "d0/dc3/ntv2signalrouting.html#recipe_ee_sdisdi", null ]
+      ] ],
       [ "Routing for Capture", "d0/dc3/ntv2signalrouting.html#recipes_capture", null ],
-      [ "Routing for Playout", "d0/dc3/ntv2signalrouting.html#recipes_playout", null ],
-      [ "Routing for Simultaneous Capture & Playout", "d0/dc3/ntv2signalrouting.html#recipes_endtoend", null ]
+      [ "Routing for Playout", "d0/dc3/ntv2signalrouting.html#recipes_playout", [
+        [ "SD/HD YCbCr Playout From YCbCr Frame Buffer", "d0/dc3/ntv2signalrouting.html#recipe_out_sdhdyuv", null ],
+        [ "SD/HD YCbCr Playout From RGB Frame Buffer", "d0/dc3/ntv2signalrouting.html#recipe_out_sdhdrgb", null ],
+        [ "HD RGB Playout Over 1 × 3G Dual-Link SDI From RGB Frame Buffer", "d0/dc3/ntv2signalrouting.html#recipe_out_hddlrgb", null ]
+      ] ]
     ] ],
     [ "Capture and Playout Techniques", "d9/d9a/recordplaytechniques.html", [
       [ "Playout Basics", "d9/d9a/recordplaytechniques.html#playoutbasics", null ],
