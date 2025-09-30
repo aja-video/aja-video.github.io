@@ -1,6 +1,8 @@
 var class_device_capabilities =
 [
     [ "DeviceCapabilities", "db/d32/class_device_capabilities.html#a5e45015cae0ca49ec50039e3fff46c9d", null ],
+    [ "AudioSampleRates", "db/d32/class_device_capabilities.html#a2a251fb847c0894fbae04a2a358b1434", null ],
+    [ "CanDoAudioSampleRate", "db/d32/class_device_capabilities.html#a6579f9960b1e980cd736f7f36b89c016", null ],
     [ "CanDoChannel", "db/d32/class_device_capabilities.html#a73cdf1ba9c6cb554f046b5fcdcf7281b", null ],
     [ "CanDoConversionMode", "db/d32/class_device_capabilities.html#abc9dc293c526a37d468e2cb185a8b349", null ],
     [ "CanDoDSKMode", "db/d32/class_device_capabilities.html#ac07c6e6df5563f1dcb08ff17b09e795f", null ],

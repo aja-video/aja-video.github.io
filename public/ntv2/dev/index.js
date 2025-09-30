@@ -300,6 +300,7 @@ var index =
           [ "8-Bit YCbCr Format", "d5/d32/dataformats.html#fbformat8bitycbcr", null ],
           [ "10-Bit YCbCr Format", "d5/d32/dataformats.html#fbformat10bitycbcr", null ],
           [ "8-Bit ARGB, RGBA, ABGR Formats", "d5/d32/dataformats.html#fbformats8bitrgb", null ],
+          [ "10-Bit ARGB Format", "d5/d32/dataformats.html#fbformats10bitargb", null ],
           [ "10-Bit RGB Format", "d5/d32/dataformats.html#fbformats10bitrgb", null ],
           [ "10-Bit RGB - DPX Format", "d5/d32/dataformats.html#fbformats10bitrgbdpx", null ],
           [ "10-Bit YCbCr - DPX Format", "d5/d32/dataformats.html#fbformats10bitycbcrdpx", null ],

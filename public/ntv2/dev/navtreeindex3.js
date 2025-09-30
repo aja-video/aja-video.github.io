@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"d0/da6/ntv2baremetaldriverinterface_8h.html":[9,0,2,2,1,0,1],
+"d0/da6/ntv2baremetaldriverinterface_8h.html#a61de6ca53bdb59e403661b1bc51e450d":[9,0,2,2,1,0,1,1],
 "d0/da6/ntv2baremetaldriverinterface_8h.html#afef367e37115bf497d91b7de42d8760d":[9,0,2,2,1,0,1,2],
 "d0/da6/ntv2baremetaldriverinterface_8h_source.html":[9,0,2,2,1,0,1],
 "d0/da9/struct_rx_audio_ch_data2110.html":[8,0,516],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a9c3dddc51a6d3bda3d2fa99589f5dac7":[8,0,227,75],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a9de1bad3f4a25fb5e71175e2b9be1219":[8,0,227,42],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#aa8c389406829aa571afcc2d6150f3ccc":[8,0,227,44],
-"d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a":[8,0,227,41],
-"d0/dbc/class_c_n_t_v2_driver_interface.html#aadbe6f23341da6c47aa5fd7a8a2676fb":[8,0,227,80],
-"d0/dbc/class_c_n_t_v2_driver_interface.html#ab4708edad868bb672ca5062da530a451":[8,0,227,37]
+"d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a":[8,0,227,41]
 };

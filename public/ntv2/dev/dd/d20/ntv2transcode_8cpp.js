@@ -19,7 +19,7 @@ var ntv2transcode_8cpp =
     [ "ConvertLine_v210_to_2vuy", "dd/d20/ntv2transcode_8cpp.html#a77e215e2fb79ed9ad92d98a2e1084f42", null ],
     [ "ConvertLine_v210_to_2vuy", "dd/d20/ntv2transcode_8cpp.html#ab8502a1a2708dce2091ccfe17c721b27", null ],
     [ "ConvertLineto10BitRGB", "dd/d20/ntv2transcode_8cpp.html#adeb0d589ba390ec3930944feb358ed97", null ],
-    [ "ConvertLineto10BitRGB", "dd/d20/ntv2transcode_8cpp.html#afb233562e5ccf41f23ebb690179a060c", null ],
+    [ "ConvertLineto10BitRGB", "dd/d20/ntv2transcode_8cpp.html#a9a23e3de6d22d54b7ff674608c4037be", null ],
     [ "ConvertLineto10BitYCbCrA", "dd/d20/ntv2transcode_8cpp.html#a0022b67039422b49098c092bfc44e199", null ],
     [ "ConvertLineto16BitRGB", "dd/d20/ntv2transcode_8cpp.html#a4cdb083658dcd1255d7127234fd31044", null ],
     [ "ConvertLineto8BitYCbCr", "dd/d20/ntv2transcode_8cpp.html#a8b6784ad92b06db64a830d7691e7a7d5", null ],
@@ -30,6 +30,7 @@ var ntv2transcode_8cpp =
     [ "ConvertRGBALineToBGR", "dd/d20/ntv2transcode_8cpp.html#a59f9cdd9a2492c18f9ffeea9039a6e4a", null ],
     [ "ConvertRGBALineToRGB", "dd/d20/ntv2transcode_8cpp.html#a8cb88fd2638ab381a4e380488f367b27", null ],
     [ "ConvertRGBLineto10BitRGB", "dd/d20/ntv2transcode_8cpp.html#ae9998eab6f09146d20929ab61eb876f9", null ],
+    [ "PackRGB10BitFor10BitARGBPacked", "dd/d20/ntv2transcode_8cpp.html#a79694661c9de8233651a9ced0553508b", null ],
     [ "PackRGB10BitFor10BitDPX", "dd/d20/ntv2transcode_8cpp.html#ae599ed2eea6fb74b538a329c7952fcdf", null ],
     [ "PackRGB10BitFor10BitRGB", "dd/d20/ntv2transcode_8cpp.html#ad6dcbb0028dd39809a5b48a8c7c90c8f", null ],
     [ "PackRGB10BitFor10BitRGBPacked", "dd/d20/ntv2transcode_8cpp.html#ac316b45054960ec93ad107f14cdc6d40", null ]

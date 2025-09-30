@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"d0/dbc/class_c_n_t_v2_driver_interface.html#aadbe6f23341da6c47aa5fd7a8a2676fb":[8,0,227,80],
+"d0/dbc/class_c_n_t_v2_driver_interface.html#ab4708edad868bb672ca5062da530a451":[8,0,227,37],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#ab4a503a6a284670828e274523e0b89fe":[8,0,227,15],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#abe580ea74c19c69cd73d95a0d55651c0":[8,0,227,92],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#abe865e80ff42dd2dbaa4cddf1f398990":[8,0,227,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "d0/df0/class_n_t_v2_dolby_player.html#ac16618c5882e0f98d9fa57fc00fc7a8f":[8,0,417,18],
 "d0/df0/class_n_t_v2_dolby_player.html#aca6c39e5d6f5e2f4ac794ee947193523":[8,0,417,23],
 "d0/df0/class_n_t_v2_dolby_player.html#ad3b725a4f5ef02967eddc5ea3048fea7":[8,0,417,19],
-"d0/df0/class_n_t_v2_dolby_player.html#adae9989f8d3113d2072345992a8ef676":[8,0,417,15],
-"d0/df0/class_n_t_v2_dolby_player.html#ae3ac78a338ec840baf12fb15eb78091f":[8,0,417,12],
-"d0/df0/class_n_t_v2_dolby_player.html#af319debd0268a68ac6a53e3a67e74218":[8,0,417,8]
+"d0/df0/class_n_t_v2_dolby_player.html#adae9989f8d3113d2072345992a8ef676":[8,0,417,15]
 };

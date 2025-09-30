@@ -42,6 +42,8 @@ var info_8h =
       [ "AJA_SystemInfoTag_Path_Applications", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674a39fd518bef67622f5b2352efb595217c", null ],
       [ "AJA_SystemInfoTag_Path_Utilities", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674a015ab1191ba5f749ebf508da6e25f5a9", null ],
       [ "AJA_SystemInfoTag_Path_Firmware", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674a4a43ee0d272c8a36703b41a1df0eb5f7", null ],
+      [ "AJA_SystemInfoTag_Path_NTV2Plugins", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674a40e6c55f58605b56ac21e8a03a0c9c84", null ],
+      [ "AJA_SystemInfoTag_Path_NTV2VirtualDevices", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674abea3e192293748445e4c73bd85a97216", null ],
       [ "AJA_SystemInfoTag_LAST", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674a441d30fd1276a859c95fa57cb9b4852a", null ]
     ] ],
     [ "operator<<", "d4/d21/info_8h.html#adb0a4c3cde66f3e58342f552a7a9699a", null ],

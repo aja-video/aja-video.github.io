@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2322</span>
+   &#160;<span id="projectnumber">18.0.0.2505</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2505</div>
   </td>
  </tr>
  </tbody>
@@ -153,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa4fe3631d36efefb80dc373661b2bb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df4/ntv2formatdescriptor_8h.html#aaa4fe3631d36efefb80dc373661b2bb6">UnpackLine_10BitYUVtoUWordSequence</a> (const void *pIn10BitYUVLine, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0d427e5e8bff159df1de3784f37b4b6">UWordSequence</a> &amp;out16BitYUVLine)</td></tr>
 <tr class="memdesc:aaa4fe3631d36efefb80dc373661b2bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpacks a line of NTV2_FBF_10BIT_YCBCR video into 16-bit-per-component YUV data.  <a href="../../dc/df4/ntv2formatdescriptor_8h.html#aaa4fe3631d36efefb80dc373661b2bb6">More...</a><br /></td></tr>
 <tr class="separator:aaa4fe3631d36efefb80dc373661b2bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76150157280a1b93aabf7c29ddb1883"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df4/ntv2formatdescriptor_8h.html#aa76150157280a1b93aabf7c29ddb1883">UnpackLine_10BitARGBtoUWordSequence</a> (const void *pIn10BitARGBLine, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0d427e5e8bff159df1de3784f37b4b6">UWordSequence</a> &amp;out16BitARGBLine)</td></tr>
+<tr class="memdesc:aa76150157280a1b93aabf7c29ddb1883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpacks a line of NTV2_FBF_10BIT_ARGB video into 16-bit-per-component ARGB data.  <a href="../../dc/df4/ntv2formatdescriptor_8h.html#aa76150157280a1b93aabf7c29ddb1883">More...</a><br /></td></tr>
+<tr class="separator:aa76150157280a1b93aabf7c29ddb1883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declares the <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html" title="Describes a video frame for a given video standard or format and pixel format, including the total nu...">NTV2FormatDescriptor</a> class. </p>
@@ -337,6 +340,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa76150157280a1b93aabf7c29ddb1883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76150157280a1b93aabf7c29ddb1883">&#9670;&nbsp;</a></span>UnpackLine_10BitARGBtoUWordSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnpackLine_10BitARGBtoUWordSequence </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>pIn10BitARGBLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inFormatDesc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0d427e5e8bff159df1de3784f37b4b6">UWordSequence</a> &amp;&#160;</td>
+          <td class="paramname"><em>out16BitARGBLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unpacks a line of NTV2_FBF_10BIT_ARGB video into 16-bit-per-component ARGB data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pIn10BitARGBLine</td><td>A valid, non-NULL pointer to the start of the line that contains the packed NTV2_FBF_10BIT_ARGB data to be converted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inFormatDesc</td><td>Describes the raster. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out16BitARGBLine</td><td>Receives the unpacked 16-bit-per-component ARGB data. The sequence is cleared before filling. The UWord sequence will be B, G, R, A </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aaa4fe3631d36efefb80dc373661b2bb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa4fe3631d36efefb80dc373661b2bb6">&#9670;&nbsp;</a></span>UnpackLine_10BitYUVtoUWordSequence()</h2>
 
@@ -380,7 +430,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -390,7 +440,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_a1e7971ee2787a8222fe6a5c9384fcca.html">includes</a></li><li class="navelem"><a class="el" href="../../dc/df4/ntv2formatdescriptor_8h.html">ntv2formatdescriptor.h</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 12:20:32 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Sep 29 2025 16:26:56 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

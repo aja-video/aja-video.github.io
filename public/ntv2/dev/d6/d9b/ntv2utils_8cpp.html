@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2322</span>
+   &#160;<span id="projectnumber">18.0.0.2505</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2505</div>
   </td>
  </tr>
  </tbody>
@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('d6/d9b/ntv2utils_8cpp.html','../../');
 <code>#include &quot;<a class="el" href="../../d6/db1/ntv2version_8h_source.html">ntv2version.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d42/lock_8h_source.html">ajabase/system/lock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d21/info_8h_source.html">ajabase/system/info.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d54/common_8h_source.html">ajabase/common/common.h</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
@@ -156,6 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa4fe3631d36efefb80dc373661b2bb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#aaa4fe3631d36efefb80dc373661b2bb6">UnpackLine_10BitYUVtoUWordSequence</a> (const void *pIn10BitYUVLine, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0d427e5e8bff159df1de3784f37b4b6">UWordSequence</a> &amp;out16BitYUVLine)</td></tr>
 <tr class="memdesc:aaa4fe3631d36efefb80dc373661b2bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpacks a line of NTV2_FBF_10BIT_YCBCR video into 16-bit-per-component YUV data.  <a href="../../d6/d9b/ntv2utils_8cpp.html#aaa4fe3631d36efefb80dc373661b2bb6">More...</a><br /></td></tr>
 <tr class="separator:aaa4fe3631d36efefb80dc373661b2bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76150157280a1b93aabf7c29ddb1883"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#aa76150157280a1b93aabf7c29ddb1883">UnpackLine_10BitARGBtoUWordSequence</a> (const void *pIn10BitARGBLine, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0d427e5e8bff159df1de3784f37b4b6">UWordSequence</a> &amp;out16BitARGBLine)</td></tr>
+<tr class="memdesc:aa76150157280a1b93aabf7c29ddb1883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpacks a line of NTV2_FBF_10BIT_ARGB video into 16-bit-per-component ARGB data.  <a href="../../d6/d9b/ntv2utils_8cpp.html#aa76150157280a1b93aabf7c29ddb1883">More...</a><br /></td></tr>
+<tr class="separator:aa76150157280a1b93aabf7c29ddb1883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c16a0307bef4a36ad49aabb9916155"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a96c16a0307bef4a36ad49aabb9916155">UnPack10BitYCbCrBuffer</a> (uint32_t *packedBuffer, uint16_t *ycbcrBuffer, uint32_t numPixels)</td></tr>
 <tr class="separator:a96c16a0307bef4a36ad49aabb9916155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dcf032140a7fa7ecf4cb9c42f772056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a6dcf032140a7fa7ecf4cb9c42f772056">PackTo10BitYCbCrBuffer</a> (const uint16_t *ycbcrBuffer, uint32_t *packedBuffer, const uint32_t numPixels)</td></tr>
@@ -245,6 +249,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0f2960286409025fe09e60726b558099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbda3fdcbe4fa2d6be363155359d278f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#abbda3fdcbe4fa2d6be363155359d278f">CopyRaster36BytesPer8Pixels</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pDstBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inDstBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pSrcBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inSrcBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLinesToCopy, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelsToCopy)</td></tr>
 <tr class="separator:abbda3fdcbe4fa2d6be363155359d278f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4cb533968e4062beb4a406946a2a38"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#ace4cb533968e4062beb4a406946a2a38">CopyRaster5BytesPerPixel</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pDstBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inDstBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pSrcBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inSrcBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLinesToCopy, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelsToCopy)</td></tr>
+<tr class="separator:ace4cb533968e4062beb4a406946a2a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5ed1a16fc0dbe541f2399cb8aff5366"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#ad5ed1a16fc0dbe541f2399cb8aff5366">CopyRaster4BytesPerPixel</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pDstBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inDstBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pSrcBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inSrcBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLinesToCopy, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelsToCopy)</td></tr>
 <tr class="separator:ad5ed1a16fc0dbe541f2399cb8aff5366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580c71a6d6ce3a7b87622255bc531157"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a580c71a6d6ce3a7b87622255bc531157">CopyRaster3BytesPerPixel</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pDstBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inDstBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDstHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *pSrcBuffer, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inSrcBytesPerLine, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcTotalLines, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLineOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcVertLinesToCopy, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelOffset, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inSrcHorzPixelsToCopy)</td></tr>
@@ -605,8 +611,12 @@ Functions</h2></td></tr>
 <tr class="separator:a1bf538bd203587d85465328108ff6a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a36b9d663601572f8d1b671af49374d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463">NTV2DeviceID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a5a36b9d663601572f8d1b671af49374d">NTV2GetDeviceIDFromBitfileName</a> (const string &amp;inBitfileName)</td></tr>
 <tr class="separator:a5a36b9d663601572f8d1b671af49374d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad192c1819b548d252ebb8f07f08201b6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#ad192c1819b548d252ebb8f07f08201b6">NTV2GetFirmwareFolderPath</a> (void)</td></tr>
-<tr class="separator:ad192c1819b548d252ebb8f07f08201b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988af8dea166e1af5fc470283dd3ecc5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a988af8dea166e1af5fc470283dd3ecc5">NTV2GetFirmwareFolderPath</a> (const bool inAddTrailingPathDelim)</td></tr>
+<tr class="separator:a988af8dea166e1af5fc470283dd3ecc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ba7bed691658e9a7a97d05a5ba78b0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#af3ba7bed691658e9a7a97d05a5ba78b0">NTV2GetPluginsFolderPath</a> (const bool inAddTrailingPathDelim)</td></tr>
+<tr class="separator:af3ba7bed691658e9a7a97d05a5ba78b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3ae8354bba926c07a22a865606c1f8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a4a3ae8354bba926c07a22a865606c1f8">NTV2GetVDevFolderPath</a> (const bool inAddTrailingPathDelim)</td></tr>
+<tr class="separator:a4a3ae8354bba926c07a22a865606c1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffaf32401b1cc6a378df56b3416f12e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d81/ntv2utils_8h.html#a81dabab700ea05199a425a2c12a47598">NTV2DeviceIDSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a9ffaf32401b1cc6a378df56b3416f12e">NTV2GetSupportedDevices</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ab716c516162ec6887f4930e699a3ef03">NTV2DeviceKinds</a> inKinds)</td></tr>
 <tr class="memdesc:a9ffaf32401b1cc6a378df56b3416f12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an NTV2DeviceIDSet of devices supported by the SDK.  <a href="../../d6/d9b/ntv2utils_8cpp.html#a9ffaf32401b1cc6a378df56b3416f12e">More...</a><br /></td></tr>
 <tr class="separator:a9ffaf32401b1cc6a378df56b3416f12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -698,7 +708,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04313">4313</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04409">4409</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -718,7 +728,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -754,7 +764,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -771,7 +781,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05212">5212</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05308">5308</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -787,7 +797,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05213">5213</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05309">5309</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -803,7 +813,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05210">5210</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05306">5306</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +829,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05211">5211</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05307">5307</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -874,7 +884,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04491">4491</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04587">4587</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -970,7 +980,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04317">4317</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04413">4413</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1069,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of bytes written into the destination buffer (or if audioBuffer is NULL, the minimum required size of the destination buffer, in bytes). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04443">4443</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04539">4539</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1158,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of bytes written into the destination buffer (or if audioBuffer is NULL, the minimum required size of the destination buffer, in bytes). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04365">4365</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04461">4461</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1247,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of bytes written into the destination buffer (or if audioBuffer is NULL, the minimum required size of the destination buffer, in bytes). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04404">4404</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04500">4500</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1303,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07771">7771</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07881">7881</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1334,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000241">Deprecated:</a></b></dt><dd>This function doesn't support planar pixel formats. Use <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html" title="Describes a video frame for a given video standard or format and pixel format, including the total nu...">NTV2FormatDescriptor</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1352,7 +1362,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05219">5219</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05315">5315</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1383,7 +1393,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000244">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d0/d30/struct_h_d_r_float_values.html#acbf75395664a17a51849cc42e7548c6e">HDRFloatValues::toRegValues</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07886">7886</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07996">7996</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1424,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000245">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d0/d30/struct_h_d_r_float_values.html#afe95778c8186bcefe117fbf20201c159">HDRFloatValues::setFromRegValues</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07891">7891</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08001">8001</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1460,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00212">212</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1504,7 +1514,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1568,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00454">454</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00491">491</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1683,7 +1693,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <p class="enddd">Needs implementations for NTV2_FBF_10BIT_YCBCRA, NTV2_FBF_10BIT_RGB_PACKED, NTV2_FBF_10BIT_ARGB, NTV2_FBF_16BIT_ARGB. </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01642">1642</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01735">1735</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1781,7 +1791,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01293">1293</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01330">1330</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1879,7 +1889,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01354">1354</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01391">1391</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -1977,7 +1987,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01414">1414</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01451">1451</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2075,7 +2085,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01531">1531</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01624">1624</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2173,7 +2183,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01224">1224</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01261">1261</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2271,7 +2281,105 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01475">1475</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01568">1568</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace4cb533968e4062beb4a406946a2a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace4cb533968e4062beb4a406946a2a38">&#9670;&nbsp;</a></span>CopyRaster5BytesPerPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CopyRaster5BytesPerPixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *&#160;</td>
+          <td class="paramname"><em>pDstBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td>
+          <td class="paramname"><em>inDstBytesPerLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inDstTotalLines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inDstVertLineOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inDstHorzPixelOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293">UByte</a> *&#160;</td>
+          <td class="paramname"><em>pSrcBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td>
+          <td class="paramname"><em>inSrcBytesPerLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inSrcTotalLines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inSrcVertLineOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inSrcVertLinesToCopy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inSrcHorzPixelOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td>
+          <td class="paramname"><em>inSrcHorzPixelsToCopy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01512">1512</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2369,7 +2477,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01587">1587</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01680">1680</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2423,7 +2531,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00949">949</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00986">986</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2477,7 +2585,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00482">482</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00519">519</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2526,7 +2634,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00805">805</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00842">842</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2580,7 +2688,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00917">917</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00954">954</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2628,7 +2736,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00900">900</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00937">937</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2648,7 +2756,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07961">7961</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08071">8071</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2668,7 +2776,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02232">2232</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02328">2328</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2698,7 +2806,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02261">2261</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02357">2357</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2743,20 +2851,20 @@ The use of unsigned values precludes positioning the source raster above the top
 <p>Returns the number of audio samples for a given video frame rate, audio sample rate, and frame number. This is useful since AJA devices use fixed audio sample rates (typically 48KHz), and some video frame rates will necessarily result in some frames having more audio samples than others. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inFrameRate</td><td>Specifies the video frame rate. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioRate</td><td>Specifies the audio sample rate. Must be one of NTV2_AUDIO_48K or NTV2_AUDIO_96K. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inFrameRate</td><td>Specifies a valid video frame rate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioRate</td><td>Specifies a valid audio sample rate. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inCadenceFrame</td><td>Optionally specifies a frame number for maintaining proper cadence in a frame sequence, for those video frame rates that don't accommodate an even number of audio samples. Defaults to zero. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inIsSMPTE372Enabled</td><td>Specifies that 1080p60, 1080p5994 or 1080p50 is being used. In this mode, the device's framerate might be NTV2_FRAMERATE_3000, but since 2 links are coming out, the video rate is effectively NTV2_FRAMERATE_6000. Defaults to false. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inIsSMPTE372</td><td>Optional parameter to support older devices that required two SDI links to output 1080p60, 1080p5994 or 1080p50, even though the device video frame rate would be NTV2_FRAMERATE_3000, NTV2_FRAMERATE_2997, or NTV2_FRAMERATE_2500, respectively. Defaults to false. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of audio samples. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of audio samples, or zero upon failure. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d1/dc5/ntv2devops.html#audop-samplecount">Correlating Audio Samples to Video Frames</a> </dd></dl>
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02793">2793</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02889">2889</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2786,7 +2894,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <dl class="section return"><dt>Returns</dt><dd>The number of audio samples per second, or zero upon failure. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d1/dc5/ntv2devops.html#audop-samplecount">Correlating Audio Samples to Video Frames</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03207">3207</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03303">3303</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2822,7 +2930,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07986">7986</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08096">8096</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2852,7 +2960,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05375">5375</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05471">5471</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2872,7 +2980,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04111">4111</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04207">4207</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2892,7 +3000,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04103">4103</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04199">4199</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2958,7 +3066,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01825">1825</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01921">1921</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -2985,7 +3093,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05243">5243</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05339">5339</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3021,7 +3129,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03395">3395</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03491">3491</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3042,7 +3150,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01737">1737</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01833">1833</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3089,7 +3197,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01772">1772</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01868">1868</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3116,7 +3224,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03861">3861</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03957">3957</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3143,7 +3251,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03972">3972</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04068">4068</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3163,7 +3271,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04602">4602</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04698">4698</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3183,7 +3291,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04724">4724</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04820">4820</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3203,7 +3311,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04652">4652</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04748">4748</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3223,7 +3331,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04684">4684</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04780">4780</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3243,7 +3351,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05174">5174</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05270">5270</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3263,7 +3371,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05523">5523</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05619">5619</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3311,7 +3419,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08154">8154</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08264">8264</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3339,7 +3447,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a250e8505340d0fe713b980442c1ce8bf">GetVANCFrameGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03760">3760</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03856">3856</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3359,7 +3467,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04597">4597</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04693">4693</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3379,7 +3487,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04636">4636</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04732">4732</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3399,7 +3507,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04700">4700</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04796">4796</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3419,7 +3527,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04668">4668</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04764">4764</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3447,7 +3555,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a72ea61899fe76efe85d506bc1c415e87">GetNTV2StandardFromScanGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02548">2548</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02644">2644</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3475,7 +3583,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a250e8505340d0fe713b980442c1ce8bf">GetVANCFrameGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04089">4089</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04185">4185</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3503,7 +3611,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a250e8505340d0fe713b980442c1ce8bf">GetVANCFrameGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04095">4095</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04191">4191</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3533,7 +3641,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03492">3492</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03588">3588</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3561,7 +3669,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function is physical-transport-centric, so "B" formats will answer with the frame rate of a single link. For example, <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfa9488048d09abc7fd597c052ca21fe922">NTV2_FORMAT_1080p_6000_B</a> will result in <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ad5d23b1875f7b840e92723d7841995fda6dcb5dadcd57fade00559485faed8e39" title="30 frames per second">NTV2_FRAMERATE_3000</a>. See <a class="el" href="../../d5/d73/duallinkoverview.html">Dual-Link and 3G Overview</a> for more information. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03534">3534</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03630">3630</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3581,7 +3689,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05168">5168</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05264">5264</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3619,7 +3727,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05124">5124</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05220">5220</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3646,7 +3754,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05156">5156</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05252">5252</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3676,7 +3784,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01807">1807</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01903">1903</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3704,7 +3812,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a604b38ec8568b8f93de21d13e248d7c5">GetNTV2FrameGeometryFromVideoFormat</a>, <a class="el" href="../../d0/d81/ntv2utils_8h.html#a7596aa40bc9e44e84ba6235b5afbf6f5">GetGeometryFromStandard</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02279">2279</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02375">2375</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3724,7 +3832,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05567">5567</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05663">5663</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3754,7 +3862,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02033">2033</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02129">2129</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3774,7 +3882,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02219">2219</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02315">2315</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3794,7 +3902,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02244">2244</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02340">2340</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3814,7 +3922,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01844">1844</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01940">1940</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3870,7 +3978,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01201">1201</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01238">1238</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3918,7 +4026,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07977">7977</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08087">8087</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3947,7 +4055,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <dl class="section note"><dt>Note</dt><dd>The resulting set will, at the least, contain the given geometry (if valid). </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a250e8505340d0fe713b980442c1ce8bf">GetVANCFrameGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03906">3906</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04002">4002</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -3968,7 +4076,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03358">3358</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03454">3454</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4006,7 +4114,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04008">4008</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04104">4104</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4033,7 +4141,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02502">2502</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02598">2598</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4060,7 +4168,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04870">4870</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04966">4966</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4098,7 +4206,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03050">3050</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03146">3146</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4128,7 +4236,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05094">5094</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05190">5190</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4167,7 +4275,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#ab00d10bd79bc911ef219be5941ef5468">GetNormalizedFrameGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03808">3808</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03904">3904</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4195,7 +4303,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a250e8505340d0fe713b980442c1ce8bf">GetVANCFrameGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03960">3960</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04056">4056</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4231,7 +4339,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03219">3219</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03315">3315</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4276,7 +4384,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02762">2762</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02858">2858</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4324,7 +4432,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <p>Historically, this "nearest 4K page size" was necessary to get high-speed I/O bursting to work between the AJA device and the Windows disk system. The file needed to be opened with FILE_FLAG_NO_BUFFERING to bypass the file system cache. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02779">2779</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l02875">2875</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4380,7 +4488,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01212">1212</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01249">1249</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4408,7 +4516,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d81/ntv2utils_8h.html#a250e8505340d0fe713b980442c1ce8bf">GetVANCFrameGeometry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03870">3870</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l03966">3966</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4428,7 +4536,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05328">5328</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05424">5424</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4448,7 +4556,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05334">5334</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05430">5430</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4468,7 +4576,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05352">5352</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05448">5448</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4488,7 +4596,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05340">5340</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05436">5436</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4508,7 +4616,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05322">5322</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05418">5418</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4547,7 +4655,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05257">5257</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05353">5353</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4586,7 +4694,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05276">5276</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05372">5372</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4606,7 +4714,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04749">4749</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04845">4845</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4626,7 +4734,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04755">4755</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04851">4851</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4646,7 +4754,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05291">5291</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05387">5387</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4666,7 +4774,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05304">5304</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05400">5400</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4686,7 +4794,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05297">5297</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05393">5393</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4706,7 +4814,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05285">5285</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05381">5381</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4726,7 +4834,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05346">5346</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05442">5442</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4746,7 +4854,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05310">5310</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05406">5406</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4776,7 +4884,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05106">5106</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05202">5202</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4796,7 +4904,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05358">5358</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05454">5454</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4816,7 +4924,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05364">5364</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05460">5460</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4836,7 +4944,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05369">5369</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05465">5465</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4856,7 +4964,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05316">5316</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05412">5412</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4897,7 +5005,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <dl class="section warning"><dt>Warning</dt><dd>This function performs no error checking. Memory corruption will occur if the destination buffer is smaller than 4 x 'inNumPixels' bytes. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function writes UNPACKED Y/C values. When I return, the destination buffer will NOT contain NTV2_FBF_10BIT_YCBCR-formatted pixel values. Use PackLine_16BitYUVto10BitYUV to convert to NTV2_FBF_10BIT_YCBCR. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00766">766</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00803">803</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4945,7 +5053,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00792">792</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00829">829</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -4986,7 +5094,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <dl class="section warning"><dt>Warning</dt><dd>This function performs no error checking. Memory corruption will occur if the destination buffer is smaller than 4 x 'inNumPixels' bytes. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function writes UNPACKED Y/C values. When I return, the destination buffer will NOT contain NTV2_FBF_10BIT_YCBCR-formatted pixel values. Use PackLine_16BitYUVto10BitYUV to convert to NTV2_FBF_10BIT_YCBCR. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00779">779</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00816">816</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5022,7 +5130,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00828">828</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00865">865</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5076,7 +5184,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00874">874</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00911">911</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5112,7 +5220,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00850">850</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00887">887</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5160,7 +5268,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00229">229</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5196,7 +5304,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00367">367</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5232,7 +5340,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00691">691</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00728">728</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5262,7 +5370,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06469">6469</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06565">6565</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5290,8 +5398,9 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent number of bytes. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>NTV2 audio systems using 4 MB buffers (0x400000 bytes) will only use the first 0x3FC000 bytes &ndash; they won't touch the last 16 KB (0x4000 bytes). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05202">5202</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05298">5298</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5321,7 +5430,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05669">5669</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05765">5765</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5351,7 +5460,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06347">6347</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06443">6443</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5381,7 +5490,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06323">6323</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06419">6419</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5411,7 +5520,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06335">6335</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06431">6431</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5441,7 +5550,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06594">6594</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06690">6690</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5471,7 +5580,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05681">5681</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05777">5777</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5501,7 +5610,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05656">5656</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05752">5752</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5531,7 +5640,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06623">6623</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06719">6719</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5561,7 +5670,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05645">5645</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05741">5741</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5591,7 +5700,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07798">7798</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07908">7908</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5621,7 +5730,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06450">6450</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06546">6546</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5650,7 +5759,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2AudioSystem value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04769">4769</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04865">4865</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5679,7 +5788,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2EmbeddedAudioInput value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04761">4761</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04857">4857</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5699,7 +5808,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04815">4815</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04911">4911</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5728,7 +5837,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent input <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a7cdfd0df4994b36cbe0a318bbe294edf">INTERRUPT_ENUMS</a> value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04837">4837</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04933">4933</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5766,7 +5875,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The NTV2InputSource value that corresponds to the given NTV2Channel value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05032">5032</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05128">5128</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5786,7 +5895,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04826">4826</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04922">4922</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5826,7 +5935,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2OutputDestination value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05067">5067</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05163">5163</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5855,7 +5964,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent output <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a7cdfd0df4994b36cbe0a318bbe294edf">INTERRUPT_ENUMS</a> value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04847">4847</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04943">4943</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5885,7 +5994,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05627">5627</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05723">5723</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5932,7 +6041,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent <a class="el" href="../../d6/d0c/ntv2enums_8h.html#acf70cd3d0e59052892b4fceacf147851" title="These enum values are indexes into the capture/playout AutoCirculate timecode arrays.">NTV2TCIndex</a> value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04862">4862</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04958">4958</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5962,7 +6071,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07785">7785</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07895">7895</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -5982,7 +6091,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04608">4608</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04704">4704</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6002,7 +6111,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05705">5705</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05801">5801</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6056,7 +6165,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <dl class="section note"><dt>Note</dt><dd>The implementation of this function is very inefficient. Do not call it every frame. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the device having the given NTV2DeviceID supports the given frame rate, geometry and standard. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04062">4062</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04158">4158</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6086,7 +6195,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04512">4512</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04608">4608</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6116,7 +6225,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07876">7876</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07986">7986</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6146,7 +6255,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06497">6497</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06593">6593</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6176,7 +6285,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05693">5693</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05789">5789</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6206,7 +6315,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06605">6605</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06701">6701</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6236,7 +6345,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06828">6828</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06924">6924</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6268,7 +6377,7 @@ The use of unsigned values precludes positioning the source raster above the top
 
 <p>defined(NTV2_DEPRECATE_17_6) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07208">7208</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07304">7304</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6299,7 +6408,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <p>defined(NTV2_DEPRECATE_16_0)</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07238">7238</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07334">7334</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6328,7 +6437,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent number of bytes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05187">5187</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05283">5283</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6358,7 +6467,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06359">6359</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06455">6455</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6378,7 +6487,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07459">7459</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07555">7555</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6398,12 +6507,12 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07560">7560</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07656">7656</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ad192c1819b548d252ebb8f07f08201b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad192c1819b548d252ebb8f07f08201b6">&#9670;&nbsp;</a></span>NTV2GetFirmwareFolderPath()</h2>
+<a id="a988af8dea166e1af5fc470283dd3ecc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988af8dea166e1af5fc470283dd3ecc5">&#9670;&nbsp;</a></span>NTV2GetFirmwareFolderPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6411,14 +6520,34 @@ The use of unsigned values precludes positioning the source raster above the top
         <tr>
           <td class="memname">string NTV2GetFirmwareFolderPath </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>inAddTrailingPathDelim</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07582">7582</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07678">7678</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af3ba7bed691658e9a7a97d05a5ba78b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ba7bed691658e9a7a97d05a5ba78b0">&#9670;&nbsp;</a></span>NTV2GetPluginsFolderPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NTV2GetPluginsFolderPath </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>inAddTrailingPathDelim</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07690">7690</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6447,7 +6576,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of the requested version component, or zero if an invalid version component is specified. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07751">7751</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07861">7861</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6476,7 +6605,27 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="../../d0/d81/ntv2utils_8h.html#a81dabab700ea05199a425a2c12a47598" title="A set of NTV2DeviceIDs.">NTV2DeviceIDSet</a> of devices supported by the SDK. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07605">7605</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07715">7715</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a3ae8354bba926c07a22a865606c1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3ae8354bba926c07a22a865606c1f8">&#9670;&nbsp;</a></span>NTV2GetVDevFolderPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NTV2GetVDevFolderPath </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>inAddTrailingPathDelim</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07702">7702</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6496,7 +6645,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07739">7739</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07849">7849</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6526,7 +6675,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06549">6549</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06645">6645</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6556,7 +6705,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06537">6537</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06633">6633</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6586,7 +6735,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06582">6582</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06678">6678</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6616,7 +6765,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06560">6560</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06656">6656</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6646,7 +6795,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06571">6571</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06667">6667</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6676,7 +6825,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05714">5714</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05810">5810</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6703,7 +6852,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The NTV2AudioSource that corresponds to the given NTV2InputSource. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04801">4801</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04897">4897</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6732,7 +6881,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2AudioSystem value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04971">4971</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05067">5067</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6761,7 +6910,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2Channel value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04947">4947</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05043">5043</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6790,7 +6939,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2Crosspoint value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04899">4899</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04995">4995</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6819,7 +6968,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2EmbeddedAudioInput value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04777">4777</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04873">4873</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6848,7 +6997,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2ReferenceSource value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04923">4923</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05019">5019</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6878,7 +7027,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07269">7269</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07365">7365</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6918,7 +7067,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2TimecodeIndex value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04995">4995</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05091">5091</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6938,7 +7087,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07354">7354</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07450">7450</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6958,7 +7107,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07404">7404</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07500">7500</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -6988,7 +7137,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07536">7536</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07632">7632</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7018,7 +7167,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06522">6522</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06618">6618</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7049,7 +7198,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000243">Deprecated:</a></b></dt><dd>New in SDK 12.0, removed in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07036">7036</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07132">7132</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7079,7 +7228,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06424">6424</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06520">6520</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7109,7 +7258,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06410">6410</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06506">6506</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7139,7 +7288,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06385">6385</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06481">6481</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7169,7 +7318,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05857">5857</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05953">5953</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7198,7 +7347,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent NTV2Channel value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05055">5055</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05151">5151</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7228,7 +7377,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07292">7292</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07388">7388</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7258,7 +7407,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07312">7312</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07408">7408</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7278,7 +7427,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07765">7765</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07875">7875</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7308,7 +7457,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07341">7341</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07437">7437</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7328,7 +7477,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06258">6258</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06354">6354</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7358,7 +7507,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06510">6510</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06606">6606</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7388,7 +7537,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06802">6802</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06898">6898</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7418,7 +7567,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06245">6245</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06341">6341</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7448,7 +7597,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06286">6286</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06382">6382</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7477,7 +7626,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04879">4879</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04975">4975</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7506,7 +7655,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The equivalent <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ac5dbe58ce5dcc94682e0012abc6124f1" title="Identifies a specific video input source.">NTV2InputSource</a> value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04888">4888</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04984">4984</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7536,7 +7685,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06483">6483</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06579">6579</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7566,7 +7715,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06397">6397</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06493">6493</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7596,7 +7745,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06638">6638</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06734">6734</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7626,7 +7775,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06437">6437</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06533">6533</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7656,7 +7805,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06062">6062</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06158">6158</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7686,7 +7835,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06193">6193</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06289">6289</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7726,7 +7875,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-constant reference to the specified NTV2RegisterNumberSet. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06279">6279</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06375">6375</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7756,7 +7905,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07731">7731</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07841">7841</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7786,7 +7935,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07908">7908</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08018">8018</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7816,7 +7965,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06266">6266</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06362">6362</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7846,7 +7995,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05615">5615</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05711">5711</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7876,7 +8025,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05621">5621</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05717">5717</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7906,7 +8055,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07938">7938</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08048">8048</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7936,7 +8085,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07949">7949</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08059">8059</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7966,7 +8115,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07450">7450</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07546">7546</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -7998,7 +8147,7 @@ The use of unsigned values precludes positioning the source raster above the top
 
 <p>Handy ostream writer for NTV2DeviceIDList. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07724">7724</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07834">7834</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8044,7 +8193,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00527">527</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00564">564</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8091,7 +8240,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00544">544</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00581">581</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8127,7 +8276,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00184">184</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00216">216</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8147,7 +8296,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08045">8045</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08155">8155</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8167,7 +8316,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08032">8032</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08142">8142</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8227,7 +8376,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04242">4242</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04338">4338</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8257,7 +8406,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00637">637</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00674">674</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8277,7 +8426,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08111">8111</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08221">8221</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8298,7 +8447,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000246">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d3/da4/struct_h_d_r_reg_values.html#a61fc40c14787793ede034bbef3879409">HDRRegValues::setBT2020</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07896">7896</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08006">8006</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8319,7 +8468,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000247">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d3/da4/struct_h_d_r_reg_values.html#abde9a1548e5c95005a4fa165471aaf2a">HDRRegValues::setDCIP3</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07901">7901</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08011">8011</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8374,7 +8523,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000026">Bug:</a></b></dt><dd>Need implementations for numerous pixel formats. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01081">1081</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01118">1118</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8418,7 +8567,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01021">1021</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01058">1058</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8462,7 +8611,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01005">1005</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01042">1042</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8517,7 +8666,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000027">Bug:</a></b></dt><dd>Need implementations for numerous pixel formats. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01141">1141</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01178">1178</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8561,7 +8710,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01059">1059</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01096">1096</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8605,7 +8754,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01043">1043</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l01080">1080</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8653,7 +8802,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00413">413</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8683,7 +8832,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08087">8087</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08197">8197</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8703,7 +8852,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l07969">7969</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l08079">8079</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8739,7 +8888,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00679">679</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00716">716</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8775,7 +8924,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00669">669</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00706">706</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8817,7 +8966,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00648">648</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00685">685</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8853,7 +9002,54 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa76150157280a1b93aabf7c29ddb1883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76150157280a1b93aabf7c29ddb1883">&#9670;&nbsp;</a></span>UnpackLine_10BitARGBtoUWordSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnpackLine_10BitARGBtoUWordSequence </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>pIn10BitARGBLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inFormatDesc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0d427e5e8bff159df1de3784f37b4b6">UWordSequence</a> &amp;&#160;</td>
+          <td class="paramname"><em>out16BitARGBLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unpacks a line of NTV2_FBF_10BIT_ARGB video into 16-bit-per-component ARGB data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pIn10BitARGBLine</td><td>A valid, non-NULL pointer to the start of the line that contains the packed NTV2_FBF_10BIT_ARGB data to be converted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inFormatDesc</td><td>Describes the raster. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out16BitARGBLine</td><td>Receives the unpacked 16-bit-per-component ARGB data. The sequence is cleared before filling. The UWord sequence will be B, G, R, A </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8899,7 +9095,7 @@ The use of unsigned values precludes positioning the source raster above the top
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00511">511</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00548">548</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8941,7 +9137,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00609">609</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00646">646</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -8988,7 +9184,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9035,7 +9231,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9077,7 +9273,7 @@ The use of unsigned values precludes positioning the source raster above the top
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00566">566</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l00603">603</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9102,7 +9298,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04859">4859</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04955">4955</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9126,7 +9322,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04857">4857</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04953">4953</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9150,7 +9346,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04858">4858</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04954">4954</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9174,7 +9370,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06871">6871</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l06967">6967</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9198,7 +9394,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05215">5215</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05311">5311</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9222,7 +9418,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05216">5216</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l05312">5312</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -9232,7 +9428,7 @@ The use of unsigned values precludes positioning the source raster above the top
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_d66cab0a9fa222c6d93e473efea2c462.html">src</a></li><li class="navelem"><a class="el" href="../../d6/d9b/ntv2utils_8cpp.html">ntv2utils.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 12:20:32 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Sep 29 2025 16:26:56 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

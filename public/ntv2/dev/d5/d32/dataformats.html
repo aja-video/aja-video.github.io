@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2322</span>
+   &#160;<span id="projectnumber">18.0.0.2505</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2505</div>
   </td>
  </tr>
  </tbody>
@@ -398,6 +398,8 @@ Device Frame Buffer Formats</h2>
 <tr>
 <td><b>32-Bit ABGR (OpenGL) 8 bpc</b> </td><td><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca73b0d1811413225c0feb635ab4905f86" title="See 8-Bit ARGB, RGBA, ABGR Formats.">NTV2_FBF_ABGR</a> </td></tr>
 <tr>
+<td><a class="el" href="../../d5/d32/dataformats.html#fbformats10bitargb">10-Bit ARGB Format</a> </td><td><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca5c3ca8b8f0198c584cd34a04145717f2" title="10-Bit ARGB">NTV2_FBF_10BIT_ARGB</a> </td></tr>
+<tr>
 <td><a class="el" href="../../d5/d32/dataformats.html#fbformats10bitrgbdpx">10-Bit RGB - DPX Format</a> </td><td><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca1d75d96581cdca1ac7a12932f9dd9331" title="See 10-Bit RGB - DPX Format.">NTV2_FBF_10BIT_DPX</a> </td></tr>
 <tr>
 <td><a class="el" href="../../d5/d32/dataformats.html#fbformats10bitycbcrdpx">10-Bit YCbCr - DPX Format</a> </td><td><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161cafa78c4848f0b65ff2b60349296e82bf9" title="See 10-Bit YCbCr - DPX Format.">NTV2_FBF_10BIT_YCBCR_DPX</a> </td></tr>
@@ -470,6 +472,12 @@ Device Frame Buffer Formats</h2>
 <p>8-Bit ABGR, identified by the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca73b0d1811413225c0feb635ab4905f86" title="See 8-Bit ARGB, RGBA, ABGR Formats.">NTV2_FBF_ABGR</a> enumeration constant, is used extensively with OpenGL:</p>
 <div class="image">
 <img src="../../fbf-8bitabgr-75.png" alt=""/>
+</div>
+<h3><a class="anchor" id="fbformats10bitargb"></a>
+10-Bit ARGB Format</h3>
+<p>This format is identified by the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca5c3ca8b8f0198c584cd34a04145717f2" title="10-Bit ARGB">NTV2_FBF_10BIT_ARGB</a> enumeration constant. The device Color Space Converter(s), if present, will perform the proper conversion to/from 10-Bit ARGB.</p>
+<div class="image">
+<img src="../../fbf-10bitargb.png" alt=""/>
 </div>
 <h3><a class="anchor" id="fbformats10bitrgb"></a>
 10-Bit RGB Format</h3>
@@ -614,7 +622,7 @@ Alternate 8-Bit YCbCr ('YUY2')</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 12:20:33 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Sep 29 2025 16:26:57 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -8,5 +8,6 @@ var ntv2formatdescriptor_8h =
     [ "NTV2RasterLineOffsetsIter", "dc/df4/ntv2formatdescriptor_8h.html#a5627ed7a21b5f259016a8b606ad0583f", null ],
     [ "NTV2PrintRasterLineOffsets", "dc/df4/ntv2formatdescriptor_8h.html#aabc444c0cac67b672b67e269f8118c2e", null ],
     [ "operator<<", "dc/df4/ntv2formatdescriptor_8h.html#a49b06bde935c9cafca729960842a7957", null ],
+    [ "UnpackLine_10BitARGBtoUWordSequence", "dc/df4/ntv2formatdescriptor_8h.html#aa76150157280a1b93aabf7c29ddb1883", null ],
     [ "UnpackLine_10BitYUVtoUWordSequence", "dc/df4/ntv2formatdescriptor_8h.html#aaa4fe3631d36efefb80dc373661b2bb6", null ]
 ];

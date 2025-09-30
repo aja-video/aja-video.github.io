@@ -1151,7 +1151,7 @@ var ntv2enums_8h =
       [ "DEVICE_ID_SOJI_OE7", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a7907f6791b59d206f4b52c312876bd83", null ],
       [ "DEVICE_ID_TTAP", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a0681a8562d9ace752c743af5c73b381f", null ],
       [ "DEVICE_ID_TTAP_PRO", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a83ed0fab8df20a95d2b29f7aa42b7fcd", null ],
-      [ "DEVICE_ID_ZEFRAM", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a6da7198da4b320a3c50a7fbc53cfaf89", null ],
+      [ "DEVICE_ID_IP25_R", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a446ecaed08fb7833aa41305823c0c16c", null ],
       [ "DEVICE_ID_NOTFOUND", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463af5eaa87e03131e8db86c81793f752df9", null ],
       [ "DEVICE_ID_INVALID", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a966b1377cb30e42a82df4ae1e48023b4", null ]
     ] ],

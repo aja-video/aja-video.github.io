@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2322</span>
+   &#160;<span id="projectnumber">18.0.0.2505</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2322</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2505</div>
   </td>
  </tr>
  </tbody>
@@ -130,10 +130,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6cd58a749bf8a8cecf35365e62e83311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7eafeb942947079ef7cb287e7430870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a90dc22e05a263fc86576938693bfbb40">NTV2TCIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#aa7eafeb942947079ef7cb287e7430870">OutputTCIndexes</a> (void)</td></tr>
 <tr class="separator:aa7eafeb942947079ef7cb287e7430870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a251fb847c0894fbae04a2a358b1434"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab719b16d17e4d5f92c2bf68172af0cf8">NTV2AudioRateSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a2a251fb847c0894fbae04a2a358b1434">AudioSampleRates</a> (void)</td></tr>
+<tr class="separator:a2a251fb847c0894fbae04a2a358b1434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a689de6b91c45bcb7fe80bc1cacc95f82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a689de6b91c45bcb7fe80bc1cacc95f82">CanDoInputTCIndex</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#acf70cd3d0e59052892b4fceacf147851">NTV2TCIndex</a> inTCNdx)</td></tr>
 <tr class="separator:a689de6b91c45bcb7fe80bc1cacc95f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea39497e521ee1ea6496acc04640c610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#aea39497e521ee1ea6496acc04640c610">CanDoOutputTCIndex</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#acf70cd3d0e59052892b4fceacf147851">NTV2TCIndex</a> inTCNdx)</td></tr>
 <tr class="separator:aea39497e521ee1ea6496acc04640c610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6579f9960b1e980cd736f7f36b89c016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a6579f9960b1e980cd736f7f36b89c016">CanDoAudioSampleRate</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7100bd510ea6161e94c7b243d05be9af">NTV2AudioRate</a> inRate)</td></tr>
+<tr class="separator:a6579f9960b1e980cd736f7f36b89c016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Convenience class/API for inquiring about device capabilities of physical and virtual devices. Instead of calling the old global ::NTV2DeviceCanDoXXX(mDeviceID) functions, call mCard.features().CanDoXXX(). Instead of calling ::NTV2DeviceGetNumYYY(mDeviceID), call mCard.features().GetNumYYY(). </p>
@@ -170,6 +174,70 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2a251fb847c0894fbae04a2a358b1434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a251fb847c0894fbae04a2a358b1434">&#9670;&nbsp;</a></span>AudioSampleRates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab719b16d17e4d5f92c2bf68172af0cf8">NTV2AudioRateSet</a> DeviceCapabilities::AudioSampleRates </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The set of unique NTV2AudioRate values that are supported by the device. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00323">323</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+
+</div>
+</div>
+<a id="a6579f9960b1e980cd736f7f36b89c016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6579f9960b1e980cd736f7f36b89c016">&#9670;&nbsp;</a></span>CanDoAudioSampleRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DeviceCapabilities::CanDoAudioSampleRate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7100bd510ea6161e94c7b243d05be9af">NTV2AudioRate</a>&#160;</td>
+          <td class="paramname"><em>inRate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inTCNdx</td><td>Specifies the NTV2TimecodeIndex of interest. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the device can write the given timecode; otherwise false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00353">353</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+
+</div>
+</div>
 <a id="a73cdf1ba9c6cb554f046b5fcdcf7281b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73cdf1ba9c6cb554f046b5fcdcf7281b">&#9670;&nbsp;</a></span>CanDoChannel()</h2>
 
@@ -376,7 +444,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the device can read the given timecode; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00324">324</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00335">335</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +514,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the device can write the given timecode; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00333">333</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00344">344</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -712,7 +780,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d32/class_device_capabilities.html">DeviceCapabilities</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 12:20:39 for AJA NTV2 SDK by
+    <li class="footer">Generated on Mon Sep 29 2025 16:27:00 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
