@@ -120,7 +120,6 @@ var index =
         [ "KONA HDMI", "d0/d53/ntv2devices.html#konahdmi", null ],
         [ "KONA IP25", "d0/d53/ntv2devices.html#konaip25g", null ],
         [ "KONA LHe Plus", "d0/d53/ntv2devices.html#konalheplus", null ],
-        [ "KONA LHi", "d0/d53/ntv2devices.html#konalhi", null ],
         [ "KONA X™", "d0/d53/ntv2devices.html#konax", null ],
         [ "KONA XM™", "d0/d53/ntv2devices.html#konaxm", null ]
       ] ],
@@ -138,6 +137,7 @@ var index =
         [ "KONA 3G (Quad Mode)", "d0/d53/ntv2devices.html#kona3gquad", null ],
         [ "KONA 3G (UFC Mode)", "d0/d53/ntv2devices.html#kona3gufc", null ],
         [ "KONA IP", "d0/d53/ntv2devices.html#konaip", null ],
+        [ "KONA LHi", "d0/d53/ntv2devices.html#konalhi", null ],
         [ "T-TAP", "d0/d53/ntv2devices.html#ttap", null ]
       ] ],
       [ "Breakout Boxes and Cables", "d0/d53/ntv2devices.html#ntv2hwaccessories", [
