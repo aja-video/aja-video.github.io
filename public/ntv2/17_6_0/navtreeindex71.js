@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"d7/da9/ntv2register_8cpp.html#a2bf557794bcdc4ea7d0fa1f0ac98db8e":[9,0,2,2,1,34,55],
 "d7/da9/ntv2register_8cpp.html#a34d4e943889522ade3456f1689a459d8":[9,0,2,2,1,34,75],
 "d7/da9/ntv2register_8cpp.html#a3554b69b8e8b0fd91817432b8d3af1f1":[9,0,2,2,1,34,69],
 "d7/da9/ntv2register_8cpp.html#a3893cfe9ed2223e428a61bb6baab2582":[9,0,2,2,1,34,54],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "d7/dcd/struct_n_t_v2___d_m_a___c_o_n_t_r_o_l___s_t_r_u_c_t.html#aa17218cf5fcb182d5636b0decbdc576c":[8,0,380,6],
 "d7/dcd/struct_n_t_v2___d_m_a___c_o_n_t_r_o_l___s_t_r_u_c_t.html#ab501def7f428d9a2d3c674f828bf443f":[8,0,380,8],
 "d7/dcd/struct_n_t_v2___d_m_a___c_o_n_t_r_o_l___s_t_r_u_c_t.html#ab896fc0ea5ecae4374ca5f279c705bce":[8,0,380,7],
-"d7/dcd/struct_n_t_v2___d_m_a___c_o_n_t_r_o_l___s_t_r_u_c_t.html#ad9716e7b9ec590a51186cc0fe9fefd09":[8,0,380,1],
-"d7/dcd/struct_n_t_v2___d_m_a___c_o_n_t_r_o_l___s_t_r_u_c_t.html#adb1e91082a0debf565b3427832981dc2":[8,0,380,9]
+"d7/dcd/struct_n_t_v2___d_m_a___c_o_n_t_r_o_l___s_t_r_u_c_t.html#ad9716e7b9ec590a51186cc0fe9fefd09":[8,0,380,1]
 };

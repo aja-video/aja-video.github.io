@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"d6/d0c/ntv2enums_8h.html#af854922cd85a996cc1e4fab4c7247d79":[9,0,2,2,0,22,170],
 "d6/d0c/ntv2enums_8h.html#af8b30503a1e2063c374df25bb497863b":[9,0,2,2,0,22,54],
 "d6/d0c/ntv2enums_8h.html#af9134a841826611b3ed7b514416114f2":[9,0,2,2,0,22,59],
 "d6/d0c/ntv2enums_8h.html#af985e5bf82a65dd884447721556a3365":[9,0,2,2,0,22,86],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "d6/d3a/struct_virtual_proc_amp_registers__base.html":[8,0,553],
 "d6/d3a/struct_virtual_proc_amp_registers__base.html#a23da1a36a4878ebad41ed3cd84b5f67c":[8,0,553,1],
 "d6/d3a/struct_virtual_proc_amp_registers__base.html#a5f4d3c298044fbdabf184a1e7c3e70c3":[8,0,553,4],
-"d6/d3a/struct_virtual_proc_amp_registers__base.html#a6bc3d8f11dd59c7fb8a8173cdb245685":[8,0,553,7],
-"d6/d3a/struct_virtual_proc_amp_registers__base.html#a8698c67d4b3be09258c0df787dc57cf7":[8,0,553,5]
+"d6/d3a/struct_virtual_proc_amp_registers__base.html#a6bc3d8f11dd59c7fb8a8173cdb245685":[8,0,553,7]
 };

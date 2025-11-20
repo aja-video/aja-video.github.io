@@ -1,5 +1,6 @@
 var NAVTREEINDEX78 =
 {
+"d8/d60/struct_n_t_v2___c_c708_c_d_p_data_section.html#acf1cd0b120336fc8db2c01e8dfecbade":[8,0,370,0],
 "d8/d64/linux_2infoimpl_8cpp.html":[9,0,2,1,2,1,2],
 "d8/d64/linux_2infoimpl_8cpp.html#a1d2fe243ee6de9f65d0b85aee923509f":[9,0,2,1,2,1,2,2],
 "d8/d64/linux_2infoimpl_8cpp.html#a5b470826b359e4d8dd85c98401d95821":[9,0,2,1,2,1,2,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX78 =
 "d8/da3/class_c_n_t_v2_caption_renderer.html#a03ee6b3603bb18e9db2e18cd64de0d00":[8,0,215,2],
 "d8/da3/class_c_n_t_v2_caption_renderer.html#a056b2dd9de2d3f500f781f6fb2561971":[8,0,215,22],
 "d8/da3/class_c_n_t_v2_caption_renderer.html#a1c9cae390c0f944aba47fe76c60bcaf1":[8,0,215,3],
-"d8/da3/class_c_n_t_v2_caption_renderer.html#a28f6226eb7b1980c460b4ebd86c721b0":[8,0,215,16],
-"d8/da3/class_c_n_t_v2_caption_renderer.html#a2e3d405be0610fda2dd0d1c1128ae5a6":[8,0,215,18]
+"d8/da3/class_c_n_t_v2_caption_renderer.html#a28f6226eb7b1980c460b4ebd86c721b0":[8,0,215,16]
 };

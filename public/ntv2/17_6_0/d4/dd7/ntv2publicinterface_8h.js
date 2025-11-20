@@ -309,6 +309,7 @@ var ntv2publicinterface_8h =
     [ "NTV2_MAIL_BUFFER_SEND", "d4/dd7/ntv2publicinterface_8h.html#a51c3422d59e38ba34b7e3ad03f89b436", null ],
     [ "NTV2_MAIL_BUFFER_SUCCESS", "d4/dd7/ntv2publicinterface_8h.html#a5e5041cf133597101251746573954ae8", null ],
     [ "NTV2_MAIL_BUFFER_TIMEOUT", "d4/dd7/ntv2publicinterface_8h.html#a5cb70ffdce62a802f69bf4d166b2cc45", null ],
+    [ "NTV2_MAIL_BUFFER_TRYAGAIN", "d4/dd7/ntv2publicinterface_8h.html#a0509fcb2f1dc0a76e45f44dd5eff928b", null ],
     [ "NTV2_MAX_FRAMEBUFFERS", "d4/dd7/ntv2publicinterface_8h.html#a8e66824cfea1d87b6c69ed7d27c647cb", null ],
     [ "NTV2_MAX_FRAMEBUFFERSIZE", "d4/dd7/ntv2publicinterface_8h.html#a701b1fba7baf355cc628d8a7cc11ee77", null ],
     [ "NTV2_MIN_FRAMEBUFFERS", "d4/dd7/ntv2publicinterface_8h.html#a358b621c0023c85e987e222bd557b653", null ],

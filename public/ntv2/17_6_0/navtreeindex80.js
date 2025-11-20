@@ -1,5 +1,6 @@
 var NAVTREEINDEX80 =
 {
+"d8/dd9/class_a_j_a_pixel_format.html#ad3916755b8d1ac3de7efd5ae97f851dc":[8,0,60,24],
 "d8/dd9/class_a_j_a_pixel_format.html#ad4f9c4e533b7148a39a674d4d742e0b0":[8,0,60,5],
 "d8/dd9/class_a_j_a_pixel_format.html#ade29854b2c5d62980393a0ab80fa14c0":[8,0,60,20],
 "d8/dd9/class_a_j_a_pixel_format.html#aeb7a343027c46c145511edc92bb6d26d":[8,0,60,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX80 =
 "d9/d07/demoapps.html#ntv2ccgrabber":[0,5,2,3],
 "d9/d07/demoapps.html#ntv2ccplayer":[0,5,1,4],
 "d9/d07/demoapps.html#ntv2dolbycapture":[0,5,2,4],
-"d9/d07/demoapps.html#ntv2dolbycaptureaux":[0,5,2,5],
-"d9/d07/demoapps.html#ntv2dolbyplayer":[0,5,1,5]
+"d9/d07/demoapps.html#ntv2dolbycaptureaux":[0,5,2,5]
 };
