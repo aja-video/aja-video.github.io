@@ -13,7 +13,6 @@ var class_n_t_v2_plugin_loader =
     [ "isValidated", "d1/dfe/class_n_t_v2_plugin_loader.html#a0bc0d2a9653e9765968d1e606b52495e", null ],
     [ "isVerbose", "d1/dfe/class_n_t_v2_plugin_loader.html#aa8402eb8b2c65989f323fd4625bceb56", null ],
     [ "mbedErrStr", "d1/dfe/class_n_t_v2_plugin_loader.html#ae23c3975c79595a1a51beb7f7413dd8b", null ],
-    [ "ParseQueryParams", "d1/dfe/class_n_t_v2_plugin_loader.html#a0aaad896798c4cd1ef5761a018895f8c", null ],
     [ "pluginBaseName", "d1/dfe/class_n_t_v2_plugin_loader.html#a688a7e6a1ad83f4bdf348bc19ff42dd6", null ],
     [ "pluginPath", "d1/dfe/class_n_t_v2_plugin_loader.html#a3bc8c1c6f81cb7cefaf61d7ba9f5b124", null ],
     [ "pluginSigPath", "d1/dfe/class_n_t_v2_plugin_loader.html#a67f85967b53a4040388414111315cd75", null ],

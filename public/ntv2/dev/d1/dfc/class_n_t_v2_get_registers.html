@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2513</span>
+   &#160;<span id="projectnumber">18.0.0.2703</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2513</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2703</div>
   </td>
  </tr>
  </tbody>
@@ -135,6 +135,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab4af5e3f5f0cddf6b0dd9ada5565a9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c1700ca41f92fbd71041a802cd47ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#a89c1700ca41f92fbd71041a802cd47ab">operator NTV2_HEADER *</a> ()</td></tr>
 <tr class="separator:a89c1700ca41f92fbd71041a802cd47ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2349128bf2c23a8430644f740fae7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#aef2349128bf2c23a8430644f740fae7e">numRegisters</a> (void) const</td></tr>
+<tr class="separator:aef2349128bf2c23a8430644f740fae7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0d7c3aee60d2b808620f1e3390ddd1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#a2b0d7c3aee60d2b808620f1e3390ddd1">requestedRegisterNumbers</a> (void) const</td></tr>
+<tr class="separator:a2b0d7c3aee60d2b808620f1e3390ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ded707d8fd1bd10b2d4d1323cc75488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#a6ded707d8fd1bd10b2d4d1323cc75488">outNumRegisters</a> (void)</td></tr>
+<tr class="separator:a6ded707d8fd1bd10b2d4d1323cc75488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7ffdc3c1491921a355cf4d0ce451af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#a4d7ffdc3c1491921a355cf4d0ce451af">outGoodRegisterNumbers</a> (void)</td></tr>
+<tr class="separator:a4d7ffdc3c1491921a355cf4d0ce451af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c5973a706021f4e9f4fd38077f7f3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#a81c5973a706021f4e9f4fd38077f7f3e">outRegisterValues</a> (void)</td></tr>
+<tr class="separator:a81c5973a706021f4e9f4fd38077f7f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b5601d4a236ebc2cdcc89ff8346425"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#ae2b5601d4a236ebc2cdcc89ff8346425">RPCEncode</a> (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a665601cb62432a08f55c8bf06bf59cf1">NTV2_RPC_BLOB_TYPE</a> &amp;outBlob)</td></tr>
 <tr class="separator:ae2b5601d4a236ebc2cdcc89ff8346425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0e86ce30b2cc10d05bb983068c24a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html#a0c0e86ce30b2cc10d05bb983068c24a6">RPCDecode</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a665601cb62432a08f55c8bf06bf59cf1">NTV2_RPC_BLOB_TYPE</a> &amp;inBlob, size_t &amp;inOutIndex)</td></tr>
@@ -374,6 +384,34 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 
 </div>
 </div>
+<a id="aef2349128bf2c23a8430644f740fae7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2349128bf2c23a8430644f740fae7e">&#9670;&nbsp;</a></span>numRegisters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> NTV2GetRegisters::numRegisters </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07781">7781</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+
+</div>
+</div>
 <a id="a89c1700ca41f92fbd71041a802cd47ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89c1700ca41f92fbd71041a802cd47ab">&#9670;&nbsp;</a></span>operator NTV2_HEADER *()</h2>
 
@@ -399,6 +437,90 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 <dl class="section return"><dt>Returns</dt><dd>My address casted to an <a class="el" href="../../d4/d09/class_n_t_v2___h_e_a_d_e_r.html" title="All new NTV2 structs start with this common header.">NTV2_HEADER</a> pointer. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07779">7779</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d7ffdc3c1491921a355cf4d0ce451af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7ffdc3c1491921a355cf4d0ce451af">&#9670;&nbsp;</a></span>outGoodRegisterNumbers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a>&amp; NTV2GetRegisters::outGoodRegisterNumbers </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07784">7784</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+
+</div>
+</div>
+<a id="a6ded707d8fd1bd10b2d4d1323cc75488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ded707d8fd1bd10b2d4d1323cc75488">&#9670;&nbsp;</a></span>outNumRegisters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&amp; NTV2GetRegisters::outNumRegisters </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07783">7783</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+
+</div>
+</div>
+<a id="a81c5973a706021f4e9f4fd38077f7f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c5973a706021f4e9f4fd38077f7f3e">&#9670;&nbsp;</a></span>outRegisterValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a>&amp; NTV2GetRegisters::outRegisterValues </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07785">7785</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -468,6 +590,34 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 <dl class="section return"><dt>Returns</dt><dd>A reference to the output stream. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03373">3373</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2b0d7c3aee60d2b808620f1e3390ddd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0d7c3aee60d2b808620f1e3390ddd1">&#9670;&nbsp;</a></span>requestedRegisterNumbers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a>&amp; NTV2GetRegisters::requestedRegisterNumbers </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07782">7782</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +842,7 @@ This struct uses a constructor to properly initialize itself. Do not use <b>mems
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dfc/class_n_t_v2_get_registers.html">NTV2GetRegisters</a></li>
-    <li class="footer">Generated on Wed Oct 1 2025 07:39:36 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 19 2025 16:36:58 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

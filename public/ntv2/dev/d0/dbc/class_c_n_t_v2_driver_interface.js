@@ -69,6 +69,7 @@ var class_c_n_t_v2_driver_interface =
     [ "ReleaseStreamForApplicationWithReference", "d0/dbc/class_c_n_t_v2_driver_interface.html#abfe20cca94d2326d2bc069d1bf08485d", null ],
     [ "ResumeAudio", "d0/dbc/class_c_n_t_v2_driver_interface.html#a5281b8689692b78100fc283e43fecfa1", null ],
     [ "ResumeRecordRegisterWrites", "d0/dbc/class_c_n_t_v2_driver_interface.html#a519f75b53559e1f7b47e3c9f505236d8", null ],
+    [ "setDeviceIndexNumber", "d0/dbc/class_c_n_t_v2_driver_interface.html#a1d6a40221fc9be16f98304c8da10ad47", null ],
     [ "SetInterruptEventCount", "d0/dbc/class_c_n_t_v2_driver_interface.html#ac82a65429ba069196b34f46bbdd72960", null ],
     [ "SetOverlappedMode", "d0/dbc/class_c_n_t_v2_driver_interface.html#a1098e959c5d20b3591aa5e2808c39298", null ],
     [ "SetShareMode", "d0/dbc/class_c_n_t_v2_driver_interface.html#a850deed937e1ac6351c55fffaa5308fd", null ],

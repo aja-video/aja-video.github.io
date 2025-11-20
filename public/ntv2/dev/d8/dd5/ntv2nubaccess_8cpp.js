@@ -3,7 +3,6 @@ var ntv2nubaccess_8cpp =
     [ "NTV2Plugin", "d0/df0/class_n_t_v2_plugin.html", "d0/df0/class_n_t_v2_plugin" ],
     [ "PluginRegistry", "d6/d20/class_plugin_registry.html", "d6/d20/class_plugin_registry" ],
     [ "NTV2PluginLoader", "d1/dfe/class_n_t_v2_plugin_loader.html", "d1/dfe/class_n_t_v2_plugin_loader" ],
-    [ "_DEBUGSTATS_", "d8/dd5/ntv2nubaccess_8cpp.html#a6958e20a778ceb48b85c124f87e55367", null ],
     [ "DLL_EXTENSION", "d8/dd5/ntv2nubaccess_8cpp.html#aa3b847c06b838310ab25f398f8c4644e", null ],
     [ "FIRMWARE_FOLDER", "d8/dd5/ntv2nubaccess_8cpp.html#a6a9efe438bdbd5da4e4820f2ad84b851", null ],
     [ "INSTP", "d8/dd5/ntv2nubaccess_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5", null ],

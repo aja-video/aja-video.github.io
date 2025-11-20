@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2513</span>
+   &#160;<span id="projectnumber">18.0.0.2703</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2513</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2703</div>
   </td>
  </tr>
  </tbody>
@@ -514,6 +514,9 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 <li>RefreshDisplayType()
 : <a class="el" href="d2/d2a/class_c_image_display.html#a8a807d262e222fe055cd4dcbca0d7f1c">CImageDisplay</a>
 </li>
+<li>regInfos()
+: <a class="el" href="d2/d53/class_n_t_v2_set_registers.html#a0d375178d5bf828eae840372ad3c579a">NTV2SetRegisters</a>
+</li>
 <li>Register()
 : <a class="el" href="d5/d74/class_c_base_filter.html#af27031a23cd2ace418ff039b2dd827f8">CBaseFilter</a>
 </li>
@@ -696,11 +699,14 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 : <a class="el" href="df/d1e/class_a_j_a_time_code_burn.html#aea64fab90814c2ef122d48c27d8d2db2">AJATimeCodeBurn</a>
 </li>
 <li>Report()
-: <a class="el" href="db/d56/class_a_j_a_debug.html#a97950e7235ee990ed3502ef59adae9ca">AJADebug</a>
+: <a class="el" href="db/d56/class_a_j_a_debug.html#a1516564a30573c6a32c8699fc204bbf0">AJADebug</a>
 , <a class="el" href="dd/d43/class_a_j_a_performance.html#a6752bed7bdde19f0c6faf79fe72eb950">AJAPerformance</a>
 </li>
 <li>RequestDeviceChange()
 : <a class="el" href="dc/d3f/class_n_t_v2_qt_multi_input.html#af92356bff157539615609f7034d3ed16">NTV2QtMultiInput</a>
+</li>
+<li>requestedRegisterNumbers()
+: <a class="el" href="d1/dfc/class_n_t_v2_get_registers.html#a2b0d7c3aee60d2b808620f1e3390ddd1">NTV2GetRegisters</a>
 </li>
 <li>require_input_iter
 : <a class="el" href="da/dca/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_56c8ff605660db4fcdd1a6d47784ec6d.html#a87a33f8af02b85fb249b428d1a7c69ca">nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;</a>
@@ -854,7 +860,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 : <a class="el" href="dd/d37/class_a_j_a_run_time_average.html#a48ce2593bd8b8b14f4ca549cf8730ac1">AJARunTimeAverage</a>
 </li>
 <li>ResetUsing()
-: <a class="el" href="d1/dfc/class_n_t_v2_get_registers.html#aa1356c2f337dc7ca635302b117f75486">NTV2GetRegisters</a>
+: <a class="el" href="d1/dfc/class_n_t_v2_get_registers.html#a581f7c8bd022cb2b1889aa38faed3ea3">NTV2GetRegisters</a>
 , <a class="el" href="d2/d53/class_n_t_v2_set_registers.html#a080bb340892499cd0a146720ddc31775">NTV2SetRegisters</a>
 </li>
 <li>Resize()
@@ -1276,7 +1282,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 1 2025 07:39:37 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 19 2025 16:37:02 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

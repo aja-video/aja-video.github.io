@@ -895,5 +895,6 @@ var class_c_n_t_v2_card =
     [ "WriteSDProcAmpControlsInitialized", "d7/dfb/class_c_n_t_v2_card.html#a251e9a99c3acf7c2d0d3f6c7638e10ef", null ],
     [ "WriteSDSaturationAdjustment", "d7/dfb/class_c_n_t_v2_card.html#acb3148eb423131beb89a849b65220f10", null ],
     [ "WriteVirtualData", "d7/dfb/class_c_n_t_v2_card.html#a197d995020f54eaba52cef4788684ea7", null ],
+    [ "CNTV2DeviceScanner", "d7/dfb/class_c_n_t_v2_card.html#a32aefa13f6acc910552c7a29858306bd", null ],
     [ "NULL_POINTER", "d7/dfb/class_c_n_t_v2_card.html#a7aba54f27fc6a25b6b85ca98707e684f", null ]
 ];

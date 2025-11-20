@@ -7,5 +7,5 @@ var class_a_j_a_memory =
     [ "AllocateShared", "d9/dfd/class_a_j_a_memory.html#aad5bfaa3249414342d334d8cf3205af9", null ],
     [ "Free", "d9/dfd/class_a_j_a_memory.html#a5de7b9505eec5249d99f19e856de955b", null ],
     [ "FreeAligned", "d9/dfd/class_a_j_a_memory.html#a625e05eea4dcb358ab53c312995c0bac", null ],
-    [ "FreeShared", "d9/dfd/class_a_j_a_memory.html#a6b0e5afd9dce41277023979ca26a3d51", null ]
+    [ "FreeShared", "d9/dfd/class_a_j_a_memory.html#a4e34092ef11274fff25d9b44f1db84bf", null ]
 ];

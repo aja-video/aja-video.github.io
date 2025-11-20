@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d1/d80/class_c_transform_output_pin.html#a4ae5c27da73801742c4b3f1c4f5631e5":[8,0,268,15],
 "d1/d80/class_c_transform_output_pin.html#a5117a3c3fe52d9b44516691a126c2544":[8,0,268,2],
 "d1/d80/class_c_transform_output_pin.html#a8c53a7ffcc30d5584c6506c2e6a225ff":[8,0,268,1],
 "d1/d80/class_c_transform_output_pin.html#a925ac38c0502c94614a558f8f4789b16":[8,0,268,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d1/dc5/ntv2devops.html#vidop-sdiin":[0,2,1,1,1],
 "d1/dc5/ntv2devops.html#vidop-sdiout":[0,2,1,1,2],
 "d1/dc5/ntv2devops.html#vidop-section":[0,2,2],
-"d1/dc5/ntv2devops.html#vidop-signalio":[0,2,1],
-"d1/dc5/ntv2devops.html#vidop-widgets":[0,2,0,2]
+"d1/dc5/ntv2devops.html#vidop-signalio":[0,2,1]
 };

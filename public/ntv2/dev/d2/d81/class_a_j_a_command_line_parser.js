@@ -24,6 +24,7 @@ var class_a_j_a_command_line_parser =
     [ "Parse", "d2/d81/class_a_j_a_command_line_parser.html#a413973fc3e0728a9f00d8990a2248192", null ],
     [ "PositionalArgs", "d2/d81/class_a_j_a_command_line_parser.html#ae3b4090e5a10aa24198e7aef33eb5f10", null ],
     [ "Reset", "d2/d81/class_a_j_a_command_line_parser.html#a97327dbd57bbe23745e6edf3083d1fe4", null ],
+    [ "SetFlags", "d2/d81/class_a_j_a_command_line_parser.html#a7061a050b14c4e95fc1b3aa5b4d86311", null ],
     [ "SetHelpText", "d2/d81/class_a_j_a_command_line_parser.html#a8ad879ad5878fa71851ab629512271e1", null ],
     [ "SetUsageText", "d2/d81/class_a_j_a_command_line_parser.html#a3b591019bab6eac2ce7ae7909da3894e", null ],
     [ "UsageText", "d2/d81/class_a_j_a_command_line_parser.html#a3f6135f51422ac102853dbc9e1a54f91", null ],

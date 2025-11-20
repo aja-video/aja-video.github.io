@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2513</span>
+   &#160;<span id="projectnumber">18.0.0.2703</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2513</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2703</div>
   </td>
  </tr>
  </tbody>
@@ -452,7 +452,7 @@ $(document).ready(function(){initNavTree('dd/d55/options__popt_8cpp_source.html'
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">goto</span> exit;</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">if</span> ((file.<a class="code" href="../../dd/d63/class_a_j_a_file_i_o.html#a009b6d1fa0dc3fedde2d4893a8c598e4">Seek</a>(0, <a class="code" href="../../db/db8/file__io_8h.html#af9858fcf764e199e950c020476aa72dbab4fb841357ef5503972b32e4b905bc1a">eAJASeekEnd</a>)) != <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;     || (nb = file.<a class="code" href="../../dd/d63/class_a_j_a_file_i_o.html#ac92446f17630f038bf76235e3c9976c2">Tell</a>()) == (off_t)-1</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;     || (nb = (off_t)file.<a class="code" href="../../dd/d63/class_a_j_a_file_i_o.html#ac92446f17630f038bf76235e3c9976c2">Tell</a>()) == (off_t)-1</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;     || file.<a class="code" href="../../dd/d63/class_a_j_a_file_i_o.html#a009b6d1fa0dc3fedde2d4893a8c598e4">Seek</a>(0, <a class="code" href="../../db/db8/file__io_8h.html#af9858fcf764e199e950c020476aa72dbaf8afef8b16948e1fb80c6c5192e121e0">eAJASeekSet</a>) != <a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#gga7ae9216ddf243580f7a96ec669f09766a293ed06cb5a32b74901731f737faf791">AJA_STATUS_SUCCESS</a></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;     || (b = (<span class="keywordtype">char</span>*)calloc(<span class="keyword">sizeof</span>(*b), (<span class="keywordtype">size_t</span>)nb + 1)) == <a class="code" href="../../db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;     || file.<a class="code" href="../../dd/d63/class_a_j_a_file_i_o.html#aeb86fd2ea18bf849ec070b5a02206abc">Read</a>((uint8_t *)b, (uint32_t)nb) != (uint32_t)nb)</div>
@@ -3878,7 +3878,7 @@ $(document).ready(function(){initNavTree('dd/d55/options__popt_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_8f3154ce023319d0c7e8bb4441cab51f.html">common</a></li><li class="navelem"><a class="el" href="../../dd/d55/options__popt_8cpp.html">options_popt.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 1 2025 07:39:26 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 19 2025 16:36:46 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

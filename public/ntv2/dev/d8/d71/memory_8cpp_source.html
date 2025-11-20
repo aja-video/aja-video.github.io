@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2513</span>
+   &#160;<span id="projectnumber">18.0.0.2703</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2513</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2703</div>
   </td>
  </tr>
  </tbody>
@@ -448,8 +448,8 @@ $(document).ready(function(){initNavTree('d8/d71/memory_8cpp_source.html','../..
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keywordtype">void</span> </div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="../../d9/dfd/class_a_j_a_memory.html#a6b0e5afd9dce41277023979ca26a3d51">  366</a></span>&#160;<a class="code" href="../../d9/dfd/class_a_j_a_memory.html#a6b0e5afd9dce41277023979ca26a3d51">AJAMemory::FreeShared</a>(<span class="keywordtype">void</span>* pMemory)</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="../../d9/dfd/class_a_j_a_memory.html#a4e34092ef11274fff25d9b44f1db84bf">  366</a></span>&#160;<a class="code" href="../../d9/dfd/class_a_j_a_memory.html#a4e34092ef11274fff25d9b44f1db84bf">AJAMemory::FreeShared</a>(<span class="keywordtype">void</span>* pMemory)</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="code" href="../../db/d7e/class_a_j_a_auto_lock.html">AJAAutoLock</a> lock(&amp;<a class="code" href="../../d8/d71/memory_8cpp.html#a55207c9aeacb0b11a3c9761f7289f319">sSharedLock</a>);</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
@@ -468,22 +468,25 @@ $(document).ready(function(){initNavTree('d8/d71/memory_8cpp_source.html','../..
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#elif defined(AJA_BAREMETAL)</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">// TODO</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                munmap(shareIter-&gt;pMemory, shareIter-&gt;memorySize);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                close(shareIter-&gt;fileDescriptor);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                <span class="comment">// This is ugly. If we call shm_unlink, then the shared file name will</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                <span class="comment">// be removed from /dev/shm, and future calls to shm_open will create a</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="comment">// different memory share.  Will there be a problem with multiple calls</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                <span class="comment">// to shm_open with no intervening calls to shm_unlink?  Time will tell.</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">//              shm_unlink(shareIter-&gt;shareName.c_str());</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <a class="code" href="../../d8/d71/memory_8cpp.html#a586e7ea6f064eb4cecf1b2fca0d50fd5">sSharedList</a>.erase(shareIter);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            }</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    }</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="../../db/df7/group___a_j_a_group_macro.html#ga4180d0ecb3fbf11a9316d2eefddf7a2d">AJA_REPORT</a>(0, <a class="code" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138dab476e3258a7b7190f1b93c1e87a26d87">AJA_DebugSeverity_Error</a>, <span class="stringliteral">&quot;AJAMemory::FreeShared  memory not found&quot;</span> <span class="comment">/*, pMemory*/</span>);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <span class="keywordtype">int</span> rc = munmap(shareIter-&gt;pMemory, shareIter-&gt;memorySize);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                <span class="keywordflow">if</span> (rc)</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                    <a class="code" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(0, <a class="code" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138dab476e3258a7b7190f1b93c1e87a26d87">AJA_DebugSeverity_Error</a>, <span class="stringliteral">&quot;AJAMemory::FreeShared &#39;&quot;</span> &lt;&lt; shareIter-&gt;shareName &lt;&lt; <span class="stringliteral">&quot;&#39;: &#39;munmap&#39; failed, error=&quot;</span> &lt;&lt; rc);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                rc = close(shareIter-&gt;fileDescriptor);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="keywordflow">if</span> (rc)</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                    <a class="code" href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a>(0, <a class="code" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138dab476e3258a7b7190f1b93c1e87a26d87">AJA_DebugSeverity_Error</a>, <span class="stringliteral">&quot;AJAMemory::FreeShared &#39;&quot;</span> &lt;&lt; shareIter-&gt;shareName &lt;&lt; <span class="stringliteral">&quot;&#39;: &#39;close&#39; failed, error=&quot;</span> &lt;&lt; rc);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                <span class="comment">//  rc = shm_unlink(shareIter-&gt;shareName.c_str());</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                <span class="comment">//  The call to &quot;shm_unlink&quot; is disabled on purpose, because active clients using this</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="comment">//  shared memory might still be using it. Therefore, some other entity will have to</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                <span class="comment">//  remove the backing file from /dev/shm after all other shared clients have terminated.</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                <a class="code" href="../../d8/d71/memory_8cpp.html#a586e7ea6f064eb4cecf1b2fca0d50fd5">sSharedList</a>.erase(shareIter);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor">#endif  //  else Linux &amp; Mac</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <a class="code" href="../../db/df7/group___a_j_a_group_macro.html#ga4180d0ecb3fbf11a9316d2eefddf7a2d">AJA_REPORT</a>(0, <a class="code" href="../../d0/db4/debugshare_8h.html#a682fe315d53318b2768f04d3dff0138dab476e3258a7b7190f1b93c1e87a26d87">AJA_DebugSeverity_Error</a>, <span class="stringliteral">&quot;AJAMemory::FreeShared  memory not found&quot;</span> <span class="comment">/*, pMemory*/</span>);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_shared_data_html_a70223b05adaaeae34d968192ec3960c6"><div class="ttname"><a href="../../da/da1/struct_shared_data.html#a70223b05adaaeae34d968192ec3960c6">SharedData::pMemory</a></div><div class="ttdeci">void * pMemory</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d71/memory_8cpp_source.html#l00031">memory.cpp:31</a></div></div>
@@ -498,10 +501,11 @@ $(document).ready(function(){initNavTree('d8/d71/memory_8cpp_source.html','../..
 <div class="ttc" id="alock_8h_html"><div class="ttname"><a href="../../dd/d42/lock_8h.html">lock.h</a></div><div class="ttdoc">Declares the AJALock class.</div></div>
 <div class="ttc" id="aclass_a_j_a_memory_html_aad5bfaa3249414342d334d8cf3205af9"><div class="ttname"><a href="../../d9/dfd/class_a_j_a_memory.html#aad5bfaa3249414342d334d8cf3205af9">AJAMemory::AllocateShared</a></div><div class="ttdeci">static void * AllocateShared(size_t *size, const char *pShareName, bool global=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d71/memory_8cpp_source.html#l00169">memory.cpp:169</a></div></div>
 <div class="ttc" id="aclass_a_j_a_memory_html_a553dac19f4079389e78bee6dbbb61a05"><div class="ttname"><a href="../../d9/dfd/class_a_j_a_memory.html#a553dac19f4079389e78bee6dbbb61a05">AJAMemory::Allocate</a></div><div class="ttdeci">static void * Allocate(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d71/memory_8cpp_source.html#l00071">memory.cpp:71</a></div></div>
+<div class="ttc" id="aclass_a_j_a_memory_html_a4e34092ef11274fff25d9b44f1db84bf"><div class="ttname"><a href="../../d9/dfd/class_a_j_a_memory.html#a4e34092ef11274fff25d9b44f1db84bf">AJAMemory::FreeShared</a></div><div class="ttdeci">static bool FreeShared(void *pMemory)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d71/memory_8cpp_source.html#l00366">memory.cpp:366</a></div></div>
 <div class="ttc" id="agroup___a_j_a_group_macro_html_ga4180d0ecb3fbf11a9316d2eefddf7a2d"><div class="ttname"><a href="../../db/df7/group___a_j_a_group_macro.html#ga4180d0ecb3fbf11a9316d2eefddf7a2d">AJA_REPORT</a></div><div class="ttdeci">#define AJA_REPORT(_index_, _severity_, _format_,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d16/debug_8h_source.html#l00117">debug.h:117</a></div></div>
 <div class="ttc" id="antv2vcam_8cpp_html_a53506e7ff16d58943562bee552dfdb22"><div class="ttname"><a href="../../d5/d74/ntv2vcam_8cpp.html#a53506e7ff16d58943562bee552dfdb22">retVal</a></div><div class="ttdeci">else retVal</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d74/ntv2vcam_8cpp_source.html#l01100">ntv2vcam.cpp:1100</a></div></div>
-<div class="ttc" id="aclass_a_j_a_memory_html_a6b0e5afd9dce41277023979ca26a3d51"><div class="ttname"><a href="../../d9/dfd/class_a_j_a_memory.html#a6b0e5afd9dce41277023979ca26a3d51">AJAMemory::FreeShared</a></div><div class="ttdeci">static void FreeShared(void *pMemory)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d71/memory_8cpp_source.html#l00366">memory.cpp:366</a></div></div>
 <div class="ttc" id="aclass_a_j_a_lock_html"><div class="ttname"><a href="../../d9/df4/class_a_j_a_lock.html">AJALock</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/lock_8h_source.html#l00028">lock.h:28</a></div></div>
+<div class="ttc" id="agroup___a_j_a_group_macro_html_ga457ee0f82b0893e384eacd1d1a566c1c"><div class="ttname"><a href="../../db/df7/group___a_j_a_group_macro.html#ga457ee0f82b0893e384eacd1d1a566c1c">AJA_sREPORT</a></div><div class="ttdeci">#define AJA_sREPORT(_index_, _severity_, _expr_)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d16/debug_8h_source.html#l00141">debug.h:141</a></div></div>
 <div class="ttc" id="aclass_a_j_a_auto_lock_html"><div class="ttname"><a href="../../db/d7e/class_a_j_a_auto_lock.html">AJAAutoLock</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/lock_8h_source.html#l00089">lock.h:89</a></div></div>
 <div class="ttc" id="asystem_8h_html"><div class="ttname"><a href="../../dc/db2/system_8h.html">system.h</a></div><div class="ttdoc">System specific functions.</div></div>
 <div class="ttc" id="amemory_8cpp_html_a55207c9aeacb0b11a3c9761f7289f319"><div class="ttname"><a href="../../d8/d71/memory_8cpp.html#a55207c9aeacb0b11a3c9761f7289f319">sSharedLock</a></div><div class="ttdeci">static AJALock sSharedLock</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d71/memory_8cpp_source.html#l00055">memory.cpp:55</a></div></div>
@@ -520,7 +524,7 @@ $(document).ready(function(){initNavTree('d8/d71/memory_8cpp_source.html','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_2a5fa578bf70f724f924d7f0ed01f20c.html">system</a></li><li class="navelem"><a class="el" href="../../d8/d71/memory_8cpp.html">memory.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 1 2025 07:39:27 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 19 2025 16:36:46 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2513</span>
+   &#160;<span id="projectnumber">18.0.0.2703</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2513</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2703</div>
   </td>
  </tr>
  </tbody>
@@ -148,9 +148,9 @@ $(document).ready(function(){initNavTree('df/d1b/event_8cpp_source.html','../../
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d6/da4/class_a_j_a_event.html#a87ddc4377aae1c1a79f8827e81acd14b">   66</a></span>&#160;<a class="code" href="../../d6/da4/class_a_j_a_event.html#a87ddc4377aae1c1a79f8827e81acd14b">AJAEvent::GetState</a>(<span class="keywordtype">bool</span>* pSignaled)</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d6/da4/class_a_j_a_event.html#a93a34f2c9eb49fe6c423fff781fe8227">   66</a></span>&#160;<a class="code" href="../../d6/da4/class_a_j_a_event.html#a93a34f2c9eb49fe6c423fff781fe8227">AJAEvent::GetState</a>(<span class="keywordtype">bool</span> &amp; outSignaled)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> mpImpl-&gt;<a class="code" href="../../df/d5c/class_a_j_a_event_impl.html#aa53716db6d8485377060b4c070371e2d">GetState</a>(pSignaled);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> mpImpl-&gt;<a class="code" href="../../df/d5c/class_a_j_a_event_impl.html#aa53716db6d8485377060b4c070371e2d">GetState</a>(&amp;outSignaled);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
@@ -196,7 +196,6 @@ $(document).ready(function(){initNavTree('df/d1b/event_8cpp_source.html','../../
 <div class="ttc" id="aclass_a_j_a_event_impl_html_aa53716db6d8485377060b4c070371e2d"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#aa53716db6d8485377060b4c070371e2d">AJAEventImpl::GetState</a></div><div class="ttdeci">AJAStatus GetState(bool *pSignaled)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00090">eventimpl.cpp:90</a></div></div>
 <div class="ttc" id="aclass_a_j_a_event_impl_html_ac517532d081854418391912c12d010e0"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#ac517532d081854418391912c12d010e0">AJAEventImpl::SetState</a></div><div class="ttdeci">AJAStatus SetState(bool signaled=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00072">eventimpl.cpp:72</a></div></div>
 <div class="ttc" id="aclass_a_j_a_event_html_acad098043f91dfdfb7496912738e3ee7"><div class="ttname"><a href="../../d6/da4/class_a_j_a_event.html#acad098043f91dfdfb7496912738e3ee7">AJAEvent::AJAEvent</a></div><div class="ttdeci">AJAEvent(bool manualReset=true, const std::string &amp;name=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d1b/event_8cpp_source.html#l00025">event.cpp:25</a></div></div>
-<div class="ttc" id="aclass_a_j_a_event_html_a87ddc4377aae1c1a79f8827e81acd14b"><div class="ttname"><a href="../../d6/da4/class_a_j_a_event.html#a87ddc4377aae1c1a79f8827e81acd14b">AJAEvent::GetState</a></div><div class="ttdeci">virtual AJAStatus GetState(bool *pSignaled)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d1b/event_8cpp_source.html#l00066">event.cpp:66</a></div></div>
 <div class="ttc" id="aclass_a_j_a_event_impl_html_a39033e72c0e3bef1505a491d0d4f0ab4"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#a39033e72c0e3bef1505a491d0d4f0ab4">AJAEventImpl::GetEventObject</a></div><div class="ttdeci">virtual AJAStatus GetEventObject(uint64_t *pEventObject)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00176">eventimpl.cpp:176</a></div></div>
 <div class="ttc" id="aclass_a_j_a_event_impl_html_a88064fe44d50c69e6ad8a0459963d624"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#a88064fe44d50c69e6ad8a0459963d624">AJAEventImpl::WaitForSignal</a></div><div class="ttdeci">AJAStatus WaitForSignal(uint32_t timeout=0xffffffff)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00121">eventimpl.cpp:121</a></div></div>
 <div class="ttc" id="aclass_a_j_a_event_html_a63653e0106bc422bbd4fc2d8470f466a"><div class="ttname"><a href="../../d6/da4/class_a_j_a_event.html#a63653e0106bc422bbd4fc2d8470f466a">AJAEvent::GetEventObject</a></div><div class="ttdeci">virtual AJAStatus GetEventObject(uint64_t *pEventObject)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d1b/event_8cpp_source.html#l00094">event.cpp:94</a></div></div>
@@ -204,6 +203,7 @@ $(document).ready(function(){initNavTree('df/d1b/event_8cpp_source.html','../../
 <div class="ttc" id="aclass_a_j_a_event_impl_html_a5ab21ed8a65bdc30a94330b8d98bb2f9"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#a5ab21ed8a65bdc30a94330b8d98bb2f9">AJAEventImpl::GetManualReset</a></div><div class="ttdeci">AJAStatus GetManualReset(bool *pManualReset)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00108">eventimpl.cpp:108</a></div></div>
 <div class="ttc" id="amac_2eventimpl_8h_html"><div class="ttname"><a href="../../d2/d0e/mac_2eventimpl_8h.html">eventimpl.h</a></div><div class="ttdoc">Declares the AJAEventImpl class.</div></div>
 <div class="ttc" id="aclass_a_j_a_event_impl_html_aa6d54295444b76abf8bc5e20a8b41b75"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#aa6d54295444b76abf8bc5e20a8b41b75">AJAEventImpl::SetManualReset</a></div><div class="ttdeci">AJAStatus SetManualReset(bool manualReset)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00100">eventimpl.cpp:100</a></div></div>
+<div class="ttc" id="aclass_a_j_a_event_html_a93a34f2c9eb49fe6c423fff781fe8227"><div class="ttname"><a href="../../d6/da4/class_a_j_a_event.html#a93a34f2c9eb49fe6c423fff781fe8227">AJAEvent::GetState</a></div><div class="ttdeci">virtual AJAStatus GetState(bool &amp;outSignaled)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d1b/event_8cpp_source.html#l00066">event.cpp:66</a></div></div>
 <div class="ttc" id="aclass_a_j_a_event_impl_html_a04b75daf1956d5f112f85518987ad649"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#a04b75daf1956d5f112f85518987ad649">AJAEventImpl::Clear</a></div><div class="ttdeci">AJAStatus Clear(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00063">eventimpl.cpp:63</a></div></div>
 <div class="ttc" id="aclass_a_j_a_event_impl_html_a63f460c2a0e1f9b899e246c31a78f4c8"><div class="ttname"><a href="../../df/d5c/class_a_j_a_event_impl.html#a63f460c2a0e1f9b899e246c31a78f4c8">AJAEventImpl::Signal</a></div><div class="ttdeci">AJAStatus Signal(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/bm_2eventimpl_8cpp_source.html#l00039">eventimpl.cpp:39</a></div></div>
 <div class="ttc" id="awindows_2eventimpl_8h_html"><div class="ttname"><a href="../../d6/de7/windows_2eventimpl_8h.html">eventimpl.h</a></div><div class="ttdoc">Declares the AJAEventImpl class.</div></div>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('df/d1b/event_8cpp_source.html','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_e87eb6ce74e63cd1183c59eb94e728a6.html">ajabase</a></li><li class="navelem"><a class="el" href="../../dir_2a5fa578bf70f724f924d7f0ed01f20c.html">system</a></li><li class="navelem"><a class="el" href="../../df/d1b/event_8cpp.html">event.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 1 2025 07:39:27 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 19 2025 16:36:46 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -275,7 +275,7 @@ var searchData=
   ['freedatamemory_4029',['FreeDataMemory',['../dd/de8/class_a_j_a_ancillary_data.html#a2c264b4db7d79cccf907c5484ad02b45',1,'AJAAncillaryData']]],
   ['freemediatype_4030',['FreeMediaType',['../d3/d92/mtype_8cpp.html#a96c535c5cb65623d25cc8b7e1e28c213',1,'FreeMediaType(__inout AM_MEDIA_TYPE &amp;mt):&#160;mtype.cpp'],['../d6/d3f/mtype_8h.html#a96c535c5cb65623d25cc8b7e1e28c213',1,'FreeMediaType(__inout AM_MEDIA_TYPE &amp;mt):&#160;mtype.cpp']]],
   ['freesamples_4031',['FreeSamples',['../dc/df8/class_c_output_queue.html#a35806f9e33d9f2e518bb9dd48b4c0ace',1,'COutputQueue']]],
-  ['freeshared_4032',['FreeShared',['../d9/dfd/class_a_j_a_memory.html#a6b0e5afd9dce41277023979ca26a3d51',1,'AJAMemory']]],
+  ['freeshared_4032',['FreeShared',['../d9/dfd/class_a_j_a_memory.html#a4e34092ef11274fff25d9b44f1db84bf',1,'AJAMemory']]],
   ['frmmixcfginfoe_4033',['frmmixcfginfoe',['../df/de4/struct_n_t_v2_dolby_player_1_1_n_t_v2_dolby_b_s_i.html#ad948488d54b1e520b8070f4f5211d1b8',1,'NTV2DolbyPlayer::NTV2DolbyBSI']]],
   ['frmsiz_4034',['frmsiz',['../df/de4/struct_n_t_v2_dolby_player_1_1_n_t_v2_dolby_b_s_i.html#a6c72874f901830e1f41a2b6ca59bcbf9',1,'NTV2DolbyPlayer::NTV2DolbyBSI']]],
   ['frmsizecod_4035',['frmsizecod',['../df/de4/struct_n_t_v2_dolby_player_1_1_n_t_v2_dolby_b_s_i.html#a25bcccc4a41a888a07999ed385751272',1,'NTV2DolbyPlayer::NTV2DolbyBSI']]],

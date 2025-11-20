@@ -8,6 +8,7 @@ var class_n_t_v2_device_spec_parser =
     [ "InfoString", "d3/d9a/class_n_t_v2_device_spec_parser.html#afa2aff738a95e3ed0c05818f389c84a0", null ],
     [ "MakeDeviceSpec", "d3/d9a/class_n_t_v2_device_spec_parser.html#ac49b831c7877da8396d0b68cd12aad02", null ],
     [ "MakeQueryString", "d3/d9a/class_n_t_v2_device_spec_parser.html#a72e05f9fd194ae0aeb8b0f217b8ece34", null ],
+    [ "ParseQueryParams", "d3/d9a/class_n_t_v2_device_spec_parser.html#ab43ee6b72453b01b519d4d15f91e2c63", null ],
     [ "Print", "d3/d9a/class_n_t_v2_device_spec_parser.html#aff1aa75fbcc467efba2edaef75f24298", null ],
     [ "PrintErrors", "d3/d9a/class_n_t_v2_device_spec_parser.html#a5259418edecf70840a93936c21dc2ad5", null ],
     [ "Reset", "d3/d9a/class_n_t_v2_device_spec_parser.html#ab24b1ad6492cad3cd35ebbc6821546fd", null ],
