@@ -4,7 +4,7 @@ Welcome to the home of AJA’s SDK and technical documentation.
 
 ## NTV2 SDK Documentation
 
-“NTV2” is the developer-facing name for AJA’s family of desktop and mobile video I/O devices (i.e. KONA™, Io™, T-Tap™ Pro, Corvid™, …etc…).\
+“NTV2” is the developer-facing name for AJA’s family of desktop and mobile video I/O devices (i.e. KONA™, Io™, T-Tap™ Pro, Corvid™, …etc…).
 
 The NTV2 SDK is open-source, and available [**here on GitHub**](https://github.com/aja-video/libajantv2).
 
@@ -12,13 +12,13 @@ Documentation for current and past SDK releases — plus the latest ongoing deve
 
 - **Releases:**
   - ⭐ [__Latest__](/public/ntv2/current/)
-  - [17.6.0 Release](/public/ntv2/17_6_0/)
-  - [17.5.0 Release](/public/ntv2/17_5_0/)
-  - [17.1.3 Release](/public/ntv2/17_1_3/)
-  - [17.1.0 Release](/public/ntv2/17_1_0/)
-  - [17.0.1 Release](/public/ntv2/17_0_1/)
+  - [17.6.0](/public/ntv2/17_6_0/)
+  - [17.5.0](/public/ntv2/17_5_0/)
+  - [17.1.3](/public/ntv2/17_1_3/)
+  - [17.1.0](/public/ntv2/17_1_0/)
+  - [17.0.1](/public/ntv2/17_0_1/)
 - **New:**
-  - 🛠 [17.6.0 Release](/public/ntv2/17_6_0/)
+  - 🛠 [17.6.0](/public/ntv2/17_6_0/)
   - 🛠 [Development](/public/ntv2/dev/) (“beta”)
 
 ### NTV2 SDK Knowledgebase
