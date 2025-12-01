@@ -28,9 +28,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.0.0.2703</span>
+   &#160;<span id="projectnumber">18.0.0.2717</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.0.0.2703</div>
+   <div id="projectbrief">NTV2 SDK 18.0.0.2717</div>
   </td>
  </tr>
  </tbody>
@@ -515,7 +515,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method reserves exclusive use of the AJA device by the given running host process. The AJA device records both the "process ID" and "four CC". If another host process has already reserved the device, this function will fail. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27ea" title="Describes the task mode state. See also: Sharing AJA Devices With Other Applications.">NTV2EveryFrameTaskMode</a> when this function is called, and restoring it after <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a> is called. </dd>
+<p>This method reserves exclusive use of the AJA device by the given running host process. The AJA device records both the "process ID" and "four CC". If another host process has already reserved the device, this function will fail. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2" title="Describes the task mode state. See also: Sharing AJA Devices With Other Applications.">NTV2TaskMode</a> when this function is called, and restoring it after <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a> is called. </dd>
 <dd>
 A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> should always be balanced by a call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a>. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
@@ -1139,7 +1139,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000301">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00281">281</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1257,7 +1257,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00293">293</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1296,7 +1296,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000302">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00358">358</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1325,7 +1325,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00316">316</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1354,7 +1354,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00337">337</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1541,7 +1541,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </table>
   </dd>
 </dl>
-<p>This method will fail if the specified application type or process ID values don't match those used in the previous call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27ea" title="Describes the task mode state. See also: Sharing AJA Devices With Other Applications.">NTV2EveryFrameTaskMode</a> at the time <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> is called, and restoring it after releasing the device. </dd></dl>
+<p>This method will fail if the specified application type or process ID values don't match those used in the previous call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2" title="Describes the task mode state. See also: Sharing AJA Devices With Other Applications.">NTV2TaskMode</a> at the time <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> is called, and restoring it after releasing the device. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097">CNTV2DriverInterface</a>.</p>
@@ -1715,7 +1715,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00377">377</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1744,7 +1744,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00306">306</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1773,7 +1773,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00328">328</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1802,7 +1802,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1954,7 +1954,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html">CNTV2MacDriverInterface</a></li>
-    <li class="footer">Generated on Wed Nov 19 2025 16:36:57 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Nov 26 2025 11:13:21 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

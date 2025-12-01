@@ -117,7 +117,7 @@ var searchData=
   ['dmabufferlock_24456',['DMABufferLock',['../d7/dfb/class_c_n_t_v2_card.html#a0fec96a75fa2416dc323c010ed8666f3',1,'CNTV2Card::DMABufferLock(const NTV2Buffer &amp;inBuffer, bool inMap=(0), bool inRDMA=(0))'],['../d7/dfb/class_c_n_t_v2_card.html#a1d13e75c604f91419b5196135eea6958',1,'CNTV2Card::DMABufferLock(const ULWord *pInBuffer, const ULWord inByteCount, bool inMap=(0), bool inRDMA=(0))'],['../d5/d74/ntv2vcam_8cpp.html#a8bc3a8db177a4df9c92d151c7d5b5640',1,'DMABufferLock():&#160;ntv2vcam.cpp']]],
   ['dmabufferunlock_24457',['DMABufferUnlock',['../d7/dfb/class_c_n_t_v2_card.html#a955ab57f0ac21cad21bc085ea66c76a7',1,'CNTV2Card::DMABufferUnlock(const NTV2Buffer &amp;inBuffer)'],['../d7/dfb/class_c_n_t_v2_card.html#a64e9c36500cf140badf199225a8080c0',1,'CNTV2Card::DMABufferUnlock(const ULWord *pInBuffer, const ULWord inByteCount)']]],
   ['dmabufferunlockall_24458',['DMABufferUnlockAll',['../d7/dfb/class_c_n_t_v2_card.html#ad57968e08cadead0f9b8115d59ed8797',1,'CNTV2Card']]],
-  ['dmaclearancregion_24459',['DMAClearAncRegion',['../d7/dfb/class_c_n_t_v2_card.html#a85a04296b00cc98fcb4702fba603d47e',1,'CNTV2Card']]],
+  ['dmaclearancregion_24459',['DMAClearAncRegion',['../d7/dfb/class_c_n_t_v2_card.html#a32123f848e7692fe74976c1ff85f09c7',1,'CNTV2Card']]],
   ['dmap2ptargetframe_24460',['DmaP2PTargetFrame',['../d7/dfb/class_c_n_t_v2_card.html#afd7e592a8b857c6eadfcb99b9153c0ad',1,'CNTV2Card']]],
   ['dmap2ptransferframe_24461',['DmaP2PTransferFrame',['../d7/dfb/class_c_n_t_v2_card.html#a4e1e806f0073e825720cd79c5c794954',1,'CNTV2Card']]],
   ['dmaread_24462',['DMARead',['../d7/dfb/class_c_n_t_v2_card.html#acaaf1e46f56cd4189e3c861249d4a564',1,'CNTV2Card']]],

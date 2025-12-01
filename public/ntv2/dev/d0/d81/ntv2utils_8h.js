@@ -227,7 +227,7 @@ var ntv2utils_8h =
     [ "NTV2RegNumSetToString", "d0/d81/ntv2utils_8h.html#a77bef842108e72272c938bb8ba43d6c8", null ],
     [ "NTV2ScanMethodToString", "d0/d81/ntv2utils_8h.html#af7f3f3ee1a0c2c9d6d6c379bccce6947", null ],
     [ "NTV2StandardToString", "d0/d81/ntv2utils_8h.html#aaf9f8d68450539ef64ae33d206547809", null ],
-    [ "NTV2TaskModeToString", "d0/d81/ntv2utils_8h.html#a3f1ec6b17ab88cbcd074126451a75b5d", null ],
+    [ "NTV2TaskModeToString", "d0/d81/ntv2utils_8h.html#a8ff3b63abc68cfe225758151a3950901", null ],
     [ "NTV2TCIndexToString", "d0/d81/ntv2utils_8h.html#aa6b02977abb8875705e33dbcabe4f5a4", null ],
     [ "NTV2TimecodeIndexToChannel", "d0/d81/ntv2utils_8h.html#ae0201ce7cc352dabd45a3827f5e525c6", null ],
     [ "NTV2TimecodeIndexToInputSource", "d0/d81/ntv2utils_8h.html#a7e43885876031112ff42e0bba474cd03", null ],

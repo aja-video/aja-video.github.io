@@ -248,13 +248,13 @@ var ntv2enums_8h =
     [ "NTV2HDRLuminance", "d6/d0c/ntv2enums_8h.html#ada3d9a4eb5e3ee4024ba297827570579", null ],
     [ "NTV2HDRXferChars", "d6/d0c/ntv2enums_8h.html#a9c5a795ac33800fb6560b7f9d87b4919", null ],
     [ "NTV2InputCrosspointID", "d6/d0c/ntv2enums_8h.html#a25bfde168435b7a74401a79b7bb10074", null ],
+    [ "NTV2InputSourceKind", "d6/d0c/ntv2enums_8h.html#a6aee23c61e05f77d05b937387666006e", null ],
     [ "NTV2InputSourceKinds", "d6/d0c/ntv2enums_8h.html#a0184ca0473480553ed8c29c3bcb442db", null ],
     [ "NTV2InputXptID", "d6/d0c/ntv2enums_8h.html#a1f24bded2d83d049de32740f7363a329", null ],
-    [ "NTV2IOKind", "d6/d0c/ntv2enums_8h.html#a11b93fdc127b23d099e4471a8e0dd057", null ],
     [ "NTV2IOKinds", "d6/d0c/ntv2enums_8h.html#a13bea0ac2be5fa4898fd6ef407f74a5a", null ],
     [ "NTV2OutputCrosspointID", "d6/d0c/ntv2enums_8h.html#ac66b5a6f576042d87ba960eedd62d35b", null ],
     [ "NTV2OutputDest", "d6/d0c/ntv2enums_8h.html#aa26fe16346691f1c5db13ea39e6eb84b", null ],
-    [ "NTV2OutputDestKind", "d6/d0c/ntv2enums_8h.html#a525920bf662a9a73d02361f131213975", null ],
+    [ "NTV2OutputDestKind", "d6/d0c/ntv2enums_8h.html#a7d9f49c1e13881a788b7164e00e91f9a", null ],
     [ "NTV2OutputDestKinds", "d6/d0c/ntv2enums_8h.html#afff9a7b95877fedfa0ba953f731324bc", null ],
     [ "NTV2OutputXptID", "d6/d0c/ntv2enums_8h.html#a020df2469b0ccd24ebad3a01e523146d", null ],
     [ "NTV2PixelFormat", "d6/d0c/ntv2enums_8h.html#a80edd7ce906ff76d34d139d3b3dbf5f4", null ],
@@ -1681,18 +1681,6 @@ var ntv2enums_8h =
       [ "NTV2_INPUTSOURCE_INVALID", "d6/d0c/ntv2enums_8h.html#ac5dbe58ce5dcc94682e0012abc6124f1a72b4a1868ec18d81c2d55cfd48d69e3d", null ],
       [ "NTV2_NUM_INPUTSOURCES", "d6/d0c/ntv2enums_8h.html#ac5dbe58ce5dcc94682e0012abc6124f1a30b5b709321440ec60ab2575e61215ac", null ]
     ] ],
-    [ "NTV2InputSourceKind", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347bad", [
-      [ "NTV2_IOKINDS_NONE", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347badaeb0808f0e24abd3d17e08125fd34105f", null ],
-      [ "NTV2_IOKINDS_SDI", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347bada2eb6e951abc553fe8375e7540605ef67", null ],
-      [ "NTV2_IOKINDS_HDMI", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347bada1aea47dfe08817e27d787d14d7e0671b", null ],
-      [ "NTV2_IOKINDS_ANALOG", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347bada3c8ed1f9db168642fc6d00bc2519c0cd", null ],
-      [ "NTV2_IOKINDS_ALL", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347badaec33660de47b549bd67557e9be1886f3", null ],
-      [ "NTV2_INPUTSOURCES_ALL", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347badac1d83b306808116012645cee50d01789", null ],
-      [ "NTV2_INPUTSOURCES_SDI", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347bada54827b6d0686dd90c1bf381464bb2861", null ],
-      [ "NTV2_INPUTSOURCES_HDMI", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347badac6c0e89d4e33770f858cfe0b0d4a7cec", null ],
-      [ "NTV2_INPUTSOURCES_ANALOG", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347bada85fc12e3468c4ef31b5607126b5cf480", null ],
-      [ "NTV2_INPUTSOURCES_NONE", "d6/d0c/ntv2enums_8h.html#aeb8e78fcc10c4fb2284491d014347badaf14d226684ef3abb6c2ab8fe14994f15", null ]
-    ] ],
     [ "NTV2InputVideoSelect", "d6/d0c/ntv2enums_8h.html#a5c683d9c042d3117551a7e9681d999d6", [
       [ "NTV2_Input1Select", "d6/d0c/ntv2enums_8h.html#a5c683d9c042d3117551a7e9681d999d6a4a15ca383704627f86fc3351dc870b8a", null ],
       [ "NTV2_Input2Select", "d6/d0c/ntv2enums_8h.html#a5c683d9c042d3117551a7e9681d999d6ad472d22cb74a5f24d6b907c3cc28d2da", null ],
@@ -1827,6 +1815,18 @@ var ntv2enums_8h =
       [ "NTV2_INPUT2VERTICAL_CLEAR_SHIFT", "d6/d0c/ntv2enums_8h.html#aaf26f6d92b008aaab57d3c1d42b6383fa7a60f9961e2e736a1fd4d299399e56e8", null ],
       [ "NTV2_INPUT1VERTICAL_CLEAR_SHIFT", "d6/d0c/ntv2enums_8h.html#aaf26f6d92b008aaab57d3c1d42b6383fac5db45ce106485a7d2c430f0d0b21c0e", null ],
       [ "NTV2_OUTPUTVERTICAL_CLEAR_SHIFT", "d6/d0c/ntv2enums_8h.html#aaf26f6d92b008aaab57d3c1d42b6383faf59c599526affa83812ae6e4f2e162df", null ]
+    ] ],
+    [ "NTV2IOKind", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447", [
+      [ "NTV2_IOKINDS_NONE", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447aeb0808f0e24abd3d17e08125fd34105f", null ],
+      [ "NTV2_IOKINDS_SDI", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447a2eb6e951abc553fe8375e7540605ef67", null ],
+      [ "NTV2_IOKINDS_HDMI", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447a1aea47dfe08817e27d787d14d7e0671b", null ],
+      [ "NTV2_IOKINDS_ANALOG", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447a3c8ed1f9db168642fc6d00bc2519c0cd", null ],
+      [ "NTV2_IOKINDS_ALL", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447aec33660de47b549bd67557e9be1886f3", null ],
+      [ "NTV2_INPUTSOURCES_ALL", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447ac1d83b306808116012645cee50d01789", null ],
+      [ "NTV2_INPUTSOURCES_SDI", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447a54827b6d0686dd90c1bf381464bb2861", null ],
+      [ "NTV2_INPUTSOURCES_HDMI", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447ac6c0e89d4e33770f858cfe0b0d4a7cec", null ],
+      [ "NTV2_INPUTSOURCES_ANALOG", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447a85fc12e3468c4ef31b5607126b5cf480", null ],
+      [ "NTV2_INPUTSOURCES_NONE", "d6/d0c/ntv2enums_8h.html#a09839aa810f3d7204566258c3e6f2447af14d226684ef3abb6c2ab8fe14994f15", null ]
     ] ],
     [ "NTV2IpError", "d6/d0c/ntv2enums_8h.html#abc56cd21b8b645e7ca2fb073c96339dc", [
       [ "NTV2IpErrNone", "d6/d0c/ntv2enums_8h.html#abc56cd21b8b645e7ca2fb073c96339dcab618e89c189f0e434426063a7e34f9c8", null ],

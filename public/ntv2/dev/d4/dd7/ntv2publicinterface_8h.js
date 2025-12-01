@@ -512,6 +512,7 @@ var ntv2publicinterface_8h =
     [ "NTV2DoubleArray", "d4/dd7/ntv2publicinterface_8h.html#a5d5e0f4657ac7434bab2943d6f4e920f", null ],
     [ "NTV2DoubleArrayConstIter", "d4/dd7/ntv2publicinterface_8h.html#a5b284cdf51d413103267a206c5cafe46", null ],
     [ "NTV2DoubleArrayIter", "d4/dd7/ntv2publicinterface_8h.html#aa2674c6b4f2bf7fd67586ad5bfffe7a6", null ],
+    [ "NTV2EveryFrameTaskMode", "d4/dd7/ntv2publicinterface_8h.html#a69754cef2e533c6b32a61aa5cce29a63", null ],
     [ "NTV2FrameBufferFormatSet", "d4/dd7/ntv2publicinterface_8h.html#ae499d1edb379c786e7fa52c51afb0ec9", null ],
     [ "NTV2FrameBufferFormatSetConstIter", "d4/dd7/ntv2publicinterface_8h.html#a2964a8bc249b1814d1c616d7c31d87ab", null ],
     [ "NTV2FrameDimensions", "d4/dd7/ntv2publicinterface_8h.html#a27ef85ea87f90266beddf34f8617170f", null ],
@@ -553,7 +554,6 @@ var ntv2publicinterface_8h =
     [ "NTV2RXSDIStatusRegisters", "d4/dd7/ntv2publicinterface_8h.html#a1b620a63094c1c123d1480b810583c23", null ],
     [ "NTV2StandardSet", "d4/dd7/ntv2publicinterface_8h.html#af43d1e2873521403415927b9d6cf5ff4", null ],
     [ "NTV2StandardSetConstIter", "d4/dd7/ntv2publicinterface_8h.html#a1c294df0ee82be8f6c419ff93b284405", null ],
-    [ "NTV2TaskMode", "d4/dd7/ntv2publicinterface_8h.html#ad1a3d12416211b2c11d19f48ad50c34d", null ],
     [ "NTV2TCIndexes", "d4/dd7/ntv2publicinterface_8h.html#a90dc22e05a263fc86576938693bfbb40", null ],
     [ "NTV2TCIndexesConstIter", "d4/dd7/ntv2publicinterface_8h.html#ac2888c17ec678210aae60bd18fefe7c0", null ],
     [ "NTV2TCIndexSet", "d4/dd7/ntv2publicinterface_8h.html#aa89c8e012fef5fd3888e130058d3bce5", null ],
@@ -1384,12 +1384,6 @@ var ntv2publicinterface_8h =
       [ "kRegEnhancedCSC8KeyClipOffset", "d4/dd7/ntv2publicinterface_8h.html#a9dc847d06e87f15eaca41272f2d91bf2a547ec0ffd4f24b316a969363c0e2e381", null ],
       [ "kRegEnhancedCSC8KeyGain", "d4/dd7/ntv2publicinterface_8h.html#a9dc847d06e87f15eaca41272f2d91bf2a6a00f21437a0fc3879abded38a6f2c9c", null ]
     ] ],
-    [ "NTV2EveryFrameTaskMode", "d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27ea", [
-      [ "NTV2_DISABLE_TASKS", "d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa802616d2c64dd99452fad9287be3341b", null ],
-      [ "NTV2_STANDARD_TASKS", "d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaab88c9c725762e874d5848c45bc85118d", null ],
-      [ "NTV2_OEM_TASKS", "d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa297897e1aceeb9f27b3cb7de8a0b588e", null ],
-      [ "NTV2_TASK_MODE_INVALID", "d4/dd7/ntv2publicinterface_8h.html#ad0b318380537ba7609efe35b3dce27eaa6aa763c89854c0083305171dd5acff3b", null ]
-    ] ],
     [ "NTV2HDMIOutAudioRegisters", "d4/dd7/ntv2publicinterface_8h.html#afe47580c1ae295dfada732860261b395", [
       [ "kRegHDMIOutputAudioConfig", "d4/dd7/ntv2publicinterface_8h.html#afe47580c1ae295dfada732860261b395a097e696d7b4d041641eb0659626bd7c7", null ]
     ] ],
@@ -2060,6 +2054,12 @@ var ntv2publicinterface_8h =
       [ "kRegRXSDIFreeRunningClockLow", "d4/dd7/ntv2publicinterface_8h.html#af0443dd7ec94fc930b9257b8cfbb0c31aba558f5dc0edaacc74407aa87e030d01", null ],
       [ "kRegRXSDIFreeRunningClockHigh", "d4/dd7/ntv2publicinterface_8h.html#af0443dd7ec94fc930b9257b8cfbb0c31ab0b15b9a9f1e40b960de0bf547ef425c", null ],
       [ "kRegNumRXSDIRegisters", "d4/dd7/ntv2publicinterface_8h.html#af0443dd7ec94fc930b9257b8cfbb0c31a7167b978d136b2172e8fe9b3a7aa7036", null ]
+    ] ],
+    [ "NTV2TaskMode", "d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2", [
+      [ "NTV2_DISABLE_TASKS", "d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2a802616d2c64dd99452fad9287be3341b", null ],
+      [ "NTV2_STANDARD_TASKS", "d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2ab88c9c725762e874d5848c45bc85118d", null ],
+      [ "NTV2_OEM_TASKS", "d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2a297897e1aceeb9f27b3cb7de8a0b588e", null ],
+      [ "NTV2_TASK_MODE_INVALID", "d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2a6aa763c89854c0083305171dd5acff3b", null ]
     ] ],
     [ "NwlRegisterIndex", "d4/dd7/ntv2publicinterface_8h.html#a97d2350d8ee81f7e7bb34f66e6579b36", [
       [ "kRegNwlS2C1CapabilitiesIndex", "d4/dd7/ntv2publicinterface_8h.html#a97d2350d8ee81f7e7bb34f66e6579b36a3cf5b1e04498ea4710aa7789b0003391", null ],
