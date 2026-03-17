@@ -6,6 +6,7 @@ var class_a_j_a_ancillary_data___cea708 =
     [ "AJAAncillaryData_Cea708", "df/d7c/class_a_j_a_ancillary_data___cea708.html#a7101304830caeffad58f2692ebe892fc", null ],
     [ "~AJAAncillaryData_Cea708", "df/d7c/class_a_j_a_ancillary_data___cea708.html#adc6749074a47bec82297dc817d2cc5ad", null ],
     [ "Clear", "df/d7c/class_a_j_a_ancillary_data___cea708.html#ab18fb81ffa096930051be0a64cdd8005", null ],
+    [ "Clone", "df/d7c/class_a_j_a_ancillary_data___cea708.html#a72e0f5cedcfcae4a80b7fd0683d763df", null ],
     [ "GeneratePayloadData", "df/d7c/class_a_j_a_ancillary_data___cea708.html#ae8cbdf333e5800c9b347331c07c035ff", null ],
     [ "Init", "df/d7c/class_a_j_a_ancillary_data___cea708.html#a333e2eb6b521b5817e5cdd833770ea12", null ],
     [ "operator=", "df/d7c/class_a_j_a_ancillary_data___cea708.html#adf9c75fd0fae99cc7f79ab131fd91f96", null ],

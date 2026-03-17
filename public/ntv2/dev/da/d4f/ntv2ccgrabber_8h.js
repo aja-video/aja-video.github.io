@@ -4,9 +4,9 @@ var ntv2ccgrabber_8h =
     [ "NTV2CCGrabber", "dc/d59/class_n_t_v2_c_c_grabber.html", "dc/d59/class_n_t_v2_c_c_grabber" ],
     [ "IS_VALID_CaptionDataSrc", "da/d4f/ntv2ccgrabber_8h.html#aad8a396e00147f4272f23e3e229f81e5", null ],
     [ "IS_VALID_OutputMode", "da/d4f/ntv2ccgrabber_8h.html#aa1ce8ab5fee20176b319802ee8fc4b3f", null ],
-    [ "CaptionDataSrc", "da/d4f/ntv2ccgrabber_8h.html#a56ad47b258b9b0be5a334a9001e65191", null ],
-    [ "CCGrabberConfig", "da/d4f/ntv2ccgrabber_8h.html#af4ded077bde8ec715b4127c9bdac5d66", null ],
-    [ "OutputMode", "da/d4f/ntv2ccgrabber_8h.html#a8b5ef7d41175969526293359bc130b28", null ],
+    [ "CaptionDataSrc", "da/d4f/ntv2ccgrabber_8h.html#acd3cbb81293a686ac5549cfef3947585", null ],
+    [ "CCGrabberConfig", "da/d4f/ntv2ccgrabber_8h.html#affc984b1a6860affb908f48041c27571", null ],
+    [ "OutputMode", "da/d4f/ntv2ccgrabber_8h.html#a954dd756322c2d10d9bb51d9a3ca3e39", null ],
     [ "_CaptionDataSrc", "da/d4f/ntv2ccgrabber_8h.html#a1c49e6dadc61c9d0bb6d88d3c5c86602", [
       [ "kCaptionDataSrc_Default", "da/d4f/ntv2ccgrabber_8h.html#a1c49e6dadc61c9d0bb6d88d3c5c86602a7eda3bd6159b50536e72a1f6db663491", null ],
       [ "kCaptionDataSrc_Line21", "da/d4f/ntv2ccgrabber_8h.html#a1c49e6dadc61c9d0bb6d88d3c5c86602ab910f0c0f65ede2a2a3524240666c336", null ],

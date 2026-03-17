@@ -1,6 +1,7 @@
 var class_n_t_v2_buffer_lock =
 [
     [ "NTV2BufferLock", "d7/d4a/class_n_t_v2_buffer_lock.html#a80cc826193865e4bc72f113839cc9f4b", null ],
+    [ "~NTV2BufferLock", "d7/d4a/class_n_t_v2_buffer_lock.html#a6769b1d45832a6b7cd1e225a8fd93b1c", null ],
     [ "NTV2BufferLock", "d7/d4a/class_n_t_v2_buffer_lock.html#a5297529c3fbf923f94af3271035d4ea4", null ],
     [ "NTV2BufferLock", "d7/d4a/class_n_t_v2_buffer_lock.html#a961591d77de0bdce57fc6fce319a9105", null ],
     [ "NTV2BufferLock", "d7/d4a/class_n_t_v2_buffer_lock.html#a8eaeddc4c04108c32003b90aa75cb4eb", null ],

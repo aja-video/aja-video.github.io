@@ -1,13 +1,16 @@
 var class_n_t_v2_reg_info =
 [
     [ "NTV2RegInfo", "d2/d8f/class_n_t_v2_reg_info.html#af2b164be1a9875c18b06400c052aa269", null ],
+    [ "ImportFromLog", "d2/d8f/class_n_t_v2_reg_info.html#a7e0fb41bc1b14f071e75489102ea789c", null ],
     [ "IsValid", "d2/d8f/class_n_t_v2_reg_info.html#a572fb6e966d7bbb647b5a979e8204911", null ],
     [ "MakeInvalid", "d2/d8f/class_n_t_v2_reg_info.html#abaecb0e3041055588d92d15ddab77a7c", null ],
     [ "mask", "d2/d8f/class_n_t_v2_reg_info.html#a18c1eac2e5f00734c12bfb48e1f8d303", null ],
+    [ "offset", "d2/d8f/class_n_t_v2_reg_info.html#a9d1ea9ac846bd356d86be7900405f48e", null ],
     [ "operator<", "d2/d8f/class_n_t_v2_reg_info.html#a13571c939995f7a434c95f1ff62438de", null ],
     [ "operator==", "d2/d8f/class_n_t_v2_reg_info.html#acb977f17dfec05d954b6a1873622e414", null ],
     [ "Print", "d2/d8f/class_n_t_v2_reg_info.html#af2d12b416085c393ec0b2d4211d5d356", null ],
-    [ "PrintCode", "d2/d8f/class_n_t_v2_reg_info.html#add4be1dd030f55ec3e2ae2db748609b3", null ],
+    [ "PrintCode", "d2/d8f/class_n_t_v2_reg_info.html#a1c860fab4da4875b9267fa5d6d0f10a4", null ],
+    [ "PrintLog", "d2/d8f/class_n_t_v2_reg_info.html#aeca45e5d1c4ea77577bc094d8527476d", null ],
     [ "regNum", "d2/d8f/class_n_t_v2_reg_info.html#ab642bf3e4603feeb85d6ea99ae2085d9", null ],
     [ "Set", "d2/d8f/class_n_t_v2_reg_info.html#a3a66658133a3f4befb8fd58927af5f45", null ],
     [ "setMask", "d2/d8f/class_n_t_v2_reg_info.html#aa7df3ecffe8ee31dafba4149f03d2875", null ],

@@ -15,8 +15,8 @@ var ancillarylist_8h =
     [ "AJAU32PktsConstIter", "d6/dc0/ancillarylist_8h.html#ab446f1c19153690805997d47fef9ebaf", null ],
     [ "AJAU32PktsIter", "d6/dc0/ancillarylist_8h.html#adb64bfe44d7bd562120ea94bbc2bf6f2", null ],
     [ "operator<<", "d6/dc0/ancillarylist_8h.html#ad38bd05bdf1f566b9663f553ab5b3c10", null ],
-    [ "operator<<", "d6/dc0/ancillarylist_8h.html#a3ad2de2cd7d12a973d22e15f194aa42d", null ],
     [ "operator<<", "d6/dc0/ancillarylist_8h.html#a385a539502f5077e18159e33248c7577", null ],
+    [ "operator<<", "d6/dc0/ancillarylist_8h.html#a3ad2de2cd7d12a973d22e15f194aa42d", null ],
     [ "AJAAncillaryDataWildcard_DID", "d6/dc0/ancillarylist_8h.html#a29e7dabd4a2ae521232ef4a27166fe56", null ],
     [ "AJAAncillaryDataWildcard_SID", "d6/dc0/ancillarylist_8h.html#a34c7e3b73da91549a3a2c78580e69eca", null ]
 ];

@@ -6,6 +6,7 @@ var class_a_j_a_event =
     [ "GetEventObject", "d6/da4/class_a_j_a_event.html#a63653e0106bc422bbd4fc2d8470f466a", null ],
     [ "GetManualReset", "d6/da4/class_a_j_a_event.html#abf66962d19d7bb653868316bddbe7ce8", null ],
     [ "GetState", "d6/da4/class_a_j_a_event.html#a93a34f2c9eb49fe6c423fff781fe8227", null ],
+    [ "GetState", "d6/da4/class_a_j_a_event.html#aaaa5170b9f21ed50017951c2b10c4f06", null ],
     [ "SetManualReset", "d6/da4/class_a_j_a_event.html#ac575468ab886df8ad6cf0dcc68ed166c", null ],
     [ "SetState", "d6/da4/class_a_j_a_event.html#a782ad5aafafdd1869fb7394ea4ce5769", null ],
     [ "Signal", "d6/da4/class_a_j_a_event.html#ae4d85cc2bba0cbd290725409c8aaed51", null ],

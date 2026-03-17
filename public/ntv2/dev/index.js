@@ -103,9 +103,9 @@ var index =
     ] ],
     [ "NTV2 Devices", "d0/d53/ntv2devices.html", [
       [ "Corvid OEM Boards", "d0/d53/ntv2devices.html#ntv2hwcorvid", [
-        [ "Corvid 44", "d0/d53/ntv2devices.html#corvid44", null ],
+        [ "Corvid 44 (Gen3)", "d0/d53/ntv2devices.html#corvid44gen3", null ],
         [ "Corvid 44 12G", "d0/d53/ntv2devices.html#corvid4412g", null ],
-        [ "Corvid 88", "d0/d53/ntv2devices.html#corvid88", null ]
+        [ "Corvid 88 (Gen3)", "d0/d53/ntv2devices.html#corvid88", null ]
       ] ],
       [ "Io (Thunderbolt) Devices", "d0/d53/ntv2devices.html#ntv2hwio", [
         [ "Io 4K Plus", "d0/d53/ntv2devices.html#io4kplus", null ],
@@ -118,7 +118,9 @@ var index =
         [ "KONA 4 (UFC Mode)", "d0/d53/ntv2devices.html#kona4ufc", null ],
         [ "KONA 5", "d0/d53/ntv2devices.html#kona5", null ],
         [ "KONA HDMI", "d0/d53/ntv2devices.html#konahdmi", null ],
-        [ "KONA IP25", "d0/d53/ntv2devices.html#konaip25g", null ],
+        [ "KONA IP25", "d0/d53/ntv2devices.html#konaip25g", [
+          [ "Configuring the KONA IP25", "d0/d53/ntv2devices.html#konaip25gconfig", null ]
+        ] ],
         [ "KONA LHe Plus", "d0/d53/ntv2devices.html#konalheplus", null ],
         [ "KONA X™", "d0/d53/ntv2devices.html#konax", null ],
         [ "KONA XM™", "d0/d53/ntv2devices.html#konaxm", null ]
@@ -127,6 +129,7 @@ var index =
         [ "Corvid, Corvid 3G", "d0/d53/ntv2devices.html#corvid1corvid3g", null ],
         [ "Corvid 22", "d0/d53/ntv2devices.html#corvid22", null ],
         [ "Corvid 24", "d0/d53/ntv2devices.html#corvid24", null ],
+        [ "Corvid 44", "d0/d53/ntv2devices.html#corvid44", null ],
         [ "Corvid HB-R", "d0/d53/ntv2devices.html#corvidhbr", null ],
         [ "Corvid HEVC", "d0/d53/ntv2devices.html#corvidhevc", null ],
         [ "Io 4K (Quad Mode)", "d0/d53/ntv2devices.html#io4kquad", null ],

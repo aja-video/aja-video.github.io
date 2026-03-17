@@ -20,9 +20,8 @@ var hierarchy =
     [ "NTV2Caption608ChangeInfo::_u::_screenAttr", "d3/d0d/struct_n_t_v2_caption608_change_info_1_1__u_1_1__screen_attr.html", null ],
     [ "NTV2Caption608ChangeInfo::_u::_screenChar", "d2/d5a/struct_n_t_v2_caption608_change_info_1_1__u_1_1__screen_char.html", null ],
     [ "NTV2Caption608ChangeInfo::_u", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::actual_object_comparator< BasicJsonType >", "db/d73/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_79119efcf178a20b9111d4ca2dbbbae0.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::adl_serializer< ValueType, typename >", "d2/d07/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_58d299f2225b465109772827d82ec957.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::adl_serializer< ValueType, typename >", "d2/d07/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_58d299f2225b465109772827d82ec957.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::actual_object_comparator< BasicJsonType >", "d2/d65/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1actual__object__comparator.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::adl_serializer< ValueType, typename >", "d9/dc0/structnlohmann_1_1json__abi__v3__11__3_1_1adl__serializer.html", null ],
     [ "ADV7189BProcAmpRegisters", "d3/da9/struct_a_d_v7189_b_proc_amp_registers.html", null ],
     [ "ADV7402AHDProcAmpRegisters", "d1/d5c/struct_a_d_v7402_a_h_d_proc_amp_registers.html", null ],
     [ "AERGBAlphaPixel", "de/df9/struct_a_e_r_g_b_alpha_pixel.html", null ],
@@ -58,7 +57,7 @@ var hierarchy =
     [ "AJABuffer", "de/df9/class_a_j_a_buffer.html", null ],
     [ "AJAByteStream", "d6/d98/class_a_j_a_byte_stream.html", null ],
     [ "AJACircularBuffer< FrameDataPtr >", "d1/d7d/class_a_j_a_circular_buffer.html", null ],
-    [ "AJACircularBuffer< AVHevcDataBuffer * >", "d1/d7d/class_a_j_a_circular_buffer.html", null ],
+    [ "AJACircularBuffer< AVHevcDataBuffer *>", "d1/d7d/class_a_j_a_circular_buffer.html", null ],
     [ "AJACircularBuffer< NTV2FrameData * >", "d1/d7d/class_a_j_a_circular_buffer.html", null ],
     [ "AJACommandLineOption", "d4/d9b/class_a_j_a_command_line_option.html", null ],
     [ "AJACommandLineParser", "d2/d81/class_a_j_a_command_line_parser.html", null ],
@@ -139,27 +138,25 @@ var hierarchy =
     [ "AVHevcDataBuffer", "de/d23/struct_a_v_hevc_data_buffer.html", null ],
     [ "AVHevcStatus", "de/ddf/struct_a_v_hevc_status.html", null ],
     [ "B", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::conjunction< B >", "d1/d2a/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_258f5fa3e2d058db799c4e957cba2296.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::conjunction< B >", "df/d61/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1conjunction_3_01_b_01_4.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::basic_json< ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass >", "de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::basic_json< ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass >", "de/da5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcc5d814adc034134c3ec7273689c1743.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail2::begin_tag", "db/df1/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a8520484715a4a892fc6479a5aa50251.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail2::begin_tag", "da/d72/structnlohmann_1_1json__abi__v3__11__3_1_1detail2_1_1begin__tag.html", null ],
     [ "BGRPixel", "db/d27/struct_b_g_r_pixel.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::binary_reader< BasicJsonType, InputAdapterType, SAX >", "db/d9e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r5aa73e0fabf9725f8a8dd6cbd62a88e7.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::binary_writer< BasicJsonType, CharType >", "d3/de9/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r615ba98998e29e85258c648f06d5765b.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::binary_reader< BasicJsonType, InputAdapterType, SAX >", "d7/d9a/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1binary__reader.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::binary_writer< BasicJsonType, CharType >", "de/d28/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1binary__writer.html", null ],
     [ "BinaryType", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::byte_container_with_subtype< BinaryType >", "d2/d2b/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcb1c30c4eeaf43d4213abfa93db53216.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::byte_container_with_subtype< BinaryType >", "db/dac/classnlohmann_1_1json__abi__v3__11__3_1_1byte__container__with__subtype.html", null ]
     ] ],
     [ "BITFILE_INFO_STRUCT", "de/d75/struct_b_i_t_f_i_l_e___i_n_f_o___s_t_r_u_c_t.html", null ],
     [ "bool_constant", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_c_string< T >", "d7/d15/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3106001db4d3791787880132ebc05eae.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_transparent< T >", "d4/da6/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_219f97a73c9d2fc1c041841ab53a3a30.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_c_string< T >", "d2/dcc/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__c__string.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_transparent< T >", "da/d11/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__transparent.html", null ]
     ] ],
     [ "Bouncer< T >", "d6/dec/class_bouncer.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::dtoa_impl::boundaries", "d9/d1e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6d8a77b795dc582e8a7e1f721c9ca7aa.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::dtoa_impl::boundaries", "d5/d34/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1dtoa__impl_1_1boundaries.html", null ],
     [ "BUILD_INFO_STRUCT", "d2/d4d/struct_b_u_i_l_d___i_n_f_o___s_t_r_u_c_t.html", null ],
     [ "BurnConfig", "d0/d57/struct_burn_config.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::dtoa_impl::cached_power", "dd/d6d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_d4eee417164870dbf3ecacd286fb6d23.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::dtoa_impl::cached_power", "da/d03/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1dtoa__impl_1_1cached__power.html", null ],
     [ "CAMEvent", "d3/dc9/class_c_a_m_event.html", [
       [ "CAMMsgEvent", "dc/d8b/class_c_a_m_msg_event.html", null ]
     ] ],
@@ -278,10 +275,10 @@ var hierarchy =
     [ "CDrawImage", "db/d39/class_c_draw_image.html", null ],
     [ "CFactoryTemplate", "db/d4c/class_c_factory_template.html", null ],
     [ "char_traits", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::char_traits< char_type >", "d8/dae/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_29af4530a3d36dec50264ccc01c8f69a.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::char_traits< T >", "d8/dae/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_29af4530a3d36dec50264ccc01c8f69a.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::char_traits< signed char >", "de/de4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_25125b850c7b9066ebd87ac614e51f50.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::char_traits< unsigned char >", "dd/dc3/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6e504e2a09f0206c09230e85333a0876.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::char_traits< char_type >", "d1/d52/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1char__traits.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::char_traits< T >", "d1/d52/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1char__traits.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::char_traits< signed char >", "d2/da9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1char__traits_3_01signed_01char_01_4.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::char_traits< unsigned char >", "d0/d21/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1char__traits_3_01unsigned_01char_01_4.html", null ]
     ] ],
     [ "CImagePalette", "d0/dd3/class_c_image_palette.html", null ],
     [ "CKonaIpDecoderSetup", "d3/d6d/class_c_kona_ip_decoder_setup.html", null ],
@@ -352,8 +349,8 @@ var hierarchy =
     [ "CNTV2VPID", "d6/d36/class_c_n_t_v2_v_p_i_d.html", null ],
     [ "ColorSpaceConverterCustomCoefficients", "da/d6d/struct_color_space_converter_custom_coefficients.html", null ],
     [ "columns_s", "d9/d7e/structcolumns__s.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::container_input_adapter_factory_impl::container_input_adapter_factory< ContainerType, Enable >", "d1/d9a/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_447a07090899e282884885bc1636d1c8.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::container_input_adapter_factory_impl::container_input_adapter_factory< ContainerType, void_t< decltype(begin(std::declval< ContainerType >()), end(std::declval< ContainerType >()))> >", "d6/d6e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_381e179c51b9bd4f04f584ecbfaec16c.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::container_input_adapter_factory_impl::container_input_adapter_factory< ContainerType, Enable >", "d7/ded/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1container__input__adapter__factory__impl_1_17679f428252bec12f6501d63911b9405.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::container_input_adapter_factory_impl::container_input_adapter_factory< ContainerType, void_t< decltype(begin(std::declval< ContainerType >()), end(std::declval< ContainerType >()))> >", "d1/d81/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1container__input__adapter__factory__impl_1_1fa5cee1672293ac084bc87ba043dc45f.html", null ],
     [ "CQueue< T >", "d7/d80/class_c_queue.html", null ],
     [ "CRefTime", "dc/da7/class_c_ref_time.html", [
       [ "COARefTime", "d5/da4/class_c_o_a_ref_time.html", null ]
@@ -363,8 +360,8 @@ var hierarchy =
     [ "CUtf8Helpers", "d9/d3b/class_c_utf8_helpers.html", null ],
     [ "DecoderStruct", "d3/dc6/struct_decoder_struct.html", null ],
     [ "DemoCommonInitializer", "dc/df7/class_demo_common_initializer.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::detector< Default, AlwaysVoid, Op, Args >", "df/df0/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_d4ee3fe8f0338f6d51d545875a936a0a.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::detector< Default, void_t< Op< Args... > >, Op, Args... >", "d3/de0/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_4dbd3c27c31072c31900322a49a92d83.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::detector< Default, AlwaysVoid, Op, Args >", "d2/d7e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1detector.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::detector< Default, void_t< Op< Args... > >, Op, Args... >", "dd/da9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1detector_3_01_default_00_01void__t_3_01_op_3fa833b2ead29db052ac71328f29d9c37.html", null ],
     [ "DeviceCapabilities", "db/d32/class_device_capabilities.html", null ],
     [ "DeviceNotifier", "d7/d44/class_device_notifier.html", [
       [ "KonaNotifier", "da/d20/class_kona_notifier.html", null ]
@@ -372,7 +369,7 @@ var hierarchy =
     [ "DISPPARAMS", null, [
       [ "CDispParams", "d2/d9b/class_c_disp_params.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::dtoa_impl::diyfp", "db/dc7/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_64c77f947a8522498dcfb353cc3c0630.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::dtoa_impl::diyfp", "d9/d6f/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1dtoa__impl_1_1diyfp.html", null ],
     [ "DMA_TRANSFER_STRUCT_64", "de/d7f/struct_d_m_a___t_r_a_n_s_f_e_r___s_t_r_u_c_t__64.html", null ],
     [ "dpx_file_info_struct", "d0/d4e/structdpx__file__info__struct.html", null ],
     [ "dpx_header_struct", "d7/d98/structdpx__header__struct.html", null ],
@@ -385,80 +382,80 @@ var hierarchy =
       [ "AJADPXFileIO", "d2/dd4/class_a_j_a_d_p_x_file_i_o.html", null ]
     ] ],
     [ "EncoderStruct", "d4/ddf/struct_encoder_struct.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail2::end_tag", "d8/da5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_01288e769e23a2b5f2b8b21c62715b96.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail2::end_tag", "d4/dcf/structnlohmann_1_1json__abi__v3__11__3_1_1detail2_1_1end__tag.html", null ],
     [ "exception", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::exception", "dc/d4b/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_re58e64432bfa7408c1f87288e49980d9.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::invalid_iterator", "d9/df2/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rd12ba52869cf83c84fa2334064cef6ab.html", null ],
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::other_error", "d3/df5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_re6a28039dee5915a4282614de5e90a37.html", null ],
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::out_of_range", "d1/de4/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r6f2bf581468333e1b5a5d287eac4b071.html", null ],
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::parse_error", "dd/d0e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r336e147cdd58ec30750cb682bbb389e1.html", null ],
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::type_error", "de/def/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rbcd1b5a2162f3d9cec0594e6d60fbf97.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::exception", "d0/dbb/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1exception.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::invalid_iterator", "de/d32/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1invalid__iterator.html", null ],
+        [ "nlohmann::json_abi_v3_11_3::detail::other_error", "dd/d4f/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1other__error.html", null ],
+        [ "nlohmann::json_abi_v3_11_3::detail::out_of_range", "da/d32/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1out__of__range.html", null ],
+        [ "nlohmann::json_abi_v3_11_3::detail::parse_error", "d5/d27/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1parse__error.html", null ],
+        [ "nlohmann::json_abi_v3_11_3::detail::type_error", "d7/d33/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1type__error.html", null ]
       ] ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::utility_internal::Extend< Seq, SeqSize, Rem >", "d8/da2/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ccc09ca447175eb578e19429296a1e48.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::utility_internal::Extend< integer_sequence< T, Ints... >, SeqSize, 0 >", "d1/dcd/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_5f55318649f88390ddb8401a1c28ab6e.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::utility_internal::Extend< integer_sequence< T, Ints... >, SeqSize, 1 >", "df/dc8/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_1ea3c89f499f31b26458e264bf748d2f.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t >", "d2/d49/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_49b6f2f0f3427f329a1917b56e2db9f3.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::array >", "df/ddc/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_9f841cf4039aa82818652d381f68c21f.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::binary >", "d3/d9d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_1328fa5db6ad719087536a0417c67aad.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::boolean >", "d7/d63/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_de454c5e628646189cdaae46ade2b742.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::number_float >", "d1/dcb/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ff8e03ecb77b626f90849056864643c3.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::number_integer >", "d1/d36/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ecb4db9dc2adabffa144ed56b969896b.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::number_unsigned >", "da/d93/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_cfa8d25fe31674860c4048c3f93e3dc0.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::object >", "d8/d87/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_b191b0f80b3be2729e050df6a47cec22.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::external_constructor< value_t::string >", "db/de0/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_e385f532ed62c544ed15c90716fb843e.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::utility_internal::Extend< Seq, SeqSize, Rem >", "d1/d08/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1utility__internal_1_1_extend.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::utility_internal::Extend< integer_sequence< T, Ints... >, SeqSize, 0 >", "d7/d41/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1utility__internal_1_1_extend_3_01integer__sea2bd82a90a2144730e43ff9c7c04a5bd.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::utility_internal::Extend< integer_sequence< T, Ints... >, SeqSize, 1 >", "d1/d45/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1utility__internal_1_1_extend_3_01integer__se2e5644bf7b53ae9475b3afa3bfa39ee3.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t >", "d1/dd3/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::array >", "d9/d88/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::binary >", "d9/dfd/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1binary_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::boolean >", "d1/de6/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1boolean_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::number_float >", "d8/d3a/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__float_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::number_integer >", "da/d11/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::number_unsigned >", "d2/d4d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__unsigned_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::object >", "db/ddb/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::external_constructor< value_t::string >", "de/dda/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1string_01_4.html", null ],
     [ "false_type", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_array_type_impl< BasicJsonType, CompatibleArrayType >", "db/df3/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_dba687b550a9377d3c1360e897b46bac.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_array_type< BasicJsonType, CompatibleArrayType >", "d4/de3/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_be823557a84d52a5d1b5e90761314391.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_array_type_impl< BasicJsonType, CompatibleArrayType >", "d6/db5/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__array__type__impl.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_array_type< BasicJsonType, CompatibleArrayType >", "dd/d58/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__array__type.html", null ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_integer_type_impl< RealIntegerType, CompatibleNumberIntegerType >", "dd/d0e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_acdf97b24d2a747189eeef78b8878363.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_integer_type< RealIntegerType, CompatibleNumberIntegerType >", "de/dbb/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_f362d3f99ce269a498103789203dab40.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_integer_type_impl< RealIntegerType, CompatibleNumberIntegerType >", "d9/df3/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type__impl.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_integer_type< RealIntegerType, CompatibleNumberIntegerType >", "d0/dbf/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type.html", null ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_object_type_impl< BasicJsonType, CompatibleObjectType >", "d8/d5b/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_866f77712ee450de713a9e57c5f55525.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_object_type< BasicJsonType, CompatibleObjectType >", "d7/d05/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_4313421fa81bf9064f1c51c536b94e19.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_object_type_impl< BasicJsonType, CompatibleObjectType >", "db/d7b/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__object__type__impl.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_object_type< BasicJsonType, CompatibleObjectType >", "dc/d3d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__object__type.html", null ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_type_impl< BasicJsonType, CompatibleType >", "d6/d24/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_bf71b8d93faa163a147502248c0a85ae.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_type< BasicJsonType, CompatibleType >", "dd/de5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a0e433fbe6aca100ecb70fdbd1201170.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_type_impl< BasicJsonType, CompatibleType >", "d2/d52/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__type__impl.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_type< BasicJsonType, CompatibleType >", "df/de6/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__type.html", null ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType >", "de/dff/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6183c11cc6dc4f76d7cc4cc1d6d9b977.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_array_type< BasicJsonType, ConstructibleArrayType >", "d0/de1/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3706f83f109344dcd8845150e1190800.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType >", "d5/d14/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type__impl.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_array_type< BasicJsonType, ConstructibleArrayType >", "d1/d2e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type.html", null ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_object_type_impl< BasicJsonType, ConstructibleObjectType >", "d5/d29/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7a08ace3e427820efdf4fc50f53bbdaa.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_object_type< BasicJsonType, ConstructibleObjectType >", "d8/d52/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7e7e895450a66282213065e3b9cf135e.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_object_type_impl< BasicJsonType, ConstructibleObjectType >", "d1/d39/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__object__type__impl.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_object_type< BasicJsonType, ConstructibleObjectType >", "d5/db1/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__object__type.html", null ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::has_from_json< BasicJsonType, T, typename >", "db/d1d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_87aa112634e037f438ef5d1dbb02d23f.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::has_non_default_from_json< BasicJsonType, T, typename >", "d5/d45/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a986c73f54eea3f93a641890c25d4efa.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::has_to_json< BasicJsonType, T, typename >", "df/d2b/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_343288d6407c11c7864c20b72020c482.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_basic_json< typename >", "d7/db6/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_476bfd5cebb5f2c3685413bcd2fce580.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_comparable< Compare, A, B, typename >", "d3/da5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_d9320e9ab1ce91339c7a5c91878d3daa.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_array_type_impl< BasicJsonType, CompatibleArrayType, typename >", "db/df3/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_dba687b550a9377d3c1360e897b46bac.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_integer_type_impl< RealIntegerType, CompatibleNumberIntegerType, typename >", "dd/d0e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_acdf97b24d2a747189eeef78b8878363.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_object_type_impl< BasicJsonType, CompatibleObjectType, typename >", "d8/d5b/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_866f77712ee450de713a9e57c5f55525.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_type_impl< BasicJsonType, CompatibleType, typename >", "d6/d24/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_bf71b8d93faa163a147502248c0a85ae.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_complete_type< T, typename >", "d1/d94/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_e8bede86ee39678732b8c7e56060d087.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType, typename >", "de/dff/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6183c11cc6dc4f76d7cc4cc1d6d9b977.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_object_type_impl< BasicJsonType, ConstructibleObjectType, typename >", "d5/d29/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7a08ace3e427820efdf4fc50f53bbdaa.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_tuple< T1, T2 >", "d9/d4b/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_37483197c86368cfefd214c6f8906647.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_iterator_traits< T, typename >", "d9/d26/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_64882054e52162da005edca33c05f3f5.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_json_iterator_of< BasicJsonType, T >", "d9/d19/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6e32199c467362a28f4741a1482c1de6.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_json_ref< typename >", "d1/d2e/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ed955ecd436a82af5c5f5d2100b9d17e.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_specialization_of< Primary, T >", "d1/d2d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a35c07d08146f1470f0a5b36dcc1dbb4.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::has_from_json< BasicJsonType, T, typename >", "d9/d3f/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__from__json.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::has_non_default_from_json< BasicJsonType, T, typename >", "da/d95/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__non__default__from__json.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::has_to_json< BasicJsonType, T, typename >", "de/d13/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__to__json.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_basic_json< typename >", "d4/de7/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__basic__json.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_comparable< Compare, A, B, typename >", "dd/dda/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__comparable.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_array_type_impl< BasicJsonType, CompatibleArrayType, typename >", "d6/db5/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__array__type__impl.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_integer_type_impl< RealIntegerType, CompatibleNumberIntegerType, typename >", "d9/df3/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type__impl.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_object_type_impl< BasicJsonType, CompatibleObjectType, typename >", "db/d7b/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__object__type__impl.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_type_impl< BasicJsonType, CompatibleType, typename >", "d2/d52/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__type__impl.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_complete_type< T, typename >", "de/d7b/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__complete__type.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType, typename >", "d5/d14/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type__impl.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_object_type_impl< BasicJsonType, ConstructibleObjectType, typename >", "d1/d39/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__object__type__impl.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_tuple< T1, T2 >", "df/dc7/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__tuple.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_iterator_traits< T, typename >", "d7/d21/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__iterator__traits.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_json_iterator_of< BasicJsonType, T >", "d7/d60/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__json__iterator__of.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_json_ref< typename >", "db/d32/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__json__ref.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_specialization_of< Primary, T >", "da/d77/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__specialization__of.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::file_input_adapter", "d1/d41/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r5f95ea0f9c79f1cbc791bb4c42cdbafe.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::file_input_adapter", "d7/d4b/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1file__input__adapter.html", null ],
     [ "FindDeviceData", "d5/d2c/struct_find_device_data.html", null ],
     [ "FloatSwap", "de/d74/union_float_swap.html", null ],
     [ "FRAME_STAMP", "d9/d09/class_f_r_a_m_e___s_t_a_m_p.html", null ],
     [ "FRAME_STAMP_STRUCT", "d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::from_json_fn", "d8/d4f/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_2090a42019c81a77fbab0b88a08c134f.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::utility_internal::Gen< T, N >", "dd/d49/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_b208b66d427586b8f6120cd9bae37ba7.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::utility_internal::Gen< T, 0 >", "d8/d87/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_cf31e1c9e10f57eb1e5ea4c53560fb9a.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::from_json_fn", "d9/de8/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1from__json__fn.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::utility_internal::Gen< T, N >", "dd/dc2/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1utility__internal_1_1_gen.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::utility_internal::Gen< T, 0 >", "d8/d5f/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1utility__internal_1_1_gen_3_01_t_00_010_01_4.html", null ],
     [ "GUID", null, [
       [ "FOURCCMap", "d4/d02/class_f_o_u_r_c_c_map.html", null ]
     ] ],
     [ "HardwareProcAmpRegisterImage", "d6/d64/struct_hardware_proc_amp_register_image.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::has_from_json< BasicJsonType, T, enable_if_t< !is_basic_json< T >::value > >", "d5/dc8/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_4af08db43c59715c4712d59ebcf4a762.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::has_non_default_from_json< BasicJsonType, T, enable_if_t< !is_basic_json< T >::value > >", "d1/d2f/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_23d7c9d5dfda9c0ef23ad7b6ba53e87f.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::has_to_json< BasicJsonType, T, enable_if_t< !is_basic_json< T >::value > >", "d3/dbe/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_30431239d200b715e7acc06e1928e2f8.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::has_from_json< BasicJsonType, T, enable_if_t< !is_basic_json< T >::value > >", "d2/d08/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__from__json_3_01_basic_json_type_00_01_t91bec04f07eb41923411373f979ba953.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::has_non_default_from_json< BasicJsonType, T, enable_if_t< !is_basic_json< T >::value > >", "dd/d7d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__non__default__from__json_3_01_basic_jsofc96e56c3f47c4553324fa18a545c200.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::has_to_json< BasicJsonType, T, enable_if_t< !is_basic_json< T >::value > >", "df/d0a/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__to__json_3_01_basic_json_type_00_01_t_0f04a3e8061377d9529f7df77e0a8bd7e.html", null ],
     [ "std::hash< nlohmann::basic_json< ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass > >", "d1/d67/structstd_1_1hash_3_01nlohmann_1_1basic__json_3_01_object_type_00_01_array_type_00_01_string_typ13487dc36fe8e359184b34dd898fd99e.html", null ],
     [ "HDRDriverValues", "d8/d2a/struct_h_d_r_driver_values.html", null ],
     [ "HDRFloatValues", "d0/d30/struct_h_d_r_float_values.html", null ],
@@ -510,7 +507,7 @@ var hierarchy =
     [ "IDeferredCommand", null, [
       [ "CDeferredCommand", "df/d84/class_c_deferred_command.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::identity_tag< T >", "d6/da5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_8f2f043c5071ac3e0149382fb97652e2.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::identity_tag< T >", "d6/d01/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1identity__tag.html", null ],
     [ "IDirectDraw", null, [
       [ "CAggDirectDraw", "d8/dde/class_c_agg_direct_draw.html", null ]
     ] ],
@@ -553,17 +550,17 @@ var hierarchy =
     [ "INonDelegatingUnknown", null, [
       [ "CUnknown", "d9/d89/class_c_unknown.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::input_stream_adapter", "d2/d92/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rcb9769cdcb82d0c44b4df599a49180b0.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::integer_sequence< T, Ints >", "d3/d22/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_66e490c3ae3e5a9a1d9a2d7478b101e8.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::input_stream_adapter", "de/d16/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1input__stream__adapter.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::integer_sequence< T, Ints >", "d9/d01/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1integer__sequence.html", null ],
     [ "integral_constant", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::has_key_compare< T >", "de/d7b/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_887b78519134a7697a88150fa018e146.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_basic_json_context< BasicJsonContext >", "df/d6d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_169a1bfb7a3f21e8eb7992130a9d7824.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::negation< B >", "d2/d93/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_02dd68f3ca715b90fc7e7f3c9553739c.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::has_key_compare< T >", "d5/de6/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__key__compare.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_basic_json_context< BasicJsonContext >", "d9/dd9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__basic__json__context.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::negation< B >", "d3/d7d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1negation.html", null ],
       [ "std::tuple_size<::nlohmann::detail::iteration_proxy_value< IteratorType > >", "db/d81/classstd_1_1tuple__size_3_1_1nlohmann_1_1detail_1_1iteration__proxy__value_3_01_iterator_type_01_4_01_4.html", null ]
     ] ],
     [ "IntelRecordInfo", "dd/d82/struct_intel_record_info.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::internal_iterator< BasicJsonType >", "d8/daa/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_48ae6d8b107f1f3c44ba62239177cab2.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::internal_iterator< typename std::remove_const< BasicJsonType >::type >", "d8/daa/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_48ae6d8b107f1f3c44ba62239177cab2.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::internal_iterator< BasicJsonType >", "db/d79/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1internal__iterator.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::internal_iterator< typename std::remove_const< BasicJsonType >::type >", "db/d79/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1internal__iterator.html", null ],
     [ "INTERRUPT_TIMESTAMP_STRUCT", "dc/d8a/struct_i_n_t_e_r_r_u_p_t___t_i_m_e_s_t_a_m_p___s_t_r_u_c_t.html", null ],
     [ "IPersist", null, [
       [ "CSystemClock", "d1/ddb/class_c_system_clock.html", null ]
@@ -595,45 +592,45 @@ var hierarchy =
     [ "IReferenceClockTimerControl", null, [
       [ "CBaseReferenceClock", "d6/d06/class_c_base_reference_clock.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_array_type_impl< BasicJsonType, CompatibleArrayType, enable_if_t< is_detected< iterator_t, CompatibleArrayType >::value &&is_iterator_traits< iterator_traits< detected_t< iterator_t, CompatibleArrayType > > >::value &&!std::is_same< CompatibleArrayType, detected_t< range_value_t, CompatibleArrayType > >::value > >", "d2/db4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_1b63ac758590bee9a747eca05f514b62.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_integer_type_impl< RealIntegerType, CompatibleNumberIntegerType, enable_if_t< std::is_integral< RealIntegerType >::value &&std::is_integral< CompatibleNumberIntegerType >::value &&!std::is_same< bool, CompatibleNumberIntegerType >::value > >", "dd/d62/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_eb2e0eb1060e0b29628f0da9883bfe23.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_object_type_impl< BasicJsonType, CompatibleObjectType, enable_if_t< is_detected< mapped_type_t, CompatibleObjectType >::value &&is_detected< key_type_t, CompatibleObjectType >::value > >", "dd/d77/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_96b3634549ea729e59c371d2f2605395.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_string_type< BasicJsonType, CompatibleStringType >", "d7/d3c/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3537af4bbf60e5130c9524920babf556.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_compatible_type_impl< BasicJsonType, CompatibleType, enable_if_t< is_complete_type< CompatibleType >::value > >", "d1/dc6/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_31839915bc9e189db1c1c7081e2079c8.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_array_type_impl< BasicJsonType, CompatibleArrayType, enable_if_t< is_detected< iterator_t, CompatibleArrayType >::value &&is_iterator_traits< iterator_traits< detected_t< iterator_t, CompatibleArrayType > > >::value &&!std::is_same< CompatibleArrayType, detected_t< range_value_t, CompatibleArrayType > >::value > >", "d0/de1/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__array__type__impl_3_01_basiceaebf366b6f71cff8c0ca6d0671c9727.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_integer_type_impl< RealIntegerType, CompatibleNumberIntegerType, enable_if_t< std::is_integral< RealIntegerType >::value &&std::is_integral< CompatibleNumberIntegerType >::value &&!std::is_same< bool, CompatibleNumberIntegerType >::value > >", "dc/d27/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type__impl_3_01_rea040bb34bae3ec51f4ed93037d9953ec7.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_object_type_impl< BasicJsonType, CompatibleObjectType, enable_if_t< is_detected< mapped_type_t, CompatibleObjectType >::value &&is_detected< key_type_t, CompatibleObjectType >::value > >", "dc/d75/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__object__type__impl_3_01_basi63c3407539903a60693709ef5c7ff46f.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_string_type< BasicJsonType, CompatibleStringType >", "d2/dd3/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__string__type.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_compatible_type_impl< BasicJsonType, CompatibleType, enable_if_t< is_complete_type< CompatibleType >::value > >", "dd/d7a/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__type__impl_3_01_basic_json_tebbdfe86fc852771d1a2cda74d422daa.html", null ],
     [ "is_constructible", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible< T, Args >", "d3/d02/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_58595a82198b53bd649ecad0f9e85b91.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_constructible< T, Args >", "dd/d03/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType, enable_if_t< !std::is_same< ConstructibleArrayType, typename BasicJsonType::value_type >::value &&!is_compatible_string_type< BasicJsonType, ConstructibleArrayType >::value &&is_default_constructible< ConstructibleArrayType >::value &&(std::is_move_assignable< ConstructibleArrayType >::value||std::is_copy_assignable< ConstructibleArrayType >::value)&&is_detected< iterator_t, ConstructibleArrayType >::value &&is_iterator_traits< iterator_traits< detected_t< iterator_t, ConstructibleArrayType > > >::value &&is_detected< range_value_t, ConstructibleArrayType >::value &&!std::is_same< ConstructibleArrayType, detected_t< range_value_t, ConstructibleArrayType > >::value &&is_complete_type< detected_t< range_value_t, ConstructibleArrayType > >::value > >", "dd/d7f/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_583dd398977b8b5f7b8c5019bfefca8d.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_object_type_impl< BasicJsonType, ConstructibleObjectType, enable_if_t< is_detected< mapped_type_t, ConstructibleObjectType >::value &&is_detected< key_type_t, ConstructibleObjectType >::value > >", "d9/ded/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7633178604aa0b1781ef13907da270d2.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_string_type< BasicJsonType, ConstructibleStringType >", "d3/d9a/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_71a62bbe094ebdec2e506288a3e3bd1d.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType, enable_if_t< !std::is_same< ConstructibleArrayType, typename BasicJsonType::value_type >::value &&!is_compatible_string_type< BasicJsonType, ConstructibleArrayType >::value &&is_default_constructible< ConstructibleArrayType >::value &&(std::is_move_assignable< ConstructibleArrayType >::value||std::is_copy_assignable< ConstructibleArrayType >::value)&&is_detected< iterator_t, ConstructibleArrayType >::value &&is_iterator_traits< iterator_traits< detected_t< iterator_t, ConstructibleArrayType > > >::value &&is_detected< range_value_t, ConstructibleArrayType >::value &&!std::is_same< ConstructibleArrayType, detected_t< range_value_t, ConstructibleArrayType > >::value &&is_complete_type< detected_t< range_value_t, ConstructibleArrayType > >::value > >", "df/dda/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type__impl_3_01_ba44d90135c7935260a01ee017ddd08afc.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_object_type_impl< BasicJsonType, ConstructibleObjectType, enable_if_t< is_detected< mapped_type_t, ConstructibleObjectType >::value &&is_detected< key_type_t, ConstructibleObjectType >::value > >", "d4/d13/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__object__type__impl_3_01_b7620213c46294f2f60f98325127b8513.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_string_type< BasicJsonType, ConstructibleStringType >", "d6/dbf/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__string__type.html", null ],
     [ "is_default_constructible", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_default_constructible< T >", "dc/d43/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_1d40daa5368f2947d2b4e9ae41d984b8.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_default_constructible< T >", "d3/d7e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__default__constructible.html", null ]
     ] ],
     [ "is_detected", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_detected_lazy< Op, Args >", "d0/dbc/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_25fdc58604baf5fd90e568ef54444d2f.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::is_detected_lazy< Op, Args >", "da/de2/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__detected__lazy.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_getable< BasicJsonType, T >", "db/d8b/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_52e1df9902cbaab393253c655e478a5f.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_iterator_of_multibyte< T >", "d6/d4b/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_67d1ad31098ddc4148679d38f19a144a.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_iterator_traits< iterator_traits< T > >", "d6/d3a/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a6e2f15ff8c625e472148604441f8de1.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_ordered_map< T >", "da/d76/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_7316f666c5be0e228ec55afcfa59d846.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_range< T >", "d8/da6/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_182f2a0a00d88a5b44b629d3c8df3b9d.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_sax< SAX, BasicJsonType >", "da/df4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_bea74310ec7e6ed70897788f00765564.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_sax_static_asserts< SAX, BasicJsonType >", "d9/d46/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_8023d578f45ed43b2aa443e685a8c446.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_getable< BasicJsonType, T >", "d2/da0/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__getable.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_iterator_of_multibyte< T >", "de/db6/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__iterator__of__multibyte.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_iterator_traits< iterator_traits< T > >", "d6/d20/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_ordered_map< T >", "d3/d8f/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__ordered__map.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_range< T >", "d4/d3d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__range.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_sax< SAX, BasicJsonType >", "d8/df9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__sax.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_sax_static_asserts< SAX, BasicJsonType >", "d0/dce/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__sax__static__asserts.html", null ],
     [ "ISeekingPassThru", null, [
       [ "CSeekingPassThru", "d1/d04/class_c_seeking_pass_thru.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iter_impl< BasicJsonType >", "d3/d89/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r83689da7516d0e28717ac02998af34f0.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iteration_proxy< IteratorType >", "da/d47/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r13f8d7e1aea21d1d8b2040ae926e9524.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iteration_proxy_value< IteratorType >", "d1/d19/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ra8454bd313e3abfaf275ed97a338996a.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_input_adapter< IteratorType >", "d8/d93/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r1e4481a6eb088a77ef3e8a05de5f1a36.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_input_adapter_factory< IteratorType, Enable >", "d7/da4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_457e19ec4a015ded25a6613580369dce.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_input_adapter_factory< IteratorType, enable_if_t< is_iterator_of_multibyte< IteratorType >::value > >", "d6/d7d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_b4ad02ebbbea2701fdf35095b24f9c3e.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_traits< T, typename >", "d8/d2c/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_04cd798e3487f0368d4dffb3de2b3126.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_traits< T *, enable_if_t< std::is_object< T >::value > >", "d0/da3/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_681dec25dab461595ae11a8f6489d34a.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_types< It, typename >", "de/d3c/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_e9dbeb585aa87ab6fd8652717932787e.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_types< It, void_t< typename It::difference_type, typename It::value_type, typename It::pointer, typename It::reference, typename It::iterator_category > >", "da/d82/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_af66a2c46afc3c8f426602ade1289528.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_types< T >", "de/d3c/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_e9dbeb585aa87ab6fd8652717932787e.html", [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::iterator_traits< T, enable_if_t< !std::is_pointer< T >::value > >", "db/d58/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ce108b71381294403f4b7e7bc834e7f9.html", null ]
+    [ "nlohmann::json_abi_v3_11_3::detail::iter_impl< BasicJsonType >", "de/d6a/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iter__impl.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iteration_proxy< IteratorType >", "de/d3f/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iteration__proxy.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iteration_proxy_value< IteratorType >", "d3/d5a/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iteration__proxy__value.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_input_adapter< IteratorType >", "df/d72/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_input_adapter_factory< IteratorType, Enable >", "db/d58/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_input_adapter_factory< IteratorType, enable_if_t< is_iterator_of_multibyte< IteratorType >::value > >", "d0/dc9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_traits< T, typename >", "dc/d46/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_traits< T *, enable_if_t< std::is_object< T >::value > >", "d3/d6e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_01_5_00_01enable__if0ae3ae91da486e1c67e05ec13bd49a5e.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_types< It, typename >", "db/dad/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__types.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_types< It, void_t< typename It::difference_type, typename It::value_type, typename It::pointer, typename It::reference, typename It::iterator_category > >", "d0/d35/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__types_3_01_it_00_01void__t_3_01typa62ee87d444e8e07b8e8e58e6d3d7b38.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::iterator_types< T >", "db/dad/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__types.html", [
+      [ "nlohmann::json_abi_v3_11_3::detail::iterator_traits< T, enable_if_t< !std::is_pointer< T >::value > >", "d8/d52/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_00_01enable__if__t_3c3962b896ce3d985296153ad7d95d29b.html", null ]
     ] ],
     [ "IVideoWindow", null, [
       [ "CBaseVideoWindow", "da/d8e/class_c_base_video_window.html", null ]
@@ -641,15 +638,16 @@ var hierarchy =
     [ "j2kDecoderConfig", "d3/d00/classj2k_decoder_config.html", null ],
     [ "j2kDecoderStatus", "db/d67/classj2k_decoder_status.html", null ],
     [ "j2kEncoderConfig", "dd/dd2/classj2k_encoder_config.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::json_default_base", "d0/dc5/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_13af72db382c49ec44038bbdebd672d3.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::json_pointer< RefStringType >", "d9/d82/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rd1e744945e9a689d5d834cf7bfde1a03.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::json_pointer< RefStringType >", "d9/d82/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rd1e744945e9a689d5d834cf7bfde1a03.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::json_ref< BasicJsonType >", "d5/df9/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r58f646cec47ad3667922bf782fa64644.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::json_sax< BasicJsonType >", "d4/d60/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_aefbd96f8e9bd6a327166651f4289ad5.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::json_sax< BasicJsonType >", "d4/d60/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_aefbd96f8e9bd6a327166651f4289ad5.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::json_sax_acceptor< BasicJsonType >", "d4/d8d/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r7f863d4ff91ad830b691722a64f8df16.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::json_sax_dom_callback_parser< BasicJsonType >", "dd/dee/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rf08f7c790ff62f0c682e4ca091398bcd.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::json_sax_dom_parser< BasicJsonType >", "df/dd6/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r445567a72134e3d06420d6ca37d10026.html", null ],
+    [ "json_base_class", null, [
+      [ "nlohmann::json_abi_v3_11_3::basic_json< ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass >", "dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html", null ]
+    ] ],
+    [ "nlohmann::json_abi_v3_11_3::detail::json_default_base", "db/dcb/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1json__default__base.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::json_pointer< RefStringType >", "df/d36/classnlohmann_1_1json__abi__v3__11__3_1_1json__pointer.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::json_ref< BasicJsonType >", "d8/d57/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1json__ref.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::json_sax< BasicJsonType >", "d5/d55/structnlohmann_1_1json__abi__v3__11__3_1_1json__sax.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::json_sax_acceptor< BasicJsonType >", "df/db7/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1json__sax__acceptor.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::json_sax_dom_callback_parser< BasicJsonType >", "d2/d57/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1json__sax__dom__callback__parser.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::json_sax_dom_parser< BasicJsonType >", "d6/df4/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1json__sax__dom__parser.html", null ],
     [ "KonaDebugFilterStringInfo", "d8/dcb/struct_kona_debug_filter_string_info.html", null ],
     [ "KonaIP2022ParamSetupStruct", "d5/d1b/struct_kona_i_p2022_param_setup_struct.html", null ],
     [ "KonaIPParamJ2KSetupStruct", "de/da8/struct_kona_i_p_param_j2_k_setup_struct.html", null ],
@@ -680,12 +678,12 @@ var hierarchy =
     [ "KSPROPERTY_AJAPROPS_SUBSCRIPTIONS_S", "d5/d97/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___s_u_b_s_c_r_i_p_t_i_o_n_s___s.html", null ],
     [ "KSPROPERTY_AJAPROPS_SUBSCRIPTIONS_S_32", "dd/db3/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___s_u_b_s_c_r_i_p_t_i_o_n_s___s__32.html", null ],
     [ "std::less< ::nlohmann::detail::value_t >", "d0/dac/structstd_1_1less_3_01_1_1nlohmann_1_1detail_1_1value__t_01_4.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::lexer_base< BasicJsonType >", "d5/dd2/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r55d1f2a9f88b9443dd3e1e2826c10039.html", [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::lexer< BasicJsonType, InputAdapterType >", "d3/d64/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r6a6d1fa7794f36990ffa991f7371aa0c.html", null ]
+    [ "nlohmann::json_abi_v3_11_3::detail::lexer_base< BasicJsonType >", "d8/d5a/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1lexer__base.html", [
+      [ "nlohmann::json_abi_v3_11_3::detail::lexer< BasicJsonType, InputAdapterType >", "d3/d3d/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1lexer.html", null ]
     ] ],
     [ "MacAddr", "d0/df2/struct_mac_addr.html", null ],
     [ "MACAddr", "d0/d90/struct_m_a_c_addr.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::make_void< Ts >", "d1/d11/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_495318eceb3248977b37df380617570a.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::make_void< Ts >", "df/dcd/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1make__void.html", null ],
     [ "MAP_MEMORY", "d5/d5d/struct_m_a_p___m_e_m_o_r_y.html", null ],
     [ "MAP_MEMORY_32", "d6/dd1/struct_m_a_p___m_e_m_o_r_y__32.html", null ],
     [ "MasterPort", "d1/dca/class_master_port.html", null ],
@@ -693,7 +691,7 @@ var hierarchy =
     [ "multiRx_2110Config", "db/d78/structmulti_rx__2110_config.html", null ],
     [ "NetworkData2110", "d8/d95/struct_network_data2110.html", null ],
     [ "COutputQueue::NewSegmentPacket", "d0/dc0/struct_c_output_queue_1_1_new_segment_packet.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::nonesuch", "d6/d87/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_250b142f58fbaa1fdbd04616d0979336.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::nonesuch", "de/d6f/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1nonesuch.html", null ],
     [ "NTV2_CC708CDP", "d1/de5/struct_n_t_v2___c_c708_c_d_p.html", null ],
     [ "NTV2_CC708CDPDataSection", "d8/d60/struct_n_t_v2___c_c708_c_d_p_data_section.html", null ],
     [ "NTV2_CC708CDPDataTriplet", "dc/d86/struct_n_t_v2___c_c708_c_d_p_data_triplet.html", null ],
@@ -788,16 +786,14 @@ var hierarchy =
       [ "ThousandsSeparator", "de/dba/struct_thousands_separator.html", null ]
     ] ],
     [ "optionStackEntry", "da/dfb/structoption_stack_entry.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::ordered_map< Key, T, IgnoredLess, Allocator >", "da/dca/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_56c8ff605660db4fcdd1a6d47784ec6d.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::ordered_map< Key, T, IgnoredLess, Allocator >", "da/dca/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_56c8ff605660db4fcdd1a6d47784ec6d.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::output_adapter< CharType, StringType >", "db/d2f/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_refe1d6a1a1b30ef173c4e9541e849ce7.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::output_adapter_protocol< CharType >", "d5/d4d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_aa29583121b0b3bf74235a2f622cf2c0.html", [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::output_stream_adapter< CharType >", "d7/d2e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rc2c3c2ba1dae2a58fa99b6dd77f20a6f.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::output_string_adapter< CharType, StringType >", "d5/d8d/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rdaba0d289087aff876a8ad2358114e88.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::output_vector_adapter< CharType, AllocatorType >", "db/d8f/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r3b865e3039a864297b6c96ae7423b109.html", null ]
+    [ "nlohmann::json_abi_v3_11_3::detail::output_adapter< CharType, StringType >", "de/de9/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1output__adapter.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::output_adapter_protocol< CharType >", "db/dfe/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1output__adapter__protocol.html", [
+      [ "nlohmann::json_abi_v3_11_3::detail::output_stream_adapter< CharType >", "d8/d9b/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1output__stream__adapter.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::output_string_adapter< CharType, StringType >", "dd/d27/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1output__string__adapter.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::output_vector_adapter< CharType, AllocatorType >", "d0/dee/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1output__vector__adapter.html", null ]
     ] ],
     [ "PACKAGE_INFO_STRUCT", "d4/de9/struct_p_a_c_k_a_g_e___i_n_f_o___s_t_r_u_c_t.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::parser< BasicJsonType, InputAdapterType >", "dc/d81/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rc3455abda1c45cad73143cb42b75fafe.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::parser< BasicJsonType, InputAdapterType >", "dd/d92/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1parser.html", null ],
     [ "pbm_set", "d5/dfd/structpbm__set.html", null ],
     [ "PCM_CONTROL_INFO", "d1/d5b/struct_p_c_m___c_o_n_t_r_o_l___i_n_f_o.html", null ],
     [ "PERFINFO_DSHOW_AUDIOADDBREAK", "d4/d2b/struct_p_e_r_f_i_n_f_o___d_s_h_o_w___a_u_d_i_o_a_d_d_b_r_e_a_k.html", null ],
@@ -830,11 +826,11 @@ var hierarchy =
     [ "poptDone_s", "d2/dc9/structpopt_done__s.html", null ],
     [ "poptItem_s", "dd/dab/structpopt_item__s.html", null ],
     [ "poptOption", "d4/da9/structpopt_option.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::position_t", "d8/d6d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_9866448e33cc8d19e9ea607d57a8e1a1.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::primitive_iterator_t", "df/d94/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rfdefe8790c9fa9b3fa1d47730566ae71.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::position_t", "dc/dfd/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1position__t.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::primitive_iterator_t", "dc/d14/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1primitive__iterator__t.html", null ],
     [ "CNTV2SignalRouter::PrintCodeConfig", "dc/d0b/struct_c_n_t_v2_signal_router_1_1_print_code_config.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::priority_tag< N >", "d1/dbd/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_68fd6f1013ed187af63d8816cde368da.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::priority_tag< 0 >", "d6/d00/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_42647e5b1e14b69ee6304a2e60f9bae6.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::priority_tag< N >", "d0/d54/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1priority__tag.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::priority_tag< 0 >", "d3/d91/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1priority__tag_3_010_01_4.html", null ],
     [ "PTPStatus", "d1/d29/struct_p_t_p_status.html", null ],
     [ "QDialog", null, [
       [ "NTV2QtMultiInput", "dc/d3f/class_n_t_v2_qt_multi_input.html", null ],
@@ -860,7 +856,7 @@ var hierarchy =
     [ "RegisterExpert", "da/d31/class_register_expert.html", null ],
     [ "registerToLoadString", "d4/ddb/structregister_to_load_string.html", null ],
     [ "reverse_iterator", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::json_reverse_iterator< Base >", "da/dd5/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r3bacc96409fa6f4b9f4a8d4c09cb031a.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::json_reverse_iterator< Base >", "d4/d34/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1json__reverse__iterator.html", null ]
     ] ],
     [ "RGBAlpha10BitPixel", "df/d26/struct_r_g_b_alpha10_bit_pixel.html", null ],
     [ "RGBAlpha16BitPixel", "d7/d96/struct_r_g_b_alpha16_bit_pixel.html", null ],
@@ -880,56 +876,56 @@ var hierarchy =
     [ "SDRAMAuditor", "d8/de9/class_s_d_r_a_m_auditor.html", null ],
     [ "SegmentDescriptor", "db/d9e/struct_segment_descriptor.html", null ],
     [ "SegmentTestPatternData", "d4/dab/struct_segment_test_pattern_data.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::serializer< BasicJsonType >", "da/d6f/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r8735175c671749ce0e426103e640ecca.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::serializer< BasicJsonType >", "db/d84/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1serializer.html", null ],
     [ "SerialMachineResponse", "d3/d81/struct_serial_machine_response.html", null ],
     [ "SFPData2110", "d6/d7c/struct_s_f_p_data2110.html", null ],
     [ "SFPMSAData", "d1/d22/struct_s_f_p_m_s_a_data.html", null ],
     [ "SFPStatus", "d2/d8e/struct_s_f_p_status.html", null ],
     [ "SFPStruct", "d4/db9/struct_s_f_p_struct.html", null ],
     [ "SharedData", "da/da1/struct_shared_data.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::span_input_adapter", "d6/d7e/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_r7651108fe7509e9975e75ba98474e982.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::span_input_adapter", "d3/d39/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1span__input__adapter.html", null ],
     [ "SRTCaptionInfo", "de/dea/class_s_r_t_caption_info.html", null ],
     [ "SRTCaptions", "d0/d82/class_s_r_t_captions.html", null ],
     [ "SRTWindow", "dc/d69/class_s_r_t_window.html", null ],
     [ "SSC_GET_FIRMWARE_PROGRESS_STRUCT", "d5/de2/struct_s_s_c___g_e_t___f_i_r_m_w_a_r_e___p_r_o_g_r_e_s_s___s_t_r_u_c_t.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::static_const< T >", "d7/d17/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_00d3af16bac932a568d2db7719b7e071.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::static_const< T >", "d5/d29/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1static__const.html", null ],
     [ "tag_ObjectDesc", "df/d1a/structtag___object_desc.html", null ],
     [ "tagDIBDATA", "df/d48/structtag_d_i_b_d_a_t_a.html", null ],
     [ "TestLineDataStr", "da/d5b/struct_test_line_data_str.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::to_json_fn", "d6/dde/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_bdf8eddcd8d2854343d33575bff3eb81.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::to_json_fn", "d6/d9e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1to__json__fn.html", null ],
     [ "TransmitAncData2110", "d0/d09/struct_transmit_anc_data2110.html", null ],
     [ "TransmitAudioData2110", "d5/d36/struct_transmit_audio_data2110.html", null ],
     [ "TransmitStruct2022", "d9/d56/struct_transmit_struct2022.html", null ],
     [ "TransmitVideoData2110", "d6/def/struct_transmit_video_data2110.html", null ],
     [ "true_type", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::conjunction< is_constructible< T1, Args >... >", "d7/d51/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a7160ba487fdd0d37b92dff685883c77.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_tuple< T1, std::tuple< Args... > >", "dc/d48/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3fe2b665fe2a90b623eeb98a78941bfa.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::conjunction< is_constructible< T1, Args >... >", "df/d78/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1conjunction.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_tuple< T1, std::tuple< Args... > >", "d9/d85/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__tuple_3_01_t1_00_01std_1_b9271fe75fbae5b550f1ec67171e176e.html", null ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::conjunction< is_default_constructible< T1 >, is_default_constructible< T2 > >", "d7/d51/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a7160ba487fdd0d37b92dff685883c77.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_default_constructible< const std::pair< T1, T2 > >", "d2/dea/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_d539e127fd3881e83a5cfb75c4aee7b9.html", [
-          [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible< const std::pair< T1, T2 > >", "d1/ded/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_5a29c077851a441bdb858ab2b05ab707.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::conjunction< is_default_constructible< T1 >, is_default_constructible< T2 > >", "df/d78/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1conjunction.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_default_constructible< const std::pair< T1, T2 > >", "d7/d2a/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__default__constructible_3_01const_01std_11747e38f96f36e9eccb1437c52fbde26.html", [
+          [ "nlohmann::json_abi_v3_11_3::detail::is_constructible< const std::pair< T1, T2 > >", "d5/d9b/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible_3_01const_01std_1_1pair_3_01_t1_00_01_t2_01_4_01_4.html", null ]
         ] ],
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_default_constructible< std::pair< T1, T2 > >", "d2/d38/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_dc3f9beae45dfd7b6c65f94985a4b1c1.html", [
-          [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible< std::pair< T1, T2 > >", "dd/d3a/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_918ac40180fde8b44b0ff227db47b784.html", null ]
+        [ "nlohmann::json_abi_v3_11_3::detail::is_default_constructible< std::pair< T1, T2 > >", "d3/dc7/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__default__constructible_3_01std_1_1pair_3_01_t1_00_01_t2_01_4_01_4.html", [
+          [ "nlohmann::json_abi_v3_11_3::detail::is_constructible< std::pair< T1, T2 > >", "d6/d79/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible_3_01std_1_1pair_3_01_t1_00_01_t2_01_4_01_4.html", null ]
         ] ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::conjunction< is_default_constructible< Ts >... >", "d7/d51/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a7160ba487fdd0d37b92dff685883c77.html", [
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_default_constructible< const std::tuple< Ts... > >", "df/df0/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_2a70f1b144500965f7943430b9e3bf44.html", [
-          [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible< const std::tuple< Ts... > >", "d0/d09/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_9d46ed3701b70d684ecc64590f64239b.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::conjunction< is_default_constructible< Ts >... >", "df/d78/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1conjunction.html", [
+        [ "nlohmann::json_abi_v3_11_3::detail::is_default_constructible< const std::tuple< Ts... > >", "da/d23/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__default__constructible_3_01const_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4.html", [
+          [ "nlohmann::json_abi_v3_11_3::detail::is_constructible< const std::tuple< Ts... > >", "d7/d4a/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible_3_01const_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4.html", null ]
         ] ],
-        [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_default_constructible< std::tuple< Ts... > >", "db/d9c/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_cf8271793e0c88fc8d8d4e5637473a94.html", [
-          [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible< std::tuple< Ts... > >", "d8/d8c/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_4bdc03649bc39425a8d24e151a63b756.html", null ]
+        [ "nlohmann::json_abi_v3_11_3::detail::is_default_constructible< std::tuple< Ts... > >", "db/dac/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__default__constructible_3_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4.html", [
+          [ "nlohmann::json_abi_v3_11_3::detail::is_constructible< std::tuple< Ts... > >", "da/d74/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible_3_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4.html", null ]
         ] ]
       ] ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::conjunction<... >", "d7/d51/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_a7160ba487fdd0d37b92dff685883c77.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_basic_json< basic_json< ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass > >", "d8/d10/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_0fb83e0cf5fa26296297197e9b4c2b4d.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_comparable< Compare, A, B, void_t< decltype(std::declval< Compare >()(std::declval< A >(), std::declval< B >())), decltype(std::declval< Compare >()(std::declval< B >(), std::declval< A >()))> >", "da/deb/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_9d82564854c6b48e101747905f72c2fd.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_complete_type< T, decltype(void(sizeof(T)))>", "d2/dd4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6b4f3508d39aa54bc3cb0c07987ccb1d.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType, enable_if_t< std::is_same< ConstructibleArrayType, typename BasicJsonType::value_type >::value > >", "d0/d74/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_6186131b631e813572083a817baf6381.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_json_iterator_of< BasicJsonType, typename BasicJsonType::const_iterator >", "dc/d88/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_c5e16318fefaec5514d3d401e62de1e1.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_json_iterator_of< BasicJsonType, typename BasicJsonType::iterator >", "d1/d79/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_f1ef4ab2099c9d3d6e18bb766d63fb7b.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_json_ref< json_ref< T > >", "d9/d0d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_332387511df3ef11eb12a497b490efd2.html", null ],
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_specialization_of< Primary, Primary< Args... > >", "d7/ded/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_0dfb31e816803b375ff10d4f011d0b7c.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::conjunction<... >", "df/d78/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1conjunction.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_basic_json< basic_json< ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass > >", "d4/de8/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__basic__json_3_01basic__json_3_01_object_1f8de83b7eb7914daab615ce0c7a2da3.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_comparable< Compare, A, B, void_t< decltype(std::declval< Compare >()(std::declval< A >(), std::declval< B >())), decltype(std::declval< Compare >()(std::declval< B >(), std::declval< A >()))> >", "d3/dc5/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__comparable_3_01_compare_00_01_a_00_01_b_8faa96cdc8512d5afe0e19fb468d2294.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_complete_type< T, decltype(void(sizeof(T)))>", "df/dff/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__complete__type_3_01_t_00_01decltype_07void_07sizeof_07_t_08_08_08_4.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_constructible_array_type_impl< BasicJsonType, ConstructibleArrayType, enable_if_t< std::is_same< ConstructibleArrayType, typename BasicJsonType::value_type >::value > >", "da/d22/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type__impl_3_01_baf01a8816c1bf7da5f97f17df8936ccbd.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_json_iterator_of< BasicJsonType, typename BasicJsonType::const_iterator >", "da/d60/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__json__iterator__of_3_01_basic_json_type_8178be22277ab5251a9c4e4b5ecfccb4.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_json_iterator_of< BasicJsonType, typename BasicJsonType::iterator >", "d7/d42/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__json__iterator__of_3_01_basic_json_type_866ec3a31d6a57c75a2b0ee13a308cbd.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_json_ref< json_ref< T > >", "d1/d62/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__json__ref_3_01json__ref_3_01_t_01_4_01_4.html", null ],
+      [ "nlohmann::json_abi_v3_11_3::detail::is_specialization_of< Primary, Primary< Args... > >", "d1/dc1/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__specialization__of_3_01_primary_00_01_primary_3_01_args_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "TsEncapStreamData", "db/dbd/struct_ts_encap_stream_data.html", null ],
     [ "TSGenerator", "d0/dd4/class_t_s_generator.html", [
@@ -940,42 +936,45 @@ var hierarchy =
     ] ],
     [ "TsVideoStreamData", "d7/d47/struct_ts_video_stream_data.html", null ],
     [ "std::tuple_element< N, ::nlohmann::detail::iteration_proxy_value< IteratorType > >", "d4/dfa/classstd_1_1tuple__element_3_01_n_00_01_1_1nlohmann_1_1detail_1_1iteration__proxy__value_3_01_iterator_type_01_4_01_4.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::is_ordered_map< T >::two", "d6/d53/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_28bf5889a5edc4ceb131ea0616f53e04.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::is_ordered_map< T >::two", "db/d25/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__ordered__map_1_1two.html", null ],
     [ "tx_2022_channel", "d3/d18/classtx__2022__channel.html", null ],
     [ "tx_2110Config", "dd/dad/classtx__2110_config.html", null ],
     [ "TxAncChData2110", "d1/da6/struct_tx_anc_ch_data2110.html", null ],
     [ "TxAudioChData2110", "d9/dec/struct_tx_audio_ch_data2110.html", null ],
     [ "TxVideoChData2110", "da/d8e/struct_tx_video_ch_data2110.html", null ],
     [ "type", null, [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::conjunction< B, Bn... >", "d4/d21/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_73255196ab247247006445220c21846e.html", null ]
+      [ "nlohmann::json_abi_v3_11_3::detail::conjunction< B, Bn... >", "d9/d47/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1conjunction_3_01_b_00_01_bn_8_8_8_01_4.html", null ]
     ] ],
     [ "v4l2_loopback_config", "df/d19/structv4l2__loopback__config.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl1< OfType, T, NeverOutOfRange, typename >", "d3/df2/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_212cfcd5ace626e0c548963fb630c0bb.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl1< OfType, T, false >", "da/d46/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_1d886270d17ac2c62483a892848617ca.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl1< OfType, T, true >", "d6/d60/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3c31fc66f332304658cecb897936a756.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl2< OfType, T, OfTypeSigned, TSigned >", "df/dc9/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_bf54dc06d3011ee9db81f2be80fe4e59.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl2< OfType, T, false, false >", "d1/dc0/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_f6d3fe5586a8582519e00343c6e72989.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl2< OfType, T, false, true >", "d7/dc4/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ef432718a0d067b739901243b9df0979.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl2< OfType, T, true, false >", "d1/de3/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_58bf814fafeb339c4fab8e47b2bd46a5.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::value_in_range_of_impl2< OfType, T, true, true >", "d5/d2d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_2216e17ae8bec4c9e1eb906547737473.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl1< OfType, T, NeverOutOfRange, typename >", "d7/dd1/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl1.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl1< OfType, T, false >", "d7/d50/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl1_3_01_of_type_00_01_t_00_01false_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl1< OfType, T, true >", "dc/d82/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl1_3_01_of_type_00_01_t_00_01true_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl2< OfType, T, OfTypeSigned, TSigned >", "d4/df4/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl2.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl2< OfType, T, false, false >", "d6/d96/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl2_3_01_of_type_00_01_t_00_01false_00_01false_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl2< OfType, T, false, true >", "d2/db0/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl2_3_01_of_type_00_01_t_00_01false_00_01true_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl2< OfType, T, true, false >", "d4/dcf/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl2_3_01_of_type_00_01_t_00_01true_00_01false_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::value_in_range_of_impl2< OfType, T, true, true >", "d2/d11/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1value__in__range__of__impl2_3_01_of_type_00_01_t_00_01true_00_01true_01_4.html", null ],
+    [ "vector", null, [
+      [ "nlohmann::json_abi_v3_11_3::ordered_map< Key, T, IgnoredLess, Allocator >", "d7/dda/structnlohmann_1_1json__abi__v3__11__3_1_1ordered__map.html", null ]
+    ] ],
     [ "VirtualProcAmpRegisters", "da/d09/struct_virtual_proc_amp_registers.html", null ],
     [ "VirtualProcAmpRegisters_base", "d6/d3a/struct_virtual_proc_amp_registers__base.html", null ],
     [ "VPIDControl", "d9/d31/struct_v_p_i_d_control.html", null ],
     [ "VPIDSpec", "da/d93/struct_v_p_i_d_spec.html", null ],
     [ "VPIDTableInitializer", "dc/dd2/class_v_p_i_d_table_initializer.html", null ],
     [ "WAVEFORMATEXTENSIBLE", "d9/d29/struct_w_a_v_e_f_o_r_m_a_t_e_x_t_e_n_s_i_b_l_e.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::wide_string_input_adapter< BaseInputAdapter, WideCharType >", "da/d69/classnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_rb3743789be1fb332c9aff53566a17a48.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::wide_string_input_helper< BaseInputAdapter, T >", "da/d26/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_78f14c6bc8dae1e55565957544edbc1d.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::wide_string_input_helper< BaseInputAdapter, 2 >", "d9/d7d/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_08e5853b1e64daf7c8b7f09258aedbc5.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail::wide_string_input_helper< BaseInputAdapter, 4 >", "de/d18/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ff925d8d9607bcc6effff9f278254cf9.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::wide_string_input_adapter< BaseInputAdapter, WideCharType >", "d4/d00/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1wide__string__input__adapter.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::wide_string_input_helper< BaseInputAdapter, T >", "d8/d40/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1wide__string__input__helper.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::wide_string_input_helper< BaseInputAdapter, 2 >", "d8/de5/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1wide__string__input__helper_3_01_base_input_adapter_00_012_01_4.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail::wide_string_input_helper< BaseInputAdapter, 4 >", "dd/dbb/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1wide__string__input__helper_3_01_base_input_adapter_00_014_01_4.html", null ],
     [ "WindowsVersionEntry", "d0/de7/struct_windows_version_entry.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail2::would_call_std_begin< T >", "de/d63/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ca9717710504a205749a1bd838f62ea5.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail2::would_call_std_begin< T... >", "de/d63/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_ca9717710504a205749a1bd838f62ea5.html", [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::would_call_std_begin< T >", "d2/d15/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_5d7668f2310c15afb62bfac110daf733.html", null ]
+    [ "nlohmann::json_abi_v3_11_3::detail2::would_call_std_begin< T >", "d0/d02/structnlohmann_1_1json__abi__v3__11__3_1_1detail2_1_1would__call__std__begin.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail2::would_call_std_begin< T... >", "d0/d02/structnlohmann_1_1json__abi__v3__11__3_1_1detail2_1_1would__call__std__begin.html", [
+      [ "nlohmann::json_abi_v3_11_3::would_call_std_begin< T >", "d8/da9/structnlohmann_1_1json__abi__v3__11__3_1_1would__call__std__begin.html", null ]
     ] ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail2::would_call_std_end< T >", "d9/ddc/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_45b27d39b67036e0189eee0f5ef545b7.html", null ],
-    [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::detail2::would_call_std_end< T... >", "d9/ddc/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_45b27d39b67036e0189eee0f5ef545b7.html", [
-      [ "nlohmann::json_abiNLOHMANN_JSON_ABI_TAG_LEGACY_DISCARDED_VALUE_COMPARISON_v3_11_NLOHMANN_JSON_VERSION_PATCH::would_call_std_end< T >", "df/de8/structnlohmann_1_1json__abi_n_l_o_h_m_a_n_n___j_s_o_n___a_b_i___t_a_g___l_e_g_a_c_y___d_i_s_c_a_3c3abc35a5b35a4641ee5f30bc507b9d.html", null ]
+    [ "nlohmann::json_abi_v3_11_3::detail2::would_call_std_end< T >", "dd/dd3/structnlohmann_1_1json__abi__v3__11__3_1_1detail2_1_1would__call__std__end.html", null ],
+    [ "nlohmann::json_abi_v3_11_3::detail2::would_call_std_end< T... >", "dd/dd3/structnlohmann_1_1json__abi__v3__11__3_1_1detail2_1_1would__call__std__end.html", [
+      [ "nlohmann::json_abi_v3_11_3::would_call_std_end< T >", "d3/de3/structnlohmann_1_1json__abi__v3__11__3_1_1would__call__std__end.html", null ]
     ] ],
     [ "YCbCr10BitAlphaPixel", "d7/dee/struct_y_cb_cr10_bit_alpha_pixel.html", null ],
     [ "YCbCr10BitPixel", "d7/dea/struct_y_cb_cr10_bit_pixel.html", null ],

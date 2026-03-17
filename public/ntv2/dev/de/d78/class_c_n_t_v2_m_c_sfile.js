@@ -10,6 +10,7 @@ var class_c_n_t_v2_m_c_sfile =
     [ "GetBitfileTimeString", "de/d78/class_c_n_t_v2_m_c_sfile.html#ac0522a387077e91c107dcd8c50618bae", null ],
     [ "GetCurrentParsedRecord", "de/d78/class_c_n_t_v2_m_c_sfile.html#a37711da7214b2d6800db9a315131bbc7", null ],
     [ "GetFileByteStream", "de/d78/class_c_n_t_v2_m_c_sfile.html#ae4aca0110368ea38f50e1fc0e68eb301", null ],
+    [ "GetLastError", "de/d78/class_c_n_t_v2_m_c_sfile.html#a0b7a24d209ebebc6d6e02be33336f558", null ],
     [ "GetMCSHeaderInfo", "de/d78/class_c_n_t_v2_m_c_sfile.html#a815c6cf410cc9e032580b7ee1510222d", null ],
     [ "GetMCSPackageDateString", "de/d78/class_c_n_t_v2_m_c_sfile.html#a8cf2b8a66ca34144426f626dfaf27333", null ],
     [ "GetMCSPackageVersionString", "de/d78/class_c_n_t_v2_m_c_sfile.html#a1aa4485fd647f94aae6348e20b3f67c9", null ],

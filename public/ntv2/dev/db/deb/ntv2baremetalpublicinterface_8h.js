@@ -39,7 +39,7 @@ var ntv2baremetalpublicinterface_8h =
     [ "NTV2_BAREMETAL_DRIVER_VERSION", "db/deb/ntv2baremetalpublicinterface_8h.html#a196ac5ee96a53c6b4c6a24cfa0d74630", null ],
     [ "NTV2_DEVICE_TYPE", "db/deb/ntv2baremetalpublicinterface_8h.html#a49e00942d323e30d0ae85868b2107954", null ],
     [ "ntv2DMADriverbuffer", "db/deb/ntv2baremetalpublicinterface_8h.html#a9c6d850ad83eb9dc108705d06e946e23", null ],
-    [ "MAP_MEMORY", "db/deb/ntv2baremetalpublicinterface_8h.html#ae5cbbbaf56a73b5be2167887841ec94c", null ],
+    [ "MAP_MEMORY", "db/deb/ntv2baremetalpublicinterface_8h.html#ae76cb66f85103a3b18d9a36dd6de2131", null ],
     [ "P_AUTOCIRCULATE_FRAME_STAMP_COMBO_STRUCT", "db/deb/ntv2baremetalpublicinterface_8h.html#a51981755218ec412c34ed6b8ae8f272d", null ],
     [ "P_AUTOCIRCULATE_TRANSFER_COMBO_STRUCT", "db/deb/ntv2baremetalpublicinterface_8h.html#aaa7a85979643312d31de59f6bb0aea97", null ],
     [ "P_NTV2_CONTROL_DRIVER_DEBUG_MESSAGES_STRUCT", "db/deb/ntv2baremetalpublicinterface_8h.html#ae871b30d42cfc9baab583d1e016855c8", null ],

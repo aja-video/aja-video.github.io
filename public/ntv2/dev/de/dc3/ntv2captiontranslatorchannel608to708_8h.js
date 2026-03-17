@@ -2,7 +2,7 @@ var ntv2captiontranslatorchannel608to708_8h =
 [
     [ "CC708WindowStatus", "d6/d7a/struct_c_c708_window_status.html", "d6/d7a/struct_c_c708_window_status" ],
     [ "CNTV2CaptionTranslatorChannel608to708", "da/d64/class_c_n_t_v2_caption_translator_channel608to708.html", "da/d64/class_c_n_t_v2_caption_translator_channel608to708" ],
-    [ "CC708WindowStatus", "de/dc3/ntv2captiontranslatorchannel608to708_8h.html#a6a858e65b375c325cd85f5f540604965", null ],
+    [ "CC708WindowStatus", "de/dc3/ntv2captiontranslatorchannel608to708_8h.html#ad74f25aa2eef614051bea34c160c7b32", null ],
     [ "CNTV2CaptionTranslatorChannel608to708Ptr", "de/dc3/ntv2captiontranslatorchannel608to708_8h.html#ac5d11b31c19d5d3831758039e05dcea4", null ],
     [ "NTV2_CC608_TextRowHeight", "de/dc3/ntv2captiontranslatorchannel608to708_8h.html#a1bf1a7e44ffca54d980b9627346510e1", null ],
     [ "NTV2_CC708Default608BorderType", "de/dc3/ntv2captiontranslatorchannel608to708_8h.html#a3a6bbf946d97f973edd7bc842f91f5ae", null ],

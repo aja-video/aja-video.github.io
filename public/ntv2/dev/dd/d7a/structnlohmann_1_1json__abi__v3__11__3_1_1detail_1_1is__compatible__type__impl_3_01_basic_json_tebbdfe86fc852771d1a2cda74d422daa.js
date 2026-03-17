@@ -1,0 +1,4 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__type__impl_3_01_basic_json_tebbdfe86fc852771d1a2cda74d422daa =
+[
+    [ "value", "dd/d7a/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__type__impl_3_01_basic_json_tebbdfe86fc852771d1a2cda74d422daa.html#aaba73a4ccfa984714f8c6c41ddeb76a0", null ]
+];

@@ -7,6 +7,7 @@ var class_n_t_v2_frame_grabber =
     [ "CheckForValidInput", "d0/df4/class_n_t_v2_frame_grabber.html#ab442eebb17346fc130adabb28d563672", null ],
     [ "ClearCaptionBuffer", "d0/df4/class_n_t_v2_frame_grabber.html#a8f53a7bacf728cb73cd7fad4c4e96f2a", null ],
     [ "GetColorSpaceFromInputSource", "d0/df4/class_n_t_v2_frame_grabber.html#ad4b2e7be30350db201d1c163a5b8c0fd", null ],
+    [ "GetDeinterlaceNonProgressiveVideo", "d0/df4/class_n_t_v2_frame_grabber.html#a238e090c50087e5f883ae5c3ae47e06a", null ],
     [ "GetDeviceIndex", "d0/df4/class_n_t_v2_frame_grabber.html#a7f850f10d9d3db849963a8ad50ace80b", null ],
     [ "GetVideoFormatFromInputSource", "d0/df4/class_n_t_v2_frame_grabber.html#a3cb7e0d5105f69817564bbc68dc1e825", null ],
     [ "GrabCaptions", "d0/df4/class_n_t_v2_frame_grabber.html#a372d914be4dce8744bbf9b1b2e2d810d", null ],

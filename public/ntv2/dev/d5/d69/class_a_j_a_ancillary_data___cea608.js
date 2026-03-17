@@ -7,6 +7,7 @@ var class_a_j_a_ancillary_data___cea608 =
     [ "~AJAAncillaryData_Cea608", "d5/d69/class_a_j_a_ancillary_data___cea608.html#a73fa63e3bb8c3ce04b82e310b671e918", null ],
     [ "AddOddParity", "d5/d69/class_a_j_a_ancillary_data___cea608.html#ab1d2b28e40e345297fed371b16921f5f", null ],
     [ "Clear", "d5/d69/class_a_j_a_ancillary_data___cea608.html#a2657feb04408ba8d69b17716842f6909", null ],
+    [ "Clone", "d5/d69/class_a_j_a_ancillary_data___cea608.html#ad2f3e43016a5cb31d640c22a85957fb9", null ],
     [ "GetCEA608Bytes", "d5/d69/class_a_j_a_ancillary_data___cea608.html#a3e73ffc1bce6c022381ef188908f1eae", null ],
     [ "GetCEA608Characters", "d5/d69/class_a_j_a_ancillary_data___cea608.html#ab4827701133098612d4ec8401c9e72a7", null ],
     [ "Init", "d5/d69/class_a_j_a_ancillary_data___cea608.html#afc02cf0c4e5df920c95b309f10d864d9", null ],

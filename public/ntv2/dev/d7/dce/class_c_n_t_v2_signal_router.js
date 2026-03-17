@@ -1,11 +1,14 @@
 var class_c_n_t_v2_signal_router =
 [
     [ "PrintCodeConfig", "dc/d0b/struct_c_n_t_v2_signal_router_1_1_print_code_config.html", "dc/d0b/struct_c_n_t_v2_signal_router_1_1_print_code_config" ],
+    [ "CNTV2SignalRouter", "d7/dce/class_c_n_t_v2_signal_router.html#af61730c12a9dc3c61fffb9698b49368c", null ],
+    [ "~CNTV2SignalRouter", "d7/dce/class_c_n_t_v2_signal_router.html#af0e9c7c4bc1c7ce88237e712422a9f98", null ],
     [ "AddConnection", "d7/dce/class_c_n_t_v2_signal_router.html#a1088d0ce7bb66f02527d64b37806f267", null ],
     [ "Compare", "d7/dce/class_c_n_t_v2_signal_router.html#a03697ad9a4239f70984386ddfe40a5ef", null ],
     [ "CompareConnections", "d7/dce/class_c_n_t_v2_signal_router.html#a97b4d8ac3b99e5e1bbf1021fce00ec8e", null ],
-    [ "CreateFromString", "d7/dce/class_c_n_t_v2_signal_router.html#a670127e97d615c97e3ca6f15b3bcd19a", null ],
     [ "CreateFromString", "d7/dce/class_c_n_t_v2_signal_router.html#a2139558ceff3ab9a4601378950e6d4a7", null ],
+    [ "CreateFromString", "d7/dce/class_c_n_t_v2_signal_router.html#a0df545dfea663e27a98acd4f0249a6ee", null ],
+    [ "CreateFromString", "d7/dce/class_c_n_t_v2_signal_router.html#a670127e97d615c97e3ca6f15b3bcd19a", null ],
     [ "Deinitialize", "d7/dce/class_c_n_t_v2_signal_router.html#a00481c284fb866aaf31d0619b0421a4d", null ],
     [ "GetAllRoutingRegInfos", "d7/dce/class_c_n_t_v2_signal_router.html#a6fcbbd7efd7ffc30c911e018c7dabf72", null ],
     [ "GetAllWidgetInputs", "d7/dce/class_c_n_t_v2_signal_router.html#af67390c50854d885ee4bce2449dc5272", null ],

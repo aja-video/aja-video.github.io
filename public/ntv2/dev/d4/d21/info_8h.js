@@ -46,7 +46,7 @@ var info_8h =
       [ "AJA_SystemInfoTag_Path_NTV2VirtualDevices", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674abea3e192293748445e4c73bd85a97216", null ],
       [ "AJA_SystemInfoTag_LAST", "d4/d21/info_8h.html#ac012223bdeca3d8fd6e6cabf78b14674a441d30fd1276a859c95fa57cb9b4852a", null ]
     ] ],
+    [ "operator<<", "d4/d21/info_8h.html#afba1e24fe2b36dbb3237783b93c3fa3c", null ],
     [ "operator<<", "d4/d21/info_8h.html#adb0a4c3cde66f3e58342f552a7a9699a", null ],
-    [ "operator<<", "d4/d21/info_8h.html#ad5f158173b57f41364d09c2beb885df5", null ],
-    [ "operator<<", "d4/d21/info_8h.html#afba1e24fe2b36dbb3237783b93c3fa3c", null ]
+    [ "operator<<", "d4/d21/info_8h.html#ad5f158173b57f41364d09c2beb885df5", null ]
 ];

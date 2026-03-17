@@ -1,8 +1,8 @@
 var ntv2cscmatrix_8h =
 [
     [ "CNTV2CSCMatrix", "d1/dfd/class_c_n_t_v2_c_s_c_matrix.html", "d1/dfd/class_c_n_t_v2_c_s_c_matrix" ],
-    [ "NTV2CSCCoeffIndex", "d0/de9/ntv2cscmatrix_8h.html#af009065e48b0d8a24c1564bcdd7db604", null ],
-    [ "NTV2CSCOffsetIndex", "d0/de9/ntv2cscmatrix_8h.html#a4d148cddd1ad1d9eec0daf473cda1a19", null ],
+    [ "NTV2CSCCoeffIndex", "d0/de9/ntv2cscmatrix_8h.html#a9307a4477590f958c6d0c92320e3607c", null ],
+    [ "NTV2CSCOffsetIndex", "d0/de9/ntv2cscmatrix_8h.html#a8a1316cb62649f7ef86a96919fcd2a69", null ],
     [ "NTV2CSCCoeff", "d0/de9/ntv2cscmatrix_8h.html#ae25c0aaa4e0f7075616f93f10dd49aa3", [
       [ "NTV2CSCCoeffIndex_A0", "d0/de9/ntv2cscmatrix_8h.html#ae25c0aaa4e0f7075616f93f10dd49aa3ae3ccad5aea0dcc04dc77d16115139220", null ],
       [ "NTV2CSCCoeffIndex_A1", "d0/de9/ntv2cscmatrix_8h.html#ae25c0aaa4e0f7075616f93f10dd49aa3adf43f046b3a9d884cfd06879295dc2a1", null ],

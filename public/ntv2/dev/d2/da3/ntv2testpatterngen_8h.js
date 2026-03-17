@@ -29,6 +29,8 @@ var ntv2testpatterngen_8h =
       [ "NTV2_TestPatt_ColorQuadrantBorder", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081aec005acbbd6c5d17752b8d34621bbba5", null ],
       [ "NTV2_TestPatt_ColorQuadrantTsi", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081a458be32c18aff780de5e89fde551f19a", null ],
       [ "NTV2_TestPatt_TsiAlignment", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081ac291a93f150ed8a9cb639d58cfbc1bc2", null ],
+      [ "NTV2_TestPatt_NoiseUniform", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081a5320e98b8295b66df464cffefe9b4545", null ],
+      [ "NTV2_TestPatt_NoiseGaussian", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081a19d468947ff3c9ce4b9110c488c0f9a8", null ],
       [ "NTV2_TestPatt_ZonePlate_12b_RGB", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081ae30d83f03f0eb9e28843643d0c4dbd29", null ],
       [ "NTV2_TestPatt_LinearRamp_12b_RGB", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081a4efc1cc46b8d9795d8be72ddbb1cf6ae", null ],
       [ "NTV2_TestPatt_HLG_Narrow_12b_RGB", "d2/da3/ntv2testpatterngen_8h.html#af52f2a6157ce5d1c6315c889188bd081aab02b4d4ae35e453b93d46fe786ad236", null ],

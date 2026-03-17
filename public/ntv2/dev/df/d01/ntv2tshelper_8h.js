@@ -9,8 +9,8 @@ var ntv2tshelper_8h =
     [ "ADPGen", "df/df4/class_a_d_p_gen.html", "df/df4/class_a_d_p_gen" ],
     [ "KIPDPRINT", "df/d01/ntv2tshelper_8h.html#ad8a8264803535cffde5e8d0acfff5046", null ],
     [ "kipdprintf", "df/d01/ntv2tshelper_8h.html#aff7cae7aedf0376486af6ac53b45652e", null ],
-    [ "TsEncapStreamData", "df/d01/ntv2tshelper_8h.html#a219b1e6eb8e670cb7e89c5f256216fd0", null ],
-    [ "TsVideoStreamData", "df/d01/ntv2tshelper_8h.html#a94395ad0a5e573af5045cca1ad81ace2", null ],
+    [ "TsEncapStreamData", "df/d01/ntv2tshelper_8h.html#a99dcd74d5fac3b056aeadb398c83ed09", null ],
+    [ "TsVideoStreamData", "df/d01/ntv2tshelper_8h.html#a21078f4e85660bcd10a37c5036e3d91d", null ],
     [ "J2KChromaSubSampling", "df/d01/ntv2tshelper_8h.html#ab1037e3592cce98c41ecec6cc7506af0", [
       [ "kJ2KChromaSubSamp_444", "df/d01/ntv2tshelper_8h.html#ab1037e3592cce98c41ecec6cc7506af0a87b1650dab6eea66c044634bcff3aa11", null ],
       [ "kJ2KChromaSubSamp_422_444", "df/d01/ntv2tshelper_8h.html#ab1037e3592cce98c41ecec6cc7506af0abfd138f4b34df2566e4c9365841b37eb", null ],

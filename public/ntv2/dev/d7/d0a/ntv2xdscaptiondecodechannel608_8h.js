@@ -2,8 +2,8 @@ var ntv2xdscaptiondecodechannel608_8h =
 [
     [ "CNTV2XDSDecodeChannel608", "d1/d9d/class_c_n_t_v2_x_d_s_decode_channel608.html", "d1/d9d/class_c_n_t_v2_x_d_s_decode_channel608" ],
     [ "CNTV2XDSDecodeChannel608Ptr", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#ab4c6a1233b77425cde9df7257b6d334b", null ],
-    [ "NTV2_CC608_XDSClass", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#a1f0b78906b6e224fd5efb27ae0d2a3e6", null ],
-    [ "NTV2_CC608_XDSType", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#a01676bfa8d3bcf231bef670e123e1149", null ],
+    [ "NTV2_CC608_XDSClass", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#addec4c2b373f95ef89980d1a814474a3", null ],
+    [ "NTV2_CC608_XDSType", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#abb2b28d7b68d8f0bc2beaf55cbe74b4e", null ],
     [ "NTV2_CC608_XDSClass", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#aa6557d998701040260c815cf9e94d020", [
       [ "NTV2_CC608_XDSUnknownClass", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#aa6557d998701040260c815cf9e94d020ac2b534bea2c126eff43c7c11c8d87d83", null ],
       [ "NTV2_CC608_XDSCurrentClass", "d7/d0a/ntv2xdscaptiondecodechannel608_8h.html#aa6557d998701040260c815cf9e94d020a5ba1c449cdef15c468ba78b06c7e18c3", null ],

@@ -1,0 +1,4 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4 =
+[
+    [ "construct", "da/d11/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4.html#ac77ae93b7b52b914cc84cecc9b81ae80", null ]
+];

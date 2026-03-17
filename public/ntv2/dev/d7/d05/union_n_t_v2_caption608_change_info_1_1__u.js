@@ -7,11 +7,11 @@ var union_n_t_v2_caption608_change_info_1_1__u =
     [ "_currentScreen", "d0/db2/struct_n_t_v2_caption608_change_info_1_1__u_1_1__current_screen.html", "d0/db2/struct_n_t_v2_caption608_change_info_1_1__u_1_1__current_screen" ],
     [ "_screenAttr", "d3/d0d/struct_n_t_v2_caption608_change_info_1_1__u_1_1__screen_attr.html", "d3/d0d/struct_n_t_v2_caption608_change_info_1_1__u_1_1__screen_attr" ],
     [ "_screenChar", "d2/d5a/struct_n_t_v2_caption608_change_info_1_1__u_1_1__screen_char.html", "d2/d5a/struct_n_t_v2_caption608_change_info_1_1__u_1_1__screen_char" ],
-    [ "captionMode", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#ad7eae5fdf0d1f3d3053130cf07ee9aa4", null ],
-    [ "currentChannel", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a741c6439893add44a9eb8b5f0b47c789", null ],
-    [ "currentColumn", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#aac267805ddfefa4b537fd6d5c5ea5778", null ],
-    [ "currentRow", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a49845ebae1b8e23bbd78a6b9fed6d482", null ],
-    [ "currentScreen", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a1d1acd5e17d8cf98883f53e078017bf9", null ],
-    [ "screenAttr", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#ad3e46fb1927c94a2fc5a2f013ef16d62", null ],
-    [ "screenChar", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a401c3a8b421661ddd254f2c95976c775", null ]
+    [ "captionMode", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a3ac6c8d57d63a86dfbcd9e97f23d2da7", null ],
+    [ "currentChannel", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a7da4e1edb06a5882614f5737815b6607", null ],
+    [ "currentColumn", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a55644ed08a13eda8e32a9364ae351c7a", null ],
+    [ "currentRow", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a937051f60bb8dbd20a9e36082dfcf0bd", null ],
+    [ "currentScreen", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#af379d6e389ecbc36fd280e87e7e57a41", null ],
+    [ "screenAttr", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#a97ac454c985791ff322e83db8983b93a", null ],
+    [ "screenChar", "d7/d05/union_n_t_v2_caption608_change_info_1_1__u.html#af00d102b1994fbe08e733c858c571b30", null ]
 ];

@@ -1,6 +1,7 @@
 var class_n_t_v2_stream_channel =
 [
     [ "NTV2StreamChannel", "de/d67/class_n_t_v2_stream_channel.html#a68ae6cccb044506ddf6e5e7f0bd2f479", null ],
+    [ "~NTV2StreamChannel", "de/d67/class_n_t_v2_stream_channel.html#a4bf2e3d1b119bfc5a8cbf1b5d660ddf7", null ],
     [ "GetQueueDepth", "de/d67/class_n_t_v2_stream_channel.html#ac72e1cd747e9021fa4965f6827925622", null ],
     [ "HasError", "de/d67/class_n_t_v2_stream_channel.html#a5a37869273b10abff5fc589e5a5e7e18", null ],
     [ "IsActive", "de/d67/class_n_t_v2_stream_channel.html#a47c08c17c7e5d8de0ed5280d451a983d", null ],

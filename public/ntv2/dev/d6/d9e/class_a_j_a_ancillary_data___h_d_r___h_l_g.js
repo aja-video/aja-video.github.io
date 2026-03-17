@@ -6,6 +6,7 @@ var class_a_j_a_ancillary_data___h_d_r___h_l_g =
     [ "AJAAncillaryData_HDR_HLG", "d6/d9e/class_a_j_a_ancillary_data___h_d_r___h_l_g.html#af1dace85a1f09c6e6a0cb608796e9b33", null ],
     [ "~AJAAncillaryData_HDR_HLG", "d6/d9e/class_a_j_a_ancillary_data___h_d_r___h_l_g.html#a7ae89f5645239a095af2f500f0d257b1", null ],
     [ "Clear", "d6/d9e/class_a_j_a_ancillary_data___h_d_r___h_l_g.html#a1e0564c789f31871356ca60004a02ffe", null ],
+    [ "Clone", "d6/d9e/class_a_j_a_ancillary_data___h_d_r___h_l_g.html#ae79c12fc21854fda193324b176cf6c5d", null ],
     [ "Init", "d6/d9e/class_a_j_a_ancillary_data___h_d_r___h_l_g.html#a0f7ae941e4143fe772112bbe9f55ab8c", null ],
     [ "operator=", "d6/d9e/class_a_j_a_ancillary_data___h_d_r___h_l_g.html#ad487c63b31f0d680b43f309d49865753", null ],
     [ "ParsePayloadData", "d6/d9e/class_a_j_a_ancillary_data___h_d_r___h_l_g.html#aa3b66b53b6d895f4faa6bd9b911b32f5", null ],

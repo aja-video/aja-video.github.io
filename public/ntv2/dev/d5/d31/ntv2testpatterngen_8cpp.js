@@ -29,6 +29,7 @@ var ntv2testpatterngen_8cpp =
     [ "TPStringPair", "d5/d31/ntv2testpatterngen_8cpp.html#a241af4361fe48dbc5f7f579092e052a5", null ],
     [ "addRampToBuffer", "d5/d31/ntv2testpatterngen_8cpp.html#a81d4e04fe03b575a29b81eb307e82c66", null ],
     [ "addToBuffer", "d5/d31/ntv2testpatterngen_8cpp.html#a204948df4f95523e793e55f2b3bf0806", null ],
+    [ "clamp10", "d5/d31/ntv2testpatterngen_8cpp.html#af925795e4e99092cb43457ed3538c05b", null ],
     [ "ConvertRGBLineTo10BitYCbCr422", "d5/d31/ntv2testpatterngen_8cpp.html#a543d723f6ce3c72eb8f9007313f0fc52", null ],
     [ "CreateRGBStringMap", "d5/d31/ntv2testpatterngen_8cpp.html#a7ec33d658525c55b15939ded761091e9", null ],
     [ "CreateStringRGBMap", "d5/d31/ntv2testpatterngen_8cpp.html#a5e975da3dcbfa7abcafe767a69057a03", null ],

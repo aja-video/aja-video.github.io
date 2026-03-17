@@ -6,6 +6,7 @@ var class_a_j_a_ancillary_data___timecode___a_t_c =
     [ "AJAAncillaryData_Timecode_ATC", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#ae832241a4ee9e86fbcb9817b54fbbd87", null ],
     [ "~AJAAncillaryData_Timecode_ATC", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a04f2a10ab4d915f04fa98cce42e94263", null ],
     [ "Clear", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a983c68e82fe7ee738e763c8e26b08a19", null ],
+    [ "Clone", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a55d1e579c92ac48f6987c148073f54bc", null ],
     [ "GeneratePayloadData", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#af89e7615ee36a4d014aab54bffe661c0", null ],
     [ "GetDBB", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a158c00c5220d1b298ece20eeb5ba464c", null ],
     [ "GetDBB1", "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a3d03f2edf37ab87c377d039ae3bd5b90", null ],

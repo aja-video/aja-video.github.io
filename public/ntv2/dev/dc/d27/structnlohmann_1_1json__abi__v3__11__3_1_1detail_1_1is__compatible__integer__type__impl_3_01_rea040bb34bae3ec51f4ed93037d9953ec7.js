@@ -1,0 +1,6 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type__impl_3_01_rea040bb34bae3ec51f4ed93037d9953ec7 =
+[
+    [ "CompatibleLimits", "dc/d27/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type__impl_3_01_rea040bb34bae3ec51f4ed93037d9953ec7.html#afecb19f0f9013f21c3d0b4614c409f22", null ],
+    [ "RealLimits", "dc/d27/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type__impl_3_01_rea040bb34bae3ec51f4ed93037d9953ec7.html#a04f68943f93719185ab102a570b9132e", null ],
+    [ "value", "dc/d27/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__integer__type__impl_3_01_rea040bb34bae3ec51f4ed93037d9953ec7.html#a6f4661360a8390a0c2fce49330f45ff7", null ]
+];

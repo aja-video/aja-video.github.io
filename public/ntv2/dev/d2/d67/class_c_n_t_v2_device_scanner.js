@@ -23,5 +23,7 @@ var class_c_n_t_v2_device_scanner =
     [ "IsLegalDecimalNumber", "d2/d67/class_c_n_t_v2_device_scanner.html#abe9a4eb27c31ac56d4c81bd316402512", null ],
     [ "IsLegalHexSerialNumber", "d2/d67/class_c_n_t_v2_device_scanner.html#a1669d75deecb7a9b698dcd2ba625b97a", null ],
     [ "IsLegalSerialNumber", "d2/d67/class_c_n_t_v2_device_scanner.html#ac5925dfbd0441076a4b81a294b6d1eee", null ],
-    [ "ScanHardware", "d2/d67/class_c_n_t_v2_device_scanner.html#a0276a78511eabf31f0fe3906e792e055", null ]
+    [ "ScanHardware", "d2/d67/class_c_n_t_v2_device_scanner.html#a0276a78511eabf31f0fe3906e792e055", null ],
+    [ "ScanHardware", "d2/d67/class_c_n_t_v2_device_scanner.html#a5c8d8b59971b657009ffea0d2742303f", null ],
+    [ "SortDeviceInfoList", "d2/d67/class_c_n_t_v2_device_scanner.html#aaa4bb2b15143559704619edf1f7e3619", null ]
 ];

@@ -2,6 +2,7 @@ var struct_n_t_v2_device_info =
 [
     [ "NTV2DeviceInfo", "d6/d61/struct_n_t_v2_device_info.html#a4f82b666e370fd31ba79ce9962433c7e", null ],
     [ "NTV2DeviceInfo", "d6/d61/struct_n_t_v2_device_info.html#a54d4e5b11fe8fa9083d29371e8abf616", null ],
+    [ "operator!=", "d6/d61/struct_n_t_v2_device_info.html#a1cfe22d87e3e5c16835cbb91ba56b80d", null ],
     [ "operator==", "d6/d61/struct_n_t_v2_device_info.html#aa9cfba6f780f2de74ebb92721485af8b", null ],
     [ "audioBitsPerSampleList", "d6/d61/struct_n_t_v2_device_info.html#a880ab94d51c7d1402cb466044513b437", null ],
     [ "audioInSourceList", "d6/d61/struct_n_t_v2_device_info.html#a14ad913aa46f5b6cdbdc12b430929e63", null ],

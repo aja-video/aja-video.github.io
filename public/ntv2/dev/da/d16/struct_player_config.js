@@ -2,6 +2,8 @@ var struct_player_config =
 [
     [ "PlayerConfig", "da/d16/struct_player_config.html#a2583b99ab6385e845d7f4a91cb47f52c", null ],
     [ "Get", "da/d16/struct_player_config.html#a59dc501bea0a4b37b4d55c5d2e02c8b5", null ],
+    [ "WithAudio", "da/d16/struct_player_config.html#a575aee09b59ddc3c82db47582241f826", null ],
+    [ "WithVideo", "da/d16/struct_player_config.html#a3c86ad2909a23885de0ff9341ab6b70c", null ],
     [ "fAncDataFilePath", "da/d16/struct_player_config.html#ab2b8dc8f0b1ce2d4b5854585241e1131", null ],
     [ "fDeviceSpec", "da/d16/struct_player_config.html#ad0355d0dd621b180325595c0320e0536", null ],
     [ "fDoABConversion", "da/d16/struct_player_config.html#a83691c02bf1231bf8158d2b32c522d70", null ],

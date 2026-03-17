@@ -1,7 +1,7 @@
 var ntv2captiondecodechannel608_8h =
 [
     [ "CNTV2CaptionDecodeChannel608", "d8/de0/class_c_n_t_v2_caption_decode_channel608.html", "d8/de0/class_c_n_t_v2_caption_decode_channel608" ],
-    [ "CaptionDecode608Stats", "d7/d7b/ntv2captiondecodechannel608_8h.html#a236dc1535e7006f57b25416d4f158f4b", null ],
+    [ "CaptionDecode608Stats", "d7/d7b/ntv2captiondecodechannel608_8h.html#a971853fc165224492e4f1c07478d9d22", null ],
     [ "CNTV2CaptionDecodeChannel608Ptr", "d7/d7b/ntv2captiondecodechannel608_8h.html#a33e371e5a8868747924ca8af8ddb52cd", null ],
     [ "_CaptionDecode608Stats", "d7/d7b/ntv2captiondecodechannel608_8h.html#a254d873cedc90930e41997803a6614f1", [
       [ "kParsedOKTally", "d7/d7b/ntv2captiondecodechannel608_8h.html#a254d873cedc90930e41997803a6614f1abc60886c92dbaecb213b39e4a3ea9999", null ],

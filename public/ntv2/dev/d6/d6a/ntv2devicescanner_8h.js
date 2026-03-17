@@ -18,16 +18,16 @@ var ntv2devicescanner_8h =
     [ "NTV2AudioSourceList", "d6/d6a/ntv2devicescanner_8h.html#a727cf14e946662b3b609755fd7841bfc", null ],
     [ "NTV2AudioSourceListConstIter", "d6/d6a/ntv2devicescanner_8h.html#acff620b7d66a73411abe2ab4bfe7baa7", null ],
     [ "NTV2AudioSourceListIter", "d6/d6a/ntv2devicescanner_8h.html#ade615feec7d9a441adde868bd6272ad4", null ],
-    [ "NTV2DeviceInfo", "d6/d6a/ntv2devicescanner_8h.html#a8cbbe52b7aa8ddfe67f07504bc2fff13", null ],
+    [ "NTV2DeviceInfo", "d6/d6a/ntv2devicescanner_8h.html#ac827d459ba7c9069181d2cb813146563", null ],
     [ "NTV2DeviceInfoList", "d6/d6a/ntv2devicescanner_8h.html#aac4bdbad01a2eab48c544830dd930df5", null ],
     [ "NTV2DeviceInfoListConstIter", "d6/d6a/ntv2devicescanner_8h.html#a879c199901a8bb4de39ec1a6b144b335", null ],
     [ "NTV2DeviceInfoListIter", "d6/d6a/ntv2devicescanner_8h.html#aed97c3ad640866e8c731154c552eb19d", null ],
-    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a66c7b8cc45898d0c93aa81ca0b0a041f", null ],
-    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a1e487cad2c1a6efddf4ebd1f156201f0", null ],
-    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a1bb5e6912cff14a722414e8463cedb1e", null ],
-    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#accfe85f50ae10681f6ef57481ae0241d", null ],
     [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a1846848c93d74c731edceafed6a2c1c1", null ],
+    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a1e487cad2c1a6efddf4ebd1f156201f0", null ],
     [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a053fb3613ef404784d9f2cc756871896", null ],
+    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a66c7b8cc45898d0c93aa81ca0b0a041f", null ],
     [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a1c9244554ab92a1d359d0b10203a8510", null ],
-    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a33bb75a10fb69fd464f9e8a3061c18f8", null ]
+    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a33bb75a10fb69fd464f9e8a3061c18f8", null ],
+    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#a1bb5e6912cff14a722414e8463cedb1e", null ],
+    [ "operator<<", "d6/d6a/ntv2devicescanner_8h.html#accfe85f50ae10681f6ef57481ae0241d", null ]
 ];

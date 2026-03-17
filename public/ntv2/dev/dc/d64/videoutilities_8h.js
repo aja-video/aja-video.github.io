@@ -56,8 +56,8 @@ var videoutilities_8h =
     [ "AJA_ConvertLineto10BitRGB", "dc/d64/videoutilities_8h.html#a4398375fad324aec8f85cc5e9b2cd84e", null ],
     [ "AJA_ConvertLineto16BitRGB", "dc/d64/videoutilities_8h.html#ace6ed1a2c83c6ba21e08eef4a3301c77", null ],
     [ "AJA_ConvertLineto8BitYCbCr", "dc/d64/videoutilities_8h.html#ac7e6a5ba5816f854554f83f7cc64665b", null ],
-    [ "AJA_ConvertLinetoRGB", "dc/d64/videoutilities_8h.html#a70d4e5dfce604089bdd4aa9e3c9bb734", null ],
     [ "AJA_ConvertLinetoRGB", "dc/d64/videoutilities_8h.html#a3be4642bed86966a8dee5cc793a1dd44", null ],
+    [ "AJA_ConvertLinetoRGB", "dc/d64/videoutilities_8h.html#a70d4e5dfce604089bdd4aa9e3c9bb734", null ],
     [ "AJA_ConvertLineToYCbCr422", "dc/d64/videoutilities_8h.html#a6753e01021fa03a04020280b16ecb697", null ],
     [ "AJA_ConvertPixelFormatToRGBA", "dc/d64/videoutilities_8h.html#a4e9a24589f2830b682f10760b55c685b", null ],
     [ "AJA_ConvertRGBAlpha10LineToYCbCr422", "dc/d64/videoutilities_8h.html#aad547e03fec703af8cad8e59cb1e1b7c", null ],
@@ -87,6 +87,6 @@ var videoutilities_8h =
     [ "AJA_UnPack10BitDPXtoRGBAlphaBitPixel", "dc/d64/videoutilities_8h.html#aabfe9cf6940caa4d47e09b7912195019", null ],
     [ "AJA_UnPack10BitYCbCrBuffer", "dc/d64/videoutilities_8h.html#a289e500194df6b8136c294bf184f56d0", null ],
     [ "createVideoFrame", "dc/d64/videoutilities_8h.html#a24e521b49a1fa1086ef99a8db4a2817a", null ],
-    [ "WriteLineToBuffer", "dc/d64/videoutilities_8h.html#aa23a13defe722d0df4b256abb8832e0d", null ],
-    [ "WriteLineToBuffer", "dc/d64/videoutilities_8h.html#a97b88360ab9ee051033ee987619365f8", null ]
+    [ "WriteLineToBuffer", "dc/d64/videoutilities_8h.html#a97b88360ab9ee051033ee987619365f8", null ],
+    [ "WriteLineToBuffer", "dc/d64/videoutilities_8h.html#aa23a13defe722d0df4b256abb8832e0d", null ]
 ];

@@ -2,7 +2,7 @@ var ntv2virtualregisters_8h =
 [
     [ "MAX_NUM_VIRTUAL_REGISTERS", "da/df0/ntv2virtualregisters_8h.html#aed8cceb4f0f5372460e21eca1de54e8a", null ],
     [ "VIRTUALREG_START", "da/df0/ntv2virtualregisters_8h.html#a92ed128b6f460a7925ffb0b6001991ea", null ],
-    [ "NTV2VirtualRegisters", "da/df0/ntv2virtualregisters_8h.html#a6b8908248c4105751ee54553c92eb945", null ],
+    [ "NTV2VirtualRegisters", "da/df0/ntv2virtualregisters_8h.html#a086bf162a5a9543f31f7e0b9afa8e5d6", null ],
     [ "NTV2VirtualRegisterMasks", "da/df0/ntv2virtualregisters_8h.html#ad8098e676f19099cb3f50aeeb001e490", [
       [ "kVRegMaskHDMIInColorimetry", "da/df0/ntv2virtualregisters_8h.html#ad8098e676f19099cb3f50aeeb001e490ae0bd53deb0353a237e73b8f482880cc1", null ],
       [ "kVRegMaskHDMIInDolbyVision", "da/df0/ntv2virtualregisters_8h.html#ad8098e676f19099cb3f50aeeb001e490a506e09df88e629aec287992e1ae9e819", null ],
@@ -51,6 +51,7 @@ var ntv2virtualregisters_8h =
       [ "kVRegCCPlayerBufSizeKB", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daab8cdf4499b3ac92b86c3f405d7f8655a", null ],
       [ "kVRegCCPlayerCustomPkt", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa19acdaf633bc2e0103d8c667066fbd3f", null ],
       [ "kVRegDriverType", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa12f93b4cd91ab012b4e593158647a8c7", null ],
+      [ "kVRegVDevReadyRegNum", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa85c8e60c1899f8ce8c5a0bd8f32e6f46", null ],
       [ "kVRegInputSelect", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daadb09f8ed7b2f368d615aa8605a646c52", null ],
       [ "kVRegSecondaryFormatSelect", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daab611d26a7911df27b7568c82fccf684d", null ],
       [ "kVRegDigitalOutput1Select", "da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa57e8e3aa2a4dc6802c9c405e705f1b1e", null ],

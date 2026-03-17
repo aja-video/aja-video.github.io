@@ -1,0 +1,5 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__non__default__from__json_3_01_basic_jsofc96e56c3f47c4553324fa18a545c200 =
+[
+    [ "serializer", "dd/d7d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__non__default__from__json_3_01_basic_jsofc96e56c3f47c4553324fa18a545c200.html#a8a84a5c086a1ca4abe54ec8a493f9a58", null ],
+    [ "value", "dd/d7d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1has__non__default__from__json_3_01_basic_jsofc96e56c3f47c4553324fa18a545c200.html#a3e2a445be69d66a9c931823bb490ff02", null ]
+];

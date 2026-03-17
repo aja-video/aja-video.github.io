@@ -7,6 +7,7 @@ var class_n_t_v2___h_e_a_d_e_r =
     [ "GetHeaderVersion", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a70fc309d039180e5262743278ea382e6", null ],
     [ "GetPointerSize", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a2204b9fba30045f4c6d51296717f0014", null ],
     [ "GetResultStatus", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a846295b0f435fdb6240ab9117a62d786", null ],
+    [ "GetSizeInBytes", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#af24a2e5f46b2cc80b60cdb64fb9cc63e", null ],
     [ "GetTag", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a7291188715ebe96ff7334efc352da778", null ],
     [ "GetType", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a5011b93ee570491030fa2b42f570ca0c", null ],
     [ "GetVersion", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a0c416868dddcfd8be25d1e9373e01684", null ],

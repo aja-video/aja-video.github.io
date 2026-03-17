@@ -8,6 +8,7 @@ var class_a_j_a_ancillary_data___cea608___line21 =
     [ "AllocEncodeBuffer", "dc/d91/class_a_j_a_ancillary_data___cea608___line21.html#abaca289f7f9fb88f9fd8e3d793203fed", null ],
     [ "CheckDecodeClock", "dc/d91/class_a_j_a_ancillary_data___cea608___line21.html#a94665f8080e362e4b9262fafd7090613", null ],
     [ "Clear", "dc/d91/class_a_j_a_ancillary_data___cea608___line21.html#a7f16bf64324b63f7f27cee412c95f812", null ],
+    [ "Clone", "dc/d91/class_a_j_a_ancillary_data___cea608___line21.html#a583af3d3e0a1cc4dee938d519b75c73c", null ],
     [ "DecodeCharacters", "dc/d91/class_a_j_a_ancillary_data___cea608___line21.html#af448fbe7118976d1165a25a693a55d13", null ],
     [ "DecodeLine", "dc/d91/class_a_j_a_ancillary_data___cea608___line21.html#aa8bf23206e9fa2af203439a04e2b1556", null ],
     [ "EncodeCharacter", "dc/d91/class_a_j_a_ancillary_data___cea608___line21.html#aa7831c99172f421b4b86370d76d28dd1", null ],

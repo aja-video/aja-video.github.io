@@ -7,6 +7,7 @@ var class_n_t_v2_player =
     [ "ConsumerThreadStatic", "d8/dc2/class_n_t_v2_player.html#a764fe6e8f3c59c49e82e74fe356b14f7", null ],
     [ "GetACStatus", "d8/dc2/class_n_t_v2_player.html#a786268716133a4f6ad1a81fe52d00e03", null ],
     [ "Init", "d8/dc2/class_n_t_v2_player.html#afcc64539d559038a5771585210da428e", null ],
+    [ "IsRunning", "d8/dc2/class_n_t_v2_player.html#a5ba68fe1e9c05085db9fcd9050906c74", null ],
     [ "ProduceFrames", "d8/dc2/class_n_t_v2_player.html#ab21860bec14540d492dded30834ea10a", null ],
     [ "ProducerThreadStatic", "d8/dc2/class_n_t_v2_player.html#a959ec75c4674e7b29ac2781bc1c19d44", null ],
     [ "Quit", "d8/dc2/class_n_t_v2_player.html#a28425f97b15c3ba5cb020d305b9928f6", null ],

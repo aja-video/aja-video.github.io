@@ -1,6 +1,7 @@
 var class_n_t_v2_stream_buffer =
 [
     [ "NTV2StreamBuffer", "da/d92/class_n_t_v2_stream_buffer.html#a29c35193742748c897de7923ec20d76a", null ],
+    [ "~NTV2StreamBuffer", "da/d92/class_n_t_v2_stream_buffer.html#ab66acb1268d24d914041da2b431d3627", null ],
     [ "operator NTV2_HEADER *", "da/d92/class_n_t_v2_stream_buffer.html#a42343c801cbc4dbf5432fe2d893388a2", null ],
     [ "Print", "da/d92/class_n_t_v2_stream_buffer.html#af15862f33971aa2a24b10e9d169954c8", null ],
     [ "mActiveTime", "da/d92/class_n_t_v2_stream_buffer.html#ad5bb87b819f5ff704efd8b2b9932b8e3", null ],

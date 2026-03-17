@@ -1,6 +1,7 @@
 var class_n_t_v2_mail_buffer =
 [
     [ "NTV2MailBuffer", "d6/dfc/class_n_t_v2_mail_buffer.html#a5215ab1ea28fe8a5ec5fb3c0bf22a795", null ],
+    [ "~NTV2MailBuffer", "d6/dfc/class_n_t_v2_mail_buffer.html#aa681bf8c958420d08c351ce36eaaf225", null ],
     [ "operator NTV2_HEADER *", "d6/dfc/class_n_t_v2_mail_buffer.html#acbb25e1b3d065c3c3dcaedd54ec8a36f", null ],
     [ "Print", "d6/dfc/class_n_t_v2_mail_buffer.html#aee93a34977788cdff1a31652b5755423", null ],
     [ "mBuffer", "d6/dfc/class_n_t_v2_mail_buffer.html#a4026b47d760870c0442231c60e734b67", null ],

@@ -108,7 +108,7 @@ var ancillarydata_8h =
     [ "IS_VANC_AJAAncillaryDataSpace", "d7/d92/ancillarydata_8h.html#aad457bda1d366ac7af279a248d425e99", null ],
     [ "ToAJAAncPktDIDSID", "d7/d92/ancillarydata_8h.html#a7b94630a6a11cbea2573f183a8b6fd93", null ],
     [ "AJAAncData", "d7/d92/ancillarydata_8h.html#a2403cdb1cac416569b88ed292d14dfd9", null ],
-    [ "AJAAncDataLoc", "d7/d92/ancillarydata_8h.html#afbce8cf8769799bd28e0eddcf461a7e9", null ],
+    [ "AJAAncDataLoc", "d7/d92/ancillarydata_8h.html#aac57b9758931bef53c54520704c59065", null ],
     [ "AJAAncDataLocPtr", "d7/d92/ancillarydata_8h.html#a9457b93703d2c951951f1b705ccea658", null ],
     [ "AJAAncDIDSIDPair", "d7/d92/ancillarydata_8h.html#ac364f8477e7d72929379710cbdeb4fb6", null ],
     [ "AJAAncillaryBufferFormat", "d7/d92/ancillarydata_8h.html#ad2d7478b329253885d31bc889dcc8ce1", null ],
@@ -207,11 +207,11 @@ var ancillarydata_8h =
     [ "AJAAncillaryDataVideoStreamToString", "d7/d92/ancillarydata_8h.html#ae1ca1b851d19d949e89e2cad66e5efbb", null ],
     [ "AJAAncLineNumberToString", "d7/d92/ancillarydata_8h.html#a85a437ddc4d8ec3c2545bb27e8593325", null ],
     [ "AncChannelSearchSelectToString", "d7/d92/ancillarydata_8h.html#a35adb8f77526f243da9f6536b9f78a94", null ],
-    [ "operator<<", "d7/d92/ancillarydata_8h.html#a541445b53b1a59e12307ccfa7f11ac7f", null ],
     [ "operator<<", "d7/d92/ancillarydata_8h.html#ac834a679c5369a26685c29f75aea8279", null ],
+    [ "operator<<", "d7/d92/ancillarydata_8h.html#a541445b53b1a59e12307ccfa7f11ac7f", null ],
     [ "operator<<", "d7/d92/ancillarydata_8h.html#acbbe2a668a7d1635aa012146f5c26428", null ],
-    [ "operator<<", "d7/d92/ancillarydata_8h.html#a18359e72fab0a37819cc3b440c53b8b5", null ],
     [ "operator<<", "d7/d92/ancillarydata_8h.html#a7bafcd63ea933d84ded10ddff37cdbb8", null ],
+    [ "operator<<", "d7/d92/ancillarydata_8h.html#a18359e72fab0a37819cc3b440c53b8b5", null ],
     [ "AJAAncData_AnalogDID", "d7/d92/ancillarydata_8h.html#ac66c37c0e9d02112d86bf9fd65ad7fc3", null ],
     [ "AJAAncData_AnalogSID", "d7/d92/ancillarydata_8h.html#a36f26cc80d13a8e2ca5b3601336f051c", null ]
 ];

@@ -46,7 +46,7 @@ var wxdebug_8h =
     [ "ValidateStringPtrA", "de/de4/wxdebug_8h.html#a878b69db781e247b6fd9946a57169913", null ],
     [ "ValidateStringPtrW", "de/de4/wxdebug_8h.html#a4bfaabce8299a642a923f8781df648f4", null ],
     [ "ValidateWritePtr", "de/de4/wxdebug_8h.html#ac76ca6ac842c5a02d98c0420f6a17fd8", null ],
-    [ "ObjectDesc", "de/de4/wxdebug_8h.html#abe0b61c55f93e3ee74687c12a72f9f03", null ],
+    [ "ObjectDesc", "de/de4/wxdebug_8h.html#ae43152c87fe1442e71b13485ddaa0859", null ],
     [ "LOG_TIMING", "de/de4/wxdebug_8h.html#a458e651af6690959efa2afb96be7d609a2e921fc5b4d38c27dff4a3efad7636b8", null ],
     [ "LOG_TRACE", "de/de4/wxdebug_8h.html#a458e651af6690959efa2afb96be7d609a5b76dd51db62558b1952158ba38b723f", null ],
     [ "LOG_MEMORY", "de/de4/wxdebug_8h.html#a458e651af6690959efa2afb96be7d609ae747105329d72a7cc23d5821a082f702", null ],

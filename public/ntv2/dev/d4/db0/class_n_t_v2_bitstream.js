@@ -1,6 +1,7 @@
 var class_n_t_v2_bitstream =
 [
     [ "NTV2Bitstream", "d4/db0/class_n_t_v2_bitstream.html#ad2f1b05a06d93c4ddb1a61bed0e1a06d", null ],
+    [ "~NTV2Bitstream", "d4/db0/class_n_t_v2_bitstream.html#a12cfa9ac7915b90e830819c91bd6977d", null ],
     [ "NTV2Bitstream", "d4/db0/class_n_t_v2_bitstream.html#a2cc0a2731bd206d13d45bea4c2c2cc25", null ],
     [ "NTV2Bitstream", "d4/db0/class_n_t_v2_bitstream.html#a21b37230d8477b31ac08c5c1644b6b07", null ],
     [ "Clear", "d4/db0/class_n_t_v2_bitstream.html#a46525b7a0282d4d42ce0666e02aac78f", null ],

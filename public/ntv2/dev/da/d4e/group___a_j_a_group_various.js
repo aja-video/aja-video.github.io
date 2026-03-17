@@ -12,7 +12,7 @@ var group___a_j_a_group_various =
     [ "AJA_DEBUG_TICK_RATE", "da/d4e/group___a_j_a_group_various.html#ga938a211c00d83332a664a3319fd1902d", null ],
     [ "AJA_DEBUG_UNIT_ARRAY_SIZE", "da/d4e/group___a_j_a_group_various.html#gadfc9c65188ed721e0d985497aa605e65", null ],
     [ "AJA_DEBUG_VERSION", "da/d4e/group___a_j_a_group_various.html#gac9b57cbb7e3dcd46fd5ec89369769dfd", null ],
-    [ "AJADebugStats", "da/d4e/group___a_j_a_group_various.html#ga063d87988b7de1c2ad4a860176c0fc9c", null ],
+    [ "AJADebugStats", "da/d4e/group___a_j_a_group_various.html#gabf1a288783b5eec19557e7f4533ec382", null ],
     [ "_AJADebugStats", "da/d4e/group___a_j_a_group_various.html#gac39c412045200a576ba82c19f43d0b2f", [
       [ "AJA_DebugStat_ReadRegister", "da/d4e/group___a_j_a_group_various.html#ggac39c412045200a576ba82c19f43d0b2fa2ec32a6754dab2587b64e2f523ce2cbe", null ],
       [ "AJA_DebugStat_WriteRegister", "da/d4e/group___a_j_a_group_various.html#ggac39c412045200a576ba82c19f43d0b2faff42a2224d9806374b60ab42f7c4648f", null ],

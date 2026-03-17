@@ -50,7 +50,7 @@ var ntv2winpublicinterface_8h =
     [ "IOCTL_AJAPROPS_MAPMEMORY", "d4/d20/ntv2winpublicinterface_8h.html#afb52fcd723dab0f4cad8c7d737f6f100", null ],
     [ "IOCTL_AJAPROPS_NEWSUBSCRIPTIONS", "d4/d20/ntv2winpublicinterface_8h.html#aa795b4fbc11a9a4fca08e5e7efb99489", null ],
     [ "IOCTL_AJAPROPS_SUBSCRIPTIONS", "d4/d20/ntv2winpublicinterface_8h.html#a7fa63ac49f8533b825231338fdd19027", null ],
-    [ "MAP_MEMORY_TYPE", "d4/d20/ntv2winpublicinterface_8h.html#a4a8b64b4415998fe37087e54ac50235c", null ],
+    [ "MAP_MEMORY_TYPE", "d4/d20/ntv2winpublicinterface_8h.html#a09c33e61622ac168fd613bad46f49bd7", null ],
     [ "PKSPROPERTY_AJAPROPS_AUTOCIRC_CONTROL_EX_S", "d4/d20/ntv2winpublicinterface_8h.html#a494fbd6cd642e84c7e75eabb7d2794d6", null ],
     [ "PKSPROPERTY_AJAPROPS_AUTOCIRC_CONTROL_S", "d4/d20/ntv2winpublicinterface_8h.html#a54894ef083f11edb77213387b6fc8460", null ],
     [ "PKSPROPERTY_AJAPROPS_AUTOCIRC_FRAME_EX2_S", "d4/d20/ntv2winpublicinterface_8h.html#ab105e908d1a48907da0f0e5b0ee66348", null ],

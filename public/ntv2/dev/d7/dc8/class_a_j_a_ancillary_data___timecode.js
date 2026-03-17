@@ -24,6 +24,7 @@ var class_a_j_a_ancillary_data___timecode =
     [ "AJAAncillaryData_Timecode", "d7/dc8/class_a_j_a_ancillary_data___timecode.html#a1f0a401612e19d7bc46b739e47d1bb05", null ],
     [ "~AJAAncillaryData_Timecode", "d7/dc8/class_a_j_a_ancillary_data___timecode.html#a66837e71d7bf2b02a622de277be16a51", null ],
     [ "Clear", "d7/dc8/class_a_j_a_ancillary_data___timecode.html#af1b869907d6bd365ef3ef958bc1c62fe", null ],
+    [ "Clone", "d7/dc8/class_a_j_a_ancillary_data___timecode.html#a4cb4f00d0e36e4562660c61d3ad18bc0", null ],
     [ "GeneratePayloadData", "d7/dc8/class_a_j_a_ancillary_data___timecode.html#a09fc0b1d43724369d04c1345b816dcaa", null ],
     [ "GetBinaryGroupFlag", "d7/dc8/class_a_j_a_ancillary_data___timecode.html#ab62bd04aa63a30f0de0412268a8e6acd", null ],
     [ "GetBinaryGroupHexValue", "d7/dc8/class_a_j_a_ancillary_data___timecode.html#a655a8ec33c49d23f237d064d00fe9387", null ],

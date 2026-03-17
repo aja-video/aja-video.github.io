@@ -5,9 +5,9 @@ var ntv2devicefeatures_8h =
     [ "NTV2_IS_VALID_ENUMSID", "d8/d0f/ntv2devicefeatures_8h.html#a563ced611aa27d2d237e755677d0155b", null ],
     [ "NTV2_IS_VALID_NUMPARAMID", "d8/d0f/ntv2devicefeatures_8h.html#a6bd7083677755b629b40b8fc29e39aa4", null ],
     [ "true", "d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7", null ],
-    [ "NTV2BoolParamID", "d8/d0f/ntv2devicefeatures_8h.html#ac468fe574973684f7be2414eb95827fe", null ],
-    [ "NTV2EnumsID", "d8/d0f/ntv2devicefeatures_8h.html#a96e11b617cb3e714b3e0967e2c5c5f53", null ],
-    [ "NTV2NumericParamID", "d8/d0f/ntv2devicefeatures_8h.html#aa69b4bbd4c57588e27e4946fc295ceea", null ],
+    [ "NTV2BoolParamID", "d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024", null ],
+    [ "NTV2EnumsID", "d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de", null ],
+    [ "NTV2NumericParamID", "d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153", null ],
     [ "_NTV2BoolParamID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6b", [
       [ "kNTV2BoolParam_FIRST", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba71167516f718a2248ebc5622e58782d9", null ],
       [ "kDeviceCanChangeEmbeddedAudioClock", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba0ec18dece3847fd3676d547c46d4dca5", null ],
@@ -132,6 +132,9 @@ var ntv2devicefeatures_8h =
       [ "kDeviceHasPWMFanControl", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba437d5f02262a967ad77e94b41363718c", null ],
       [ "kDeviceROMHasBankSelect", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6bac4c19bec3b0e1bcfb69d0e5921dc1b32", null ],
       [ "kDeviceCanDoVersalSysMon", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba8dfb2d538030397ef3118ec9afae60e6", null ],
+      [ "kDeviceCanDoGPIO", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba6ccec1021c3c48dbde2cddc03cdc3c74", null ],
+      [ "kDeviceHasBracketLED", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6baecec8d285061d403f527b38699b32231", null ],
+      [ "kDeviceCanDo25GIP", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba7375e9061938907f53547097a6b12302", null ],
       [ "kNTV2BoolParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2953652108268e32c4d15eb0ddff77ab", null ],
       [ "kNTV2BoolParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba9ad50404c9c94edea0ba22a5b10b9a95", null ],
       [ "kDeviceCanDo_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba52a2168d75951d111daab3580e181500", null ]

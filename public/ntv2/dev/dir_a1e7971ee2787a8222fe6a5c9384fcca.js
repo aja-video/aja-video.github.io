@@ -28,6 +28,7 @@ var dir_a1e7971ee2787a8222fe6a5c9384fcca =
     [ "ntv2cscmatrix.h", "d0/de9/ntv2cscmatrix_8h.html", "d0/de9/ntv2cscmatrix_8h" ],
     [ "ntv2debug.h", "d7/dc7/ntv2debug_8h.html", "d7/dc7/ntv2debug_8h" ],
     [ "ntv2debugmacros.h", "d5/dcf/ntv2debugmacros_8h.html", "d5/dcf/ntv2debugmacros_8h" ],
+    [ "ntv2deprecate.h", "db/d40/ntv2deprecate_8h.html", "db/d40/ntv2deprecate_8h" ],
     [ "ntv2devicecapabilities.h", "d8/d58/ntv2devicecapabilities_8h.html", [
       [ "DeviceCapabilities", "db/d32/class_device_capabilities.html", "db/d32/class_device_capabilities" ]
     ] ],

@@ -16,8 +16,8 @@ var videoutilities_8cpp =
     [ "AJA_ConvertLineto10BitRGB", "d2/d95/videoutilities_8cpp.html#a765be2afa5cfb1c576f0672a6cd1f4d0", null ],
     [ "AJA_ConvertLineto16BitRGB", "d2/d95/videoutilities_8cpp.html#a3cbeb7f25742148a17a930b1c8eb995d", null ],
     [ "AJA_ConvertLineto8BitYCbCr", "d2/d95/videoutilities_8cpp.html#a7fae3254ddc464a15b8f6bbc66cb3671", null ],
-    [ "AJA_ConvertLinetoRGB", "d2/d95/videoutilities_8cpp.html#a1474d75f8ee467aa65b5371cfb032d00", null ],
     [ "AJA_ConvertLinetoRGB", "d2/d95/videoutilities_8cpp.html#a3f24c243a7417795a2e153069413c0e1", null ],
+    [ "AJA_ConvertLinetoRGB", "d2/d95/videoutilities_8cpp.html#a1474d75f8ee467aa65b5371cfb032d00", null ],
     [ "AJA_ConvertLineToYCbCr422", "d2/d95/videoutilities_8cpp.html#a582f20dd7e1dac932d4b67d799a4c81b", null ],
     [ "AJA_ConvertPixelFormatToRGBA", "d2/d95/videoutilities_8cpp.html#a8b5174d5e7b25ea9827b41fd9f5f0af7", null ],
     [ "AJA_ConvertRGBAlpha10LineToYCbCr422", "d2/d95/videoutilities_8cpp.html#a42eb50b8621f76e0cb632900c0f02ae2", null ],
@@ -43,7 +43,7 @@ var videoutilities_8cpp =
     [ "CubicInterPolateAudioWord", "d2/d95/videoutilities_8cpp.html#a661c719be09de8bff730d88e7215daf3", null ],
     [ "CubicInterPolateWord", "d2/d95/videoutilities_8cpp.html#a7412af4ecbe63aaf9feafbb979107065", null ],
     [ "FixedTrunc", "d2/d95/videoutilities_8cpp.html#af78d90de9c1a8031dfc26ca9f9c30595", null ],
-    [ "WriteLineToBuffer", "d2/d95/videoutilities_8cpp.html#ab1565dd9843f1a9bf814f4e929645af3", null ],
     [ "WriteLineToBuffer", "d2/d95/videoutilities_8cpp.html#a7913f4c366b4c3bd1dac1477779ae54b", null ],
+    [ "WriteLineToBuffer", "d2/d95/videoutilities_8cpp.html#ab1565dd9843f1a9bf814f4e929645af3", null ],
     [ "CubicCoef", "d2/d95/videoutilities_8cpp.html#af6546979bbe4a4529c689ff634aff594", null ]
 ];

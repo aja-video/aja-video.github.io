@@ -8,7 +8,7 @@ var ntv2ccplayer_8cpp =
     [ "CaptionSourceList", "de/d67/ntv2ccplayer_8cpp.html#ab8a329d961bb69f2cd9fddd671ec5cf9", null ],
     [ "CaptionSourceListConstIter", "de/d67/ntv2ccplayer_8cpp.html#a49f44f8e9b045e70af525961cced2055", null ],
     [ "CaptionSourcePtr", "de/d67/ntv2ccplayer_8cpp.html#a84bdfd57790e67221dfe0cf3e8198b5d", null ],
-    [ "gBuiltInCaptions", "de/d67/ntv2ccplayer_8cpp.html#a9e13f73201a3a16da519a1c5c42e3e3a", null ],
+    [ "gBuiltInCaptions", "de/d67/ntv2ccplayer_8cpp.html#a3961096d16f0bbd80d49c8781a24834a", null ],
     [ "gBuiltInStream", "de/d67/ntv2ccplayer_8cpp.html#aa7cb8579a16a92a59eda61d6b1a15731", null ],
     [ "GetCaptionSources", "de/d67/ntv2ccplayer_8cpp.html#a48a936cf67167219c43e2032a60b10b3", null ],
     [ "kAppSignature", "de/d67/ntv2ccplayer_8cpp.html#a336997eb12a742642fcb3ad56276aca6", null ],

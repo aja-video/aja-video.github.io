@@ -12,7 +12,7 @@ var winutil_8h =
     [ "SHOWSTAGE", "df/d97/winutil_8h.html#ab6d6a509197eba6cb3d49c731fa67968", null ],
     [ "SHOWSTAGETOP", "df/d97/winutil_8h.html#a38d6a7e3802a0d6c02281d560064cc5e", null ],
     [ "WIDTH", "df/d97/winutil_8h.html#a9978c9be0f4161638ec49b4eda697d42", null ],
-    [ "DIBDATA", "df/d97/winutil_8h.html#abe70eb61be0cd30035b38b64bf033d51", null ],
+    [ "DIBDATA", "df/d97/winutil_8h.html#a208d4bf0e8b9fb95c698122ddf85353a", null ],
     [ "CheckVideoInfo2Type", "df/d97/winutil_8h.html#ae7202e31a4daeb9bef173a9c3db1597b", null ],
     [ "CheckVideoInfoType", "df/d97/winutil_8h.html#af8a720f5409cdd11164a279059c01f53", null ],
     [ "ConvertVideoInfoToVideoInfo2", "df/d97/winutil_8h.html#a96e2187a631b507651e4773bf31d0e7b", null ],

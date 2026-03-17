@@ -68,10 +68,10 @@ var options__popt_8h =
     [ "POPT_READFILE_TRIMNEWLINES", "da/daf/options__popt_8h.html#a2d5ea3f78e1481c6583468da8159fef8", null ],
     [ "POPT_TABLEEND", "da/daf/options__popt_8h.html#abb5479e3e11f1a22617b4d43c73083b4", null ],
     [ "UNUSED", "da/daf/options__popt_8h.html#a86d500a34c624c2cae56bc25a31b12f3", null ],
-    [ "poptBits", "da/daf/options__popt_8h.html#aae3d09f06f18b47ad07aa1e2af6da061", null ],
+    [ "poptBits", "da/daf/options__popt_8h.html#ae1af25e1afb0e9a52f2094cd06e71789", null ],
     [ "poptCallbackType", "da/daf/options__popt_8h.html#a1a71122337c598101b6c245ef2a58be5", null ],
     [ "poptContext", "da/daf/options__popt_8h.html#ad3cc3007d6cee3e55221b85b4adc7359", null ],
-    [ "poptItem", "da/daf/options__popt_8h.html#ac987ad9c7adf705a620d768b8e5cb54d", null ],
+    [ "poptItem", "da/daf/options__popt_8h.html#ae8d806c397b0dcb8a3ba2bd1cb7831c4", null ],
     [ "poptOption", "da/daf/options__popt_8h.html#a2331d42ea439b878a15305a955e72f87", null ],
     [ "poptCallbackReason", "da/daf/options__popt_8h.html#afe00605489c2aa204cdb5a14e26b3a70", [
       [ "POPT_CALLBACK_REASON_PRE", "da/daf/options__popt_8h.html#afe00605489c2aa204cdb5a14e26b3a70a4798a7665d4a2294cf3c1275925d07c6", null ],

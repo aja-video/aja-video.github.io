@@ -39,7 +39,7 @@ var ntv2linuxpublicinterface_8h =
     [ "NTV2_DEVICE_TYPE", "d7/d83/ntv2linuxpublicinterface_8h.html#a49e00942d323e30d0ae85868b2107954", null ],
     [ "NTV2_LINUX_DRIVER_VERSION", "d7/d83/ntv2linuxpublicinterface_8h.html#ab177a88d94ed38fc8c731bdcc57b441e", null ],
     [ "ntv2DMADriverbuffer", "d7/d83/ntv2linuxpublicinterface_8h.html#a9c6d850ad83eb9dc108705d06e946e23", null ],
-    [ "MAP_MEMORY", "d7/d83/ntv2linuxpublicinterface_8h.html#ae5cbbbaf56a73b5be2167887841ec94c", null ],
+    [ "MAP_MEMORY", "d7/d83/ntv2linuxpublicinterface_8h.html#ae76cb66f85103a3b18d9a36dd6de2131", null ],
     [ "P_AUTOCIRCULATE_FRAME_STAMP_COMBO_STRUCT", "d7/d83/ntv2linuxpublicinterface_8h.html#a51981755218ec412c34ed6b8ae8f272d", null ],
     [ "P_AUTOCIRCULATE_TRANSFER_COMBO_STRUCT", "d7/d83/ntv2linuxpublicinterface_8h.html#aaa7a85979643312d31de59f6bb0aea97", null ],
     [ "P_NTV2_CONTROL_DRIVER_DEBUG_MESSAGES_STRUCT", "d7/d83/ntv2linuxpublicinterface_8h.html#ae871b30d42cfc9baab583d1e016855c8", null ],

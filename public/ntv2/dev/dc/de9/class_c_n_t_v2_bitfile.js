@@ -29,7 +29,7 @@ var class_c_n_t_v2_bitfile =
     [ "IsPartial", "dc/de9/class_c_n_t_v2_bitfile.html#a5bb4347dda18138e39c89383404d6e52", null ],
     [ "IsTandem", "dc/de9/class_c_n_t_v2_bitfile.html#ae8577c490663020d5e009a7bd3137a1f", null ],
     [ "Open", "dc/de9/class_c_n_t_v2_bitfile.html#a13ca6e89458a908a061b50a92b9cb12b", null ],
-    [ "ParseHeaderFromBuffer", "dc/de9/class_c_n_t_v2_bitfile.html#a72529926a02ec319d18c70fe6490463f", null ],
     [ "ParseHeaderFromBuffer", "dc/de9/class_c_n_t_v2_bitfile.html#a9a761166f0c9e31370876241d74bcbd6", null ],
+    [ "ParseHeaderFromBuffer", "dc/de9/class_c_n_t_v2_bitfile.html#a72529926a02ec319d18c70fe6490463f", null ],
     [ "SetLastError", "dc/de9/class_c_n_t_v2_bitfile.html#aa533ec9403a1fb6bd8f2228c68aadfd0", null ]
 ];

@@ -12,6 +12,7 @@ var class_n_t_v2_dolby_player =
     [ "GetBits", "d0/df0/class_n_t_v2_dolby_player.html#a3e528f20b7a27e33ab348b66c7dd3bae", null ],
     [ "GetDolbyFrame", "d0/df0/class_n_t_v2_dolby_player.html#aa773dcb7713129cb49eb38d4011ffed3", null ],
     [ "Init", "d0/df0/class_n_t_v2_dolby_player.html#a142d63b6791f2700b67ae12af4f9b4e6", null ],
+    [ "IsRunning", "d0/df0/class_n_t_v2_dolby_player.html#ab00051c06dd217ae3ff402f4c1695cc6", null ],
     [ "ParseBSI", "d0/df0/class_n_t_v2_dolby_player.html#ae3ac78a338ec840baf12fb15eb78091f", null ],
     [ "ProduceFrames", "d0/df0/class_n_t_v2_dolby_player.html#a6eb1e2f254f158dfac8ba458dbc3b657", null ],
     [ "ProducerThreadStatic", "d0/df0/class_n_t_v2_dolby_player.html#a4dc71e6ef13364896e1f7e34bd9019c8", null ],
