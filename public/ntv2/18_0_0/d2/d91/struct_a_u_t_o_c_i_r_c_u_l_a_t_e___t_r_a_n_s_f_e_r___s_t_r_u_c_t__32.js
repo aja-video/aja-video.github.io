@@ -1,0 +1,26 @@
+var struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32 =
+[
+    [ "audioBuffer", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a5d87c70ae8c176579c6becdeed5bf7fd", null ],
+    [ "audioBufferSize", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a2a12e199c9f919501a611136d94a8606", null ],
+    [ "audioNumChannels", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a51b7b0256c2c491703009e0731c973f1", null ],
+    [ "audioStartSample", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a6b09557191ef0bba4a85dd92807ed372", null ],
+    [ "bDisableExtraAudioInfo", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a000a92c2a8c44996747b991a51f7fae1", null ],
+    [ "channelSpec", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a9cca7fcf47b8b7ab41f35a00d3ae979b", null ],
+    [ "colorCorrectionInfo", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a1d1e2175852517ba18dd3c22e3b2d850", null ],
+    [ "customAncInfo", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a7610bd88ccdb8d22b93f0c2db8d07577", null ],
+    [ "desiredFrame", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#ab3d0da95c38b96feab7fbb5a6a7678e1", null ],
+    [ "frameBufferFormat", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a368e161718775aff9d32314e148c382c", null ],
+    [ "frameBufferOrientation", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a000b118bacd8314883ca40bd23485624", null ],
+    [ "frameRepeatCount", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#ab89fb4d622c588919a319527e8a7764a", null ],
+    [ "hUser", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a5553d87eb59e2fbc701bae56a8272cc4", null ],
+    [ "rp188", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#aec43b3bb98dac0492cb815fef675101f", null ],
+    [ "transferFlags", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a42765bc091766794b1d309918b48853f", null ],
+    [ "videoBuffer", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a6aa9ed75f9ff6d4a250f5fe29253dcbb", null ],
+    [ "videoBufferSize", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a2de90a21a9c9b85145561f665d7f0fc7", null ],
+    [ "videoDmaOffset", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a922bc52f21f6578137e09eebf2c23cc7", null ],
+    [ "videoNumSegments", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a16e39544b238f9eb2cc060df5eca6721", null ],
+    [ "videoQuarterSizeExpand", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a32af63593689a3a64700c2174bab7b27", null ],
+    [ "videoSegmentCardPitch", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a2c7a6e51ea7b6b598c32ce8e016da653", null ],
+    [ "videoSegmentHostPitch", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#a7df165c8e55c50394211a04eb566be35", null ],
+    [ "vidProcInfo", "d2/d91/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t__32.html#acdebb0053b3527ac5614135c0fe9b4f2", null ]
+];

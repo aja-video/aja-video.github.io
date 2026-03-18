@@ -1,0 +1,5 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1container__input__adapter__factory__impl_1_1fa5cee1672293ac084bc87ba043dc45f =
+[
+    [ "adapter_type", "d1/d81/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1container__input__adapter__factory__impl_1_1fa5cee1672293ac084bc87ba043dc45f.html#ab087eafd7dbd80e4238dac3480863b7a", null ],
+    [ "create", "d1/d81/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1container__input__adapter__factory__impl_1_1fa5cee1672293ac084bc87ba043dc45f.html#a0f42bb9b007e9dddafeb1aa3b5194d04", null ]
+];

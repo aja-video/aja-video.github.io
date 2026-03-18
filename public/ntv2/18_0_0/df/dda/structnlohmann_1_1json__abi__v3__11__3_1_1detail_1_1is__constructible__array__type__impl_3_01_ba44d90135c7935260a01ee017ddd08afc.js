@@ -1,0 +1,5 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type__impl_3_01_ba44d90135c7935260a01ee017ddd08afc =
+[
+    [ "value_type", "df/dda/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type__impl_3_01_ba44d90135c7935260a01ee017ddd08afc.html#a5ac4f46bed0bdbd3cac40908db2d8be4", null ],
+    [ "value", "df/dda/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__constructible__array__type__impl_3_01_ba44d90135c7935260a01ee017ddd08afc.html#a38f1d5f0e94238307045da82a3059bfb", null ]
+];

@@ -1,0 +1,8 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_01_5_00_01enable__if0ae3ae91da486e1c67e05ec13bd49a5e =
+[
+    [ "difference_type", "d3/d6e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_01_5_00_01enable__if0ae3ae91da486e1c67e05ec13bd49a5e.html#abb4929a17b9577e61976704808d79751", null ],
+    [ "iterator_category", "d3/d6e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_01_5_00_01enable__if0ae3ae91da486e1c67e05ec13bd49a5e.html#a192ce162ffe4df75925ee586cb8ae62c", null ],
+    [ "pointer", "d3/d6e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_01_5_00_01enable__if0ae3ae91da486e1c67e05ec13bd49a5e.html#a3f1577530eb5af89a4dd8d1dd062c50a", null ],
+    [ "reference", "d3/d6e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_01_5_00_01enable__if0ae3ae91da486e1c67e05ec13bd49a5e.html#a865f4249b23f2293f27b11e99c93dc45", null ],
+    [ "value_type", "d3/d6e/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__traits_3_01_t_01_5_00_01enable__if0ae3ae91da486e1c67e05ec13bd49a5e.html#a42fc4fc40640aba0d911e313a00e933a", null ]
+];

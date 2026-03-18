@@ -1,0 +1,5 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__object__type__impl_3_01_basi63c3407539903a60693709ef5c7ff46f =
+[
+    [ "object_t", "dc/d75/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__object__type__impl_3_01_basi63c3407539903a60693709ef5c7ff46f.html#a3f7b389b6d28933fb21ca9e5c3795f58", null ],
+    [ "value", "dc/d75/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1is__compatible__object__type__impl_3_01_basi63c3407539903a60693709ef5c7ff46f.html#ae247c895722498f2bef44daf6361e636", null ]
+];

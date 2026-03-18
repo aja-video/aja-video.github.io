@@ -1,0 +1,4 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1utility__internal_1_1_extend_3_01integer__se2e5644bf7b53ae9475b3afa3bfa39ee3 =
+[
+    [ "type", "d1/d45/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1utility__internal_1_1_extend_3_01integer__se2e5644bf7b53ae9475b3afa3bfa39ee3.html#aa03a0ee1e890d27f698fb338786214f0", null ]
+];

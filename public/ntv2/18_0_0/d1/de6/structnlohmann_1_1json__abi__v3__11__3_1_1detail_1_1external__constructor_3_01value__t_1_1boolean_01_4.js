@@ -1,0 +1,4 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1boolean_01_4 =
+[
+    [ "construct", "d1/de6/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1boolean_01_4.html#a1480c2336c6238e4e4b31dede91b9993", null ]
+];

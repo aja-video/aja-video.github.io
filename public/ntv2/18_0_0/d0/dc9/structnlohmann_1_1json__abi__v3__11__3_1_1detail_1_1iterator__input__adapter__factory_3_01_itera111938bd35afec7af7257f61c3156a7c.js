@@ -1,0 +1,8 @@
+var structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c =
+[
+    [ "adapter_type", "d0/dc9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c.html#ac6e25fb06aec9e2ab5c5625ea3a25aa7", null ],
+    [ "base_adapter_type", "d0/dc9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c.html#a92fe1ac86e182fa708d9297eebb68b96", null ],
+    [ "char_type", "d0/dc9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c.html#a23e690776a2047318f68551dff9673df", null ],
+    [ "iterator_type", "d0/dc9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c.html#aa8c98fa2fa232dde849d59abb9041590", null ],
+    [ "create", "d0/dc9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c.html#aa1d1f74e49e642d03be780b45702bb3f", null ]
+];
