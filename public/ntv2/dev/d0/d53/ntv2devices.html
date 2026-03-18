@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2117</span>
+   &#160;<span id="projectnumber">18.1.0.2118</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2117</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2118</div>
   </td>
  </tr>
  </tbody>
@@ -1182,19 +1182,25 @@ KONA IP25</h2>
 </div>
 <h3><a class="anchor" id="konaip25gconfig"></a>
 Configuring the KONA IP25</h3>
-<p>To deliver a video between two SDI devices, all that’s needed is to connect an SDI cable. Provided the pulse timing of the bitstream it carries meets the applicable SMPTE standards, NTV2 hardware and software can send or receive the full complement of raster pixel data, audio, and ancillary data to or from any other SMPTE-compatible SDI device.</p>
-<p>To deliver video between two SMPTE ST-2110 devices requires more than just physically connecting the SFP connectors to a 10 or 25 Gbps network switch. Each high-speed network port must be configured:</p><ul>
+<p>To deliver a video between two SDI devices, all that’s needed is to connect an SDI cable. Provided the bitstream it carries meets the applicable SMPTE standards, NTV2 hardware and software can send or receive the full complement of raster pixel data, audio, and ancillary data to or from any other SMPTE-compatible SDI device.</p>
+<p>To deliver video between two SMPTE ST-2110 devices requires more than just physically connecting the SFP connectors to a 10 or 25 Gbps network switch. Each high-speed network port to be used must be configured:</p><ul>
 <li>SFP speed: 10Gbps or 25Gbps</li>
-<li>DHCP mode, or fixed IP address, gateway IP address, and primary DNS IP address</li>
-<li>for Input/Capture: source URLs/IPs for video, audio, anc</li>
-<li>for Output/Playback: sink URLs/IPs for video, audio, anc</li>
+<li>DHCP mode, or…<ul>
+<li>fixed IP address, gateway IP address, and primary DNS IP address</li>
 </ul>
-<p>For the <b>KONA IP25</b>, the easiest way to do this is to connect its 1GigE “control” network port to the LAN, then using another host on the same LAN subnet, point its web browser to the <b>KONA IP25</b>’s “control” port, and use its web UI to configure the high-speed network ports:</p>
+</li>
+<li><b>for Input/Capture:</b> source URLs/IPs for video, audio, anc</li>
+<li><b>for Output/Playback:</b> sink URLs/IPs for video, audio, anc</li>
+</ul>
+<p>For the <b>KONA IP25</b>, the easiest way to do this is to connect its 1GigE RJ-45 “control” network port to the LAN, then using another host on the same LAN subnet, point its web browser to the <b>KONA IP25</b>’s “control” port, and use its web UI to configure the high-speed network ports:</p>
 <div class="image">
 <img src="../../konaip25g-config.png" alt="konaip25g-config.png"/>
 </div>
 <p>Once the high-speed input or output connection(s) are established to other SMPTE ST-2110 hardware on the high-speed network, the board then behaves like any other NTV2 SDI device.</p>
-<p>In addition to the web UI, the <b>KONA IP25</b> has a comprehensive REST API that is <a href="https://www.openapis.org/">Open API Specification</a> compatible. For details on its REST API, navigate to the control interface’s <b>/api</b> page.</p>
+<p>In addition to the web UI, the <b>KONA IP25</b> has a comprehensive REST API that’s <a href="https://www.openapis.org/">Open API Specification</a> compatible. For details on its REST API, navigate to the control interface’s <b>/api</b> page.</p>
+<div class="image">
+<img src="../../konaip25g-api.png" alt="konaip25g-api.png"/>
+</div>
 <dl class="section note"><dt>Note</dt><dd>In AJA’s first IP video ingest/playout products, the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a>, the SFPs were configured using a complex set of register-based APIs in the NTV2 SDK. This approach was abandoned for the <b>KONA IP25</b> in favor of a network-based REST API. Starting in SDK 17.5, some of the obsolete register-based APIs were removed; the remaining APIs are scheduled for complete removal in future SDKs.</dd>
 <dd>
 Also beware: CNTV2DriverInterface::IsSupported(kDeviceCanDoIP) (or <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a9e63b4838d38ea10483c713e2d89aacb">NTV2DeviceCanDoIP</a>) return <code>true</code> only for the obsolete <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a>. Instead, for the <b>KONA IP25</b>, call CNTV2DriverInterface::IsSupported(kDeviceCanDo25GIP) (or <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a920fd80af394cd363e16bfcd7b9921b9">NTV2DeviceCanDo25GIP</a>).</dd></dl>
@@ -3179,7 +3185,7 @@ KONA XPAND™ Breakout Board</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Tue Mar 17 2026 14:15:17 for AJA NTV2 SDK by
+    <li class="footer">Generated on Tue Mar 17 2026 18:08:26 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
