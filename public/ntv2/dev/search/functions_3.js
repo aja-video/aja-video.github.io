@@ -114,6 +114,7 @@ var searchData=
   ['canreconnectwhenactive',['CanReconnectWhenActive',['../d8/d75/class_c_base_pin.html#a2361bc12ce427b26eac6307edaefc0e9',1,'CBasePin']]],
   ['canreportfailsafeloaded',['CanReportFailSafeLoaded',['../db/d32/class_device_capabilities.html#a38ce4ed6a832d627706c973a2a7a4ea0',1,'DeviceCapabilities']]],
   ['canreportframesize',['CanReportFrameSize',['../db/d32/class_device_capabilities.html#abde2753339cfc6ef0dbc6322f29be417',1,'DeviceCapabilities']]],
+  ['canreportmixerdelay',['CanReportMixerDelay',['../db/d32/class_device_capabilities.html#a8c1dc30910bd9d7d9cf7fc2bc2e0243b',1,'DeviceCapabilities']]],
   ['canreportrunningfirmwaredate',['CanReportRunningFirmwareDate',['../db/d32/class_device_capabilities.html#a716c7c4b166b73ddd6be9cf752505b05',1,'DeviceCapabilities']]],
   ['canseekbackward',['CanSeekBackward',['../d7/d2a/class_c_pos_pass_thru.html#aeba23bdcafdcb736e381e852ca63c0d3',1,'CPosPassThru::CanSeekBackward()'],['../db/d03/class_c_source_position.html#a91cbc22b37298b0d5c73aa2cfa954138',1,'CSourcePosition::CanSeekBackward()']]],
   ['canseekforward',['CanSeekForward',['../d7/d2a/class_c_pos_pass_thru.html#a77e96bed9cac3272738f5b429cc4e0fd',1,'CPosPassThru::CanSeekForward()'],['../db/d03/class_c_source_position.html#a66d81e80c20f7f771b5014b501778cc2',1,'CSourcePosition::CanSeekForward()']]],

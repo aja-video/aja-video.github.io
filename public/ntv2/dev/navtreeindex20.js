@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"d4/d24/class_dpx_hdr.html#af414913d5173edab027f1bf772130808":[8,0,290,77],
 "d4/d24/class_dpx_hdr.html#af73fe2f6b2d1d92102ac014617b6747a":[8,0,290,23],
 "d4/d24/class_dpx_hdr.html#af9b51328cefdeca7fa9b03b951c78a79":[8,0,290,86],
 "d4/d24/class_dpx_hdr.html#afd9c5c3388116678582503c29fde4ffe":[8,0,290,116],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#ab615daf1c7f8dae5436fbd2c9c9dacf1":[8,0,392,4],
 "d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#ac93d10fc128e6bb51b5368d5bbf6e9a4":[8,0,392,7],
 "d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#accb586c5d89539b27c6ba1db0ebec240":[8,0,392,2],
-"d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#ad0342197628fc7b9c231e3a8418bce59":[8,0,392,8],
-"d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#ad9fddc3891900326a008da319afc6a76":[8,0,392,3]
+"d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#ad0342197628fc7b9c231e3a8418bce59":[8,0,392,8]
 };

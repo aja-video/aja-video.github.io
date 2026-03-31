@@ -31,7 +31,7 @@ var searchData=
   ['ntv2audiosource',['NTV2AudioSource',['../d6/d0c/ntv2enums_8h.html#af3ee639c1fe12a18f577d43459557617',1,'ntv2enums.h']]],
   ['ntv2audiosystem',['NTV2AudioSystem',['../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516',1,'ntv2enums.h']]],
   ['ntv2autocirculatestate',['NTV2AutoCirculateState',['../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216',1,'ntv2publicinterface.h']]],
-  ['ntv2bitfiletype',['NTV2BitFileType',['../d6/d0c/ntv2enums_8h.html#a70138331d582e1e902f75f94acc1a550',1,'NTV2BitFileType():&#160;ntv2enums.h'],['../d6/d0c/ntv2enums_8h.html#a7d7c37c18f324d531a21ed54c37c9ac7',1,'NTV2BitfileType():&#160;ntv2enums.h']]],
+  ['ntv2bitfiletype',['NTV2BitfileType',['../d6/d0c/ntv2enums_8h.html#a7d7c37c18f324d531a21ed54c37c9ac7',1,'NTV2BitfileType():&#160;ntv2enums.h'],['../d6/d0c/ntv2enums_8h.html#a70138331d582e1e902f75f94acc1a550',1,'NTV2BitFileType():&#160;ntv2enums.h']]],
   ['ntv2bobwidgetregisters',['NTV2BOBWidgetRegisters',['../d4/dd7/ntv2publicinterface_8h.html#a75a50bfc2f074d28a82393750f5a3a42',1,'ntv2publicinterface.h']]],
   ['ntv2breakouttype',['NTV2BreakoutType',['../d6/d0c/ntv2enums_8h.html#af7765fc4be9fad0dac1bee106bda00c7',1,'ntv2enums.h']]],
   ['ntv2caption608change',['NTV2Caption608Change',['../d1/ddb/class_n_t_v2_caption608_change_info.html#ad417765dd885122974bc9827a85abbd0',1,'NTV2Caption608ChangeInfo']]],

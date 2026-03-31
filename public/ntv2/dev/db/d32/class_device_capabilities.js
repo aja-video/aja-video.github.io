@@ -97,6 +97,7 @@ var class_device_capabilities =
     [ "CanMeasureTemperature", "db/d32/class_device_capabilities.html#a07fd8bef9423fe1ad1fe0d3f89532655", null ],
     [ "CanReportFailSafeLoaded", "db/d32/class_device_capabilities.html#a38ce4ed6a832d627706c973a2a7a4ea0", null ],
     [ "CanReportFrameSize", "db/d32/class_device_capabilities.html#abde2753339cfc6ef0dbc6322f29be417", null ],
+    [ "CanReportMixerDelay", "db/d32/class_device_capabilities.html#a8c1dc30910bd9d7d9cf7fc2bc2e0243b", null ],
     [ "CanReportRunningFirmwareDate", "db/d32/class_device_capabilities.html#a716c7c4b166b73ddd6be9cf752505b05", null ],
     [ "CanThermostat", "db/d32/class_device_capabilities.html#a0f6807e91621ea678f0167a5ef393591", null ],
     [ "GetActiveMemorySize", "db/d32/class_device_capabilities.html#aa21d4b4a863aadeb9e233dfbddb3e6e0", null ],

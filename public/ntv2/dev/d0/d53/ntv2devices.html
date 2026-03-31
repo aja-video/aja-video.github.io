@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2118</span>
+   &#160;<span id="projectnumber">18.1.0.2145</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2118</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2145</div>
   </td>
  </tr>
  </tbody>
@@ -98,7 +98,7 @@ Corvid OEM Boards</h1>
 <dl class="section user"><dt>Contents</dt><dd><ul>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#corvid44gen3">Corvid 44 (Gen3)</a></li>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#corvid4412g">Corvid 44 12G</a></li>
-<li>corvid88gen3</li>
+<li><a class="el" href="../../d0/d53/ntv2devices.html#corvid88gen3">Corvid 88 (Gen3)</a></li>
 </ul>
 </dd></dl>
 <hr/>
@@ -270,9 +270,9 @@ Corvid 44 12G</h2>
 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The fanless (passively-cooled) version of this device requires airflow of 150LFM @30°C or lower. Most host systems have enough circulating airflow, neighboring vent holes, and/or ability to increase the case fan speed as necessary, such that additional steps or precautions are not required. However, if adequate cooling is not being achieved, then removal of the adjacent PCIe bracket next to the heatsink (adjacent to the CRV44-12G) is an option. <hr/>
 </dd></dl>
-<h2><a class="anchor" id="corvid88"></a>
+<h2><a class="anchor" id="corvid88gen3"></a>
 Corvid 88 (Gen3)</h2>
-<p>The <b>Corvid 88 (Gen3)</b> OEM capture/playout board features eight SDI connectors that can be programmatically configured as inputs or outputs. It’s identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a39e69a3c1b48c9f17cc6a78c1b8475ba" title="See corvid88gen3. ">DEVICE_ID_CORVID88_GEN3</a>. It is the successor to the original <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a>.</p>
+<p>The <b>Corvid 88 (Gen3)</b> OEM capture/playout board features eight SDI connectors that can be programmatically configured as inputs or outputs. It’s identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a39e69a3c1b48c9f17cc6a78c1b8475ba" title="See Corvid 88 (Gen3). ">DEVICE_ID_CORVID88_GEN3</a>. It is the successor to the original <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a>.</p>
 <div class="image">
 <img src="../../corvid88.png" alt="corvid88.png"/>
 </div>
@@ -1182,28 +1182,30 @@ KONA IP25</h2>
 </div>
 <h3><a class="anchor" id="konaip25gconfig"></a>
 Configuring the KONA IP25</h3>
-<p>To deliver a video between two SDI devices, all that’s needed is to connect an SDI cable. Provided the bitstream it carries meets the applicable SMPTE standards, NTV2 hardware and software can send or receive the full complement of raster pixel data, audio, and ancillary data to or from any other SMPTE-compatible SDI device.</p>
+<p>To deliver video and all metadata between two SDI devices, in its simplest form, all that’s needed is to connect an SDI cable between them.</p>
 <p>To deliver video between two SMPTE ST-2110 devices requires more than just physically connecting the SFP connectors to a 10 or 25 Gbps network switch. Each high-speed network port to be used must be configured:</p><ul>
-<li>SFP speed: 10Gbps or 25Gbps</li>
-<li>DHCP mode, or…<ul>
-<li>fixed IP address, gateway IP address, and primary DNS IP address</li>
-</ul>
-</li>
+<li>Speed: 10Gbps or 25Gbps</li>
+<li>Use DHCP (or use fixed IP addresses for address, gateway, and primary DNS)</li>
 <li><b>for Input/Capture:</b> source URLs/IPs for video, audio, anc</li>
-<li><b>for Output/Playback:</b> sink URLs/IPs for video, audio, anc</li>
+<li><b>for Output/Playback:</b> destination URLs/IPs for video, audio, anc</li>
 </ul>
-<p>For the <b>KONA IP25</b>, the easiest way to do this is to connect its 1GigE RJ-45 “control” network port to the LAN, then using another host on the same LAN subnet, point its web browser to the <b>KONA IP25</b>’s “control” port, and use its web UI to configure the high-speed network ports:</p>
+<p>The <b>KONA IP25</b> is equipped with a 1GigE RJ-45 ethernet “control” port for this purpose, and should be connected…</p><ul>
+<li>to a normal local area network (and will self-configure using DHCP);</li>
+<li>directly to another PC (using a link-local IP such as <code>169.254.x.x</code>).</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>The control port’s IP address can be read from register 14080 (<code>kRegLPRJ45IP</code>).</dd></dl>
+<p>The <b>KONA IP25</b> runs its own web server that provides a web-based user interface for configuring the SFPs. The <b>AJA ControlPanel</b>’s <b>Info</b> tab has an <b>“External IP”</b> link that can be clicked to open the web-UI in the host’s default web browser.</p>
 <div class="image">
 <img src="../../konaip25g-config.png" alt="konaip25g-config.png"/>
 </div>
-<p>Once the high-speed input or output connection(s) are established to other SMPTE ST-2110 hardware on the high-speed network, the board then behaves like any other NTV2 SDI device.</p>
-<p>In addition to the web UI, the <b>KONA IP25</b> has a comprehensive REST API that’s <a href="https://www.openapis.org/">Open API Specification</a> compatible. For details on its REST API, navigate to the control interface’s <b>/api</b> page.</p>
+<p>Once the high-speed input or output connection(s) are established to other SMPTE ST-2110 hardware on the high-speed network, the board then behaves very much like a <a class="el" href="../../d0/d53/ntv2devices.html#kona5">KONA 5</a>.</p>
+<p>In addition to the web UI, the <b>KONA IP25</b>’s on-board server has a comprehensive REST API that’s <a href="https://www.openapis.org/">Open API Specification</a> compatible. For details on its REST API, navigate to the control interface’s <b>/api</b> page from a web browser.</p>
 <div class="image">
 <img src="../../konaip25g-api.png" alt="konaip25g-api.png"/>
 </div>
-<dl class="section note"><dt>Note</dt><dd>In AJA’s first IP video ingest/playout products, the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a>, the SFPs were configured using a complex set of register-based APIs in the NTV2 SDK. This approach was abandoned for the <b>KONA IP25</b> in favor of a network-based REST API. Starting in SDK 17.5, some of the obsolete register-based APIs were removed; the remaining APIs are scheduled for complete removal in future SDKs.</dd>
+<dl class="section note"><dt>Note</dt><dd>In AJA’s first IP video ingest/playout devices, the <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a>, the SFPs were configured using a complex set of register-based APIs in the NTV2 SDK. This approach was abandoned for the <b>KONA IP25</b> in favor of a network-based REST API. Starting in SDK 17.5, some of the obsolete register-based APIs were removed; the remaining APIs are scheduled for complete removal in future SDKs.</dd>
 <dd>
-Also beware: CNTV2DriverInterface::IsSupported(kDeviceCanDoIP) (or <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a9e63b4838d38ea10483c713e2d89aacb">NTV2DeviceCanDoIP</a>) return <code>true</code> only for the obsolete <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a>. Instead, for the <b>KONA IP25</b>, call CNTV2DriverInterface::IsSupported(kDeviceCanDo25GIP) (or <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a920fd80af394cd363e16bfcd7b9921b9">NTV2DeviceCanDo25GIP</a>).</dd></dl>
+Also beware: CNTV2DriverInterface::IsSupported(kDeviceCanDoIP) (or <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a9e63b4838d38ea10483c713e2d89aacb">NTV2DeviceCanDoIP</a>) return <code>true</code> only for the obsolete <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a>. Instead, for the <b>KONA IP25</b>, call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a016e52b03dabb94a3299a41efd73e4e1">CNTV2DriverInterface::IsSupported</a> passing it <code>kDeviceCanDo25GIP</code> (or call <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a920fd80af394cd363e16bfcd7b9921b9">NTV2DeviceCanDo25GIP</a>).</dd></dl>
 <dl class="section user"><dt>PCI Interface</dt><dd><ul>
 <li>PCI device ID: <b>0xEB30</b></li>
 <li>Gen 4 × 8-lane PCIe</li>
@@ -1613,7 +1615,7 @@ Legacy Devices</h1>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#corvid22">Corvid 22</a></li>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#corvid24">Corvid 24</a></li>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#corvid44">Corvid 44</a></li>
-<li><a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a></li>
+<li><a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a></li>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#corvidhbr">Corvid HB-R</a></li>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#corvidhevc">Corvid HEVC</a></li>
 <li><a class="el" href="../../d0/d53/ntv2devices.html#io4kquad">Io 4K (Quad Mode)</a> and <a class="el" href="../../d0/d53/ntv2devices.html#io4kufc">Io 4K (UFC Mode)</a></li>
@@ -1945,8 +1947,8 @@ Corvid 44</h2>
 <dl class="section note"><dt>Note</dt><dd>The fanless version of this device required airflow of 100LFM @25deg C or lower, and the host chassis needed a vented opening to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 100LFM across the heatsink.</dd></dl>
 <hr/>
 <h2><a class="anchor" id="corvid88"></a>
-Corvid 88 (Gen3)</h2>
-<p>The <b>Corvid 88</b> OEM capture/playout board featured eight SDI connectors that could be programmatically configured as inputs or outputs. It was identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463af574e33ec8942849f3443529790bf57b" title="See Corvid 88 (Gen3). ">DEVICE_ID_CORVID88</a>.</p>
+Corvid 88</h2>
+<p>The <b>Corvid 88</b> OEM capture/playout board featured eight SDI connectors that could be programmatically configured as inputs or outputs. It was identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463af574e33ec8942849f3443529790bf57b" title="See Corvid 88. ">DEVICE_ID_CORVID88</a>.</p>
 <div class="image">
 <img src="../../corvid88.png" alt="corvid88.png"/>
 </div>
@@ -3185,7 +3187,7 @@ KONA XPAND™ Breakout Board</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Tue Mar 17 2026 18:08:26 for AJA NTV2 SDK by
+    <li class="footer">Generated on Tue Mar 31 2026 10:47:11 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

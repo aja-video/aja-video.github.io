@@ -1,5 +1,15 @@
 var NAVTREEINDEX82 =
 {
+"d9/d50/class_c_n_t_v2_serial_control.html#ac7414ac8de06c2b72be773796f70a024":[8,0,238,3],
+"d9/d50/class_c_n_t_v2_serial_control.html#aee29e82c5517a7819a93189405d00feb":[8,0,238,8],
+"d9/d50/class_c_n_t_v2_serial_control.html#afd2837a9173e56f5da0c3bfbd93c23a6":[8,0,238,6],
+"d9/d56/struct_transmit_struct2022.html":[8,0,541],
+"d9/d56/struct_transmit_struct2022.html#a00c9c8631b51383a07dfdf4436b35466":[8,0,541,4],
+"d9/d56/struct_transmit_struct2022.html#a117823715184c4d1cad3fd4d6fc0cfdc":[8,0,541,10],
+"d9/d56/struct_transmit_struct2022.html#a1d12865825080086ffab3cd8749685d9":[8,0,541,12],
+"d9/d56/struct_transmit_struct2022.html#a25957752bec264d96cd6d8aaef7b233d":[8,0,541,8],
+"d9/d56/struct_transmit_struct2022.html#a26cb92d882ce5218b32014915d3d00dd":[8,0,541,6],
+"d9/d56/struct_transmit_struct2022.html#a3e37bf858bf3294ad15d3542e42dd281":[8,0,541,5],
 "d9/d56/struct_transmit_struct2022.html#a5800df165cea63e43097a288ab980045":[8,0,541,9],
 "d9/d56/struct_transmit_struct2022.html#a72979b67fb98e33436dcfe24d1b8b76b":[8,0,541,11],
 "d9/d56/struct_transmit_struct2022.html#a92f40c2a775ed1da6ee528026ee7875f":[8,0,541,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX82 =
 "d9/d79/ntv2resample_8h.html#ac82c2d113e9a8ed1934c98c6594089d0":[9,0,1,2,0,40,0],
 "d9/d79/ntv2resample_8h_source.html":[9,0,1,2,0,40],
 "d9/d7b/perflog_8cpp.html":[9,0,1,3,28,0,27],
-"d9/d7b/perflog_8cpp.html#a1679364c7d8c00a0352e1287d20ba859":[9,0,1,3,28,0,27,24],
-"d9/d7b/perflog_8cpp.html#a170091297262ab4ecc01a9ce1e4c2c45":[9,0,1,3,28,0,27,5],
-"d9/d7b/perflog_8cpp.html#a30abcf16325ed83b437e2bb165c58cc4":[9,0,1,3,28,0,27,19],
-"d9/d7b/perflog_8cpp.html#a348ca3ddfc028ecea3aa6ef34df513ff":[9,0,1,3,28,0,27,4],
-"d9/d7b/perflog_8cpp.html#a3ae2e71b4e0641ed7850d75b1d59c2c0":[9,0,1,3,28,0,27,14],
-"d9/d7b/perflog_8cpp.html#a418c7ce35e713c0019d556835f76e949":[9,0,1,3,28,0,27,8],
-"d9/d7b/perflog_8cpp.html#a4eeebea43e59d4fb0db273864022200a":[9,0,1,3,28,0,27,12],
-"d9/d7b/perflog_8cpp.html#a52714509841772f30592a230457b908f":[9,0,1,3,28,0,27,6],
-"d9/d7b/perflog_8cpp.html#a64333877213c7b78b1e7991e8c91d761":[9,0,1,3,28,0,27,9],
-"d9/d7b/perflog_8cpp.html#a6660b03a3aef1b5e9d36edb2b0c02cf7":[9,0,1,3,28,0,27,20],
-"d9/d7b/perflog_8cpp.html#a678f23bb5e14d4e0f5c0954e78b30f01":[9,0,1,3,28,0,27,7]
+"d9/d7b/perflog_8cpp.html#a1679364c7d8c00a0352e1287d20ba859":[9,0,1,3,28,0,27,24]
 };

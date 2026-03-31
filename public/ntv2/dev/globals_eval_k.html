@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2118</span>
+   &#160;<span id="projectnumber">18.1.0.2145</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2118</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2145</div>
   </td>
  </tr>
  </tbody>
@@ -460,6 +460,9 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 </li>
 <li>kDeviceCanReportFrameSize
 : <a class="el" href="d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba1fd11958e2bc5c3200c7159772d7816e">ntv2devicefeatures.h</a>
+</li>
+<li>kDeviceCanReportMixerDelay
+: <a class="el" href="d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6babcda288ffa72296afc525d1e54398360">ntv2devicefeatures.h</a>
 </li>
 <li>kDeviceCanReportRunningFirmwareDate
 : <a class="el" href="d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba0b1be9b35498af9710f06aa1b584ec34">ntv2devicefeatures.h</a>
@@ -5108,6 +5111,9 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 <li>kRegMaskCanDoValidXptROM
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a32241cb63c579eb7bcd362c013cf4cab">ntv2publicinterface.h</a>
 </li>
+<li>kRegMaskCanReportMixerDelay
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a6f5df9ce6a20364fd351d01b7bf7d722">ntv2publicinterface.h</a>
+</li>
 <li>kRegMaskCaptureEnable
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a7f3959cd707b2135e2b8a19bf03530f7">ntv2publicinterface.h</a>
 </li>
@@ -5585,6 +5591,9 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 <li>kRegMaskHardwareVersion
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a670277563f8d69cb1d85620d7a00b639">ntv2publicinterface.h</a>
 </li>
+<li>kRegMaskHasNTV4FrameStores
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a216caeecefd8a9a8340c3e1ca251c334">ntv2publicinterface.h</a>
+</li>
 <li>kRegMaskHDMIAudioPairSelect
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a7d7f04dc11c6edf67634951abfad8f8f">ntv2publicinterface.h</a>
 </li>
@@ -5983,6 +5992,12 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 </li>
 <li>kRegMaskLUTSelect
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a68d6b0922052dde1ca8d4703d8a227f8">ntv2publicinterface.h</a>
+</li>
+<li>kRegMaskMainFlashSPIController
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999af78a6625004481a3f9cd1eaba7a3e852">ntv2publicinterface.h</a>
+</li>
+<li>kRegMaskMBFlashSPIController
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999a122cf2f4d5e2c6cba1a7d6655daee8cd">ntv2publicinterface.h</a>
 </li>
 <li>kRegMaskMessageInterruptControlClear1
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a8e5f0574c3ff5156282c14114a8d4900ac434051d0772ffc7a6c4b6b2cf1f5df6">ntv2publicinterface.h</a>
@@ -8615,6 +8630,9 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 <li>kRegShiftCanDoValidXptROM
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faa5d5dc1d8f31cca7cd5ac1d261b947595">ntv2publicinterface.h</a>
 </li>
+<li>kRegShiftCanReportMixerDelay
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faaf194c42f2ee6fa7600d20e914ab92da1">ntv2publicinterface.h</a>
+</li>
 <li>kRegShiftCaptureEnable
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faa804cf22d656ad6e55fecfe0e70f9437e">ntv2publicinterface.h</a>
 </li>
@@ -9086,6 +9104,9 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 <li>kRegShiftHardwareVersion
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faa4d18b9196eabf12ca38df7434d7bb30f">ntv2publicinterface.h</a>
 </li>
+<li>kRegShiftHasNTV4FrameStores
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faa7fb9ab9987e4f463898c3af3fa937793">ntv2publicinterface.h</a>
+</li>
 <li>kRegShiftHDMIAudioPairSelect
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faa5dfdc6d69116d543e598ec33cd10bd9e">ntv2publicinterface.h</a>
 </li>
@@ -9472,6 +9493,12 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 </li>
 <li>kRegShiftLUTSelect
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faa4f8846b2ae7cbf955101ab9314637f41">ntv2publicinterface.h</a>
+</li>
+<li>kRegShiftMainFlashSPIController
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faad84d005fb158855059e15139edb07440">ntv2publicinterface.h</a>
+</li>
+<li>kRegShiftMBFlashSPIController
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7faa84e0cef5607cab3da917dcb6035b2fe7">ntv2publicinterface.h</a>
 </li>
 <li>kRegShiftMessageInterruptControlClear1
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#acc5987f33ad2e0d3b88ebb4a270ecbfca5bd8cc355bbd5311586ff543dd89067f">ntv2publicinterface.h</a>
@@ -13520,7 +13547,7 @@ $(document).ready(function(){initNavTree('globals_eval_k.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 17 2026 18:08:28 for AJA NTV2 SDK by
+    <li class="footer">Generated on Tue Mar 31 2026 10:47:13 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

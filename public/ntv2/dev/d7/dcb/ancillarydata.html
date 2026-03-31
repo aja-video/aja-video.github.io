@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2118</span>
+   &#160;<span id="projectnumber">18.1.0.2145</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2118</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2145</div>
   </td>
  </tr>
  </tbody>
@@ -484,6 +484,10 @@ SDI Anc Packet Capture</h1>
 </ul>
 </li>
 <li>The default maximum per-field ancillary data buffer capacity is 8K by default, or 16K per-frame, including overhead. Please <a href="https://sdksupport.aja.com/">submit a Ticket</a> if you need to change this.</li>
+<li><b>IMPORTANT: Each Anc Extractor serves its corresponding SDI Input — not a FrameStore.</b><ul>
+<li>For example, using AutoCirculate to ingest video and anc on <code>NTV2_CHANNEL2</code> with SDIIn1 routed to FrameStore2 will not yield any captured anc packets.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><b>Use VANC frame geometry</b> <em>(for older AJA devices)</em><ul>
@@ -585,6 +589,10 @@ SDI Anc Packet Playout</h1>
 <li>For SMPTE-2110 IP devices, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a> will automatically convert the data from <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> into <a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a> (SDK version 15.2 or later required) immediately prior to the actual transfer.</li>
 </ul>
 </li>
+</ul>
+</li>
+<li><b>IMPORTANT: Each Anc Inserter serves its corresponding SDI Output — not a FrameStore.</b><ul>
+<li>For example, using AutoCirculate to play video and anc on <code>NTV2_CHANNEL2</code> with FrameStore2 routed to SDIOut1 will not yield any custom anc packets in the SDI bitstream.</li>
 </ul>
 </li>
 <li>On SDI devices and SMPTE 2022 firmware on IP devices, the parity bits for outgoing 10-bit UDWs are automatically recalculated by the Anc inserter, after reading the 8-bit UDWs out of the Anc Buffer, while embedding the packet data into the outgoing SDI data stream.</li>
@@ -731,7 +739,7 @@ HD 1080p Dual-Link</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Tue Mar 17 2026 18:08:26 for AJA NTV2 SDK by
+    <li class="footer">Generated on Tue Mar 31 2026 10:47:10 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

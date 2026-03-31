@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d0/d90/class_c_base_machine_control.html#af71032f89ec91d8e977ba49c7da03d92":[8,0,141,5],
 "d0/d90/class_c_base_machine_control.html#afdc17fef769687305325c5dae1b6a516":[8,0,141,2],
 "d0/d90/struct_m_a_c_addr.html":[8,0,362],
 "d0/d90/struct_m_a_c_addr.html#ab2bd20618897bb7b4bda83929e3cdf4d":[8,0,362,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a59ccfe78709f1ddb6869286db1bf2774":[8,0,227,119],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a5c956b86c101916f981f95b91a8f58ba":[8,0,227,6],
 "d0/dbc/class_c_n_t_v2_driver_interface.html#a5d2b98644c95c319a02c80b633bd9610":[8,0,227,82],
-"d0/dbc/class_c_n_t_v2_driver_interface.html#a5f6e741cb331b401258df896ca30d003":[8,0,227,20],
-"d0/dbc/class_c_n_t_v2_driver_interface.html#a633504c4fecc46c71959cc7632ece69c":[8,0,227,23]
+"d0/dbc/class_c_n_t_v2_driver_interface.html#a5f6e741cb331b401258df896ca30d003":[8,0,227,20]
 };

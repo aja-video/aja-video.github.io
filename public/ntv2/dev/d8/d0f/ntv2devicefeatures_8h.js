@@ -135,6 +135,7 @@ var ntv2devicefeatures_8h =
       [ "kDeviceCanDoGPIO", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba6ccec1021c3c48dbde2cddc03cdc3c74", null ],
       [ "kDeviceHasBracketLED", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6baecec8d285061d403f527b38699b32231", null ],
       [ "kDeviceCanDo25GIP", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba7375e9061938907f53547097a6b12302", null ],
+      [ "kDeviceCanReportMixerDelay", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6babcda288ffa72296afc525d1e54398360", null ],
       [ "kNTV2BoolParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2953652108268e32c4d15eb0ddff77ab", null ],
       [ "kNTV2BoolParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba9ad50404c9c94edea0ba22a5b10b9a95", null ],
       [ "kDeviceCanDo_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba52a2168d75951d111daab3580e181500", null ]

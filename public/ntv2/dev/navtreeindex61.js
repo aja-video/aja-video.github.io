@@ -1,5 +1,14 @@
 var NAVTREEINDEX61 =
 {
+"d6/d57/ntv2m31publicinterface_8h.html#aa11e64f92095eba1967b0d7059bb5f7eac256079a04104ad73f89069e58701643":[9,0,1,2,0,29,20,8],
+"d6/d57/ntv2m31publicinterface_8h.html#aa11e64f92095eba1967b0d7059bb5f7eac4651cd17888f536f65604839ca535e5":[9,0,1,2,0,29,20,3],
+"d6/d57/ntv2m31publicinterface_8h.html#aa11e64f92095eba1967b0d7059bb5f7eadd46bb990762349413c21481122c265c":[9,0,1,2,0,29,20,10],
+"d6/d57/ntv2m31publicinterface_8h.html#aa11e64f92095eba1967b0d7059bb5f7eafd2eb51995fa217408c1481027a9e01e":[9,0,1,2,0,29,20,12],
+"d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996":[9,0,1,2,0,29,10],
+"d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996a019c433ede1ba1649fc8f3c2bb414d44":[9,0,1,2,0,29,10,0],
+"d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996a1032119970217bd85a95e3609353e84b":[9,0,1,2,0,29,10,13],
+"d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996a1d5a39d388e6b67ef50b23c4df446737":[9,0,1,2,0,29,10,2],
+"d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996a475dc884f72eeda4273b0b378105ea0f":[9,0,1,2,0,29,10,5],
 "d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996a64227f90456084d0b1d869b042a2434f":[9,0,1,2,0,29,10,1],
 "d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996a7349959d5ba45d3da514aa2eb402d446":[9,0,1,2,0,29,10,4],
 "d6/d57/ntv2m31publicinterface_8h.html#aa2c40dbc977aedac27a5d28752faa996a97e0eeb760165c3e702d7f8064bd3978":[9,0,1,2,0,29,10,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX61 =
 "d6/d61/struct_n_t_v2_device_info.html#a61b3974940aa599cfe419f9d41b36940":[8,0,413,6],
 "d6/d61/struct_n_t_v2_device_info.html#a643816c2c73ec28d2168dc0e9d67e9e6":[8,0,413,49],
 "d6/d61/struct_n_t_v2_device_info.html#a659151df9b2d96c362e7f847ea05fc12":[8,0,413,67],
-"d6/d61/struct_n_t_v2_device_info.html#a662b9127bc71bcfe81f021de90884248":[8,0,413,48],
-"d6/d61/struct_n_t_v2_device_info.html#a67f627e8053a449a2d48cbbe6f40177f":[8,0,413,21],
-"d6/d61/struct_n_t_v2_device_info.html#a6d7b43c4b5a5e4d4e5bfb4929459f5f6":[8,0,413,35],
-"d6/d61/struct_n_t_v2_device_info.html#a7104858bb59ddbeeebb6eb3d028f67a3":[8,0,413,26],
-"d6/d61/struct_n_t_v2_device_info.html#a78fe99c982c82d4469911edef844dcfb":[8,0,413,40],
-"d6/d61/struct_n_t_v2_device_info.html#a7fd9941b41f50738aeb27fb62a9793de":[8,0,413,28],
-"d6/d61/struct_n_t_v2_device_info.html#a880ab94d51c7d1402cb466044513b437":[8,0,413,4],
-"d6/d61/struct_n_t_v2_device_info.html#a88f3b0230cc8f9a1af1267c98f06a027":[8,0,413,33],
-"d6/d61/struct_n_t_v2_device_info.html#a8a998af04678ffbac8da8963775d87c3":[8,0,413,16],
-"d6/d61/struct_n_t_v2_device_info.html#a8e10842ccc168fd4b4ccab99a9cc3004":[8,0,413,15]
+"d6/d61/struct_n_t_v2_device_info.html#a662b9127bc71bcfe81f021de90884248":[8,0,413,48]
 };

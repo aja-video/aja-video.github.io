@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#ad9fddc3891900326a008da319afc6a76":[8,0,392,3],
 "d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#adaa9ee774ce7912765257a64f02216a8":[8,0,392,12],
 "d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#afae9270d29b50d154f5d27133eea2837":[8,0,392,5],
 "d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html":[8,0,35],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "d4/db6/ntv2spiinterface_8cpp.html#a9bff7d7b3f70eb140b2f50698f955a2a":[9,0,1,2,1,44,18],
 "d4/db6/ntv2spiinterface_8cpp.html#a9d97849f9401009f34160ce986c5dda0":[9,0,1,2,1,44,10],
 "d4/db6/ntv2spiinterface_8cpp.html#aaa441b6ad5e4ad22570d8f02c9565d97":[9,0,1,2,1,44,8],
-"d4/db6/ntv2spiinterface_8cpp.html#ab76bb0a27c956ade56785b4faf74a3a9":[9,0,1,2,1,44,11],
-"d4/db6/ntv2spiinterface_8cpp.html#ac393680f4bb7a3530b0b5956b138f290":[9,0,1,2,1,44,16]
+"d4/db6/ntv2spiinterface_8cpp.html#ab76bb0a27c956ade56785b4faf74a3a9":[9,0,1,2,1,44,11]
 };

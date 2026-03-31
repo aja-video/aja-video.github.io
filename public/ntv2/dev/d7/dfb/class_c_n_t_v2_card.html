@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2118</span>
+   &#160;<span id="projectnumber">18.1.0.2145</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2118</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2145</div>
   </td>
  </tr>
  </tbody>
@@ -23896,7 +23896,7 @@ Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a1c7b90df5
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a22e624db258df962f03a1796e55c5c2b">NTV2DeviceGetNumAudioSystems</a> function to determine how many independent Audio Systems are available on the device. </dd>
 <dd>
-The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
+The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a692c2f8b747962d58df9ed2dbc0a9074" title="Sets the device&#39;s NTV2AudioSystem that will provide audio for the given SDI output&#39;s audio embedder...">CNTV2Card::SetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5d85a46821170dfcd356286d96e2478f" title="Sets the Audio System that will supply audio for the given SDI output&#39;s audio embedder for Data Strea...">CNTV2Card::SetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04047">4047</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
@@ -31196,7 +31196,7 @@ This function has no effect if the Audio-System-wide non-PCM control setting is 
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a22e624db258df962f03a1796e55c5c2b">NTV2DeviceGetNumAudioSystems</a> function to determine how many independent Audio Systems are available on the device. </dd>
 <dd>
-The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a> has a firmware limitation where audio systems 5/6/7/8 cannot record or playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 record or playback embedded audio on SDIs 5/6/7/8. </dd></dl>
+The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot record or playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 record or playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a729af0eaa2cf3ff98cc3aff683cc252b" title="Answers with the device&#39;s current NTV2AudioSource (and also possibly its NTV2EmbeddedAudioInput) for ...">CNTV2Card::GetAudioSystemInputSource</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-capture">Audio Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l00486">486</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
@@ -32111,7 +32111,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)
 <dd>
 This function will have no effect if the device's current <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af3ee639c1fe12a18f577d43459557617" title="This enum value determines/states where an audio system will obtain its audio samples. ">NTV2AudioSource</a> is something other than <a class="el" href="../../d6/d0c/ntv2enums_8h.html#af3ee639c1fe12a18f577d43459557617a3780d9057e0195bb034d0d41c03842fd" title="Obtain audio samples from the audio that&#39;s embedded in the video HANC. ">NTV2_AUDIO_EMBEDDED</a>. Usually it's best to call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a286d834c8cad877d7e1bde2c3a761bba" title="Sets the audio source for the given NTV2AudioSystem on the device. ">CNTV2Card::SetAudioSystemInputSource</a> instead of this function. </dd>
 <dd>
-The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a> has a firmware limitation where audio systems 5/6/7/8 cannot record or playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 record or playback embedded audio on SDIs 5/6/7/8. </dd></dl>
+The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot record or playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 record or playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a847fec1189f743819a71af4bb7a541f2" title="Answers with the device&#39;s current embedded (SDI) audio source for the given NTV2AudioSystem. ">CNTV2Card::GetEmbeddedAudioInput</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a286d834c8cad877d7e1bde2c3a761bba" title="Sets the audio source for the given NTV2AudioSystem on the device. ">CNTV2Card::SetAudioSystemInputSource</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-capture">Audio Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
@@ -37909,7 +37909,7 @@ If the designated FrameStore is enabled and in <a class="el" href="../../d6/d0c/
 <dd>
 Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a1c7b90df5e62610074a95589224057af">NTV2DeviceGetNumVideoOutputs</a> function to determine the number of SDI output jacks the device has. </dd>
 <dd>
-The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
+The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5d85a46821170dfcd356286d96e2478f" title="Sets the Audio System that will supply audio for the given SDI output&#39;s audio embedder for Data Strea...">CNTV2Card::SetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a36f832d7bff9146754d38c1d7788982e" title="Answers with the device&#39;s Audio System that is currently providing audio for the given SDI output&#39;s a...">CNTV2Card::GetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04017">4017</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
@@ -37970,7 +37970,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)
 <dd>
 Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a1c7b90df5e62610074a95589224057af">NTV2DeviceGetNumVideoOutputs</a> function to determine the number of SDI output jacks the device has. </dd>
 <dd>
-The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
+The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a36f832d7bff9146754d38c1d7788982e" title="Answers with the device&#39;s Audio System that is currently providing audio for the given SDI output&#39;s a...">CNTV2Card::GetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04037">4037</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
@@ -38022,7 +38022,7 @@ The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Use the <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a22e624db258df962f03a1796e55c5c2b">NTV2DeviceGetNumAudioSystems</a> function to determine how many independent Audio Systems are available on the device. </dd>
 <dd>
-The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88 (Gen3)</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
+The <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> has a firmware limitation where audio systems 5/6/7/8 cannot playback embedded audio on SDIs 1/2/3/4, nor can audio systems 1/2/3/4 playback embedded audio on SDIs 5/6/7/8. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a692c2f8b747962d58df9ed2dbc0a9074" title="Sets the device&#39;s NTV2AudioSystem that will provide audio for the given SDI output&#39;s audio embedder...">CNTV2Card::SetSDIOutputAudioSystem</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a36f832d7bff9146754d38c1d7788982e" title="Answers with the device&#39;s Audio System that is currently providing audio for the given SDI output&#39;s a...">CNTV2Card::GetSDIOutputDS2AudioSystem</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html#l04069">4069</a> of file <a class="el" href="../../d7/da9/ntv2register_8cpp_source.html">ntv2register.cpp</a>.</p>
@@ -40036,7 +40036,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <dl class="section note"><dt>Note</dt><dd>It is not an error to call this function when the Audio System's capture side is already running. </dd>
 <dd>
 Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> won't need to call this function, since AutoCirculate configures the Audio System automatically. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a6d1519dde79a3f075fb1d66a6c0bbbb1" title="Stops the capture side of the given NTV2AudioSystem, and resets the capture position (i...">CNTV2Card::StopAudioInput</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abd4414dee29a0ce3926e60a16640a58c" title="Answers whether or not the capture side of the given NTV2AudioSystem is currently running...">CNTV2Card::IsAudioInputRunning</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-capture">Audio Capture</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a6d1519dde79a3f075fb1d66a6c0bbbb1" title="Stops the capture side of the given NTV2AudioSystem, and resets the capture position (i...">CNTV2Card::StopAudioInput</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abd4414dee29a0ce3926e60a16640a58c" title="Answers whether or not the capture side of the given NTV2AudioSystem is currently running...">CNTV2Card::IsAudioInputRunning</a>, <a class="el" href="../../db/d32/class_device_capabilities.html#a3b5c0a3d7a09cbfaea2f59b015ace875">DeviceCapabilities::CanDoAudioWaitForVBI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-capture">Audio Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l01174">1174</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -40088,7 +40088,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 <dl class="section note"><dt>Note</dt><dd>It is not an error to call this function when the Audio System's playout side is already running. </dd>
 <dd>
 Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> won't need to call this function, since AutoCirculate configures the Audio System automatically. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abb6d1c8d1a4691e66d85d3eb956da7ea" title="Stops the playout side of the given NTV2AudioSystem, parking the &quot;Read Head&quot; at the start of the play...">CNTV2Card::StopAudioOutput</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4cf4089fc092af267a96d5c11de114f2" title="Answers whether or not the playout side of the given NTV2AudioSystem is currently running...">CNTV2Card::IsAudioOutputRunning</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae9e11acfafff0085ef694a6e93ee37d5">CNTV2Card::CanDoAudioWaitForVBI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abb6d1c8d1a4691e66d85d3eb956da7ea" title="Stops the playout side of the given NTV2AudioSystem, parking the &quot;Read Head&quot; at the start of the play...">CNTV2Card::StopAudioOutput</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4cf4089fc092af267a96d5c11de114f2" title="Answers whether or not the playout side of the given NTV2AudioSystem is currently running...">CNTV2Card::IsAudioOutputRunning</a>, <a class="el" href="../../db/d32/class_device_capabilities.html#a3b5c0a3d7a09cbfaea2f59b015ace875">DeviceCapabilities::CanDoAudioWaitForVBI</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#audop-playout">Audio Playout</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html#l01077">1077</a> of file <a class="el" href="../../d0/dfa/ntv2audio_8cpp_source.html">ntv2audio.cpp</a>.</p>
 
@@ -42475,7 +42475,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></li>
-    <li class="footer">Generated on Tue Mar 17 2026 18:08:27 for AJA NTV2 SDK by
+    <li class="footer">Generated on Tue Mar 31 2026 10:47:11 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
