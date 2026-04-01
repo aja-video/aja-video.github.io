@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2145</span>
+   &#160;<span id="projectnumber">18.1.0.2149</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2145</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
   </td>
  </tr>
  </tbody>
@@ -114,7 +114,10 @@ $(document).ready(function(){initNavTree('d7/dcb/ancillarydata.html','../../');}
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#anccapture-dataspace">Ancillary Data Space Limitations</a></li>
 </ul>
 </li>
-<li><a class="el" href="../../d7/dcb/ancillarydata.html#ancplayout">SDI Anc Packet Playout</a></li>
+<li><a class="el" href="../../d7/dcb/ancillarydata.html#ancplayout">SDI Anc Packet Playout</a><ul>
+<li><a class="el" href="../../d7/dcb/ancillarydata.html#hancinsertion">HANC Insertion</a></li>
+</ul>
+</li>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancbufferformats">Anc Buffer Data Formats</a><ul>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a></li>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a></li>
@@ -564,60 +567,88 @@ Ancillary Data Space Limitations</h2>
 <h1><a class="anchor" id="ancplayout"></a>
 SDI Anc Packet Playout</h1>
 <p>There are two ways to play out custom Ancillary data packets:</p><ul>
-<li><b>Use Anc Inserter firmware:</b> <em>(Preferred)</em><ul>
-<li>Available on most devices — check <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad2b63b9f62be2e9793243832e62dabdd">NTV2DeviceCanDoCustomAnc</a>.</li>
-<li>Ancillary data packets are automatically inserted into the outgoing video stream when they’ve been properly formatted and placed into a separate area of the device frame buffer.</li>
-<li>Cannot output HANC (sorry).</li>
-<li>With <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> :<ul>
-<li>SDK &amp; driver version 12.3 or later required.</li>
+<li><a class="el" href="../../d7/dcb/ancillarydata.html#ancplayoutancins">Using Anc Inserter</a></li>
+<li><a class="el" href="../../d7/dcb/ancillarydata.html#ancplayoutvanc">Using VANC Frame Geometry</a></li>
+</ul>
+<h2><a class="anchor" id="ancplayoutancins"></a>
+Using Anc Inserter</h2>
+<p>Firmware anc inserters were introduced in new AJA devices starting around 2015, and originally only worked with <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> starting in SDK/driver version 12.3. Support for Anc insertion with non-AutoCirculate streaming methods was added in SDK/driver version 15.0.</p>
+<p>General information:</p><ul>
+<li>Available on most every AJA device. To confirm:<ul>
+<li>call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a016e52b03dabb94a3299a41efd73e4e1">CNTV2DriverInterface::IsSupported</a> with <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba3018f3418d9923427fa10d5277b76406" title="True if device has SDI ANC inserter/extractor firmware. ">kDeviceCanDoCustomAnc</a></li>
+<li>or call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">CNTV2Card::features</a> then call <a class="el" href="../../db/d32/class_device_capabilities.html#a448cf4df5764ec99776f014eaf2fee54">DeviceCapabilities::CanDoCustomAnc</a></li>
+<li>or call <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad2b63b9f62be2e9793243832e62dabdd">NTV2DeviceCanDoCustomAnc</a></li>
+</ul>
+</li>
+<li>Ancillary data packets are automatically inserted into the outgoing video stream when they’ve been properly formatted and placed into the ancillary data region of each outgoing frame buffer on the device. See <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> for details about this 8-bit data format.<ul>
+<li>The <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> makes it easy to produce a list of packets to send, and then transform the list into the expected <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a>.<ul>
+<li>Build an <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html" title="I am an ordered collection of AJAAncillaryData instances which represent one or more SMPTE 291 data p...">AJAAncillaryList</a> of <a class="el" href="../../dd/de8/class_a_j_a_ancillary_data.html" title="I am the principal class that stores a single SMPTE-291 SDI ancillary data packet OR the digitized co...">AJAAncillaryData</a> packets to send.<ul>
+<li>Because the outgoing line number can be specified, it's possible to overrun a line. Be certain that the data packets to be inserted on a given line will fit for the output video standard.</li>
+</ul>
+</li>
+<li>Call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ade6529f821c169268c0a45ec28ac37f3" title="Encodes my AJAAncillaryData packets into the given buffers in the default SDI Anc Buffer Data Format ...">AJAAncillaryList::GetTransmitData</a> to transform the packets into the proper format and write them into two provided ancillary data buffers: one for Field1, the other for Field2 (interlace only).<ul>
+<li>The buffers can then be transferred to the device using <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> (if using <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> ) or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a> (if not using <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> ).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The Anc Inserter automatically recalculates the parity bits for the outgoing 10-bit user data words (UDWs).</li>
+<li>The checksum (CS) value that terminates each packet is also automatically recalculated by the Anc Inserter. (Whatever CS value was transferred from the host/application to the device is ignored.)</li>
+<li>The default per-field ancillary data buffer capacity is 8K bytes (16K bytes per frame), including overhead. This can be changed if necessary:<ul>
+<li>interactively using the <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> tool’s <a class="el" href="../../db/d02/toolsandutilities.html#inspectoranc">Ancillary Data Inspector</a></li>
+<li>or by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4c10417d7698ca8921accace4c17d8ab" title="Sets the capacity of the SDI ANC or HDMI AUX buffers in device frame memory. (Call NTV2DeviceCanDoCus...">CNTV2Card::AncSetFrameBufferSize</a>.</li>
+</ul>
+</li>
+<li>As a general rule, most applications should never insert HANC packets. If HANC packets must be inserted, special handling is required. See <a class="el" href="../../d7/dcb/ancillarydata.html#hancinsertion">HANC Insertion</a> below.</li>
+</ul>
+<p><b>To Insert Anc WITH <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> :</b></p><ul>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> with the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> option.</li>
 <li>Call <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#ad7480e96337587fd0035a42f6d43b17d" title="Sets my ancillary data buffers for use in a subsequent call to CNTV2Card::AutoCirculateTransfer. ">AUTOCIRCULATE_TRANSFER::SetAncBuffers</a> to specify the source host Anc buffer(s).</li>
 <li>Before calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>, set the contents of the host Anc buffer(s)…<ul>
 <li>Manually write the data — see <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> (below).</li>
 <li>Or use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ade6529f821c169268c0a45ec28ac37f3" title="Encodes my AJAAncillaryData packets into the given buffers in the default SDI Anc Buffer Data Format ...">AJAAncillaryList::GetTransmitData</a>.</li>
-<li>For SMPTE-2110 IP devices, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> will automatically convert the data from <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> into <a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a> (SDK version 15.2 or later required).</li>
+<li>For SMPTE-2110 IP devices, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> automatically converts the data from <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> into <a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a> (SDK version 15.2 or later required).</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>Without <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> :<ul>
-<li>SDK 15.0 or later required.</li>
+<p><b>To Insert Anc WITHOUT <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> :</b></p><ul>
 <li>See <a class="el" href="../../d9/d07/demoapps.html#ntv2llburn">NTV2LLBurn Demo</a> for example of how to use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaefa8ad8ba55f3e92ce30c8f988674dd" title="Initializes the given SDI output&#39;s Anc inserter for custom Anc packet insertion. (Call NTV2DeviceCanD...">CNTV2Card::AncInsertInit</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac1eb9ef11a358963e6c5fb5ba8ce3f5e" title="Enables or disables the given SDI output&#39;s Anc inserter frame buffer reads. (Call NTV2DeviceCanDoCust...">CNTV2Card::AncInsertSetEnable</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab48397d706cb0a57134eb0279e6a6bb4" title="Configures the Anc inserter for the next frame&#39;s F1 Anc data to embed/transmit. (Call NTV2DeviceCanDo...">CNTV2Card::AncInsertSetReadParams</a>, etc.</li>
 <li>Before calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a>, set the contents of the host Anc buffer(s)…<ul>
-<li>Manually write the data — see <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> (below).</li>
-<li>Or use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> to put together an <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html" title="I am an ordered collection of AJAAncillaryData instances which represent one or more SMPTE 291 data p...">AJAAncillaryList</a> of packets to send — then call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ade6529f821c169268c0a45ec28ac37f3" title="Encodes my AJAAncillaryData packets into the given buffers in the default SDI Anc Buffer Data Format ...">AJAAncillaryList::GetTransmitData</a>.</li>
-<li>For SMPTE-2110 IP devices, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a> will automatically convert the data from <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> into <a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a> (SDK version 15.2 or later required) immediately prior to the actual transfer.</li>
+<li>Manually write the packet data using the <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> (documented below).</li>
+<li>For SMPTE-2110 IP devices, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a> automatically converts the data from <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> into <a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a> (SDK version 15.2 or later required).</li>
 </ul>
 </li>
 </ul>
-</li>
-<li><b>IMPORTANT: Each Anc Inserter serves its corresponding SDI Output — not a FrameStore.</b><ul>
-<li>For example, using AutoCirculate to play video and anc on <code>NTV2_CHANNEL2</code> with FrameStore2 routed to SDIOut1 will not yield any custom anc packets in the SDI bitstream.</li>
+<p><b>IMPORTANT: Each Anc Inserter serves its corresponding SDI Output — not a FrameStore.</b></p><ul>
+<li>For example, using <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> to play video and anc on <code>NTV2_CHANNEL2</code> with FrameStore2 routed to SDIOut1 will not yield any custom anc packets in the SDI bitstream.</li>
+</ul>
+<p><b>TIP:</b> The <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> tool’s <a class="el" href="../../db/d02/toolsandutilities.html#inspectoranc">Ancillary Data Inspector</a> is useful for diagnosing issues with ancillary data playout.</p>
+<h3><a class="anchor" id="hancinsertion"></a>
+HANC Insertion</h3>
+<p>The firmware Anc Inserters on some AJA devices were enhanced to support HANC packet insertion starting in 2024 in SDK/driver version 17.5. To check if the running firmware on the device supports HANC insertion:</p><ul>
+<li>call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a016e52b03dabb94a3299a41efd73e4e1">CNTV2DriverInterface::IsSupported</a> with <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6bab1feb35bef6b167d5dc88442bc11ac50" title="True if device supports custom HANC packet insertion. (New in SDK 17.1) ">kDeviceCanDoCustomHancInsertion</a></li>
+<li>or call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">CNTV2Card::features</a>, then call <a class="el" href="../../db/d32/class_device_capabilities.html#acc1cbe9548d278e0e5552d356cb422d6">DeviceCapabilities::CanDoCustomHancInsertion</a></li>
+</ul>
+<p><b>With <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> </b></p><ul>
+<li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> with the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> option. Note that <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> <em>never</em> enables HANC insertion at Init time.</li>
+<li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ad81b9cb3ecbda6034cd9ba21993ff761" title="Enables or disables individual Anc insertion components for the given SDI output. (Call NTV2DeviceCan...">CNTV2Card::AncInsertSetComponents</a> <em>before</em> calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculating the specified channel that was previously initialized by CNTV2Card::AutoCircul...">CNTV2Card::AutoCirculateStart</a>. Be sure to pass <b>true</b> for <em>all</em> of its <code>bool</code> parameters.</li>
+<li><b>DON’T</b> insert audio packets if AutoCirculating with audio (i.e. a valid <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516" title="Used to identify an Audio System on an NTV2 device. See Audio System Operation for more information...">NTV2AudioSystem</a> was passed into <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> ).</li>
+<li><b>DON’T</b> insert VITC and/or LTC packets if <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> was called with options <code>AUTOCIRCULATE_WITH_RP188</code> and/or <code>AUTOCIRCULATE_WITH_LTC</code>.</li>
+<li><b>DON’T</b> ever insert VPID or EDH packets.</li>
+</ul>
+<p><b>Without <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> </b></p><ul>
+<li>See <a class="el" href="../../d9/d07/demoapps.html#ntv2llburn">NTV2LLBurn Demo</a> for example of how to use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aaefa8ad8ba55f3e92ce30c8f988674dd" title="Initializes the given SDI output&#39;s Anc inserter for custom Anc packet insertion. (Call NTV2DeviceCanD...">CNTV2Card::AncInsertInit</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac1eb9ef11a358963e6c5fb5ba8ce3f5e" title="Enables or disables the given SDI output&#39;s Anc inserter frame buffer reads. (Call NTV2DeviceCanDoCust...">CNTV2Card::AncInsertSetEnable</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab48397d706cb0a57134eb0279e6a6bb4" title="Configures the Anc inserter for the next frame&#39;s F1 Anc data to embed/transmit. (Call NTV2DeviceCanDo...">CNTV2Card::AncInsertSetReadParams</a>, etc. Look for all uses of “<code>mConfig.WithHanc()</code>” in <a class="el" href="../../d3/da6/class_n_t_v2_l_l_burn.html#a5922681a859eb23732b7999ad8c3a17b" title="Repeatedly captures, burns, and plays frames without using AutoCirculate (until global quit flag set)...">NTV2LLBurn::ProcessFrames</a>.</li>
+<li>Before calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a>, set the contents of the host Anc buffer(s)…<ul>
+<li>Manually write the packet data using the <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> (documented below).</li>
+<li>For SMPTE-2110 IP devices, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3a2464a509352ee85f9a6f393dbd09b2" title="Transfers the contents of the ancillary data buffer(s) from the host to a given frame on the AJA devi...">CNTV2Card::DMAWriteAnc</a> automatically converts the data from <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a> into <a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a> (SDK version 15.2 or later required) immediately prior to the actual transfer.</li>
 </ul>
 </li>
-<li>On SDI devices and SMPTE 2022 firmware on IP devices, the parity bits for outgoing 10-bit UDWs are automatically recalculated by the Anc inserter, after reading the 8-bit UDWs out of the Anc Buffer, while embedding the packet data into the outgoing SDI data stream.</li>
-<li>Default per-field ancillary data buffer capacity is 8K by default, or 16K per-frame, including overhead. Please <a href="https://sdksupport.aja.com/">submit a Ticket</a> if you need to change this.</li>
 </ul>
-</li>
-<li><b>Use VANC frame geometry</b> <em>(for older AJA devices)</em><ul>
-<li>4K/UHD or larger rasters (i.e. <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54af" title="Identifies a particular video frame geometry. ">NTV2FrameGeometry</a> ≥ <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa6619f37ff724bdb25e1cca75c49b258f" title="3840x2160, for UHD, NTV2_VANCMODE_OFF ">NTV2_FG_4x1920x1080</a>) aren’t supported, and likely never will be.</li>
-<li>Only <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca13b435896fd9f2d750c79f557bd857cb" title="See 10-Bit YCbCr Format. ">NTV2_FBF_10BIT_YCBCR</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161cac989c7bd68d50e0c9f70661fc05c787a" title="See 8-Bit YCbCr Format. ">NTV2_FBF_8BIT_YCBCR</a> buffer formats are officially supported. Others may work, but are untested.</li>
-<li>Signal paths involving CSCs/LUTs between the Frame Store and the SDI output may corrupt the VANC data.</li>
-<li>HANC obviously cannot be supported.</li>
-<li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abbb0a91d16cddb3fc10a5d867f92e582" title="Sets the VANC mode for the given FrameStore. ">CNTV2Card::SetVANCMode</a> to enable the “tall” or “taller” frame geometry.</li>
-<li>See <a class="el" href="../../d7/dcb/ancillarydata.html#vancframegeometries">VANC Frame Geometries</a> (below) for details on the locations of the SMPTE VANC lines in the frame buffer.</li>
-<li>Before transferring the frame to the device, set the contents of the VANC line(s)…<ul>
-<li>If desired, use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ac9c958fadc9c5a38ac4eca38e4095625" title="Writes my AJAAncillaryData objects into the given tall/taller frame buffer having the given raster/fo...">AJAAncillaryList::GetVANCTransmitData</a>.</li>
-<li><b>CAUTION:</b> The device will transmit whatever Y/Cb/Cr values are in the VANC region of the buffer unfiltered, <em>including illegal values</em>, which can cause sync issues in downstream equipment. Be sure all values stored in the VANC lines are legal SMPTE.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>Because the outgoing line number can be specified when using the <b>Anc Inserter</b>, it's possible to overrun a line. Be certain that the data packets to be inserted on a given line will fit for the output video standard.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>AJA strongly recommends NOT playing <b><em>verbatim</em></b> the same ancillary data packets captured by a firmware Anc Extractor through a firmware Anc Inserter. There are several reasons for this, and moreso if the output video format differs from the input format:<ul>
-<li>Packets that are ordinarily embedded in output SDI automatically by the hardware (e.g. audio, ATC, VPID, EDH, etc.) should be filtered out. The <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#af617600be13b1cfe534894babfb3d7d1" title="Copies GUMP from inSrc to outDst buffers, but removes ATC, VPID, VITC, EDH &amp; raw/analog packets...">AJAAncillaryList::StripNativeInserterGUMPPackets</a> function can do this.</li>
-<li>HANC packets should be excluded (removed), since the Anc Inserters on most AJA devices are not designed to insert them, and aren’t expecting them.</li>
+<li>Packets ordinarily embedded in output SDI by the hardware (e.g. audio, ATC, VPID, EDH, etc.) should be removed. (<a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#af617600be13b1cfe534894babfb3d7d1" title="Copies GUMP from inSrc to outDst buffers, but removes ATC, VPID, VITC, EDH &amp; raw/analog packets...">AJAAncillaryList::StripNativeInserterGUMPPackets</a> will do this.)</li>
+<li>If the device doesn’t support HANC Insertion, HANC packets must be removed.</li>
 <li>Some packet types may be irrelevant or not recommended for certain output video formats;<ul>
 <li>e.g. packets that specifically are intended for Field 2 of interlaced video should be excluded from insertion into progressive video.</li>
 </ul>
@@ -626,7 +657,33 @@ SDI Anc Packet Playout</h1>
 <li>Some packets may need to be inserted on a different line.</li>
 </ul>
 </dd></dl>
-<p><b>TIP:</b> The <a class="el" href="../../db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> tool’s <a class="el" href="../../db/d02/toolsandutilities.html#inspectoranc">Ancillary Data Inspector</a> is useful for diagnosing issues with ancillary data playout.</p>
+<h2><a class="anchor" id="ancplayoutvanc"></a>
+Using VANC Frame Geometry</h2>
+<p>A very long time ago, this was the only way to insert custom ancillary data packets into the SDI output stream. Though still supported in modern firmware, this method is largely considered obsolete.</p>
+<p>There are severe limitations with this method:</p><ul>
+<li>No support for 4K/UHD or 8K/UHD2 (i.e. <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54af" title="Identifies a particular video frame geometry. ">NTV2FrameGeometry</a> ≥ <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a8348e43b54cd91f6eb337019abde54afa6619f37ff724bdb25e1cca75c49b258f" title="3840x2160, for UHD, NTV2_VANCMODE_OFF ">NTV2_FG_4x1920x1080</a>).</li>
+<li>Only supports <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca13b435896fd9f2d750c79f557bd857cb" title="See 10-Bit YCbCr Format. ">NTV2_FBF_10BIT_YCBCR</a> or <a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161cac989c7bd68d50e0c9f70661fc05c787a" title="See 8-Bit YCbCr Format. ">NTV2_FBF_8BIT_YCBCR</a> buffer pixel formats.</li>
+<li>On-device signal paths involving CSCs and/or LUTs between the FrameStore and SDIOut widgets can corrupt the VANC data.</li>
+<li>No HANC support.</li>
+<li>Recommended for use only when these functions return <b>false</b>:<ul>
+<li><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a016e52b03dabb94a3299a41efd73e4e1">CNTV2DriverInterface::IsSupported</a> with <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba3018f3418d9923427fa10d5277b76406" title="True if device has SDI ANC inserter/extractor firmware. ">kDeviceCanDoCustomAnc</a></li>
+<li>or <a class="el" href="../../db/d32/class_device_capabilities.html#a448cf4df5764ec99776f014eaf2fee54">DeviceCapabilities::CanDoCustomAnc</a> from <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">CNTV2Card::features</a></li>
+<li>or <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad2b63b9f62be2e9793243832e62dabdd">NTV2DeviceCanDoCustomAnc</a>.</li>
+</ul>
+</li>
+</ul>
+<p>To insert custom VANC packets:</p><ul>
+<li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abbb0a91d16cddb3fc10a5d867f92e582" title="Sets the VANC mode for the given FrameStore. ">CNTV2Card::SetVANCMode</a> to enable the “tall” or “taller” frame geometry.</li>
+<li>See <a class="el" href="../../d7/dcb/ancillarydata.html#vancframegeometries">VANC Frame Geometries</a> (below) for details on the locations of the SMPTE VANC lines in the frame buffer.</li>
+<li>Before transferring the frame to the device, set the contents of the VANC line(s)…<ul>
+<li>If desired, use the <a class="el" href="../../index.html#ajaanc">Ancillary Data Classes</a> — call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ac9c958fadc9c5a38ac4eca38e4095625" title="Writes my AJAAncillaryData objects into the given tall/taller frame buffer having the given raster/fo...">AJAAncillaryList::GetVANCTransmitData</a>.</li>
+<li><b>CAUTION:</b><br />
+ The device will transmit whatever Y/Cb/Cr values are in the VANC region of the buffer unfiltered,<br />
+ <em>including illegal values</em>, which can cause sync issues in downstream equipment.<br />
+ Be sure all values stored in the VANC lines are legal SMPTE.</li>
+</ul>
+</li>
+</ul>
 <hr/>
 <h1><a class="anchor" id="ancbufferformats"></a>
 Anc Buffer Data Formats</h1>
@@ -739,7 +796,7 @@ HD 1080p Dual-Link</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 10:47:10 for AJA NTV2 SDK by
+    <li class="footer">Generated on Tue Mar 31 2026 15:41:34 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

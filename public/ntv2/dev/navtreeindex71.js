@@ -70,12 +70,15 @@ var NAVTREEINDEX71 =
 "d7/dcb/ancillarydata.html#ancembeddedaudio":[0,7,0,0],
 "d7/dcb/ancillarydata.html#ancgumpformat":[0,7,3,0],
 "d7/dcb/ancillarydata.html#ancplayout":[0,7,2],
+"d7/dcb/ancillarydata.html#ancplayoutancins":[0,7,2,0],
+"d7/dcb/ancillarydata.html#ancplayoutvanc":[0,7,2,1],
 "d7/dcb/ancillarydata.html#ancrtpformat":[0,7,3,1],
 "d7/dcb/ancillarydata.html#anctimecode":[0,7,0,1],
 "d7/dcb/ancillarydata.html#anctimecodedisplay":[0,7,0,1,4],
 "d7/dcb/ancillarydata.html#anctimecodeinput":[0,7,0,1,0],
 "d7/dcb/ancillarydata.html#anctimecodeoutput":[0,7,0,1,1],
 "d7/dcb/ancillarydata.html#ancvpid":[0,7,0,2],
+"d7/dcb/ancillarydata.html#hancinsertion":[0,7,2,0,0],
 "d7/dcb/ancillarydata.html#hd1080i":[0,7,4,4],
 "d7/dcb/ancillarydata.html#hd1080p":[0,7,4,3],
 "d7/dcb/ancillarydata.html#hd1080pdl":[0,7,4,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX71 =
 "d7/dfa/xmsupplement.html#xmoverview":[2,0],
 "d7/dfa/xmsupplement.html#xmstrm":[2,3],
 "d7/dfa/xmsupplement.html#xmstrmcapture":[2,3,0],
-"d7/dfa/xmsupplement.html#xmstrmdemos":[2,4],
-"d7/dfa/xmsupplement.html#xmstrmdetails":[2,3,2],
-"d7/dfa/xmsupplement.html#xmstrmlatency":[2,3,3],
-"d7/dfa/xmsupplement.html#xmstrmplayback":[2,3,1]
+"d7/dfa/xmsupplement.html#xmstrmdemos":[2,4]
 };

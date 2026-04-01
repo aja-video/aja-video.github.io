@@ -343,7 +343,12 @@ var index =
         [ "Ancillary Packet Filtering", "d7/dcb/ancillarydata.html#anccapture-filter", null ],
         [ "Ancillary Data Space Limitations", "d7/dcb/ancillarydata.html#anccapture-dataspace", null ]
       ] ],
-      [ "SDI Anc Packet Playout", "d7/dcb/ancillarydata.html#ancplayout", null ],
+      [ "SDI Anc Packet Playout", "d7/dcb/ancillarydata.html#ancplayout", [
+        [ "Using Anc Inserter", "d7/dcb/ancillarydata.html#ancplayoutancins", [
+          [ "HANC Insertion", "d7/dcb/ancillarydata.html#hancinsertion", null ]
+        ] ],
+        [ "Using VANC Frame Geometry", "d7/dcb/ancillarydata.html#ancplayoutvanc", null ]
+      ] ],
       [ "Anc Buffer Data Formats", "d7/dcb/ancillarydata.html#ancbufferformats", [
         [ "SDI Anc Buffer Data Format", "d7/dcb/ancillarydata.html#ancgumpformat", null ],
         [ "RTP Anc Buffer Data Format", "d7/dcb/ancillarydata.html#ancrtpformat", null ]

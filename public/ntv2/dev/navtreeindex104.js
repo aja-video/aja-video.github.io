@@ -1,5 +1,8 @@
 var NAVTREEINDEX104 =
 {
+"dd/d0e/struct_receive_audio_data2110.html#a09f561761935888e7f0fc5d3830c4bc6":[8,0,498,1],
+"dd/d0e/struct_receive_audio_data2110.html#a6a5dac698e700c6621ccd46bbd1b7ef3":[8,0,498,0],
+"dd/d0f/ntv2devicefeatures_8hpp.html":[9,0,1,2,1,18],
 "dd/d0f/ntv2devicefeatures_8hpp.html#a01972db7db21f60895b6fc4448945131":[9,0,1,2,1,18,117],
 "dd/d0f/ntv2devicefeatures_8hpp.html#a01ecb66ed2a5250c0c9bdc4a7a31c90d":[9,0,1,2,1,18,76],
 "dd/d0f/ntv2devicefeatures_8hpp.html#a02068809f6655f4a7b6dc787a6896170":[9,0,1,2,1,18,47],
@@ -246,8 +249,5 @@ var NAVTREEINDEX104 =
 "dd/d21/class_routing_expert.html#a0d69e5bb02175ba7a4697159e6b72f4f":[8,0,511,53],
 "dd/d21/class_routing_expert.html#a0d7ba0e0f59e50dead8fbf32408f4f21":[8,0,511,16],
 "dd/d21/class_routing_expert.html#a0fbf7111cba452638c407b7beb799073":[8,0,511,57],
-"dd/d21/class_routing_expert.html#a136e44ce46524d788db45977f63a2b16":[8,0,511,37],
-"dd/d21/class_routing_expert.html#a14d3d2d2188dc53f1cbbbad0000a0a20":[8,0,511,49],
-"dd/d21/class_routing_expert.html#a17d347a900b46cef155b7565b3d7dab8":[8,0,511,44],
-"dd/d21/class_routing_expert.html#a19487ebfc0d9d91c98020b84b07c2021":[8,0,511,51]
+"dd/d21/class_routing_expert.html#a136e44ce46524d788db45977f63a2b16":[8,0,511,37]
 };
