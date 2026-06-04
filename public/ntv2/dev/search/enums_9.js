@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['j2kchromasubsampling',['J2KChromaSubSampling',['../df/d01/ntv2tshelper_8h.html#ab1037e3592cce98c41ecec6cc7506af0',1,'ntv2tshelper.h']]],
-  ['j2kcodeblocksize',['J2KCodeBlocksize',['../df/d01/ntv2tshelper_8h.html#a829656df2ae5c6229db44a0364538366',1,'ntv2tshelper.h']]],
-  ['j2kstreamtype',['J2KStreamType',['../df/d01/ntv2tshelper_8h.html#a2d98af6c59d9c1807387e6b0fa333b1c',1,'ntv2tshelper.h']]]
+  ['ksproperty_5fajaprops',['KSPROPERTY_AJAPROPS',['../d4/d20/ntv2winpublicinterface_8h.html#ae152243081c07a8a428c0ac853f23386',1,'ntv2winpublicinterface.h']]]
 ];

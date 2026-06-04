@@ -35,7 +35,7 @@ var class_c_n_t_v2_demo_common =
     [ "GetVANCModeStrings", "d6/d2a/class_c_n_t_v2_demo_common.html#a003441c49200c7f12f2f11aa9649ef2c", null ],
     [ "GetVideoFormatFromString", "d6/d2a/class_c_n_t_v2_demo_common.html#abfe4055ece88e9c0185c9a08ae64155b", null ],
     [ "GetVideoFormatStrings", "d6/d2a/class_c_n_t_v2_demo_common.html#a2075700d29880a92a5217071a6716586", null ],
-    [ "IsValidDevice", "d6/d2a/class_c_n_t_v2_demo_common.html#aac6bc53ccb66d4ffbfdb90b0a942e86b", null ],
+    [ "IsValidDevice", "d6/d2a/class_c_n_t_v2_demo_common.html#ace92fa69e12e80603a4be337b4d4fa9f", null ],
     [ "NTV2FrameRate2TimecodeFormat", "d6/d2a/class_c_n_t_v2_demo_common.html#acb1fe1d6306107610633fc235d62d5e6", null ],
     [ "ReadCharacterPress", "d6/d2a/class_c_n_t_v2_demo_common.html#abe13789106d8fa2e9acce6cbddb745c7", null ],
     [ "SetDefaultPageSize", "d6/d2a/class_c_n_t_v2_demo_common.html#a4ef656adc4b3390326908ee387133c84", null ],

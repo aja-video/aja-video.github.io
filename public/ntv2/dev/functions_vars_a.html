@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2149</span>
+   &#160;<span id="projectnumber">18.1.0.2262</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
   </td>
  </tr>
  </tbody>
@@ -370,6 +370,9 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 : <a class="el" href="d4/d5c/struct_hevc_encoded_info.html#a007458a0c4f83596445d3bbdf7b02b58">HevcEncodedInfo</a>
 , <a class="el" href="da/d7f/struct_hevc_picture_info.html#a3784b2ac159de74ae77ef7078a1fc7b3">HevcPictureInfo</a>
 </li>
+<li>addr
+: <a class="el" href="dc/d06/structntv2__genlock2__data.html#ade0ff391a546480a34cf498c63839836">ntv2_genlock2_data</a>
+</li>
 <li>Address
 : <a class="el" href="d4/db6/struct___m_a_p___m_e_m_o_r_y.html#adc88d5ffb7ba99d76527a9839519071b">_MAP_MEMORY</a>
 </li>
@@ -489,8 +492,6 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 </li>
 <li>audio1Pid
 : <a class="el" href="d4/ddf/struct_encoder_struct.html#a3ee4565c1bbd9360d59cb8f8dfb3748f">EncoderStruct</a>
-, <a class="el" href="dd/dd2/classj2k_encoder_config.html#ac947168b95cec3dab8e16c3f7c64d9c7">j2kEncoderConfig</a>
-, <a class="el" href="db/dbd/struct_ts_encap_stream_data.html#a5e3a1a2859a46853cfee221986a52d90">TsEncapStreamData</a>
 </li>
 <li>audioBitsPerSampleList
 : <a class="el" href="d6/d61/struct_n_t_v2_device_info.html#a880ab94d51c7d1402cb466044513b437">NTV2DeviceInfo</a>
@@ -512,7 +513,6 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 </li>
 <li>audioChannels
 : <a class="el" href="d4/ddf/struct_encoder_struct.html#a695daf688a9777d24fdde7d2d3dba86a">EncoderStruct</a>
-, <a class="el" href="dd/dd2/classj2k_encoder_config.html#aebe0b86838b1ea2b935085e1361df6d3">j2kEncoderConfig</a>
 </li>
 <li>audioClockCurrentTime
 : <a class="el" href="dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#a68cb101f815cc78bd3633b4afead13bb">AUTOCIRCULATE_STATUS_STRUCT</a>
@@ -524,14 +524,8 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <li>audioClockTimeStamp
 : <a class="el" href="d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#ad6f851a1586d15075c788a26ec2aff44">FRAME_STAMP_STRUCT</a>
 </li>
-<li>audioCombine
-: <a class="el" href="d8/d95/struct_network_data2110.html#a6e09787ecfcffa30120155873bd30743">NetworkData2110</a>
-</li>
 <li>audioDataSize
 : <a class="el" href="de/d23/struct_a_v_hevc_data_buffer.html#a5c11a29a7ca0050f9bef6b2864b282b0">AVHevcDataBuffer</a>
-</li>
-<li>audioDepacketizers
-: <a class="el" href="d5/da5/class_c_n_t_v2_config2110.html#a0345fe7837876093a7472c4bb2234cfe">CNTV2Config2110</a>
 </li>
 <li>audioExpectedAddress
 : <a class="el" href="d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#afb0ff1395be7d4c6e4e547e302075203">FRAME_STAMP_STRUCT</a>
@@ -547,7 +541,6 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 </li>
 <li>audioNumber
 : <a class="el" href="d3/dc6/struct_decoder_struct.html#a5e4f3e5ad4afa0e69a46d9e1a2f0669f">DecoderStruct</a>
-, <a class="el" href="d3/d00/classj2k_decoder_config.html#a5128debd7499e73f01b25a997dce2cdc">j2kDecoderConfig</a>
 </li>
 <li>audioNumChannels
 : <a class="el" href="d0/dee/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_r_u_c_t.html#a9db24acb51e06e60c613b8729d8440db">AUTOCIRCULATE_TRANSFER_STRUCT</a>
@@ -565,15 +558,6 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 </li>
 <li>audioOutStopAddress
 : <a class="el" href="d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#a2fdd228ca0ecb0b4fc0d13424d71af37">FRAME_STAMP_STRUCT</a>
-</li>
-<li>audioPacketizers
-: <a class="el" href="d5/da5/class_c_n_t_v2_config2110.html#ab906c146c02fb7acfbf546d8d1d630d1">CNTV2Config2110</a>
-</li>
-<li>audioPktInterval
-: <a class="el" href="d8/dd4/classrx__2110_config.html#ae5c8d348ed24d92753356dceed198027">rx_2110Config</a>
-, <a class="el" href="d0/da9/struct_rx_audio_ch_data2110.html#a8346710b43890f185737b37f880bb8e8">RxAudioChData2110</a>
-, <a class="el" href="dd/dad/classtx__2110_config.html#ac47c4c7b07cd63234f2e6578db2f03f7">tx_2110Config</a>
-, <a class="el" href="d9/dec/struct_tx_audio_ch_data2110.html#acd685d7e57b80ed270ed458abc851475">TxAudioChData2110</a>
 </li>
 <li>audioSampleRateList
 : <a class="el" href="d6/d61/struct_n_t_v2_device_info.html#af1fdd189ca795215ffe2645ad1e9053e">NTV2DeviceInfo</a>
@@ -598,15 +582,6 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 </li>
 <li>AutoFlashOnAirChars
 : <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a630422a6133c1db387721b3b42a66081">CNTV2CaptionDecoder608</a>
-</li>
-<li>availableAudioPIDs
-: <a class="el" href="db/d67/classj2k_decoder_status.html#a167c50c733da0a16f4fff8da61b69fce">j2kDecoderStatus</a>
-</li>
-<li>availableProgramNumbers
-: <a class="el" href="db/d67/classj2k_decoder_status.html#aaa198476a651335f68372fa9f34f0c79">j2kDecoderStatus</a>
-</li>
-<li>availableProgramPIDs
-: <a class="el" href="db/d67/classj2k_decoder_status.html#afd937d92c1e554d28f4003201a5908eb">j2kDecoderStatus</a>
 </li>
 <li>aveBitRate
 : <a class="el" href="dc/df9/struct_hevc_device_command.html#a80800645365bba34ac8f18cc1704cb42">HevcDeviceCommand</a>
@@ -638,7 +613,7 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 31 2026 15:41:36 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jun 4 2026 06:18:29 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

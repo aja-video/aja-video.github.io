@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2149</span>
+   &#160;<span id="projectnumber">18.1.0.2262</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
   </td>
  </tr>
  </tbody>
@@ -193,10 +193,12 @@ Functions</h2></td></tr>
 <tr class="separator:af567bd1eb313f2bdb941f2618fd64646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e472faf61c4ff80460a733e326d47ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/namespaceaja.html#a4e472faf61c4ff80460a733e326d47ce">is_alpha_numeric</a> (const char inChr)</td></tr>
 <tr class="separator:a4e472faf61c4ff80460a733e326d47ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9d174c2d9bfae5e701c43a82022db5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/namespaceaja.html#a6e9d174c2d9bfae5e701c43a82022db5">is_legal_decimal_number</a> (const std::string &amp;inStr, const size_t inMaxLength)</td></tr>
-<tr class="separator:a6e9d174c2d9bfae5e701c43a82022db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175946e9fd92f548fb4e879b2d0005b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/namespaceaja.html#a175946e9fd92f548fb4e879b2d0005b7">is_legal_decimal_number</a> (const std::string &amp;inStr, size_t inMaxLength)</td></tr>
+<tr class="separator:a175946e9fd92f548fb4e879b2d0005b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa61e047b6749be409ad07941c6ae330d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/namespaceaja.html#aa61e047b6749be409ad07941c6ae330d">is_legal_hex_serial_number</a> (const std::string &amp;inStr)</td></tr>
 <tr class="separator:aa61e047b6749be409ad07941c6ae330d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169845c1181cccbb1e6d95ecfa06b9b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/namespaceaja.html#a169845c1181cccbb1e6d95ecfa06b9b3">is_legal_hex_number</a> (const std::string &amp;inStr, size_t inMaxLength)</td></tr>
+<tr class="separator:a169845c1181cccbb1e6d95ecfa06b9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65855c32500ec80994e609ab332dd891"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/namespaceaja.html#a65855c32500ec80994e609ab332dd891">is_alpha_numeric</a> (const std::string &amp;inStr)</td></tr>
 <tr class="separator:a65855c32500ec80994e609ab332dd891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e046f9c5fdba35fdee34b95f3fcc5d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
@@ -417,7 +419,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if every character in the given string is alphanumeric </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/df9/common_8cpp_source.html#l00570">570</a> of file <a class="el" href="../../d9/df9/common_8cpp_source.html">common.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/df9/common_8cpp_source.html#l00606">606</a> of file <a class="el" href="../../d9/df9/common_8cpp_source.html">common.cpp</a>.</p>
 
 </div>
 </div>
@@ -475,8 +477,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e9d174c2d9bfae5e701c43a82022db5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e9d174c2d9bfae5e701c43a82022db5">&#9670;&nbsp;</a></span>is_legal_decimal_number()</h2>
+<a id="a175946e9fd92f548fb4e879b2d0005b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175946e9fd92f548fb4e879b2d0005b7">&#9670;&nbsp;</a></span>is_legal_decimal_number()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,6 +515,44 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a169845c1181cccbb1e6d95ecfa06b9b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169845c1181cccbb1e6d95ecfa06b9b3">&#9670;&nbsp;</a></span>is_legal_hex_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd9/ajaexport_8h.html#ad5e9009e242207dde81d65db106d93ec">AJA_EXPORT</a> bool aja::is_legal_hex_number </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>inStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>inMaxLength</em> = <code>16</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inStr</td><td>The character string of interest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inMaxLength</td><td>The maximum number of hexadecimal digits allowed. Defaults to 16. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the given string is a hexadecimal number (and does not exceed the maximum length) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df9/common_8cpp_source.html#l00574">574</a> of file <a class="el" href="../../d9/df9/common_8cpp_source.html">common.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa61e047b6749be409ad07941c6ae330d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa61e047b6749be409ad07941c6ae330d">&#9670;&nbsp;</a></span>is_legal_hex_serial_number()</h2>
 
@@ -536,7 +576,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the given string contains a legal hexadecimal AJA device serial number </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/df9/common_8cpp_source.html#l00536">536</a> of file <a class="el" href="../../d9/df9/common_8cpp_source.html">common.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/df9/common_8cpp_source.html#l00540">540</a> of file <a class="el" href="../../d9/df9/common_8cpp_source.html">common.cpp</a>.</p>
 
 </div>
 </div>
@@ -2043,7 +2083,7 @@ template&lt;typename T , typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d3a/namespaceaja.html">aja</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 15:41:35 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jun 4 2026 06:18:29 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

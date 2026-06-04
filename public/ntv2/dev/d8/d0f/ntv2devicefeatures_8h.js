@@ -136,6 +136,9 @@ var ntv2devicefeatures_8h =
       [ "kDeviceHasBracketLED", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6baecec8d285061d403f527b38699b32231", null ],
       [ "kDeviceCanDo25GIP", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba7375e9061938907f53547097a6b12302", null ],
       [ "kDeviceCanReportMixerDelay", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6babcda288ffa72296afc525d1e54398360", null ],
+      [ "kDeviceHasLPProductCode", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba773c0a6dc4084c1c737c74c69d456130", null ],
+      [ "kDeviceCanDoP2PTransmit", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba5e3cbca45d760c28304e2c2eeb70c430", null ],
+      [ "kDeviceCanDoP2PReceive", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba79452e9bb91bf8d9de85e65783d39609", null ],
       [ "kNTV2BoolParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2953652108268e32c4d15eb0ddff77ab", null ],
       [ "kNTV2BoolParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba9ad50404c9c94edea0ba22a5b10b9a95", null ],
       [ "kDeviceCanDo_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba52a2168d75951d111daab3580e181500", null ]
@@ -218,6 +221,7 @@ var ntv2devicefeatures_8h =
       [ "kDeviceGetNumTSIMuxers", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a9b19471c4d45c01c0f62a15dc37d4da4", null ],
       [ "kDeviceGetSPIFlashVersion", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9ad6235d6a14ab488b608d60082248ea71", null ],
       [ "kDeviceGetGenlockVersion", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9ae38b49217ecfea79ee657a874f4d6e8e", null ],
+      [ "kDeviceGetNum25GSFPs", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a82215d4c61ea157f6085e663cc8ca0d5", null ],
       [ "kNTV2NumericParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a7eaf8b4def426e57849cb0300c0a942f", null ],
       [ "kNTV2NumericParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a29dffb5df3f5a58fba8e9d1fda2e9c56", null ],
       [ "kDeviceGetNum_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a626af21d6dff88a48d411505622ce9d9a1f616dcbfb19368309d2435d882e8668", null ]

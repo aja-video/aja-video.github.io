@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2149</span>
+   &#160;<span id="projectnumber">18.1.0.2262</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
   </td>
  </tr>
  </tbody>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('dc/dfc/class_c_n_t_v2_mac_driver_inter
 <div class="dynheader">
 Inheritance diagram for CNTV2MacDriverInterface:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/de9/class_c_n_t_v2_mac_driver_interface__inherit__graph.svg" width="188" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/de9/class_c_n_t_v2_mac_driver_interface__inherit__graph.svg" width="188" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -176,7 +176,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a32bf275d4fec0d8aec79d1ef0000da26"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference-counted version of <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a> useful for process groups.  <a href="#a32bf275d4fec0d8aec79d1ef0000da26">More...</a><br /></td></tr>
 <tr class="separator:a32bf275d4fec0d8aec79d1ef0000da26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e7df2ec68f90742fe54a023bb4b0b9b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a0e7df2ec68f90742fe54a023bb4b0b9b">SetStreamingApplication</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> appType, const int32_t pid)</td></tr>
-<tr class="memdesc:a0e7df2ec68f90742fe54a023bb4b0b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the four-CC type and process ID of the application that should "own" the AJA device (i.e. reserve it for exclusive use).  <a href="#a0e7df2ec68f90742fe54a023bb4b0b9b">More...</a><br /></td></tr>
+<tr class="memdesc:a0e7df2ec68f90742fe54a023bb4b0b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forcibly sets the four-CC type and process ID of the application that should "own" the AJA device (i.e. reserve it for exclusive use).  <a href="#a0e7df2ec68f90742fe54a023bb4b0b9b">More...</a><br /></td></tr>
 <tr class="separator:a0e7df2ec68f90742fe54a023bb4b0b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b22c60b42e0ee624b557cb9fb6e657e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a9b22c60b42e0ee624b557cb9fb6e657e">GetStreamingApplication</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outAppType, int32_t &amp;outProcessID)</td></tr>
 <tr class="memdesc:a9b22c60b42e0ee624b557cb9fb6e657e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the four-CC type and process ID of the application that currently "owns" the AJA device (i.e. reserved it for exclusive use).  <a href="#a9b22c60b42e0ee624b557cb9fb6e657e">More...</a><br /></td></tr>
@@ -215,9 +215,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08e816139f2baccda82b3189417de47b inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a08e816139f2baccda82b3189417de47b">DriverGetBuildInformation</a> (<a class="el" href="../../d2/d4d/struct_b_u_i_l_d___i_n_f_o___s_t_r_u_c_t.html">BUILD_INFO_STRUCT</a> &amp;outBuildInfo)</td></tr>
 <tr class="memdesc:a08e816139f2baccda82b3189417de47b inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the driver's build information.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a08e816139f2baccda82b3189417de47b">More...</a><br /></td></tr>
 <tr class="separator:a08e816139f2baccda82b3189417de47b inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c68296aded1858a0ade846ba970e55 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac0c68296aded1858a0ade846ba970e55">GetPackageInformation</a> (<a class="el" href="../../d4/de9/struct_p_a_c_k_a_g_e___i_n_f_o___s_t_r_u_c_t.html">PACKAGE_INFO_STRUCT</a> &amp;outPkgInfo)</td></tr>
-<tr class="memdesc:ac0c68296aded1858a0ade846ba970e55 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the IP device's package information.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac0c68296aded1858a0ade846ba970e55">More...</a><br /></td></tr>
-<tr class="separator:ac0c68296aded1858a0ade846ba970e55 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ce8a0a251694c39e1a7647019ebb87 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a50ce8a0a251694c39e1a7647019ebb87">BitstreamWrite</a> (const <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;inBuffer, const bool inFragment, const bool inSwap)</td></tr>
 <tr class="separator:a50ce8a0a251694c39e1a7647019ebb87 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585ee8af7be1af8402618f03d08cbcb0 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a585ee8af7be1af8402618f03d08cbcb0">BitstreamReset</a> (const bool inConfiguration, const bool inInterface)</td></tr>
@@ -361,8 +358,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a459b8a06b8df115a96ce97a23699a39a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a459b8a06b8df115a96ce97a23699a39a">CloseRemote</a> (void)</td></tr>
 <tr class="memdesc:a459b8a06b8df115a96ce97a23699a39a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases host resources associated with the remote/special device connection.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a459b8a06b8df115a96ce97a23699a39a">More...</a><br /></td></tr>
 <tr class="separator:a459b8a06b8df115a96ce97a23699a39a inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199f34d1a193bb986a1ce7c757bdf659 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a199f34d1a193bb986a1ce7c757bdf659">ParseFlashHeader</a> (<a class="el" href="../../de/d75/struct_b_i_t_f_i_l_e___i_n_f_o___s_t_r_u_c_t.html">BITFILE_INFO_STRUCT</a> &amp;outBitfileInfo)</td></tr>
-<tr class="separator:a199f34d1a193bb986a1ce7c757bdf659 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8f3aef99f96a593962787a7a71cb41 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a3b8f3aef99f96a593962787a7a71cb41">GetBoolParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
 <tr class="separator:a3b8f3aef99f96a593962787a7a71cb41 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998b21361a832ef936c456d8470946f5 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a998b21361a832ef936c456d8470946f5">GetNumericParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
@@ -379,6 +374,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a426ff994a258541d4e0636d8739ca136 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a426ff994a258541d4e0636d8739ca136">FinishOpen</a> (void)</td></tr>
 <tr class="memdesc:a426ff994a258541d4e0636d8739ca136 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes my member variables after a successful Open.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a426ff994a258541d4e0636d8739ca136">More...</a><br /></td></tr>
 <tr class="separator:a426ff994a258541d4e0636d8739ca136 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199f34d1a193bb986a1ce7c757bdf659 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a199f34d1a193bb986a1ce7c757bdf659">ParseFlashHeader</a> (<a class="el" href="../../de/d75/struct_b_i_t_f_i_l_e___i_n_f_o___s_t_r_u_c_t.html">BITFILE_INFO_STRUCT</a> &amp;outBitfileInfo)</td></tr>
+<tr class="separator:a199f34d1a193bb986a1ce7c757bdf659 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2376118ffd779ee2893264b6ea8360fd inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a2376118ffd779ee2893264b6ea8360fd">ReadFlashULWord</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inAddress, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inRetryCount=1000)</td></tr>
 <tr class="separator:a2376118ffd779ee2893264b6ea8360fd inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6a40221fc9be16f98304c8da10ad47 inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1d6a40221fc9be16f98304c8da10ad47">setDeviceIndexNumber</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> num)</td></tr>
@@ -560,10 +557,10 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method reserves exclusive use of the AJA device by the given running host process. The AJA device records both the "process ID" and "four CC". If another host process has already reserved the device, this function will fail. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2" title="Describes the task mode state. See also: Sharing AJA Devices With Other Applications. ">NTV2TaskMode</a> when this function is called, and restoring it after <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a> is called. </dd>
+<p>This method reserves exclusive use of the AJA device by the given running host process. The AJA device records both the "process ID" and "four CC". If another host process has already reserved the device, this function will fail. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2" title="Describes the task mode state. See also: NTV2 Device Sharing. ">NTV2TaskMode</a> when this function is called, and restoring it after <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a> is called. </dd>
 <dd>
 A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> should always be balanced by a call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a>. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">NTV2 Device Sharing</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955">CNTV2DriverInterface</a>.</p>
 
@@ -615,7 +612,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </dd>
 </dl>
 <p>This method reserves exclusive use of the AJA device by the given running host process, recording both the "process ID" and 4-byte "application type" specified by the caller, and if already reserved for the given application, increments a reference counter. If a different host process has already reserved the device, the function will fail. </p><dl class="section note"><dt>Note</dt><dd>Each call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a75caa3d5ded7267740053e64047f7f4d" title="A reference-counted version of CNTV2DriverInterface::AcquireStreamForApplication useful for process g...">CNTV2DriverInterface::AcquireStreamForApplicationWithReference</a> should be balanced by the same number of calls to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#abfe20cca94d2326d2bc069d1bf08485d" title="A reference-counted version of CNTV2DriverInterface::ReleaseStreamForApplication useful for process g...">CNTV2DriverInterface::ReleaseStreamForApplicationWithReference</a>. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#abfe20cca94d2326d2bc069d1bf08485d" title="A reference-counted version of CNTV2DriverInterface::ReleaseStreamForApplication useful for process g...">CNTV2DriverInterface::ReleaseStreamForApplicationWithReference</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#abfe20cca94d2326d2bc069d1bf08485d" title="A reference-counted version of CNTV2DriverInterface::ReleaseStreamForApplication useful for process g...">CNTV2DriverInterface::ReleaseStreamForApplicationWithReference</a>, <a class="el" href="../../dc/d29/devicesharing.html">NTV2 Device Sharing</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a75caa3d5ded7267740053e64047f7f4d">CNTV2DriverInterface</a>.</p>
 
@@ -1184,7 +1181,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000306">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000311">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad9d5abd05e2a5ad0b9110a383bf735d2">CNTV2DriverInterface</a>.</p>
 
@@ -1235,7 +1232,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </table>
   </dd>
 </dl>
-<p>If the AJA retail agent (service) is controlling the device, the returned process ID will be zero, and the returned app type will be <code>NTV2_FOURCC('A','j','a','A')</code>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7876d23e5b28dd83217faa4757dc6856" title="Sets the four-CC type and process ID of the application that should &quot;own&quot; the AJA device (i...">CNTV2DriverInterface::SetStreamingApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
+<p>If the AJA retail agent (service) is controlling the device, the returned process ID will be zero, and the returned app type will be <code>NTV2_FOURCC('A','j','a','A')</code>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7876d23e5b28dd83217faa4757dc6856" title="Forcibly sets the four-CC type and process ID of the application that should &quot;own&quot; the AJA device (i...">CNTV2DriverInterface::SetStreamingApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">NTV2 Device Sharing</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad101bc5fd0969e255993a973bd8e7f11">CNTV2DriverInterface</a>.</p>
 
@@ -1276,7 +1273,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000302">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d7d/ntv2macdriverinterface_8h_source.html#l00087">87</a> of file <a class="el" href="../../d3/d7d/ntv2macdriverinterface_8h_source.html">ntv2macdriverinterface.h</a>.</p>
 
@@ -1343,7 +1340,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000305">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#acec1ab824265dcb648540fc822abfb03">CNTV2DriverInterface</a>.</p>
 
@@ -1384,7 +1381,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000307">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000312">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00358">358</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1413,7 +1410,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000302">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000307">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a6d69f5e68ea8f64b3c9c3b39ca14f92c">CNTV2DriverInterface</a>.</p>
 
@@ -1444,7 +1441,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000304">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000309">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afa3784f61c9878e07bae0bd7e58e799e">CNTV2DriverInterface</a>.</p>
 
@@ -1633,8 +1630,8 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </table>
   </dd>
 </dl>
-<p>This method will fail if the specified application type or process ID values don't match those used in the previous call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2" title="Describes the task mode state. See also: Sharing AJA Devices With Other Applications. ">NTV2TaskMode</a> at the time <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> is called, and restoring it after releasing the device. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
+<p>This method will fail if the specified application type or process ID values don't match those used in the previous call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>. </p><dl class="section note"><dt>Note</dt><dd>AJA recommends saving the device's <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a45ef6c6119f5bd7373dde78bbbcec1f2" title="Describes the task mode state. See also: NTV2 Device Sharing. ">NTV2TaskMode</a> at the time <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> is called, and restoring it after releasing the device. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">NTV2 Device Sharing</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097">CNTV2DriverInterface</a>.</p>
 
@@ -1686,7 +1683,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </dd>
 </dl>
 <p>This method releases exclusive use of the AJA device by the given host process once the reference count goes to zero. This method will fail if the specified application type or process ID values don't match those used in the prior call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a>. </p><dl class="section note"><dt>Note</dt><dd>Each call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a75caa3d5ded7267740053e64047f7f4d" title="A reference-counted version of CNTV2DriverInterface::AcquireStreamForApplication useful for process g...">CNTV2DriverInterface::AcquireStreamForApplicationWithReference</a> should be balanced by the same number of calls to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#abfe20cca94d2326d2bc069d1bf08485d" title="A reference-counted version of CNTV2DriverInterface::ReleaseStreamForApplication useful for process g...">CNTV2DriverInterface::ReleaseStreamForApplicationWithReference</a>. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a75caa3d5ded7267740053e64047f7f4d" title="A reference-counted version of CNTV2DriverInterface::AcquireStreamForApplication useful for process g...">CNTV2DriverInterface::AcquireStreamForApplicationWithReference</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a75caa3d5ded7267740053e64047f7f4d" title="A reference-counted version of CNTV2DriverInterface::AcquireStreamForApplication useful for process g...">CNTV2DriverInterface::AcquireStreamForApplicationWithReference</a>, <a class="el" href="../../dc/d29/devicesharing.html">NTV2 Device Sharing</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#abfe20cca94d2326d2bc069d1bf08485d">CNTV2DriverInterface</a>.</p>
 
@@ -1756,7 +1753,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the four-CC type and process ID of the application that should "own" the AJA device (i.e. reserve it for exclusive use). </p>
+<p>Forcibly sets the four-CC type and process ID of the application that should "own" the AJA device (i.e. reserve it for exclusive use). </p>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1766,7 +1763,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function should only be used to forcibly set (or reset) the owning application after a crash or other abnormal termination. In normal use, AJA recommends calling <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> and <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac8bd703a3651e23be564e51371879097" title="Releases exclusive use of the AJA device for the given process, permitting other processes to acquire...">CNTV2DriverInterface::ReleaseStreamForApplication</a> (or their reference-counted equivalents). </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad101bc5fd0969e255993a973bd8e7f11" title="Answers with the four-CC type and process ID of the application that currently &quot;owns&quot; the AJA device ...">CNTV2DriverInterface::GetStreamingApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">Sharing AJA Devices With Other Applications</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad101bc5fd0969e255993a973bd8e7f11" title="Answers with the four-CC type and process ID of the application that currently &quot;owns&quot; the AJA device ...">CNTV2DriverInterface::GetStreamingApplication</a>, <a class="el" href="../../dc/d29/devicesharing.html">NTV2 Device Sharing</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7876d23e5b28dd83217faa4757dc6856">CNTV2DriverInterface</a>.</p>
 
@@ -1797,7 +1794,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000304">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d7d/ntv2macdriverinterface_8h_source.html#l00089">89</a> of file <a class="el" href="../../d3/d7d/ntv2macdriverinterface_8h_source.html">ntv2macdriverinterface.h</a>.</p>
 
@@ -1836,7 +1833,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000303">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html#l00377">377</a> of file <a class="el" href="../../d4/dbf/ntv2macdriverinterface_8cpp_source.html">ntv2macdriverinterface.cpp</a>.</p>
 
@@ -1865,7 +1862,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000301">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000306">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a408279b545f799b53d8a4635676d601b">CNTV2DriverInterface</a>.</p>
 
@@ -1896,7 +1893,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000303">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000308">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1e62f16f3b3ab9b1cd6ad9e42156849a">CNTV2DriverInterface</a>.</p>
 
@@ -1927,7 +1924,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000305">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000310">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adb4919c8873ad354b0e64e244132ad09">CNTV2DriverInterface</a>.</p>
 
@@ -2081,7 +2078,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html">CNTV2MacDriverInterface</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 15:41:35 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jun 4 2026 06:18:28 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['packet_5finterval_5f125us',['PACKET_INTERVAL_125uS',['../d8/d70/ntv2mbcontroller_8h.html#aa0c21169ba975ce053a01f772ff0269aa6c2f0b0f60e40fe6e5b5af847443ccd8',1,'ntv2mbcontroller.h']]],
-  ['packet_5finterval_5f1ms',['PACKET_INTERVAL_1mS',['../d8/d70/ntv2mbcontroller_8h.html#aa0c21169ba975ce053a01f772ff0269aa2027efc6de480cf24089ee72b34c9681',1,'ntv2mbcontroller.h']]],
   ['pageprogram_5fcommand',['PAGEPROGRAM_COMMAND',['../d6/d0c/ntv2enums_8h.html#a2728047fd53e6887f596dca97ab2c520a52496c875c43ecc6d02d59537f1d229c',1,'ntv2enums.h']]],
   ['parse_5ferror',['parse_error',['../d8/d5a/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1lexer__base.html#a0b181222c1a96f7e8178862d098a6670a456e19aeafa334241c7ff3f589547f9d',1,'nlohmann::json_abi_v3_11_3::detail::lexer_base']]],
   ['pending',['PENDING',['../df/d08/class_c_dynamic_output_pin.html#a3db4f33989636bfe5ed57a6c46a97707aec2c9b50add56f2220112cb386e3e4b4',1,'CDynamicOutputPin']]],
@@ -23,10 +21,5 @@ var searchData=
   ['prop_5fnone',['PROP_NONE',['../d6/d0c/ntv2enums_8h.html#a455c5d4b38c179f98589c373312619fba8134bae8bb64b7bab4a27a4b504f8081',1,'ntv2enums.h']]],
   ['prop_5fsettings',['PROP_SETTINGS',['../d6/d0c/ntv2enums_8h.html#a455c5d4b38c179f98589c373312619fbafa80842bfc392d616f2585c1055a865c',1,'ntv2enums.h']]],
   ['prop_5ftestpattern',['PROP_TESTPATTERN',['../d6/d0c/ntv2enums_8h.html#a455c5d4b38c179f98589c373312619fbafc02d03cd2d8f0e27e4d766bf5255a6a',1,'ntv2enums.h']]],
-  ['prop_5fvideoproc',['PROP_VIDEOPROC',['../d6/d0c/ntv2enums_8h.html#a455c5d4b38c179f98589c373312619fba738beed9438f60d6c5cbc1c60dba72de',1,'ntv2enums.h']]],
-  ['ptp_5ferror',['PTP_ERROR',['../d8/d70/ntv2mbcontroller_8h.html#a5e2bbf8f6caac4378b866db6719693abaf282d806501f3fd332503e70ee0920b7',1,'ntv2mbcontroller.h']]],
-  ['ptp_5flocked',['PTP_LOCKED',['../d8/d70/ntv2mbcontroller_8h.html#a5e2bbf8f6caac4378b866db6719693aba5e01ff1f9a8d4dcaeb9e840dd8eba5c3',1,'ntv2mbcontroller.h']]],
-  ['ptp_5flocking',['PTP_LOCKING',['../d8/d70/ntv2mbcontroller_8h.html#a5e2bbf8f6caac4378b866db6719693abaad5452d5dbbc7523a9cf5cf9af90a967',1,'ntv2mbcontroller.h']]],
-  ['ptp_5fno_5fptp',['PTP_NO_PTP',['../d8/d70/ntv2mbcontroller_8h.html#a5e2bbf8f6caac4378b866db6719693aba7335e7c4ab67d2c0e18a14ff8c6a63d4',1,'ntv2mbcontroller.h']]],
-  ['ptp_5fnot_5flocked',['PTP_NOT_LOCKED',['../d8/d70/ntv2mbcontroller_8h.html#a5e2bbf8f6caac4378b866db6719693aba4b5e0d9346e4a06ceaa547e8ec26ad5c',1,'ntv2mbcontroller.h']]]
+  ['prop_5fvideoproc',['PROP_VIDEOPROC',['../d6/d0c/ntv2enums_8h.html#a455c5d4b38c179f98589c373312619fba738beed9438f60d6c5cbc1c60dba72de',1,'ntv2enums.h']]]
 ];

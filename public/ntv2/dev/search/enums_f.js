@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['referenceselect',['ReferenceSelect',['../d4/dd7/ntv2publicinterface_8h.html#a33823f142eaf571cdc53fec52fd7a606',1,'ntv2publicinterface.h']]],
-  ['registermask',['RegisterMask',['../d4/dd7/ntv2publicinterface_8h.html#ac2cd24508e310b59ed5ab3d0b0bfd999',1,'ntv2publicinterface.h']]],
-  ['registershift',['RegisterShift',['../d4/dd7/ntv2publicinterface_8h.html#a1ad23526580ea92c8985d86211d6e7fa',1,'ntv2publicinterface.h']]],
-  ['rp188sourcefilterselect',['RP188SourceFilterSelect',['../d4/dd7/ntv2publicinterface_8h.html#a2889f0bfa079f5aaf51a91f77cbcdcd2',1,'ntv2publicinterface.h']]]
+  ['sharedprefspermissions',['SharedPrefsPermissions',['../d4/dd7/ntv2publicinterface_8h.html#a2ea875c38da684eb83e998952af67239',1,'ntv2publicinterface.h']]],
+  ['spiflashsection',['SpiFlashSection',['../d3/df0/ntv2spiinterface_8h.html#a39cb78ed9d38d1ae2a3837f45788b6fd',1,'ntv2spiinterface.h']]],
+  ['streamcontrolstate',['StreamControlState',['../d2/d93/class_c_base_stream_control.html#ac8031b9646a54176987c74cd10551b0d',1,'CBaseStreamControl']]],
+  ['systemcontrolcode',['SystemControlCode',['../d4/dd7/ntv2publicinterface_8h.html#aaced21cb76a60a6a220c1e2ca9bdf26f',1,'ntv2publicinterface.h']]],
+  ['systemstatuscode',['SystemStatusCode',['../d4/dd7/ntv2publicinterface_8h.html#ab0bf4ddca4743b780ae59da0a2266d43',1,'ntv2publicinterface.h']]]
 ];

@@ -95,7 +95,6 @@ var searchData=
   ['poptopts',['PoptOpts',['../d6/d2a/class_c_n_t_v2_demo_common.html#a464c39bc3dd34cd4fb678d7d7989fc2f',1,'CNTV2DemoCommon']]],
   ['poptstring',['poptString',['../dd/d55/options__popt_8cpp.html#ac74f9f99c996b4c749599acdf0a7f3a0',1,'options_popt.cpp']]],
   ['position',['POSITION',['../d9/d9c/wxlist_8h.html#a61465c98222fec89d939501b8f166a5b',1,'wxlist.h']]],
-  ['ppackage_5finfo_5fstruct',['PPACKAGE_INFO_STRUCT',['../d4/dc0/ntv2driverinterface_8h.html#ac6b0ed2877c2a9565cf5826196b9326f',1,'ntv2driverinterface.h']]],
   ['pperfinfo_5fdshow_5faudioaddbreak',['PPERFINFO_DSHOW_AUDIOADDBREAK',['../de/d83/perfstruct_8h.html#acab859973280778703066bba63d56815',1,'perfstruct.h']]],
   ['pperfinfo_5fdshow_5faudiobreak',['PPERFINFO_DSHOW_AUDIOBREAK',['../de/d83/perfstruct_8h.html#a9bdb56af58e69236a0a7b04773d6ea99',1,'perfstruct.h']]],
   ['pperfinfo_5fdshow_5faudioglitch',['PPERFINFO_DSHOW_AUDIOGLITCH',['../de/d83/perfstruct_8h.html#a702763b644fb161fcf7a26b0b2f5371f',1,'perfstruct.h']]],

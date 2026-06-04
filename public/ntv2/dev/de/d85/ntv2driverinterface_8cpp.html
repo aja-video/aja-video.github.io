@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2149</span>
+   &#160;<span id="projectnumber">18.1.0.2262</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
   </td>
  </tr>
  </tbody>
@@ -106,8 +106,6 @@ $(document).ready(function(){initNavTree('de/d85/ntv2driverinterface_8cpp.html',
 <code>#include &quot;<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h_source.html">ntv2devicefeatures.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/d8f/ntv2nubaccess_8h_source.html">ntv2nubaccess.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/db1/ntv2bitfile_8h_source.html">ntv2bitfile.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d50/ntv2registersmb_8h_source.html">ntv2registersmb.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/df0/ntv2spiinterface_8h_source.html">ntv2spiinterface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/db1/ntv2version_8h_source.html">ntv2version.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/d6a/ntv2devicescanner_8h_source.html">ntv2devicescanner.h</a>&quot;</code><br />
@@ -120,8 +118,6 @@ $(document).ready(function(){initNavTree('de/d85/ntv2driverinterface_8cpp.html',
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ntv2driverinterface.cpp:</div>
 <div class="dyncontent">
@@ -145,6 +141,18 @@ Macros</h2></td></tr>
 <tr class="separator:a30549f2b1753c604cc10f77aea890cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab866aadae78a51fcf3960f3fc903833a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#ab866aadae78a51fcf3960f3fc903833a">DIDBG</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaabd7cfd000c8d08a32ed1f77eeeb1e6f">AJA_sDEBUG</a>	(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aa9b0f081481a30efdc67e296c2e9cd144">AJA_DebugUnit_DriverInterface</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
 <tr class="separator:ab866aadae78a51fcf3960f3fc903833a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957efbef1834d2478b5d16e156b89286"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#a957efbef1834d2478b5d16e156b89286">ARFAIL</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaaa06d9a7c55c3ea4fbe8acffec7bcde1">AJA_sERROR</a>	(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a957efbef1834d2478b5d16e156b89286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873a67a094537a91bba84f8a56e7a21e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#a873a67a094537a91bba84f8a56e7a21e">ARWARN</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga17fbbca616589913f20cb18fa5e1851f">AJA_sWARNING</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a873a67a094537a91bba84f8a56e7a21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492748f105dbaa9416ca39568e07fe54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#a492748f105dbaa9416ca39568e07fe54">ARNOTE</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ab8824e0e1e09c8996e3a39cda877">AJA_sNOTICE</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a492748f105dbaa9416ca39568e07fe54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad867e945849f7a686b03eb75c9a9f17c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#ad867e945849f7a686b03eb75c9a9f17c">ARINFO</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga1975f7e93899a83cd85bcfe370247bfd">AJA_sINFO</a>	(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:ad867e945849f7a686b03eb75c9a9f17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b44a6fc42adfc1025fdb940d4809266"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#a5b44a6fc42adfc1025fdb940d4809266">ARDBG</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaabd7cfd000c8d08a32ed1f77eeeb1e6f">AJA_sDEBUG</a>	(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a5b44a6fc42adfc1025fdb940d4809266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfbfdb1d9f8cb50a9c924649a8caa97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#acbfbfdb1d9f8cb50a9c924649a8caa97">KVRegAcquireRefCount</a>&#160;&#160;&#160;<a class="el" href="../../da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa9fc16b184f18e26ae333ecec90a37c29">kVRegAcquireReferenceCount</a></td></tr>
+<tr class="separator:acbfbfdb1d9f8cb50a9c924649a8caa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ebb018170afaf9c90c6224676fd1a02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html#a2ebb018170afaf9c90c6224676fd1a02">DIDBGX</a>(__x__)</td></tr>
 <tr class="separator:a2ebb018170afaf9c90c6224676fd1a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -171,6 +179,106 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a5b44a6fc42adfc1025fdb940d4809266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b44a6fc42adfc1025fdb940d4809266">&#9670;&nbsp;</a></span>ARDBG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARDBG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaabd7cfd000c8d08a32ed1f77eeeb1e6f">AJA_sDEBUG</a>	(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a957efbef1834d2478b5d16e156b89286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957efbef1834d2478b5d16e156b89286">&#9670;&nbsp;</a></span>ARFAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARFAIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaaa06d9a7c55c3ea4fbe8acffec7bcde1">AJA_sERROR</a>	(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad867e945849f7a686b03eb75c9a9f17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad867e945849f7a686b03eb75c9a9f17c">&#9670;&nbsp;</a></span>ARINFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARINFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga1975f7e93899a83cd85bcfe370247bfd">AJA_sINFO</a>	(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a492748f105dbaa9416ca39568e07fe54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492748f105dbaa9416ca39568e07fe54">&#9670;&nbsp;</a></span>ARNOTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARNOTE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ab8824e0e1e09c8996e3a39cda877">AJA_sNOTICE</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a873a67a094537a91bba84f8a56e7a21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873a67a094537a91bba84f8a56e7a21e">&#9670;&nbsp;</a></span>ARWARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARWARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga17fbbca616589913f20cb18fa5e1851f">AJA_sWARNING</a>(<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aaf485e025c001aef90ca33324244eb4e6">AJA_DebugUnit_AcquireRelease</a>, <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5">INSTP</a>(this) &lt;&lt; &quot;::&quot; &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ab866aadae78a51fcf3960f3fc903833a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab866aadae78a51fcf3960f3fc903833a">&#9670;&nbsp;</a></span>DIDBG</h2>
 
@@ -187,7 +295,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -207,7 +315,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -227,7 +335,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +355,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -267,7 +375,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -287,7 +395,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +415,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acbfbfdb1d9f8cb50a9c924649a8caa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbfbfdb1d9f8cb50a9c924649a8caa97">&#9670;&nbsp;</a></span>KVRegAcquireRefCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KVRegAcquireRefCount&#160;&#160;&#160;<a class="el" href="../../da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa9fc16b184f18e26ae333ecec90a37c29">kVRegAcquireReferenceCount</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -492,7 +616,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_d66cab0a9fa222c6d93e473efea2c462.html">src</a></li><li class="navelem"><a class="el" href="../../de/d85/ntv2driverinterface_8cpp.html">ntv2driverinterface.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 15:41:33 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jun 4 2026 06:18:27 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

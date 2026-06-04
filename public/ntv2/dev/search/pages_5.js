@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ntv2_20device_20sharing',['NTV2 Device Sharing',['../dc/d29/devicesharing.html',1,'index']]],
   ['ntv2_20devices',['NTV2 Devices',['../d0/d53/ntv2devices.html',1,'index']]],
   ['ntv2_20device_20hardware_20operation',['NTV2 Device Hardware Operation',['../d1/dc5/ntv2devops.html',1,'index']]]
 ];

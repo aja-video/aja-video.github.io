@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2149</span>
+   &#160;<span id="projectnumber">18.1.0.2262</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
   </td>
  </tr>
  </tbody>
@@ -149,14 +149,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6642b2a465e5598ade6d2f60f70d7a73"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a6642b2a465e5598ade6d2f60f70d7a73">FourCCToString</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> in4CC)</td></tr>
-<tr class="separator:a6642b2a465e5598ade6d2f60f70d7a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a19ac0df13ed0898f942dcc5b3d56d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a52a19ac0df13ed0898f942dcc5b3d56d">FourCCToString</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> in4CC, const char nonPrintable='?')</td></tr>
+<tr class="separator:a52a19ac0df13ed0898f942dcc5b3d56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>All new NTV2 structs start with this common header. </p>
 <dl class="section note"><dt>Note</dt><dd>This struct uses a constructor to properly initialize itself. Do not use <b>memset</b> or <b>bzero</b> to initialize or "clear" it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07236">7236</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07238">7238</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa3a47a3636d0b45626d6191afa065552"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3a47a3636d0b45626d6191afa065552">&#9670;&nbsp;</a></span>NTV2_HEADER()</h2>
@@ -230,12 +230,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07278">7278</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07280">7280</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
-<a id="a6642b2a465e5598ade6d2f60f70d7a73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6642b2a465e5598ade6d2f60f70d7a73">&#9670;&nbsp;</a></span>FourCCToString()</h2>
+<a id="a52a19ac0df13ed0898f942dcc5b3d56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a19ac0df13ed0898f942dcc5b3d56d">&#9670;&nbsp;</a></span>FourCCToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,8 +247,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">string NTV2_HEADER::FourCCToString </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td>
-          <td class="paramname"><em>in4CC</em></td><td>)</td>
+          <td class="paramname"><em>in4CC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>nonPrintable</em> = <code>'?'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -286,7 +296,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07262">7262</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07264">7264</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +324,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07259">7259</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07261">7261</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -342,7 +352,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07261">7261</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07263">7263</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +380,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07264">7264</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07266">7266</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +410,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>My total size, in bytes, including header, body and trailer (but excluding embedded <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> data) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07256">7256</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07258">7258</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +438,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07257">7257</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07259">7259</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +466,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07258">7258</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07260">7260</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +494,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07260">7260</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07262">7262</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +523,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if my tag and type fields are valid; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07276">7276</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07278">7278</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +582,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03856">3856</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03881">3881</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -648,7 +658,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03843">3843</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03868">3868</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -712,7 +722,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07263">7263</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html#l07265">7265</a> of file <a class="el" href="../../d4/dd7/ntv2publicinterface_8h_source.html">ntv2publicinterface.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +736,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d09/class_n_t_v2___h_e_a_d_e_r.html">NTV2_HEADER</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 15:41:35 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jun 4 2026 06:18:28 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

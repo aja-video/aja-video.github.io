@@ -16,7 +16,6 @@ var searchData=
   ['gamplitudes',['gAmplitudes',['../d5/d9e/ntv2dolbyplayer_8cpp.html#a2356410c1f7b08935e54365b18bc408b',1,'gAmplitudes():&#160;ntv2dolbyplayer.cpp'],['../d7/d6f/ntv2player_8cpp.html#a2356410c1f7b08935e54365b18bc408b',1,'gAmplitudes():&#160;ntv2player.cpp']]],
   ['ganalogtypemap',['gAnalogTypeMap',['../d3/de4/ancillarylist_8cpp.html#a9e5d02c45128e5bccd84cc2426800918',1,'ancillarylist.cpp']]],
   ['ganalogtypemapmutex',['gAnalogTypeMapMutex',['../d3/de4/ancillarylist_8cpp.html#ac6d9218c8851f577432c395edc2e4eee',1,'ancillarylist.cpp']]],
-  ['gateway',['gateWay',['../d6/d7c/struct_s_f_p_data2110.html#aa8b335d9dd09e6f9bc6df0380b1fbfc7',1,'SFPData2110']]],
   ['gaudiodelayregisternumbers',['gAudioDelayRegisterNumbers',['../d0/dfa/ntv2audio_8cpp.html#ac8c128cc56f6645e0a7c416a68b6ce10',1,'ntv2audio.cpp']]],
   ['gaudioenginechannelpairtofieldinformation',['gAudioEngineChannelPairToFieldInformation',['../d0/dfa/ntv2audio_8cpp.html#a6cdaf1bb46212afd56afdf1288697ce0',1,'ntv2audio.cpp']]],
   ['gaudioplaycapturemodemasks',['gAudioPlayCaptureModeMasks',['../d0/dfa/ntv2audio_8cpp.html#a9b20f4742b008e770e59cfb60c58eb85',1,'ntv2audio.cpp']]],

@@ -1,5 +1,10 @@
 var searchData=
 [
+  ['c2dbug',['C2DBUG',['../d7/db4/ntv2devicescanner_8cpp.html#adb120242992e37cab8dfc338865f8b29',1,'ntv2devicescanner.cpp']]],
+  ['c2fail',['C2FAIL',['../d7/db4/ntv2devicescanner_8cpp.html#aa1d97a71b944e41b358a7cfe759fbf15',1,'ntv2devicescanner.cpp']]],
+  ['c2info',['C2INFO',['../d7/db4/ntv2devicescanner_8cpp.html#ac7327078b56f866b9343812c1ccf8c8e',1,'ntv2devicescanner.cpp']]],
+  ['c2note',['C2NOTE',['../d7/db4/ntv2devicescanner_8cpp.html#a5c915bddd8f2986f73004d5907c673cb',1,'ntv2devicescanner.cpp']]],
+  ['c2warn',['C2WARN',['../d7/db4/ntv2devicescanner_8cpp.html#afec254c1c9b421322164cca84b53c115',1,'ntv2devicescanner.cpp']]],
   ['capdbg',['CAPDBG',['../d9/de9/ntv2democommon_8h.html#a6d5413fffdfdbfee26c23c7b4c0e1406',1,'ntv2democommon.h']]],
   ['capfail',['CAPFAIL',['../d9/de9/ntv2democommon_8h.html#ac14177e1240ee64b5e67ec3416a5e66c',1,'ntv2democommon.h']]],
   ['capinfo',['CAPINFO',['../d9/de9/ntv2democommon_8h.html#aeb2b5b986b074405d6edb90d8ed4fbf8',1,'ntv2democommon.h']]],
@@ -34,7 +39,6 @@ var searchData=
   ['contains_5ffield',['CONTAINS_FIELD',['../d8/def/amfilter_8cpp.html#a94d512d2b58e045bc9fadf22f9fd02e9',1,'amfilter.cpp']]],
   ['controlisdown',['controlIsDown',['../d5/dcf/ntv2debugmacros_8h.html#a88ae0a35ea8af22ba5ed798b74faf955',1,'ntv2debugmacros.h']]],
   ['copymemory',['CopyMemory',['../d0/da6/ntv2baremetaldriverinterface_8h.html#a61de6ca53bdb59e403661b1bc51e450d',1,'CopyMemory():&#160;ntv2baremetaldriverinterface.h'],['../d7/da1/ntv2linuxdriverinterface_8h.html#a61de6ca53bdb59e403661b1bc51e450d',1,'CopyMemory():&#160;ntv2linuxdriverinterface.h']]],
-  ['cparam_5freg_5fstart',['CPARAM_REG_START',['../d6/d57/ntv2m31publicinterface_8h.html#ac988f840ae6e746aeef1a3687f35cecd',1,'ntv2m31publicinterface.h']]],
   ['critcheckin',['CritCheckIn',['../d5/db0/wxutil_8h.html#a2a919e98bbae842f78698cf844beb445',1,'wxutil.h']]],
   ['critcheckout',['CritCheckOut',['../d5/db0/wxutil_8h.html#adbfa64d001840bce3a3ed0531f7d4589',1,'wxutil.h']]],
   ['cscdbg',['CSCDBG',['../d2/d09/ntv2csclut_8cpp.html#a5c6829940a3728abea62691cad3762c2',1,'ntv2csclut.cpp']]],

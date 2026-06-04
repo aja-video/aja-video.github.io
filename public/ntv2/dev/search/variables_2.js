@@ -19,7 +19,7 @@ var searchData=
   ['bit_5fsize',['bit_size',['../d9/ddb/structdpx__image__element__struct.html#ac7f7cbb72a2facaae014f70ed1c94318',1,'dpx_image_element_struct']]],
   ['bitcount',['BitCount',['../dc/d6e/amvideo_8cpp.html#a39788ba9854da2deac00829c13e59e89',1,'amvideo.cpp']]],
   ['bitcountmap',['BitCountMap',['../dc/d6e/amvideo_8cpp.html#ab94af0eac807683f19e49e96af453e7c',1,'amvideo.cpp']]],
-  ['bitdepth',['bitDepth',['../d8/d11/struct_a_j_a_pixel_format_entry.html#a77c3feefaefa4a80aafae43f0ed3fd77',1,'AJAPixelFormatEntry::bitDepth()'],['../d4/ddf/struct_encoder_struct.html#a0c89457efa42c4b39a972507efde5457',1,'EncoderStruct::bitDepth()'],['../dd/dd2/classj2k_encoder_config.html#a263d609f84654a9335325c0c549cd250',1,'j2kEncoderConfig::bitDepth()']]],
+  ['bitdepth',['bitDepth',['../d8/d11/struct_a_j_a_pixel_format_entry.html#a77c3feefaefa4a80aafae43f0ed3fd77',1,'AJAPixelFormatEntry::bitDepth()'],['../d4/ddf/struct_encoder_struct.html#a0c89457efa42c4b39a972507efde5457',1,'EncoderStruct::bitDepth()']]],
   ['bitfileflags',['bitfileFlags',['../d4/d5a/struct_n_t_v2_bitfile_info.html#a81fe368e22fb9701f3c0532c33ff6f00',1,'NTV2BitfileInfo']]],
   ['bitfileid',['bitfileID',['../d4/d5a/struct_n_t_v2_bitfile_info.html#a267740d1f1beb291b6650dbb2bee30cb',1,'NTV2BitfileInfo']]],
   ['bitfileinfostruct',['bitFileInfoStruct',['../d5/d21/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___g_e_t_s_e_t_b_i_t_f_i_l_e_i_n_f_o___s.html#a13885842f70c2c70ceb52e390a8246fc',1,'KSPROPERTY_AJAPROPS_GETSETBITFILEINFO_S']]],
@@ -57,7 +57,6 @@ var searchData=
   ['buffer',['buffer',['../d3/d81/struct_serial_machine_response.html#a1653a46d90ab6553dad779bce3c2890d',1,'SerialMachineResponse']]],
   ['bufferlevel',['bufferLevel',['../de/ddf/struct_a_v_hevc_status.html#aacce201aa4b83e874f17ebba4f316912',1,'AVHevcStatus::bufferLevel()'],['../dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#ae81f4e3dc86f22c87162df5d4d505eea',1,'AUTOCIRCULATE_STATUS_STRUCT::bufferLevel()'],['../d7/d19/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r___s_t_a_t_u_s___s_t_r_u_c_t.html#a4a09d5248ff5f83e385ad526e912df18',1,'AUTOCIRCULATE_TRANSFER_STATUS_STRUCT::bufferLevel()']]],
   ['build',['build',['../d1/d45/struct_hevc_version.html#aa3f593536246944f6f2aa4bb7f301224',1,'HevcVersion']]],
-  ['buildnumber',['buildNumber',['../d4/de9/struct_p_a_c_k_a_g_e___i_n_f_o___s_t_r_u_c_t.html#ac94256d1bedd55fe7e5665f92bb7aaa3',1,'PACKAGE_INFO_STRUCT']]],
   ['buildstr',['buildStr',['../d2/d4d/struct_b_u_i_l_d___i_n_f_o___s_t_r_u_c_t.html#aee87ec608feecfba459cffc87aa1d731',1,'BUILD_INFO_STRUCT']]],
   ['bval1',['bVal1',['../df/d73/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___d_a_t_a__64.html#a36f08d12f87f08911e91c7410fb493a3',1,'AUTOCIRCULATE_DATA_64::bVal1()'],['../d2/d6b/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___d_a_t_a.html#a3fb3fa1729167df2d27e12e8c3a9e755',1,'AUTOCIRCULATE_DATA::bVal1()'],['../dc/d71/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___d_a_t_a__32.html#ad99052877ac273b4ececed7df6a58916',1,'AUTOCIRCULATE_DATA_32::bVal1()'],['../d6/d50/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___a_u_t_o_c_i_r_c___c_o_n_t_r_o_l___s.html#abe37838e820d90adf576322c29ca1736',1,'KSPROPERTY_AJAPROPS_AUTOCIRC_CONTROL_S::bVal1()'],['../d0/dfc/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___a_u_t_o_c_i_r_c___c_o_n_t_r_o_l___e_x___s.html#acdd96de6a355fd0e9a1ba5aab09c955d',1,'KSPROPERTY_AJAPROPS_AUTOCIRC_CONTROL_EX_S::bVal1()']]],
   ['bval10',['bVal10',['../d0/dfc/struct_k_s_p_r_o_p_e_r_t_y___a_j_a_p_r_o_p_s___a_u_t_o_c_i_r_c___c_o_n_t_r_o_l___e_x___s.html#af599e539b9a1e756a6b78a001ce743f6',1,'KSPROPERTY_AJAPROPS_AUTOCIRC_CONTROL_EX_S']]],
@@ -79,7 +78,6 @@ var searchData=
   ['bwithrp188',['bWithRP188',['../dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#a6e0bd0205aa6d6c9a5672eb6ce8b1247',1,'AUTOCIRCULATE_STATUS_STRUCT']]],
   ['bwithvidproc',['bWithVidProc',['../dd/dac/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s___s_t_r_u_c_t.html#a972a7f2cdfb9a81ef58fc68dc6c2321f',1,'AUTOCIRCULATE_STATUS_STRUCT']]],
   ['byte',['byte',['../d5/d27/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1parse__error.html#a4d136a440fb402d7ee92ed522d7c81f1',1,'nlohmann::json_abi_v3_11_3::detail::parse_error']]],
-  ['bytecount',['byteCount',['../dd/d82/struct_intel_record_info.html#a0d0487818b45dbb6bce3002fd635fd87',1,'IntelRecordInfo']]],
   ['bytesperframe',['bytesPerFrame',['../d3/db2/struct_a_j_a_raw_video_header.html#a9c4bf701901e4684fe2d65e2c43857dd',1,'AJARawVideoHeader']]],
   ['bytesread',['bytesRead',['../d8/d37/struct_f_r_a_m_e___s_t_a_m_p___s_t_r_u_c_t.html#a86716f11d1a51a78f26db4d8279675a6',1,'FRAME_STAMP_STRUCT']]]
 ];

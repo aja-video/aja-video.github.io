@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2149</span>
+   &#160;<span id="projectnumber">18.1.0.2262</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
   </td>
  </tr>
  </tbody>
@@ -102,7 +102,6 @@ $(document).ready(function(){initNavTree('de/d94/ntv2konaflashprogram_8cpp.html'
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d1/dbd/ntv2konaflashprogram_8h_source.html">ntv2konaflashprogram.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d18/ntv2endian_8h_source.html">ntv2endian.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d50/ntv2registersmb_8h_source.html">ntv2registersmb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d16/debug_8h_source.html">ajabase/system/debug.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/dbc/systemtime_8h_source.html">ajabase/system/systemtime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d54/common_8h_source.html">ajabase/common/common.h</a>&quot;</code><br />
@@ -120,6 +119,8 @@ Include dependency graph for ntv2konaflashprogram.cpp:</div>
 Macros</h2></td></tr>
 <tr class="memitem:aac20be0ab07d5b06a05bd635e17f2317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#aac20be0ab07d5b06a05bd635e17f2317">ENUM_CASE_RETURN_VAL_OR_ENUM_STR</a>(condition,  retail_name,  enum_name)&#160;&#160;&#160;case(enum_name): <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a744afe7ed202c068698b0775a5d6db5a">return</a> condition ? retail_name : #enum_name</td></tr>
 <tr class="separator:aac20be0ab07d5b06a05bd635e17f2317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3912c004e7678fe2e162353638d87b30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a3912c004e7678fe2e162353638d87b30">MAXBITFILE_HEADERSIZE</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:a3912c004e7678fe2e162353638d87b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1b07df654cebf6a7244488f20c1919"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a3e1b07df654cebf6a7244488f20c1919">KFPDBUG</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaabd7cfd000c8d08a32ed1f77eeeb1e6f">AJA_sDEBUG</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
 <tr class="separator:a3e1b07df654cebf6a7244488f20c1919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18fd9d205f86c5a174a748d170c1b8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#ae18fd9d205f86c5a174a748d170c1b8b">KFPWARN</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga17fbbca616589913f20cb18fa5e1851f">AJA_sWARNING</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
@@ -128,6 +129,18 @@ Macros</h2></td></tr>
 <tr class="separator:a8f7103e25c0382c8c7336d0f61c0aa24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e93559b16ae4bd880bbe371e559085b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a3e93559b16ae4bd880bbe371e559085b">KFPNOTE</a>(__x__)&#160;&#160;&#160;do {ostringstream oss;  oss &lt;&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__;  <a class="el" href="../../d5/d74/ntv2vcam_8cpp.html#a5b56cf7b4307d1a273a31df91b285f47">if</a> (!_bQuiet) cout &lt;&lt; &quot;## NOTE:  &quot;    &lt;&lt; oss.str() &lt;&lt; endl;  <a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ab8824e0e1e09c8996e3a39cda877">AJA_sNOTICE</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, oss.str());} while(<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
 <tr class="separator:a3e93559b16ae4bd880bbe371e559085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3e269fbd5f569582fb0fe540b2fcc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#acc3e269fbd5f569582fb0fe540b2fcc4">FWDBUG</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaabd7cfd000c8d08a32ed1f77eeeb1e6f">AJA_sDEBUG</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:acc3e269fbd5f569582fb0fe540b2fcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1b23d015eaf5bcf5ba1a8dbf3196dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a3a1b23d015eaf5bcf5ba1a8dbf3196dc">FWINFO</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga1975f7e93899a83cd85bcfe370247bfd">AJA_sINFO</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a3a1b23d015eaf5bcf5ba1a8dbf3196dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d547496fc46836414e1022dd31c0cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#ab5d547496fc46836414e1022dd31c0cd">FWWARN</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga17fbbca616589913f20cb18fa5e1851f">AJA_sWARNING</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:ab5d547496fc46836414e1022dd31c0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602840ef380ef48bb1dfcf23b38c501f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a602840ef380ef48bb1dfcf23b38c501f">FWFAIL</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaaa06d9a7c55c3ea4fbe8acffec7bcde1">AJA_sERROR</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a602840ef380ef48bb1dfcf23b38c501f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5317438852d630e7d9fc8e64bba3a366"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a5317438852d630e7d9fc8e64bba3a366">FWNOTE</a>(__x__)&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ab8824e0e1e09c8996e3a39cda877">AJA_sNOTICE</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td></tr>
+<tr class="separator:a5317438852d630e7d9fc8e64bba3a366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8c1f430a83cdebb0ba93a2a3d25e44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a2e8c1f430a83cdebb0ba93a2a3d25e44">FAIL</a>(_p_)&#160;&#160;&#160;ostringstream e; e &lt;&lt; _p_; <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a602840ef380ef48bb1dfcf23b38c501f">FWFAIL</a>(e.str());</td></tr>
+<tr class="separator:a2e8c1f430a83cdebb0ba93a2a3d25e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -177,7 +190,127 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e8c1f430a83cdebb0ba93a2a3d25e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8c1f430a83cdebb0ba93a2a3d25e44">&#9670;&nbsp;</a></span>FAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_p_</td><td>)</td>
+          <td>&#160;&#160;&#160;ostringstream e; e &lt;&lt; _p_; <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html#a602840ef380ef48bb1dfcf23b38c501f">FWFAIL</a>(e.str());</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc3e269fbd5f569582fb0fe540b2fcc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3e269fbd5f569582fb0fe540b2fcc4">&#9670;&nbsp;</a></span>FWDBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FWDBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaabd7cfd000c8d08a32ed1f77eeeb1e6f">AJA_sDEBUG</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a602840ef380ef48bb1dfcf23b38c501f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602840ef380ef48bb1dfcf23b38c501f">&#9670;&nbsp;</a></span>FWFAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FWFAIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#gaaa06d9a7c55c3ea4fbe8acffec7bcde1">AJA_sERROR</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3a1b23d015eaf5bcf5ba1a8dbf3196dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1b23d015eaf5bcf5ba1a8dbf3196dc">&#9670;&nbsp;</a></span>FWINFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FWINFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga1975f7e93899a83cd85bcfe370247bfd">AJA_sINFO</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5317438852d630e7d9fc8e64bba3a366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5317438852d630e7d9fc8e64bba3a366">&#9670;&nbsp;</a></span>FWNOTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FWNOTE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga457ab8824e0e1e09c8996e3a39cda877">AJA_sNOTICE</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5d547496fc46836414e1022dd31c0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d547496fc46836414e1022dd31c0cd">&#9670;&nbsp;</a></span>FWWARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FWWARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__x__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../db/df7/group___a_j_a_group_macro.html#ga17fbbca616589913f20cb18fa5e1851f">AJA_sWARNING</a> (<a class="el" href="../../d0/db4/debugshare_8h.html#a1f7675f0354dfd9c287d40d86045414aad478c1026fade193a61999238d26280f">AJA_DebugUnit_Firmware</a>, <a class="el" href="../../db/de2/ajatypes_8h.html#ae6243c2a4226e984fa4d473a29c2042b">AJAFUNC</a> &lt;&lt; &quot;: &quot; &lt;&lt; __x__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +330,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +350,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
 
 </div>
 </div>
@@ -237,7 +370,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +390,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3912c004e7678fe2e162353638d87b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3912c004e7678fe2e162353638d87b30">&#9670;&nbsp;</a></span>MAXBITFILE_HEADERSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXBITFILE_HEADERSIZE&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +445,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l01964">1964</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l01943">1943</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +470,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp_source.html">ntv2konaflashprogram.cpp</a>.</p>
 
 </div>
 </div>
@@ -331,7 +480,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_d66cab0a9fa222c6d93e473efea2c462.html">src</a></li><li class="navelem"><a class="el" href="../../de/d94/ntv2konaflashprogram_8cpp.html">ntv2konaflashprogram.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 15:41:33 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jun 4 2026 06:18:27 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

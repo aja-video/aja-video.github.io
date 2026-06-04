@@ -1,6 +1,7 @@
 var searchData=
 [
   ['f_5fisset',['F_ISSET',['../dd/d55/options__popt_8cpp.html#a27c094abcdc9006af2e0421c8329a60f',1,'options_popt.cpp']]],
+  ['fail',['FAIL',['../de/d94/ntv2konaflashprogram_8cpp.html#a2e8c1f430a83cdebb0ba93a2a3d25e44',1,'ntv2konaflashprogram.cpp']]],
   ['false',['false',['../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727',1,'ntv2devicefeatures.h']]],
   ['fd_5fnumcomponentpixels_5f8k',['FD_NUMCOMPONENTPIXELS_8K',['../d9/d61/ntv2videodefines_8h.html#a299a0dc102f3df49bb1f389e956075be',1,'ntv2videodefines.h']]],
   ['fd_5fnumcomponentpixels_5fuhd2',['FD_NUMCOMPONENTPIXELS_UHD2',['../d9/d61/ntv2videodefines_8h.html#acdb30fbad2535509f237d63ce12c801b',1,'ntv2videodefines.h']]],
@@ -17,7 +18,6 @@ var searchData=
   ['fgvcrosspointmask',['FGVCROSSPOINTMASK',['../d6/d0c/ntv2enums_8h.html#a3c6b1231c538512e05e007ea4d4631f0',1,'ntv2enums.h']]],
   ['fgvcrosspointshift',['FGVCROSSPOINTSHIFT',['../d6/d0c/ntv2enums_8h.html#a20e0f6b62d16ba16961a4a6933f91307',1,'ntv2enums.h']]],
   ['fgwarn',['FGWARN',['../d6/d05/ntv2framegrabber_8cpp.html#ae218c2fa47c1a4949af91063a80391dd',1,'FGWARN():&#160;ntv2framegrabber.cpp'],['../d4/d9d/ntv2qtpreview_8cpp.html#ae218c2fa47c1a4949af91063a80391dd',1,'FGWARN():&#160;ntv2qtpreview.cpp'],['../d4/da7/ntv2streamgrabber_8cpp.html#ae218c2fa47c1a4949af91063a80391dd',1,'FGWARN():&#160;ntv2streamgrabber.cpp']]],
-  ['fifo_5fsize',['FIFO_SIZE',['../d2/d52/ntv2mailbox_8h.html#a6092455278a1ac67204e0dbe08f9d13f',1,'ntv2mailbox.h']]],
   ['fileno_5ffunction',['FILENO_FUNCTION',['../d4/d59/ntv2demohevccommon_8cpp.html#a70742936a04a606ce47e71f3cbb6071e',1,'ntv2demohevccommon.cpp']]],
   ['firmware_5ffolder',['FIRMWARE_FOLDER',['../d8/dd5/ntv2nubaccess_8cpp.html#a6a9efe438bdbd5da4e4820f2ad84b851',1,'ntv2nubaccess.cpp']]],
   ['fixed_5fone',['FIXED_ONE',['../d6/dcc/ntv2fixed_8h.html#ac94941c5a694fcf68a0af5022a189e5d',1,'ntv2fixed.h']]],
@@ -34,5 +34,10 @@ var searchData=
   ['frame_5fbase',['FRAME_BASE',['../dc/d64/videoutilities_8h.html#aa903ed776fb0f6edcd16156af9c25c76',1,'FRAME_BASE():&#160;videoutilities.h'],['../d0/d81/ntv2utils_8h.html#aa903ed776fb0f6edcd16156af9c25c76',1,'FRAME_BASE():&#160;ntv2utils.h']]],
   ['frame_5fquadhd_5f10bit_5fsize',['FRAME_QUADHD_10BIT_SIZE',['../dc/d64/videoutilities_8h.html#afafb38c4b5ec0634c95295efc726ecd4',1,'FRAME_QUADHD_10BIT_SIZE():&#160;videoutilities.h'],['../d0/d81/ntv2utils_8h.html#afafb38c4b5ec0634c95295efc726ecd4',1,'FRAME_QUADHD_10BIT_SIZE():&#160;ntv2utils.h']]],
   ['frame_5fquadhd_5f8bit_5fsize',['FRAME_QUADHD_8BIT_SIZE',['../dc/d64/videoutilities_8h.html#ae3afab5084530ff5f3b28ec11ef68f57',1,'FRAME_QUADHD_8BIT_SIZE():&#160;videoutilities.h'],['../d0/d81/ntv2utils_8h.html#ae3afab5084530ff5f3b28ec11ef68f57',1,'FRAME_QUADHD_8BIT_SIZE():&#160;ntv2utils.h']]],
-  ['fromajaancpktdidsid',['FromAJAAncPktDIDSID',['../d7/d92/ancillarydata_8h.html#aa89699313344434f4d254134cb39162f',1,'ancillarydata.h']]]
+  ['fromajaancpktdidsid',['FromAJAAncPktDIDSID',['../d7/d92/ancillarydata_8h.html#aa89699313344434f4d254134cb39162f',1,'ancillarydata.h']]],
+  ['fwdbug',['FWDBUG',['../de/d94/ntv2konaflashprogram_8cpp.html#acc3e269fbd5f569582fb0fe540b2fcc4',1,'ntv2konaflashprogram.cpp']]],
+  ['fwfail',['FWFAIL',['../de/d94/ntv2konaflashprogram_8cpp.html#a602840ef380ef48bb1dfcf23b38c501f',1,'ntv2konaflashprogram.cpp']]],
+  ['fwinfo',['FWINFO',['../de/d94/ntv2konaflashprogram_8cpp.html#a3a1b23d015eaf5bcf5ba1a8dbf3196dc',1,'ntv2konaflashprogram.cpp']]],
+  ['fwnote',['FWNOTE',['../de/d94/ntv2konaflashprogram_8cpp.html#a5317438852d630e7d9fc8e64bba3a366',1,'ntv2konaflashprogram.cpp']]],
+  ['fwwarn',['FWWARN',['../de/d94/ntv2konaflashprogram_8cpp.html#ab5d547496fc46836414e1022dd31c0cd',1,'ntv2konaflashprogram.cpp']]]
 ];

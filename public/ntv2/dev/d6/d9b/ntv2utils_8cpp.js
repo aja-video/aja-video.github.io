@@ -187,7 +187,6 @@ var ntv2utils_8cpp =
     [ "NTV2IpErrorEnumToString", "d6/d9b/ntv2utils_8cpp.html#a3a9cfe0079a9dbf6828e021559dd027b", null ],
     [ "NTV2IsCompatibleBitfileName", "d6/d9b/ntv2utils_8cpp.html#a1bf538bd203587d85465328108ff6a73", null ],
     [ "NTV2IsoConvertModeToString", "d6/d9b/ntv2utils_8cpp.html#a1beadb5e445c50a9157a154d1a823e91", null ],
-    [ "NTV2M31VideoPresetToString", "d6/d9b/ntv2utils_8cpp.html#a24b45dd2d6610f5bf8861f09dfe052f1", null ],
     [ "NTV2MixerInputControlToString", "d6/d9b/ntv2utils_8cpp.html#a58f2321f07aac7292a7ae1ad43dadc8e", null ],
     [ "NTV2MixerKeyerModeToString", "d6/d9b/ntv2utils_8cpp.html#a679ee5503cb4a7fcc1f1b12429adc083", null ],
     [ "NTV2ModeToString", "d6/d9b/ntv2utils_8cpp.html#a1c64d0a1767214311aefec04a31852d2", null ],
@@ -250,7 +249,6 @@ var ntv2utils_8cpp =
     [ "gChanATCLTC", "d6/d9b/ntv2utils_8cpp.html#a3a30e9efba4bb5ee44b937c0de0b7014", null ],
     [ "gChanVITC1", "d6/d9b/ntv2utils_8cpp.html#a0eb30ada9c42249d8312579a300883c8", null ],
     [ "gChanVITC2", "d6/d9b/ntv2utils_8cpp.html#a86f1b489d3b2c24f74a6e9e3899f6166", null ],
-    [ "m31Presets", "d6/d9b/ntv2utils_8cpp.html#a4e0abba2746708cc664cd0f59ffdbc65", null ],
     [ "sFRFamilies", "d6/d9b/ntv2utils_8cpp.html#a1e2edd3aa3ca180fdced7e31dda36e4c", null ],
     [ "sFRFamMutex", "d6/d9b/ntv2utils_8cpp.html#a0f65e377cb357edc4398df2bce65d892", null ]
 ];

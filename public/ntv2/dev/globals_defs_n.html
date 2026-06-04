@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2149</span>
+   &#160;<span id="projectnumber">18.1.0.2262</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2149</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
   </td>
  </tr>
  </tbody>
@@ -1139,6 +1139,9 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NTV2_IS_VALID_AUTOCIRCVIDPROCMODE
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a0f4670f17d0cfcc2f6d4c5baa36bd8da">ntv2publicinterface.h</a>
 </li>
+<li>NTV2_IS_VALID_BANK_SELECT
+: <a class="el" href="d6/d0c/ntv2enums_8h.html#ac02b9e1750206982b184561ca05880f3">ntv2enums.h</a>
+</li>
 <li>NTV2_IS_VALID_BOOLPARAMID
 : <a class="el" href="d8/d0f/ntv2devicefeatures_8h.html#a39ba484bc97ace99cd382b1d51be2266">ntv2devicefeatures.h</a>
 </li>
@@ -1310,9 +1313,6 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NTV2_IS_VALID_RX_STREAM
 : <a class="el" href="d6/d0c/ntv2enums_8h.html#a903dc84edb2bf9b1f121fe7f64649fe8">ntv2enums.h</a>
 </li>
-<li>NTV2_IS_VALID_SFP
-: <a class="el" href="d8/d70/ntv2mbcontroller_8h.html#afc3169bf0790966836d68beabca74131">ntv2mbcontroller.h</a>
-</li>
 <li>NTV2_IS_VALID_STANDARD
 : <a class="el" href="d6/d0c/ntv2enums_8h.html#a774d26d8e2d72bb13ca727ac77f3aedb">ntv2enums.h</a>
 </li>
@@ -1421,6 +1421,9 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NTV2_MAXBOARDS
 : <a class="el" href="d6/d0c/ntv2enums_8h.html#a5a3c83af3abf8683ce9dec78eb7e522c">ntv2enums.h</a>
 </li>
+<li>NTV2_MESSAGE_DATA_RW
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#aa8e7e70dd8c7afdffba660fab39b31b6">ntv2publicinterface.h</a>
+</li>
 <li>NTV2_MIN_FRAMEBUFFERS
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a358b621c0023c85e987e222bd557b653">ntv2publicinterface.h</a>
 </li>
@@ -1437,8 +1440,8 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 : <a class="el" href="d6/d0c/ntv2enums_8h.html#a5e84c2bb41a3f4a4ebdf093b05fcb54b">ntv2enums.h</a>
 </li>
 <li>NTV2_NUM_IMAGES
-: <a class="el" href="d6/d05/ntv2framegrabber_8cpp.html#ac57c9e05361c2c7a1a543e329af1f984">ntv2framegrabber.cpp</a>
-, <a class="el" href="d4/da7/ntv2streamgrabber_8cpp.html#ac57c9e05361c2c7a1a543e329af1f984">ntv2streamgrabber.cpp</a>
+: <a class="el" href="d4/da7/ntv2streamgrabber_8cpp.html#ac57c9e05361c2c7a1a543e329af1f984">ntv2streamgrabber.cpp</a>
+, <a class="el" href="d6/d05/ntv2framegrabber_8cpp.html#ac57c9e05361c2c7a1a543e329af1f984">ntv2framegrabber.cpp</a>
 </li>
 <li>NTV2_NUMAUDIO_CHANNELS
 : <a class="el" href="dc/d1c/ntv2audiodefines_8h.html#a66125699e94a68e604de611888e7c156">ntv2audiodefines.h</a>
@@ -1671,6 +1674,9 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NTV2_TYPE_GETREGS
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#a89da661ecf527c558acf6408713227aa">ntv2publicinterface.h</a>
 </li>
+<li>NTV2_TYPE_MESSAGE_DATA
+: <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#adfbdbdab049b9f28a71d7d38f0de4333">ntv2publicinterface.h</a>
+</li>
 <li>NTV2_TYPE_SDISTATS
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ab45838f71b9357dccc1799dafbb76954">ntv2publicinterface.h</a>
 </li>
@@ -1762,8 +1768,8 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 : <a class="el" href="d9/dfb/ntv2devicefeatures_8hh.html#aa9ae2a85499cab76d93a825a723496b5">ntv2devicefeatures.hh</a>
 </li>
 <li>ntv2DMADriverbuffer
-: <a class="el" href="db/deb/ntv2baremetalpublicinterface_8h.html#a9c6d850ad83eb9dc108705d06e946e23">ntv2baremetalpublicinterface.h</a>
-, <a class="el" href="d7/d83/ntv2linuxpublicinterface_8h.html#a9c6d850ad83eb9dc108705d06e946e23">ntv2linuxpublicinterface.h</a>
+: <a class="el" href="d7/d83/ntv2linuxpublicinterface_8h.html#a9c6d850ad83eb9dc108705d06e946e23">ntv2linuxpublicinterface.h</a>
+, <a class="el" href="db/deb/ntv2baremetalpublicinterface_8h.html#a9c6d850ad83eb9dc108705d06e946e23">ntv2baremetalpublicinterface.h</a>
 </li>
 <li>NTV2DriverVersionBuildTypeToOrdinal
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#abfefecd3beebbe7517ed4ed3226206c4">ntv2publicinterface.h</a>
@@ -1834,6 +1840,12 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NTV2HostIsBigEndian
 : <a class="el" href="d4/d18/ntv2endian_8h.html#aec6ef3a60f6f121b094536fb2347bf28">ntv2endian.h</a>
 </li>
+<li>NTV2M31VideoPresetToString
+: <a class="el" href="d0/d81/ntv2utils_8h.html#a1a8379196d9597832cc3c5148ab7fd64">ntv2utils.h</a>
+</li>
+<li>ntv2Message
+: <a class="el" href="dd/d9e/ntv2metale2e_8h.html#a8c70919522b212491ba1b8eaa9e79287">ntv2metale2e.h</a>
+</li>
 <li>NTV2SDKVersionDecode_Build
 : <a class="el" href="d4/dd7/ntv2publicinterface_8h.html#ab1a9a15bbbdb723c231ae6d8d879ef57">ntv2publicinterface.h</a>
 </li>
@@ -1861,11 +1873,67 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NTV2VANCModeFromBools
 : <a class="el" href="d6/d0c/ntv2enums_8h.html#a098feb91816d0a082d6f18327fbd79ed">ntv2enums.h</a>
 </li>
+<li>NTV42_DEVICE_INFO_DESC_MAX
+: <a class="el" href="d9/d85/ntv42message_8h.html#a05cff8c3e2016705feadd89e7e42027a">ntv42message.h</a>
+</li>
+<li>NTV42_DEVICE_INFO_INIT
+: <a class="el" href="d9/d85/ntv42message_8h.html#a5dd515246bbf325164eb790455a892b5">ntv42message.h</a>
+</li>
+<li>NTV42_DEVICE_INFO_NAME_MAX
+: <a class="el" href="d9/d85/ntv42message_8h.html#ab2c28d3af70735e758102d882a09df2c">ntv42message.h</a>
+</li>
+<li>NTV42_DEVICE_INFO_TYPE
+: <a class="el" href="d9/d85/ntv42message_8h.html#ae796f652406f2017efd95f412f0107c2">ntv42message.h</a>
+</li>
+<li>NTV42_DEVICE_INFO_VERIFY
+: <a class="el" href="d9/d85/ntv42message_8h.html#a3770e58fa3e0fb64a65f55c9a8001920">ntv42message.h</a>
+</li>
+<li>NTV42_HEADER_VERIFY
+: <a class="el" href="d9/d85/ntv42message_8h.html#a4187f3443e009ad3e416bdce2a6ceccb">ntv42message.h</a>
+</li>
+<li>NTV42_MESSAGE_FAIL
+: <a class="el" href="d9/d85/ntv42message_8h.html#a5f47c37b26097280eda416e940da1bbe">ntv42message.h</a>
+</li>
+<li>NTV42_MESSAGE_FLAG_RW
+: <a class="el" href="d9/d85/ntv42message_8h.html#af3906f360dac2eb55d3cadc16388b083">ntv42message.h</a>
+</li>
+<li>NTV42_MESSAGE_INIT
+: <a class="el" href="d9/d85/ntv42message_8h.html#a93288a817fc0739e8f5c25fedff859e1">ntv42message.h</a>
+</li>
+<li>NTV42_MESSAGE_SUCCESS
+: <a class="el" href="d9/d85/ntv42message_8h.html#a67748d1ac1f552de62425bda18e69325">ntv42message.h</a>
+</li>
+<li>NTV42_MESSAGE_TAG
+: <a class="el" href="d9/d85/ntv42message_8h.html#acf0d8c13bb186da541fafe9a6687b504">ntv42message.h</a>
+</li>
+<li>NTV42_MESSAGE_VERIFY
+: <a class="el" href="d9/d85/ntv42message_8h.html#a5eaa2a9a0fe50c96e185e38eda9118fe">ntv42message.h</a>
+</li>
+<li>NTV42_MESSAGE_VERSION
+: <a class="el" href="d9/d85/ntv42message_8h.html#aee6dadc1723b3b33881afcaa974b9513">ntv42message.h</a>
+</li>
+<li>NTV42_REGIO_FLAG_32BIT
+: <a class="el" href="d9/d85/ntv42message_8h.html#ad744e34e9f23bbcd11fb03e6ca6899a5">ntv42message.h</a>
+</li>
+<li>NTV42_REGIO_FLAG_READ
+: <a class="el" href="d9/d85/ntv42message_8h.html#a9f120d52110b65947f05897b30dc19b2">ntv42message.h</a>
+</li>
+<li>NTV42_REGIO_FLAG_WRITE
+: <a class="el" href="d9/d85/ntv42message_8h.html#a44f38541562734c34886002f500d5c09">ntv42message.h</a>
+</li>
+<li>NTV42_REGIO_INIT
+: <a class="el" href="d9/d85/ntv42message_8h.html#a1a6234d9de682ed6bf9013a7a171dbc4">ntv42message.h</a>
+</li>
+<li>NTV42_REGIO_TYPE
+: <a class="el" href="d9/d85/ntv42message_8h.html#a346dc47b29b2ab95eca124284b5bb959">ntv42message.h</a>
+</li>
+<li>NTV42_REGIO_VERIFY
+: <a class="el" href="d9/d85/ntv42message_8h.html#a4718550c81cee500635ef31e2aae49dd">ntv42message.h</a>
+</li>
 <li>NULL
-: <a class="el" href="db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">ntv2caption608types.h</a>
-, <a class="el" href="d7/da9/ntv2captionlogging_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">ntv2captionlogging.h</a>
-, <a class="el" href="d9/d8d/ntv2task_8cpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">ntv2task.cpp</a>
+: <a class="el" href="d7/da9/ntv2captionlogging_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">ntv2captionlogging.h</a>
 , <a class="el" href="d4/dd5/ntv2vpid_8cpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">ntv2vpid.cpp</a>
+, <a class="el" href="db/d80/ntv2caption608types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">ntv2caption608types.h</a>
 </li>
 <li>NULL_PTR
 : <a class="el" href="d9/d49/types_8h.html#a530f11a96e508d171d28564c8dc20942">types.h</a>
@@ -1895,7 +1963,7 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 31 2026 15:41:36 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Jun 4 2026 06:18:29 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

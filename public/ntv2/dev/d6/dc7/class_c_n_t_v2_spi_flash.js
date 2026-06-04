@@ -1,6 +1,6 @@
 var class_c_n_t_v2_spi_flash =
 [
-    [ "CNTV2SpiFlash", "d6/dc7/class_c_n_t_v2_spi_flash.html#a6b8c5d1119dc224bae857338602ba367", null ],
+    [ "CNTV2SpiFlash", "d6/dc7/class_c_n_t_v2_spi_flash.html#a7ea61801c350f65f7ffb71694dc874b0", null ],
     [ "~CNTV2SpiFlash", "d6/dc7/class_c_n_t_v2_spi_flash.html#aec817b8f64c9c0bc8536e00e8229b52e", null ],
     [ "DeviceSupported", "d6/dc7/class_c_n_t_v2_spi_flash.html#a8712017b92c5237b74f8b6c9a05897d1", null ],
     [ "Erase", "d6/dc7/class_c_n_t_v2_spi_flash.html#a00d85ca456d82295da3d5c34b9243e82", null ],

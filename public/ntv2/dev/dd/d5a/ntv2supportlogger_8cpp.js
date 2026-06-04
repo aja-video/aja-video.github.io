@@ -12,7 +12,6 @@ var ntv2supportlogger_8cpp =
     [ "FrameToTCList", "dd/d5a/ntv2supportlogger_8cpp.html#ac1c114ff479a0b8c449ba6a1d0f97f4d", null ],
     [ "FrameToTCListConstIter", "dd/d5a/ntv2supportlogger_8cpp.html#a85e55bbe710d2abba92393580f4a4695", null ],
     [ "FrameToTCListPair", "dd/d5a/ntv2supportlogger_8cpp.html#a313840d38aa6112bbe5a5e42276d3074", null ],
-    [ "appSignatureToString", "dd/d5a/ntv2supportlogger_8cpp.html#a27de56ac05794531d16cbccd74515569", null ],
     [ "bytesToSamples", "dd/d5a/ntv2supportlogger_8cpp.html#ab4433e2eadccfc8428370caf51ca1ff4", null ],
     [ "DECStr", "dd/d5a/ntv2supportlogger_8cpp.html#aef26055bab4edaa6569115434ef49135", null ],
     [ "detectInputChannelPairs", "dd/d5a/ntv2supportlogger_8cpp.html#a2b1952bee3a174b1e69d2a14c3292b08", null ],

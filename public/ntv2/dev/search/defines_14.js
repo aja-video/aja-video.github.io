@@ -21,6 +21,5 @@ var searchData=
   ['tpgnote',['TPGNOTE',['../d5/d31/ntv2testpatterngen_8cpp.html#ac02506e4031a36f22714080c1904cc41',1,'ntv2testpatterngen.cpp']]],
   ['tpgwarn',['TPGWARN',['../d5/d31/ntv2testpatterngen_8cpp.html#a915e82feb641a7e7963a4b876f347731',1,'ntv2testpatterngen.cpp']]],
   ['traverselist',['TRAVERSELIST',['../d9/d9c/wxlist_8h.html#ad7702490bb6b06bc991d7dbfd1cf0c29',1,'wxlist.h']]],
-  ['true',['true',['../d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'ntv2devicefeatures.h']]],
-  ['ts_5fblock_5fbase',['TS_BLOCK_BASE',['../d6/d50/ntv2registersmb_8h.html#a479a0e5bfe4938adc6d6f0fdab0f9189',1,'ntv2registersmb.h']]]
+  ['true',['true',['../d8/d0f/ntv2devicefeatures_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'ntv2devicefeatures.h']]]
 ];

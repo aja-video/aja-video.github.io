@@ -45,7 +45,6 @@ var class_c_n_t_v2_driver_interface =
     [ "GetNumRecordedRegisterWrites", "d0/dbc/class_c_n_t_v2_driver_interface.html#a813c4c9ba69b4a74b964eb0dc81e2f11", null ],
     [ "GetNumSupported", "d0/dbc/class_c_n_t_v2_driver_interface.html#a0584af7436d78321d22d486384b1d2b4", null ],
     [ "GetOverlappedMode", "d0/dbc/class_c_n_t_v2_driver_interface.html#ab4708edad868bb672ca5062da530a451", null ],
-    [ "GetPackageInformation", "d0/dbc/class_c_n_t_v2_driver_interface.html#ac0c68296aded1858a0ade846ba970e55", null ],
     [ "GetPCISlotNumber", "d0/dbc/class_c_n_t_v2_driver_interface.html#ad9d5abd05e2a5ad0b9110a383bf735d2", null ],
     [ "GetRecordedRegisterWrites", "d0/dbc/class_c_n_t_v2_driver_interface.html#af010575a29b1b050d7ee9dfe453fcdc0", null ],
     [ "GetRegInfoForBoolParam", "d0/dbc/class_c_n_t_v2_driver_interface.html#a2bac73a145d7eeee7ff40c6ee6544c79", null ],

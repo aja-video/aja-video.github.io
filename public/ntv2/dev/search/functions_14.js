@@ -70,9 +70,6 @@ var searchData=
   ['triggerthread',['TriggerThread',['../d6/d06/class_c_base_reference_clock.html#aacbbfadb4c402cc93d9019de98e2b156',1,'CBaseReferenceClock']]],
   ['truncate',['Truncate',['../dd/d63/class_a_j_a_file_i_o.html#a7f44d67d4cb97b59e2102f4d675c0ecc',1,'AJAFileIO::Truncate()'],['../d5/dc4/class_n_t_v2_buffer.html#a9410e7c447c02a9f1baf5420c7c16a3c',1,'NTV2Buffer::Truncate()']]],
   ['trymediatypes',['TryMediaTypes',['../d8/d75/class_c_base_pin.html#a46220396bfb354be6783feeaf03cbec0',1,'CBasePin']]],
-  ['tsgenerator',['TSGenerator',['../d0/dd4/class_t_s_generator.html#afcdca7a81430c1f30861f013ad608e6b',1,'TSGenerator']]],
-  ['tx_5f2022_5fchannel',['tx_2022_channel',['../d3/d18/classtx__2022__channel.html#a37b0e5081b0cda667bd8844adebc74bc',1,'tx_2022_channel']]],
-  ['tx_5f2110config',['tx_2110Config',['../dd/dad/classtx__2110_config.html#a86a7325218f70996a9d4902605566746',1,'tx_2110Config']]],
   ['type',['Type',['../d7/da7/class_c_media_type.html#ae10942f9027255bc5d90510b8f7a6a41',1,'CMediaType::Type()'],['../dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#ac3f0baec649d75b2c1980c0d3e2a893f',1,'nlohmann::json_abi_v3_11_3::basic_json::type()']]],
   ['type_5fname',['type_name',['../dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#a7d2ac9da1010dec0f41337af7b5b2754',1,'nlohmann::json_abi_v3_11_3::basic_json']]],
   ['typesmatch',['TypesMatch',['../d5/dff/class_c_trans_in_place_filter.html#ab0cffa152c5a7a361acd4e9355d4efb6',1,'CTransInPlaceFilter']]]

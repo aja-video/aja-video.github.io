@@ -2,7 +2,7 @@ var class_n_t_v2___h_e_a_d_e_r =
 [
     [ "NTV2_HEADER", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#aa3a47a3636d0b45626d6191afa065552", null ],
     [ "ClearResultStatus", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#adebe4d93f7069f626626d88d21ab2d7d", null ],
-    [ "FourCCToString", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a6642b2a465e5598ade6d2f60f70d7a73", null ],
+    [ "FourCCToString", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a52a19ac0df13ed0898f942dcc5b3d56d", null ],
     [ "GetConnectionID", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a1f7c70f9007624411e2571abdb5ffe52", null ],
     [ "GetHeaderVersion", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a70fc309d039180e5262743278ea382e6", null ],
     [ "GetPointerSize", "d4/d09/class_n_t_v2___h_e_a_d_e_r.html#a2204b9fba30045f4c6d51296717f0014", null ],

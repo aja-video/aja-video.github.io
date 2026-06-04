@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tag',['tag',['../d8/d35/struct_a_j_a_raw_audio_header.html#a94beca9a0444443865e5c9577a6b0f6c',1,'AJARawAudioHeader::tag()'],['../d3/db2/struct_a_j_a_raw_video_header.html#a30b38a174e1820189bd90082b8791bfb',1,'AJARawVideoHeader::tag()'],['../d9/d26/struct_a_j_a_raw_data_header.html#a469c23d260bbccb0c981e8e3a695dd5e',1,'AJARawDataHeader::tag()']]],
+  ['tag',['tag',['../d8/d35/struct_a_j_a_raw_audio_header.html#a94beca9a0444443865e5c9577a6b0f6c',1,'AJARawAudioHeader::tag()'],['../d3/db2/struct_a_j_a_raw_video_header.html#a30b38a174e1820189bd90082b8791bfb',1,'AJARawVideoHeader::tag()'],['../d9/d26/struct_a_j_a_raw_data_header.html#a469c23d260bbccb0c981e8e3a695dd5e',1,'AJARawDataHeader::tag()'],['../d7/d6c/structntv42__message__header__t.html#ae7eedcd64c0cf22782446cbffbedd7f5',1,'ntv42_message_header_t::tag()']]],
   ['taskarray',['taskArray',['../d3/df7/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t__64.html#a067a9355702c43a6d9e5e394cf368c30',1,'AUTOCIRCULATE_TASK_STRUCT_64::taskArray()'],['../da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#a285ec808dc4def61deae00fb97262dfd',1,'AUTOCIRCULATE_TASK_STRUCT::taskArray()'],['../df/dd3/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t__32.html#a2e62eaa18abd4765fd565b28143f0554',1,'AUTOCIRCULATE_TASK_STRUCT_32::taskArray()']]],
   ['tasksize',['taskSize',['../d3/df7/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t__64.html#afa56a4c58cc7ac98282e100118412fa1',1,'AUTOCIRCULATE_TASK_STRUCT_64::taskSize()'],['../da/d3d/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t.html#a9ad4f6791c6689fd8f8018b5de7238f2',1,'AUTOCIRCULATE_TASK_STRUCT::taskSize()'],['../df/dd3/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___t_a_s_k___s_t_r_u_c_t__32.html#a4744bcb00ab767b8e7a334bb829b6766',1,'AUTOCIRCULATE_TASK_STRUCT_32::taskSize()']]],
   ['tasktype',['taskType',['../db/d76/struct_auto_circ_generic_task.html#abc9fee70b399799cf2f117dac811d0e9',1,'AutoCircGenericTask']]],
@@ -27,7 +27,7 @@ var searchData=
   ['texttag',['textTag',['../dd/d2c/struct_c_c708_pen_attr.html#a9c2843458b356eaf1d7b5d51b71476fc',1,'CC708PenAttr']]],
   ['tid',['tid',['../d0/d4e/structdpx__file__info__struct.html#a3e1b6eb9656ddd0cb0266a84e228fafe',1,'dpx_file_info_struct::tid()'],['../dd/dd4/struct___a_j_a_debug_message.html#aad1b5c920d17ff025c164c1f9dbe7ad3',1,'_AJADebugMessage::tid()']]],
   ['tim_5fcode',['tim_code',['../d7/d9d/structdpx__television__header__struct.html#abce3528cd2835d94dbea720304782fa7',1,'dpx_television_header_struct']]],
-  ['time',['time',['../dd/dd4/struct___a_j_a_debug_message.html#a08ac6c85eab7ae342d7b212174e34392',1,'_AJADebugMessage::time()'],['../d4/de9/struct_p_a_c_k_a_g_e___i_n_f_o___s_t_r_u_c_t.html#afae6df8d8d559eae060bb2769a582a5f',1,'PACKAGE_INFO_STRUCT::time()']]],
+  ['time',['time',['../dd/dd4/struct___a_j_a_debug_message.html#a08ac6c85eab7ae342d7b212174e34392',1,'_AJADebugMessage']]],
   ['time_5fcode_5fsection_5fid',['time_code_section_id',['../de/d1a/struct_n_t_v2___c_c708_c_d_p_timecode_section.html#a4093cbc8c7f3c16411abbae8c3be4f3b',1,'NTV2_CC708CDPTimecodeSection']]],
   ['time_5foffset',['time_offset',['../d7/d9d/structdpx__television__header__struct.html#a9e71438211770c4019897e5a0e8d63f9',1,'dpx_television_header_struct']]],
   ['timecode',['timecode',['../d8/d35/struct_a_j_a_raw_audio_header.html#a1f1df4dc2cc70007a99d2b4368a46d4b',1,'AJARawAudioHeader::timecode()'],['../d3/db2/struct_a_j_a_raw_video_header.html#a485e5d1aa3af89936110c14221279bd8',1,'AJARawVideoHeader::timecode()']]],
@@ -40,10 +40,10 @@ var searchData=
   ['timeoutms',['timeOutMs',['../db/ddd/struct_n_t_v2___w_a_i_t_f_o_r___i_n_t_e_r_r_u_p_t___s_t_r_u_c_t.html#acfeceed7aa6cdd05c2748c77286fb5fe',1,'NTV2_WAITFOR_INTERRUPT_STRUCT']]],
   ['timestr',['timeStr',['../de/d75/struct_b_i_t_f_i_l_e___i_n_f_o___s_t_r_u_c_t.html#a122aae11b59c2b8ddcd631289ff6f9ce',1,'BITFILE_INFO_STRUCT']]],
   ['timezero',['TimeZero',['../d5/def/reftime_8h.html#a2db0e1dba783a414be1c2d98b5675c56',1,'reftime.h']]],
-  ['tos',['tos',['../d3/d18/classtx__2022__channel.html#a43ad015af9aef38f67953d0f44e1b85f',1,'tx_2022_channel::tos()'],['../dd/dad/classtx__2110_config.html#a40c350ab292924574cd81d5eff195776',1,'tx_2110Config::tos()']]],
   ['totallines',['totalLines',['../dd/dd2/struct_a_n_c_inserter_init_params.html#a4b1089b0724547c6525faee67ce296af',1,'ANCInserterInitParams::totalLines()'],['../db/de9/struct_a_n_c_extractor_init_params.html#a657de73afbda477c8492d82f6f9a4a1f',1,'ANCExtractorInitParams::totalLines()'],['../d1/df1/struct_a_u_x_extractor_init_params.html#ab335730bee4078414277ea46730613f5',1,'AUXExtractorInitParams::totalLines()']]],
   ['traceguidreg',['TraceGuidReg',['../d9/d7b/perflog_8cpp.html#aa5c631d4e9b04bcb95be52cf4338ef1e',1,'perflog.cpp']]],
   ['traceguids',['TraceGuids',['../d1/d01/struct___p_e_r_f_l_o_g___l_o_g_g_i_n_g___p_a_r_a_m_s.html#aaf123193cc349d11a2e21e21715a7be4',1,'_PERFLOG_LOGGING_PARAMS']]],
+  ['trailer',['trailer',['../d3/de0/structntv42__message__device__info__t.html#a7ce73ae6e1da25b09590071528340a88',1,'ntv42_message_device_info_t::trailer()'],['../d8/dc6/structntv42__message__regio__t.html#a90ab1030b88dc9b4cd729a7457c21607',1,'ntv42_message_regio_t::trailer()']]],
   ['transfer',['transfer',['../d9/ddb/structdpx__image__element__struct.html#a91efba1ec4ae2a9e65333dca8b5b361e',1,'dpx_image_element_struct']]],
   ['transfercharacteristics',['transferCharacteristics',['../dc/df9/struct_hevc_device_command.html#aa584b8cca956e8c822d25186e9080237',1,'HevcDeviceCommand::transferCharacteristics()'],['../da/d93/struct_v_p_i_d_spec.html#a2ae18211733729ab54a81abd26d93aed',1,'VPIDSpec::transferCharacteristics()']]],
   ['transfercount',['transferCount',['../d9/d1f/structhevc__stream__statistics.html#a6292137252272a6ed21534fd5ad937a0',1,'hevc_stream_statistics']]],
@@ -56,12 +56,6 @@ var searchData=
   ['transitionsoftness',['transitionSoftness',['../d3/d14/struct_auto_circ_vid_proc_info.html#ab384f35e800ecda6a4a9c3b0d968c790',1,'AutoCircVidProcInfo']]],
   ['tstart',['tStart',['../d0/dc0/struct_c_output_queue_1_1_new_segment_packet.html#a26874bbfb66d61d0ae79d1022602977d',1,'COutputQueue::NewSegmentPacket']]],
   ['tstop',['tStop',['../d0/dc0/struct_c_output_queue_1_1_new_segment_packet.html#a070a0df6956e954f22d50b623334e75d',1,'COutputQueue::NewSegmentPacket']]],
-  ['ttl',['ttl',['../d3/d18/classtx__2022__channel.html#aaf0bf433ef5e8748d3f5603e1c320c2a',1,'tx_2022_channel::ttl()'],['../da/d8e/struct_tx_video_ch_data2110.html#a23e07399003f7fe8e2ba1a8564a03d63',1,'TxVideoChData2110::ttl()'],['../d9/dec/struct_tx_audio_ch_data2110.html#a9f59a70dcb436e519c7bb934544a7621',1,'TxAudioChData2110::ttl()'],['../d1/da6/struct_tx_anc_ch_data2110.html#a0e1b69a8382d1c4f1c831f343a7a0091',1,'TxAncChData2110::ttl()'],['../dd/dad/classtx__2110_config.html#ae199d17aa529c4f7db1849d2e58eec70',1,'tx_2110Config::ttl()']]],
   ['tv_5fheader',['tv_header',['../d7/d98/structdpx__header__struct.html#ab2fcc533582fbf42225348207a07e566',1,'dpx_header_struct']]],
-  ['txancch',['txAncCh',['../d0/d09/struct_transmit_anc_data2110.html#aea5b9a6f8bd0139466f06d5202726e60',1,'TransmitAncData2110']]],
-  ['txaudioch',['txAudioCh',['../d5/d36/struct_transmit_audio_data2110.html#a2a4c37f553c85643e0cf2f990e5f9ffd',1,'TransmitAudioData2110']]],
-  ['txbuf',['txBuf',['../d9/dd0/class_c_n_t_v2_mail_box.html#a81c2ebc1930ca9c3c53d02ec3662adc8',1,'CNTV2MailBox']]],
-  ['txchstatus',['txChStatus',['../d8/d38/struct_ip_status2110.html#ae6389caaaf7ca40c8daa8190456c0364',1,'IpStatus2110']]],
-  ['txvideoch',['txVideoCh',['../d6/def/struct_transmit_video_data2110.html#a6d9e069d76ca8113101241c9b81b1f4e',1,'TransmitVideoData2110']]],
-  ['type',['type',['../d2/d9b/structhevc_message_header.html#a525083ce23765d7856df138cdf61893c',1,'hevcMessageHeader']]]
+  ['type',['type',['../d2/d9b/structhevc_message_header.html#a525083ce23765d7856df138cdf61893c',1,'hevcMessageHeader::type()'],['../d7/d6c/structntv42__message__header__t.html#a310edf0f3ecc95158799f365586c2c4c',1,'ntv42_message_header_t::type()']]]
 ];

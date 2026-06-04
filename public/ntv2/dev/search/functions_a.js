@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['j2kdecoderconfig',['j2kDecoderConfig',['../d3/d00/classj2k_decoder_config.html#aed4f40e18b435710d30c36f08ca8555e',1,'j2kDecoderConfig']]],
-  ['j2kdecoderstatus',['j2kDecoderStatus',['../db/d67/classj2k_decoder_status.html#ac9e92714011a44f28becec98e18ecb66',1,'j2kDecoderStatus']]],
-  ['j2kencoderconfig',['j2kEncoderConfig',['../dd/dd2/classj2k_encoder_config.html#a0091e0f8f34581fbf8cfc9ecb4aadcb8',1,'j2kEncoderConfig']]],
   ['join',['join',['../d3/d3a/namespaceaja.html#a537e700de5fa7d11bc969b2fd988445c',1,'aja::join(const std::vector&lt; std::string &gt; &amp;parts, const std::string &amp;delim)'],['../d3/d3a/namespaceaja.html#a34dc43950bb130442816ddf8148acd4c',1,'aja::join(const std::set&lt; std::string &gt; &amp;parts, const std::string &amp;delim)']]],
   ['joinfiltergraph',['JoinFilterGraph',['../d5/d74/class_c_base_filter.html#a8a9d02d0d4ae5ad686fe0126f5e07855',1,'CBaseFilter::JoinFilterGraph()'],['../d9/d0a/class_c_base_video_renderer.html#acf6437c522819bdfbe3fc1538d7e2a97',1,'CBaseVideoRenderer::JoinFilterGraph()']]],
   ['json_5fpointer',['json_pointer',['../df/d36/classnlohmann_1_1json__abi__v3__11__3_1_1json__pointer.html#ac4b6a08505bee6d33641274d63e1fc44',1,'nlohmann::json_abi_v3_11_3::json_pointer']]],

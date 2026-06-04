@@ -138,6 +138,7 @@ var ntv2enums_8h =
     [ "NTV2_IS_VALID_AUDIO_RATE", "d6/d0c/ntv2enums_8h.html#a2e6a0fad0ec16b662c5133205b0245f5", null ],
     [ "NTV2_IS_VALID_AUDIO_SOURCE", "d6/d0c/ntv2enums_8h.html#aeb9795213d650ddb9be35a161dd35e27", null ],
     [ "NTV2_IS_VALID_AUDIO_SYSTEM", "d6/d0c/ntv2enums_8h.html#a3285915e58a01e0ca6ad87d0f5327c26", null ],
+    [ "NTV2_IS_VALID_BANK_SELECT", "d6/d0c/ntv2enums_8h.html#ac02b9e1750206982b184561ca05880f3", null ],
     [ "NTV2_IS_VALID_BREAKOUT_TYPE", "d6/d0c/ntv2enums_8h.html#af57878c9ac566c7dc204f4da5066aa59", null ],
     [ "NTV2_IS_VALID_CHANNEL", "d6/d0c/ntv2enums_8h.html#a86588d1a1a869849fc6bef50325d25a2", null ],
     [ "NTV2_IS_VALID_COLOR_CORRECTION_MODE", "d6/d0c/ntv2enums_8h.html#a92857e105b1595be1458b5bab692a0ab", null ],
@@ -474,7 +475,9 @@ var ntv2enums_8h =
       [ "BANK_0", "d6/d0c/ntv2enums_8h.html#aac71a8ffa33530ab3d22b8131d41a68ba249b72b19fe405ba7f41cf6e026350eb", null ],
       [ "BANK_1", "d6/d0c/ntv2enums_8h.html#aac71a8ffa33530ab3d22b8131d41a68bad645e7cb6f173128eeda4a7820aa5989", null ],
       [ "BANK_2", "d6/d0c/ntv2enums_8h.html#aac71a8ffa33530ab3d22b8131d41a68ba7469718f03fcf84d2964729e3ba730e4", null ],
-      [ "BANK_3", "d6/d0c/ntv2enums_8h.html#aac71a8ffa33530ab3d22b8131d41a68ba8ce4b14729c525424db4445fab4efc64", null ]
+      [ "BANK_3", "d6/d0c/ntv2enums_8h.html#aac71a8ffa33530ab3d22b8131d41a68ba8ce4b14729c525424db4445fab4efc64", null ],
+      [ "MAX_NUM_BANKS", "d6/d0c/ntv2enums_8h.html#aac71a8ffa33530ab3d22b8131d41a68bae6c8f38001cd9d2689fa71c6a9d5c71c", null ],
+      [ "BANK_INVALID", "d6/d0c/ntv2enums_8h.html#aac71a8ffa33530ab3d22b8131d41a68ba27394cd2d0d51718b61073ad9e2dd441", null ]
     ] ],
     [ "DMADirection", "d6/d0c/ntv2enums_8h.html#afd9ea6cb5d4c2e1f929664ecd32188ef", [
       [ "DMA_READ", "d6/d0c/ntv2enums_8h.html#afd9ea6cb5d4c2e1f929664ecd32188efa2915fe5d78ee9ccf385bc90e032aaaf6", null ],

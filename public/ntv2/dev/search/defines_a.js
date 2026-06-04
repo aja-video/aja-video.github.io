@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['j2k_5fts_5foffset',['J2K_TS_OFFSET',['../da/d5d/ntv2configts2022_8h.html#afce89dcad2520c1d9b10475835b19930',1,'ntv2configts2022.h']]],
   ['jlu32lpair',['jlu32lpair',['../dd/d55/options__popt_8cpp.html#a48c4be2c6d989fcb78e28f590bf521df',1,'options_popt.cpp']]],
   ['json_5fassert',['JSON_ASSERT',['../d5/db8/json_8hpp.html#a69f131cff49da1989667220173fbeae6',1,'json.hpp']]],
   ['json_5fbinary_5freader_5fmake_5fbjd_5foptimized_5ftype_5fmarkers_5f',['JSON_BINARY_READER_MAKE_BJD_OPTIMIZED_TYPE_MARKERS_',['../d5/db8/json_8hpp.html#acf48f92e1e7b4be17e32305ee7a54a5d',1,'json.hpp']]],

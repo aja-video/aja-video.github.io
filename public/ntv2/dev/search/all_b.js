@@ -1,13 +1,6 @@
 var searchData=
 [
   ['j',['j',['../dd/d3f/class_h_d_r_t_p_geometry.html#aa581532380246a0c74743e46ebfcd8dc',1,'HDRTPGeometry']]],
-  ['j2k_5fts_5foffset',['J2K_TS_OFFSET',['../da/d5d/ntv2configts2022_8h.html#afce89dcad2520c1d9b10475835b19930',1,'ntv2configts2022.h']]],
-  ['j2kchromasubsampling',['J2KChromaSubSampling',['../df/d01/ntv2tshelper_8h.html#ab1037e3592cce98c41ecec6cc7506af0',1,'ntv2tshelper.h']]],
-  ['j2kcodeblocksize',['J2KCodeBlocksize',['../df/d01/ntv2tshelper_8h.html#a829656df2ae5c6229db44a0364538366',1,'ntv2tshelper.h']]],
-  ['j2kdecoderconfig',['j2kDecoderConfig',['../d3/d00/classj2k_decoder_config.html',1,'j2kDecoderConfig'],['../d3/d00/classj2k_decoder_config.html#aed4f40e18b435710d30c36f08ca8555e',1,'j2kDecoderConfig::j2kDecoderConfig()']]],
-  ['j2kdecoderstatus',['j2kDecoderStatus',['../db/d67/classj2k_decoder_status.html',1,'j2kDecoderStatus'],['../db/d67/classj2k_decoder_status.html#ac9e92714011a44f28becec98e18ecb66',1,'j2kDecoderStatus::j2kDecoderStatus()']]],
-  ['j2kencoderconfig',['j2kEncoderConfig',['../dd/dd2/classj2k_encoder_config.html',1,'j2kEncoderConfig'],['../dd/dd2/classj2k_encoder_config.html#a0091e0f8f34581fbf8cfc9ecb4aadcb8',1,'j2kEncoderConfig::j2kEncoderConfig()']]],
-  ['j2kstreamtype',['j2kStreamType',['../db/dbd/struct_ts_encap_stream_data.html#af2ec63d394a9325bec335a2d560b6a44',1,'TsEncapStreamData::j2kStreamType()'],['../d7/d47/struct_ts_video_stream_data.html#a2e24f233529f5557ec3961d5cf2bce23',1,'TsVideoStreamData::j2kStreamType()'],['../df/d01/ntv2tshelper_8h.html#a2d98af6c59d9c1807387e6b0fa333b1c',1,'J2KStreamType():&#160;ntv2tshelper.h']]],
   ['jlu32lpair',['jlu32lpair',['../dd/d55/options__popt_8cpp.html#a48c4be2c6d989fcb78e28f590bf521df',1,'options_popt.cpp']]],
   ['join',['join',['../d3/d3a/namespaceaja.html#a537e700de5fa7d11bc969b2fd988445c',1,'aja::join(const std::vector&lt; std::string &gt; &amp;parts, const std::string &amp;delim)'],['../d3/d3a/namespaceaja.html#a34dc43950bb130442816ddf8148acd4c',1,'aja::join(const std::set&lt; std::string &gt; &amp;parts, const std::string &amp;delim)']]],
   ['joinfiltergraph',['JoinFilterGraph',['../d5/d74/class_c_base_filter.html#a8a9d02d0d4ae5ad686fe0126f5e07855',1,'CBaseFilter::JoinFilterGraph()'],['../d9/d0a/class_c_base_video_renderer.html#acf6437c522819bdfbe3fc1538d7e2a97',1,'CBaseVideoRenderer::JoinFilterGraph()']]],

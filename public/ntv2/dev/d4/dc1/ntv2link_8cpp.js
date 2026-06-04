@@ -6,5 +6,6 @@ var ntv2link_8cpp =
     [ "ntv2card_get_serial_number", "d4/dc1/ntv2link_8cpp.html#a0af735dc3263872c5d2654a4bad52481", null ],
     [ "ntv2card_open", "d4/dc1/ntv2link_8cpp.html#a1df59f22c3b71d8564f820e84d964bce", null ],
     [ "ntv2card_register_read", "d4/dc1/ntv2link_8cpp.html#a436feeab4d969f698f4b9c9a6aacbbe2", null ],
-    [ "ntv2card_register_write", "d4/dc1/ntv2link_8cpp.html#a231c5773dc61f085ed2a7d726a808ada", null ]
+    [ "ntv2card_register_write", "d4/dc1/ntv2link_8cpp.html#a231c5773dc61f085ed2a7d726a808ada", null ],
+    [ "ntv2card_send_message", "d4/dc1/ntv2link_8cpp.html#ac01b106979b1daa47014f7bd4bb85ce7", null ]
 ];

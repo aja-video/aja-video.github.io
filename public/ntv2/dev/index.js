@@ -67,7 +67,9 @@ var index =
           [ "External Reference", "d1/dc5/ntv2devops.html#vidop-clkext", null ]
         ] ],
         [ "Field/Frame Interrupts", "d1/dc5/ntv2devops.html#vidop-fldfrmint", null ],
-        [ "When FrameStores Access the Same Frame Buffer Memory", "d1/dc5/ntv2devops.html#vidop-fbconflict", null ],
+        [ "When FrameStores Access the Same Frame Buffer Memory", "d1/dc5/ntv2devops.html#vidop-fbconflict", [
+          [ "Frame Synchronizer Using Two FrameStores", "d1/dc5/ntv2devops.html#vidop-framesync", null ]
+        ] ],
         [ "Color Space Converter Operation", "d1/dc5/ntv2devops.html#vidop-csc", null ],
         [ "LUT Operation", "d1/dc5/ntv2devops.html#vidop-lut", null ],
         [ "High Dynamic Range (HDR) Video", "d1/dc5/ntv2devops.html#vidop-hdr", [
@@ -418,11 +420,17 @@ var index =
       [ "How to Capture 1080p50/60 Video", "d5/d73/duallinkoverview.html#aja1080p5060", null ],
       [ "6G and 12G", "d5/d73/duallinkoverview.html#aja6g12g", null ]
     ] ],
-    [ "Sharing AJA Devices With Other Applications", "dc/d29/devicesharing.html", [
-      [ "The AJA “Retail” Agent", "dc/d29/devicesharing.html#devshareagent", null ],
-      [ "Determining if an AJA Device is Being Used", "dc/d29/devicesharing.html#devshareisinuse", null ],
-      [ "Acquiring Exclusive Use of an AJA Device", "dc/d29/devicesharing.html#devshareacquire", null ],
-      [ "Getting Full Control Over Device Configuration", "dc/d29/devicesharing.html#devsharefullcontrol", null ],
-      [ "Reserving Exclusive Use of a Device by a “Process Family”", "dc/d29/devicesharing.html#devshareprocessfam", null ]
+    [ "NTV2 Device Sharing", "dc/d29/devicesharing.html", [
+      [ "Device Control Overview", "dc/d29/devicesharing.html#devshare", [
+        [ "Power-Up", "dc/d29/devicesharing.html#devshare-powerup", null ],
+        [ "Driver Start", "dc/d29/devicesharing.html#devshare-driverload", null ],
+        [ "AJA Agent", "dc/d29/devicesharing.html#devshareagent", [
+          [ "Device Service Thread", "dc/d29/devicesharing.html#devshareagentthread", null ],
+          [ "AJA ControlPanel", "dc/d29/devicesharing.html#devsharecontrolpanel", null ]
+        ] ],
+        [ "OEM & Third-Party Applications", "dc/d29/devicesharing.html#devshare-oemapps", [
+          [ "Multi-Process Applications", "dc/d29/devicesharing.html#devshareprocessfam", null ]
+        ] ]
+      ] ]
     ] ]
 ];
