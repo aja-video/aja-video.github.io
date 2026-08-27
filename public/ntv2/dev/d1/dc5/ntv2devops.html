@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -608,7 +608,9 @@ Reference Input</h2>
 </ul>
 <dl class="section user"><dt>Input Signal Detection</dt><dd></dd></dl>
 <p>To determine if there’s a signal present at the <b>Reference Input</b>, and if so, what format it is, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac0619fcb6c6455c5ba69b5b49784a4fc" title="Returns the video format of the signal that is present on the device&#39;s reference input. ">CNTV2Card::GetReferenceVideoFormat</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>For AJA devices that use a single BNC connector for Reference and LTC input — i.e. if <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad4ca87b50cb52c351c69ce2a95c8b804">NTV2DeviceCanDoLTCInOnRefPort</a> returns <code>true</code> — then you must call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4dca4f7dbf9496f65e6e4154117aac2d" title="Enables or disables the ability for the device to read analog LTC on the reference input connector...">CNTV2Card::SetLTCInputEnable</a> and pass it <code>false</code> <b><em>before</em></b> calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac0619fcb6c6455c5ba69b5b49784a4fc" title="Returns the video format of the signal that is present on the device&#39;s reference input. ">CNTV2Card::GetReferenceVideoFormat</a>, otherwise the function will return <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfaa8aef211eda693c83f1ea31a076842d6">NTV2_FORMAT_UNKNOWN</a>, even if there’s a valid reference signal at the connector.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>For AJA devices that share a single BNC connector for Reference and LTC input — i.e. if <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad4ca87b50cb52c351c69ce2a95c8b804">NTV2DeviceCanDoLTCInOnRefPort</a> returns <code>true</code> — then you must call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4dca4f7dbf9496f65e6e4154117aac2d" title="Enables or disables the ability for the device to read analog LTC on the reference input connector...">CNTV2Card::SetLTCInputEnable</a> and pass it <code>false</code> <b><em>before</em></b> calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac0619fcb6c6455c5ba69b5b49784a4fc" title="Returns the video format of the signal that is present on the device&#39;s reference input. ">CNTV2Card::GetReferenceVideoFormat</a>, otherwise the function will return <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aed10f029a5332ade780fff81b5db8bdfaa8aef211eda693c83f1ea31a076842d6">NTV2_FORMAT_UNKNOWN</a>, even if there’s a valid reference signal at the connector.</dd>
+<dd>
+<a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a5d1a032f30cb424ebb822be7a6101334" title="Sets the device&#39;s clock reference source. See Video Output Clocking &amp; Synchronization for more inform...">CNTV2Card::SetReference</a> automatically disables the LTC input (enabling reference input) when switching to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aced05ac3f96759ff32498fe4fcbba9dfa4db1abd8ad50cb10940b888cbce434a7" title="Specifies the External Reference connector. ">NTV2_REFERENCE_EXTERNAL</a> on devices that share reference and LTC input on a single connector.</dd></dl>
 <dl class="section user"><dt>Electrical &amp; Signaling Characteristics:</dt><dd></dd></dl>
 <ul>
 <li>Analog video reference, NTSC, PAL, or tri-level sync</li>
@@ -640,7 +642,7 @@ LTC Input</h3>
 <li>To determine if a signal is present at the LTC input, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac1cb0716a6edab2c96f71271a487118f" title="Answers whether or not a valid analog LTC signal is being applied to the device&#39;s analog LTC input co...">CNTV2Card::GetLTCInputPresent</a>.</li>
 <li>To read the timecode from the LTC input, call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a22343759cb28b6df7b8dbbe368ba3644" title="Reads the current contents of the device&#39;s analog LTC input registers. ">CNTV2Card::ReadAnalogLTCInput</a> soon after the input VBI.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>For AJA devices that have a single BNC connector for Reference and LTC input — i.e. if <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad4ca87b50cb52c351c69ce2a95c8b804">NTV2DeviceCanDoLTCInOnRefPort</a> returns <code>true</code>, you must call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4dca4f7dbf9496f65e6e4154117aac2d" title="Enables or disables the ability for the device to read analog LTC on the reference input connector...">CNTV2Card::SetLTCInputEnable</a> and pass it <code>true</code> <b><em>before</em></b> calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac1cb0716a6edab2c96f71271a487118f" title="Answers whether or not a valid analog LTC signal is being applied to the device&#39;s analog LTC input co...">CNTV2Card::GetLTCInputPresent</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a22343759cb28b6df7b8dbbe368ba3644" title="Reads the current contents of the device&#39;s analog LTC input registers. ">CNTV2Card::ReadAnalogLTCInput</a>, otherwise these function will fail to report a valid signal or timecode.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>For AJA devices that share a single BNC connector for Reference and LTC input — i.e. if <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad4ca87b50cb52c351c69ce2a95c8b804">NTV2DeviceCanDoLTCInOnRefPort</a> returns <code>true</code>, you must call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4dca4f7dbf9496f65e6e4154117aac2d" title="Enables or disables the ability for the device to read analog LTC on the reference input connector...">CNTV2Card::SetLTCInputEnable</a> and pass it <code>true</code> <b><em>before</em></b> calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac1cb0716a6edab2c96f71271a487118f" title="Answers whether or not a valid analog LTC signal is being applied to the device&#39;s analog LTC input co...">CNTV2Card::GetLTCInputPresent</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a22343759cb28b6df7b8dbbe368ba3644" title="Reads the current contents of the device&#39;s analog LTC input registers. ">CNTV2Card::ReadAnalogLTCInput</a>, otherwise these function will fail to report a valid signal or timecode.</dd></dl>
 <dl class="section user"><dt>Electrical &amp; Signaling Characteristics:</dt><dd></dd></dl>
 <ul>
 <li>Designed to work with inverted or non-inverted inputs</li>
@@ -1841,7 +1843,7 @@ Fast Bitfile Switching</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:27 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:12 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

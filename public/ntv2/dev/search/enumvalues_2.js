@@ -1,8 +1,8 @@
 var searchData=
 [
   ['cbor',['cbor',['../d3/d75/namespacenlohmann_1_1json__abi__v3__11__3_1_1detail.html#abc981c71c6a38bf923c5732839872bacaaf9de350d652f0c9055ddab514bd23ea',1,'nlohmann::json_abi_v3_11_3::detail']]],
-  ['cdisp_5fdec',['CDISP_DEC',['../de/de4/wxdebug_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a41b3f993fed5bc4692fcbbdffa37f379',1,'wxdebug.h']]],
-  ['cdisp_5fhex',['CDISP_HEX',['../de/de4/wxdebug_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a6dae8fe6691b95ac14ff5d3be14d6277',1,'wxdebug.h']]],
+  ['cdisp_5fdec',['CDISP_DEC',['../de/de4/wxdebug_8h.html#a77867ab4129f63159b37bca3b652a798a41b3f993fed5bc4692fcbbdffa37f379',1,'wxdebug.h']]],
+  ['cdisp_5fhex',['CDISP_HEX',['../de/de4/wxdebug_8h.html#a77867ab4129f63159b37bca3b652a798a6dae8fe6691b95ac14ff5d3be14d6277',1,'wxdebug.h']]],
   ['chiperase_5fcommand',['CHIPERASE_COMMAND',['../d6/d0c/ntv2enums_8h.html#a2728047fd53e6887f596dca97ab2c520a6730dee5aaaea8db24ba63dd686a9935',1,'ntv2enums.h']]],
   ['cmd_5fexit',['CMD_EXIT',['../de/dc3/class_c_source_stream.html#ac5ceb0497ab9503b670903304b1ec91faf147026198eba5369da09eb3537a53f4',1,'CSourceStream']]],
   ['cmd_5finit',['CMD_INIT',['../de/dc3/class_c_source_stream.html#ac5ceb0497ab9503b670903304b1ec91faceaa0ae305699f60876ca4c2d96fa613',1,'CSourceStream']]],

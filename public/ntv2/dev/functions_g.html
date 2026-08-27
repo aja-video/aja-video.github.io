@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -885,6 +885,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetBoolParam()
 : <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a3b8f3aef99f96a593962787a7a71cb41">CNTV2DriverInterface</a>
 </li>
+<li>GetBoolParamWithDeviceID()
+: <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a06952629e3259b35e216629c0cf104b5">CNTV2DriverInterface</a>
+</li>
 <li>GetBorderColour()
 : <a class="el" href="d0/d4d/class_c_base_control_window.html#a2842fffefeda9a6ac8e5fbeda744e605">CBaseControlWindow</a>
 </li>
@@ -915,7 +918,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="de/df9/class_a_j_a_buffer.html#a484c74c1a6307cee2f9b83e91b28a0d9">AJABuffer</a>
 </li>
 <li>GetByteCount()
-: <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#ae706fcdccb7c52d78900d3617e3a1149">NTV2Buffer</a>
+: <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#a3fae55cd1125b6d0376b96ed4502d68f">NTV2Buffer</a>
 </li>
 <li>GetBytesPerRow()
 : <a class="el" href="d3/d4e/class_n_t_v2_format_descriptor.html#ae01129cd9f4f1a6663fae68b3af421d0">NTV2FormatDescriptor</a>
@@ -1354,7 +1357,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#a13b99ab1061f5b89bcca911bdbdd9291">CNTV2DeviceScanner</a>
 </li>
 <li>GetDeviceFrameInfo()
-: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a1d55f01042bf917ef2d2f890e59859b1">CNTV2Card</a>
+: <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a2970055fa5641935a3c3971aa8ad52fd">CNTV2Card</a>
 </li>
 <li>GetDeviceID()
 : <a class="el" href="dc/de9/class_c_n_t_v2_bitfile.html#a4192b34068eb89027e14360335457aac">CNTV2Bitfile</a>
@@ -1370,8 +1373,17 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetDeviceInfo()
 : <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#af161d66508d95e8073eba509e7273d85">CNTV2DeviceScanner</a>
 </li>
+<li>GetDeviceInfoForID()
+: <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#ab02426678cd4cd8a276fbdce193a9dd2">CNTV2DeviceScanner</a>
+</li>
+<li>GetDeviceInfoForModel()
+: <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#a9185e24e5a28937af1f93d8b80bf744a">CNTV2DeviceScanner</a>
+</li>
+<li>GetDeviceInfoForSerial()
+: <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#a75145f63693f03f3e44c79a07ccba6bf">CNTV2DeviceScanner</a>
+</li>
 <li>GetDeviceInfoList()
-: <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#acf4965601f23c90471e4b2b428da109b">CNTV2DeviceScanner</a>
+: <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#a9a911b44ef8572a52269c69b477c4c72">CNTV2DeviceScanner</a>
 </li>
 <li>GetDeviceRefName()
 : <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html#a3980cccf1432ebcfef38ebbd0489b2a4">CNTV2DeviceScanner</a>
@@ -2417,13 +2429,13 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="db/d56/class_a_j_a_debug.html#a8ce22fbfbd14cf638c14113d431e01e8">AJADebug</a>
 </li>
 <li>GetMessageSequenceNumber()
-: <a class="el" href="db/d56/class_a_j_a_debug.html#a0c57bd2e2f078d263313f4b26ba12987">AJADebug</a>
+: <a class="el" href="db/d56/class_a_j_a_debug.html#aa6e9e12e1fcbb13971e2bf80dc1699f6">AJADebug</a>
 </li>
 <li>GetMessageSeverity()
 : <a class="el" href="db/d56/class_a_j_a_debug.html#a96a323c0e9aa7fe3a9fa0b7e93dd1b24">AJADebug</a>
 </li>
 <li>GetMessagesIgnored()
-: <a class="el" href="db/d56/class_a_j_a_debug.html#adda1da6f209e4d250523cdcd997506a4">AJADebug</a>
+: <a class="el" href="db/d56/class_a_j_a_debug.html#a4a149fdb63c667a25985a72259fee1da">AJADebug</a>
 </li>
 <li>GetMessageText()
 : <a class="el" href="db/d56/class_a_j_a_debug.html#abcbeb5dcea4e315c1da590eb08ed5441">AJADebug</a>
@@ -2657,6 +2669,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetNumericParam()
 : <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a998b21361a832ef936c456d8470946f5">CNTV2DriverInterface</a>
 </li>
+<li>GetNumericParamWithDeviceID()
+: <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a5737bdb60c0930a071d8c3dc3739089f">CNTV2DriverInterface</a>
+</li>
 <li>GetNumFailedWrites()
 : <a class="el" href="d2/d53/class_n_t_v2_set_registers.html#abe7169589d36fd1be59c858c5196931d">NTV2SetRegisters</a>
 </li>
@@ -2746,7 +2761,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetOnAirCharacter()
 : <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#a5cbd303a37ca43a259518e640513b8db">CNTV2CaptionDecodeChannel608</a>
-, <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#ab00e7e5ee4da50a3367cc2f924e9d178">CNTV2CaptionDecoder608</a>
+, <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#abd6d1b6fa11f88da31f66c81c2aa2d76">CNTV2CaptionDecoder608</a>
 </li>
 <li>GetOnAirCharacters()
 : <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a342d688220d312f3d27f0902a7da606e">CNTV2CaptionDecoder608</a>
@@ -2868,7 +2883,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetPid()
 : <a class="el" href="d7/d19/class_a_j_a_process.html#a3aa2249cefb9f5f287bfe7758c369c84">AJAProcess</a>
-, <a class="el" href="d9/d3c/class_a_j_a_process_impl.html#a0abe60ac39ea33b802ef336ee4380a9f">AJAProcessImpl</a>
+, <a class="el" href="d9/d3c/class_a_j_a_process_impl.html#a6f8b59efd2f05c12082f5ebffb3eb909">AJAProcessImpl</a>
 </li>
 <li>GetPin()
 : <a class="el" href="d5/d74/class_c_base_filter.html#a7df3859d38db9913b58ca730864fec87">CBaseFilter</a>
@@ -2999,14 +3014,14 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ac4d6217867bfa2371e2431e79f1a13cc">CNTV2Card</a>
 </li>
 <li>GetQueuedByteCount()
-: <a class="el" href="dc/da4/class_c_n_t_v2_caption608_message_queue.html#ac629c2296c55f02e1735a256f3522bc2">CNTV2Caption608MessageQueue</a>
+: <a class="el" href="dc/da4/class_c_n_t_v2_caption608_message_queue.html#a7b3e7c7aba7633fd38942e5d0808bcff">CNTV2Caption608MessageQueue</a>
 , <a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#ada0ab9feeb6f1f94c0b7208a622eb477">CNTV2CaptionEncoder608</a>
 </li>
 <li>GetQueueDepth()
 : <a class="el" href="de/d67/class_n_t_v2_stream_channel.html#ac72e1cd747e9021fa4965f6827925622">NTV2StreamChannel</a>
 </li>
 <li>GetQueuedMessageCount()
-: <a class="el" href="dc/da4/class_c_n_t_v2_caption608_message_queue.html#a358b591a8ed740950028e5dd3f927a36">CNTV2Caption608MessageQueue</a>
+: <a class="el" href="dc/da4/class_c_n_t_v2_caption608_message_queue.html#a0d30ae1ccdedac06b8ec788d184b70ea">CNTV2Caption608MessageQueue</a>
 , <a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#ac6c1254ba2453aeda9b4f5a9921fd3de">CNTV2CaptionEncoder608</a>
 </li>
 <li>GetQueueInfoForChannel()
@@ -3094,7 +3109,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="da/d31/class_register_expert.html#a74cb18e87e99d53c689ef69fdfe677bb">RegisterExpert</a>
 </li>
 <li>GetRegisterValues()
-: <a class="el" href="d1/dfc/class_n_t_v2_get_registers.html#a486fa89ee31eefcc82287cedc1838f50">NTV2GetRegisters</a>
+: <a class="el" href="d1/dfc/class_n_t_v2_get_registers.html#a849cca3b8a94b2f42de2c1a7e726d7a5">NTV2GetRegisters</a>
 </li>
 <li>GetRegisterWritemode()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a12b60a6a4b268e7544d14b0535ba0785">CNTV2Card</a>
@@ -3184,7 +3199,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af2b7a76fe6b3ad665e2b45eb2a733119">CNTV2Card</a>
 </li>
 <li>GetRP188Reg()
-: <a class="el" href="d4/d28/class_c_r_p188.html#a1b3e08345263d96f6252e8e306455b9c">CRP188</a>
+: <a class="el" href="d4/d28/class_c_r_p188.html#ada109892f60579bdc66527114f45cd55">CRP188</a>
 </li>
 <li>GetRP188RegisterForInput()
 : <a class="el" href="d5/d96/class_n_t_v2_burn4_k_quadrant.html#a5ce1c4bdec2161385d17519bc4da98cf">NTV2Burn4KQuadrant</a>
@@ -3203,6 +3218,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetRP188UserBitsStr()
 : <a class="el" href="d4/d28/class_c_r_p188.html#a01c54a0133c09afd686db50ce8c3165e">CRP188</a>
+</li>
+<li>GetRP188Words()
+: <a class="el" href="d7/dc8/class_a_j_a_ancillary_data___timecode.html#a98d253eb98632814b1af7a034c63423c">AJAAncillaryData_Timecode</a>
 </li>
 <li>GetRS422BaudRate()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a2bb07ab55e063b96f14bfaf93d34eb21">CNTV2Card</a>
@@ -3574,9 +3592,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetStreamingApplication()
 : <a class="el" href="d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ae7caedf5344c27cdde7cc8b040f6ee02">CNTV2BareMetalDriverInterface</a>
 , <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#ad101bc5fd0969e255993a973bd8e7f11">CNTV2DriverInterface</a>
-, <a class="el" href="de/d6b/class_c_n_t_v2_linux_driver_interface.html#abe7e57ec408497fc3a703ba0ef6cbcea">CNTV2LinuxDriverInterface</a>
-, <a class="el" href="dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a7b0dc691b49be825dc4224033806209d">CNTV2MacDriverInterface</a>
-, <a class="el" href="d2/d29/class_c_n_t_v2_win_driver_interface.html#a38655b587972dd921f6e34bfa259c3df">CNTV2WinDriverInterface</a>
+, <a class="el" href="de/d6b/class_c_n_t_v2_linux_driver_interface.html#ac4400043d56f0dfe22eb95fb85639199">CNTV2LinuxDriverInterface</a>
+, <a class="el" href="dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a9b22c60b42e0ee624b557cb9fb6e657e">CNTV2MacDriverInterface</a>
+, <a class="el" href="d2/d29/class_c_n_t_v2_win_driver_interface.html#a4bb6477f4bc7b3487c59ec241f2f66f8">CNTV2WinDriverInterface</a>
 </li>
 <li>GetStreamNumber()
 : <a class="el" href="d3/dd3/class_a_j_a_r_t_p_anc_packet_header.html#a4da67b918f18db5f18552f534a52fe51">AJARTPAncPacketHeader</a>
@@ -3589,7 +3607,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetString()
 : <a class="el" href="dc/da4/class_a_j_a_variant.html#a50c542ef4cb1f892829b233ebea3d7dd">AJAVariant</a>
-, <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#a3589ca5d65f212393267e46c7efbc379">NTV2Buffer</a>
+, <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#aae0fdee7bb23d41e41e96c26d65c8ec3">NTV2Buffer</a>
 </li>
 <li>GetSupportedInputSources()
 : <a class="el" href="d6/d2a/class_c_n_t_v2_demo_common.html#a32cb30eddc4a80865b7bf70f4febd1f7">CNTV2DemoCommon</a>
@@ -3701,7 +3719,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetThreadId()
 : <a class="el" href="db/d56/class_a_j_a_debug.html#aed92889d94a055094d93940214e2ecef">AJADebug</a>
 , <a class="el" href="d2/db9/class_a_j_a_thread.html#ad0cd865bd21238313724e39d7c027d40">AJAThread</a>
-, <a class="el" href="d3/d51/class_a_j_a_thread_impl.html#a7658431b21ee1fd643ead0b895322a7b">AJAThreadImpl</a>
+, <a class="el" href="d3/d51/class_a_j_a_thread_impl.html#ae372656ab7dcbe3616e8808aa971badd">AJAThreadImpl</a>
 , <a class="el" href="d2/d22/class_c_msg_thread.html#ac5b3ace7bdb2d17cc9d17b13754bda2a">CMsgThread</a>
 </li>
 <li>GetThreadMsg()
@@ -3838,10 +3856,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#ad4749a920f79fcf35aaba300e0dd6f97">NTV2Buffer</a>
 </li>
 <li>GetU64s()
-: <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#afa7f723957e4bcd7ab33245edea5cc18">NTV2Buffer</a>
+: <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#a6f936ff53c1abba5b071c3a2e0a67acd">NTV2Buffer</a>
 </li>
 <li>GetU8s()
-: <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#a1f6db51a4f0694c43bbaddeabee3de85">NTV2Buffer</a>
+: <a class="el" href="d5/dc4/class_n_t_v2_buffer.html#a252feab1e77baeaea91473970dd1216f">NTV2Buffer</a>
 </li>
 <li>GetUCAutoLine21()
 : <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#acc6d249be4013cc6c4e5230b803dede8">CNTV2Card</a>
@@ -4197,7 +4215,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="db/d56/class_a_j_a_debug.html#a2707b2f43373e4c4c7a6c5c972f1666f">AJADebug</a>
 </li>
 <li>GuessAncillaryDataType()
-: <a class="el" href="d6/dd7/class_a_j_a_ancillary_data_factory.html#ac827ef5a00f17d54f557dc945d3488f8">AJAAncillaryDataFactory</a>
+: <a class="el" href="d6/dd7/class_a_j_a_ancillary_data_factory.html#aff07442f8dd8c66f4f79e7e3b47464e7">AJAAncillaryDataFactory</a>
 </li>
 <li>GUID
 : <a class="el" href="d5/d2c/struct_find_device_data.html#aa0f01295354d5cf4538985c8062b8fa1">FindDeviceData</a>
@@ -4208,7 +4226,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:29 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:14 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

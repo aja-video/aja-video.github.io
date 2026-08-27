@@ -139,9 +139,13 @@ var ntv2devicefeatures_8h =
       [ "kDeviceHasLPProductCode", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba773c0a6dc4084c1c737c74c69d456130", null ],
       [ "kDeviceCanDoP2PTransmit", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba5e3cbca45d760c28304e2c2eeb70c430", null ],
       [ "kDeviceCanDoP2PReceive", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba79452e9bb91bf8d9de85e65783d39609", null ],
+      [ "kDeviceCanDoFastBitfileSwitching", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba4b496727fe720a7f2683277bacbadb0c", null ],
+      [ "kDeviceCanDoClockMonitor", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba4da2cf2a12f7106892ca93d0028b887e", null ],
       [ "kNTV2BoolParam_LAST", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba2953652108268e32c4d15eb0ddff77ab", null ],
       [ "kNTV2BoolParam_COUNT", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba9ad50404c9c94edea0ba22a5b10b9a95", null ],
-      [ "kDeviceCanDo_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba52a2168d75951d111daab3580e181500", null ]
+      [ "kDeviceCanDo_INVALID", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6ba52a2168d75951d111daab3580e181500", null ],
+      [ "kDeviceCanDoCustomAux", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6bace21243b63f0f6bd7c5b80674ccfe424", null ],
+      [ "kDeviceCanDoIDSwitch", "d8/d0f/ntv2devicefeatures_8h.html#a998b1ee0fa67c2d454c3995b77295c6baa7904d9df6980b754a240cde45be5ca0", null ]
     ] ],
     [ "_NTV2EnumsID", "d8/d0f/ntv2devicefeatures_8h.html#a6c83b79e38f0f98f6f2502036d379d9d", [
       [ "kNTV2EnumsID_FIRST", "d8/d0f/ntv2devicefeatures_8h.html#a6c83b79e38f0f98f6f2502036d379d9da08ddf28825fde6120feb4404d4df5b6c", null ],

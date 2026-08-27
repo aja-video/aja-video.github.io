@@ -18,7 +18,7 @@ var searchData=
   ['bigendian',['bigEndian',['../d8/d35/struct_a_j_a_raw_audio_header.html#aca3330c733d09fbb44c65e65c10e143a',1,'AJARawAudioHeader']]],
   ['bit_5fsize',['bit_size',['../d9/ddb/structdpx__image__element__struct.html#ac7f7cbb72a2facaae014f70ed1c94318',1,'dpx_image_element_struct']]],
   ['bitcount',['BitCount',['../dc/d6e/amvideo_8cpp.html#a39788ba9854da2deac00829c13e59e89',1,'amvideo.cpp']]],
-  ['bitcountmap',['BitCountMap',['../dc/d6e/amvideo_8cpp.html#ab94af0eac807683f19e49e96af453e7c',1,'amvideo.cpp']]],
+  ['bitcountmap',['BitCountMap',['../dc/d6e/amvideo_8cpp.html#a081b3de51a22116fb41c900e1da3efba',1,'amvideo.cpp']]],
   ['bitdepth',['bitDepth',['../d8/d11/struct_a_j_a_pixel_format_entry.html#a77c3feefaefa4a80aafae43f0ed3fd77',1,'AJAPixelFormatEntry::bitDepth()'],['../d4/ddf/struct_encoder_struct.html#a0c89457efa42c4b39a972507efde5457',1,'EncoderStruct::bitDepth()']]],
   ['bitfileflags',['bitfileFlags',['../d4/d5a/struct_n_t_v2_bitfile_info.html#a81fe368e22fb9701f3c0532c33ff6f00',1,'NTV2BitfileInfo']]],
   ['bitfileid',['bitfileID',['../d4/d5a/struct_n_t_v2_bitfile_info.html#a267740d1f1beb291b6650dbb2bee30cb',1,'NTV2BitfileInfo']]],

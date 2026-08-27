@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -168,6 +168,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bb09a2ba2f2f843a5f2e7824f1f21d0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a8bb09a2ba2f2f843a5f2e7824f1f21d0">GetTimecode</a> (<a class="el" href="../../d1/d32/class_a_j_a_time_code.html">AJATimeCode</a> &amp;outTimecode, const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;inTimeBase) const</td></tr>
 <tr class="memdesc:a8bb09a2ba2f2f843a5f2e7824f1f21d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with my timecode "time" as an <a class="el" href="../../d1/d32/class_a_j_a_time_code.html" title="Utility class for timecodes. ">AJATimeCode</a>.  <a href="#a8bb09a2ba2f2f843a5f2e7824f1f21d0">More...</a><br /></td></tr>
 <tr class="separator:a8bb09a2ba2f2f843a5f2e7824f1f21d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64304edbf3225eb9ae06e919e98c8069"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a64304edbf3225eb9ae06e919e98c8069">SetRP188Words</a> (const uint32_t inLoWord, const uint32_t inHiWord, const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;inTimeBase)</td></tr>
+<tr class="memdesc:a64304edbf3225eb9ae06e919e98c8069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets my timecode/binary-group state from the two 32-bit words used to carry SMPTE 12M timecode over NTV2 ancillary/register APIs (e.g. <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html#afd594b484bc178b81678ad74f1d29791" title="| BG 4 | Secs10 | BG 3 | Secs 1 | BG 2 | Frms10 | BG 1 | Frms 1 | ">NTV2_RP188::fLo</a>/fHi, and the ANC timecode barcode used elsewhere in this SDK).  <a href="#a64304edbf3225eb9ae06e919e98c8069">More...</a><br /></td></tr>
+<tr class="separator:a64304edbf3225eb9ae06e919e98c8069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d253eb98632814b1af7a034c63423c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a98d253eb98632814b1af7a034c63423c">GetRP188Words</a> (uint32_t &amp;outLoWord, uint32_t &amp;outHiWord, const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;inTimeBase) const</td></tr>
+<tr class="memdesc:a98d253eb98632814b1af7a034c63423c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with my current timecode/binary-group state packed into the two 32-bit words used to carry SMPTE 12M timecode over NTV2 ancillary/register APIs (e.g. <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html#afd594b484bc178b81678ad74f1d29791" title="| BG 4 | Secs10 | BG 3 | Secs 1 | BG 2 | Frms10 | BG 1 | Frms 1 | ">NTV2_RP188::fLo</a>/fHi, and the ANC timecode barcode used elsewhere in this SDK).  <a href="#a98d253eb98632814b1af7a034c63423c">More...</a><br /></td></tr>
+<tr class="separator:a98d253eb98632814b1af7a034c63423c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab514ca939c6edc66fa88003ae204d99f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ab514ca939c6edc66fa88003ae204d99f">SetBinaryGroupHexValue</a> (uint8_t digitNum, uint8_t hexValue, uint8_t mask=0x0f)</td></tr>
 <tr class="memdesc:ab514ca939c6edc66fa88003ae204d99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets my raw "Binary Group" hex values.  <a href="#ab514ca939c6edc66fa88003ae204d99f">More...</a><br /></td></tr>
 <tr class="separator:ab514ca939c6edc66fa88003ae204d99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -606,7 +612,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a812fefc743bd9a116b6f1aeb19873c05ac61ce6b5505e5ea17ea917fe5d569b98"></a>kNumTimeDigits&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00269">269</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00302">302</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
 
 </div>
 </div>
@@ -641,7 +647,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="ac95ab5a9e768744d159d2a709364520fa955011c08cc0b7680a4c71e11ce41829"></a>kNumBinaryGroups&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00284">284</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00317">317</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
 
 </div>
 </div>
@@ -1136,6 +1142,62 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a98d253eb98632814b1af7a034c63423c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d253eb98632814b1af7a034c63423c">&#9670;&nbsp;</a></span>GetRP188Words()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> AJAAncillaryData_Timecode::GetRP188Words </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>outLoWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>outHiWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>inTimeBase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Answers with my current timecode/binary-group state packed into the two 32-bit words used to carry SMPTE 12M timecode over NTV2 ancillary/register APIs (e.g. <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html#afd594b484bc178b81678ad74f1d29791" title="| BG 4 | Secs10 | BG 3 | Secs 1 | BG 2 | Frms10 | BG 1 | Frms 1 | ">NTV2_RP188::fLo</a>/fHi, and the ANC timecode barcode used elsewhere in this SDK). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">outLoWord</td><td>Receives the low-order 32 bits. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outHiWord</td><td>Receives the high-order 32 bits. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inTimeBase</td><td>Specifies the time base (frame rate), used to resolve the format-dependent bit positions of the Field ID and Binary Group Flag values (see GetFieldIdFlag/GetBinaryGroupFlag). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The 2-word format has room for only 2 of the Binary Group Flag's 3 bits (bits 26-27 of the high word); the most-significant BGF bit cannot be represented and is silently dropped on both Get and Set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>AJA_STATUS_SUCCESS if successful. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00705">705</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ac989abb575710b2f3e8620b794cb1f6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac989abb575710b2f3e8620b794cb1f6a">&#9670;&nbsp;</a></span>GetTime()</h2>
 
@@ -1287,7 +1349,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The AJAAncillaryData_Timecode_Format that corresponds to the input timebase, returns AJAAncillaryData_Timecode_Format_Unknown when no match found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00621">621</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00773">773</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1577,7 +1639,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html#a965e7e05451d2270b46ab58433eb40c1">AJAAncillaryData_Timecode_ATC</a>, and <a class="el" href="../../de/df6/class_a_j_a_ancillary_data___timecode___v_i_t_c.html#a248ee2b2fe8eeea8d6e76ae3f5969efb">AJAAncillaryData_Timecode_VITC</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00646">646</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00798">798</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1945,6 +2007,62 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a64304edbf3225eb9ae06e919e98c8069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64304edbf3225eb9ae06e919e98c8069">&#9670;&nbsp;</a></span>SetRP188Words()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> AJAAncillaryData_Timecode::SetRP188Words </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>inLoWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>inHiWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>inTimeBase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets my timecode/binary-group state from the two 32-bit words used to carry SMPTE 12M timecode over NTV2 ancillary/register APIs (e.g. <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html#afd594b484bc178b81678ad74f1d29791" title="| BG 4 | Secs10 | BG 3 | Secs 1 | BG 2 | Frms10 | BG 1 | Frms 1 | ">NTV2_RP188::fLo</a>/fHi, and the ANC timecode barcode used elsewhere in this SDK). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inLoWord</td><td>Specifies the low-order 32 bits. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inHiWord</td><td>Specifies the high-order 32 bits. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inTimeBase</td><td>Specifies the time base (frame rate), used to resolve the format-dependent bit positions of the Field ID and Binary Group Flag values (see SetFieldIdFlag/SetBinaryGroupFlag). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The 2-word format has room for only 2 of the Binary Group Flag's 3 bits (bits 26-27 of the high word); the most-significant BGF bit cannot be represented and is silently dropped on both Get and Set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>AJA_STATUS_SUCCESS if successful. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00653">653</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a47819df4033e1bd42456da2f6dd888b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47819df4033e1bd42456da2f6dd888b8">&#9670;&nbsp;</a></span>SetTime()</h2>
 
@@ -2241,7 +2359,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A string containing my human-readable timecode. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00680">680</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html#l00832">832</a> of file <a class="el" href="../../d9/d0e/ancillarydata__timecode_8cpp_source.html">ancillarydata_timecode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2266,7 +2384,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00304">304</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00337">337</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
 
 </div>
 </div>
@@ -2290,7 +2408,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00303">303</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html#l00336">336</a> of file <a class="el" href="../../d4/d23/ancillarydata__timecode_8h_source.html">ancillarydata_timecode.h</a>.</p>
 
 </div>
 </div>
@@ -2304,7 +2422,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html">AJAAncillaryData_Timecode</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:27 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:12 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -27,7 +27,7 @@ var class_n_t_v2_buffer =
     [ "FindAll", "d5/dc4/class_n_t_v2_buffer.html#a05ccedf1c3436b5fd7ac37e226808b58", null ],
     [ "FL", "d5/dc4/class_n_t_v2_buffer.html#abd4ba1f8349b2e9d6b57a45354e78a2d", null ],
     [ "FL", "d5/dc4/class_n_t_v2_buffer.html#a09446e698e7ca38cfc3ce0400ef4dab1", null ],
-    [ "GetByteCount", "d5/dc4/class_n_t_v2_buffer.html#ae706fcdccb7c52d78900d3617e3a1149", null ],
+    [ "GetByteCount", "d5/dc4/class_n_t_v2_buffer.html#a3fae55cd1125b6d0376b96ed4502d68f", null ],
     [ "GetHostAddress", "d5/dc4/class_n_t_v2_buffer.html#a82194e1fc143ddc53f84c5ef3f1aa174", null ],
     [ "GetHostPointer", "d5/dc4/class_n_t_v2_buffer.html#a2f72bca11e881e2487c61b3c05e24326", null ],
     [ "GetRawHostPointer", "d5/dc4/class_n_t_v2_buffer.html#a0c292040756dcbfbca942f8d5f5f580f", null ],

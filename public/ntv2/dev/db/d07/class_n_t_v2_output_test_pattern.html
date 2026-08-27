@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -113,9 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa259aa892c2351533b06fd4447a71377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d07/class_n_t_v2_output_test_pattern.html#aa259aa892c2351533b06fd4447a71377">Init</a> (void)</td></tr>
 <tr class="memdesc:aa259aa892c2351533b06fd4447a71377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes me and prepares me to Run.  <a href="#aa259aa892c2351533b06fd4447a71377">More...</a><br /></td></tr>
 <tr class="separator:aa259aa892c2351533b06fd4447a71377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e21ba27f94f6ef846102e512dcc1413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d07/class_n_t_v2_output_test_pattern.html#a3e21ba27f94f6ef846102e512dcc1413">EmitPattern</a> (void)</td></tr>
-<tr class="memdesc:a3e21ba27f94f6ef846102e512dcc1413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates, transfers and displays the test pattern on the output.  <a href="#a3e21ba27f94f6ef846102e512dcc1413">More...</a><br /></td></tr>
-<tr class="separator:a3e21ba27f94f6ef846102e512dcc1413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250ebe2df9db3aa90012c5e65deca7b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d07/class_n_t_v2_output_test_pattern.html#a250ebe2df9db3aa90012c5e65deca7b1">EmitPattern</a> (void)</td></tr>
+<tr class="memdesc:a250ebe2df9db3aa90012c5e65deca7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates, transfers and displays the test pattern on the output.  <a href="#a250ebe2df9db3aa90012c5e65deca7b1">More...</a><br /></td></tr>
+<tr class="separator:a250ebe2df9db3aa90012c5e65deca7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -176,19 +176,19 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3e21ba27f94f6ef846102e512dcc1413"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e21ba27f94f6ef846102e512dcc1413">&#9670;&nbsp;</a></span>EmitPattern()</h2>
+<a id="a250ebe2df9db3aa90012c5e65deca7b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250ebe2df9db3aa90012c5e65deca7b1">&#9670;&nbsp;</a></span>EmitPattern()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a> NTV2OutputTestPattern::EmitPattern </td>
+          <td class="memname">bool NTV2OutputTestPattern::EmitPattern </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -198,10 +198,10 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates, transfers and displays the test pattern on the output. </p>
-<dl class="section return"><dt>Returns</dt><dd>AJA_STATUS_SUCCESS if successful; otherwise another AJAStatus code if unsuccessful. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Do not call this method without first calling my Init method. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00253">253</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Sets up board routing for playout. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00195">195</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ Protected Member Functions</h2></td></tr>
 <p>Sets up my AJA device to play video. </p>
 <dl class="section return"><dt>Returns</dt><dd>AJA_STATUS_SUCCESS if successful; otherwise another AJAStatus code if unsuccessful. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../da/dbe/ntv2outputtestpattern_8cpp_source.html">ntv2outputtestpattern.cpp</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d07/class_n_t_v2_output_test_pattern.html">NTV2OutputTestPattern</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:28 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:13 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -35,7 +35,7 @@ var searchData=
   ['addflash',['AddFlash',['../de/d6f/struct_n_t_v2_line21_attributes.html#a2877cf4123f69eb6ed5e01ecd4dada0b',1,'NTV2Line21Attributes']]],
   ['addfooter',['AddFooter',['../d6/d25/class_c_n_t_v2_support_logger.html#abe0fdc8d480dc605ec8c523f36f0e9ca',1,'CNTV2SupportLogger']]],
   ['addframes',['AddFrames',['../d4/d28/class_c_r_p188.html#ae17230728150c6d49bdd877625db5ccb',1,'CRP188']]],
-  ['addfrom',['addFrom',['../d6/d01/class_n_t_v2_dictionary.html#acde09d25bcd6a85575bdd53c11c15335',1,'NTV2Dictionary::addFrom(const NTV2Dictionary &amp;inDict)'],['../d6/d01/class_n_t_v2_dictionary.html#a8cbaa4a01b5f88e8221f9bbd62f740cf',1,'NTV2Dictionary::AddFrom(const NTV2Dictionary &amp;inDict)']]],
+  ['addfrom',['AddFrom',['../d6/d01/class_n_t_v2_dictionary.html#a8cbaa4a01b5f88e8221f9bbd62f740cf',1,'NTV2Dictionary::AddFrom(const NTV2Dictionary &amp;inDict)'],['../d6/d01/class_n_t_v2_dictionary.html#acde09d25bcd6a85575bdd53c11c15335',1,'NTV2Dictionary::addFrom(const NTV2Dictionary &amp;inDict)']]],
   ['addfromdeviceancbuffer',['AddFromDeviceAncBuffer',['../d8/def/class_a_j_a_ancillary_list.html#a3f20e4a38470a16c7c6876ed4c8c2d62',1,'AJAAncillaryList']]],
   ['addfromdeviceauxbuffer',['AddFromDeviceAuxBuffer',['../d8/def/class_a_j_a_ancillary_list.html#a041f495cce3e75780c7e67a5ab9db581',1,'AJAAncillaryList']]],
   ['addgeneralinterest',['AddGeneralInterest',['../d7/d44/class_device_notifier.html#a73f187ea940f5a3180dffbcb4d905c71',1,'DeviceNotifier']]],

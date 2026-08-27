@@ -11,7 +11,6 @@ var ntv2devicescanner_8cpp =
     [ "VDNOTE", "d7/db4/ntv2devicescanner_8cpp.html#add6fa35f24a364e960eadd821e449157", null ],
     [ "VDWARN", "d7/db4/ntv2devicescanner_8cpp.html#a4a60c0f3be9e8256dce2f8a995fc9f6d", null ],
     [ "json", "d7/db4/ntv2devicescanner_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d", null ],
-    [ "GetDeviceInfoList", "d7/db4/ntv2devicescanner_8cpp.html#af4e88207514bf788dd24bd62d5a55fa2", null ],
     [ "operator<<", "d7/db4/ntv2devicescanner_8cpp.html#a8726c248171a8cf91b32d3e402fc0c92", null ],
     [ "operator<<", "d7/db4/ntv2devicescanner_8cpp.html#a607ba25c5aa7890d7a0dd06ff99d5da7", null ],
     [ "operator<<", "d7/db4/ntv2devicescanner_8cpp.html#a9300a7292631774dd2db400542a33a47", null ],

@@ -58,6 +58,7 @@ var searchData=
   ['device_5fid_5fkonaip_5f2110',['DEVICE_ID_KONAIP_2110',['../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463ac360eaab5b0c99356d0799cfc3659284',1,'ntv2enums.h']]],
   ['device_5fid_5fkonaip_5f2110_5frgb12',['DEVICE_ID_KONAIP_2110_RGB12',['../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a345114e93132c889307aee1860cd268a',1,'ntv2enums.h']]],
   ['device_5fid_5fkonaip_5f25g',['DEVICE_ID_KONAIP_25G',['../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a160abe0485d1fd956f82bbc3e2462ce4',1,'ntv2enums.h']]],
+  ['device_5fid_5fkonaip_5f25g_5f8ch',['DEVICE_ID_KONAIP_25G_8CH',['../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a56fd0e6c48ae2ad7cf305b92991067b2',1,'ntv2enums.h']]],
   ['device_5fid_5fkonaip_5f2tx_5f1sfp_5fj2k',['DEVICE_ID_KONAIP_2TX_1SFP_J2K',['../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a0f253eac0dfd3b9f19745e6f4c62587a',1,'ntv2enums.h']]],
   ['device_5fid_5fkonaip_5f4ch_5f2sfp',['DEVICE_ID_KONAIP_4CH_2SFP',['../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463acb1cb75859c86b20f941efe0a6bb613c',1,'ntv2enums.h']]],
   ['device_5fid_5fkonalheplus',['DEVICE_ID_KONALHEPLUS',['../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463aa495718e599eda1f68ad23bf95a74ea2',1,'ntv2enums.h']]],

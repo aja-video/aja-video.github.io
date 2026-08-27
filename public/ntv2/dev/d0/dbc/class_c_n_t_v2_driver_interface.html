@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -282,6 +282,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0584af7436d78321d22d486384b1d2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c389406829aa571afcc2d6150f3ccc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a74c34ae1f28045a2159c674d3f4ffbb0">ULWordSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aa8c389406829aa571afcc2d6150f3ccc">GetSupportedItems</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de">NTV2EnumsID</a> inEnumsID)</td></tr>
 <tr class="separator:aa8c389406829aa571afcc2d6150f3ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8f3aef99f96a593962787a7a71cb41"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a3b8f3aef99f96a593962787a7a71cb41">GetBoolParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
+<tr class="memdesc:a3b8f3aef99f96a593962787a7a71cb41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the boolean value of the given parameter of interest.  <a href="#a3b8f3aef99f96a593962787a7a71cb41">More...</a><br /></td></tr>
+<tr class="separator:a3b8f3aef99f96a593962787a7a71cb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998b21361a832ef936c456d8470946f5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a998b21361a832ef936c456d8470946f5">GetNumericParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
+<tr class="memdesc:a998b21361a832ef936c456d8470946f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the numeric value of the given parameter of interest.  <a href="#a998b21361a832ef936c456d8470946f5">More...</a><br /></td></tr>
+<tr class="separator:a998b21361a832ef936c456d8470946f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06952629e3259b35e216629c0cf104b5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a06952629e3259b35e216629c0cf104b5">GetBoolParamWithDeviceID</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
+<tr class="memdesc:a06952629e3259b35e216629c0cf104b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Internal SDK use only) Answers with the boolean value returned from the appropriate "ntv2devicefeatures.hpp" function using my NTV2DeviceID.  <a href="#a06952629e3259b35e216629c0cf104b5">More...</a><br /></td></tr>
+<tr class="separator:a06952629e3259b35e216629c0cf104b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5737bdb60c0930a071d8c3dc3739089f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a5737bdb60c0930a071d8c3dc3739089f">GetNumericParamWithDeviceID</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
+<tr class="memdesc:a5737bdb60c0930a071d8c3dc3739089f"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Internal SDK use only) Answers with the numeric value returned from the appropriate "ntv2devicefeatures.hpp" function using my NTV2DeviceID.  <a href="#a5737bdb60c0930a071d8c3dc3739089f">More...</a><br /></td></tr>
+<tr class="separator:a5737bdb60c0930a071d8c3dc3739089f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49ead0f6a3a7435dcbcdc33417b7ba3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#af49ead0f6a3a7435dcbcdc33417b7ba3">HasRegInfoForBoolParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID)</td></tr>
+<tr class="memdesc:af49ead0f6a3a7435dcbcdc33417b7ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Internal SDK use only) Answers whether or not the given parameter's value is determined by a device register.  <a href="#af49ead0f6a3a7435dcbcdc33417b7ba3">More...</a><br /></td></tr>
+<tr class="separator:af49ead0f6a3a7435dcbcdc33417b7ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39637f3b0a7a7bde0ec820738a3dd847"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a39637f3b0a7a7bde0ec820738a3dd847">HasRegInfoForNumericParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID)</td></tr>
+<tr class="memdesc:a39637f3b0a7a7bde0ec820738a3dd847"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Internal SDK use only) Answers whether or not the given parameter's value is determined by a device register.  <a href="#a39637f3b0a7a7bde0ec820738a3dd847">More...</a><br /></td></tr>
+<tr class="separator:a39637f3b0a7a7bde0ec820738a3dd847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bac73a145d7eeee7ff40c6ee6544c79"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a2bac73a145d7eeee7ff40c6ee6544c79">GetRegInfoForBoolParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024">NTV2BoolParamID</a> inParamID, <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo, bool &amp;outFlipSense)</td></tr>
+<tr class="memdesc:a2bac73a145d7eeee7ff40c6ee6544c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Internal SDK use only) Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> for the given parameter.  <a href="#a2bac73a145d7eeee7ff40c6ee6544c79">More...</a><br /></td></tr>
+<tr class="separator:a2bac73a145d7eeee7ff40c6ee6544c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa63e60eb07dbfd99a9fe58f6018a67a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a">GetRegInfoForNumericParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153">NTV2NumericParamID</a> inParamID, <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo)</td></tr>
+<tr class="memdesc:aaa63e60eb07dbfd99a9fe58f6018a67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Internal SDK use only) Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> for the given parameter.  <a href="#aaa63e60eb07dbfd99a9fe58f6018a67a">More...</a><br /></td></tr>
+<tr class="separator:aaa63e60eb07dbfd99a9fe58f6018a67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Device Ownership</div></td></tr>
 <tr class="memitem:a75caa3d5ded7267740053e64047f7f4d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a75caa3d5ded7267740053e64047f7f4d">AcquireStreamForApplicationWithReference</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inAppType, const int32_t inProcessID)</td></tr>
 <tr class="memdesc:a75caa3d5ded7267740053e64047f7f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference-counted version of <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7273301ac687153b0c15c8b2c1065955" title="Reserves exclusive use of the AJA device for a given process, preventing other processes on the host ...">CNTV2DriverInterface::AcquireStreamForApplication</a> useful for process groups.  <a href="#a75caa3d5ded7267740053e64047f7f4d">More...</a><br /></td></tr>
@@ -362,16 +386,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a50cc1bc5b77bee021f13a9cba0be085e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a50cc1bc5b77bee021f13a9cba0be085e">CloseLocalPhysical</a> (void)</td></tr>
 <tr class="memdesc:a50cc1bc5b77bee021f13a9cba0be085e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases host resources associated with the local/physical device connection.  <a href="#a50cc1bc5b77bee021f13a9cba0be085e">More...</a><br /></td></tr>
 <tr class="separator:a50cc1bc5b77bee021f13a9cba0be085e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8f3aef99f96a593962787a7a71cb41"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a3b8f3aef99f96a593962787a7a71cb41">GetBoolParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
-<tr class="separator:a3b8f3aef99f96a593962787a7a71cb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a998b21361a832ef936c456d8470946f5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a998b21361a832ef936c456d8470946f5">GetNumericParam</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inParamID, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outValue)</td></tr>
-<tr class="separator:a998b21361a832ef936c456d8470946f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bac73a145d7eeee7ff40c6ee6544c79"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a2bac73a145d7eeee7ff40c6ee6544c79">GetRegInfoForBoolParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024">NTV2BoolParamID</a> inParamID, <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo, bool &amp;outFlipSense)</td></tr>
-<tr class="memdesc:a2bac73a145d7eeee7ff40c6ee6544c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> of the register associated with the given boolean (i.e., "Can Do") device feature.  <a href="#a2bac73a145d7eeee7ff40c6ee6544c79">More...</a><br /></td></tr>
-<tr class="separator:a2bac73a145d7eeee7ff40c6ee6544c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa63e60eb07dbfd99a9fe58f6018a67a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aaa63e60eb07dbfd99a9fe58f6018a67a">GetRegInfoForNumericParam</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153">NTV2NumericParamID</a> inParamID, <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html">NTV2RegInfo</a> &amp;outRegInfo)</td></tr>
-<tr class="memdesc:aaa63e60eb07dbfd99a9fe58f6018a67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> of the register associated with the given numeric (i.e., "Get Num") device feature.  <a href="#aaa63e60eb07dbfd99a9fe58f6018a67a">More...</a><br /></td></tr>
-<tr class="separator:aaa63e60eb07dbfd99a9fe58f6018a67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc274343c72951f8caf5a346931dd10a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#acc274343c72951f8caf5a346931dd10a">BumpEventCount</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterruptType)</td></tr>
 <tr class="memdesc:acc274343c72951f8caf5a346931dd10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically increments the event count tally for the given interrupt type.  <a href="#acc274343c72951f8caf5a346931dd10a">More...</a><br /></td></tr>
 <tr class="separator:acc274343c72951f8caf5a346931dd10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -473,7 +487,7 @@ Construction, destruction, assignment</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00668">668</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00708">708</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +511,7 @@ Construction, destruction, assignment</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00669">669</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00709">709</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +533,7 @@ Construction, destruction, assignment</h2></td></tr>
 
 <p>My default constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -548,7 +562,7 @@ Construction, destruction, assignment</h2></td></tr>
 
 <p>My destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -603,7 +617,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a86c9b1160fa7aa8a7d52efa7c65331b6">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01182">1182</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01212">1212</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -655,7 +669,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#afd16b63c986272c14670b598e67eb81c">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01109">1109</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01139">1139</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -694,7 +708,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a0d2c4d848350bc21dfe76f7150c1b9e5">CNTV2MacDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ab7611544425bb55d0a12939af058c414">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a54069d9b4994b3777b1181a24cf9248b">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a44909ea4dc3ef0211b16954600c4c746">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00618">618</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00643">643</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -732,7 +746,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00914">914</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00940">940</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -770,7 +784,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00889">889</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00915">915</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -798,7 +812,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00898">898</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00924">924</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -842,7 +856,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00871">871</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00897">897</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -878,7 +892,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01438">1438</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01469">1469</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +924,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false.</dd></dl>
 <p>This function closes any onnection to an AJA device. Once closed, the device can no longer be queried or controlled by this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00251">251</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00276">276</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -942,7 +956,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#ab7f65f6c85fad2f58804e58385b9261f">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab029fc1e96b410b4fbe430f792e0dd5c">CNTV2BareMetalDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#abda712f26733c7025023d4acea65d83c">CNTV2WinDriverInterface</a>, and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a94bf088e58fc3dd3dea72cd29bbd86b0">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00282">282</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00307">307</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -972,7 +986,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Releases host resources associated with the remote/special device connection. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00366">366</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00391">391</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -999,7 +1013,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000190">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000189">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#af4b23da77bec1fdb0af83fab34e6f13b">CNTV2WinDriverInterface</a>.</p>
 
@@ -1043,7 +1057,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a3f5d83a8e3750eb902153f6649ce460a">CNTV2MacDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a8107f043453a36e46e103b0806e9d96e">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ac9cbdbbfbd97ffb38b5eeccf9752a5ec">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#ae972cdf6ca97e07466a0fbbef8b9a2fc">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00417">417</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00442">442</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1103,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#aef874d30c762d6621d35ef305623c240">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a415aedcd4aaa920dd87d0d97e788acf1">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#acc6e990dc863c69a410a38e7cedfa384">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00423">423</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00448">448</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1132,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Const reference to my connection parameters dictionary (currently valid only for remote/software devices). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01317">1317</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01348">1348</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1172,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a69aa37f02e778aaa184d6f16b2c5d98a">CNTV2MacDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a77d0f5fe1e282ec4ab4572a08f1f1819">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#af0426b206439709f27ae62c547dd764f">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a54e3ecf214873c216ed526b49185f34b">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l02004">2004</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l02109">2109</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1258,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a8c6a08b2484ca0864cc1e55b981e76b7">CNTV2MacDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a6c1145dc35dbdd96a9edd1f1a1cd0c6c">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ad07cb5fd812e93a3265c9bf135254ac8">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a4f05c5579c9c26608aee8ac710639a43">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00541">541</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00566">566</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1365,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#ad879443ce58143b7ba88a07d787b9ba3">CNTV2MacDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a72937c1b478637ca36cfe73b80d51049">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a5345683a7117d7cb76abb48bdef1484b">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a0c7f75f05deccbfb58525c2fff342524">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00561">561</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00586">586</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1439,7 +1453,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a6ffeccb4c2e0388bf23cba108f4c32d8">CNTV2MacDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ade4376c725d78263dfafc2fe59edad8e">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab75ec5505d6954fc79b3333521654584">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#af9aa55d4015d553a7b4599b8d8ea47ce">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00584">584</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00609">609</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1466,7 +1480,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000189">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000188">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a7e905491ca23eec46da5c68b7a79b73c">CNTV2WinDriverInterface</a>.</p>
 
@@ -1520,7 +1534,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#aa180b41b8203b989a083fcd88f7b354a">CNTV2WinDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00656">656</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00681">681</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1557,7 +1571,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00865">865</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00891">891</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1602,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 <p>Initializes my member variables after a successful Open. </p>
 <p>defined(NTV2_DEPRECATE_17_2) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00967">967</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00993">993</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1615,7 +1629,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000196">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000195">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00593">593</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
@@ -1650,12 +1664,62 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01704">1704</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p>Answers with the boolean value of the given parameter of interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inParamID</td><td>Specifies the device features parameter of interest. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outValue</td><td>Receives the requested boolean value ('true' == 1, 'false' == 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01735">1735</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a06952629e3259b35e216629c0cf104b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06952629e3259b35e216629c0cf104b5">&#9670;&nbsp;</a></span>GetBoolParamWithDeviceID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CNTV2DriverInterface::GetBoolParamWithDeviceID </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td>
+          <td class="paramname"><em>inParamID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(Internal SDK use only) Answers with the boolean value returned from the appropriate "ntv2devicefeatures.hpp" function using my NTV2DeviceID. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01809">1809</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1686,7 +1750,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#afa6c417763587698a04b344ec4b413f3">CNTV2Card</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01292">1292</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01323">1323</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1715,7 +1779,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The 4-byte value that identifies the kind of AJA device this is. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00444">444</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1851,7 +1915,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a960fe4769b6ac89fe81022d564be98f3">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a7f27054630cadd54ee9c45215a5a2ff8">CNTV2BareMetalDriverInterface</a>, <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a30d47e3399da8cb5c008ad13ca876216">CNTV2LinuxDriverInterface</a>, and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a454a531291b6dd60caab2411805e92ae">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00403">403</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00428">428</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1888,7 +1952,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000192">Deprecated:</a></b></dt><dd>Use version of this function that accepts a non-const reference. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000191">Deprecated:</a></b></dt><dd>Use version of this function that accepts a non-const reference. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00589">589</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
@@ -1918,7 +1982,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00410">410</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1967,7 +2031,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac82a65429ba069196b34f46bbdd72960" title="Resets my interrupt event tally for the given interrupt type. (This is my count of the number of succ...">CNTV2DriverInterface::SetInterruptEventCount</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fldfrmint">Field/Frame Interrupts</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00411">411</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1996,7 +2060,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A list of legal scheme names that can be used to open remote or non-physical devices. (New in SDK 16.0) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2058,12 +2122,62 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01883">1883</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p>Answers with the numeric value of the given parameter of interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inParamID</td><td>Specifies the device features parameter of interest. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outValue</td><td>Receives the requested numeric value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l02008">2008</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5737bdb60c0930a071d8c3dc3739089f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5737bdb60c0930a071d8c3dc3739089f">&#9670;&nbsp;</a></span>GetNumericParamWithDeviceID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CNTV2DriverInterface::GetNumericParamWithDeviceID </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td>
+          <td class="paramname"><em>inParamID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(Internal SDK use only) Answers with the numeric value returned from the appropriate "ntv2devicefeatures.hpp" function using my NTV2DeviceID. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l02025">2025</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2120,7 +2234,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of recorded WriteRegister calls. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01549">1549</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01580">1580</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2185,7 +2299,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if local devices will be opened in overlapped mode; otherwise false. (New in SDK 16.0) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2212,7 +2326,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000194">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000193">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#ae2f58f982c4f0f3f5620bd99037d94e6">CNTV2MacDriverInterface</a>.</p>
 
@@ -2246,7 +2360,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Answers with the recorded register writes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01500">1500</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01531">1531</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2285,12 +2399,12 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> of the register associated with the given boolean (i.e., "Can Do") device feature. </p>
+<p>(Internal SDK use only) Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> for the given parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inParamID</td><td>Specifies the device features parameter of interest. </td></tr>
@@ -2299,9 +2413,9 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful (and the returned <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> is valid); otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01968">1968</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01979">1979</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2334,12 +2448,12 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> of the register associated with the given numeric (i.e., "Get Num") device feature. </p>
+<p>(Internal SDK use only) Answers with the <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> for the given parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inParamID</td><td>Specifies the device features parameter of interest. </td></tr>
@@ -2347,9 +2461,9 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful (and the returned <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> is valid); otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01992">1992</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l02097">2097</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2378,7 +2492,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if local devices will be opened in shared mode; otherwise false. (New in SDK 16.0) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2429,7 +2543,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a38655b587972dd921f6e34bfa259c3df">CNTV2WinDriverInterface</a>, <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#abe7e57ec408497fc3a703ba0ef6cbcea">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ae7caedf5344c27cdde7cc8b040f6ee02">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a9b22c60b42e0ee624b557cb9fb6e657e">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01285">1285</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01316">1316</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2465,7 +2579,67 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 <dl class="section return"><dt>Returns</dt><dd>The supported items. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>vidop-features </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01557">1557</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01588">1588</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af49ead0f6a3a7435dcbcdc33417b7ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49ead0f6a3a7435dcbcdc33417b7ba3">&#9670;&nbsp;</a></span>HasRegInfoForBoolParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CNTV2DriverInterface::HasRegInfoForBoolParam </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td>
+          <td class="paramname"><em>inParamID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(Internal SDK use only) Answers whether or not the given parameter's value is determined by a device register. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00654">654</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+
+</div>
+</div>
+<a id="a39637f3b0a7a7bde0ec820738a3dd847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39637f3b0a7a7bde0ec820738a3dd847">&#9670;&nbsp;</a></span>HasRegInfoForNumericParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CNTV2DriverInterface::HasRegInfoForNumericParam </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td>
+          <td class="paramname"><em>inParamID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(Internal SDK use only) Answers whether or not the given parameter's value is determined by a device register. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00659">659</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2492,7 +2666,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000199">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000198">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a06d7e1ae041f0dd5d3816ef4cda78e59">CNTV2BareMetalDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#aaff359fd4ebe6b76f67641a2c5c13dc0">CNTV2WinDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#ab0ce351fc5edc713083a0d4d4a865841">CNTV2LinuxDriverInterface</a>.</p>
 
@@ -2523,7 +2697,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000182">Deprecated:</a></b></dt><dd>Use IsSupported(kDeviceCanDo25GIP) instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000181">Deprecated:</a></b></dt><dd>Use IsSupported(kDeviceCanDo25GIP) instead </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00126">126</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
@@ -2552,7 +2726,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000198">Deprecated:</a></b></dt><dd>Obsolete, first deprecated in SDK 14.3 when classic Apple QuickTime support was dropped. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000197">Deprecated:</a></b></dt><dd>Obsolete, first deprecated in SDK 14.3 when classic Apple QuickTime support was dropped. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00597">597</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
@@ -2590,7 +2764,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Some devices have processors that require a lot of time (~30 to ~90 seconds) to start up after a PCIe bus reset, power-up or wake from sleep. Calls to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a3aad78899586b66c25caad97bbe86a4f">CNTV2Card::IsOpen</a>, <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a5bebfb895579a15841603f1191b37266" title="Reads all or part of the 32-bit contents of a specific register (real or virtual) on the AJA device...">CNTV2Card::ReadRegister</a> and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#aa996046aa48e6c684fd77d7b1d99bd40" title="Updates or replaces all or part of the 32-bit contents of a specific register (real or virtual) on th...">CNTV2Card::WriteRegister</a> will all succeed, but the device won't be capable of either ingesting or playing video or performing DMA operations. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01446">1446</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01477">1477</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2617,7 +2791,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000181">Deprecated:</a></b></dt><dd>Use IsSupported(kDeviceCanDoIP) instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000180">Deprecated:</a></b></dt><dd>Use IsSupported(kDeviceCanDoIP) instead </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00125">125</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
@@ -2647,7 +2821,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01487">1487</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01518">1518</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2676,7 +2850,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if microblaze system is in ready state; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01482">1482</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01513">1513</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2705,7 +2879,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if microblaze system exists (is valid); otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01477">1477</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01508">1508</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2763,7 +2937,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if WriteRegister calls are currently being recorded (and not paused); otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01527">1527</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01558">1558</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2925,7 +3099,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00947">947</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00973">973</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2952,7 +3126,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000183">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000182">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a8446c3f20011f09b6db5996a34d4ff93">CNTV2WinDriverInterface</a>, <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#aeec7d10616215fc514e46a746d3ad0c7">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a21060c1c7b82f28856d089e448e2d8a0">CNTV2MacDriverInterface</a>, and <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab8516022f95576a4decdfc17d16bff95">CNTV2BareMetalDriverInterface</a>.</p>
 
@@ -2983,7 +3157,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000185">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000184">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#af2198ee77f32ef62ededbbbd022666cd">CNTV2WinDriverInterface</a>, <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#ad6496342aaedc10b66af5597f4fa8c26">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a83fd3dd4a1dd25a93d986aa4af2f9615">CNTV2MacDriverInterface</a>, and <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a1f3185502e7bad68d5d364361cb878e8">CNTV2BareMetalDriverInterface</a>.</p>
 
@@ -3014,7 +3188,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000187">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000186">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a6cba654c553e96eccd3cb839f1223265">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a9d6ebeeaaddb6866f16656292f0b2eaa">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ac48ab7efc94cc6fba537c294388bfb32">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a71e6fed4718c1991895a388f4d5d3a54">CNTV2MacDriverInterface</a>.</p>
 
@@ -3086,7 +3260,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a62da2a5b03f3dd2cecd4b0aacf288ef8">CNTV2MacDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a2410bc442872a1319620d277e26bcc0f">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a3f09f3344fce1ee7552eb35d081344a8">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a4ee2442ad3b031b6a92da24f89e355cb">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00643">643</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00668">668</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3124,7 +3298,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Before attempting the Open, if I'm currently open, Close will be called first. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3192,7 +3366,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Reimplemented in <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#aec964f2e595f0e88a3e00b8773b1d42d">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#af37babdb40805d7e72830a8cc94862f3">CNTV2BareMetalDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#add299287dc5fd31f7cf5272ae034d32f">CNTV2WinDriverInterface</a>, and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a19eb88d95ca9594154fc94b393080811">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00271">271</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00296">296</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3229,7 +3403,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00302">302</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00327">327</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3257,7 +3431,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01000">1000</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01026">1026</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3287,7 +3461,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 
 <p>Pauses recording WriteRegister calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01540">1540</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01571">1571</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3324,7 +3498,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000191">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000190">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#aa59354a9c7c540136f7fb3f6c3d5e506">CNTV2WinDriverInterface</a>.</p>
 
@@ -3372,7 +3546,7 @@ A call to <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01066">1066</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01092">1092</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3439,7 +3613,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ad6acd841ea9c9e9df2478418b2a78f9b">CNTV2WinDriverInterface</a>, <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a5bebfb895579a15841603f1191b37266">CNTV2MacDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a5e9dcee7b2a452e20fb0d303ff3b5035">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a890f3f3ed668d7343c59bfdba9b82eba">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00462">462</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00487">487</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3549,9 +3723,9 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000193">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1bd96af01b57b79caf296fe26ea3c300" title="Reads the register(s) specified by the given NTV2RegInfo sequence. ">CNTV2DriverInterface::ReadRegisters</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000192">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1bd96af01b57b79caf296fe26ea3c300" title="Reads the register(s) specified by the given NTV2RegInfo sequence. ">CNTV2DriverInterface::ReadRegisters</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00496">496</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00521">521</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3589,7 +3763,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 <dl class="section return"><dt>Returns</dt><dd>True only if all registers were read successfully; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This operation is not guaranteed to be performed atomically. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00473">473</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00498">498</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3627,7 +3801,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01328">1328</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01359">1359</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3679,7 +3853,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a370f24dd8c322dd3caceb233d4668ff3">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01233">1233</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01264">1264</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3731,7 +3905,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a32bf275d4fec0d8aec79d1ef0000da26">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01161">1161</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01191">1191</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3789,7 +3963,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Resumes recording WriteRegister calls (after a prior call to PauseRecordRegisterWrites). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01518">1518</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01549">1549</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3816,7 +3990,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000197">Deprecated:</a></b></dt><dd>Obsolete, first deprecated in SDK 14.3 when classic Apple QuickTime support was dropped. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000196">Deprecated:</a></b></dt><dd>Obsolete, first deprecated in SDK 14.3 when classic Apple QuickTime support was dropped. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00596">596</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
@@ -3846,7 +4020,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01091">1091</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01117">1117</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3895,7 +4069,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7f5ec3efe407a835c684d9dd47c79fce" title="Answers with the number of interrupt events that I successfully waited for. ">CNTV2DriverInterface::GetInterruptEventCount</a>, <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fldfrmint">Field/Frame Interrupts</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00395">395</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00420">420</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3932,7 +4106,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -3969,7 +4143,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4021,7 +4195,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Reimplemented in <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a0e7df2ec68f90742fe54a023bb4b0b9b">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01250">1250</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01281">1281</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4048,9 +4222,9 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000195">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. Use <a class="el" href="../../da/dbc/class_a_j_a_time.html#a0f93f3d15d35adb657fc1756cebd56e9" title="Suspends execution of the current thread for a given number of milliseconds. ">AJATime::Sleep</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000194">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. Use <a class="el" href="../../da/dbc/class_a_j_a_time.html#a0f93f3d15d35adb657fc1756cebd56e9" title="Suspends execution of the current thread for a given number of milliseconds. ">AJATime::Sleep</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00517">517</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00542">542</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4080,7 +4254,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Starts recording all WriteRegister calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01507">1507</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01538">1538</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4110,7 +4284,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Stops recording all WriteRegister calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01533">1533</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l01564">1564</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4166,7 +4340,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00933">933</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00959">959</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4210,7 +4384,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00923">923</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00949">949</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4265,7 +4439,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000184">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000183">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a11cd35701dc7fa584ae01c81da366d49">CNTV2WinDriverInterface</a>, <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a20b1bc2d622f033c1530322454f0d826">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#aa2c57c0b882b97802f2c21d9202bd466">CNTV2MacDriverInterface</a>, and <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a05afc5684bd8f7069e8c7d69727ad893">CNTV2BareMetalDriverInterface</a>.</p>
 
@@ -4296,7 +4470,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000186">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000185">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a2d7d39763a6f804381b5bcbc04b8be9d">CNTV2WinDriverInterface</a>, <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a7416a53c16df3539b0a985c4b2699174">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#aa7c6c1c40b808f9eeb26cb558d3e5cf6">CNTV2MacDriverInterface</a>, and <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a256c34d9cd1ca5ed897d2e38a255c2b4">CNTV2BareMetalDriverInterface</a>.</p>
 
@@ -4327,7 +4501,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000188">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000187">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#ab64212784488a41009972cccffc2761a">CNTV2LinuxDriverInterface</a>, <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#aa020f1e8c69dda6a61bb9071fde0908a">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a48120142c66a7d9ee709c5de92dc02b6">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a8ce8e9c07d980c7a370bf0e82e71b2c7">CNTV2MacDriverInterface</a>.</p>
 
@@ -4371,7 +4545,7 @@ The mask and shift parameters are ignored when reading a virtual register. </dd>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#adc74f2afb5b4b77462e03008450fd099">CNTV2WinDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a763f84f1f31ad3444bd40b68fe2364a4">CNTV2BareMetalDriverInterface</a>, <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#a6400c1ed44d7ff71cf703368803f7b1f">CNTV2LinuxDriverInterface</a>, and <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#a3b7f5653a5a379f3f73f55e760154fe9">CNTV2MacDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00605">605</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00630">630</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4439,7 +4613,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>Reimplemented in <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a673dd18d808e4624d58610c36663bf10">CNTV2WinDriverInterface</a>, <a class="el" href="../../dc/dfc/class_c_n_t_v2_mac_driver_interface.html#aa996046aa48e6c684fd77d7b1d99bd40">CNTV2MacDriverInterface</a>, <a class="el" href="../../d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#acc11bba2d2d6601359fff76a4bb2a6a4">CNTV2BareMetalDriverInterface</a>, and <a class="el" href="../../de/d6b/class_c_n_t_v2_linux_driver_interface.html#ab5bbf82d4f6a8f7e1af3f5d10aaf5f57">CNTV2LinuxDriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00526">526</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html#l00551">551</a> of file <a class="el" href="../../de/d85/ntv2driverinterface_8cpp_source.html">ntv2driverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -4466,7 +4640,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>My cached device ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00676">676</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00716">716</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4492,7 +4666,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>My device index number. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00675">675</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00715">715</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4518,7 +4692,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>True if I'm open and connected to the device. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00677">677</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00717">717</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4541,9 +4715,9 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000204">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000203">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00695">695</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00735">735</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4566,9 +4740,9 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000205">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000204">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00696">696</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00736">736</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4594,7 +4768,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>defined(NTV2_DEPRECATE_17_2) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00703">703</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00743">743</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4617,9 +4791,9 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000200">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000199">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00691">691</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00731">731</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4642,9 +4816,9 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000201">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000200">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00692">692</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00732">732</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4667,9 +4841,9 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000202">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000201">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00693">693</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00733">733</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4693,7 +4867,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00682">682</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00722">722</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4719,7 +4893,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>Points to remote or software device interface; otherwise NULL for local physical device. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00683">683</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00723">723</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4742,9 +4916,9 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000203">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000202">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00694">694</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00734">734</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4768,7 +4942,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00700">700</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00740">740</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4792,7 +4966,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00699">699</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00739">739</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4818,7 +4992,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>My event tallies, one for each interrupt type. Note that these. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00685">685</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00725">725</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4844,7 +5018,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>For subscribing to each possible event, one for each interrupt type. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00684">684</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00724">724</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4870,7 +5044,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>True if recording; otherwise false when not recording. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00679">679</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00719">719</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4896,7 +5070,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>Stores WriteRegister data. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00687">687</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00727">727</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4922,7 +5096,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>Guard mutex for mRegWrites. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00688">688</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00728">728</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4948,7 +5122,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 
 <p>True if actual register writes are skipped while recording. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00680">680</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html#l00720">720</a> of file <a class="el" href="../../d4/dc0/ntv2driverinterface_8h_source.html">ntv2driverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -4962,7 +5136,7 @@ The mask and shift parameters are ignored when setting a virtual register. </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html">CNTV2DriverInterface</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:28 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:13 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

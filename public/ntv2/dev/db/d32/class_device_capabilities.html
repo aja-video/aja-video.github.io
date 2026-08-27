@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -91,13 +91,14 @@ $(document).ready(function(){initNavTree('db/d32/class_device_capabilities.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../de/d4b/class_device_capabilities-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DeviceCapabilities Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Convenience class/API for inquiring about device capabilities of physical and virtual devices. Instead of calling the old global ::NTV2DeviceCanDoXXX(mDeviceID) functions, call mCard.features().CanDoXXX(). Instead of calling ::NTV2DeviceGetNumYYY(mDeviceID), call mCard.features().GetNumYYY().  
+<p>Convenience class/API for inquiring about device capabilities of physical and virtual devices.  
  <a href="../../db/d32/class_device_capabilities.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>&gt;</code></p>
@@ -166,6 +167,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4a6da8f00debbc8df9397600681536b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa95eb2c0cf771f1cc9140e59ec1bf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a2fa95eb2c0cf771f1cc9140e59ec1bf2">CanDoCapture</a> (void)</td></tr>
 <tr class="separator:a2fa95eb2c0cf771f1cc9140e59ec1bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1e7a76014425ab7666f0ed1d198590"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#afb1e7a76014425ab7666f0ed1d198590">CanDoClockMonitor</a> (void)</td></tr>
+<tr class="separator:afb1e7a76014425ab7666f0ed1d198590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5deb8e3bc14ea2f3e0a40d702c8af5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#aa5deb8e3bc14ea2f3e0a40d702c8af5a">CanDoColorCorrection</a> (void)</td></tr>
 <tr class="separator:aa5deb8e3bc14ea2f3e0a40d702c8af5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448cf4df5764ec99776f014eaf2fee54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a448cf4df5764ec99776f014eaf2fee54">CanDoCustomAnc</a> (void)</td></tr>
@@ -180,6 +183,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a542fd4c1c5f4d3183464fdcb71642252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5a263d91d7874ac1f3161d6507bcdc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#ab5a263d91d7874ac1f3161d6507bcdc6">CanDoEnhancedCSC</a> (void)</td></tr>
 <tr class="separator:ab5a263d91d7874ac1f3161d6507bcdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5790ff9f9ad250b2b297e11c92c862d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a5790ff9f9ad250b2b297e11c92c862d2">CanDoFastBitfileSwitching</a> (void)</td></tr>
+<tr class="separator:a5790ff9f9ad250b2b297e11c92c862d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a582f2920d3d9bd82092ad3e1b1711c9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a582f2920d3d9bd82092ad3e1b1711c9c">CanDoFramePulseSelect</a> (void)</td></tr>
 <tr class="separator:a582f2920d3d9bd82092ad3e1b1711c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b7a2ea6feff3f5159d25ce411673864"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a4b7a2ea6feff3f5159d25ce411673864">CanDoFrameStore1Display</a> (void)</td></tr>
@@ -332,22 +337,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a85d7e846ae2bd0a8d8ea2e9fbd610838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b08242ab086b9ea56032b4c3c0f53cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a5b08242ab086b9ea56032b4c3c0f53cc">HasSPIFlashSerial</a> (void)</td></tr>
 <tr class="separator:a5b08242ab086b9ea56032b4c3c0f53cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add9b7bc3e9b44e8b06d434f439d989fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#add9b7bc3e9b44e8b06d434f439d989fc">HasSPIv2</a> (void)</td></tr>
-<tr class="separator:add9b7bc3e9b44e8b06d434f439d989fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44119d65792da4fedb30ff5081f78d98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a44119d65792da4fedb30ff5081f78d98">HasSPIv3</a> (void)</td></tr>
-<tr class="separator:a44119d65792da4fedb30ff5081f78d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd67dcab036cd1ea26162d73719c1a4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#abd67dcab036cd1ea26162d73719c1a4d">HasSPIv4</a> (void)</td></tr>
-<tr class="separator:abd67dcab036cd1ea26162d73719c1a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeade3c6ab2588a9d061a1a2851caed27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#aeade3c6ab2588a9d061a1a2851caed27">HasSPIv5</a> (void)</td></tr>
-<tr class="separator:aeade3c6ab2588a9d061a1a2851caed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35dfc58de8fd488ae4530e6ce2ebaa22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a35dfc58de8fd488ae4530e6ce2ebaa22">HasXilinxDMA</a> (void)</td></tr>
 <tr class="separator:a35dfc58de8fd488ae4530e6ce2ebaa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf526a3cb1b55d351505274a691b7b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a4cf526a3cb1b55d351505274a691b7b6">Is64Bit</a> (void)</td></tr>
 <tr class="separator:a4cf526a3cb1b55d351505274a691b7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a3bff807fc9bb33320528a275b59609"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a8a3bff807fc9bb33320528a275b59609">IsDirectAddressable</a> (void)</td></tr>
 <tr class="separator:a8a3bff807fc9bb33320528a275b59609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1049e3d02cdd2fa2527bf370895fe60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#ac1049e3d02cdd2fa2527bf370895fe60">IsDNxIV</a> (void)</td></tr>
-<tr class="separator:ac1049e3d02cdd2fa2527bf370895fe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50038f8146f8f8428ad7b099d1846402"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a50038f8146f8f8428ad7b099d1846402">IsExternalToHost</a> (void)</td></tr>
 <tr class="separator:a50038f8146f8f8428ad7b099d1846402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99831516079a455e9e9859d49ff1e18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#af99831516079a455e9e9859d49ff1e18">IsLocalPhysical</a> (void)</td></tr>
@@ -450,8 +445,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5ef1b19184652d6b4163786f9831be20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c77aef11a7ce929cc3d9343f485c01c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a3c77aef11a7ce929cc3d9343f485c01c">GetNumUpConverters</a> (void)</td></tr>
 <tr class="separator:a3c77aef11a7ce929cc3d9343f485c01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7098a134fe25f259ec95d5cd4bcf718a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a7098a134fe25f259ec95d5cd4bcf718a">GetNumVideoChannels</a> (void)</td></tr>
-<tr class="separator:a7098a134fe25f259ec95d5cd4bcf718a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60faf37685eaf9a1a6cecd72d26688e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a60faf37685eaf9a1a6cecd72d26688e7">GetNumVideoInputs</a> (void)</td></tr>
 <tr class="separator:a60faf37685eaf9a1a6cecd72d26688e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcbbac0434886e330cc2e3d9666a3729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#adcbbac0434886e330cc2e3d9666a3729">GetNumVideoOutputs</a> (void)</td></tr>
@@ -501,12 +494,46 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea39497e521ee1ea6496acc04640c610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6579f9960b1e980cd736f7f36b89c016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a6579f9960b1e980cd736f7f36b89c016">CanDoAudioSampleRate</a> (const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a7100bd510ea6161e94c7b243d05be9af">NTV2AudioRate</a> inRate)</td></tr>
 <tr class="separator:a6579f9960b1e980cd736f7f36b89c016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9b7bc3e9b44e8b06d434f439d989fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#add9b7bc3e9b44e8b06d434f439d989fc">HasSPIv2</a> (void)</td></tr>
+<tr class="separator:add9b7bc3e9b44e8b06d434f439d989fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44119d65792da4fedb30ff5081f78d98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a44119d65792da4fedb30ff5081f78d98">HasSPIv3</a> (void)</td></tr>
+<tr class="separator:a44119d65792da4fedb30ff5081f78d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd67dcab036cd1ea26162d73719c1a4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#abd67dcab036cd1ea26162d73719c1a4d">HasSPIv4</a> (void)</td></tr>
+<tr class="separator:abd67dcab036cd1ea26162d73719c1a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeade3c6ab2588a9d061a1a2851caed27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#aeade3c6ab2588a9d061a1a2851caed27">HasSPIv5</a> (void)</td></tr>
+<tr class="separator:aeade3c6ab2588a9d061a1a2851caed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1049e3d02cdd2fa2527bf370895fe60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#ac1049e3d02cdd2fa2527bf370895fe60">IsDNxIV</a> (void)</td></tr>
+<tr class="separator:ac1049e3d02cdd2fa2527bf370895fe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7098a134fe25f259ec95d5cd4bcf718a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a7098a134fe25f259ec95d5cd4bcf718a">GetNumVideoChannels</a> (void)</td></tr>
+<tr class="separator:a7098a134fe25f259ec95d5cd4bcf718a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5c26a1ee9224fb215df3f82e4c60fdc1"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a5c26a1ee9224fb215df3f82e4c60fdc1">BoolParamIDToString</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024">NTV2BoolParamID</a> p)</td></tr>
+<tr class="separator:a5c26a1ee9224fb215df3f82e4c60fdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe4508c3de3c790f337a6858a4e7cb2"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#acbe4508c3de3c790f337a6858a4e7cb2">NumParamIDToString</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153">NTV2NumericParamID</a> p)</td></tr>
+<tr class="separator:acbe4508c3de3c790f337a6858a4e7cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace2e0be012d438167c8d08fd980140b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#aace2e0be012d438167c8d08fd980140b">EnumsIDToString</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de">NTV2EnumsID</a> p)</td></tr>
+<tr class="separator:aace2e0be012d438167c8d08fd980140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bbd10a73221a735036315e25c9d316"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024">NTV2BoolParamID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#ab8bbd10a73221a735036315e25c9d316">StringToBoolParamID</a> (std::string s)</td></tr>
+<tr class="separator:ab8bbd10a73221a735036315e25c9d316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581329f45204779550326c39697462c6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153">NTV2NumericParamID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a581329f45204779550326c39697462c6">StringToNumParamID</a> (std::string s)</td></tr>
+<tr class="separator:a581329f45204779550326c39697462c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24db117f2e044d588b4d669bd87f6b6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de">NTV2EnumsID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#ad24db117f2e044d588b4d669bd87f6b6">StringToEnumsParamID</a> (std::string s)</td></tr>
+<tr class="separator:ad24db117f2e044d588b4d669bd87f6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a70cafb9e75d0f294b33a6597b64c2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/class_device_capabilities.html#a40a70cafb9e75d0f294b33a6597b64c2">StringToSupportedEnumsIDValue</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outVal, const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de">NTV2EnumsID</a> id, std::string s)</td></tr>
+<tr class="separator:a40a70cafb9e75d0f294b33a6597b64c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Convenience class/API for inquiring about device capabilities of physical and virtual devices. Instead of calling the old global ::NTV2DeviceCanDoXXX(mDeviceID) functions, call mCard.features().CanDoXXX(). Instead of calling ::NTV2DeviceGetNumYYY(mDeviceID), call mCard.features().GetNumYYY(). </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/dc5/ntv2devops.html#vidop-features">Device Features</a> </dd></dl>
+<div class="textblock"><p>Convenience class/API for inquiring about device capabilities of physical and virtual devices. </p>
+<ul>
+<li>Instead of calling the old global ::NTV2DeviceCanDoXXX(deviceID) functions, call card.features().CanDoXXX().</li>
+<li>Instead of calling ::NTV2DeviceGetNumYYY(deviceID), call card.features().GetNumYYY().</li>
+<li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aa8c389406829aa571afcc2d6150f3ccc">CNTV2DriverInterface::GetSupportedItems</a> to obtain a list of supported video or pixel formats, frame rates, etc. <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/dc5/ntv2devops.html#vidop-features">Device Features</a> </dd></dl>
+</li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00020">20</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00024">24</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e45015cae0ca49ec50039e3fff46c9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e45015cae0ca49ec50039e3fff46c9d">&#9670;&nbsp;</a></span>DeviceCapabilities()</h2>
@@ -532,7 +559,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00023">23</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00027">27</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -566,6 +593,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5c26a1ee9224fb215df3f82e4c60fdc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c26a1ee9224fb215df3f82e4c60fdc1">&#9670;&nbsp;</a></span>BoolParamIDToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DeviceCapabilities::BoolParamIDToString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024">NTV2BoolParamID</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00612">612</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa1da9774323cf38ed997e90d916c0efa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1da9774323cf38ed997e90d916c0efa">&#9670;&nbsp;</a></span>CanChangeEmbeddedAudioClock()</h2>
 
@@ -591,7 +646,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if SDI input audio system clock can optionally use reference </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00025">25</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00029">29</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +675,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if frame buffer sizes are not fixed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00026">26</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00030">30</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +704,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if there's at least one UFC, and it can be disabled </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00027">27</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00031">31</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -678,7 +733,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 6G/12G routing crosspoints </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00028">28</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00032">32</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +762,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has 6G/12G capable SDI connector(s) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00029">29</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00033">33</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -736,7 +791,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports SMPTE ST2110 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00030">30</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00034">34</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -765,7 +820,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has 25Gbps SFP network connectors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00074">74</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00080">80</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +849,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can handle 2Kx1556 (film format) video </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00031">31</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00035">35</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -823,7 +878,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can do 3G level B to 3G level A conversion </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00032">32</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00036">36</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -852,7 +907,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports SMPTE 425 mux control </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00033">33</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00037">37</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -881,7 +936,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 4K/UHD video </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00034">34</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00038">38</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -910,7 +965,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 8K/UHD2 video formats </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00035">35</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00039">39</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +994,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any AES audio input(s) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00036">36</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00040">40</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -968,7 +1023,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any AES audio output(s) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00037">37</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00041">41</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -997,7 +1052,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any analog audio inputs or outputs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00038">38</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00042">42</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1081,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any analog video inputs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00039">39</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00043">43</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1110,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any analog video outputs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00040">40</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00044">44</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1139,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device audio system(s) support a 192kHz sample rate </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00041">41</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00045">45</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1168,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if audio system(s) support 2 or more audio channels </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00042">42</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00046">46</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1197,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if audio system(s) support 6 or more audio channels </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00043">43</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00047">47</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1226,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if audio system(s) support 8 or more audio channels </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00044">44</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00048">48</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1255,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device audio system(s) support a 96kHz sample rate </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00045">45</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00049">49</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1229,7 +1284,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if audio system(s) support an adjustable delay </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00046">46</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00050">50</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1313,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any audio input capability (SDI, HDMI, AES or analog) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00047">47</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00051">51</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1287,7 +1342,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has an audio mixer </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00048">48</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00052">52</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1316,7 +1371,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any audio output capability (SDI, HDMI, AES or analog) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00049">49</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00053">53</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1435,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device audio systems support delaying start until VBI </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00050">50</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00054">54</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1464,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports an AJA breakout board </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00051">51</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00055">55</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1438,7 +1493,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports an AJA breakout box </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00052">52</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00056">56</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1467,7 +1522,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any SDI, HDMI or analog video inputs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00053">53</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00057">57</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1506,6 +1561,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afb1e7a76014425ab7666f0ed1d198590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1e7a76014425ab7666f0ed1d198590">&#9670;&nbsp;</a></span>CanDoClockMonitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DeviceCapabilities::CanDoClockMonitor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if device can report genlock frequencies </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00058">58</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+
+</div>
+</div>
 <a id="aa5deb8e3bc14ea2f3e0a40d702c8af5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5deb8e3bc14ea2f3e0a40d702c8af5a">&#9670;&nbsp;</a></span>CanDoColorCorrection()</h2>
 
@@ -1531,7 +1615,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any LUTs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00054">54</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00059">59</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1595,7 +1679,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has SDI ANC inserter/extractor firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00055">55</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00060">60</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1708,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports custom HANC packet insertion </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00056">56</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00061">61</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1688,7 +1772,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device mixer/keyer supports adjustable opacity </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00057">57</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00062">62</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1801,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 10-bit RGB input/output over 2-wire SDI </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00058">58</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00063">63</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1746,7 +1830,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can squeeze/stretch between 1920x1080/1280x1080 and 1280x720/960x720 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00059">59</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00064">64</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1859,36 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has enhanced CSCs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00060">60</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00065">65</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+
+</div>
+</div>
+<a id="a5790ff9f9ad250b2b297e11c92c862d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5790ff9f9ad250b2b297e11c92c862d2">&#9670;&nbsp;</a></span>CanDoFastBitfileSwitching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DeviceCapabilities::CanDoFastBitfileSwitching </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if device supports fast bitfile switching </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00066">66</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1839,7 +1952,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports frame pulse source independent of reference source </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00061">61</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00067">67</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1868,7 +1981,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can display/output video from FrameStore 1 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00062">62</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00068">68</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1897,7 +2010,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has GPIO interface </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00063">63</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00069">69</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1926,7 +2039,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has HDMI AUX data extractor(s) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00064">64</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00070">70</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1955,7 +2068,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has HDMI AUX data inserter(s) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00065">65</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00071">71</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -1984,7 +2097,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports HDMI HDR output </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00066">66</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00072">72</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2013,7 +2126,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can rasterize 4 HD signals into a single HDMI output </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00067">67</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00073">73</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2042,7 +2155,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 3D/stereo HDMI video output </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00068">68</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00074">74</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +2184,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if HDMI in/out supports square-division (quad) raster conversion </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00069">69</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00075">75</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2100,7 +2213,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can squeeze/stretch between 1920x1080 and 1440x1080 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00070">70</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00076">76</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2129,7 +2242,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can handle HD (High Definition) video </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00071">71</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00077">77</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2158,7 +2271,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 1080p RGB at more than 50fps </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00072">72</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00078">78</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2257,7 +2370,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has SFP network connectors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00073">73</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00079">79</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2286,7 +2399,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can do ISO conversion </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00075">75</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00081">81</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2315,7 +2428,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports JPEG 2000 codec </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00076">76</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00082">82</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2344,7 +2457,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any LTC (Linear TimeCode) inputs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00077">77</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00083">83</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2373,7 +2486,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can read LTC (Linear TimeCode) from its reference input </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00078">78</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00084">84</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2402,7 +2515,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device DMA hardware supports MSI (Message Signaled Interrupts) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00079">79</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00085">85</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2431,7 +2544,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device FrameStores can independently accommodate different video formats </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00080">80</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00086">86</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2460,7 +2573,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports grouped audio system control </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00081">81</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00087">87</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2559,7 +2672,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can directly receive data from another PCIe device via peer-to-peer DMA. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00083">83</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00089">89</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2588,7 +2701,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can directly transmit data to another PCIe device via peer-to-peer DMA. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00082">82</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00088">88</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2617,7 +2730,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can mark specific audio channel pairs as not carrying LPCM </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00084">84</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00090">90</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2646,7 +2759,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can detect which audio channel pairs are not carrying LPCM </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00085">85</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00091">91</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2675,7 +2788,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports programmed I/O </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00086">86</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00092">92</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2734,7 +2847,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has any SDI, HDMI or analog video outputs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00087">87</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00093">93</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2763,7 +2876,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has at least one RS-422 serial port that can be programmed (for baud rate, parity, etc.) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00088">88</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00094">94</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2792,7 +2905,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device FrameStore(s) will read/write Apple ProRes-compressed video </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00089">89</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00095">95</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2821,7 +2934,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can handle QRez </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00090">90</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00096">96</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2850,7 +2963,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device FrameStores will pixel-halve/line-halve on input, pixel-double/line-double on output </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00091">91</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00097">97</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2879,7 +2992,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can do frame rate conversion </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00092">92</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00098">98</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2908,7 +3021,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if the device can do RGB over 3G Level A </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00093">93</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00099">99</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2937,7 +3050,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has CSCs capable of splitting the key &amp; fill from RGB frame buffers (unrelated to RGB SDI wire formats) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00094">94</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00100">100</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2966,7 +3079,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can insert and/or extract SMPTE 12M (RP-188/VITC) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00095">95</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00101">101</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -2995,7 +3108,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has SDI inputs and can report errors (CRC, TRS, etc.) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00096">96</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00102">102</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3024,7 +3137,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can handle standard definition video </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00097">97</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00103">103</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3053,7 +3166,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device uses a "stacked" arrangement of its audio buffers </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00098">98</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00104">104</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3082,7 +3195,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 3D/Stereo video input over dual-stream SDI </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00099">99</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00105">105</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3111,7 +3224,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 3D/Stereo video output over dual-stream SDI </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00100">100</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00106">106</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3140,7 +3253,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports streaming DMA </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00101">101</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00107">107</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3169,7 +3282,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device connects to the host via a Thunderbolt cable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00102">102</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00108">108</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3233,7 +3346,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can do video processing </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00103">103</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00109">109</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3262,7 +3375,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can insert or extract SMPTE 12M RP-188/VITC2 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00104">104</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00110">110</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3291,7 +3404,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can warm-boot to load updated firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00105">105</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00111">111</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3364,7 +3477,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the device firmware implements the given widget; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00598">598</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00601">601</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -3393,7 +3506,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can measure its FPGA die temperature </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00106">106</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00112">112</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3422,7 +3535,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can report if its "fail-safe" firmware is loaded/running </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00107">107</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00113">113</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3451,7 +3564,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can report its intrinsic frame size </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00108">108</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00114">114</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3480,7 +3593,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can report Mixer delay </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00109">109</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00115">115</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3509,7 +3622,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device can report its running (and not necessarily installed) firmware date </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00110">110</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00116">116</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3538,7 +3651,35 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device fan can be thermostatically controlled </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00111">111</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00117">117</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+
+</div>
+</div>
+<a id="aace2e0be012d438167c8d08fd980140b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace2e0be012d438167c8d08fd980140b">&#9670;&nbsp;</a></span>EnumsIDToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DeviceCapabilities::EnumsIDToString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de">NTV2EnumsID</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00822">822</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -3567,7 +3708,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The size, in bytes, of the device's active RAM available for video and audio </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00152">152</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00153">153</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3596,7 +3737,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The version number of the DAC on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00153">153</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00154">154</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3625,7 +3766,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The down-converter delay on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00154">154</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00155">155</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3654,7 +3795,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The version number of the device genlock hardware/firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00155">155</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00156">156</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3683,7 +3824,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The version number of the HDMI chipset on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00156">156</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00157">157</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3712,7 +3853,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The version number of the LUT(s) on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00157">157</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00158">158</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3741,7 +3882,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The maximum number of audio channels that an Audio System will accommodate on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00159">159</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00160">160</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3770,7 +3911,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The highest NTV2 register number used on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00160">160</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00161">161</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3799,7 +3940,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The maximum number of 32-bit words a DMA engine on the device can transfer in one operation </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00161">161</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00162">162</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3828,7 +3969,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of SMPTE 2022 channels configured on SFP 1 on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00162">162</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00163">163</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3857,7 +3998,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of SMPTE 2022 channels configured on SFP 2 on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00163">163</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00164">164</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3886,7 +4027,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of 25Gbps SFPs on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00164">164</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00165">165</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3915,7 +4056,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of quarter-size 4K/UHD down-converters on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00165">165</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00166">166</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3944,7 +4085,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of AES/EBU audio input channels on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00166">166</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00167">167</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -3973,7 +4114,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of AES/EBU audio output channels on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00167">167</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00168">168</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4002,7 +4143,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of analog audio input channels on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00168">168</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00169">169</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4031,7 +4172,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of analog audio output channels on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00169">169</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00170">170</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4060,7 +4201,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of analog video inputs on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00170">170</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00171">171</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4089,7 +4230,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of analog video outputs on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00171">171</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00172">172</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4118,7 +4259,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of independent Audio Systems on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00172">172</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00173">173</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4176,7 +4317,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of cross-converters on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00173">173</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00174">174</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4205,7 +4346,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of colorspace converter widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00174">174</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00175">175</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4234,7 +4375,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of DMA engines on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00175">175</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00176">176</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4263,7 +4404,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of down-converters on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00176">176</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00177">177</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4292,7 +4433,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of SDI embedded input audio channels supported by the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00177">177</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00178">178</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4321,7 +4462,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of SDI embedded output audio channels supported by the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00178">178</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00179">179</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4350,7 +4491,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of FrameStore widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00179">179</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00180">180</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4379,7 +4520,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of frame sync widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00180">180</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00181">181</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4408,7 +4549,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of HDMI audio input channels on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00181">181</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00182">182</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4437,7 +4578,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of HDMI audio output channels on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00182">182</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00183">183</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4466,7 +4607,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of HDMI video input connectors on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00183">183</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00184">184</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4495,7 +4636,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of HDMI video output connectors on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00184">184</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00185">185</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4524,7 +4665,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of input converter widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00185">185</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00186">186</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4553,7 +4694,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of analog LTC input connectors on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00186">186</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00187">187</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4582,7 +4723,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of analog LTC output connectors on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00187">187</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00188">188</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4611,7 +4752,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of LUT banks on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00188">188</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00189">189</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4640,7 +4781,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of LUT widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00189">189</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00190">190</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4669,7 +4810,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of microphone input connectors on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00190">190</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00191">191</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4698,7 +4839,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of Mixer/Keyer widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00191">191</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00192">192</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4727,7 +4868,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of output converter widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00192">192</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00193">193</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4756,7 +4897,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of external reference input connectors on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00193">193</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00194">194</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4785,7 +4926,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of RS-422 serial port connectors on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00194">194</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00195">195</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4814,7 +4955,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of TSI Mux/Demux widgets on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00195">195</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00196">196</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4843,7 +4984,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of up-converters on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00196">196</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00197">197</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4872,7 +5013,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000131">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a29f7c7d276cdac5256baf74e12597d04">DeviceCapabilities::GetNumFrameStores</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00197">197</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00373">373</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -4988,7 +5129,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The version number of the SPI-flash chipset used on the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00158">158</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00159">159</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5075,7 +5216,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a pair of unbalanced RCA audio monitor output connectors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00112">112</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00118">118</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5104,7 +5245,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a bi-directional analog audio connector </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00113">113</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00119">119</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5133,7 +5274,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has bi-directional SDI connectors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00114">114</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00120">120</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5162,7 +5303,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has LED(s) on the card bracket </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00115">115</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00121">121</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5191,7 +5332,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has attached/connected breakout board </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00116">116</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00122">122</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5220,7 +5361,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a second colorspace converter widget (NTV2_WgtCSC2) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00117">117</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00123">123</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5249,7 +5390,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a crosspoint connection ROM </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00118">118</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00124">124</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5278,7 +5419,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has version 2 genlock hardware and/or firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00119">119</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00125">125</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5307,7 +5448,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has version 3 genlock hardware and/or firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00120">120</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00126">126</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5336,7 +5477,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a headphone jack </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00121">121</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00127">127</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5365,7 +5506,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has an HEVC M30 encoder/decoder </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00122">122</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00128">128</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5394,7 +5535,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has an HEVC M31 encoder/decoder </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00123">123</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00129">129</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5423,7 +5564,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a mechanical identification switch </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00124">124</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00130">130</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5452,7 +5593,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has LED audio meters </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00125">125</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00131">131</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5481,7 +5622,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a local proc handling the product code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00126">126</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00132">132</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5510,7 +5651,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a microphone input connector </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00127">127</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00133">133</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5539,7 +5680,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device FrameStores are implemented with NTV4 firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00128">128</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00134">134</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5568,7 +5709,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has NorthWest Logic DMA hardware and/or firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00129">129</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00135">135</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5597,7 +5738,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device supports 2nd-generation PCIe </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00130">130</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00136">136</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5626,7 +5767,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a cooling fan that's controlled using pulse-width-modulation (PWM) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00131">131</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00137">137</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5655,7 +5796,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device is supported by AJA "retail" software (AJA ControlPanel &amp; ControlRoom) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00132">132</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00138">138</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5684,7 +5825,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has a rotary encoder control knob </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00133">133</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00139">139</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5713,7 +5854,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has bypass relays on its SDI connectors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00134">134</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00140">140</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5742,7 +5883,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has SPI flash hardware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00135">135</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00141">141</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5771,7 +5912,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has serial SPI flash hardware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00136">136</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00142">142</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5800,7 +5941,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000126">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a6626ff1217c5cabf0b3d9f21add14dc8">DeviceCapabilities::GetSPIFlashVersion</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00137">137</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00368">368</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5829,7 +5970,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000127">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a6626ff1217c5cabf0b3d9f21add14dc8">DeviceCapabilities::GetSPIFlashVersion</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00138">138</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00369">369</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5858,7 +5999,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000128">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a6626ff1217c5cabf0b3d9f21add14dc8">DeviceCapabilities::GetSPIFlashVersion</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00139">139</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00370">370</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5887,7 +6028,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000129">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a6626ff1217c5cabf0b3d9f21add14dc8">DeviceCapabilities::GetSPIFlashVersion</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00140">140</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00371">371</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5916,7 +6057,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device has Xilinx DMA hardware and/or firmware </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00141">141</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00143">143</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -5974,7 +6115,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device is 64-bit addressable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00142">142</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00144">144</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6003,7 +6144,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device is direct addressable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00143">143</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00145">145</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6032,7 +6173,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000130">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../db/d32/class_device_capabilities.html#a940e66c8d57379f9908a3e4571e23a6d">DeviceCapabilities::HasMicInput</a> instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00144">144</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00372">372</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6061,7 +6202,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device connects to the host via a cable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00145">145</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00146">146</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6090,7 +6231,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device is local-host-attached, not remote, software or virtual </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00146">146</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00147">147</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6119,7 +6260,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device is supported by this SDK </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00147">147</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00148">148</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6148,7 +6289,35 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device widget routing can be queried or changed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00148">148</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00149">149</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+
+</div>
+</div>
+<a id="acbe4508c3de3c790f337a6858a4e7cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe4508c3de3c790f337a6858a4e7cb2">&#9670;&nbsp;</a></span>NumParamIDToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DeviceCapabilities::NumParamIDToString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153">NTV2NumericParamID</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00756">756</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -6176,7 +6345,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if I'm valid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00024">24</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00028">28</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6263,7 +6432,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device flash ROM has selectable banks </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00150">150</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00151">151</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
 
 </div>
 </div>
@@ -6292,7 +6461,135 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if device frame buffer size can be changed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00149">149</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html#l00150">150</a> of file <a class="el" href="../../d8/d58/ntv2devicecapabilities_8h_source.html">ntv2devicecapabilities.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8bbd10a73221a735036315e25c9d316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8bbd10a73221a735036315e25c9d316">&#9670;&nbsp;</a></span>StringToBoolParamID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024">NTV2BoolParamID</a> DeviceCapabilities::StringToBoolParamID </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00977">977</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad24db117f2e044d588b4d669bd87f6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24db117f2e044d588b4d669bd87f6b6">&#9670;&nbsp;</a></span>StringToEnumsParamID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de">NTV2EnumsID</a> DeviceCapabilities::StringToEnumsParamID </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00997">997</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a581329f45204779550326c39697462c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581329f45204779550326c39697462c6">&#9670;&nbsp;</a></span>StringToNumParamID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153">NTV2NumericParamID</a> DeviceCapabilities::StringToNumParamID </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l00987">987</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a40a70cafb9e75d0f294b33a6597b64c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a70cafb9e75d0f294b33a6597b64c2">&#9670;&nbsp;</a></span>StringToSupportedEnumsIDValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DeviceCapabilities::StringToSupportedEnumsIDValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;&#160;</td>
+          <td class="paramname"><em>outVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a3b8c990f17f8c4fafe200ce894bb87de">NTV2EnumsID</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html#l01007">1007</a> of file <a class="el" href="../../df/d0f/ntv2card_8cpp_source.html">ntv2card.cpp</a>.</p>
 
 </div>
 </div>
@@ -6335,7 +6632,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d32/class_device_capabilities.html">DeviceCapabilities</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:28 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:13 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

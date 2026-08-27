@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -106,34 +106,31 @@ Corvid OEM Boards</h1>
 Corvid 44 (Gen3)</h2>
 <p>The <b>Corvid 44 (Gen3)</b> OEM capture/playout board features four SDI connectors that can be programmatically configured as inputs or outputs. It’s identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a7f8cfe46c4916a6acc3adf774902558f" title="See Corvid 44 (Gen3). ">DEVICE_ID_CORVID44_GEN3</a>. It is the successor to the original <a class="el" href="../../d0/d53/ntv2devices.html#corvid44">Corvid 44</a>.</p>
 <div class="image">
-<img src="../../corvid44.png" alt="corvid44.png"/>
+<img src="../../corvid44gen3.png" alt="corvid44gen3.png"/>
 </div>
-<p>The Corvid44 has an RS-422 serial port, 4 × bi-directional SDI connectors, a reference/LTC input BNC, and a secondary LTC-only input connector on the board header.</p>
+<p>The <b>Corvid 44 (Gen3)</b> has an RS-422 serial port, 4 × bi-directional 3G-SDI connectors, a reference/LTC input BNC, and a secondary LTC-only input connector on the board header.</p>
 <hr/>
 <p> <b>BNC Version:</b> </p><div class="image">
-<img src="../../corvid44bnc.png" alt="corvid44bnc.png"/>
+<img src="../../corvid44gen3bnc.png" alt="corvid44gen3bnc.png"/>
 </div>
 <hr/>
 <p> <b>Low-Profile Version:</b> </p><div class="image">
-<img src="../../corvid44lp.png" alt="corvid44lp.png"/>
-</div>
-<hr/>
-<p> <b>Fanless Version:</b> (See important environmental note below.) </p><div class="image">
-<img src="../../corvid44fanless.png" alt="corvid44fanless.png"/>
-</div>
-<hr/>
-<p> <b>Low-Profile Fanless Version:</b> (See important environmental note below.) </p><div class="image">
-<img src="../../corvid44fanlesslp.png" alt="corvid44fanlesslp.png"/>
+<img src="../../corvid44gen3lp.png" alt="corvid44gen3lp.png"/>
 </div>
 <dl class="section user"><dt>PCI Interface</dt><dd><ul>
-<li>PCI device ID: <b>0xEB0E</b></li>
-<li>Eight-lane gen 2 PCI Express</li>
+<li>PCI device ID: <b>0xEB32</b></li>
+<li>4-lane gen 3 PCI Express</li>
 <li>2 DMA engines</li>
+<li>MSI is supported</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Inputs &amp; Outputs</dt><dd><ul>
-<li>4 × SDI bi-directional (under software control)</li>
-<li>1 × reference/LTC input</li>
+<li>4 × 3G-SDI (bi-directional under software control)<ul>
+<li>BNC version has full-size BNC connectors</li>
+<li>Low-Profile version has Din 1.0/2.3 connectors</li>
+</ul>
+</li>
+<li>1 × reference/LTC input (Analog Color Black or HD Tri-level sync)</li>
 <li>1 × secondary LTC-only input (2-pin Molex connector on board header)</li>
 <li>1 × RS-422 serial port (full-height board version has DB-9 connector)</li>
 </ul>
@@ -142,13 +139,8 @@ Corvid 44 (Gen3)</h2>
 <li>1GB SDRAM</li>
 <li>128 × 8MB frames</li>
 <li>64 × 16MB frames for 2K (1080×2048), 1920×1080 VANC, and 16-bit RGB</li>
-<li>Support for planar formats added in firmware rev 0xNN and SDK 14.0:<ul>
-<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca12ba02545eeaff40c6ae64531b4f47e9" title="See 3-Plane 8-Bit YCbCr 4:2:0 (&#39;I420&#39; a.k.a. &#39;YUV-P420&#39;). ">NTV2_FBF_8BIT_YCBCR_420PL3</a></li>
-<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161cab4e113d8276a3a9baea30e34299f35d5" title="See 3-Plane 8-Bit YCbCr 4:2:2 (Weitek &#39;Y42B&#39; a.k.a. &#39;YUV-P8&#39;). ">NTV2_FBF_8BIT_YCBCR_422PL3</a></li>
-<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca9cdd0985343fe2c43be6979a44f7a412" title="See 3-Plane 10-Bit YCbCr 4:2:0 (&#39;I420_10LE&#39; a.k.a. &#39;YUV-P420-L10&#39;). ">NTV2_FBF_10BIT_YCBCR_420PL3_LE</a></li>
-<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca739d151b46694d862a7a4334a46cb824" title="See 3-Plane 10-Bit YCbCr 4:2:2 (&#39;I422_10LE&#39; a.k.a. &#39;YUV-P-L10&#39;). ">NTV2_FBF_10BIT_YCBCR_422PL3_LE</a></li>
-</ul>
-</li>
+<li>32 × 32MB frames for UHD/4K</li>
+<li>16 × 64MB frames for 16-bit RGB UHD/4K</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Audio</dt><dd><ul>
@@ -159,38 +151,44 @@ Corvid 44 (Gen3)</h2>
 </dd></dl>
 <dl class="section user"><dt>Video Formats</dt><dd><ul>
 <li>Supports all SD, HD, 2K and 4K video formats, including 4Kp60.</li>
-<li>Multiple, independent video formats supported (provided all in same clock family).</li>
+<li>Multiple, independent video formats supported (outputs must have common clock family).</li>
 <li>Does not support DVCPro HD or HDV.</li>
 <li>RGB on SDI inputs/outputs supported.</li>
 <li>3GbA and 3GbB (dual-link) supported.</li>
 <li>SMPTE 425 2si mux supported</li>
 </ul>
 </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>A hardware color-space converter (CSC) can convert the input/output YCbCr SDI to/from RGB when using RGB buffer formats.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>A hardware color-space converter (CSC) can convert input/output YCbCr SDI to/from RGB when using RGB buffer formats.</dd></dl>
 <dl class="section user"><dt>Ancillary Data</dt><dd><ul>
 <li>Anc inserters and extractors (use <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a>)</li>
 <li><a class="el" href="../../d7/dcb/ancillarydata.html#vancframegeometries">VANC Frame Geometries</a></li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>SDK Support</dt><dd><ul>
-<li>Introduced in 2015 in SDK v12.1.</li>
+<li>Introduced in 2026 in SDK v18.1.</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Firmware</dt><dd><a href="https://github.com/aja-video/ntv2-firmware">https://github.com/aja-video/ntv2-firmware</a></dd></dl>
 <dl class="section user"><dt>Physical</dt><dd><ul>
-<li>Size (W × D × H): 0.875" × 7.25" × 4.875" (22.23mm × 184.15mm × 123.83mm)</li>
+<li>Size (W × D × H):<ul>
+<li>BNC Version: 0.73" × 6.6" × 2.72" (18.54mm × 167.64mm × 69.09mm)</li>
+<li>Low-Profile: 0.88" × 7.25" × 4.88" (22.36mm × 184.15mm × 123.96mm)</li>
+</ul>
+</li>
 <li>Weight: 0.4 lb (0.2 kg)</li>
-<li>Power: 17w (typ), 19w (max)</li>
+<li>Power: 17W (typ), 20W (max)</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Environment</dt><dd><ul>
-<li>Safe Operating Temperature: 0°C to 40°C (32°F to 104°F)</li>
-<li>Operating Relative Humidity: 10-90% non-condensing</li>
-<li>Operating Altitude: under 3,000 meters (under 10,000 feet)</li>
-<li>Safe Storage Temperature (Power OFF): -40°C to 70°C (-40°F to 158°F)</li>
+<li>Safe Operating Temperature: 0°C to 40°C (32°F to 104°F)<ul>
+<li>If fan removed, device requires 100LFM at 25°C or lower; computer chassis must have vented opening to exterior, immediately adjacent to PCIe shield (heatsink side), to permit 100LFM across heatsink.</li>
 </ul>
-</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The fanless version of this device requires airflow of 100LFM @25deg C or lower, and the host chassis must have a vented opening to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 100LFM across the heatsink. <hr/>
+</li>
+<li>Safe Storage Temperature (Power OFF): -40°C to 70°C (-40°F to 158°F)</li>
+<li>Operating Relative Humidity: 10-90% non-condensing</li>
+<li>Operating Altitude: under 3,000 meters (under 10,000 feet) <hr/>
+</li>
+</ul>
 </dd></dl>
 <h2><a class="anchor" id="corvid4412g"></a>
 Corvid 44 12G</h2>
@@ -274,31 +272,23 @@ Corvid 44 12G</h2>
 Corvid 88 (Gen3)</h2>
 <p>The <b>Corvid 88 (Gen3)</b> OEM capture/playout board features eight SDI connectors that can be programmatically configured as inputs or outputs. It’s identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a39e69a3c1b48c9f17cc6a78c1b8475ba" title="See Corvid 88 (Gen3). ">DEVICE_ID_CORVID88_GEN3</a>. It is the successor to the original <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a>.</p>
 <div class="image">
-<img src="../../corvid88.png" alt="corvid88.png"/>
+<img src="../../corvid88gen3.png" alt="corvid88gen3.png"/>
 </div>
-<p>The <b>Corvid 88</b> also has a reference/LTC input.</p>
+<p>The <b>Corvid 88 (Gen3)</b> has an RS-422 serial port, 8 × bi-directional 3G-SDI connectors, a reference/LTC input BNC, and a secondary LTC-only input connector on the board header.</p>
 <hr/>
 <p> <b>Low-Profile Version:</b> </p><div class="image">
-<img src="../../corvid88lp.png" alt="corvid88lp.png"/>
-</div>
-<hr/>
-<p> <b>Fanless Version:</b> (See important environmental note below.) </p><div class="image">
-<img src="../../corvid88fanless.png" alt="corvid88fanless.png"/>
-</div>
-<hr/>
-<p> <b>Low-Profile Fanless Version:</b> (See important environmental note below.) </p><div class="image">
-<img src="../../corvid88fanlesslp.png" alt="corvid88fanlesslp.png"/>
+<img src="../../corvid88gen3lp.png" alt="corvid88gen3lp.png"/>
 </div>
 <dl class="section user"><dt>PCI Interface</dt><dd><ul>
-<li>PCI device ID: <b>0xEB0D</b></li>
-<li>Eight-lane gen 2 PCI Express</li>
+<li>PCI device ID: <b>0xEB31</b></li>
+<li>4-lane gen 3 PCI Express</li>
 <li>2 DMA engines</li>
 <li>MSI is supported</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Inputs &amp; Outputs</dt><dd><ul>
-<li>8 × SDI bi-directional (under software control)</li>
-<li>1 × reference/LTC input</li>
+<li>8 × 3G-SDI Din 1.0/2.3 connectors (bi-directional under software control)</li>
+<li>1 × reference/LTC input (Analog Color Black or HD Tri-level sync)</li>
 <li>1 × secondary LTC-only input (2-pin Molex connector on board header)</li>
 <li>1 × RS-422 serial port (full-height board version has DB-9 connector)</li>
 </ul>
@@ -306,7 +296,9 @@ Corvid 88 (Gen3)</h2>
 <dl class="section user"><dt>Frame Buffer</dt><dd><ul>
 <li>1GB SDRAM</li>
 <li>128 × 8MB frames</li>
-<li>64 × 16MB frames for 2K (1080x2048), 1920x1080 VANC, and 16-bit RGB</li>
+<li>64 × 16MB frames for 2K (1080×2048), 1920×1080 VANC, and 16-bit RGB</li>
+<li>32 × 32MB frames for UHD/4K</li>
+<li>16 × 64MB frames for 16-bit RGB UHD/4K</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Audio</dt><dd><ul>
@@ -344,19 +336,21 @@ Corvid 88 (Gen3)</h2>
 </dd></dl>
 <dl class="section user"><dt>Firmware</dt><dd><a href="https://github.com/aja-video/ntv2-firmware">https://github.com/aja-video/ntv2-firmware</a></dd></dl>
 <dl class="section user"><dt>Physical</dt><dd><ul>
-<li>Size (W × D × H): 0.875" × 7.25" × 4.875" (22.23mm × 184.15mm × 123.83mm)</li>
+<li>Size (W × D × H): 0.88" × 7.25" × 4.88" (22.36mm × 184.15mm × 123.96mm)</li>
 <li>Weight: 0.4 lb (0.2 kg)</li>
-<li>Power: 17 watts (typ), 19 watts (max)</li>
+<li>Power: 17 watts (typ), 20 watts (max)</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Environment</dt><dd><ul>
-<li>Operating Temperature: 0°C to 40°C (32°F to 104°F)</li>
-<li>Operating Relative Humidity: 10-90% non-condensing</li>
-<li>Operating Altitude: under 3,000 meters (under 10,000 feet)</li>
-<li>Safe Storage Temperature (Power OFF): -40°C to 70°C (-40°F to 158°F)</li>
+<li>Operating Temperature: 0°C to 40°C (32°F to 104°F)<ul>
+<li>If fan removed, device requires 100LFM at 25°C or lower; computer chassis must have vented opening to exterior, immediately adjacent to PCIe shield (heatsink side), to permit 100LFM across heatsink.</li>
 </ul>
-</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The fanless version of this device requires airflow of 100LFM @25deg C or lower, and the host chassis must have vented opening to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 100LFM across the heatsink. <hr/>
+</li>
+<li>Safe Storage Temperature (Power OFF): -40°C to 70°C (-40°F to 158°F)</li>
+<li>Operating Relative Humidity: 10-90% non-condensing</li>
+<li>Operating Altitude: under 3,000 meters (under 10,000 feet) <hr/>
+</li>
+</ul>
 </dd></dl>
 <h1><a class="anchor" id="ntv2hwio"></a>
 Io (Thunderbolt) Devices</h1>
@@ -1422,8 +1416,11 @@ KONA LHe Plus</h2>
 <hr/>
 <h2><a class="anchor" id="konax"></a>
 KONA X™</h2>
-<p>This page describes the <b>KONA X</b> capture/playout board. It’s identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>This firmware does not support the new <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> feature — see the <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> for more information.</dd></dl>
+<p>This page describes the <b>KONA X</b> capture/playout board. It currently supports three different firmware personalities:</p><ul>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> — the normal two-channel firmware;</li>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a4cec6ba34c28ad307088d3d7e4920a3b" title="See KONA X™. ">DEVICE_ID_KONAX_4CH</a> — same as <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> but with two additional FrameStores;</li>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a822697a35e0230021779fe78471bebe7" title="See KONA XM™. ">DEVICE_ID_KONAXM</a> — the “XM” firmware supports the experimental <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> feature (see <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> for more information).</li>
+</ul>
 <div class="image">
 <img src="../../konax-diag.png" alt="konax-diag.png"/>
 </div>
@@ -1437,12 +1434,12 @@ KONA X™</h2>
 <p> <b>Actively Cooled (with fan):</b> </p><div class="image">
 <img src="../../konax-pcb-fan.png" alt="konax-pcb-fan.png"/>
 </div>
-<p>(A passively-cooled version for OEM use is being planned. Please contact AJA Sales for more information.)</p>
+<p>(A passively-cooled version for OEM use is available. Please contact AJA Sales for more information.)</p>
 <hr/>
 <p> <b>Expansion Board:</b> </p><div class="image">
 <img src="../../konax-xpand.png" alt="konax-xpand.png"/>
 </div>
-<p>A companion expansion board, the <a class="el" href="../../d0/d53/ntv2devices.html#konaxpand">KONA XPAND™ Breakout Board</a> is available for greatly expanding its connectivity.</p>
+<p>A companion expansion board, the <a class="el" href="../../d0/d53/ntv2devices.html#konaxpand">KONA XPAND™ Breakout Board</a> is available to expand the KONA X’s connectivity.</p>
 <dl class="section user"><dt>PCI Interface</dt><dd><ul>
 <li>PCI device ID: <b>0xEB29</b></li>
 <li>Gen 3 × 4 PCIe</li>
@@ -1500,7 +1497,8 @@ KONA X™</h2>
 <li>Introduced in 2023 in SDK v17.0.</li>
 </ul>
 </dd></dl>
-<dl class="section user"><dt>Firmware</dt><dd>TBD</dd></dl>
+<dl class="section user"><dt>Firmware</dt><dd></dd></dl>
+<p>See <a href="https://github.com/aja-video/ntv2-firmware/blob/github-mirror/konax/konax.bit">konax.bit</a> on GitHub.</p>
 <dl class="section user"><dt>Connector Pinouts</dt><dd></dd></dl>
 <div class="image">
 <img src="../../konax-pinout.png" alt="konax-pinout.png"/>
@@ -1511,7 +1509,7 @@ KONA X™</h2>
 <li>Card can utilize PCIe power from a 6-pin PCi 2x3 Aux Power connector or PCIe slot</li>
 </ul>
 </dd></dl>
-<dl class="section user"><dt>Noise</dt><dd><ul>
+<dl class="section user"><dt>Noise (active version)</dt><dd><ul>
 <li>≺ 50 dBA (A-weighted at 1m in free air)</li>
 <li>Fan rated at 33.1 dBA</li>
 </ul>
@@ -1544,14 +1542,20 @@ KONA X™</h2>
 <li>Safe Storage Temperature (Power OFF): -40°C to 60°C (-40°F to 140°F)</li>
 </ul>
 </dd></dl>
-<hr/>
+<dl class="section note"><dt>Note</dt><dd>The fanless (passive) version of this device requires airflow of at least 80LFM, with recommended 100LFM at 25°C ambient (or lower), and the host chassis must vent to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 80LFM to 100LFM across the heatsink. <hr/>
+</dd></dl>
 <h2><a class="anchor" id="konaxm"></a>
 KONA XM™</h2>
-<p>This page describes the <b>KONA XM</b> capture/playout board. It’s identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a822697a35e0230021779fe78471bebe7" title="See KONA XM™. ">DEVICE_ID_KONAXM</a>. The <b>KONA XM</b> is identical to the <a class="el" href="../../d0/d53/ntv2devices.html#konax">KONA X™</a> with the exceptions listed herein.</p>
+<p>This page describes the <b>KONA XM</b> capture/playout board. It supports three different firmware personalities:</p><ul>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> — the normal two-channel firmware;</li>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a4cec6ba34c28ad307088d3d7e4920a3b" title="See KONA X™. ">DEVICE_ID_KONAX_4CH</a> — same as <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> but with two additional FrameStores;</li>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a822697a35e0230021779fe78471bebe7" title="See KONA XM™. ">DEVICE_ID_KONAXM</a> — the “XM” firmware supports the experimental <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> feature (see <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> for more information).</li>
+</ul>
+<p>The <b>KONA XM</b> is identical to the <a class="el" href="../../d0/d53/ntv2devices.html#konax">KONA X™</a> with the exceptions listed herein.</p>
 <div class="image">
 <img src="../../konaxm_passive.png" alt="konaxm_passive.png"/>
 </div>
-<p>An actively-cooled version (with fan) for OEM use is planned for release. (Please contact AJA Sales for more information.)</p>
+<p>(An actively-cooled version (with fan) for OEM use is available. Please contact AJA Sales for more information.)</p>
 <dl class="section user"><dt>PCI Interface</dt><dd><ul>
 <li>PCI device ID: <b>0xEB28</b></li>
 <li>Gen 3 × 4 PCIe</li>
@@ -1585,7 +1589,7 @@ KONA XM™</h2>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Firmware</dt><dd></dd></dl>
-<p>TBD</p>
+<p>See <a href="https://github.com/aja-video/ntv2-firmware/blob/github-mirror/konax/konaxm.bit">konaxm.bit</a> on GitHub.</p>
 <dl class="section user"><dt>Regulatory Compliance (Prelim.)</dt><dd><ul>
 <li>UL94 V-0 flammability requirements</li>
 <li>RoHS 3, WEEE, and REACH compliant</li>
@@ -1607,6 +1611,14 @@ KONA XM™</h2>
 </li>
 </ul>
 </dd></dl>
+<dl class="section user"><dt>Environment</dt><dd><ul>
+<li>Safe Operating Temperature: 0°C to 40°C (32°F to 104°F)</li>
+<li>Operating Relative Humidity: 10-90% non-condensing</li>
+<li>Operating Altitude: under 3,000 meters (under 10,000 feet) IEEE 1588-2008</li>
+<li>Safe Storage Temperature (Power OFF): -40°C to 60°C (-40°F to 140°F)</li>
+</ul>
+</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The fanless (passive) version of this device requires airflow of at least 80LFM, with recommended 100LFM at 25°C ambient (or lower), and the host chassis must vent to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 80LFM to 100LFM across the heatsink.</dd></dl>
 <hr/>
 <h1><a class="anchor" id="ntv2hwlegacy"></a>
 Legacy Devices</h1>
@@ -1896,7 +1908,7 @@ Corvid 44</h2>
 <li>1GB SDRAM</li>
 <li>128 × 8MB frames</li>
 <li>64 × 16MB frames for 2K (1080×2048), 1920×1080 VANC, and 16-bit RGB</li>
-<li>Support for planar formats added in firmware rev 0xNN and SDK 14.0:<ul>
+<li>Support for planar formats added in firmware rev 0x1D and SDK 14.0:<ul>
 <li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca12ba02545eeaff40c6ae64531b4f47e9" title="See 3-Plane 8-Bit YCbCr 4:2:0 (&#39;I420&#39; a.k.a. &#39;YUV-P420&#39;). ">NTV2_FBF_8BIT_YCBCR_420PL3</a></li>
 <li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161cab4e113d8276a3a9baea30e34299f35d5" title="See 3-Plane 8-Bit YCbCr 4:2:2 (Weitek &#39;Y42B&#39; a.k.a. &#39;YUV-P8&#39;). ">NTV2_FBF_8BIT_YCBCR_422PL3</a></li>
 <li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161ca9cdd0985343fe2c43be6979a44f7a412" title="See 3-Plane 10-Bit YCbCr 4:2:0 (&#39;I420_10LE&#39; a.k.a. &#39;YUV-P420-L10&#39;). ">NTV2_FBF_10BIT_YCBCR_420PL3_LE</a></li>
@@ -3187,7 +3199,7 @@ KONA XPAND™ Breakout Board</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:27 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:12 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -19,6 +19,7 @@ var searchData=
   ['rcvnote',['RCVNOTE',['../d3/de4/ancillarylist_8cpp.html#a3fb022e0a505aac3bc71d06a28ad1b9e',1,'RCVNOTE():&#160;ancillarylist.cpp'],['../df/dc3/ntv2autocirculate_8cpp.html#a3fb022e0a505aac3bc71d06a28ad1b9e',1,'RCVNOTE():&#160;ntv2autocirculate.cpp']]],
   ['rcvwarn',['RCVWARN',['../d3/de4/ancillarylist_8cpp.html#a120bfc7e0c8dc77442857f41791fe1fa',1,'RCVWARN():&#160;ancillarylist.cpp'],['../df/dc3/ntv2autocirculate_8cpp.html#a120bfc7e0c8dc77442857f41791fe1fa',1,'RCVWARN():&#160;ntv2autocirculate.cpp']]],
   ['realizepalette',['REALIZEPALETTE',['../df/d97/winutil_8h.html#af37019f822cfdbff541671c75b6cd3a6',1,'winutil.h']]],
+  ['reg_5fstr',['REG_STR',['../d3/d85/ntv2debug_8cpp.html#ac578d7c00565272c010a70bbe78c13ab',1,'ntv2debug.cpp']]],
   ['registertraceguids_5fname',['REGISTERTRACEGUIDS_NAME',['../d9/d7b/perflog_8cpp.html#a9779a2bc548bcf2eafd97f4bcb4623ab',1,'perflog.cpp']]],
   ['reidbg',['REiDBG',['../d1/d1f/ntv2registerexpert_8cpp.html#ab4ae62556db15474765c811a87db335a',1,'ntv2registerexpert.cpp']]],
   ['reifail',['REiFAIL',['../d1/d1f/ntv2registerexpert_8cpp.html#a74555089041e38393a66c0fa33032158',1,'ntv2registerexpert.cpp']]],
@@ -78,5 +79,10 @@ var searchData=
   ['rp188_5fpstruct_5fset',['RP188_PSTRUCT_SET',['../d4/dd7/ntv2publicinterface_8h.html#a24170036fc7319363919c74a6c58c95f',1,'ntv2publicinterface.h']]],
   ['rp188_5fsecondtens_5fmask',['RP188_SECONDTENS_MASK',['../d4/dd7/ntv2publicinterface_8h.html#a901a2200ce8fd5fcdf23a298f3b1edb9',1,'ntv2publicinterface.h']]],
   ['rp188_5fsecondunits_5fmask',['RP188_SECONDUNITS_MASK',['../d4/dd7/ntv2publicinterface_8h.html#adaa415ff0696b6efc14fd19bff1aa6dc',1,'ntv2publicinterface.h']]],
-  ['rp188_5fstruct_5fset',['RP188_STRUCT_SET',['../d4/dd7/ntv2publicinterface_8h.html#aaaa3a03245b49068d778a131afdc484f',1,'ntv2publicinterface.h']]]
+  ['rp188_5fstruct_5fset',['RP188_STRUCT_SET',['../d4/dd7/ntv2publicinterface_8h.html#aaaa3a03245b49068d778a131afdc484f',1,'ntv2publicinterface.h']]],
+  ['rpdbg',['RPDBG',['../de/d85/ntv2driverinterface_8cpp.html#a0bc76df47eaa86caa61df4424fa7df3f',1,'ntv2driverinterface.cpp']]],
+  ['rpfail',['RPFAIL',['../de/d85/ntv2driverinterface_8cpp.html#aa0a644c76c0760b38715d5035f506ac3',1,'ntv2driverinterface.cpp']]],
+  ['rpinfo',['RPINFO',['../de/d85/ntv2driverinterface_8cpp.html#a3806079fe4fd15f1b6be44ad2a656ffb',1,'ntv2driverinterface.cpp']]],
+  ['rpnote',['RPNOTE',['../de/d85/ntv2driverinterface_8cpp.html#a73c03002a51d1f37c4563571e67d9383',1,'ntv2driverinterface.cpp']]],
+  ['rpwarn',['RPWARN',['../de/d85/ntv2driverinterface_8cpp.html#ae7ce86d52c24521b60c743d7b4bb129e',1,'ntv2driverinterface.cpp']]]
 ];

@@ -182,10 +182,12 @@ var searchData=
   ['ktransferflagvideodma3',['kTransferFlagVideoDMA3',['../d4/dd7/ntv2publicinterface_8h.html#a4c0675980b48bb7046cdbfe874433704',1,'ntv2publicinterface.h']]],
   ['ktransferflagvideodma4',['kTransferFlagVideoDMA4',['../d4/dd7/ntv2publicinterface_8h.html#a38cc3b9bcbc8d44b687d21dc0409d4b3',1,'ntv2publicinterface.h']]],
   ['ktransferflagvideodmaany',['kTransferFlagVideoDMAAny',['../d4/dd7/ntv2publicinterface_8h.html#ab0d93f02a95209668825e682b1a40abc',1,'ntv2publicinterface.h']]],
+  ['kvdevjson_5fdeviceid',['kVDevJSON_DeviceID',['../d6/d8f/ntv2nubaccess_8h.html#a5030e5ce2ee3ffe9b2e749dd6e10c81b',1,'ntv2nubaccess.h']]],
   ['kvdevjson_5fdisabled',['kVDevJSON_Disabled',['../d6/d8f/ntv2nubaccess_8h.html#a4addc9381124ae4fcdf0d6c1eceb8c19',1,'ntv2nubaccess.h']]],
   ['kvdevjson_5fhost',['kVDevJSON_Host',['../d6/d8f/ntv2nubaccess_8h.html#abe25a43cff05d10579a193dbb52990e0',1,'ntv2nubaccess.h']]],
   ['kvdevjson_5fname',['kVDevJSON_Name',['../d6/d8f/ntv2nubaccess_8h.html#af3b8eb5a10363f121e48d90297675543',1,'ntv2nubaccess.h']]],
   ['kvdevjson_5fplugin',['kVDevJSON_Plugin',['../d6/d8f/ntv2nubaccess_8h.html#a672558b98a178df2104f93404e512fb5',1,'ntv2nubaccess.h']]],
+  ['kvdevjson_5fserialnum',['kVDevJSON_SerialNum',['../d6/d8f/ntv2nubaccess_8h.html#af8bd7bde2a4fbed9bd684799e4f2f232',1,'ntv2nubaccess.h']]],
   ['kvdevjson_5furlspec',['kVDevJSON_URLSpec',['../d6/d8f/ntv2nubaccess_8h.html#a0c35748bc9a3d02fc2f9b667c82b67d6',1,'ntv2nubaccess.h']]],
   ['kvregacquirerefcount',['KVRegAcquireRefCount',['../de/d85/ntv2driverinterface_8cpp.html#acbfbfdb1d9f8cb50a9c924649a8caa97',1,'ntv2driverinterface.cpp']]]
 ];

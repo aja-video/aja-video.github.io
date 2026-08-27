@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -184,7 +184,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac05b232678db6e36c807cb92752c5b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two buffers line-by-line (using my description of the buffer contents).  <a href="#ac05b232678db6e36c807cb92752c5b59">More...</a><br /></td></tr>
 <tr class="separator:ac05b232678db6e36c807cb92752c5b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d2e19b07a9ff96572867db2a5fcd92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a51d2e19b07a9ff96572867db2a5fcd92">FlipVertically</a> (<a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html">NTV2Buffer</a> &amp;inFB) const</td></tr>
-<tr class="memdesc:a51d2e19b07a9ff96572867db2a5fcd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertically inverts the raster image in the given <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a>.  <a href="#a51d2e19b07a9ff96572867db2a5fcd92">More...</a><br /></td></tr>
+<tr class="memdesc:a51d2e19b07a9ff96572867db2a5fcd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts the raster image in the given <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a>. VANC lines, if any, are unchanged.  <a href="#a51d2e19b07a9ff96572867db2a5fcd92">More...</a><br /></td></tr>
 <tr class="separator:a51d2e19b07a9ff96572867db2a5fcd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b3e6da23ce700456851a2e6fdd4c4f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d7c/class_n_t_v2_frame_size.html">NTV2FrameSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html#a2b3e6da23ce700456851a2e6fdd4c4f1">GetFullRasterDimensions</a> (void) const</td></tr>
 <tr class="separator:a2b3e6da23ce700456851a2e6fdd4c4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -620,7 +620,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vertically inverts the raster image in the given <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a>. </p>
+<p>Inverts the raster image in the given <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a>. VANC lines, if any, are unchanged. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inFB</td><td>Specifies the frame buffer containing the image/raster to be flipped (and includes all planes, if planar). </td></tr>
@@ -845,7 +845,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The full-raster NTV2FrameDimensions (including VANC lines, if any). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01374">1374</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01393">1393</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -914,7 +914,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01316">1316</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01335">1335</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1262,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-const reference to the <a class="el" href="../../dd/d56/class_n_t_v2_segmented_xfer_info.html" title="Describes a segmented data transfer (copy or move) from a source memory location to a destination loc...">NTV2SegmentedXferInfo</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01385">1385</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01404">1404</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1309,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01284">1284</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01303">1303</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -1599,7 +1599,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The visible NTV2FrameDimensions (excluding VANC lines, if any). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01379">1379</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01398">1398</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -1980,7 +1980,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000233">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000232">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.3. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/df4/ntv2formatdescriptor_8h_source.html#l00361">361</a> of file <a class="el" href="../../dc/df4/ntv2formatdescriptor_8h_source.html">ntv2formatdescriptor.h</a>.</p>
 
@@ -2267,7 +2267,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The output stream I was handed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01224">1224</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01243">1243</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -2314,7 +2314,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The output stream I was handed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01358">1358</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html#l01377">1377</a> of file <a class="el" href="../../d3/de0/ntv2formatdescriptor_8cpp_source.html">ntv2formatdescriptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -2465,7 +2465,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html">NTV2FormatDescriptor</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:28 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:13 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

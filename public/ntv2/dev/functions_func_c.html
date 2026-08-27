@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -231,6 +231,9 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 <li>CanDoChannel()
 : <a class="el" href="db/d32/class_device_capabilities.html#a73cdf1ba9c6cb554f046b5fcdcf7281b">DeviceCapabilities</a>
 </li>
+<li>CanDoClockMonitor()
+: <a class="el" href="db/d32/class_device_capabilities.html#afb1e7a76014425ab7666f0ed1d198590">DeviceCapabilities</a>
+</li>
 <li>CanDoColorCorrection()
 : <a class="el" href="db/d32/class_device_capabilities.html#aa5deb8e3bc14ea2f3e0a40d702c8af5a">DeviceCapabilities</a>
 </li>
@@ -257,6 +260,9 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 </li>
 <li>CanDoEnhancedCSC()
 : <a class="el" href="db/d32/class_device_capabilities.html#ab5a263d91d7874ac1f3161d6507bcdc6">DeviceCapabilities</a>
+</li>
+<li>CanDoFastBitfileSwitching()
+: <a class="el" href="db/d32/class_device_capabilities.html#a5790ff9f9ad250b2b297e11c92c862d2">DeviceCapabilities</a>
 </li>
 <li>CanDoFrameBufferFormat()
 : <a class="el" href="db/d32/class_device_capabilities.html#adeabcb89e0707f506a58f996433e8925">DeviceCapabilities</a>
@@ -890,13 +896,13 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 <li>Close()
 : <a class="el" href="db/d56/class_a_j_a_debug.html#aa9fa5c90ea30f2278f35aae855227bf4">AJADebug</a>
 , <a class="el" href="dd/d63/class_a_j_a_file_i_o.html#a77a8278e31e6effc11620005aa910b42">AJAFileIO</a>
+, <a class="el" href="d8/dc3/class_a_j_a_wav_writer.html#aea9647eff31622e03f7b2febd2ce070c">AJAWavWriter</a>
 </li>
 <li>close()
 : <a class="el" href="d8/dc3/class_a_j_a_wav_writer.html#a85fae7888b3b6ec103c6763294c75213">AJAWavWriter</a>
 </li>
 <li>Close()
-: <a class="el" href="d8/dc3/class_a_j_a_wav_writer.html#aea9647eff31622e03f7b2febd2ce070c">AJAWavWriter</a>
-, <a class="el" href="d0/d90/class_c_base_machine_control.html#a40293dfbce871cd64e9f6ceb1c98dd47">CBaseMachineControl</a>
+: <a class="el" href="d0/d90/class_c_base_machine_control.html#a40293dfbce871cd64e9f6ceb1c98dd47">CBaseMachineControl</a>
 , <a class="el" href="dc/de9/class_c_n_t_v2_bitfile.html#a4442bebcc63d62b7fa4108d5e0fc18ef">CNTV2Bitfile</a>
 , <a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html#ac1fc11433de751a31c16b6947331185f">CNTV2CaptionRenderer</a>
 , <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a7b91c571a9d4856bef059df61655ca41">CNTV2DriverInterface</a>
@@ -943,7 +949,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 : <a class="el" href="d1/d07/class_c_media_sample.html#ab7e336a2a947a6b9575d6b2547ddbd3f">CMediaSample</a>
 </li>
 <li>CMediaType()
-: <a class="el" href="d7/da7/class_c_media_type.html#a6082faecb8ecb1feb8acd1ef602e7bdc">CMediaType</a>
+: <a class="el" href="d7/da7/class_c_media_type.html#a00486b6889839d5bf4161c18fa05f367">CMediaType</a>
 </li>
 <li>CMemAllocator()
 : <a class="el" href="d0/da3/class_c_mem_allocator.html#ae6f9badd9f7c96c743ea7e503af3ef02">CMemAllocator</a>
@@ -1200,7 +1206,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 , <a class="el" href="d8/d3a/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__float_01_4.html#afbbfa12bbad7b3fd23464e25ff6e22d9">nlohmann::json_abi_v3_11_3::detail::external_constructor&lt; value_t::number_float &gt;</a>
 , <a class="el" href="da/d11/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4.html#ac77ae93b7b52b914cc84cecc9b81ae80">nlohmann::json_abi_v3_11_3::detail::external_constructor&lt; value_t::number_integer &gt;</a>
 , <a class="el" href="d2/d4d/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1number__unsigned_01_4.html#a176b430b545fa5e6aac7c40571d19514">nlohmann::json_abi_v3_11_3::detail::external_constructor&lt; value_t::number_unsigned &gt;</a>
-, <a class="el" href="db/ddb/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html#abf48c95e9830e15907a72ba11f2f311e">nlohmann::json_abi_v3_11_3::detail::external_constructor&lt; value_t::object &gt;</a>
+, <a class="el" href="db/ddb/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html#a8b40507babac99062d99631a773641ea">nlohmann::json_abi_v3_11_3::detail::external_constructor&lt; value_t::object &gt;</a>
 , <a class="el" href="de/dda/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1external__constructor_3_01value__t_1_1string_01_4.html#a5dc03e39502e200fb23c7c8cbbcaa68e">nlohmann::json_abi_v3_11_3::detail::external_constructor&lt; value_t::string &gt;</a>
 </li>
 <li>ConsumeFrames()
@@ -1226,7 +1232,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 , <a class="el" href="d1/d1e/class_n_t_v2_stream_player.html#ae8e0b5a31aa9be12fcea1500754b2170">NTV2StreamPlayer</a>
 </li>
 <li>contains()
-: <a class="el" href="dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#a69dbe2f87da9b3fc68e6366ba9567d55">nlohmann::json_abi_v3_11_3::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
+: <a class="el" href="dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#ad10cc1bce2c47c5cd955b3d3f537c55f">nlohmann::json_abi_v3_11_3::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
 </li>
 <li>containsElementAtOffset()
 : <a class="el" href="dd/d56/class_n_t_v2_segmented_xfer_info.html#a13632354015a43eb279832f431953f1c">NTV2SegmentedXferInfo</a>
@@ -1304,7 +1310,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 , <a class="el" href="d9/d09/class_f_r_a_m_e___s_t_a_m_p.html#aa0279a1d677a1382b72c12aa1b3b221e">FRAME_STAMP</a>
 </li>
 <li>count()
-: <a class="el" href="dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#af82b34872605acfee19bae4655f35bc9">nlohmann::json_abi_v3_11_3::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
+: <a class="el" href="dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#a7b1f1ea3b6c7a394ecd4bdad14416ecc">nlohmann::json_abi_v3_11_3::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
 , <a class="el" href="d7/dda/structnlohmann_1_1json__abi__v3__11__3_1_1ordered__map.html#a6788d375516a658f114b265db3199188">nlohmann::json_abi_v3_11_3::ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;</a>
 , <a class="el" href="dd/de5/class_n_t_v2_a_c_frame_range.html#aa3ba23659de2c6d84458ec8f4edc0ed1">NTV2ACFrameRange</a>
 </li>
@@ -1339,13 +1345,13 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 : <a class="el" href="da/d43/class_c_pull_pin.html#a3e89710674ac2fe6c228e0e3100e71f7">CPullPin</a>
 </li>
 <li>CQueue()
-: <a class="el" href="d7/d80/class_c_queue.html#a9425a3b6264cab3a1d8b7089ae53e08b">CQueue&lt; T &gt;</a>
+: <a class="el" href="d7/d80/class_c_queue.html#a1048f999ee68d7a343ed8fd9eb067927">CQueue&lt; T &gt;</a>
 </li>
 <li>crbegin()
 : <a class="el" href="dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#a60a1449cd15597e92f61160ead062682">nlohmann::json_abi_v3_11_3::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
 </li>
 <li>Create()
-: <a class="el" href="d6/dd7/class_a_j_a_ancillary_data_factory.html#a3fa1f7e4a15e9337c86beee5d25145e1">AJAAncillaryDataFactory</a>
+: <a class="el" href="d6/dd7/class_a_j_a_ancillary_data_factory.html#aef6f02c517ddcba49523ff660c7998d9">AJAAncillaryDataFactory</a>
 , <a class="el" href="da/dbf/class_c_n_t_v2_caption608_message.html#a9be2eed05de00ec89ad3c8da30e0695a">CNTV2Caption608Message</a>
 , <a class="el" href="d8/de0/class_c_n_t_v2_caption_decode_channel608.html#aa65702e393bb2cbf202f023f1913ed4e">CNTV2CaptionDecodeChannel608</a>
 , <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#ad8f3197350ae09419311d26b7776d731">CNTV2CaptionDecoder608</a>
@@ -1364,7 +1370,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 , <a class="el" href="d0/dc9/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1iterator__input__adapter__factory_3_01_itera111938bd35afec7af7257f61c3156a7c.html#aa1d1f74e49e642d03be780b45702bb3f">nlohmann::json_abi_v3_11_3::detail::iterator_input_adapter_factory&lt; IteratorType, enable_if_t&lt; is_iterator_of_multibyte&lt; IteratorType &gt;::value &gt; &gt;</a>
 , <a class="el" href="dd/d4f/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1other__error.html#a1cd9476d5edfdb02f03bfb4764db8e17">nlohmann::json_abi_v3_11_3::detail::other_error</a>
 , <a class="el" href="da/d32/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1out__of__range.html#ae7e87c06f7bc28f65f1bfa9b08e03669">nlohmann::json_abi_v3_11_3::detail::out_of_range</a>
-, <a class="el" href="d5/d27/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1parse__error.html#a0f208b67698e6277e14c0e19db89d7e6">nlohmann::json_abi_v3_11_3::detail::parse_error</a>
+, <a class="el" href="d5/d27/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1parse__error.html#a973b6727baffb7c2e812582587f4e1cd">nlohmann::json_abi_v3_11_3::detail::parse_error</a>
 , <a class="el" href="d7/d33/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1type__error.html#ac2def30db9bc3cbbb9a1b4340a6c72fa">nlohmann::json_abi_v3_11_3::detail::type_error</a>
 </li>
 <li>CreateAiffFile()
@@ -1405,7 +1411,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 , <a class="el" href="d1/ddb/class_c_system_clock.html#ad01ebb10a1e6e2c7d2069403f4ad0153">CSystemClock</a>
 </li>
 <li>CreateMatchingDictionary()
-: <a class="el" href="d7/d44/class_device_notifier.html#aab0b269c257a6be3a594eab3e26e5a94">DeviceNotifier</a>
+: <a class="el" href="d7/d44/class_device_notifier.html#a5b80dde34e9b5ca5230137794448a4c4">DeviceNotifier</a>
 </li>
 <li>CreatePalette()
 : <a class="el" href="d8/dde/class_c_agg_direct_draw.html#ac98129093a4ed7ca296798f767885597">CAggDirectDraw</a>
@@ -1430,7 +1436,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 : <a class="el" href="d2/d22/class_c_msg_thread.html#aed49ae52b8b5c31ecfd7470a0c0cb92b">CMsgThread</a>
 </li>
 <li>CRefTime()
-: <a class="el" href="dc/da7/class_c_ref_time.html#a50b37bca3a26b8ef06bd852d64e8c332">CRefTime</a>
+: <a class="el" href="dc/da7/class_c_ref_time.html#a6a22450de1ccde14d4c3cd4b4ce65b70">CRefTime</a>
 </li>
 <li>crend()
 : <a class="el" href="dc/d3a/classnlohmann_1_1json__abi__v3__11__3_1_1basic__json.html#a8ec5fe88d679d4b84edb180f303b45ac">nlohmann::json_abi_v3_11_3::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType, CustomBaseClass &gt;</a>
@@ -1445,13 +1451,13 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 : <a class="el" href="d1/d9f/class_c_renderer_pos_pass_thru.html#a2a1dea53187a3e6f02d50e9b945f5a18">CRendererPosPassThru</a>
 </li>
 <li>CRP188()
-: <a class="el" href="d4/d28/class_c_r_p188.html#a56663f0dc5933e156902a17c3e4f8e04">CRP188</a>
+: <a class="el" href="d4/d28/class_c_r_p188.html#a95dce46971b61ee2bebba222b3bdf40c">CRP188</a>
 </li>
 <li>CSeekingPassThru()
 : <a class="el" href="d1/d04/class_c_seeking_pass_thru.html#a833514f15acf9d250e6b1658f88d06eb">CSeekingPassThru</a>
 </li>
 <li>CSource()
-: <a class="el" href="db/d25/class_c_source.html#a69618ec2e91466fb71f1b97cbdfbaa1f">CSource</a>
+: <a class="el" href="db/d25/class_c_source.html#ad9e79b719fca3ed3b14a2036b33655a3">CSource</a>
 </li>
 <li>CSourcePosition()
 : <a class="el" href="db/d03/class_c_source_position.html#a7ee220a8678d912a4bb92dcc5b99b505">CSourcePosition</a>
@@ -1511,7 +1517,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:29 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:14 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

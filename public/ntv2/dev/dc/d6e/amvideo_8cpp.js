@@ -10,7 +10,7 @@ var amvideo_8cpp =
     [ "STDAPI_", "dc/d6e/amvideo_8cpp.html#aee96ca37154935fe0d541bb95c8042a5", null ],
     [ "STDAPI_", "dc/d6e/amvideo_8cpp.html#a3c59fbfde8aa647d38f648ddae5a69d4", null ],
     [ "BitCount", "dc/d6e/amvideo_8cpp.html#a39788ba9854da2deac00829c13e59e89", null ],
-    [ "BitCountMap", "dc/d6e/amvideo_8cpp.html#ab94af0eac807683f19e49e96af453e7c", null ],
+    [ "BitCountMap", "dc/d6e/amvideo_8cpp.html#a081b3de51a22116fb41c900e1da3efba", null ],
     [ "bits555", "dc/d6e/amvideo_8cpp.html#a10b4572a819df8fb9c2405f1e0e2147a", null ],
     [ "bits565", "dc/d6e/amvideo_8cpp.html#a9c297181563e5eb38355c7be2f16a528", null ],
     [ "bits888", "dc/d6e/amvideo_8cpp.html#af10b6ec641c77aa248e706ac13d151fe", null ],

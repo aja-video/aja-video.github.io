@@ -96,7 +96,7 @@ var searchData=
   ['profilestr',['PROFILESTR',['../df/d97/winutil_8h.html#aa25e76db60a720be2b031bd4fe9cd3b0',1,'winutil.h']]],
   ['programmablecscsupport',['programmableCSCSupport',['../d6/d61/struct_n_t_v2_device_info.html#a01415432abd1a6a330e5c453ddaafe2d',1,'NTV2DeviceInfo']]],
   ['programnumber',['programNumber',['../d3/dc6/struct_decoder_struct.html#aff7478670a86d1ffeb614f6debe61fb8',1,'DecoderStruct']]],
-  ['programpid',['programPID',['../d3/dc6/struct_decoder_struct.html#aec79229bbdf7c42139f77ec6f883c67a',1,'DecoderStruct::programPID()'],['../d4/ddf/struct_encoder_struct.html#a992c668d2418d6d6f2dc0039142c2a1c',1,'EncoderStruct::programPid()']]],
+  ['programpid',['programPid',['../d4/ddf/struct_encoder_struct.html#a992c668d2418d6d6f2dc0039142c2a1c',1,'EncoderStruct::programPid()'],['../d3/dc6/struct_decoder_struct.html#aec79229bbdf7c42139f77ec6f883c67a',1,'DecoderStruct::programPID()']]],
   ['programprogress',['programProgress',['../d5/de2/struct_s_s_c___g_e_t___f_i_r_m_w_a_r_e___p_r_o_g_r_e_s_s___s_t_r_u_c_t.html#a88a7280714f4421ea5dcd22b3b1b1e53',1,'SSC_GET_FIRMWARE_PROGRESS_STRUCT']]],
   ['programstate',['programState',['../d5/de2/struct_s_s_c___g_e_t___f_i_r_m_w_a_r_e___p_r_o_g_r_e_s_s___s_t_r_u_c_t.html#a1a7d2ee5bf05de852535ff67a53da450',1,'SSC_GET_FIRMWARE_PROGRESS_STRUCT']]],
   ['programtotalsize',['programTotalSize',['../d5/de2/struct_s_s_c___g_e_t___f_i_r_m_w_a_r_e___p_r_o_g_r_e_s_s___s_t_r_u_c_t.html#a08362c46d87cce06239768d6e054e124',1,'SSC_GET_FIRMWARE_PROGRESS_STRUCT']]],

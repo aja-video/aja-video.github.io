@@ -56,6 +56,8 @@ var searchData=
   ['haspciegen2',['HasPCIeGen2',['../db/d32/class_device_capabilities.html#a2e9b8c77320a58bf786ad068ef3916b5',1,'DeviceCapabilities']]],
   ['haspwmfancontrol',['HasPWMFanControl',['../db/d32/class_device_capabilities.html#a6857d8126c68b8ef2b159f88389e0b0e',1,'DeviceCapabilities']]],
   ['hasqueryparams',['HasQueryParams',['../d3/d9a/class_n_t_v2_device_spec_parser.html#abf6de1733f3fce42da39e58709c1af7c',1,'NTV2DeviceSpecParser']]],
+  ['hasreginfoforboolparam',['HasRegInfoForBoolParam',['../d0/dbc/class_c_n_t_v2_driver_interface.html#af49ead0f6a3a7435dcbcdc33417b7ba3',1,'CNTV2DriverInterface']]],
+  ['hasreginfofornumericparam',['HasRegInfoForNumericParam',['../d0/dbc/class_c_n_t_v2_driver_interface.html#a39637f3b0a7a7bde0ec820738a3dd847',1,'CNTV2DriverInterface']]],
   ['hasresult',['HasResult',['../d3/d9a/class_n_t_v2_device_spec_parser.html#ab926bb6a90d314ecea4784b9d9d4ea3f',1,'NTV2DeviceSpecParser']]],
   ['hasretailsupport',['HasRetailSupport',['../db/d32/class_device_capabilities.html#af46065ecec188c4eff704789a63f3601',1,'DeviceCapabilities']]],
   ['hasrotaryencoder',['HasRotaryEncoder',['../db/d32/class_device_capabilities.html#a98f7d15ae2a46c5ebf3f6a4b6047ea1b',1,'DeviceCapabilities']]],
@@ -106,7 +108,9 @@ var searchData=
   ['hexdump32bytes',['HexDump32Bytes',['../d6/d59/class_c_n_t_v2_caption_log_config.html#a2bdd9001d86c11591e2ba9f8177db132',1,'CNTV2CaptionLogConfig']]],
   ['hidecursor',['HideCursor',['../d0/d4d/class_c_base_control_window.html#adb33dd769ee6e9c2b84940070e480ad4',1,'CBaseControlWindow']]],
   ['hidewindows',['HideWindows',['../d5/d18/class_c_n_t_v2_caption708_service.html#ad98d1a236dde9c00389a4298ef13fad7',1,'CNTV2Caption708Service']]],
+  ['host',['Host',['../d3/d9a/class_n_t_v2_device_spec_parser.html#ab398258e5f7acc21f3d3932230edcdcd',1,'NTV2DeviceSpecParser']]],
   ['hostname',['HostName',['../d2/d94/class_n_t_v2_r_p_c_client_a_p_i.html#a7a83c3c632c412d2431487502a802551',1,'NTV2RPCClientAPI']]],
   ['hostpagesize',['HostPageSize',['../d5/dc4/class_n_t_v2_buffer.html#af50a3abc46669ec5cb7c9c1ba360d489',1,'NTV2Buffer']]],
+  ['hostwithport',['HostWithPort',['../d3/d9a/class_n_t_v2_device_spec_parser.html#adf00508e7212997dcbe78dc398efcc83',1,'NTV2DeviceSpecParser']]],
   ['htonf',['htonf',['../de/d30/dpx__hdr_8cpp.html#a98d9b9bfcff1d8aa5214f5647011e4ac',1,'dpx_hdr.cpp']]]
 ];

@@ -1,6 +1,7 @@
 var ntv2debug_8cpp =
 [
     [ "NTV2DEBUG_ENUM_CASE_RETURN_STR", "d3/d85/ntv2debug_8cpp.html#a215f1814f6262a1b1270ea5494a0cc0f", null ],
+    [ "REG_STR", "d3/d85/ntv2debug_8cpp.html#ac578d7c00565272c010a70bbe78c13ab", null ],
     [ "NTV2DeviceIDString", "d3/d85/ntv2debug_8cpp.html#a8f02e40e18765fef8abc38d4e56cd30a", null ],
     [ "NTV2DeviceString", "d3/d85/ntv2debug_8cpp.html#af993631b52d549503002c508f2038b4c", null ],
     [ "NTV2FrameBufferFormatString", "d3/d85/ntv2debug_8cpp.html#a6549339fa8be15d7edc16cd1e035ed5d", null ],

@@ -888,6 +888,7 @@ var ntv2enums_8h =
       [ "NTV2_BITFILE_CORVID44_GEN3", "d6/d0c/ntv2enums_8h.html#a7d7c37c18f324d531a21ed54c37c9ac7aa89fe915d317b3670eba860146feb191", null ],
       [ "NTV2_BITFILE_CORVID88_GEN3", "d6/d0c/ntv2enums_8h.html#a7d7c37c18f324d531a21ed54c37c9ac7a971557a64ee4e528c4ce5616aafd9849", null ],
       [ "NTV2_BITFILE_KONAX_4CH", "d6/d0c/ntv2enums_8h.html#a7d7c37c18f324d531a21ed54c37c9ac7addb03443d6fe90e44229c04c1512e13d", null ],
+      [ "NTV2_BITFILE_KONAIP_25G_8CH", "d6/d0c/ntv2enums_8h.html#a7d7c37c18f324d531a21ed54c37c9ac7acf70eec1282987e3d1e702883f36dea5", null ],
       [ "NTV2_BITFILE_NUMBITFILETYPES", "d6/d0c/ntv2enums_8h.html#a7d7c37c18f324d531a21ed54c37c9ac7a0094431af3808cd9b4a18add21d9d149", null ]
     ] ],
     [ "NTV2BreakoutType", "d6/d0c/ntv2enums_8h.html#af7765fc4be9fad0dac1bee106bda00c7", [
@@ -1140,6 +1141,7 @@ var ntv2enums_8h =
       [ "DEVICE_ID_KONAIP_2110", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463ac360eaab5b0c99356d0799cfc3659284", null ],
       [ "DEVICE_ID_KONAIP_2110_RGB12", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a345114e93132c889307aee1860cd268a", null ],
       [ "DEVICE_ID_KONAIP_25G", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a160abe0485d1fd956f82bbc3e2462ce4", null ],
+      [ "DEVICE_ID_KONAIP_25G_8CH", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a56fd0e6c48ae2ad7cf305b92991067b2", null ],
       [ "DEVICE_ID_KONAIP_2TX_1SFP_J2K", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a0f253eac0dfd3b9f19745e6f4c62587a", null ],
       [ "DEVICE_ID_KONAIP_4CH_2SFP", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463acb1cb75859c86b20f941efe0a6bb613c", null ],
       [ "DEVICE_ID_KONALHEPLUS", "d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463aa495718e599eda1f68ad23bf95a74ea2", null ],

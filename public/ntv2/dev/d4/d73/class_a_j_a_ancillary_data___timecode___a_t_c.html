@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2262</span>
+   &#160;<span id="projectnumber">18.1.0.2392</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2262</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
   </td>
  </tr>
  </tbody>
@@ -207,6 +207,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bb09a2ba2f2f843a5f2e7824f1f21d0 inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a8bb09a2ba2f2f843a5f2e7824f1f21d0">GetTimecode</a> (<a class="el" href="../../d1/d32/class_a_j_a_time_code.html">AJATimeCode</a> &amp;outTimecode, const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;inTimeBase) const</td></tr>
 <tr class="memdesc:a8bb09a2ba2f2f843a5f2e7824f1f21d0 inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with my timecode "time" as an <a class="el" href="../../d1/d32/class_a_j_a_time_code.html" title="Utility class for timecodes. ">AJATimeCode</a>.  <a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a8bb09a2ba2f2f843a5f2e7824f1f21d0">More...</a><br /></td></tr>
 <tr class="separator:a8bb09a2ba2f2f843a5f2e7824f1f21d0 inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64304edbf3225eb9ae06e919e98c8069 inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a64304edbf3225eb9ae06e919e98c8069">SetRP188Words</a> (const uint32_t inLoWord, const uint32_t inHiWord, const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;inTimeBase)</td></tr>
+<tr class="memdesc:a64304edbf3225eb9ae06e919e98c8069 inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets my timecode/binary-group state from the two 32-bit words used to carry SMPTE 12M timecode over NTV2 ancillary/register APIs (e.g. <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html#afd594b484bc178b81678ad74f1d29791" title="| BG 4 | Secs10 | BG 3 | Secs 1 | BG 2 | Frms10 | BG 1 | Frms 1 | ">NTV2_RP188::fLo</a>/fHi, and the ANC timecode barcode used elsewhere in this SDK).  <a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a64304edbf3225eb9ae06e919e98c8069">More...</a><br /></td></tr>
+<tr class="separator:a64304edbf3225eb9ae06e919e98c8069 inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d253eb98632814b1af7a034c63423c inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a98d253eb98632814b1af7a034c63423c">GetRP188Words</a> (uint32_t &amp;outLoWord, uint32_t &amp;outHiWord, const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;inTimeBase) const</td></tr>
+<tr class="memdesc:a98d253eb98632814b1af7a034c63423c inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with my current timecode/binary-group state packed into the two 32-bit words used to carry SMPTE 12M timecode over NTV2 ancillary/register APIs (e.g. <a class="el" href="../../d9/dba/class_n_t_v2___r_p188.html#afd594b484bc178b81678ad74f1d29791" title="| BG 4 | Secs10 | BG 3 | Secs 1 | BG 2 | Frms10 | BG 1 | Frms 1 | ">NTV2_RP188::fLo</a>/fHi, and the ANC timecode barcode used elsewhere in this SDK).  <a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#a98d253eb98632814b1af7a034c63423c">More...</a><br /></td></tr>
+<tr class="separator:a98d253eb98632814b1af7a034c63423c inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab514ca939c6edc66fa88003ae204d99f inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d3f/group___a_j_a_group_status.html#ga7ae9216ddf243580f7a96ec669f09766">AJAStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ab514ca939c6edc66fa88003ae204d99f">SetBinaryGroupHexValue</a> (uint8_t digitNum, uint8_t hexValue, uint8_t mask=0x0f)</td></tr>
 <tr class="memdesc:ab514ca939c6edc66fa88003ae204d99f inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets my raw "Binary Group" hex values.  <a href="../../d7/dc8/class_a_j_a_ancillary_data___timecode.html#ab514ca939c6edc66fa88003ae204d99f">More...</a><br /></td></tr>
 <tr class="separator:ab514ca939c6edc66fa88003ae204d99f inherit pub_methods_class_a_j_a_ancillary_data___timecode"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1363,7 +1369,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d73/class_a_j_a_ancillary_data___timecode___a_t_c.html">AJAAncillaryData_Timecode_ATC</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 06:18:27 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Aug 21 2026 16:02:12 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

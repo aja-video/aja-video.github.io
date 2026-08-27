@@ -5,7 +5,7 @@ var searchData=
   ['s_5frc32012a_5fbroadcast_5f1485',['s_rc32012a_broadcast_1485',['../dd/d9e/ntv2metale2e_8h.html#ac57ac3bf9c7e1079c72f8d7c150e5f31',1,'ntv2metale2e.h']]],
   ['sampleduration',['sampleDuration',['../d7/da1/struct_p_e_r_f_i_n_f_o___d_s_h_o_w___a_u_d_i_o_b_r_e_a_k.html#a62539d6ad72fbf326c97b48cce0dfc35',1,'PERFINFO_DSHOW_AUDIOBREAK']]],
   ['samplerate',['sampleRate',['../df/d92/class_a_j_a_wav_writer_audio_format.html#a064f52aa65277505c0fc447cb4bc1695',1,'AJAWavWriterAudioFormat::sampleRate()'],['../d6/d21/struct_n_t_v2_audio_physical_format.html#a3f503f98bd1e5a8acef12307a08f6378',1,'NTV2AudioPhysicalFormat::sampleRate()']]],
-  ['samples',['Samples',['../d9/d29/struct_w_a_v_e_f_o_r_m_a_t_e_x_t_e_n_s_i_b_l_e.html#a0134221779cb554a038fb2a0123f904d',1,'WAVEFORMATEXTENSIBLE']]],
+  ['samples',['Samples',['../d9/d29/struct_w_a_v_e_f_o_r_m_a_t_e_x_t_e_n_s_i_b_l_e.html#ab15bbf060d25434383a260e8457d96b5',1,'WAVEFORMATEXTENSIBLE']]],
   ['samplesize',['sampleSize',['../d8/d35/struct_a_j_a_raw_audio_header.html#a3896a58d1080f190728b020149552713',1,'AJARawAudioHeader::sampleSize()'],['../df/d92/class_a_j_a_wav_writer_audio_format.html#a25e4e51f04a1500ac6cc0528ebaa9a7f',1,'AJAWavWriterAudioFormat::sampleSize()']]],
   ['samplestart',['sampleStart',['../df/d32/struct_p_e_r_f_i_n_f_o___d_s_h_o_w___a_u_d_i_o_r_e_c_v.html#af4a2c604b35723f7fa5944dceb367f1a',1,'PERFINFO_DSHOW_AUDIORECV']]],
   ['samplestop',['sampleStop',['../df/d32/struct_p_e_r_f_i_n_f_o___d_s_h_o_w___a_u_d_i_o_r_e_c_v.html#ad63b1fc25d567cf7a09945c13fd90539',1,'PERFINFO_DSHOW_AUDIORECV']]],
