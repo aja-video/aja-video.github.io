@@ -6,7 +6,6 @@ var searchData=
   ['_5fatendaction_5f',['_AtEndAction_',['../d3/db1/ntv2ccplayer_8h.html#a1628f5fb3c7f477f12765d18e18d03df',1,'ntv2ccplayer.h']]],
   ['_5fautocirccommand_5f',['_AutoCircCommand_',['../d4/dd7/ntv2publicinterface_8h.html#a12a4fc395b2c4ab619b222f08f27bd48',1,'ntv2publicinterface.h']]],
   ['_5fcaptiondatasrc',['_CaptionDataSrc',['../da/d4f/ntv2ccgrabber_8h.html#a1c49e6dadc61c9d0bb6d88d3c5c86602',1,'ntv2ccgrabber.h']]],
-  ['_5fcaptiondecode608stats',['_CaptionDecode608Stats',['../d7/d7b/ntv2captiondecodechannel608_8h.html#a254d873cedc90930e41997803a6614f1',1,'ntv2captiondecodechannel608.h']]],
   ['_5fflash_5fcommand',['_FLASH_COMMAND',['../d6/d0c/ntv2enums_8h.html#a2728047fd53e6887f596dca97ab2c520',1,'ntv2enums.h']]],
   ['_5finterrupt_5fenums_5f',['_INTERRUPT_ENUMS_',['../d4/dd7/ntv2publicinterface_8h.html#a7525fd14a107395a7e835b3cad38b392',1,'ntv2publicinterface.h']]],
   ['_5fmap_5fmemory_5ftype',['_MAP_MEMORY_TYPE',['../d4/d20/ntv2winpublicinterface_8h.html#a6a2ae522a04a67acb77d6024f39d9570',1,'ntv2winpublicinterface.h']]],

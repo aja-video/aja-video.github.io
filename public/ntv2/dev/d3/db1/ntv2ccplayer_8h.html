@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2392</span>
+   &#160;<span id="projectnumber">18.1.0.2434</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2434</div>
   </td>
  </tr>
  </tbody>
@@ -102,9 +102,9 @@ $(document).ready(function(){initNavTree('d3/db1/ntv2ccplayer_8h.html','../../')
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d9/de9/ntv2democommon_8h_source.html">ntv2democommon.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/dd5/thread_8h_source.html">ajabase/system/thread.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d21/info_8h_source.html">ajabase/system/info.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dc0/ntv2captionencoder608_8h_source.html">ntv2captionencoder608.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/d2f/ntv2captionencoder708_8h_source.html">ntv2captionencoder708.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d80/ntv2caption608types_8h_source.html">ntv2caption608types.h</a>&quot;</code><br />
+<code>#include &quot;ntv2captionencoder608.h&quot;</code><br />
+<code>#include &quot;ntv2captionencoder708.h&quot;</code><br />
+<code>#include &quot;ntv2caption608types.h&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -147,7 +147,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab3d8d644b1ace1152773e4717a7d5df2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../dc/d98/struct_c_c_gen_config.html">CCGenConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/ntv2ccplayer_8h.html#ab3d8d644b1ace1152773e4717a7d5df2">CCGenConfig</a></td></tr>
 <tr class="memdesc:ab3d8d644b1ace1152773e4717a7d5df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is used to configure a caption generator for a single caption channel.  <a href="#ab3d8d644b1ace1152773e4717a7d5df2">More...</a><br /></td></tr>
 <tr class="separator:ab3d8d644b1ace1152773e4717a7d5df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcf1b1202a21a4c5afd30322607afdac"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="../../db/d80/ntv2caption608types_8h.html#a94b2b6d3194991337751caf77314e3ce">NTV2Line21Channel</a>, <a class="el" href="../../dc/d98/struct_c_c_gen_config.html">CCGenConfig</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/ntv2ccplayer_8h.html#abcf1b1202a21a4c5afd30322607afdac">CaptionChanGenMap</a></td></tr>
+<tr class="memitem:abcf1b1202a21a4c5afd30322607afdac"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; NTV2Line21Channel, <a class="el" href="../../dc/d98/struct_c_c_gen_config.html">CCGenConfig</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/ntv2ccplayer_8h.html#abcf1b1202a21a4c5afd30322607afdac">CaptionChanGenMap</a></td></tr>
 <tr class="separator:abcf1b1202a21a4c5afd30322607afdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb6e6bfabc5eee93d9441cc537c83e29"><td class="memItemLeft" align="right" valign="top">typedef CaptionChanGenMap::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/ntv2ccplayer_8h.html#aeb6e6bfabc5eee93d9441cc537c83e29">CaptionChanGenMapCIter</a></td></tr>
 <tr class="separator:aeb6e6bfabc5eee93d9441cc537c83e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +215,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="../../db/d80/ntv2caption608types_8h.html#a94b2b6d3194991337751caf77314e3ce">NTV2Line21Channel</a>, <a class="el" href="../../dc/d98/struct_c_c_gen_config.html">CCGenConfig</a>&gt; <a class="el" href="../../d3/db1/ntv2ccplayer_8h.html#abcf1b1202a21a4c5afd30322607afdac">CaptionChanGenMap</a></td>
+          <td class="memname">typedef std::map&lt;NTV2Line21Channel, <a class="el" href="../../dc/d98/struct_c_c_gen_config.html">CCGenConfig</a>&gt; <a class="el" href="../../d3/db1/ntv2ccplayer_8h.html#abcf1b1202a21a4c5afd30322607afdac">CaptionChanGenMap</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -373,7 +373,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_957939c99aa964633a97cef056d70db5.html">demos</a></li><li class="navelem"><a class="el" href="../../dir_31e67d0edce47235535d23f0ab7d70d7.html">ntv2ccplayer</a></li><li class="navelem"><a class="el" href="../../d3/db1/ntv2ccplayer_8h.html">ntv2ccplayer.h</a></li>
-    <li class="footer">Generated on Fri Aug 21 2026 16:02:11 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Sep 23 2026 12:41:01 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

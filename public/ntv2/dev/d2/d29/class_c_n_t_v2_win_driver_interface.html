@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2392</span>
+   &#160;<span id="projectnumber">18.1.0.2434</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2434</div>
   </td>
  </tr>
  </tbody>
@@ -141,12 +141,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade4376c725d78263dfafc2fe59edad8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8107f043453a36e46e103b0806e9d96e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a8107f043453a36e46e103b0806e9d96e">ConfigureInterrupt</a> (const bool bEnable, const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterruptType)</td></tr>
 <tr class="separator:a8107f043453a36e46e103b0806e9d96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef874d30c762d6621d35ef305623c240"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#aef874d30c762d6621d35ef305623c240">ConfigureSubscription</a> (const bool bSubscribe, const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterruptType, <a class="el" href="../../db/de2/ajatypes_8h.html#af65741d33a93da63c29dde81f0b2c83d">PULWord</a> &amp;hSubcription)</td></tr>
-<tr class="separator:aef874d30c762d6621d35ef305623c240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a960fe4769b6ac89fe81022d564be98f3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a960fe4769b6ac89fe81022d564be98f3">GetInterruptCount</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterrupt, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outCount)</td></tr>
-<tr class="memdesc:a960fe4769b6ac89fe81022d564be98f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the number of interrupts of the given type processed by the driver.  <a href="#a960fe4769b6ac89fe81022d564be98f3">More...</a><br /></td></tr>
+<tr class="memdesc:a960fe4769b6ac89fe81022d564be98f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the current total number of interrupts of the given type processed by the driver's interrupt service routine (ISR).  <a href="#a960fe4769b6ac89fe81022d564be98f3">More...</a><br /></td></tr>
 <tr class="separator:a960fe4769b6ac89fe81022d564be98f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc74f2afb5b4b77462e03008450fd099"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#adc74f2afb5b4b77462e03008450fd099">WaitForInterrupt</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterruptType, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> timeOutMs=50)</td></tr>
+<tr class="memdesc:adc74f2afb5b4b77462e03008450fd099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efficiently waits for the next given interrupt to be signaled on the device.  <a href="#adc74f2afb5b4b77462e03008450fd099">More...</a><br /></td></tr>
 <tr class="separator:adc74f2afb5b4b77462e03008450fd099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7611544425bb55d0a12939af058c414"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ab7611544425bb55d0a12939af058c414">AutoCirculate</a> (<a class="el" href="../../d2/d6b/struct_a_u_t_o_c_i_r_c_u_l_a_t_e___d_a_t_a.html">AUTOCIRCULATE_DATA</a> &amp;autoCircData)</td></tr>
 <tr class="memdesc:ab7611544425bb55d0a12939af058c414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an AutoCirculate command to the NTV2 driver.  <a href="#ab7611544425bb55d0a12939af058c414">More...</a><br /></td></tr>
@@ -197,6 +196,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa59354a9c7c540136f7fb3f6c3d5e506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaff359fd4ebe6b76f67641a2c5c13dc0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#aaff359fd4ebe6b76f67641a2c5c13dc0">HevcSendMessage</a> (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a64c275149da9bc90e74ad7e486f7b7a0">HevcMessageHeader</a> *pMsg)</td></tr>
 <tr class="separator:aaff359fd4ebe6b76f67641a2c5c13dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa49640f334b47fd1bef18b0c0c8e15"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/de2/ajatypes_8h.html#a0b94bcde5ffe910695c0e57ea5a4364e">HANDLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#affa49640f334b47fd1bef18b0c0c8e15">GetEventHandleForInterrupt</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterruptType)</td></tr>
+<tr class="memdesc:affa49640f334b47fd1bef18b0c0c8e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined(NTV2_DEPRECATE_17_6)  <a href="#affa49640f334b47fd1bef18b0c0c8e15">More...</a><br /></td></tr>
+<tr class="separator:affa49640f334b47fd1bef18b0c0c8e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_n_t_v2_driver_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_n_t_v2_driver_interface')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html">CNTV2DriverInterface</a></td></tr>
 <tr class="memitem:a4bb98ea0d53b6ed0c5fd2cabf2eaa349 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a4bb98ea0d53b6ed0c5fd2cabf2eaa349">GetNumFrameBuffers</a> (void) const</td></tr>
 <tr class="separator:a4bb98ea0d53b6ed0c5fd2cabf2eaa349 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,14 +287,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bd96af01b57b79caf296fe26ea3c300 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1bd96af01b57b79caf296fe26ea3c300">ReadRegisters</a> (<a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ace7039d19ef677ec1b2b27ebab902b64">NTV2RegisterReads</a> &amp;inOutValues)</td></tr>
 <tr class="memdesc:a1bd96af01b57b79caf296fe26ea3c300 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the register(s) specified by the given <a class="el" href="../../d2/d8f/class_n_t_v2_reg_info.html" title="Everything needed to call CNTV2Card::ReadRegister or CNTV2Card::WriteRegister functions. ">NTV2RegInfo</a> sequence.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1bd96af01b57b79caf296fe26ea3c300">More...</a><br /></td></tr>
 <tr class="separator:a1bd96af01b57b79caf296fe26ea3c300 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb8aca59dfc745b8a441eda8135270e inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/de2/ajatypes_8h.html#a0b94bcde5ffe910695c0e57ea5a4364e">HANDLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">GetInterruptEvent</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterruptType)</td></tr>
-<tr class="separator:adbb8aca59dfc745b8a441eda8135270e inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f5ec3efe407a835c684d9dd47c79fce inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7f5ec3efe407a835c684d9dd47c79fce">GetInterruptEventCount</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> inEventCode, <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outCount)</td></tr>
-<tr class="memdesc:a7f5ec3efe407a835c684d9dd47c79fce inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the number of interrupt events that I successfully waited for.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7f5ec3efe407a835c684d9dd47c79fce">More...</a><br /></td></tr>
+<tr class="memdesc:a7f5ec3efe407a835c684d9dd47c79fce inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the current number of interrupt events that this CNTV2Card/CNTV2DriverInterface instance successfully waited for.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7f5ec3efe407a835c684d9dd47c79fce">More...</a><br /></td></tr>
 <tr class="separator:a7f5ec3efe407a835c684d9dd47c79fce inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82a65429ba069196b34f46bbdd72960 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac82a65429ba069196b34f46bbdd72960">SetInterruptEventCount</a> (const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> inEventCode, const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inCount)</td></tr>
-<tr class="memdesc:ac82a65429ba069196b34f46bbdd72960 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets my interrupt event tally for the given interrupt type. (This is my count of the number of successful event waits.)  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac82a65429ba069196b34f46bbdd72960">More...</a><br /></td></tr>
+<tr class="memdesc:ac82a65429ba069196b34f46bbdd72960 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the interrupt event tally for the given interrupt type for this CNTV2Card/CNTV2DriverInterface instance to the given value.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ac82a65429ba069196b34f46bbdd72960">More...</a><br /></td></tr>
 <tr class="separator:ac82a65429ba069196b34f46bbdd72960 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db56aa7f12f8bf3ed63fc718b5d148d inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a0db56aa7f12f8bf3ed63fc718b5d148d">GetOutputVerticalEventCount</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outCount, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6">NTV2_CHANNEL1</a>)</td></tr>
+<tr class="memdesc:a0db56aa7f12f8bf3ed63fc718b5d148d inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the number of output interrupt events that this device instance successfully waited for on the given channel.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a0db56aa7f12f8bf3ed63fc718b5d148d">More...</a><br /></td></tr>
+<tr class="separator:a0db56aa7f12f8bf3ed63fc718b5d148d inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331eb108350960896433036714f4031f inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a331eb108350960896433036714f4031f">GetInputVerticalEventCount</a> (<a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &amp;outCount, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6">NTV2_CHANNEL1</a>)</td></tr>
+<tr class="memdesc:a331eb108350960896433036714f4031f inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers with the number of input interrupt events that this device instance successfully waited for on the given channel.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a331eb108350960896433036714f4031f">More...</a><br /></td></tr>
+<tr class="separator:a331eb108350960896433036714f4031f inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c2b5a97c92b24f9977d6cdfdc7a36f inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a65c2b5a97c92b24f9977d6cdfdc7a36f">SetOutputVerticalEventCount</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inCount, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6">NTV2_CHANNEL1</a>)</td></tr>
+<tr class="memdesc:a65c2b5a97c92b24f9977d6cdfdc7a36f inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the output interrupt event tally for this device instance for the given channel.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a65c2b5a97c92b24f9977d6cdfdc7a36f">More...</a><br /></td></tr>
+<tr class="separator:a65c2b5a97c92b24f9977d6cdfdc7a36f inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c1f02a7e71852bed21b7fc4f329762 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a58c1f02a7e71852bed21b7fc4f329762">SetInputVerticalEventCount</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> inCount, const <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> inChannel=<a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dceac8b886b1339c52f100305aefff5298c6">NTV2_CHANNEL1</a>)</td></tr>
+<tr class="memdesc:a58c1f02a7e71852bed21b7fc4f329762 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the input interrupt event tally for this device instance for the given channel.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a58c1f02a7e71852bed21b7fc4f329762">More...</a><br /></td></tr>
+<tr class="separator:a58c1f02a7e71852bed21b7fc4f329762 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a016e52b03dabb94a3299a41efd73e4e1 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a016e52b03dabb94a3299a41efd73e4e1">IsSupported</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a644e5fb3a4376138f0e9419529f1e024">NTV2BoolParamID</a> inParamID)</td></tr>
 <tr class="separator:a016e52b03dabb94a3299a41efd73e4e1 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0584af7436d78321d22d486384b1d2b4 inherit pub_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a0584af7436d78321d22d486384b1d2b4">GetNumSupported</a> (const <a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a310e1d19f19aed9c846ab97ece14f153">NTV2NumericParamID</a> inParamID)</td></tr>
@@ -366,22 +378,24 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
+<tr class="memitem:a2fe3cf1dd16a93162883d8f0a99c1594"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#af65741d33a93da63c29dde81f0b2c83d">PULWord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a2fe3cf1dd16a93162883d8f0a99c1594">_EventHandles</a></td></tr>
+<tr class="separator:a2fe3cf1dd16a93162883d8f0a99c1594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6369224501394dfa72e8c7d36fc29ad"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ac6369224501394dfa72e8c7d36fc29ad">DMA_LOCKED_VEC</a></td></tr>
 <tr class="separator:ac6369224501394dfa72e8c7d36fc29ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_class_c_n_t_v2_driver_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_c_n_t_v2_driver_interface')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html">CNTV2DriverInterface</a></td></tr>
 <tr class="memitem:a43246d97bf0b1ecc44eae325f16a1082 inherit pro_types_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a43246d97bf0b1ecc44eae325f16a1082">_EventCounts</a></td></tr>
 <tr class="separator:a43246d97bf0b1ecc44eae325f16a1082 inherit pro_types_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7883e261018a4b371575baa7aee135a5 inherit pro_types_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="../../db/de2/ajatypes_8h.html#af65741d33a93da63c29dde81f0b2c83d">PULWord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7883e261018a4b371575baa7aee135a5">_EventHandles</a></td></tr>
-<tr class="separator:a7883e261018a4b371575baa7aee135a5 inherit pro_types_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:add299287dc5fd31f7cf5272ae034d32f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#add299287dc5fd31f7cf5272ae034d32f">OpenLocalPhysical</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inDeviceIndex)</td></tr>
-<tr class="memdesc:add299287dc5fd31f7cf5272ae034d32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined(NTV2_DEPRECATE_17_6)  <a href="#add299287dc5fd31f7cf5272ae034d32f">More...</a><br /></td></tr>
+<tr class="memdesc:add299287dc5fd31f7cf5272ae034d32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the local/physical device connection.  <a href="#add299287dc5fd31f7cf5272ae034d32f">More...</a><br /></td></tr>
 <tr class="separator:add299287dc5fd31f7cf5272ae034d32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abda712f26733c7025023d4acea65d83c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#abda712f26733c7025023d4acea65d83c">CloseLocalPhysical</a> (void)</td></tr>
 <tr class="memdesc:abda712f26733c7025023d4acea65d83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases host resources associated with the local/physical device connection.  <a href="#abda712f26733c7025023d4acea65d83c">More...</a><br /></td></tr>
 <tr class="separator:abda712f26733c7025023d4acea65d83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54ddf0d8ea69eca6c96ca7f41b4437e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ae54ddf0d8ea69eca6c96ca7f41b4437e">WinConfigureSubscription</a> (const bool bSubscribe, const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a> eInterruptType)</td></tr>
+<tr class="separator:ae54ddf0d8ea69eca6c96ca7f41b4437e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c_n_t_v2_driver_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_n_t_v2_driver_interface')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html">CNTV2DriverInterface</a></td></tr>
 <tr class="memitem:a2d33b7c97ae9368ae31517201f7b1f5d inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a2d33b7c97ae9368ae31517201f7b1f5d">OpenRemote</a> (const <a class="el" href="../../d3/d9a/class_n_t_v2_device_spec_parser.html">NTV2DeviceSpecParser</a> &amp;inSpec)</td></tr>
 <tr class="memdesc:a2d33b7c97ae9368ae31517201f7b1f5d inherit pro_methods_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peforms the housekeeping details of opening the remote/virtual device using the given specParser.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a2d33b7c97ae9368ae31517201f7b1f5d">More...</a><br /></td></tr>
@@ -418,6 +432,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2c84f115ee232cdaa2d09705b097883c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73a6ad3e63bae056580c961543e28d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#af73a6ad3e63bae056580c961543e28d6">_previousAudioSelection</a></td></tr>
 <tr class="separator:af73a6ad3e63bae056580c961543e28d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c8ad41fce408b455ec34b4bab554c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a2fe3cf1dd16a93162883d8f0a99c1594">_EventHandles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a14c8ad41fce408b455ec34b4bab554c2">mInterruptEventHandles</a></td></tr>
+<tr class="separator:a14c8ad41fce408b455ec34b4bab554c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae699927606f73dc31633576af042d0a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ac6369224501394dfa72e8c7d36fc29ad">DMA_LOCKED_VEC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#ae699927606f73dc31633576af042d0a9">_vecDmaLocked</a></td></tr>
 <tr class="separator:ae699927606f73dc31633576af042d0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_c_n_t_v2_driver_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_n_t_v2_driver_interface')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html">CNTV2DriverInterface</a></td></tr>
@@ -441,9 +457,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a718d23906d3bbf39f11d1be962fa8b32 inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d8f/ntv2nubaccess_8h.html#af8f2e850fe8bc9ee7d7a93ea4c8295db">NTV2RPCAPI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a718d23906d3bbf39f11d1be962fa8b32">_pRPCAPI</a></td></tr>
 <tr class="memdesc:a718d23906d3bbf39f11d1be962fa8b32 inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points to remote or software device interface; otherwise NULL for local physical device.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a718d23906d3bbf39f11d1be962fa8b32">More...</a><br /></td></tr>
 <tr class="separator:a718d23906d3bbf39f11d1be962fa8b32 inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21249f2b521c494f74fcb27bcb0769da inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7883e261018a4b371575baa7aee135a5">_EventHandles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a21249f2b521c494f74fcb27bcb0769da">mInterruptEventHandles</a></td></tr>
-<tr class="memdesc:a21249f2b521c494f74fcb27bcb0769da inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">For subscribing to each possible event, one for each interrupt type.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a21249f2b521c494f74fcb27bcb0769da">More...</a><br /></td></tr>
-<tr class="separator:a21249f2b521c494f74fcb27bcb0769da inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a775403178afbd0e87e2c75a4dae50f inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a43246d97bf0b1ecc44eae325f16a1082">_EventCounts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7a775403178afbd0e87e2c75a4dae50f">mEventCounts</a></td></tr>
 <tr class="memdesc:a7a775403178afbd0e87e2c75a4dae50f inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">My event tallies, one for each interrupt type. Note that these.  <a href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7a775403178afbd0e87e2c75a4dae50f">More...</a><br /></td></tr>
 <tr class="separator:a7a775403178afbd0e87e2c75a4dae50f inherit pro_attribs_class_c_n_t_v2_driver_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,6 +509,30 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00031">31</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a2fe3cf1dd16a93162883d8f0a99c1594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe3cf1dd16a93162883d8f0a99c1594">&#9670;&nbsp;</a></span>_EventHandles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="../../db/de2/ajatypes_8h.html#af65741d33a93da63c29dde81f0b2c83d">PULWord</a>&gt; <a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a2fe3cf1dd16a93162883d8f0a99c1594">CNTV2WinDriverInterface::_EventHandles</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00116">116</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+
+</div>
+</div>
 <a id="ac6369224501394dfa72e8c7d36fc29ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6369224501394dfa72e8c7d36fc29ad">&#9670;&nbsp;</a></span>DMA_LOCKED_VEC</h2>
 
@@ -516,7 +553,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00125">125</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00129">129</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +604,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>My default destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -607,7 +644,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a5c956b86c101916f981f95b91a8f58ba">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01024">1024</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01049">1049</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -639,7 +676,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a50cc1bc5b77bee021f13a9cba0be085e">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00262">262</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00266">266</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -666,11 +703,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000325">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000307">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a8963fb70364041fde9912fa5f561a7c5">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00818">818</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00843">843</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -710,53 +747,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ab4a503a6a284670828e274523e0b89fe">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00398">398</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aef874d30c762d6621d35ef305623c240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef874d30c762d6621d35ef305623c240">&#9670;&nbsp;</a></span>ConfigureSubscription()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CNTV2WinDriverInterface::ConfigureSubscription </td>
-          <td>(</td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>bSubscribe</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a>&#160;</td>
-          <td class="paramname"><em>eInterruptType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/de2/ajatypes_8h.html#af65741d33a93da63c29dde81f0b2c83d">PULWord</a> &amp;&#160;</td>
-          <td class="paramname"><em>hSubcription</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afddf8d74959e9b3f9318cf3ec24c83ee">CNTV2DriverInterface</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00426">426</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00406">406</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -796,7 +787,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a7afdaf02ac0c86f988af4577e8204492">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00077">77</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00076">76</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -882,7 +873,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a5f6e741cb331b401258df896ca30d003">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00844">844</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00869">869</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -989,7 +980,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad0d97a69985a00edaee9cb118bbd9f10">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00885">885</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00910">910</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1068,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a3a7fa78d11e4a3f48c2593a18ccd8093">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00931">931</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00956">956</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1104,11 +1095,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000324">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000306">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a633504c4fecc46c71959cc7632ece69c">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00770">770</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00795">795</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1149,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a5752d8b2fe73e23807e03c5d8d64c59c">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01393">1393</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01418">1418</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1177,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01417">1417</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01442">1442</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1205,37 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01383">1383</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01408">1408</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="affa49640f334b47fd1bef18b0c0c8e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa49640f334b47fd1bef18b0c0c8e15">&#9670;&nbsp;</a></span>GetEventHandleForInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/de2/ajatypes_8h.html#a0b94bcde5ffe910695c0e57ea5a4364e">HANDLE</a> CNTV2WinDriverInterface::GetEventHandleForInterrupt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a>&#160;</td>
+          <td class="paramname"><em>eInterruptType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>defined(NTV2_DEPRECATE_17_6) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00484">484</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1273,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Answers with the number of interrupts of the given type processed by the driver. </p>
+<p>Answers with the current total number of interrupts of the given type processed by the driver's interrupt service routine (ISR). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">eInterrupt</td><td>The interrupt type of interest. </td></tr>
@@ -1264,7 +1285,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a8f96bb827b96b8709cc616478e5441df">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00474">474</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00494">494</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1301,11 +1322,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000315">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad101bc5fd0969e255993a973bd8e7f11">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00091">91</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00090">90</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1342,9 +1363,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000316">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00092">92</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00091">91</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1371,9 +1392,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000314">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00090">90</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00089">89</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1400,11 +1421,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000327">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000309">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a6a48010cc20bcd82a4303c1e0e9ac0db">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00105">105</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00104">104</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1431,11 +1452,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000317">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#acec1ab824265dcb648540fc822abfb03">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00565">565</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00590">590</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1484,9 +1505,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000323">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000305">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00740">740</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00765">765</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1513,11 +1534,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000319">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000301">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a6d69f5e68ea8f64b3c9c3b39ca14f92c">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00630">630</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00655">655</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1544,11 +1565,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000321">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000303">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afa3784f61c9878e07bae0bd7e58e799e">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00686">686</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00711">711</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1587,7 +1608,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#ad518f9ae648ba9059924b2af209047f0">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01362">1362</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01387">1387</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1615,11 +1636,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>defined(NTV2_DEPRECATE_17_6) </p>
+<p>Opens the local/physical device connection. </p>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a373bb153f883b523e763c20051ebc2cd">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00177">177</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1656,11 +1677,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000326">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000308">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a6e88b5f8abfd04763c8efcc8ce63c2f5">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00797">797</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00822">822</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1735,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#afb2068bfeaa8b8240ebd4067b596ee37">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00299">299</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00307">307</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1742,7 +1763,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01437">1437</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01462">1462</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1770,7 +1791,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01378">1378</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l01403">1403</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1797,9 +1818,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000313">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated:</a></b></dt><dd>Deprecated starting in SDK 16.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00089">89</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00088">88</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -1826,11 +1847,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000318">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a408279b545f799b53d8a4635676d601b">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00596">596</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00621">621</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1857,11 +1878,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000320">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000302">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a1e62f16f3b3ab9b1cd6ad9e42156849a">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00658">658</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00683">683</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1888,11 +1909,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000322">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000304">Deprecated:</a></b></dt><dd>Obsolete starting in SDK 16.0. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adb4919c8873ad354b0e64e244132ad09">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00713">713</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00738">738</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1909,7 +1930,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool CNTV2WinDriverInterface::WaitForInterrupt </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a>&#160;</td>
-          <td class="paramname"><em>eInterruptType</em>, </td>
+          <td class="paramname"><em>eInterrupt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1930,9 +1951,58 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Efficiently waits for the next given interrupt to be signaled on the device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eInterrupt</td><td>The interrupt of interest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeOutMs</td><td>Optionally specifies the maximum time to wait for the interrupt. Defaults to 68 milliseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Superclass implementations must call this function for remote devices (when built with NTV2_NUB_CLIENT_SUPPORT). </dd></dl>
+
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#a54fa160dc00f1be4cd43bf5a141fb8c6">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00522">522</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00545">545</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae54ddf0d8ea69eca6c96ca7f41b4437e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54ddf0d8ea69eca6c96ca7f41b4437e">&#9670;&nbsp;</a></span>WinConfigureSubscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CNTV2WinDriverInterface::WinConfigureSubscription </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bSubscribe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab183d77e82aa680d2bd73a4b3907c556">INTERRUPT_ENUMS</a>&#160;</td>
+          <td class="paramname"><em>eInterruptType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00434">434</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1986,7 +2056,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aadbe6f23341da6c47aa5fd7a8a2676fb">CNTV2DriverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html#l00352">352</a> of file <a class="el" href="../../df/d16/ntv2windriverinterface_8cpp_source.html">ntv2windriverinterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2011,7 +2081,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00124">124</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2035,7 +2105,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00120">120</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2059,7 +2129,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00119">119</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00122">122</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2083,7 +2153,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00126">126</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2107,7 +2177,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00122">122</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00125">125</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2131,7 +2201,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00117">117</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00120">120</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2155,7 +2225,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00118">118</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2179,7 +2249,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00126">126</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00130">130</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
+
+</div>
+</div>
+<a id="a14c8ad41fce408b455ec34b4bab554c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c8ad41fce408b455ec34b4bab554c2">&#9670;&nbsp;</a></span>mInterruptEventHandles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html#a2fe3cf1dd16a93162883d8f0a99c1594">_EventHandles</a> CNTV2WinDriverInterface::mInterruptEventHandles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html#l00127">127</a> of file <a class="el" href="../../d6/dbf/ntv2windriverinterface_8h_source.html">ntv2windriverinterface.h</a>.</p>
 
 </div>
 </div>
@@ -2193,7 +2287,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d29/class_c_n_t_v2_win_driver_interface.html">CNTV2WinDriverInterface</a></li>
-    <li class="footer">Generated on Fri Aug 21 2026 16:02:13 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Sep 23 2026 12:41:02 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

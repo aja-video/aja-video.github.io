@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2392</span>
+   &#160;<span id="projectnumber">18.1.0.2434</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2434</div>
   </td>
  </tr>
  </tbody>
@@ -384,8 +384,8 @@ CNTV2Card Class</h3>
 </ul>
 </li>
 <li><b>Interrupts &amp; Events API</b><ul>
-<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af4d4e2d89009d9ea923e7b9a7de0ea69" title="Causes me to be notified when an input vertical blanking interrupt occurs on the given input channel...">CNTV2Card::SubscribeInputVerticalEvent</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a70c45811d6556f29247575fa68cda7e5" title="Unregisters me so I&#39;m no longer notified when an input VBI is signaled on the given input channel...">CNTV2Card::UnsubscribeInputVerticalEvent</a> to subscribe or unsubscribe to input vertical blanking interrupts</li>
-<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ad24678dfaa1e5dc69114e178e67fa1da" title="Causes me to be notified when an output vertical blanking interrupt is generated for the given output...">CNTV2Card::SubscribeOutputVerticalEvent</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a79da279305b334b732549d37ff8779c6" title="Unregisters me so I&#39;m no longer notified when an output VBI is signaled on the given output channel...">CNTV2Card::UnsubscribeOutputVerticalEvent</a> to subscribe or unsubscribe to output vertical blanking interrupts</li>
+<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a986803137861c0838d08a14312266d7e" title="Causes me to be notified when an input vertical blanking interrupt occurs on the given input channel...">CNTV2Card::SubscribeInputVerticalEvent</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a84fc0f777da610217cd4859fe4f82614" title="Unregisters me so I&#39;m no longer notified when an input VBI is signaled on the given input channel...">CNTV2Card::UnsubscribeInputVerticalEvent</a> to subscribe or unsubscribe to input vertical blanking interrupts</li>
+<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a6cd9ce77b57ba163123c484827ef32cb" title="Causes me to be notified when an output vertical blanking interrupt is generated for the given output...">CNTV2Card::SubscribeOutputVerticalEvent</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a2803f0986702797cff5a4c6cd833d27a" title="Unregisters me so I&#39;m no longer notified when an output VBI is signaled on the given output channel...">CNTV2Card::UnsubscribeOutputVerticalEvent</a> to subscribe or unsubscribe to output vertical blanking interrupts</li>
 <li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a56552aedb9631efa04e1ff8ea96be02b" title="Efficiently sleeps the calling thread/process until the next one or more field (interlaced video) or ...">CNTV2Card::WaitForInputVerticalInterrupt</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a0599dc483977c64978cae92fb8837252" title="Efficiently sleeps the calling thread/process until the next one or more field (interlaced video) or ...">CNTV2Card::WaitForOutputVerticalInterrupt</a> to sleep until the next input or output frame VBI</li>
 <li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a1828395a3ecab209ad8a7a4ab5d9f5cf" title="Efficiently sleeps the calling thread/process until the next input VBI for the given field and input ...">CNTV2Card::WaitForInputFieldID</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ac05240d99252c18d39dbdba3086ca72e" title="Efficiently sleeps the calling thread/process until the next output VBI for the given field and outpu...">CNTV2Card::WaitForOutputFieldID</a> to sleep until the next input or output field VBI</li>
 </ul>
@@ -499,13 +499,13 @@ Ancillary Data Classes</h2>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Principal Classes</dt><dd><ul>
-<li><a class="el" href="db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html">CNTV2SMPTEAncData</a> — Utilities for finding and extracting VANC packets in “tall” or “taller” frame buffers.</li>
-<li><a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html">CNTV2CaptionDecoder608</a> — Decodes CEA-608 captions.</li>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html">CNTV2CaptionEncoder608</a> — Encodes CEA-608 captions.</li>
-<li><a class="el" href="dc/d4b/class_c_n_t_v2_caption_decoder708.html" title="I am a CEA-708 captioning decoder used primarily to obtain CEA-608 captions carried in CEA-708 anc da...">CNTV2CaptionDecoder708</a> — Decodes CEA-708 anc packets.</li>
-<li><a class="el" href="d7/d84/class_c_n_t_v2_caption_encoder708.html">CNTV2CaptionEncoder708</a> — Encodes CEA-708 anc packets.</li>
-<li><a class="el" href="d8/d24/class_c_n_t_v2_line21_captioner.html">CNTV2Line21Captioner</a> — Encodes or decodes line-21 waveforms for U.S. captioning, per EIA-608.</li>
-<li><a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html">CNTV2CaptionRenderer</a> — Renders (draws) CEA-608-compatible captions into frame buffers.</li>
+<li>CNTV2SMPTEAncData — Utilities for finding and extracting VANC packets in “tall” or “taller” frame buffers.</li>
+<li>CNTV2CaptionDecoder608 — Decodes CEA-608 captions.</li>
+<li>CNTV2CaptionEncoder608 — Encodes CEA-608 captions.</li>
+<li>CNTV2CaptionDecoder708 — Decodes CEA-708 anc packets.</li>
+<li>CNTV2CaptionEncoder708 — Encodes CEA-708 anc packets.</li>
+<li>CNTV2Line21Captioner — Encodes or decodes line-21 waveforms for U.S. captioning, per EIA-608.</li>
+<li>CNTV2CaptionRenderer — Renders (draws) CEA-608-compatible captions into frame buffers.</li>
 </ul>
 </dd></dl>
 <div class="dotgraph">
@@ -515,61 +515,61 @@ Ancillary Data Classes</h2>
 <p>Client programs instantiate library objects using a <b>Create</b> class method, which always return a valid smart pointer if the function result is true, an invalid one if the result is false (i.e. <code>std::bad_alloc</code> should never be thrown).</p>
 <h3><a class="anchor" id="ajacc-decoding608"></a>
 Decoding CEA-608 Captions</h3>
-<p>The <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html">CNTV2CaptionDecoder608</a> class is a full-featured CEA-608 caption decoder that can decode message or control bytes found in line 21 of an SD frame buffer, parse it to the appropriate channel (CC1, CC2, etc.), where the current state and buffer status is maintained. The class handles parsing for captioning channels CC1-CC4, TX1-TX4, and XDS in parallel — i.e., it decodes them all simultaneously.</p>
-<p>For display purposes, the class provides <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#ae05617af2db7ce58e24d502397abbfb3" title="Changes the caption channel that I&#39;m focused on (or that I&#39;m currently &quot;burning&quot; into video)...">CNTV2CaptionDecoder608::SetDisplayChannel</a> to select the current displayed channel of interest. However, since all channels are decoded simultaneously in parallel, the decoder’s “display” channel can be changed at any time, with the state of the newly-selected channel immediately seen without having to wait for the channel to receive enough new data to get back in-sync.</p>
-<p>To implement a basic decoder, create an instance (using the <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#ad8f3197350ae09419311d26b7776d731" title="Creates a new CNTV2CaptionEncoder608 instance. ">CNTV2CaptionDecoder608::Create</a> method), then call <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#ae05617af2db7ce58e24d502397abbfb3" title="Changes the caption channel that I&#39;m focused on (or that I&#39;m currently &quot;burning&quot; into video)...">CNTV2CaptionDecoder608::SetDisplayChannel</a> to select the current displayed channel of interest (if any). Clients should then call <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a547f947e04aa2e3fb673f1201faf341b" title="Notifies me that new frame data has arrived. Clients should call this method once per video frame wit...">CNTV2CaptionDecoder608::ProcessNew608FrameData</a> with the four bytes of CEA-608 <a class="el" href="df/df1/struct_caption_data.html" title="This structure encapsulates all possible CEA-608 caption data bytes that may be associated with a giv...">CaptionData</a> that arrive every frame. If interlaced video is being decoded, 2 bytes of data are often arriving with each field. The best thing to do is wait until the end of the frame and package both fields’ data into the one call.</p>
-<p><a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a547f947e04aa2e3fb673f1201faf341b" title="Notifies me that new frame data has arrived. Clients should call this method once per video frame wit...">CNTV2CaptionDecoder608::ProcessNew608FrameData</a> should be called every frame, even if the captioning data for that frame is all zeroes. CEA-608 caption rules call for certain commands to be sent twice on adjacent frames. This means that there is a difference between <code>command|command</code> and <code>command|NULL|command</code>, and if the decoder never sees the intervening NULL frames, it may mistakenly think two commands came from adjacent frames and misinterpret them.</p>
-<p>To display the caption data, call <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#ae05617af2db7ce58e24d502397abbfb3" title="Changes the caption channel that I&#39;m focused on (or that I&#39;m currently &quot;burning&quot; into video)...">CNTV2CaptionDecoder608::SetDisplayChannel</a> to select which captioning channel to display, then call <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a739af1edfff98070a97e99492af858fc" title="Blits all of my current caption channel&#39;s &quot;on-air&quot; captions into the given host buffer with the corre...">CNTV2CaptionDecoder608::BurnCaptions</a> with a pointer to the frame buffer holding the video. Clients may also iteratively call <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#abd6d1b6fa11f88da31f66c81c2aa2d76" title="Retrieves the &quot;on-air&quot; character and its attributes at the given row and column position. ">CNTV2CaptionDecoder608::GetOnAirCharacter</a> to get the character at each “cell” of the frame buffer, and implement your own burn-in. When using the burn-in feature, <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#aa06f7b02eee02712f622240427f9f9b5" title="Call this once per video frame when I&#39;m doing display &quot;burn-in&quot;, whether there is new caption data to...">CNTV2CaptionDecoder608::IdleFrame</a> should be called once per frame to properly cause characters having the “blink” display attribute to flash.</p>
-<p>The decoder also has a simple notification callback mechanism that notifies a client program of caption changes in the channel of interest. Call <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a428fbd7baec8a822505ebdd3cf8e6ad8" title="Subscribes to change notifications. ">CNTV2CaptionDecoder608::SubscribeChangeNotification</a> to install the client callback, and <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#aacf5754bc41a26913221b1d1379b8f59" title="Unsubscribes a prior change notification subscription. ">CNTV2CaptionDecoder608::UnsubscribeChangeNotification</a> to remove it. As changes to the caption channel occur — e.g., the character to be displayed at a given row/column, or its attributes (color, italics, etc.) — the client callback function is called. This permits an event-driven caption display model, as opposed to a polled model. (Note that this mechanism cannot “blink” characters that have the “flash” display attribute.)</p>
+<p>The CNTV2CaptionDecoder608 class is a full-featured CEA-608 caption decoder that can decode message or control bytes found in line 21 of an SD frame buffer, parse it to the appropriate channel (CC1, CC2, etc.), where the current state and buffer status is maintained. The class handles parsing for captioning channels CC1-CC4, TX1-TX4, and XDS in parallel — i.e., it decodes them all simultaneously.</p>
+<p>For display purposes, the class provides CNTV2CaptionDecoder608::SetDisplayChannel to select the current displayed channel of interest. However, since all channels are decoded simultaneously in parallel, the decoder’s “display” channel can be changed at any time, with the state of the newly-selected channel immediately seen without having to wait for the channel to receive enough new data to get back in-sync.</p>
+<p>To implement a basic decoder, create an instance (using the CNTV2CaptionDecoder608::Create method), then call CNTV2CaptionDecoder608::SetDisplayChannel to select the current displayed channel of interest (if any). Clients should then call CNTV2CaptionDecoder608::ProcessNew608FrameData with the four bytes of CEA-608 CaptionData that arrive every frame. If interlaced video is being decoded, 2 bytes of data are often arriving with each field. The best thing to do is wait until the end of the frame and package both fields’ data into the one call.</p>
+<p>CNTV2CaptionDecoder608::ProcessNew608FrameData should be called every frame, even if the captioning data for that frame is all zeroes. CEA-608 caption rules call for certain commands to be sent twice on adjacent frames. This means that there is a difference between <code>command|command</code> and <code>command|NULL|command</code>, and if the decoder never sees the intervening NULL frames, it may mistakenly think two commands came from adjacent frames and misinterpret them.</p>
+<p>To display the caption data, call CNTV2CaptionDecoder608::SetDisplayChannel to select which captioning channel to display, then call CNTV2CaptionDecoder608::BurnCaptions with a pointer to the frame buffer holding the video. Clients may also iteratively call CNTV2CaptionDecoder608::GetOnAirCharacter to get the character at each “cell” of the frame buffer, and implement your own burn-in. When using the burn-in feature, CNTV2CaptionDecoder608::IdleFrame should be called once per frame to properly cause characters having the “blink” display attribute to flash.</p>
+<p>The decoder also has a simple notification callback mechanism that notifies a client program of caption changes in the channel of interest. Call CNTV2CaptionDecoder608::SubscribeChangeNotification to install the client callback, and CNTV2CaptionDecoder608::UnsubscribeChangeNotification to remove it. As changes to the caption channel occur — e.g., the character to be displayed at a given row/column, or its attributes (color, italics, etc.) — the client callback function is called. This permits an event-driven caption display model, as opposed to a polled model. (Note that this mechanism cannot “blink” characters that have the “flash” display attribute.)</p>
 <h3><a class="anchor" id="ajacc-encoding608"></a>
 Encoding CEA-608 Captions</h3>
-<p>The <a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html">CNTV2CaptionEncoder608</a> class is used to encode CEA-608 compliant caption messages into a valid “Line 21” waveform for copying into an SD frame buffer. It supports the three principal caption types — “pop-on”, “paint-on”, and “roll-up” — with optional character display attributes (color, italics, etc.).</p>
-<p>Call <a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#a9848af4f24db09cc03b377fa33289875" title="Creates a new CNTV2CaptionEncoder608 instance. ">CNTV2CaptionEncoder608::Create</a> to instantiate a new instance.</p>
+<p>The CNTV2CaptionEncoder608 class is used to encode CEA-608 compliant caption messages into a valid “Line 21” waveform for copying into an SD frame buffer. It supports the three principal caption types — “pop-on”, “paint-on”, and “roll-up” — with optional character display attributes (color, italics, etc.).</p>
+<p>Call CNTV2CaptionEncoder608::Create to instantiate a new instance.</p>
 <p>There are three instance methods for enqueueing messages for each display method:</p><ul>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#a4d64dec6a83b40a8251b906fe6d34132" title="Enqueues the given message for eventual &quot;pop-on&quot; display. ">CNTV2CaptionEncoder608::EnqueuePopOnMessage</a></li>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#a59ba9d52ccc2911b9ea222ed229755fa" title="Enqueues the given message for eventual &quot;paint-on&quot; display. ">CNTV2CaptionEncoder608::EnqueuePaintOnMessage</a></li>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#a2467869be0d41a6deda8038865548551" title="Enqueues the given message for eventual &quot;roll up&quot; display. ">CNTV2CaptionEncoder608::EnqueueRollUpMessage</a></li>
-<li>…plus the <a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#a7e1be4aa641cd3d70d94c4be249a7a3b" title="Enqueues the given message for eventual reception and possible display on a receiver capable of displ...">CNTV2CaptionEncoder608::EnqueueTextMessage</a> method for enqueueing messages into channels TX1-TX4. (There currently is no provision for encoding XDS messages.)</li>
+<li>CNTV2CaptionEncoder608::EnqueuePopOnMessage</li>
+<li>CNTV2CaptionEncoder608::EnqueuePaintOnMessage</li>
+<li>CNTV2CaptionEncoder608::EnqueueRollUpMessage</li>
+<li>…plus the CNTV2CaptionEncoder608::EnqueueTextMessage method for enqueueing messages into channels TX1-TX4. (There currently is no provision for encoding XDS messages.)</li>
 </ul>
 <p>There are three instance methods for dequeueing messages, from lowest (least abstract) to highest (most abstract) level:</p><ul>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#aacd5fd0d861c1bd575258e9f461e6de9" title="This low-level function is called by the higher level &quot;GetNextLine21TransmitCaptions&quot; function...">CNTV2CaptionEncoder608::GetNextTransmitCaptionBytes</a></li>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#a85bd40635cfe5f224563d44e226a01fe" title="This calls my lower level &quot;GetNextTransmitCaptionBytes&quot; method (below), and is typically called twice...">CNTV2CaptionEncoder608::GetNextLine21TransmitCaptions</a></li>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#a2924920497f6c0b41b65876524fdfe10" title="For the given field, pops the next two pending caption bytes from the current message being transmitt...">CNTV2CaptionEncoder608::EncodeNextCaptionBytesIntoLine21</a></li>
+<li>CNTV2CaptionEncoder608::GetNextTransmitCaptionBytes</li>
+<li>CNTV2CaptionEncoder608::GetNextLine21TransmitCaptions</li>
+<li>CNTV2CaptionEncoder608::EncodeNextCaptionBytesIntoLine21</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The encoder’s dequeueing methods currently give priority to display messages (CC1-CC4) over non-display messages (TX1-TX4), sending TXn messages only when there are no CCn messages waiting to go. Because of CEA-608’s slow 4-byte-per-frame data rate, it’s easy to “saturate the pipeline” with display messages, causing non-display messages to never get sent. Client programs must take care to regulate the rate at which display messages are enqueued.</dd></dl>
 <p>There are two methods for reporting the queue status:</p><ul>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#ac6c1254ba2453aeda9b4f5a9921fd3de" title="Answers with the current depth of my queue (for the given CC608 field). ">CNTV2CaptionEncoder608::GetQueuedMessageCount</a></li>
-<li><a class="el" href="d7/d39/class_c_n_t_v2_caption_encoder608.html#ada0ab9feeb6f1f94c0b7208a622eb477" title="Answers with the total number of bytes (including command bytes) that are currently queued (for the g...">CNTV2CaptionEncoder608::GetQueuedByteCount</a></li>
+<li>CNTV2CaptionEncoder608::GetQueuedMessageCount</li>
+<li>CNTV2CaptionEncoder608::GetQueuedByteCount</li>
 </ul>
 <p>Finally, there are five methods for reporting usage statistics — i.e., querying the total bytes or messages ever enqueued or dequeued, plus querying the highest queue depth.</p>
 <p>The queues used in this class are thread-safe, so it’s okay to use one thread to enqueue messages, and another thread to dequeue them and encode them into your host frame buffer.</p>
 <h3><a class="anchor" id="ajacc-line21captioner"></a>
 Encoding and Decoding SD “Line 21” Waveforms</h3>
-<p>The <a class="el" href="d8/d24/class_c_n_t_v2_line21_captioner.html" title="Instances of me can encode two ASCII characters into a &quot;line 21&quot; closed-captioning waveform...">CNTV2Line21Captioner</a> class is used to encode or decode EIA-608 compliant raw data bytes to/from line 21 of an SD frame buffer.</p>
-<p>The <a class="el" href="d8/d24/class_c_n_t_v2_line21_captioner.html#ad7e9693728b15c940de26ec0f2cb075a" title="Decodes the supplied line of 8-bit uncompressed (&#39;2vuy&#39;) data and, if successful, returns the two 8-b...">CNTV2Line21Captioner::DecodeLine</a> (static) class method decodes line 21 into raw caption bytes.</p>
-<p>The <a class="el" href="d8/d24/class_c_n_t_v2_line21_captioner.html#a83f98845ae76cf9b2b69371452383ad2" title="Encodes the two given characters as an EIA-608-compliant &quot;line 21&quot; waveform into my private line data...">CNTV2Line21Captioner::EncodeLine</a> instance method encodes raw caption bytes into a line 21 waveform.</p>
+<p>The CNTV2Line21Captioner class is used to encode or decode EIA-608 compliant raw data bytes to/from line 21 of an SD frame buffer.</p>
+<p>The CNTV2Line21Captioner::DecodeLine (static) class method decodes line 21 into raw caption bytes.</p>
+<p>The CNTV2Line21Captioner::EncodeLine instance method encodes raw caption bytes into a line 21 waveform.</p>
 <h3><a class="anchor" id="ajacc-decoding708"></a>
 Decoding CEA-708 Captions</h3>
-<p>The <a class="el" href="dc/d4b/class_c_n_t_v2_caption_decoder708.html" title="I am a CEA-708 captioning decoder used primarily to obtain CEA-608 captions carried in CEA-708 anc da...">CNTV2CaptionDecoder708</a> class is a CEA-708 caption decoder that can decode “service level 1” caption data found in SMPTE-334-compliant ancillary data packets. This is useful for extracting CEA-608 caption bytes from an HD video stream.</p>
+<p>The CNTV2CaptionDecoder708 class is a CEA-708 caption decoder that can decode “service level 1” caption data found in SMPTE-334-compliant ancillary data packets. This is useful for extracting CEA-608 caption bytes from an HD video stream.</p>
 <p>There are two ways to feed a decoder instance the requisite ancillary data it needs to decode captions:</p><ol type="1">
-<li><b>Manually</b> — If the ancillary data is already available in a buffer, use the <a class="el" href="dc/d4b/class_c_n_t_v2_caption_decoder708.html#afda3286fc99c25457478ef1493223539" title="Copies the given SMPTE 334 CDP data from the given ancillary data packet into my private CDP buffer...">CNTV2CaptionDecoder708::SetSMPTE334AncData</a> method, passing it a pointer to the buffer, and a byte count.</li>
-<li><b>Host Frame Buffer</b> — If a video frame exists in host memory that includes VANC data, use the <a class="el" href="dc/d4b/class_c_n_t_v2_caption_decoder708.html#a3342e590f09c17e82310adf2f285f499">CNTV2CaptionDecoder708::FindSMPTE334AncPacketInVideoFrame</a> method to have the decoder parse it.</li>
+<li><b>Manually</b> — If the ancillary data is already available in a buffer, use the CNTV2CaptionDecoder708::SetSMPTE334AncData method, passing it a pointer to the buffer, and a byte count.</li>
+<li><b>Host Frame Buffer</b> — If a video frame exists in host memory that includes VANC data, use the CNTV2CaptionDecoder708::FindSMPTE334AncPacketInVideoFrame method to have the decoder parse it.</li>
 </ol>
-<p>Once the decoder has the ancillary data, call its <a class="el" href="dc/d4b/class_c_n_t_v2_caption_decoder708.html#ad4e37fb2b44ab0ba82c66c9ac8718905" title="Parses the current frame&#39;s SMPTE 334 Ancillary packet and extracts the 608 and 708 caption data from ...">CNTV2CaptionDecoder708::ParseSMPTE334AncPacket</a> method to have it parsed.</p>
-<p>To obtain any embedded 608-style captions it was able to decode, call its <a class="el" href="dc/d4b/class_c_n_t_v2_caption_decoder708.html#affab2ecf5ac4c756e3aaeb4bc9486563" title="Pops the next CC608 data. ">CNTV2CaptionDecoder708::GetCC608CaptionData</a> method, then pass them into the <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html">CNTV2CaptionDecoder608</a> instance’s <a class="el" href="d6/df4/class_c_n_t_v2_caption_decoder608.html#a547f947e04aa2e3fb673f1201faf341b" title="Notifies me that new frame data has arrived. Clients should call this method once per video frame wit...">CNTV2CaptionDecoder608::ProcessNew608FrameData</a> function.</p>
+<p>Once the decoder has the ancillary data, call its CNTV2CaptionDecoder708::ParseSMPTE334AncPacket method to have it parsed.</p>
+<p>To obtain any embedded 608-style captions it was able to decode, call its CNTV2CaptionDecoder708::GetCC608CaptionData method, then pass them into the CNTV2CaptionDecoder608 instance’s CNTV2CaptionDecoder608::ProcessNew608FrameData function.</p>
 <dl class="section note"><dt>Note</dt><dd>This decoder does not currently decode “native” CEA-708 captions — i.e., service levels 2 and up, that make use of windows of varying dimensions and transparency, fonts of varying sizes and styles, characters of varying colors and opacity, etc.</dd></dl>
 <h3><a class="anchor" id="ajacc-encoding708"></a>
 Encoding CEA-708 Captions</h3>
-<p>The <a class="el" href="d7/d84/class_c_n_t_v2_caption_encoder708.html">CNTV2CaptionEncoder708</a> class is a CEA-708 caption encoder that encodes caption data into SMPTE-334-compliant ancillary data packets.</p>
+<p>The CNTV2CaptionEncoder708 class is a CEA-708 caption encoder that encodes caption data into SMPTE-334-compliant ancillary data packets.</p>
 <p>There are two principal sets of methods:</p><ul>
-<li>Those that deal with relatively primitive 708 commands, and accumulates results in a private buffer, which can be retrieved using <a class="el" href="d7/d84/class_c_n_t_v2_caption_encoder708.html#a4a801ef279a8da0f8647211bd8c34db8">CNTV2CaptionEncoder708::GetCaptionChannelPacket</a>, or left in place for use by <a class="el" href="d7/d84/class_c_n_t_v2_caption_encoder708.html#acb8d19e12142aa930d2a9271d1424a92" title="Generates a SMPTE-334 Ancillary data packet. ">CNTV2CaptionEncoder708::MakeSMPTE334AncPacket</a>.</li>
-<li>Those that deal with building SMPTE-334 Ancillary Packets from its internal buffer. The principal method is <a class="el" href="d7/d84/class_c_n_t_v2_caption_encoder708.html#acb8d19e12142aa930d2a9271d1424a92" title="Generates a SMPTE-334 Ancillary data packet. ">CNTV2CaptionEncoder708::MakeSMPTE334AncPacket</a>, which assumes that a valid Caption Channel Packet has already been built, copies it into a full SMPTE-334 Ancillary Packet, then returns a pointer to its internal buffer.</li>
+<li>Those that deal with relatively primitive 708 commands, and accumulates results in a private buffer, which can be retrieved using CNTV2CaptionEncoder708::GetCaptionChannelPacket, or left in place for use by CNTV2CaptionEncoder708::MakeSMPTE334AncPacket.</li>
+<li>Those that deal with building SMPTE-334 Ancillary Packets from its internal buffer. The principal method is CNTV2CaptionEncoder708::MakeSMPTE334AncPacket, which assumes that a valid Caption Channel Packet has already been built, copies it into a full SMPTE-334 Ancillary Packet, then returns a pointer to its internal buffer.</li>
 </ul>
-<p>To output SMPTE-334 ancillary data into a host frame buffer for eventual transfer to an AJA device, call <a class="el" href="d7/d84/class_c_n_t_v2_caption_encoder708.html#a19a3102f8e913440d49c520aa773b0a4" title="Inserts the encoder’s most recently generated ancillary data packet into the given host frame buffer...">CNTV2CaptionEncoder708::InsertSMPTE334AncPacketInVideoFrame</a>.</p>
+<p>To output SMPTE-334 ancillary data into a host frame buffer for eventual transfer to an AJA device, call CNTV2CaptionEncoder708::InsertSMPTE334AncPacketInVideoFrame.</p>
 <dl class="section note"><dt>Note</dt><dd>This encoder implementation is capable of encoding what is necessary for translating CEA-608 captions into “708-compliant” captions suitable for transmission into HD video streams.</dd></dl>
 <h3><a class="anchor" id="ajacc-rendering"></a>
 Rendering Captions</h3>
-<p>The <a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html">CNTV2CaptionRenderer</a> class renders CEA-608-compliant characters and/or strings into NTV2 frame buffers. It currently only supports the following frame buffer formats:</p><ul>
+<p>The CNTV2CaptionRenderer class renders CEA-608-compliant characters and/or strings into NTV2 frame buffers. It currently only supports the following frame buffer formats:</p><ul>
 <li>NTV2_FBF_10BIT_YCBCR</li>
 <li>NTV2_FBF_8BIT_YCBCR</li>
 <li>NTV2_FBF_ABGR</li>
@@ -579,20 +579,20 @@ Rendering Captions</h3>
 <li>NTV2_FBF_10BIT_RGB</li>
 </ul>
 <p>It’s easiest to use its class methods, which automatically take care of creating, opening and initializing the specific renderer instance for a given frame buffer format and frame geometry.</p><ul>
-<li><a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html#a5b40598817c9b6db4cb11be37c63bcde" title="Blits the given 608/ASCII-ish character into a specified position in the given host buffer using the ...">CNTV2CaptionRenderer::BurnChar</a>, which “blits” a single CEA-608 character at a specific pixel position in the raster buffer;</li>
-<li><a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html#a03ee6b3603bb18e9db2e18cd64de0d00" title="Blits the contents of the given UTF-8 encoded string into the given host buffer using the given displ...">CNTV2CaptionRenderer::BurnString</a> “blits” a UTF-8-encoded string into a specific row/column position;</li>
-<li><a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html#a1c9cae390c0f944aba47fe76c60bcaf1" title="Blits the contents of the given UTF-8 encoded string into the given host buffer using the given displ...">CNTV2CaptionRenderer::BurnStringAtXY</a> “blits” a UTF-8-encoded string into a specific pixel position.</li>
+<li>CNTV2CaptionRenderer::BurnChar, which “blits” a single CEA-608 character at a specific pixel position in the raster buffer;</li>
+<li>CNTV2CaptionRenderer::BurnString “blits” a UTF-8-encoded string into a specific row/column position;</li>
+<li>CNTV2CaptionRenderer::BurnStringAtXY “blits” a UTF-8-encoded string into a specific pixel position.</li>
 </ul>
 <p>If more control is needed over when (and which) renderer instances get allocated or freed, use these class methods:</p><ul>
-<li><a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html#a88900f41435e47e51cc7b70ec436b457" title="Returns the CNTV2CaptionRenderer instance using the given video frame buffer format descriptor...">CNTV2CaptionRenderer::GetRenderer</a> fetches the renderer for a given frame buffer format and frame geometry, creating it if necessary, and opening it, if needed.</li>
-<li><a class="el" href="d8/da3/class_c_n_t_v2_caption_renderer.html#a5fb394bfc371db7d79a2148c3f55bbfb" title="Flushes all extant glyph caches. ">CNTV2CaptionRenderer::FlushGlyphCaches</a> closes and destroys all existing renderers. </li>
+<li>CNTV2CaptionRenderer::GetRenderer fetches the renderer for a given frame buffer format and frame geometry, creating it if necessary, and opening it, if needed.</li>
+<li>CNTV2CaptionRenderer::FlushGlyphCaches closes and destroys all existing renderers. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 21 2026 16:02:13 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Sep 23 2026 12:41:03 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -13,6 +13,7 @@ var ntv2driverinterface_8cpp =
     [ "DIWARN", "de/d85/ntv2driverinterface_8cpp.html#add160b2ada8f247182f6d227042c9439", null ],
     [ "INSTP", "de/d85/ntv2driverinterface_8cpp.html#aacf6b16636fec2632bc579bb508a2ec5", null ],
     [ "KVRegAcquireRefCount", "de/d85/ntv2driverinterface_8cpp.html#acbfbfdb1d9f8cb50a9c924649a8caa97", null ],
+    [ "KVRegReleaseRefCount", "de/d85/ntv2driverinterface_8cpp.html#af3ecb32604fda501e95a767c7fa95ac7", null ],
     [ "PLDBG", "de/d85/ntv2driverinterface_8cpp.html#a1be8623ea7fc351f4fcdfec84b27f3df", null ],
     [ "PLFAIL", "de/d85/ntv2driverinterface_8cpp.html#a3ad40429bd0a1bee9a3b0c3d59b73b92", null ],
     [ "PLINFO", "de/d85/ntv2driverinterface_8cpp.html#a83d09d8f58e5919fa15d2875d1dc67af", null ],

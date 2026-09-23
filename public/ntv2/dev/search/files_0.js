@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ajacc_2eh',['ajacc.h',['../d9/dda/ajacc_8h.html',1,'']]],
   ['ajaexport_2eh',['ajaexport.h',['../d6/dd9/ajaexport_8h.html',1,'']]],
   ['ajamovingavg_2eh',['ajamovingavg.h',['../da/dbe/ajamovingavg_8h.html',1,'']]],
   ['ajapreviewwidget_2ecpp',['ajapreviewwidget.cpp',['../d7/de5/ajapreviewwidget_8cpp.html',1,'']]],

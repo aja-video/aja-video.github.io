@@ -172,6 +172,5 @@ var searchData=
   ['jsontostructreceivevideo',['JsonToStructReceiveVideo',['../d1/d9e/class_c_kona_ip_json_parse2110.html#a7714ed69969cb899bd81fe0c04466f3b',1,'CKonaIpJsonParse2110']]],
   ['jsontostructtransmitanc',['JsonToStructTransmitAnc',['../d1/d9e/class_c_kona_ip_json_parse2110.html#a3ada4593b4cc04da60be114ead42f660',1,'CKonaIpJsonParse2110']]],
   ['jsontostructtransmitaudio',['JsonToStructTransmitAudio',['../d1/d9e/class_c_kona_ip_json_parse2110.html#ad69340afe247d2fa403ae6635c62791a',1,'CKonaIpJsonParse2110']]],
-  ['jsontostructtransmitvideo',['JsonToStructTransmitVideo',['../d1/d9e/class_c_kona_ip_json_parse2110.html#aa54559dc0c17d37a72886fa4bb7bb08b',1,'CKonaIpJsonParse2110']]],
-  ['justify',['justify',['../d4/d59/struct_c_c708_window_attr.html#a0e89ec37639931001abe02a8b5d6e5a9',1,'CC708WindowAttr']]]
+  ['jsontostructtransmitvideo',['JsonToStructTransmitVideo',['../d1/d9e/class_c_kona_ip_json_parse2110.html#aa54559dc0c17d37a72886fa4bb7bb08b',1,'CKonaIpJsonParse2110']]]
 ];

@@ -2,8 +2,6 @@ var searchData=
 [
   ['cbaseallocator',['CBaseAllocator',['../d1/d07/class_c_media_sample.html#aabd735eb0837a2cb7a2b8c9a8a5073c3',1,'CMediaSample']]],
   ['cbasepin',['CBasePin',['../d5/d74/class_c_base_filter.html#a277a6fae81a062e1d570f42a66f5fea5',1,'CBaseFilter']]],
-  ['cntv2caption608messagequeue',['CNTV2Caption608MessageQueue',['../da/dbf/class_c_n_t_v2_caption608_message.html#af4d832fe7a1ea12845d959961b1c2a00',1,'CNTV2Caption608Message']]],
-  ['cntv2captionencoder608',['CNTV2CaptionEncoder608',['../da/dbf/class_c_n_t_v2_caption608_message.html#a790bcbecc2ba377e936d1bf3d2121264',1,'CNTV2Caption608Message']]],
   ['cntv2captionrenderer',['CNTV2CaptionRenderer',['../d3/d4e/class_n_t_v2_format_descriptor.html#a00a81da05fa35b4069e5ab177a6b4180',1,'NTV2FormatDescriptor']]],
   ['cntv2card',['CNTV2Card',['../d8/def/class_a_j_a_ancillary_list.html#a333b54fda7055a1e8ae699f7a8443b0d',1,'AJAAncillaryList']]],
   ['cntv2devicescanner',['CNTV2DeviceScanner',['../d7/dfb/class_c_n_t_v2_card.html#a32aefa13f6acc910552c7a29858306bd',1,'CNTV2Card']]],

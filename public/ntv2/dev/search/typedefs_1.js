@@ -70,7 +70,6 @@ var searchData=
   ['amoviesetup_5fmediatype',['AMOVIESETUP_MEDIATYPE',['../de/de7/combase_8h.html#a49a044b29fa5cc2632cb3344603621ca',1,'combase.h']]],
   ['amoviesetup_5fpin',['AMOVIESETUP_PIN',['../de/de7/combase_8h.html#a3900c49018a63e3522c39a3061dc6138',1,'combase.h']]],
   ['ancextractorinitparams',['ANCExtractorInitParams',['../de/d40/ntv2anc_8cpp.html#ad2f939116ddce229bc38cb4f664563ae',1,'ntv2anc.cpp']]],
-  ['anchormap',['AnchorMap',['../d0/d82/class_s_r_t_captions.html#a7d55b12bf557b573fa84a7c1bd760ea6',1,'SRTCaptions']]],
   ['ancinserterinitparams',['ANCInserterInitParams',['../de/d40/ntv2anc_8cpp.html#ab98ff0b23d9a4ce28a2209fd7e71d694',1,'ntv2anc.cpp']]],
   ['ancrgnoffset',['AncRgnOffset',['../d3/d53/ntv2dma_8cpp.html#a90a51a9c42e736a7e3e0be599766533b',1,'ntv2dma.cpp']]],
   ['ancrgnoffsets',['AncRgnOffsets',['../d3/d53/ntv2dma_8cpp.html#aecc4a2b45f1ea38c07f249afec163f50',1,'ntv2dma.cpp']]],

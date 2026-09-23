@@ -1,11 +1,10 @@
 var searchData=
 [
   ['object_5fiterator',['object_iterator',['../db/d79/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1internal__iterator.html#a75cffb882403096167376f0563b7909a',1,'nlohmann::json_abi_v3_11_3::detail::internal_iterator']]],
-  ['offset',['offset',['../d0/d4e/structdpx__file__info__struct.html#a27488d4ba038270a69a17814c7508b84',1,'dpx_file_info_struct::offset()'],['../da/d10/structdpx__motion__picture__film__header__struct.html#a6e8a6757b83ebe46581d55665ef17102',1,'dpx_motion_picture_film_header_struct::offset()'],['../dd/d2c/struct_c_c708_pen_attr.html#a6c859a1295ebbb7fa9ae2c4450067052',1,'CC708PenAttr::offset()']]],
+  ['offset',['offset',['../d0/d4e/structdpx__file__info__struct.html#a27488d4ba038270a69a17814c7508b84',1,'dpx_file_info_struct::offset()'],['../da/d10/structdpx__motion__picture__film__header__struct.html#a6e8a6757b83ebe46581d55665ef17102',1,'dpx_motion_picture_film_header_struct::offset()']]],
   ['offsetnextwrite',['offsetNextWrite',['../d4/d2b/struct_p_e_r_f_i_n_f_o___d_s_h_o_w___a_u_d_i_o_a_d_d_b_r_e_a_k.html#a6f5ce22bd74796adc0990cd0b489664d',1,'PERFINFO_DSHOW_AUDIOADDBREAK']]],
   ['offsetwrite',['offsetWrite',['../d4/d2b/struct_p_e_r_f_i_n_f_o___d_s_h_o_w___a_u_d_i_o_a_d_d_b_r_e_a_k.html#a5cccbaf78dfc596393beb0701264faf0',1,'PERFINFO_DSHOW_AUDIOADDBREAK']]],
   ['onstatechanged',['OnStateChanged',['../d1/d01/struct___p_e_r_f_l_o_g___l_o_g_g_i_n_g___p_a_r_a_m_s.html#a61c904c1872897dac4bfe77ad27b5485',1,'_PERFLOG_LOGGING_PARAMS::OnStateChanged()'],['../d9/d7b/perflog_8cpp.html#a30abcf16325ed83b437e2bb165c58cc4',1,'OnStateChanged():&#160;perflog.cpp']]],
-  ['opacity',['opacity',['../df/d43/struct_c_c708_color.html#a6b8b1b0de4175dde59186e2ada7aefb6',1,'CC708Color']]],
   ['opt',['opt',['../d4/dd3/unionpopt_arg__u.html#af6bb5e8661b2c349da54551e77f59e1b',1,'poptArg_u']]],
   ['option',['option',['../dd/dab/structpopt_item__s.html#ac9a710583f2c7bd4b8b8bd887bca4611',1,'poptItem_s']]],
   ['options',['options',['../da/de2/structpopt_context__s.html#a48c8142fb4e0920ba096d95021fbd652',1,'poptContext_s']]],

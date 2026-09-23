@@ -3,11 +3,6 @@ var searchData=
   ['u16packet',['U16Packet',['../dd/de8/class_a_j_a_ancillary_data.html#afa6047f8b92929d97490a41d59ea3530',1,'AJAAncillaryData']]],
   ['u16packets',['U16Packets',['../dd/de8/class_a_j_a_ancillary_data.html#aedeb844e048203d87b08622f728652eb',1,'AJAAncillaryData']]],
   ['ubyte',['UByte',['../db/de2/ajatypes_8h.html#acde568ab22955f9cdb6a059cd5ba1293',1,'ajatypes.h']]],
-  ['ubyteconstptr',['UByteConstPtr',['../d0/d80/ntv2smpteancdata_8h.html#a4c0ac366fe1deeb68549ec9b72040414',1,'ntv2smpteancdata.h']]],
-  ['ubyteptr',['UBytePtr',['../dc/d2f/ntv2captionencoder708_8h.html#a05540340d7f29d17d473cb1806f16bd7',1,'ntv2captionencoder708.h']]],
-  ['ubytequeue',['UByteQueue',['../d6/dc5/ntv2caption708serviceblockqueue_8h.html#a4108c5703846544ce4740794928ec367',1,'ntv2caption708serviceblockqueue.h']]],
-  ['ubytequeueconstiter',['UByteQueueConstIter',['../d6/dc5/ntv2caption708serviceblockqueue_8h.html#a7c7e04b289e020f0b088a8b478194487',1,'ntv2caption708serviceblockqueue.h']]],
-  ['ubytequeueiter',['UByteQueueIter',['../d6/dc5/ntv2caption708serviceblockqueue_8h.html#a12ecc86a22cbe17e9f25de32c1c9a1d0',1,'ntv2caption708serviceblockqueue.h']]],
   ['ubytesequence',['UByteSequence',['../d4/dd7/ntv2publicinterface_8h.html#a18c9ee28ca20db27532e5ff6da1fc228',1,'ntv2publicinterface.h']]],
   ['ubytesequenceconstiter',['UByteSequenceConstIter',['../d4/dd7/ntv2publicinterface_8h.html#a618d015a744571cf7de40c2984efa149',1,'ntv2publicinterface.h']]],
   ['ubytesequenceiter',['UByteSequenceIter',['../d4/dd7/ntv2publicinterface_8h.html#a9f218cbbd42f7af17c11c8a9a49bda66',1,'ntv2publicinterface.h']]],
@@ -25,12 +20,7 @@ var searchData=
   ['uncvref_5ft',['uncvref_t',['../d3/d75/namespacenlohmann_1_1json__abi__v3__11__3_1_1detail.html#a96c3da559b79c7cf1ab58bd217dc58f7',1,'nlohmann::json_abi_v3_11_3::detail']]],
   ['uword',['UWord',['../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65',1,'ajatypes.h']]],
   ['uword_5f',['UWord_',['../db/de2/ajatypes_8h.html#a60db50e24d32a77113b46eb55b1b07e6',1,'ajatypes.h']]],
-  ['uwordptr',['UWordPtr',['../dc/d2f/ntv2captionencoder708_8h.html#a20cacd727a19bd4856e8d5a9bea0c5f1',1,'ntv2captionencoder708.h']]],
   ['uwordsequence',['UWordSequence',['../d4/dd7/ntv2publicinterface_8h.html#ad0d427e5e8bff159df1de3784f37b4b6',1,'ntv2publicinterface.h']]],
   ['uwordsequenceconstiter',['UWordSequenceConstIter',['../d4/dd7/ntv2publicinterface_8h.html#ad719cbfc5d0f5019ec55bd1e48ff79d0',1,'ntv2publicinterface.h']]],
-  ['uwordsequenceiter',['UWordSequenceIter',['../d4/dd7/ntv2publicinterface_8h.html#aa9354ff146ca028a774915967c202373',1,'ntv2publicinterface.h']]],
-  ['uwordvancpacket',['UWordVANCPacket',['../d0/d80/ntv2smpteancdata_8h.html#abf2e190de9d8052af4f4f0d7379587b6',1,'ntv2smpteancdata.h']]],
-  ['uwordvancpacketlist',['UWordVANCPacketList',['../d0/d80/ntv2smpteancdata_8h.html#a274e282f0afde33e19f133453b2fad98',1,'ntv2smpteancdata.h']]],
-  ['uwordvancpacketlistconstiter',['UWordVANCPacketListConstIter',['../d0/d80/ntv2smpteancdata_8h.html#acfe1ca30751acbd5bf2b285a87540c84',1,'ntv2smpteancdata.h']]],
-  ['uwordvancpacketlistiter',['UWordVANCPacketListIter',['../d0/d80/ntv2smpteancdata_8h.html#abc656691131be9ba361b0d279d108603',1,'ntv2smpteancdata.h']]]
+  ['uwordsequenceiter',['UWordSequenceIter',['../d4/dd7/ntv2publicinterface_8h.html#aa9354ff146ca028a774915967c202373',1,'ntv2publicinterface.h']]]
 ];

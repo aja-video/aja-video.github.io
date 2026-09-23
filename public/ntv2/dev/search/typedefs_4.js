@@ -42,6 +42,5 @@ var searchData=
   ['dpx_5fimage_5felement_5ft',['DPX_image_element_t',['../da/d09/dpx__hdr_8h.html#aef5bea04e73240af8a8c29c59072ab6d',1,'dpx_hdr.h']]],
   ['dpx_5fimage_5finfo_5ft',['DPX_image_info_t',['../da/d09/dpx__hdr_8h.html#ac1e87f204bbc715400bc7523f320dc2b',1,'dpx_hdr.h']]],
   ['dpx_5fimage_5fsource_5ft',['DPX_image_source_t',['../da/d09/dpx__hdr_8h.html#a5349babd726bfce6f6c023aa43a32072',1,'dpx_hdr.h']]],
-  ['dpx_5ftelevision_5ft',['DPX_television_t',['../da/d09/dpx__hdr_8h.html#a39c1bc1af197ae6f1556a098cfc75505',1,'dpx_hdr.h']]],
-  ['durationmap',['DurationMap',['../d0/d82/class_s_r_t_captions.html#a3cae25ee9a0387aa77c6337ac5c05d06',1,'SRTCaptions']]]
+  ['dpx_5ftelevision_5ft',['DPX_television_t',['../da/d09/dpx__hdr_8h.html#a39c1bc1af197ae6f1556a098cfc75505',1,'dpx_hdr.h']]]
 ];

@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2392</span>
+   &#160;<span id="projectnumber">18.1.0.2434</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2434</div>
   </td>
  </tr>
  </tbody>
@@ -108,63 +108,59 @@ $(document).ready(function(){initNavTree('de/da5/bug.html','../../');});
 <dd>Multi-byte UTF8 characters need to be counted as one character.  </dd>
 <dt><a class="anchor" id="_bug000005"></a>Member <a class="el" href="../../d1/d32/class_a_j_a_time_code.html#a975378f11daa792f2f249b3eb2e3549f">AJATimeCode::QueryRP188</a>  (uint32_t &amp;outDBB, uint32_t &amp;outLo, uint32_t &amp;outHi, const <a class="el" href="../../d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> &amp;timeBase, const bool bDrop)</dt>
 <dd>Unimplemented.  </dd>
-<dt><a class="anchor" id="_bug000018"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d">CNTV2Card::AutoCirculateTransfer</a>  (const NTV2Channel inChannel, <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> &amp;transferInfo)</dt>
+<dt><a class="anchor" id="_bug000016"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d">CNTV2Card::AutoCirculateTransfer</a>  (const NTV2Channel inChannel, <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> &amp;transferInfo)</dt>
 <dd>For IP devices running S2110 firmware, this method performs many heap allocations in order to transparently support normal (<b>VPID</b> and <b>RP188</b>) and custom ancillary data. This feature should be re-implemented to use separate, per-channel, private, pre-allocated heaps for the STL objects and other buffers it uses.  </dd>
-<dt><a class="anchor" id="_bug000019"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aeb61530e2bfe53c7901e8ccbe717d08e">CNTV2Card::GetConnectedInput</a>  (const NTV2OutputCrosspointID inOutputXpt, NTV2InputCrosspointID &amp;outInputXpt)</dt>
+<dt><a class="anchor" id="_bug000017"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aeb61530e2bfe53c7901e8ccbe717d08e">CNTV2Card::GetConnectedInput</a>  (const NTV2OutputCrosspointID inOutputXpt, NTV2InputCrosspointID &amp;outInputXpt)</dt>
 <dd>If the output is connected to more than one widget input, this function only returns the first one found.  </dd>
-<dt><a class="anchor" id="_bug000017"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1828395a3ecab209ad8a7a4ab5d9f5cf">CNTV2Card::WaitForInputFieldID</a>  (const NTV2FieldID inFieldID, const NTV2Channel inChannel=NTV2_CHANNEL1)</dt>
+<dt><a class="anchor" id="_bug000015"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a1828395a3ecab209ad8a7a4ab5d9f5cf">CNTV2Card::WaitForInputFieldID</a>  (const NTV2FieldID inFieldID, const NTV2Channel inChannel=NTV2_CHANNEL1)</dt>
 <dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a previous call to Wait. Unfortunately, this is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call GetInputVerticalInterruptCount before and after calling this function to verify that an interrupt really occurred;</li>
-<li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to get the event handle, and manually clear the event before calling this function.  </li>
+<li>Call CNTV2WinDriverInterface::GetInterruptEvent to get the event handle, and manually clear the event before calling this function.  </li>
 </ul>
 </dd>
-<dt><a class="anchor" id="_bug000016"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a56552aedb9631efa04e1ff8ea96be02b">CNTV2Card::WaitForInputVerticalInterrupt</a>  (const NTV2Channel inChannel=NTV2_CHANNEL1, UWord inRepeatCount=1)</dt>
+<dt><a class="anchor" id="_bug000014"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a56552aedb9631efa04e1ff8ea96be02b">CNTV2Card::WaitForInputVerticalInterrupt</a>  (const NTV2Channel inChannel=NTV2_CHANNEL1, UWord inRepeatCount=1)</dt>
 <dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a previous call to Wait. Unfortunately, this is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call GetInputVerticalInterruptCount before and after calling this function to verify that an interrupt really occurred;</li>
-<li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to get the event handle, and manually clear the event before calling this function.  </li>
+<li>Call CNTV2WinDriverInterface::GetInterruptEvent to get the event handle, and manually clear the event before calling this function.  </li>
 </ul>
 </dd>
-<dt><a class="anchor" id="_bug000015"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac05240d99252c18d39dbdba3086ca72e">CNTV2Card::WaitForOutputFieldID</a>  (const NTV2FieldID inFieldID, const NTV2Channel inChannel=NTV2_CHANNEL1)</dt>
+<dt><a class="anchor" id="_bug000013"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac05240d99252c18d39dbdba3086ca72e">CNTV2Card::WaitForOutputFieldID</a>  (const NTV2FieldID inFieldID, const NTV2Channel inChannel=NTV2_CHANNEL1)</dt>
 <dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a prior call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ac05240d99252c18d39dbdba3086ca72e" title="Efficiently sleeps the calling thread/process until the next output VBI for the given field and outpu...">CNTV2Card::WaitForOutputFieldID</a>. This is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0bdb12e76ec10c94f67387ec47111abf" title="Answers with the number of output vertical interrupts handled by the driver for the given output chan...">CNTV2Card::GetOutputVerticalInterruptCount</a> before and after calling this function to verify that an interrupt really occurred;</li>
-<li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to get the event handle, and manually clear the event before calling this function.  </li>
+<li>Call CNTV2WinDriverInterface::GetInterruptEvent to get the event handle, and manually clear the event before calling this function.  </li>
 </ul>
 </dd>
-<dt><a class="anchor" id="_bug000014"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0599dc483977c64978cae92fb8837252">CNTV2Card::WaitForOutputVerticalInterrupt</a>  (const NTV2Channel inChannel=NTV2_CHANNEL1, UWord inRepeatCount=1)</dt>
+<dt><a class="anchor" id="_bug000012"></a>Member <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0599dc483977c64978cae92fb8837252">CNTV2Card::WaitForOutputVerticalInterrupt</a>  (const NTV2Channel inChannel=NTV2_CHANNEL1, UWord inRepeatCount=1)</dt>
 <dd>On the Windows platform, the SDK uses an event to wait on, which only gets cleared by a prior call to WaitForOutputVerticalInterrupt. This is historically different from Linux and MacOS, where the event is always cleared before the Wait. Each method has advantages and disadvantages. To work around this:<ul>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a0bdb12e76ec10c94f67387ec47111abf" title="Answers with the number of output vertical interrupts handled by the driver for the given output chan...">CNTV2Card::GetOutputVerticalInterruptCount</a> before and after calling this function to verify that an interrupt really occurred;</li>
-<li>Call <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#adbb8aca59dfc745b8a441eda8135270e">CNTV2WinDriverInterface::GetInterruptEvent</a> to obtain the Windows event <code>HANDLE</code>, and manually clear it before calling this function.  </li>
+<li>Call CNTV2WinDriverInterface::GetInterruptEvent to obtain the Windows event <code>HANDLE</code>, and manually clear it before calling this function.  </li>
 </ul>
 </dd>
-<dt><a class="anchor" id="_bug000020"></a>Member <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aadbe6f23341da6c47aa5fd7a8a2676fb">CNTV2DriverInterface::WriteRegister</a>  (const ULWord inRegNum, const ULWord inValue, const ULWord inMask=0xFFFFFFFF, const ULWord inShift=0)</dt>
+<dt><a class="anchor" id="_bug000018"></a>Member <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html#aadbe6f23341da6c47aa5fd7a8a2676fb">CNTV2DriverInterface::WriteRegister</a>  (const ULWord inRegNum, const ULWord inValue, const ULWord inMask=0xFFFFFFFF, const ULWord inShift=0)</dt>
 <dd>On MacOS, "holes" in the mask (i.e., one or more runs of 0-bits lying between more-significant and less-significant 1-bits) were not handled correctly.  </dd>
-<dt><a class="anchor" id="_bug000021"></a>Class <a class="el" href="../../d1/d4f/class_c_n_t_v2_register_expert.html">CNTV2RegisterExpert</a>  </dt>
+<dt><a class="anchor" id="_bug000019"></a>Class <a class="el" href="../../d1/d4f/class_c_n_t_v2_register_expert.html">CNTV2RegisterExpert</a>  </dt>
 <dd>This class currently excludes bank-selected registers, so support logs for <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> and <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a> will be incomplete. This will be addressed in a future SDK.  </dd>
-<dt><a class="anchor" id="_bug000012"></a>Member <a class="el" href="../../db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html#ab6239e63708efbaa7aa49746c12f8b3e">CNTV2SMPTEAncData::InsertAnc</a>  (const UWord *pInAncBuff, const size_t inAncWordCount, const ULWord inLineOffset, const ULWord inWordOffset, ULWord *pFrameBuffer, const NTV2VideoFormat inVideoFormat, const NTV2FrameBufferFormat inFBFormat)</dt>
-<dd>This function doesn't work for SD video formats, since SD packets use both luma and chroma channels.  </dd>
-<dt><a class="anchor" id="_bug000013"></a>Member <a class="el" href="../../db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html#a564225411667c7f6199e10a6262e4901">CNTV2SMPTEAncData::InsertAncAtSmpteLine</a>  (const UWord *pInAncBuff, const ULWord inAncWordCount, const ULWord inSMPTELineNum, const ULWord inWordOffset, ULWord *pFrameBuffer, const NTV2VideoFormat inVideoFormat, const NTV2FrameBufferFormat inFBFormat)</dt>
-<dd>This function doesn't work for SD video formats, since SD packets use both luma and chroma channels.  </dd>
-<dt><a class="anchor" id="_bug000028"></a>Member <a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a424308258384e0219034232eb5043bdf">CopyRaster</a>  (const NTV2PixelFormat inPixelFormat, UByte *pDstBuffer, const ULWord inDstBytesPerLine, const UWord inDstTotalLines, const UWord inDstVertLineOffset, const UWord inDstHorzPixelOffset, const UByte *pSrcBuffer, const ULWord inSrcBytesPerLine, const UWord inSrcTotalLines, const UWord inSrcVertLineOffset, const UWord inSrcVertLinesToCopy, const UWord inSrcHorzPixelOffset, const UWord inSrcHorzPixelsToCopy)</dt>
+<dt><a class="anchor" id="_bug000026"></a>Member <a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a424308258384e0219034232eb5043bdf">CopyRaster</a>  (const NTV2PixelFormat inPixelFormat, UByte *pDstBuffer, const ULWord inDstBytesPerLine, const UWord inDstTotalLines, const UWord inDstVertLineOffset, const UWord inDstHorzPixelOffset, const UByte *pSrcBuffer, const ULWord inSrcBytesPerLine, const UWord inSrcTotalLines, const UWord inSrcVertLineOffset, const UWord inSrcVertLinesToCopy, const UWord inSrcHorzPixelOffset, const UWord inSrcHorzPixelsToCopy)</dt>
 <dd><p class="startdd">This function doesn't work with planar formats. </p>
 <p class="enddd">Needs implementations for NTV2_FBF_10BIT_YCBCRA, NTV2_FBF_10BIT_RGB_PACKED, NTV2_FBF_10BIT_ARGB, NTV2_FBF_16BIT_ARGB.  </p>
 </dd>
 <dt><a class="anchor" id="_bug000001"></a>Page <a class="el" href="../../d1/dc5/ntv2devops.html">NTV2 Device Hardware Operation</a>  </dt>
 <dd>At this time, there is no API to support multi-link audio for low-latency (non-AutoCirculate) applications. </dd>
-<dt><a class="anchor" id="_bug000022"></a>Class <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html">NTV2TestPatternGen</a>  </dt>
+<dt><a class="anchor" id="_bug000020"></a>Class <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html">NTV2TestPatternGen</a>  </dt>
 <dd><a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html" title="The NTV2 test pattern generator. ">NTV2TestPatternGen</a> doesn't work for planar formats.  </dd>
-<dt><a class="anchor" id="_bug000025"></a>Member <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html#a43665453d0ca4207d11ef9c9c45da0ff">NTV2TestPatternGen::DrawTestPattern</a>  (const NTV2TestPatternSelect inPattern, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html" title="Describes a video frame for a given video standard or format and pixel format, including the total nu...">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> &amp;inBuffer)</dt>
+<dt><a class="anchor" id="_bug000022"></a>Member <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html#ad99a0142487bd200f2f5e4ec85a2c03e">NTV2TestPatternGen::DrawTestPattern</a>  (const std::string &amp;inTPName, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html" title="Describes a video frame for a given video standard or format and pixel format, including the total nu...">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> &amp;inBuffer)</dt>
 <dd>Needs planar pixel format implementations.  </dd>
-<dt><a class="anchor" id="_bug000024"></a>Member <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html#ad99a0142487bd200f2f5e4ec85a2c03e">NTV2TestPatternGen::DrawTestPattern</a>  (const std::string &amp;inTPName, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html" title="Describes a video frame for a given video standard or format and pixel format, including the total nu...">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> &amp;inBuffer)</dt>
+<dt><a class="anchor" id="_bug000023"></a>Member <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html#a43665453d0ca4207d11ef9c9c45da0ff">NTV2TestPatternGen::DrawTestPattern</a>  (const NTV2TestPatternSelect inPattern, const <a class="el" href="../../d3/d4e/class_n_t_v2_format_descriptor.html" title="Describes a video frame for a given video standard or format and pixel format, including the total nu...">NTV2FormatDescriptor</a> &amp;inFormatDesc, <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> &amp;inBuffer)</dt>
 <dd>Needs planar pixel format implementations.  </dd>
-<dt><a class="anchor" id="_bug000023"></a>Member <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html#a775b337e3596ec20fcbd5cefd2518905">NTV2TestPatternGen::findRGBColorByName</a>  (const std::string &amp;inName)</dt>
+<dt><a class="anchor" id="_bug000021"></a>Member <a class="el" href="../../d3/dc1/class_n_t_v2_test_pattern_gen.html#a775b337e3596ec20fcbd5cefd2518905">NTV2TestPatternGen::findRGBColorByName</a>  (const std::string &amp;inName)</dt>
 <dd>As currently implemented and documented, this function only returns 8-bit deep color values.  </dd>
 <dt><a class="anchor" id="_bug000004"></a>Member <a class="el" href="../../da/daf/options__popt_8h.html#a02043ec093dcbfaef9297b0fb60d2819">poptConfigFileToString</a>  (FILE *fp, char **argstrp, int flags)</dt>
 <dd><p class="startdd">NULL is returned if file line is too long. </p>
 <p class="enddd">Silently ignores invalid lines. </p>
 </dd>
-<dt><a class="anchor" id="_bug000026"></a>Member <a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a2269136acc86fe6b69d4009e16a564ce">SetRasterLinesBlack</a>  (const NTV2PixelFormat inPixelFormat, UByte *pDstBuffer, const ULWord inDstBytesPerLine, const UWord inDstTotalLines)</dt>
+<dt><a class="anchor" id="_bug000024"></a>Member <a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#a2269136acc86fe6b69d4009e16a564ce">SetRasterLinesBlack</a>  (const NTV2PixelFormat inPixelFormat, UByte *pDstBuffer, const ULWord inDstBytesPerLine, const UWord inDstTotalLines)</dt>
 <dd>Need implementations for numerous pixel formats.  </dd>
-<dt><a class="anchor" id="_bug000027"></a>Member <a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#ae2b16fdc5935638b304776c75564c542">SetRasterLinesWhite</a>  (const NTV2PixelFormat inPixelFormat, UByte *pDstBuffer, const ULWord inDstBytesPerLine, const UWord inDstTotalLines)</dt>
+<dt><a class="anchor" id="_bug000025"></a>Member <a class="el" href="../../d6/d9b/ntv2utils_8cpp.html#ae2b16fdc5935638b304776c75564c542">SetRasterLinesWhite</a>  (const NTV2PixelFormat inPixelFormat, UByte *pDstBuffer, const ULWord inDstBytesPerLine, const UWord inDstTotalLines)</dt>
 <dd>Need implementations for numerous pixel formats. </dd>
 </dl>
 </div></div><!-- contents -->
@@ -172,7 +168,7 @@ $(document).ready(function(){initNavTree('de/da5/bug.html','../../');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 21 2026 16:02:12 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Sep 23 2026 12:41:01 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

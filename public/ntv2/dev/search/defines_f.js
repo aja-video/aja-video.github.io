@@ -6,7 +6,7 @@ var searchData=
   ['oct',['OCT',['../d4/dd7/ntv2publicinterface_8h.html#adb05035327bd5957e40e639ffed4b79d',1,'ntv2publicinterface.h']]],
   ['oct0n',['OCT0N',['../d4/dd7/ntv2publicinterface_8h.html#a4f442a25e143a2267d3dc62d7cdc8429',1,'ntv2publicinterface.h']]],
   ['oddeven',['OddEven',['../df/de0/ntv2registerexpert_8h.html#a46c84ded3fbb78d80ffca167f23e6a53',1,'ntv2registerexpert.h']]],
-  ['odprintf',['odprintf',['../d5/d40/ntv2captiondecoder608_8h.html#a50405e71d70b8cf4c926ce7959087e6e',1,'odprintf():&#160;ntv2captiondecoder608.h'],['../d7/dc7/ntv2debug_8h.html#a50405e71d70b8cf4c926ce7959087e6e',1,'odprintf():&#160;ntv2debug.h']]],
+  ['odprintf',['odprintf',['../d7/dc7/ntv2debug_8h.html#a50405e71d70b8cf4c926ce7959087e6e',1,'ntv2debug.h']]],
   ['onoff',['OnOff',['../df/de0/ntv2registerexpert_8h.html#a0dca20a4c63d824b56120a4d937eb89d',1,'ntv2registerexpert.h']]],
   ['ooct',['oOCT',['../d4/dd7/ntv2publicinterface_8h.html#aee343e3aed1686cab0ef317c8c7033ea',1,'ntv2publicinterface.h']]],
   ['ooct0n',['oOCT0N',['../d4/dd7/ntv2publicinterface_8h.html#a8ffa982d16d308957011a80446d44b77',1,'ntv2publicinterface.h']]],

@@ -5,7 +5,6 @@ var class_c_n_t_v2_linux_driver_interface =
     [ "AutoCirculate", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#a44909ea4dc3ef0211b16954600c4c746", null ],
     [ "CloseLocalPhysical", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#ab7f65f6c85fad2f58804e58385b9261f", null ],
     [ "ConfigureInterrupt", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#ae972cdf6ca97e07466a0fbbef8b9a2fc", null ],
-    [ "ConfigureSubscription", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#acc6e990dc863c69a410a38e7cedfa384", null ],
     [ "ControlDriverDebugMessages", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#a54e3ecf214873c216ed526b49185f34b", null ],
     [ "DmaReadFrameDriverBuffer", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#a7ce4f3384658887621f06ce81aa24a4a", null ],
     [ "DmaReadFrameDriverBuffer", "de/d6b/class_c_n_t_v2_linux_driver_interface.html#a73cc092a34156f6abd82fc02ef22d2d8", null ],

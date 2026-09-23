@@ -2,7 +2,6 @@ var searchData=
 [
   ['testpatconfig',['TestPatConfig',['../d4/d79/ntv2outputtestpattern_8h.html#a0ff2172d9f8315c9e07ddd6d1d6e8c01',1,'ntv2outputtestpattern.h']]],
   ['timelapseunits',['TimelapseUnits',['../d4/dd7/ntv2publicinterface_8h.html#a9d88b9850533b673e3b9fbcc2d1469bd',1,'ntv2publicinterface.h']]],
-  ['timestampmap',['TimestampMap',['../d0/d82/class_s_r_t_captions.html#a219caa67796a970c00c30693682377d3',1,'SRTCaptions']]],
   ['to_5fjson_5ffunction',['to_json_function',['../d3/d75/namespacenlohmann_1_1json__abi__v3__11__3_1_1detail.html#a36a52e57f5ed714ec9357914a430bd17',1,'nlohmann::json_abi_v3_11_3::detail']]],
   ['token_5ftype',['token_type',['../d3/d3d/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1lexer.html#a9cc371a6792bb2ea73aaf587106d721c',1,'nlohmann::json_abi_v3_11_3::detail::lexer']]],
   ['tpstringmap',['TPStringMap',['../d5/d31/ntv2testpatterngen_8cpp.html#aa46a7139663609eb950a26c75a6325f5',1,'ntv2testpatterngen.cpp']]],

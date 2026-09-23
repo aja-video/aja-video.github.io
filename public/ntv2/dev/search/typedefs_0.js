@@ -2,6 +2,6 @@ var searchData=
 [
   ['_5f_5fpbm_5fbits',['__pbm_bits',['../dd/d55/options__popt_8cpp.html#a64172439381f4c94ef342d65717dbc96',1,'options_popt.cpp']]],
   ['_5feventcounts',['_EventCounts',['../d0/dbc/class_c_n_t_v2_driver_interface.html#a43246d97bf0b1ecc44eae325f16a1082',1,'CNTV2DriverInterface']]],
-  ['_5feventhandles',['_EventHandles',['../d0/dbc/class_c_n_t_v2_driver_interface.html#a7883e261018a4b371575baa7aee135a5',1,'CNTV2DriverInterface']]],
+  ['_5feventhandles',['_EventHandles',['../d2/d29/class_c_n_t_v2_win_driver_interface.html#a2fe3cf1dd16a93162883d8f0a99c1594',1,'CNTV2WinDriverInterface']]],
   ['_5fptrclass',['_PtrClass',['../df/de3/class_qz_c_com_ptr.html#a083e4f75666b348ce2b32e4a2f586da6',1,'QzCComPtr']]]
 ];

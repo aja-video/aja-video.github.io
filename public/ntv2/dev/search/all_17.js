@@ -126,7 +126,6 @@ var searchData=
   ['virtualprocampregisters_5fbase',['VirtualProcAmpRegisters_base',['../d6/d3a/struct_virtual_proc_amp_registers__base.html',1,'']]],
   ['virtualreg_5fstart',['VIRTUALREG_START',['../da/df0/ntv2virtualregisters_8h.html#a92ed128b6f460a7925ffb0b6001991ea',1,'ntv2virtualregisters.h']]],
   ['virtualregisternum',['VirtualRegisterNum',['../da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863da',1,'ntv2virtualregisters.h']]],
-  ['visible',['visible',['../d6/df8/struct_c_c708_window_parms.html#a6e1ee4da0429040cad56ea8a96e6176e',1,'CC708WindowParms']]],
   ['vitc_5fdecode_5fend_5fwindow',['VITC_DECODE_END_WINDOW',['../d3/de1/ancillarydata__timecode__vitc_8cpp.html#a79a4140844019693df7774073b45cdf0',1,'ancillarydata_timecode_vitc.cpp']]],
   ['vitc_5fdecode_5fstart_5fwindow',['VITC_DECODE_START_WINDOW',['../d3/de1/ancillarydata__timecode__vitc_8cpp.html#a141cb629ccc51fae27d97a47d04450bb',1,'ancillarydata_timecode_vitc.cpp']]],
   ['vitc_5fy_5fclip',['VITC_Y_CLIP',['../d3/de1/ancillarydata__timecode__vitc_8cpp.html#a4c4d82c0f2e6bea40a4c95f7194f3011',1,'ancillarydata_timecode_vitc.cpp']]],

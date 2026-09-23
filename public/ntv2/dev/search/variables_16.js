@@ -31,7 +31,6 @@ var searchData=
   ['vidprocsupport',['vidProcSupport',['../d6/d61/struct_n_t_v2_device_info.html#acec6f6025e349dfc5c45423565c7f066',1,'NTV2DeviceInfo']]],
   ['vifstate',['vifState',['../d1/d37/struct_hevc_device_status.html#a462a9d0c892cec9fecc677ff3ec16b9c',1,'HevcDeviceStatus']]],
   ['vinstate',['vinState',['../dc/df9/struct_hevc_device_command.html#ae980330807b6fe069ccba90296259bba',1,'HevcDeviceCommand::vinState()'],['../d1/d37/struct_hevc_device_status.html#a62aee2309ae641859d4cda5082ba046e',1,'HevcDeviceStatus::vinState()']]],
-  ['visible',['visible',['../d6/df8/struct_c_c708_window_parms.html#a6e1ee4da0429040cad56ea8a96e6176e',1,'CC708WindowParms']]],
   ['vitc_5fdecode_5fend_5fwindow',['VITC_DECODE_END_WINDOW',['../d3/de1/ancillarydata__timecode__vitc_8cpp.html#a79a4140844019693df7774073b45cdf0',1,'ancillarydata_timecode_vitc.cpp']]],
   ['vitc_5fdecode_5fstart_5fwindow',['VITC_DECODE_START_WINDOW',['../d3/de1/ancillarydata__timecode__vitc_8cpp.html#a141cb629ccc51fae27d97a47d04450bb',1,'ancillarydata_timecode_vitc.cpp']]],
   ['vitc_5fy_5fclip',['VITC_Y_CLIP',['../d3/de1/ancillarydata__timecode__vitc_8cpp.html#a4c4d82c0f2e6bea40a4c95f7194f3011',1,'ancillarydata_timecode_vitc.cpp']]],

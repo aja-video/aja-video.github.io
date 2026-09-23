@@ -10,9 +10,6 @@ var searchData=
   ['sfpstruct',['SFPStruct',['../d4/db9/struct_s_f_p_struct.html',1,'']]],
   ['shareddata',['SharedData',['../da/da1/struct_shared_data.html',1,'']]],
   ['span_5finput_5fadapter',['span_input_adapter',['../d3/d39/classnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1span__input__adapter.html',1,'nlohmann::json_abi_v3_11_3::detail']]],
-  ['srtcaptioninfo',['SRTCaptionInfo',['../de/dea/class_s_r_t_caption_info.html',1,'']]],
-  ['srtcaptions',['SRTCaptions',['../d0/d82/class_s_r_t_captions.html',1,'']]],
-  ['srtwindow',['SRTWindow',['../dc/d69/class_s_r_t_window.html',1,'']]],
   ['ssc_5fget_5ffirmware_5fprogress_5fstruct',['SSC_GET_FIRMWARE_PROGRESS_STRUCT',['../d5/de2/struct_s_s_c___g_e_t___f_i_r_m_w_a_r_e___p_r_o_g_r_e_s_s___s_t_r_u_c_t.html',1,'']]],
   ['static_5fconst',['static_const',['../d5/d29/structnlohmann_1_1json__abi__v3__11__3_1_1detail_1_1static__const.html',1,'nlohmann::json_abi_v3_11_3::detail']]]
 ];

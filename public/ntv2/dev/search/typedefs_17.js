@@ -12,6 +12,5 @@ var searchData=
   ['widget2typepair',['Widget2TypePair',['../dd/d21/class_routing_expert.html#a08da0bedd84b1f343ed2ebe1eba7d8dd',1,'RoutingExpert']]],
   ['widget2types',['Widget2Types',['../dd/d21/class_routing_expert.html#a6302c0006bd3e4fcc2c00487b2f6edf0',1,'RoutingExpert']]],
   ['widget2typesconstiter',['Widget2TypesConstIter',['../dd/d21/class_routing_expert.html#ac1cc80ab3db167d62aec4376ce128cc1',1,'RoutingExpert']]],
-  ['windowmap',['WindowMap',['../d0/d82/class_s_r_t_captions.html#ab71231d9082ef37fcbfef57557a623f1',1,'SRTCaptions']]],
   ['word',['Word',['../db/de2/ajatypes_8h.html#afed41103dbe3723f9095994668dd0af6',1,'ajatypes.h']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['send_5fpacket',['SEND_PACKET',['../dd/d6a/outputq_8h.html#aeef915347621910144b72e00cf7a6310',1,'outputq.h']]],
-  ['serviceblockheadersize',['ServiceBlockHeaderSize',['../dc/d2f/ntv2captionencoder708_8h.html#aa4ab9cfd0e61b98cc628a647baa59921',1,'ntv2captionencoder708.h']]],
   ['set425frameenable',['Set425FrameEnable',['../df/d4b/ntv2card_8h.html#a729379b699dc15594cbd986ef0e0fea1',1,'ntv2card.h']]],
   ['setnotset',['SetNotset',['../df/de0/ntv2registerexpert_8h.html#ae56f9ec41f8457fc13fc5f3a10fd715a',1,'ntv2registerexpert.h']]],
   ['settablestohardware',['SetTablesToHardware',['../df/d4b/ntv2card_8h.html#a982a143330c7991f0fb9df3919c9dfbd',1,'ntv2card.h']]],

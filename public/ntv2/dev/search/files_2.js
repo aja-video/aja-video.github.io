@@ -1,7 +1,6 @@
 var searchData=
 [
   ['cache_2eh',['cache.h',['../d3/d26/cache_8h.html',1,'']]],
-  ['ccfont_2eh',['ccfont.h',['../d8/de3/ccfont_8h.html',1,'']]],
   ['checkbmi_2eh',['checkbmi.h',['../df/de5/checkbmi_8h.html',1,'']]],
   ['circularbuffer_2eh',['circularbuffer.h',['../d0/d77/circularbuffer_8h.html',1,'']]],
   ['cli_5futils_2eh',['cli_utils.h',['../dc/d1b/cli__utils_8h.html',1,'']]],

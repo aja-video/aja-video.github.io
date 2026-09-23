@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2392</span>
+   &#160;<span id="projectnumber">18.1.0.2434</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2434</div>
   </td>
  </tr>
  </tbody>
@@ -748,12 +748,12 @@ VANC Frame Geometries</h1>
 <dl class="section note"><dt>Note</dt><dd>Mixer/Keyer widgets on newer devices (generally, those that support <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad2b63b9f62be2e9793243832e62dabdd">NTV2DeviceCanDoCustomAnc</a>) will pass VANC. Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a490f7d16c35dba3c96ca1b4ec229bc34" title="Answers whether or not the VANC source for the given mixer/keyer is currently the foreground video...">CNTV2Card::GetMixerVancOutputFromForeground</a> to determine if the Mixer is configured to pass foreground or background VANC. Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a4f22ea33559ed11d4bb9ae0a2a186792" title="Sets the VANC source for the given mixer/keyer to the foreground video (or not). See the SDI Ancillar...">CNTV2Card::SetMixerVancOutputFromForeground</a> to change the setting.</dd></dl>
 <p>To <b>Capture</b> custom ancillary data packets using VANC lines in the frame buffer:</p><ul>
 <li><a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#a8f2acdcaa396cb052012fb2354d44b5b" title="Returns all packets found in the VANC lines of the given NTV2 frame buffer. ">AJAAncillaryList::SetFromVANCData</a> (SDKs 14.1 and later) can be called to obtain an <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html" title="I am an ordered collection of AJAAncillaryData instances which represent one or more SMPTE 291 data p...">AJAAncillaryList</a> containing one <a class="el" href="../../dd/de8/class_a_j_a_ancillary_data.html" title="I am the principal class that stores a single SMPTE-291 SDI ancillary data packet OR the digitized co...">AJAAncillaryData</a> instance per packet.</li>
-<li>The <a class="el" href="../../db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html">CNTV2SMPTEAncData</a> class in the <a class="el" href="../../index.html#ajacc">“libajacc” Closed-Caption Library</a> has some functions (e.g., <a class="el" href="../../db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html#a1fb9d2efccf0f46fef7435c91add5d31" title="Searches for ancillary data in a given host frame buffer. ">CNTV2SMPTEAncData::FindAnc</a>) to help with the parsing, though SD video formats aren’t supported (again, due to historical reasons).</li>
+<li>The ::CNTV2SMPTEAncData class in the <a class="el" href="../../index.html#ajacc">“libajacc” Closed-Caption Library</a> has some functions (e.g., CNTV2SMPTEAncData::FindAnc) to help with the parsing, though SD video formats aren’t supported (again, due to historical reasons).</li>
 <li>Write your own functions to parse the frame buffer VANC lines.</li>
 </ul>
 <p>To <b>Playout</b> custom ancillary data packets using VANC lines in the frame buffer:</p><ul>
 <li>Given an <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html" title="I am an ordered collection of AJAAncillaryData instances which represent one or more SMPTE 291 data p...">AJAAncillaryList</a> of packets, call <a class="el" href="../../d8/def/class_a_j_a_ancillary_list.html#ac9c958fadc9c5a38ac4eca38e4095625" title="Writes my AJAAncillaryData objects into the given tall/taller frame buffer having the given raster/fo...">AJAAncillaryList::GetVANCTransmitData</a> (SDKs 14.1 and later) to write the packets into a frame buffer’s VANC region.</li>
-<li>The <a class="el" href="../../db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html">CNTV2SMPTEAncData</a> class in the <a class="el" href="../../index.html#ajacc">“libajacc” Closed-Caption Library</a> has some functions (e.g., <a class="el" href="../../db/dc3/class_c_n_t_v2_s_m_p_t_e_anc_data.html#ab6239e63708efbaa7aa49746c12f8b3e" title="Inserts ancillary data at a given line and channel offset into the given host frame buffer...">CNTV2SMPTEAncData::InsertAnc</a>) to help with this, though SD video formats aren’t supported (again, due to historical reasons).</li>
+<li>The ::CNTV2SMPTEAncData class in the <a class="el" href="../../index.html#ajacc">“libajacc” Closed-Caption Library</a> has some functions (e.g., CNTV2SMPTEAncData::InsertAnc) to help with this, though SD video formats aren’t supported (again, due to historical reasons).</li>
 <li>Write your own functions to write the frame buffer VANC lines.</li>
 </ul>
 <p>The spreadsheets that follow show, in detail for each video format, which lines contain VANC, and which ones contain video data.</p>
@@ -798,7 +798,7 @@ HD 1080p Dual-Link</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Fri Aug 21 2026 16:02:12 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Sep 23 2026 12:41:01 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

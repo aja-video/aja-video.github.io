@@ -5,7 +5,6 @@ var class_c_n_t_v2_bare_metal_driver_interface =
     [ "AutoCirculate", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a54069d9b4994b3777b1181a24cf9248b", null ],
     [ "CloseLocalPhysical", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab029fc1e96b410b4fbe430f792e0dd5c", null ],
     [ "ConfigureInterrupt", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ac9cbdbbfbd97ffb38b5eeccf9752a5ec", null ],
-    [ "ConfigureSubscription", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#a415aedcd4aaa920dd87d0d97e788acf1", null ],
     [ "ControlDriverDebugMessages", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#af0426b206439709f27ae62c547dd764f", null ],
     [ "DmaReadFrameDriverBuffer", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#abb2bacc6fb8de97505f701dc1189819d", null ],
     [ "DmaReadFrameDriverBuffer", "d5/dd8/class_c_n_t_v2_bare_metal_driver_interface.html#ab67bca5d52c4b61d39ff191b4bef464b", null ],

@@ -189,5 +189,6 @@ var searchData=
   ['kvdevjson_5fplugin',['kVDevJSON_Plugin',['../d6/d8f/ntv2nubaccess_8h.html#a672558b98a178df2104f93404e512fb5',1,'ntv2nubaccess.h']]],
   ['kvdevjson_5fserialnum',['kVDevJSON_SerialNum',['../d6/d8f/ntv2nubaccess_8h.html#af8bd7bde2a4fbed9bd684799e4f2f232',1,'ntv2nubaccess.h']]],
   ['kvdevjson_5furlspec',['kVDevJSON_URLSpec',['../d6/d8f/ntv2nubaccess_8h.html#a0c35748bc9a3d02fc2f9b667c82b67d6',1,'ntv2nubaccess.h']]],
-  ['kvregacquirerefcount',['KVRegAcquireRefCount',['../de/d85/ntv2driverinterface_8cpp.html#acbfbfdb1d9f8cb50a9c924649a8caa97',1,'ntv2driverinterface.cpp']]]
+  ['kvregacquirerefcount',['KVRegAcquireRefCount',['../de/d85/ntv2driverinterface_8cpp.html#acbfbfdb1d9f8cb50a9c924649a8caa97',1,'ntv2driverinterface.cpp']]],
+  ['kvregreleaserefcount',['KVRegReleaseRefCount',['../de/d85/ntv2driverinterface_8cpp.html#af3ecb32604fda501e95a767c7fa95ac7',1,'ntv2driverinterface.cpp']]]
 ];

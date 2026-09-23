@@ -6,8 +6,6 @@ var searchData=
   ['ldinote',['LDINOTE',['../d5/dfe/ntv2baremetaldriverinterface_8cpp.html#a20a6bc5c988c89f0ddfe68dbdb1aa023',1,'LDINOTE():&#160;ntv2baremetaldriverinterface.cpp'],['../df/d10/ntv2linuxdriverinterface_8cpp.html#a20a6bc5c988c89f0ddfe68dbdb1aa023',1,'LDINOTE():&#160;ntv2linuxdriverinterface.cpp']]],
   ['ldiwarn',['LDIWARN',['../d5/dfe/ntv2baremetaldriverinterface_8cpp.html#a87be87edc4b8def4047c8548bffca99a',1,'LDIWARN():&#160;ntv2baremetaldriverinterface.cpp'],['../df/d10/ntv2linuxdriverinterface_8cpp.html#a87be87edc4b8def4047c8548bffca99a',1,'LDIWARN():&#160;ntv2linuxdriverinterface.cpp']]],
   ['lf_5fisset',['LF_ISSET',['../dd/d55/options__popt_8cpp.html#a2cfc2aa176fe9cec3faba524dff418d8',1,'options_popt.cpp']]],
-  ['lib_5faja_5fcc_5flibrary_5fversion',['LIB_AJA_CC_LIBRARY_VERSION',['../d9/dda/ajacc_8h.html#afd5ec2510954ed9ab3003df0cc5e8bfa',1,'ajacc.h']]],
-  ['line21columnsettostring',['Line21ColumnSetToString',['../d7/da9/ntv2captionlogging_8h.html#a1a0333f83ae1923b6a71fceb08aa2a19',1,'ntv2captionlogging.h']]],
   ['lltou64',['LLtoU64',['../d9/dea/arithutil_8cpp.html#aabce40d31b170b9c5f1bcb84cd54023f',1,'arithutil.cpp']]],
   ['lock_5ftime_5finfinite',['LOCK_TIME_INFINITE',['../dd/d42/lock_8h.html#a4717bde32f6aa9acfd26da80930be134',1,'lock.h']]],
   ['log_5fforcibly_5fset',['LOG_FORCIBLY_SET',['../de/de4/wxdebug_8h.html#a2aa4f4fb99bae34725df4e1d4edbad28',1,'wxdebug.h']]],

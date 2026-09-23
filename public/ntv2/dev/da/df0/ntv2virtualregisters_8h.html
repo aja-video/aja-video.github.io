@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2392</span>
+   &#160;<span id="projectnumber">18.1.0.2434</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2392</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2434</div>
   </td>
  </tr>
  </tbody>
@@ -780,7 +780,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863daa8e28450c3a6c581a452b5c60b0933e66">kVRegLast</a> = 10000 + 1024 - 1
 <br />
  }</td></tr>
-<tr class="memdesc:a5f698dc57a718a4252ef5d121d0863da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual registers are used to pass 32-bit values to/from the device driver, and aren't always associated with hardware registers.  <a href="../../da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863da">More...</a><br /></td></tr>
+<tr class="memdesc:a5f698dc57a718a4252ef5d121d0863da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual registers are used to pass 32-bit values to/from the device driver, independent of hardware registers.  <a href="../../da/df0/ntv2virtualregisters_8h.html#a5f698dc57a718a4252ef5d121d0863da">More...</a><br /></td></tr>
 <tr class="separator:a5f698dc57a718a4252ef5d121d0863da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8098e676f19099cb3f50aeeb001e490"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df0/ntv2virtualregisters_8h.html#ad8098e676f19099cb3f50aeeb001e490">NTV2VirtualRegisterMasks</a> { <br />
 &#160;&#160;<a class="el" href="../../da/df0/ntv2virtualregisters_8h.html#ad8098e676f19099cb3f50aeeb001e490ae0bd53deb0353a237e73b8f482880cc1">kVRegMaskHDMIInColorimetry</a> = (1u &lt;&lt; ( 3 ))+(1u &lt;&lt; ( 2 ))+(1u &lt;&lt; ( 1 ))+(1u &lt;&lt; ( 0 )), 
@@ -918,7 +918,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ad8098e676f19099cb3f50aeeb001e490a93f4110f6c09755c39970160d27d61ec"></a>kVRegMaskSDIOutVPIDOverride&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html#l00754">754</a> of file <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html">ntv2virtualregisters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html#l00751">751</a> of file <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html">ntv2virtualregisters.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +953,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ada2eeec8fc3fec9710f2081a1323a0e1a8afb4cfc55c2b86ab689c62f7397f88a"></a>kVRegShiftSDIOutVPIDOverride&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html#l00776">776</a> of file <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html">ntv2virtualregisters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html#l00773">773</a> of file <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html">ntv2virtualregisters.h</a>.</p>
 
 </div>
 </div>
@@ -969,10 +969,10 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Virtual registers are used to pass 32-bit values to/from the device driver, and aren't always associated with hardware registers. </p>
-<dl class="section note"><dt>Note</dt><dd>Drivers after SDK 12.5.x all allocate a 4K page for storing an array of 1024 x 4-byte integers. OEM applications can store values in slots kVRegFirstOEM thru kVRegLast, inclusive. AJA recommends storing at kVRegLast, kVRegLast-1, kVRegLast-2, etc., being careful to never store anything below kVRegFirstOEM.</dd>
+<p>Virtual registers are used to pass 32-bit values to/from the device driver, independent of hardware registers. </p>
+<dl class="section note"><dt>Note</dt><dd>Drivers after SDK 12.5.x all allocate a 4K page for storing an array of 1024 x 4-byte integers. OEM applications can store values in slots kVRegFirstOEM thru kVRegLast (inclusive).</dd>
 <dd>
-AJA does not reserve virtual registers for OEMs, and thus, collisions may occur with other OEM applications. </dd></dl>
+AJA does not reserve virtual registers for OEMs, and thus, collisions could occur with other OEM applications. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f698dc57a718a4252ef5d121d0863daa83575ab629774b891ecb844b5cdfd301"></a>kVRegDriverVersion&#160;</td><td class="fielddoc"><p>Packed driver version &ndash; use NTV2DriverVersionEncode, NTV2DriverVersionDecode* macros to encode/decode. </p>
 </td></tr>
@@ -1502,7 +1502,7 @@ AJA does not reserve virtual registers for OEMs, and thus, collisions may occur 
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html#l00026">26</a> of file <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html">ntv2virtualregisters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html#l00023">23</a> of file <a class="el" href="../../da/df0/ntv2virtualregisters_8h_source.html">ntv2virtualregisters.h</a>.</p>
 
 </div>
 </div>
@@ -1512,7 +1512,7 @@ AJA does not reserve virtual registers for OEMs, and thus, collisions may occur 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_a1e7971ee2787a8222fe6a5c9384fcca.html">includes</a></li><li class="navelem"><a class="el" href="../../da/df0/ntv2virtualregisters_8h.html">ntv2virtualregisters.h</a></li>
-    <li class="footer">Generated on Fri Aug 21 2026 16:02:11 for AJA NTV2 SDK by
+    <li class="footer">Generated on Wed Sep 23 2026 12:41:01 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

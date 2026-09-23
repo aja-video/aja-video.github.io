@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['langid',['langID',['../d0/dbd/struct_n_t_v2___c_c708_service_language.html#a96674964aa2eaf45e295e972095ff17a',1,'NTV2_CC708ServiceLanguage']]],
-  ['language',['language',['../de/d5c/struct_n_t_v2___c_c708_service_info.html#a62ad5b897f3e3bb0d885b216d41e144e',1,'NTV2_CC708ServiceInfo']]],
   ['lastframe',['lastFrame',['../de/d23/struct_a_v_hevc_data_buffer.html#a7f4a96b8e4eddb2f082aa0284eba4867',1,'AVHevcDataBuffer']]],
   ['lasthigherrorseen',['lastHighErrorSeen',['../de/dcf/struct_p_e_r_f_i_n_f_o___d_s_h_o_w___a_u_d_i_o_s_l_a_v_e.html#ac75a8979bd8dd513f16dd852540fff65',1,'PERFINFO_DSHOW_AUDIOSLAVE']]],
   ['lastinput1verticaltimestamp',['lastInput1VerticalTimeStamp',['../dc/d8a/struct_i_n_t_e_r_r_u_p_t___t_i_m_e_s_t_a_m_p___s_t_r_u_c_t.html#a271fbf2961522002dce470b0e9c5e652',1,'INTERRUPT_TIMESTAMP_STRUCT']]],

@@ -1,6 +1,7 @@
 var ntv2card_8h =
 [
     [ "CNTV2Card", "d7/dfb/class_c_n_t_v2_card.html", "d7/dfb/class_c_n_t_v2_card" ],
+    [ "GlobalControlRegWrite", "d2/d1b/struct_c_n_t_v2_card_1_1_global_control_reg_write.html", "d2/d1b/struct_c_n_t_v2_card_1_1_global_control_reg_write" ],
     [ "SDRAMAuditor", "d8/de9/class_s_d_r_a_m_auditor.html", "d8/de9/class_s_d_r_a_m_auditor" ],
     [ "AJA_RETAIL_DEFAULT", "df/d4b/ntv2card_8h.html#ab5063b5b791fede8fe7b9d386771b5b8", null ],
     [ "Get425FrameEnable", "df/d4b/ntv2card_8h.html#a618e20d2e953116f205b704d7f079d40", null ],

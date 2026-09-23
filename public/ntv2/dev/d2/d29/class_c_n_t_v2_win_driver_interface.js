@@ -1,5 +1,6 @@
 var class_c_n_t_v2_win_driver_interface =
 [
+    [ "_EventHandles", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a2fe3cf1dd16a93162883d8f0a99c1594", null ],
     [ "DMA_LOCKED_VEC", "d2/d29/class_c_n_t_v2_win_driver_interface.html#ac6369224501394dfa72e8c7d36fc29ad", null ],
     [ "CNTV2WinDriverInterface", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a7e8e7393aa5deb9f63afed5fc051a70b", null ],
     [ "~CNTV2WinDriverInterface", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a5e786f0a4f9cf78b6ebca7fc89ce8e15", null ],
@@ -7,7 +8,6 @@ var class_c_n_t_v2_win_driver_interface =
     [ "CloseLocalPhysical", "d2/d29/class_c_n_t_v2_win_driver_interface.html#abda712f26733c7025023d4acea65d83c", null ],
     [ "CompleteMemoryForDMA", "d2/d29/class_c_n_t_v2_win_driver_interface.html#af4b23da77bec1fdb0af83fab34e6f13b", null ],
     [ "ConfigureInterrupt", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a8107f043453a36e46e103b0806e9d96e", null ],
-    [ "ConfigureSubscription", "d2/d29/class_c_n_t_v2_win_driver_interface.html#aef874d30c762d6621d35ef305623c240", null ],
     [ "ControlDriverDebugMessages", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a77d0f5fe1e282ec4ab4572a08f1f1819", null ],
     [ "DmaTransfer", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a6c1145dc35dbdd96a9edd1f1a1cd0c6c", null ],
     [ "DmaTransfer", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a72937c1b478637ca36cfe73b80d51049", null ],
@@ -16,6 +16,7 @@ var class_c_n_t_v2_win_driver_interface =
     [ "DriverGetBitFileInformation", "d2/d29/class_c_n_t_v2_win_driver_interface.html#aa180b41b8203b989a083fcd88f7b354a", null ],
     [ "DriverSetBitFileInformation", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a81835817d03bf9de4f26ea45d326f330", null ],
     [ "GetAudioOutputMode", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a43dcfb35e1c37a787c28f8a36c33a467", null ],
+    [ "GetEventHandleForInterrupt", "d2/d29/class_c_n_t_v2_win_driver_interface.html#affa49640f334b47fd1bef18b0c0c8e15", null ],
     [ "GetInterruptCount", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a960fe4769b6ac89fe81022d564be98f3", null ],
     [ "GetStreamingApplication", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a38655b587972dd921f6e34bfa259c3df", null ],
     [ "GetStreamingApplication", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a4bb6477f4bc7b3487c59ec241f2f66f8", null ],
@@ -36,6 +37,7 @@ var class_c_n_t_v2_win_driver_interface =
     [ "UnmapRegisters", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a2d7d39763a6f804381b5bcbc04b8be9d", null ],
     [ "UnmapXena2Flash", "d2/d29/class_c_n_t_v2_win_driver_interface.html#aa020f1e8c69dda6a61bb9071fde0908a", null ],
     [ "WaitForInterrupt", "d2/d29/class_c_n_t_v2_win_driver_interface.html#adc74f2afb5b4b77462e03008450fd099", null ],
+    [ "WinConfigureSubscription", "d2/d29/class_c_n_t_v2_win_driver_interface.html#ae54ddf0d8ea69eca6c96ca7f41b4437e", null ],
     [ "WriteRegister", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a673dd18d808e4624d58610c36663bf10", null ],
     [ "_GUID_PROPSET", "d2/d29/class_c_n_t_v2_win_driver_interface.html#acd4cd60f7b3a0e9a62543c3183abf9fb", null ],
     [ "_hDevice", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a61522732b9ee2433b4581b06fa39feb6", null ],
@@ -44,5 +46,6 @@ var class_c_n_t_v2_win_driver_interface =
     [ "_previousAudioState", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a2c84f115ee232cdaa2d09705b097883c", null ],
     [ "_pspDevIFaceDetailData", "d2/d29/class_c_n_t_v2_win_driver_interface.html#ae59969ea6a443c7033ec5524dc1bddf5", null ],
     [ "_spDevInfoData", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a0c564a7ce7173012d070bb3afbf308c7", null ],
-    [ "_vecDmaLocked", "d2/d29/class_c_n_t_v2_win_driver_interface.html#ae699927606f73dc31633576af042d0a9", null ]
+    [ "_vecDmaLocked", "d2/d29/class_c_n_t_v2_win_driver_interface.html#ae699927606f73dc31633576af042d0a9", null ],
+    [ "mInterruptEventHandles", "d2/d29/class_c_n_t_v2_win_driver_interface.html#a14c8ad41fce408b455ec34b4bab554c2", null ]
 ];

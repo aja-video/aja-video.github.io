@@ -1,5 +1,10 @@
 var ntv2register_8cpp =
 [
+    [ "ARDBG", "d7/da9/ntv2register_8cpp.html#a5b44a6fc42adfc1025fdb940d4809266", null ],
+    [ "ARFAIL", "d7/da9/ntv2register_8cpp.html#a957efbef1834d2478b5d16e156b89286", null ],
+    [ "ARINFO", "d7/da9/ntv2register_8cpp.html#ad867e945849f7a686b03eb75c9a9f17c", null ],
+    [ "ARNOTE", "d7/da9/ntv2register_8cpp.html#a492748f105dbaa9416ca39568e07fe54", null ],
+    [ "ARWARN", "d7/da9/ntv2register_8cpp.html#a873a67a094537a91bba84f8a56e7a21e", null ],
     [ "CVIDDBG", "d7/da9/ntv2register_8cpp.html#ae9dd7764bc172df000e47b99e65d02f1", null ],
     [ "CVIDFAIL", "d7/da9/ntv2register_8cpp.html#a3d800f0c72cceeaebd20ba3962945d8f", null ],
     [ "CVIDINFO", "d7/da9/ntv2register_8cpp.html#a6814c70de0fe33b7a20538e12d1ced11", null ],
