@@ -6,11 +6,10 @@ var index =
         [ "Principal Classes", "index.html#libajantv2-classes", null ],
         [ "CNTV2DeviceScanner Class", "index.html#libajantv2-devicescanner", null ],
         [ "CNTV2Card Class", "index.html#libajantv2-card", null ],
-        [ "Device Features API", "index.html#libajantv2-devicefeatures", null ],
-        [ "CNTV2SignalRouter Class", "index.html#libajantv2-signalrouter", null ]
+        [ "Device Features API", "index.html#libajantv2-devicefeatures", null ]
       ] ],
       [ "Ancillary Data Classes", "index.html#ajaanc", null ],
-      [ "“libajacc” Closed-Caption Library", "index.html#ajacc", [
+      [ "“ajacc” Closed-Caption Classes", "index.html#ajacc", [
         [ "Decoding CEA-608 Captions", "index.html#ajacc-decoding608", null ],
         [ "Encoding CEA-608 Captions", "index.html#ajacc-encoding608", null ],
         [ "Encoding and Decoding SD “Line 21” Waveforms", "index.html#ajacc-line21captioner", null ],

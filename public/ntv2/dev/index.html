@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2434</span>
+   &#160;<span id="projectnumber">18.1.0.2436</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2434</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2436</div>
   </td>
  </tr>
  </tbody>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a class="el" href="index.html#ajabase">“libajabase” Classes</a></li>
 <li><a class="el" href="index.html#ajantv2">“libajantv2” Class Library</a></li>
 <li><a class="el" href="index.html#ajaanc">Ancillary Data Classes</a></li>
-<li><a class="el" href="index.html#ajacc">“libajacc” Closed-Caption Library</a></li>
+<li><a class="el" href="index.html#ajacc">“ajacc” Closed-Caption Classes</a></li>
 </ul>
 </li>
 <li><a class="el" href="d9/d07/demoapps.html">Demonstration Applications</a><ul>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </dd></dl>
 <hr/>
 <dl class="section user"><dt>Introduction</dt><dd></dd></dl>
-<p>AJA hardware products play back or ingest video/audio, plus ancillary data (e.g., timecode, captions, etc.) to or from a host computer. The purpose of the SDK is to enable third-party developers to easily access and/or control the video, audio or ancillary data entering or leaving the device. The SDK has two major parts &ndash; a low-level device driver, and a user-space library.</p>
+<p>AJA hardware products play back or ingest video, plus ancillary data (e.g., audio, timecode, captions, etc.) to or from a host computer. The purpose of the SDK is to enable third-party developers to easily access and/or control the video, audio or ancillary data entering or leaving the device. The SDK has two major parts &ndash; a low-level device driver, and a user-space library.</p>
 <div class="image">
 <img src="fig01-ntv2architecture.png" alt="fig01-ntv2architecture.png"/>
 </div>
@@ -174,7 +174,7 @@ The NTV2 Class Library</h1>
 <li><a class="el" href="index.html#ajabase">“libajabase” Classes</a></li>
 <li><a class="el" href="index.html#ajantv2">“libajantv2” Class Library</a></li>
 <li><a class="el" href="index.html#ajaanc">Ancillary Data Classes</a></li>
-<li><a class="el" href="index.html#ajacc">“libajacc” Closed-Caption Library</a></li>
+<li><a class="el" href="index.html#ajacc">“ajacc” Closed-Caption Classes</a></li>
 </ul>
 </dd></dl>
 <hr/>
@@ -262,7 +262,7 @@ CNTV2DeviceScanner Class</h3>
 </ul>
 <h3><a class="anchor" id="libajantv2-card"></a>
 CNTV2Card Class</h3>
-<p>The <a class="el" href="d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device. ">CNTV2Card</a> class is used to interrogate and control an NTV2 device. Normally an instance of this class is obtained from one of the <a class="el" href="d2/d67/class_c_n_t_v2_device_scanner.html" title="This class is used to enumerate AJA devices that are attached and known to the local host computer...">CNTV2DeviceScanner</a> class methods.</p>
+<p>The <a class="el" href="d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device. ">CNTV2Card</a> class is used to interrogate and control an NTV2 device.</p>
 <dl class="section note"><dt>Note</dt><dd>For multiple, concurrent ingest or playout threads, for better performance, AJA recommends using separate per-thread <a class="el" href="d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device. ">CNTV2Card</a> instances.</dd></dl>
 <p><a class="el" href="d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device. ">CNTV2Card</a> has a very large number of instance methods that inquire about and/or control different aspects of the hardware, which can be organized into several API groups. Here are some examples (this list is not comprehensive):</p><ul>
 <li><b>General Inquiry API</b><ul>
@@ -417,38 +417,6 @@ CNTV2Card Class</h3>
 Device Features API</h3>
 <p>Device feature inquiries should be directed to the device itself through the <a class="el" href="db/d32/class_device_capabilities.html" title="Convenience class/API for inquiring about device capabilities of physical and virtual devices...">DeviceCapabilities</a> class via <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">CNTV2Card::features</a>. The same information can be obtained through the low-level functions <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a016e52b03dabb94a3299a41efd73e4e1">CNTV2DriverInterface::IsSupported</a>, <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#a0584af7436d78321d22d486384b1d2b4">CNTV2DriverInterface::GetNumSupported</a> and <a class="el" href="d0/dbc/class_c_n_t_v2_driver_interface.html#aa8c389406829aa571afcc2d6150f3ccc">CNTV2DriverInterface::GetSupportedItems</a>. See <a class="el" href="d1/dc5/ntv2devops.html#vidop-features">Device Features</a> for more information.</p>
 <p><b>Example:</b> Determine if a device is Thunderbolt-connected, and if it supports the <a class="el" href="d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161cad199e5066d6e0929d35b54602a8580c8" title="See 10-Bit RGB Format. ">NTV2_FBF_10BIT_RGB</a> buffer pixel format: </p><div class="fragment"><div class="line"><a class="code" href="d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a> dev;</div><div class="line">. . .</div><div class="line">if (dev.<a class="code" href="d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features</a>().<a class="code" href="db/d32/class_device_capabilities.html#a1ca68927853152df27aca72b1b7346a3">CanDoThunderbolt</a>()  &amp;&amp;  dev.<a class="code" href="d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features</a>().<a class="code" href="db/d32/class_device_capabilities.html#adeabcb89e0707f506a58f996433e8925">CanDoFrameBufferFormat</a>(<a class="code" href="d6/d0c/ntv2enums_8h.html#ace03c7b6e4f21738519430d1fa42161cad199e5066d6e0929d35b54602a8580c8">NTV2_FBF_10BIT_RGB</a>))</div><div class="line">    ;  <span class="comment">// do something</span></div></div><!-- fragment --><p><b>Example:</b> Determine if a device has an SDI2 connector, and if it’s bi-directional: </p><div class="fragment"><div class="line"><a class="code" href="d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a>   theDevice;</div><div class="line"><a class="code" href="d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce">NTV2Channel</a> sdi2(<a class="code" href="d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dcea771f9f386b8b1bdffd3b2171e723ff40">NTV2_CHANNEL2</a>);</div><div class="line">. . .</div><div class="line">if (theDevice.<a class="code" href="d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features</a>().<a class="code" href="db/d32/class_device_capabilities.html#ab2054aa7380f2f611b3cb8866207e305">HasBiDirectionalSDI</a>() &amp;&amp;  <a class="code" href="db/de2/ajatypes_8h.html#ad3e6ac24329134f5b4c9993f13328db2">ULWord</a>(sdi2) &lt; theDevice.<a class="code" href="d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features</a>().<a class="code" href="db/d32/class_device_capabilities.html#a60faf37685eaf9a1a6cecd72d26688e7">GetNumVideoInputs</a>())</div><div class="line">    theDevice.<a class="code" href="d7/dfb/class_c_n_t_v2_card.html#a5c96925ccda0a4b57c5bf352d648c1fe">SetSDITransmitEnable</a>(sdi2, <span class="keyword">true</span>);</div></div><!-- fragment --><p>The legacy “NTV2Device…” functions require an <a class="el" href="d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463" title="Identifies a specific AJA NTV2 device model number. The NTV2DeviceID is actually the PROM part number...">NTV2DeviceID</a> parameter that identifies the AJA device model. Starting in SDK 17.1, this ancient API is slowly starting to be phased out, due to the necessity of supporting plugins and other types of devices, including virtual ones, that cannot always have an <a class="el" href="d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463" title="Identifies a specific AJA NTV2 device model number. The NTV2DeviceID is actually the PROM part number...">NTV2DeviceID</a>. These functions may be deprecated in a future SDK, and should be avoided going forward. See <a class="el" href="d1/dc5/ntv2devops.html#devfw-features">Determining Firmware Features</a> for more information.</p>
-<h3><a class="anchor" id="libajantv2-signalrouter"></a>
-CNTV2SignalRouter Class</h3>
-<p>The <a class="el" href="d7/dce/class_c_n_t_v2_signal_router.html" title="This class is a collection of widget input-to-output connections that can be applied all-at-once to a...">CNTV2SignalRouter</a> class is used to help perform <a class="el" href="d0/dc3/ntv2signalrouting.html">Widget Signal Routing</a>.</p><ul>
-<li><b>Helper Functions</b> – declared in <a class="el" href="dc/d95/ntv2signalrouter_8h.html" title="Declares CNTV2SignalRouter class. ">ntv2signalrouter.h</a><ul>
-<li><b>Get…InputXpt… Helpers</b> – These return <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> values<ul>
-<li><a class="el" href="dc/d95/ntv2signalrouter_8h.html#a52de40a044d9495d297dcb5427acb912">GetFrameBufferInputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given FrameStore</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a5cd422f030e08bcf17b38ed194828b18">GetCSCInputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given CSC</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#ab2bfd2c485c0b2008706b28e9df84ba4">GetLUTInputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given LUT</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#aaf1f9e286e2aaca29e3df5380f30e9b7">GetDLInInputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given Dual-Link Input</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#aef20c259c29dda5d74dea1373d929236">GetDLOutInputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given Dual-Link Output</li>
-<li>::GetOutputDestInputXptFromChannel – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given <a class="el" href="d6/d0c/ntv2enums_8h.html#a1aba0678cb93172f7b74ffb0eec87126" title="Identifies a specific video output destination. ">NTV2OutputDestination</a></li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a86c9d4bd0ee3b3ac292d1cf121bf6cc7">GetSDIOutputInputXpt</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given SDI Output</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a6a69114143ceabeaded03df0d538fc46">GetMixerFGInputXpt</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given Mixerʼs foreground</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a5f20976b7d3b22afbfd646d439dbb69a">GetMixerBGInputXpt</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given Mixerʼs background</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a86dfe8aefa2e38b1af68d08515712ec5">GetTSIMuxInputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#a8a79c46eb48fb4d267562cce1976c811">NTV2InputXptID</a> for a given TSI Mux</li>
-</ul>
-</li>
-<li><b>Get…OutputXpt… Helpers</b> – These return <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> values<ul>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a012779795e5d5f6f5817c893ecf38ead">GetCSCOutputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given CSC</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#af8e70c0f71fb9b6a3e3617cfdbcd0ff3">GetLUTOutputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given CSC</li>
-<li><a class="el" href="dc/d95/ntv2signalrouter_8h.html#a7d71a7e5412063bb68ed21d0436e4487">GetFrameBufferOutputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given FrameStore</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a7d644b5a95e56914ba4ab748cc763d30">GetInputSourceOutputXpt</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given <a class="el" href="d6/d0c/ntv2enums_8h.html#ac5dbe58ce5dcc94682e0012abc6124f1" title="Identifies a specific video input source. ">NTV2InputSource</a></li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a7365176fcc10762900a3b21595ccd582">GetSDIInputOutputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given SDI Input</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a920f6f41b158e17cdaee822dbe0ee753">GetDLOutOutputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given Dual-Link Output</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#ad1fc1ff40ae4f7f2f76de27ae1c44319">GetDLInOutputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given Dual-Link Input</li>
-<li><a class="el" href="de/dc8/ntv2signalrouter_8cpp.html#a589bfe2375f9bc8b99abdf48cd91ff6e">GetMixerOutputXptFromChannel</a> – returns an <a class="el" href="d6/d0c/ntv2enums_8h.html#ae3b8bbdbe152855d17ebc01edd61985a">NTV2OutputXptID</a> for a given Mixer</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>See <a class="el" href="d0/dc3/ntv2signalrouting.html">Widget Signal Routing</a> for more details.</p>
 <hr/>
 <h2><a class="anchor" id="ajaanc"></a>
 Ancillary Data Classes</h2>
@@ -488,11 +456,11 @@ Ancillary Data Classes</h2>
 <iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_2.svg" width="1344" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <hr/>
 <h2><a class="anchor" id="ajacc"></a>
-“libajacc” Closed-Caption Library</h2>
-<p>The AJA Closed-Caption Library (AJACCLib) is a suite of classes and data types which allow end-users to easily encode or decode CEA-608 or CEA-708 closed-caption data using nearly any NTV2-compatible AJA device using the C++ programming language. The code operates on Windows/VisualStudio, MacOS/Xcode and Linux/gcc.</p>
-<p>The purpose of the AJACCLib library is to enable third-parties to easily access and/or control the caption data entering or leaving an AJA NTV2 device.</p>
-<dl class="section note"><dt>Note</dt><dd>The library currently is very focused on CEA-608. It does not support “full/native” CEA-708, Teletext, OP-42/47, ARIB STD-B37, etc.</dd></dl>
-<p>As this library is AJA proprietary, source code is not provided.</p>
+“ajacc” Closed-Caption Classes</h2>
+<p>The Closed-Caption C++ classes allow NTV2 clients to easily encode or decode CEA-608 or CEA-708 closed-caption data using NTV2 devices. The code operates identically on Windows, MacOS and Linux.</p>
+<dl class="section note"><dt>Note</dt><dd>The library does not support “full/native” CEA-708, Teletext, OP-42/47, ARIB STD-B37, etc.</dd></dl>
+<p>In SDK version 18.0 and earlier, these classes were closed-source and supplied pre-built in their own static <b>libajacc</b> library.</p>
+<p>Starting in SDK 18.1, they became open-source, and included in the <b>libajantv2</b> source tree. The CMake parameter <code>AJANTV2_DISABLE_AJACC</code> controls whether or not they’re built with the rest of the SDK. It defaults to <code>ON</code> (excluded). To include the “ajacc” classes, set <code>AJANTV2_DISABLE_AJACC</code> to <code>OFF</code> and rebuild.</p>
 <dl class="section user"><dt>Demonstration Applications</dt><dd><ul>
 <li><a class="el" href="d9/d07/demoapps.html#ntv2ccgrabber">NTV2CCGrabber Demo</a></li>
 <li><a class="el" href="d9/d07/demoapps.html#ntv2ccplayer">NTV2CCPlayer Demo</a></li>
@@ -592,7 +560,7 @@ Rendering Captions</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 23 2026 12:41:03 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Sep 24 2026 06:41:04 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
