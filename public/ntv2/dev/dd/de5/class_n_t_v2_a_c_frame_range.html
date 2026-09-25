@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2436</span>
+   &#160;<span id="projectnumber">18.1.0.2437</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2436</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('dd/de5/class_n_t_v2_a_c_frame_range.ht
 </div><!--header-->
 <div class="contents">
 
-<p>AutoCirculate Frame Range.  
+<p>A helper class used in <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> and <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> that makes it easier to specify an AutoCirculate Frame Range, either as a simple frame count (to lazily allow <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a99b66e455cc2107a4c9ecd4999991963" title="Returns the device frame buffer numbers of the first unallocated contiguous band of frame buffers hav...">CNTV2Card::FindUnallocatedFrames</a> to determine the actual frame range to use), or an explicit frame range.  
  <a href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>&gt;</code></p>
@@ -105,8 +105,10 @@ $(document).ready(function(){initNavTree('dd/de5/class_n_t_v2_a_c_frame_range.ht
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af60e3ae61e7ce78621cbb97b6ea9e004"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#af60e3ae61e7ce78621cbb97b6ea9e004">NTV2ACFrameRange</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inFrameCount=0)</td></tr>
+<tr class="memdesc:af60e3ae61e7ce78621cbb97b6ea9e004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs me from a simple frame count.  <a href="#af60e3ae61e7ce78621cbb97b6ea9e004">More...</a><br /></td></tr>
 <tr class="separator:af60e3ae61e7ce78621cbb97b6ea9e004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6623814c2f49e1f539254426161ca9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a2e6623814c2f49e1f539254426161ca9">NTV2ACFrameRange</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inFirstFrame, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inLastFrame)</td></tr>
+<tr class="memdesc:a2e6623814c2f49e1f539254426161ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs me from an explicit frame range.  <a href="#a2e6623814c2f49e1f539254426161ca9">More...</a><br /></td></tr>
 <tr class="separator:a2e6623814c2f49e1f539254426161ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6567c0d75080d932062f40919eb2b6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#aa6567c0d75080d932062f40919eb2b6c">isCountOnly</a> (void) const</td></tr>
 <tr class="separator:aa6567c0d75080d932062f40919eb2b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,22 +125,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4331c75633b64411f3f1a732aa25e231"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a4331c75633b64411f3f1a732aa25e231">valid</a> (void) const</td></tr>
 <tr class="separator:a4331c75633b64411f3f1a732aa25e231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4b14f826d73abe5e65833b71788846"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html">NTV2ACFrameRange</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a6e4b14f826d73abe5e65833b71788846">makeInvalid</a> (void)</td></tr>
+<tr class="memdesc:a6e4b14f826d73abe5e65833b71788846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates me.  <a href="#a6e4b14f826d73abe5e65833b71788846">More...</a><br /></td></tr>
 <tr class="separator:a6e4b14f826d73abe5e65833b71788846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fc088526a723b4b6b0c186d9452055"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#ab0fc088526a723b4b6b0c186d9452055">setExactRange</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inFirstFrame, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inLastFrame)</td></tr>
+<tr class="memdesc:ab0fc088526a723b4b6b0c186d9452055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets me to the given explicit frame range values.  <a href="#ab0fc088526a723b4b6b0c186d9452055">More...</a><br /></td></tr>
 <tr class="separator:ab0fc088526a723b4b6b0c186d9452055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a406433e7e88cb7d6fc305a5360b54890"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a406433e7e88cb7d6fc305a5360b54890">setRangeWithCount</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inCount, const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inFirstFrame)</td></tr>
+<tr class="memdesc:a406433e7e88cb7d6fc305a5360b54890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets me to an explicit frame range specified by a frame count and a starting frame index.  <a href="#a406433e7e88cb7d6fc305a5360b54890">More...</a><br /></td></tr>
 <tr class="separator:a406433e7e88cb7d6fc305a5360b54890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c54b28c254e190cfbf566dfe2d4a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a57c54b28c254e190cfbf566dfe2d4a81">setCountOnly</a> (const <a class="el" href="../../db/de2/ajatypes_8h.html#ae4440931f58d09da66ca92345018fb65">UWord</a> inCount)</td></tr>
+<tr class="memdesc:a57c54b28c254e190cfbf566dfe2d4a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets me to a simple frame count.  <a href="#a57c54b28c254e190cfbf566dfe2d4a81">More...</a><br /></td></tr>
 <tr class="separator:a57c54b28c254e190cfbf566dfe2d4a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a811467be9c122c6ba2c672f80a4425b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a811467be9c122c6ba2c672f80a4425b0">setFromString</a> (const std::string &amp;inStr)</td></tr>
+<tr class="memdesc:a811467be9c122c6ba2c672f80a4425b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets me from the given character string that should contain a human-readable frame range.  <a href="#a811467be9c122c6ba2c672f80a4425b0">More...</a><br /></td></tr>
 <tr class="separator:a811467be9c122c6ba2c672f80a4425b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2418afd198148990942a488ca19cf260"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a2418afd198148990942a488ca19cf260">toString</a> (const bool inNormalized=<a class="el" href="../../d8/d0f/ntv2devicefeatures_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>) const</td></tr>
+<tr class="memdesc:a2418afd198148990942a488ca19cf260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts me into a character string.  <a href="#a2418afd198148990942a488ca19cf260">More...</a><br /></td></tr>
 <tr class="separator:a2418afd198148990942a488ca19cf260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>AutoCirculate Frame Range. </p>
+<div class="textblock"><p>A helper class used in <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> and <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> that makes it easier to specify an AutoCirculate Frame Range, either as a simple frame count (to lazily allow <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a99b66e455cc2107a4c9ecd4999991963" title="Returns the device frame buffer numbers of the first unallocated contiguous band of frame buffers hav...">CNTV2Card::FindUnallocatedFrames</a> to determine the actual frame range to use), or an explicit frame range. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00970">970</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00972">972</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af60e3ae61e7ce78621cbb97b6ea9e004"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af60e3ae61e7ce78621cbb97b6ea9e004">&#9670;&nbsp;</a></span>NTV2ACFrameRange() <span class="overload">[1/2]</span></h2>
@@ -164,7 +172,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00973">973</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p>Constructs me from a simple frame count. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inFrameCount</td><td>Specifies a frame count. This value should be at least 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>AJA generally does not recommended using "lazy" AutoCirculate buffer allocation/specification in production code. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00980">980</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +219,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00977">977</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p>Constructs me from an explicit frame range. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inFirstFrame</td><td>Specifies the starting frame index number. This value should be less than <code>inLastFrame</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inLastFrame</td><td>Specifies the ending frame index number. This value should be greater than <code>inFirstFrame</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00990">990</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -230,9 +256,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>my frame count (if a simple frame count); otherwise zero </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>my frame count (valid only if I'm a simple frame count); otherwise zero </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00983">983</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00997">997</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -259,9 +285,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>my first frame (if explicit frame range); otherwise zero </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>my first frame index number (if explicit frame range); otherwise zero </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00984">984</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00998">998</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -288,9 +314,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if I'm a simple frame count </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if I'm a simple frame count; otherwise I'm an explicit frame range. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00981">981</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00995">995</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -317,9 +343,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if I'm a specific frame range </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if I'm a specific frame range; otherwise I'm a simple frame count. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00982">982</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00996">996</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -346,9 +372,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>my last frame (if explicit frame range); otherwise zero </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>my last frame index number (if explicit frame range); otherwise zero </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00985">985</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00999">999</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +402,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00993">993</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p>Invalidates me. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01015">1015</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +432,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if valid; otherwise false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00986">986</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01000">1000</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +460,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01015">1015</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p>Sets me to a simple frame count. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inCount</td><td>Specifies my frame count. This value should be at least 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if I'm valid; otherwise <code>false</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01057">1057</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +507,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00999">999</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p>Sets me to the given explicit frame range values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inFirstFrame</td><td>Specifies my starting frame index number. This value should be less than <code>inLastFrame</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inLastFrame</td><td>Specifies my ending frame index number. This value should be greater than <code>inFirstFrame</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if I'm valid; otherwise <code>false</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01028">1028</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -489,6 +536,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resets me from the given character string that should contain a human-readable frame range. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inStr</td><td>Specifies the character string to be interpreted as a frame range. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an empty string if successful; otherwise a non-empty string containing a human-readable error message. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04256">4256</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
@@ -528,7 +584,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01007">1007</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p>Sets me to an explicit frame range specified by a frame count and a starting frame index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inCount</td><td>Specifies my frame count. This value should be at least 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inFirstFrame</td><td>Specifies my starting frame index number. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if I'm valid; otherwise <code>false</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01043">1043</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -547,6 +613,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Converts me into a character string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inNormalized</td><td>If true, the returned string will contain something like "X-Y" or "N@M", suitable for use in <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#a811467be9c122c6ba2c672f80a4425b0" title="Resets me from the given character string that should contain a human-readable frame range...">NTV2ACFrameRange::setFromString</a>; otherwise, it will contain a more human-readable description of my frame range. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a character string that contains a readable representation of my frame range. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html#l04306">4306</a> of file <a class="el" href="../../d6/d9b/ntv2utils_8cpp_source.html">ntv2utils.cpp</a>.</p>
 
@@ -575,8 +650,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if I'm valid; otherwise <code>false</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l00987">987</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01005">1005</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +666,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html">NTV2ACFrameRange</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 06:41:04 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Sep 24 2026 19:11:02 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2436</span>
+   &#160;<span id="projectnumber">18.1.0.2437</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2436</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
   </td>
  </tr>
  </tbody>
@@ -193,7 +193,7 @@ Multi-Process Applications</h3>
 <p>In this case, AJA recommends using a controlling (parent) process that does the following:</p><ul>
 <li>Acquires the device and assumes control of it.</li>
 <li>Launches subordinate per-channel capture or playout (child) processes as required.<ul>
-<li>If using <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a>, it may want to assign the <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="AutoCirculate Frame Range. ">NTV2ACFrameRange</a> to be used by the child process.</li>
+<li>If using <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a>, it may want to assign the <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="A helper class used in CNTV2Card::AutoCirculateInitForInput and CNTV2Card::AutoCirculateInitForOutput...">NTV2ACFrameRange</a> to be used by the child process.</li>
 <li>The child process would ordinarily be responsible for widget routing and configuring the channel it operates.</li>
 <li>The child process would perform the frame processing (perhaps in a high-priority thread) until told to stop (by some event or signal).</li>
 <li>Just before exiting, the child process would clean up after itself, disconnecting the widgets it used, disabling its FrameStore, etc. (though this cleanup could be done by the manager/parent process).</li>
@@ -213,7 +213,7 @@ Multi-Process Applications</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 06:41:03 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Sep 24 2026 19:11:02 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

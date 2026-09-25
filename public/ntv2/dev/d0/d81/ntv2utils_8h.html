@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2436</span>
+   &#160;<span id="projectnumber">18.1.0.2437</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2436</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
   </td>
  </tr>
  </tbody>
@@ -131,7 +131,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to describe Start of Active Video (SAV) location and field dominance for a given NTV2Standard. (See GetSmpteLineNumber function.)  <a href="../../d3/d3a/struct_n_t_v2_smpte_line_number.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html">NTV2ACFrameRange</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">AutoCirculate Frame Range.  <a href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class used in <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> and <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> that makes it easier to specify an AutoCirculate Frame Range, either as a simple frame count (to lazily allow <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a99b66e455cc2107a4c9ecd4999991963" title="Returns the device frame buffer numbers of the first unallocated contiguous band of frame buffers hav...">CNTV2Card::FindUnallocatedFrames</a> to determine the actual frame range to use), or an explicit frame range.  <a href="../../dd/de5/class_n_t_v2_a_c_frame_range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -557,7 +557,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:addf9346e4db320c87eaa079d4fa029a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the given video standard, returns the SMPTE-designated line numbers for Field 1 and Field 2 that correspond to the start-of-active-video (SAV).  <a href="#addf9346e4db320c87eaa079d4fa029a7">More...</a><br /></td></tr>
 <tr class="separator:addf9346e4db320c87eaa079d4fa029a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc6dbf29654034d4f378ecba86682229"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d81/ntv2utils_8h.html#adc6dbf29654034d4f378ecba86682229">operator&lt;&lt;</a> (std::ostream &amp;oss, const <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html">NTV2ACFrameRange</a> &amp;inObj)</td></tr>
-<tr class="memdesc:adc6dbf29654034d4f378ecba86682229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handy ostream writer for <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="AutoCirculate Frame Range. ">NTV2ACFrameRange</a>.  <a href="#adc6dbf29654034d4f378ecba86682229">More...</a><br /></td></tr>
+<tr class="memdesc:adc6dbf29654034d4f378ecba86682229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handy ostream writer for <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="A helper class used in CNTV2Card::AutoCirculateInitForInput and CNTV2Card::AutoCirculateInitForOutput...">NTV2ACFrameRange</a>.  <a href="#adc6dbf29654034d4f378ecba86682229">More...</a><br /></td></tr>
 <tr class="separator:adc6dbf29654034d4f378ecba86682229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dc13bbc8cc286bc5540aaba628bda8b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d81/ntv2utils_8h.html#a2dc13bbc8cc286bc5540aaba628bda8b">operator&lt;&lt;</a> (std::ostream &amp;inOutStr, const <a class="el" href="../../d0/d81/ntv2utils_8h.html#ab4f32f553cdf61287116b57fbb119b21">NTV2DeviceIDList</a> &amp;inSet)</td></tr>
 <tr class="memdesc:a2dc13bbc8cc286bc5540aaba628bda8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handy ostream writer for NTV2DeviceIDList.  <a href="#a2dc13bbc8cc286bc5540aaba628bda8b">More...</a><br /></td></tr>
@@ -1150,7 +1150,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000247">Deprecated:</a></b></dt><dd>Use NTV2OutputCrosspointIDToString </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01168">1168</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01223">1223</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1170,7 +1170,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01158">1158</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01213">1213</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1189,7 +1189,7 @@ Functions</h2></td></tr>
 
 <p>An ordered list of NTV2DeviceIDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01036">1036</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01091">1091</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1207,7 @@ Functions</h2></td></tr>
 
 <p>A convenient const iterator for NTV2DeviceIDList. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01038">1038</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01093">1093</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1225,7 @@ Functions</h2></td></tr>
 
 <p>A convenient non-const iterator for NTV2DeviceIDList. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01037">1037</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01092">1092</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1243,7 +1243,7 @@ Functions</h2></td></tr>
 
 <p>A set of NTV2DeviceIDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01043">1043</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01098">1098</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1261,7 @@ Functions</h2></td></tr>
 
 <p>A convenient const iterator for NTV2DeviceIDSet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01045">1045</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01100">1100</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1279,7 @@ Functions</h2></td></tr>
 
 <p>A convenient non-const iterator for NTV2DeviceIDSet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01044">1044</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01099">1099</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1297,7 @@ Functions</h2></td></tr>
 
 <p>An ordered sequence of NTV2InputCrosspointID values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01073">1073</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01128">1128</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1315,7 @@ Functions</h2></td></tr>
 
 <p>A convenient const iterator for NTV2InputCrosspointIDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01075">1075</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01130">1130</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1333,7 +1333,7 @@ Functions</h2></td></tr>
 
 <p>A convenient non-const iterator for NTV2InputCrosspointIDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01074">1074</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01129">1129</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1351,7 @@ Functions</h2></td></tr>
 
 <p>An ordered sequence of NTV2OutputCrosspointID values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01066">1066</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01121">1121</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1369,7 @@ Functions</h2></td></tr>
 
 <p>A convenient const iterator for NTV2OutputCrosspointIDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01068">1068</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01123">1123</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -1387,7 +1387,7 @@ Functions</h2></td></tr>
 
 <p>A convenient non-const iterator for NTV2OutputCrosspointIDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01067">1067</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01122">1122</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -5309,7 +5309,7 @@ The use of unsigned values precludes positioning the source raster above the top
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000241">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d0/d81/ntv2utils_8h.html#aa81ae0790d8a997e65d0ed1754a15f0e">NTV2AudioChannelPairToString</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01155">1155</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01210">1210</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -7641,9 +7641,9 @@ The use of unsigned values precludes positioning the source raster above the top
 </table>
 </div><div class="memdoc">
 
-<p>Handy ostream writer for <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="AutoCirculate Frame Range. ">NTV2ACFrameRange</a>. </p>
+<p>Handy ostream writer for <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="A helper class used in CNTV2Card::AutoCirculateInitForInput and CNTV2Card::AutoCirculateInitForOutput...">NTV2ACFrameRange</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01033">1033</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/ntv2utils_8h_source.html#l01088">1088</a> of file <a class="el" href="../../d0/d81/ntv2utils_8h_source.html">ntv2utils.h</a>.</p>
 
 </div>
 </div>
@@ -8653,7 +8653,7 @@ This is a safer version of the <a class="el" href="../../d0/d81/ntv2utils_8h.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_012a9823336f45ecffba9316d6ff6f27.html">libajantv2</a></li><li class="navelem"><a class="el" href="../../dir_dcc334097b934f5294dca7e33f0e0621.html">ajantv2</a></li><li class="navelem"><a class="el" href="../../dir_a1e7971ee2787a8222fe6a5c9384fcca.html">includes</a></li><li class="navelem"><a class="el" href="../../d0/d81/ntv2utils_8h.html">ntv2utils.h</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 06:41:02 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Sep 24 2026 19:11:01 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

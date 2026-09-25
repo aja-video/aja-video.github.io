@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2436</span>
+   &#160;<span id="projectnumber">18.1.0.2437</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2436</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">The NTV2 SDK </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2004-2025 AJA Video Systems, Inc. All rights reserved.</dd></dl>
+<div class="textblock"><dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2004-2026 AJA Video Systems, Inc. All rights reserved.</dd></dl>
 <p>The NTV2 Software Development Kit (SDK) is a suite of classes and data types which allow end-users to access and control nearly any NTV2-compatible AJA device using the C++ programming language.</p>
 <dl class="section user"><dt>Contents</dt><dd><ul>
 <li><a class="el" href="db/d9b/gettingstarted.html">Getting Started</a></li>
@@ -184,8 +184,7 @@ The NTV2 Class Library</h1>
 <li><b>Memory Management</b><ul>
 <li><a class="el" href="de/def/class_a_j_a_ref_ptr.html" title="I am a reference-counted pointer template class. I am intended to be a proxy for an underlying object...">AJARefPtr</a> — automatic reference-counted pointers</li>
 <li><a class="el" href="d1/d7d/class_a_j_a_circular_buffer.html" title="I am a circular frame buffer that simplifies implementing a type-safe producer/consumer model for pro...">AJACircularBuffer</a> — a circular ring of fixed-size buffers, useful for video streaming</li>
-<li><a class="el" href="d9/dfd/class_a_j_a_memory.html">AJAMemory</a> —</li>
-<li><a class="el" href="de/df9/class_a_j_a_buffer.html">AJABuffer</a> —</li>
+<li><a class="el" href="d9/dfd/class_a_j_a_memory.html">AJAMemory</a> — cross-platform memory allocation functions</li>
 </ul>
 </li>
 <li><b>File Management</b><ul>
@@ -196,7 +195,6 @@ The NTV2 Class Library</h1>
 <li><b>Timing</b><ul>
 <li><a class="el" href="dd/d43/class_a_j_a_performance.html">AJAPerformance</a> and <a class="el" href="d6/d7f/class_a_j_a_timer.html">AJATimer</a> — used for timing purposes</li>
 <li><a class="el" href="d7/d17/class_a_j_a_time_base.html">AJATimeBase</a> — a high-resolution time base, with many conversion capabilities</li>
-<li><a class="el" href="da/dbc/class_a_j_a_time.html" title="Collection of platform-independent host system clock time functions. ">AJATime</a> —</li>
 </ul>
 </li>
 <li><b>Threading and Synchronization</b><ul>
@@ -212,21 +210,17 @@ The NTV2 Class Library</h1>
 <li>AJATestPatternGen — for generating test patterns in a variety of pixel (raster) formats</li>
 <li><a class="el" href="df/d1e/class_a_j_a_time_code_burn.html">AJATimeCodeBurn</a> — “burns” a timecode into a raster</li>
 <li><a class="el" href="df/d92/class_a_j_a_wav_writer_audio_format.html">AJAWavWriterAudioFormat</a> — writes audio samples into a .WAV file</li>
-<li>AJA_GenerateAudioTone — generates audio samples</li>
-<li><a class="el" href="d1/d32/class_a_j_a_time_code.html" title="Utility class for timecodes. ">AJATimeCode</a> —</li>
-<li><a class="el" href="d2/dd4/class_a_j_a_d_p_x_file_i_o.html">AJADPXFileIO</a> and <a class="el" href="d4/d24/class_dpx_hdr.html">DpxHdr</a></li>
 </ul>
 </li>
 <li><b>Miscellaneous</b><ul>
+<li><a class="el" href="dc/d7d/class_a_j_a_pnp.html" title="This is a platform-agnostic plug-and-play class that notifies a client when AJA devices are attached/...">AJAPnp</a> — get notified when AJA devices get attached/detached to/from the host</li>
 <li><a class="el" href="d7/dfc/class_a_j_a_system_info.html">AJASystemInfo</a> — get common information about the system</li>
+<li>CreateGuid — create globally unique identifier strings</li>
+<li>AJAPersistence — save/retrieve integer/string/blob data to/from a host userʼs registry/preferences store using string keys (deprecated, will be removed in a future SDK)</li>
+<li>sqlite3 — the SQLite mini RDBMS (deprecated, will be removed in a future SDK)</li>
+<li>popt — for parsing command line arguments (deprecated, will be removed in a future SDK)</li>
 </ul>
 </li>
-</ul>
-<p>the “popt library” for parsing command line arguments</p><ul>
-<li>CreateGuid — create globally unique identifier strings</li>
-<li>AJAPersistence — save/retrieve integer/string/blob data to/from a host userʼs registry/preferences store using string keys</li>
-<li>sqlite3 — the SQLite mini RDBMS</li>
-<li><a class="el" href="dc/d7d/class_a_j_a_pnp.html" title="This is a platform-agnostic plug-and-play class that notifies a client when AJA devices are attached/...">AJAPnp</a> — get notified when AJA devices get attached/detached to/from the host</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Avoid deriving subclasses from AJA-provided classes. AJA recommends using aggregation techniques to incorporate NTV2 functionality into your own classes.</dd></dl>
 <p>Prior to SDK 15.0, these “base” classes were compiled into their own <b>libajabase</b> library. Starting with SDK 15.0, they were merged into the <b>libajantv2</b> library.</p>
@@ -243,7 +237,7 @@ Principal Classes</h3>
 <li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html" title="I interrogate and control an AJA video/audio capture/playout device. ">CNTV2Card</a> — queries and/or controls a device</li>
 <li><a class="el" href="d7/dce/class_c_n_t_v2_signal_router.html" title="This class is a collection of widget input-to-output connections that can be applied all-at-once to a...">CNTV2SignalRouter</a> — a collection of signal routes that can be applied to a device</li>
 <li><a class="el" href="d3/d4e/class_n_t_v2_format_descriptor.html" title="Describes a video frame for a given video standard or format and pixel format, including the total nu...">NTV2FormatDescriptor</a> — describes an NTV2 raster image</li>
-<li><a class="el" href="d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> — describes memory buffers and perform operations on them</li>
+<li><a class="el" href="d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> — describes a contiguous block of user-space memory storage and operate on its contents</li>
 <li><a class="el" href="db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> — Provides information used in <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> calls</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Avoid deriving subclasses from AJA-provided classes. AJA recommends using aggregation techniques to incorporate NTV2 functionality into your own classes.</dd></dl>
@@ -349,9 +343,9 @@ CNTV2Card Class</h3>
 </li>
 <li><b>AutoCirculate API</b><ul>
 <li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a611031170a5dd26e456ed55e05dec9c2" title="Returns the current AutoCirculate status for the given channel. ">CNTV2Card::AutoCirculateGetStatus</a> to inquire about the <a class="el" href="da/d18/class_a_u_t_o_c_i_r_c_u_l_a_t_e___s_t_a_t_u_s.html" title="This is returned from the CNTV2Card::AutoCirculateGetStatus function. ">AUTOCIRCULATE_STATUS</a> of a given channel</li>
-<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest, designating a contiguous block of frame buffers on the ...">CNTV2Card::AutoCirculateInitForInput</a> to prepare a given channel for capture/input</li>
-<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> to prepare a given channel for playback/output</li>
-<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculating the specified channel that was previously initialized by CNTV2Card::AutoCircul...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a> to start or stop streaming to/from a given channel</li>
+<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> to prepare a given channel for capture/input</li>
+<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> to prepare a given channel for playback/output</li>
+<li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a> to start or stop streaming to/from a given channel</li>
 <li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#ac72c740b4978e6be464d4075cc7c11b5" title="Pauses AutoCirculate for the given channel. Once paused, AutoCirculate can be resumed later by callin...">CNTV2Card::AutoCirculatePause</a>, <a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a36316f23f45caaee19820629a9f0e4db" title="Resumes AutoCirculate for the given channel, picking up at the next frame without loss of audio synch...">CNTV2Card::AutoCirculateResume</a> to pause or resume streaming for a given channel</li>
 <li><a class="el" href="d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> to transfer a captured frame, or transfer a frame for playback</li>
 </ul>
@@ -553,14 +547,33 @@ Rendering Captions</h3>
 </ul>
 <p>If more control is needed over when (and which) renderer instances get allocated or freed, use these class methods:</p><ul>
 <li>CNTV2CaptionRenderer::GetRenderer fetches the renderer for a given frame buffer format and frame geometry, creating it if necessary, and opening it, if needed.</li>
-<li>CNTV2CaptionRenderer::FlushGlyphCaches closes and destroys all existing renderers. </li>
+<li>CNTV2CaptionRenderer::FlushGlyphCaches closes and destroys all existing renderers.</li>
 </ul>
+<h2><a class="anchor" id="debuglogging"></a>
+AJA Debug Logging Facility</h2>
+<p>Many functions in the NTV2 SDK log messages to the <a class="el" href="db/d56/class_a_j_a_debug.html">AJADebug</a> logging facility. Sometimes a message is logged when something goes wrong; other times a message is logged when something worked properly.</p>
+<p>When there are problems with the hardware or the SDK, it can be very helpful to monitor or record this logging activity to aid in the problem’s diagnosis.</p>
+<p><a class="el" href="db/d56/class_a_j_a_debug.html">AJADebug</a> utilizes a fixed-size shared memory region that implements a ring-buffer into which new log messages are written from the SDK by any number of client applications, while other applications or tools read messages from the buffer for display or analysis.</p>
+<p>Messages are added to the log with this additional metadata:</p><ul>
+<li>timestamp (when it was written into the ring buffer);</li>
+<li>originating process and thread IDs;</li>
+<li>source code origin (file name and line number);</li>
+<li>importance (see <a class="el" href="d0/db4/debugshare_8h.html#a2aac4bdc82f548ebc45cd060ba42ebd9">AJADebugSeverity</a>);</li>
+<li>classification (see <a class="el" href="d0/db4/debugshare_8h.html#ab9c6a5dd3d6252e1694f98aff4e9fff9">AJADebugUnit</a>).</li>
+</ul>
+<p>AJA currently provides three applications to monitor messages being logged by SDK client applications:</p><ul>
+<li>the <a class="el" href="db/d02/toolsandutilities.html#debuglog">“AJADebug Log” Tool</a> in the <a class="el" href="db/d02/toolsandutilities.html#usingntv2watcher">“NTV2Watcher”</a> application</li>
+<li>the <a class="el" href="db/d02/toolsandutilities.html#usingajalogger">“AJA Logger”</a> application</li>
+<li>the <a class="el" href="db/d02/toolsandutilities.html#usinglogreader">‘logreader’ Command-Line Utility</a></li>
+</ul>
+<p><b>IMPORTANT for OEM Developers:</b> <br />
+ For messages to enter the shared ring buffer from your SDK client application, you must first call <a class="el" href="db/d56/class_a_j_a_debug.html#a00ff3e1d68cf7d7b49a6545774c22bb2">AJADebug::Open</a>. If this is not done, none of the above log readers/viewers will see any messages logged from your application. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 24 2026 06:41:04 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Sep 24 2026 19:11:03 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

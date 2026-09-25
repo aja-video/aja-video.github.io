@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2436</span>
+   &#160;<span id="projectnumber">18.1.0.2437</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2436</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
   </td>
  </tr>
  </tbody>
@@ -878,7 +878,7 @@ Construction &amp; Destruction</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Note that specifying an SDI input source that's not connected to the framestore associated with the channel being AutoCirculated will likely result in a timecode that's not frame-accurate. </dd>
 <dd>
-To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest, designating a contiguous block of frame buffers on the ...">CNTV2Card::AutoCirculateInitForInput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
+To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03070">3070</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
@@ -909,7 +909,7 @@ To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest, designating a contiguous block of frame buffers on the ...">CNTV2Card::AutoCirculateInitForInput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03063">3063</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
@@ -958,7 +958,7 @@ To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Note that specifying an SDI input source that's not connected to the framestore associated with the channel being AutoCirculated will likely result in a timecode that's not frame-accurate. </dd>
 <dd>
-To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest, designating a contiguous block of frame buffers on the ...">CNTV2Card::AutoCirculateInitForInput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
+To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03077">3077</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
@@ -1520,7 +1520,7 @@ This function also works for <a class="el" href="../../d2/d06/auxiliarydata.html
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function call is ignored if <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest, designating a contiguous block of frame buffers on the ...">CNTV2Card::AutoCirculateInitForInput</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> were called without the AUTOCIRCULATE_WITH_FBFCHANGE option set. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function call is ignored if <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> were called without the AUTOCIRCULATE_WITH_FBFCHANGE option set. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l03019">3019</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
@@ -1600,7 +1600,7 @@ This function also works for <a class="el" href="../../d2/d06/auxiliarydata.html
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Note that specifying an SDI output destination that's not connected to the framestore associated with the channel being AutoCirculated can result in the wrong timecode being transmitted from another AutoCirculate channel's SDI output(s). </dd>
 <dd>
-To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
+To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02984">2984</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
@@ -1633,7 +1633,7 @@ To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The NTV2TimeCodes map should be populated only with timecodes that make sense for the AutoCirculate channel that's in use, otherwise the timecode output of other channels may be affected. </dd>
 <dd>
-To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playout, designating a contiguous block of frame buffers on the...">CNTV2Card::AutoCirculateInitForOutput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
+To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> must have been initialized with the AUTOCIRCULATE_WITH_RP188 option. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html#l02964">2964</a> of file <a class="el" href="../../db/d4c/ntv2publicinterface_8cpp_source.html">ntv2publicinterface.cpp</a>.</p>
 
@@ -2086,7 +2086,7 @@ To work right, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html">AUTOCIRCULATE_TRANSFER</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 06:41:03 for AJA NTV2 SDK by
+    <li class="footer">Generated on Thu Sep 24 2026 19:11:02 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

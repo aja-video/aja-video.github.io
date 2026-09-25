@@ -16,7 +16,8 @@ var index =
         [ "Decoding CEA-708 Captions", "index.html#ajacc-decoding708", null ],
         [ "Encoding CEA-708 Captions", "index.html#ajacc-encoding708", null ],
         [ "Rendering Captions", "index.html#ajacc-rendering", null ]
-      ] ]
+      ] ],
+      [ "AJA Debug Logging Facility", "index.html#debuglogging", null ]
     ] ],
     [ "Getting Started", "db/d9b/gettingstarted.html", [
       [ "Downloading and Installing the SDK", "db/d9b/gettingstarted.html#gs-downloadinstallsdk", null ],
