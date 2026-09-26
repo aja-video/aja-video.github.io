@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2437</span>
+   &#160;<span id="projectnumber">18.1.0.2439</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2439</div>
   </td>
  </tr>
  </tbody>
@@ -1331,7 +1331,9 @@ Mixer/Keyer Operation</h2>
 <hr/>
  <h1><a class="anchor" id="audop-section"></a>
 Audio System Operation</h1>
-<p><b>Firmware Implementation</b></p><ul>
+<h2><a class="anchor" id="audop-fwimpl"></a>
+Firmware Implementation</h2>
+<ul>
 <li>An <b>Audio System</b> consists of:<ul>
 <li>A Record engine that operates the <b>Capture</b> aspect of the <b>Audio System</b> (if <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ab5189daf688987b280922fb6cde1466f">NTV2DeviceCanDoCapture</a> returns <code>true</code>):<ul>
 <li>when <em>Running</em>, continually writes audio samples into its 4MB input audio buffer region in device SDRAM, wrapping as necessary.</li>
@@ -1370,12 +1372,16 @@ Audio System Operation</h1>
 </li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>NTV2 devices with custom ancillary data extractors/inserters (see <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#ad2b63b9f62be2e9793243832e62dabdd">NTV2DeviceCanDoCustomAnc</a>) make it possible to capture (and on some devices with special firmware, playback) SDI audio without using an <b>Audio System</b>, instead using the <a class="el" href="../../d7/dcb/ancillarydata.html#anccapture">SDI Anc Packet Capture</a> or <a class="el" href="../../d7/dcb/ancillarydata.html#ancplayout">SDI Anc Packet Playout</a> capabilities. Also note the <a class="el" href="../../d7/dcb/ancillarydata.html">SDI Ancillary Data</a> facility won’t work for HDMI, AES/EBU or Analog transports — the <b>Audio System</b> facility must be used.</dd></dl>
-<p><b>Audio Systems</b></p><ul>
+<h3><a class="anchor" id="audop-fwimpl-audsys"></a>
+Audio System</h3>
+<ul>
 <li>NTV2-compatible devices have a minimum of one <b>Audio System</b> (sometimes referred to in the past as an <b>Audio Engine</b>).</li>
 <li>An <b>Audio System</b> can stream audio, whether in <b>Capture</b> (Record) mode, or <b>Playout</b> mode, or both.</li>
 <li>Call <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a22e624db258df962f03a1796e55c5c2b">NTV2DeviceGetNumAudioSystems</a> to determine the number of <b>Audio System</b>s on a device.</li>
 </ul>
-<p><b>Audio Channels</b></p><ul>
+<h3><a class="anchor" id="audop-fwimpl-audchls"></a>
+Audio Channels</h3>
+<ul>
 <li>Each <b>Audio System</b> can accommodate at least 8 channels of audio.</li>
 <li>Call <a class="el" href="../../dd/d0f/ntv2devicefeatures_8hpp.html#a80b4d6a3ed7ee149586aa56ff2a5f618">NTV2DeviceGetMaxAudioChannels</a> to determine the maximum number of audio channels that a device’s <b>Audio System</b>s can handle.</li>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af543923ef2fdbf75efe396d6868ac7cc" title="Returns the current number of audio channels being captured or played by a given Audio System on the ...">CNTV2Card::GetNumberAudioChannels</a> to determine how many audio channels a device <b>Audio System</b> is currently configured for.<ul>
@@ -1392,7 +1398,9 @@ Audio System Operation</h1>
 <li>The firmware automatically ensures that excess unused audio channels will capture silence or be ignored for playout. For example, an <b>Audio System</b> that’s been configured for 16 channels and is recording 2 HDMI audio channels will carry the HDMI audio in channels 1 and 2, and contain silence in channels 3 thru 16.</li>
 <li>Note that some SDI video formats have substantially reduced HANC capacity, and thus can only carry 8 audio channels (e.g. 2K×1080@2997, 2K×1080@30, <a href="#" onclick="location.href='mai'+'lto:'+'4K@'+'29'+'.97'; return false;">4K@29<span style="display: none;">.nosp@m.</span>.97</a>, 4K@30). Again, the <b>Audio System</b> can still operate in 16-channel mode, but will capture and/or playout silence in channels 9-16.</li>
 </ul>
-<p><b>Audio Sample Rate</b></p><ul>
+<h3><a class="anchor" id="audop-fwimpl-samprate"></a>
+Audio Sample Rate</h3>
+<ul>
 <li>The <b>Sample Rate</b> on all AJA devices is fixed at 48 kHz.</li>
 <li>All NTV2 devices implement a 48 kHz <b>Audio Clock</b> that can be sampled through the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a44465b2926268ea111cf5d357016baefab4cbf1377b1d2d7511773afa564d7a0a">kRegAud1Counter</a> register.<ul>
 <li>This register is reset to zero at power-on and PCIe reset, and increments every 20.833… µs.</li>
@@ -1400,7 +1408,9 @@ Audio System Operation</h1>
 </ul>
 </li>
 </ul>
-<p><b>Audio Buffers</b></p><ul>
+<h3><a class="anchor" id="audop-fwimpl-audbufs"></a>
+Audio Buffers</h3>
+<ul>
 <li>Each <b>Audio System</b> uses an 8 MB contiguous block of memory located in the upper part of SDRAM: <div class="image">
 <img src="../../hwref-fig2-audiobuffers.png" alt="hwref-fig2-audiobuffers.png"/>
 </div>
@@ -1564,7 +1574,7 @@ Audio Playout</h2>
 <p><b>Erase Mode:</b> The playout engine has an optional <b>Erase Mode</b>, in which it will automatically clear (zero) the <b>Output Buffer</b> memory immediately behind the <b>Play Head</b> as it runs. If the host application fails to transfer new samples into the <b>Audio Output Buffer</b>, the buffer will eventually contain all zeroes, and the output embedder will thereafter only transmit silence. Use the <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a7554d120505204b9e6f9e4adb3fb72a4" title="Enables or disables output erase mode for the given Audio System, which, when enabled, automatically writes zeroes into the audio output buffer behind the output read head. ">CNTV2Card::SetAudioOutputEraseMode</a> function to configure this feature.</p>
 <p><b>DMA Transfer:</b> Audio data can be transferred from the host to the device audio buffer via DMA by calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af476915ad0be7fce076370af2130a7d9" title="Synchronously transfers audio data from the specified host buffer to the given Audio System&#39;s buffer ...">CNTV2Card::DMAWriteAudio</a>. If the playout engine’s hardware <b>Play Head</b> catches up to, or passes, the buffer region being written by <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af476915ad0be7fce076370af2130a7d9" title="Synchronously transfers audio data from the specified host buffer to the given Audio System&#39;s buffer ...">CNTV2Card::DMAWriteAudio</a>, then audio/video synchronization has been lost. Care must be taken to ensure that enough samples are always written well ahead of the <b>Play Head</b>.</p>
 <p>There is no provision for changing the <b>Play Head</b> position while <b>Audio System</b> playback is running … except perhaps to reset playback to the start of the audio buffer (by calling both <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#abb6d1c8d1a4691e66d85d3eb956da7ea" title="Stops the playout side of the given NTV2AudioSystem, parking the &quot;Read Head&quot; at the start of the play...">CNTV2Card::StopAudioOutput</a> and then <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a3307a7dcf7f8cffcf07d5efd0b4398be" title="Starts the playout side of the given NTV2AudioSystem, reading outgoing audio samples from the Audio S...">CNTV2Card::StartAudioOutput</a>). Of course, applications have full control over the number of samples written, and where they get written into the <b>Audio Output Buffer</b>. Applications are free to drop samples or add silence as needed, while always ensuring these transfers stay ahead of the <b>Play Head</b>.</p>
-<p>If <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playout</a> is being used, AutoCirculate completely and automatically runs the <b>Audio System</b>. When <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> is called with a valid <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516" title="Used to identify an Audio System on an NTV2 device. See Audio System Operation for more information...">NTV2AudioSystem</a>, and then <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a> is called, AutoCirculate starts the <b>Audio System</b>. Youʼll need to transfer the correct number of audio samples via <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#adc7e3eb26eb326ffe273b5f3308dcdb6" title="Sets my audio buffer for use in a subsequent call to CNTV2Card::AutoCirculateTransfer. ">AUTOCIRCULATE_TRANSFER::SetAudioBuffer</a> or <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#a43e5bdd953b93d505ddfe2ce58451adc" title="The host audio buffer. This field is owned by the client application, and thus is responsible for all...">AUTOCIRCULATE_TRANSFER::acAudioBuffer</a> before calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>. See <a class="el" href="../../d1/dc5/ntv2devops.html#audop-samplecount">Correlating Audio Samples to Video Frames</a> (below) on how to calculate the correct number of audio samples for the current outgoing frame.</p>
+<p>If <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playback</a> is being used, AutoCirculate completely and automatically runs the <b>Audio System</b>. When <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> is called with a valid <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516" title="Used to identify an Audio System on an NTV2 device. See Audio System Operation for more information...">NTV2AudioSystem</a>, and then <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a> is called, AutoCirculate starts the <b>Audio System</b>. Youʼll need to transfer the correct number of audio samples via <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#adc7e3eb26eb326ffe273b5f3308dcdb6" title="Sets my audio buffer for use in a subsequent call to CNTV2Card::AutoCirculateTransfer. ">AUTOCIRCULATE_TRANSFER::SetAudioBuffer</a> or <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html#a43e5bdd953b93d505ddfe2ce58451adc" title="The host audio buffer. This field is owned by the client application, and thus is responsible for all...">AUTOCIRCULATE_TRANSFER::acAudioBuffer</a> before calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>. See <a class="el" href="../../d1/dc5/ntv2devops.html#audop-samplecount">Correlating Audio Samples to Video Frames</a> (below) on how to calculate the correct number of audio samples for the current outgoing frame.</p>
 <p><b>SDI Output:</b> SDI output embedders can ordinarily be driven by any <b>Audio System</b>.</p><ul>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ab195cb933b4f812fc6ff57e7a8b07d7f" title="Answers with the device&#39;s NTV2AudioSystem that is currently providing audio for the given SDI output&#39;...">CNTV2Card::GetSDIOutputAudioSystem</a> to determine which Audio System is currently driving Data Stream 1.</li>
 <li>Call <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a692c2f8b747962d58df9ed2dbc0a9074" title="Sets the device&#39;s NTV2AudioSystem that will provide audio for the given SDI output&#39;s audio embedder...">CNTV2Card::SetSDIOutputAudioSystem</a> to change DS1’s Audio System.</li>
@@ -1847,7 +1857,7 @@ Fast Bitfile Switching</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 19:11:01 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Sep 25 2026 18:03:31 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

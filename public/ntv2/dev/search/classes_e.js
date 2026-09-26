@@ -33,7 +33,7 @@ var searchData=
   ['ntv2colorcorrectioninfo',['NTV2ColorCorrectionInfo',['../d6/d30/struct_n_t_v2_color_correction_info.html',1,'']]],
   ['ntv2colorcorrectioninfo_5f32',['NTV2ColorCorrectionInfo_32',['../db/daf/struct_n_t_v2_color_correction_info__32.html',1,'']]],
   ['ntv2colorcorrectioninfo_5f64',['NTV2ColorCorrectionInfo_64',['../d9/d08/struct_n_t_v2_color_correction_info__64.html',1,'']]],
-  ['ntv2configureinterrupt',['NTV2ConfigureInterrupt',['../db/d7b/class_n_t_v2_configure_interrupt.html',1,'']]],
+  ['ntv2configinterrupt',['NTV2ConfigInterrupt',['../df/d2b/class_n_t_v2_config_interrupt.html',1,'']]],
   ['ntv2debuglogging',['NTV2DebugLogging',['../d8/dcd/class_n_t_v2_debug_logging.html',1,'']]],
   ['ntv2deviceinfo',['NTV2DeviceInfo',['../d6/d61/struct_n_t_v2_device_info.html',1,'']]],
   ['ntv2devicespecparser',['NTV2DeviceSpecParser',['../d3/d9a/class_n_t_v2_device_spec_parser.html',1,'']]],

@@ -77,7 +77,7 @@ var ntv2publicinterface_8cpp =
     [ "operator<<", "db/d4c/ntv2publicinterface_8cpp.html#a0dc2b8ffbde6524dd3d9f59f7709d87e", null ],
     [ "operator<<", "db/d4c/ntv2publicinterface_8cpp.html#acedf285300db0864f0276039d4baeac5", null ],
     [ "operator<<", "db/d4c/ntv2publicinterface_8cpp.html#a9c28b78c4cc957896e180e33cccc7514", null ],
-    [ "operator<<", "db/d4c/ntv2publicinterface_8cpp.html#ac130989c6cce81d6d1343ec5eb62ebed", null ],
+    [ "operator<<", "db/d4c/ntv2publicinterface_8cpp.html#af767d5b49da76538865969520e1b3ac1", null ],
     [ "print_address_offset", "db/d4c/ntv2publicinterface_8cpp.html#a3060aec39e2dea461f1e754f167b6c80", null ],
     [ "INVALID_TIMECODE_VALUE", "db/d4c/ntv2publicinterface_8cpp.html#ad7e4d8dac581097f15ef92a2dc69eeac", null ],
     [ "sSegXferUnits", "db/d4c/ntv2publicinterface_8cpp.html#ac28aa113d51eaef3d56671d2baa38601", null ]

@@ -79,6 +79,12 @@ var index =
         [ "Mixer/Keyer Operation", "d1/dc5/ntv2devops.html#vidop-mixerkeyer", null ]
       ] ],
       [ "Audio System Operation", "d1/dc5/ntv2devops.html#audop-section", [
+        [ "Firmware Implementation", "d1/dc5/ntv2devops.html#audop-fwimpl", [
+          [ "Audio System", "d1/dc5/ntv2devops.html#audop-fwimpl-audsys", null ],
+          [ "Audio Channels", "d1/dc5/ntv2devops.html#audop-fwimpl-audchls", null ],
+          [ "Audio Sample Rate", "d1/dc5/ntv2devops.html#audop-fwimpl-samprate", null ],
+          [ "Audio Buffers", "d1/dc5/ntv2devops.html#audop-fwimpl-audbufs", null ]
+        ] ],
         [ "Audio Connectors", "d1/dc5/ntv2devops.html#audop-connectors", [
           [ "AES Audio", "d1/dc5/ntv2devops.html#audop-aes", null ],
           [ "Analog Audio", "d1/dc5/ntv2devops.html#audop-analog", null ],
@@ -237,7 +243,7 @@ var index =
       [ "Building & Running the Demos", "d9/d07/demoapps.html#demoappsbuild", [
         [ "Running the Demos", "d9/d07/demoapps.html#demoappsrun", null ]
       ] ],
-      [ "Playout Demos", "d9/d07/demoapps.html#demoappsplay", [
+      [ "Playback Demos", "d9/d07/demoapps.html#demoappsplay", [
         [ "NTV2OutputTestPattern Demo", "d9/d07/demoapps.html#ntv2outputtestpattern", null ],
         [ "NTV2Player Demo", "d9/d07/demoapps.html#ntv2player", [
           [ "Ancillary Data Injection", "d9/d07/demoapps.html#ntv2playeranc", null ]
@@ -384,31 +390,32 @@ var index =
         [ "HD RGB Playout Over 1 × 3G Dual-Link SDI From RGB Frame Buffer", "d0/dc3/ntv2signalrouting.html#recipe_out_hddlrgb", null ]
       ] ]
     ] ],
-    [ "Capture and Playout Techniques", "d9/d9a/recordplaytechniques.html", [
-      [ "Playout Basics", "d9/d9a/recordplaytechniques.html#playoutbasics", null ],
-      [ "Capture Basics", "d9/d9a/recordplaytechniques.html#capturebasics", [
-        [ "Input Detection", "d9/d9a/recordplaytechniques.html#playoutinputdetect", null ]
-      ] ],
-      [ "Ping-Pong", "d9/d9a/recordplaytechniques.html#aboutpingpong", null ],
+    [ "Capture and Playback Techniques", "d9/d9a/recordplaytechniques.html", [
       [ "AutoCirculate", "d9/d9a/recordplaytechniques.html#aboutautocirculate", [
         [ "AutoCirculate Capture", "d9/d9a/recordplaytechniques.html#autocirculatecapture", [
-          [ "Per-Frame “Time Budget”", "d9/d9a/recordplaytechniques.html#autocirctimebudget", null ],
-          [ "Frame Count Considerations (Capture)", "d9/d9a/recordplaytechniques.html#autocircfrmcnt", null ]
+          [ "Program Flow", "d9/d9a/recordplaytechniques.html#autocirculateflow", null ]
         ] ],
-        [ "AutoCirculate Playout", "d9/d9a/recordplaytechniques.html#autocirculateplayout", null ],
-        [ "AutoCirculate Capture and Playout", "d9/d9a/recordplaytechniques.html#autocirculateinandout", null ],
-        [ "AutoCirculate API Functions", "d9/d9a/recordplaytechniques.html#autocirculateapi", null ],
-        [ "Recommended Program Flow", "d9/d9a/recordplaytechniques.html#autocirculateflow", null ],
-        [ "AutoCirculate Channel", "d9/d9a/recordplaytechniques.html#autocirculatechannels", null ],
-        [ "Pre-Loading Frames For Playback", "d9/d9a/recordplaytechniques.html#autocirculatepreload", null ],
-        [ "Interlaced Versus Progressive Video", "d9/d9a/recordplaytechniques.html#autocirculateinterlace", null ],
-        [ "Field-Based Operation", "d9/d9a/recordplaytechniques.html#autocirculatefieldmode", null ],
-        [ "Latency Considerations", "d9/d9a/recordplaytechniques.html#autocirculatelowlatency", null ],
-        [ "AutoCirculating Multiple Channels", "d9/d9a/recordplaytechniques.html#autocirculateganging", null ],
-        [ "Monitoring AutoCirculate Activity with NTV2Watcher Tool", "d9/d9a/recordplaytechniques.html#autocirculatemon", null ],
-        [ "AutoCirculate Diagnostic Messages", "d9/d9a/recordplaytechniques.html#autocirculatemsgs", null ]
+        [ "AutoCirculate Playback", "d9/d9a/recordplaytechniques.html#autocirculateplayout", [
+          [ "Pre-Loading Frames", "d9/d9a/recordplaytechniques.html#autocirculatepreload", null ]
+        ] ],
+        [ "AutoCirculate Capture and Playback", "d9/d9a/recordplaytechniques.html#autocirculateinandout", null ],
+        [ "AutoCirculate Channel", "d9/d9a/recordplaytechniques.html#autocirculatechannels", [
+          [ "Ganging Multiple Channels", "d9/d9a/recordplaytechniques.html#autocirculateganging", null ]
+        ] ],
+        [ "Interlaced vs. Progressive Video", "d9/d9a/recordplaytechniques.html#autocirculateinterlace", [
+          [ "Field-Based Operation", "d9/d9a/recordplaytechniques.html#autocirculatefieldmode", null ]
+        ] ],
+        [ "Per-Frame “Time Budget”", "d9/d9a/recordplaytechniques.html#autocirctimebudget", null ],
+        [ "Latency Considerations", "d9/d9a/recordplaytechniques.html#autocirculatelowlatency", [
+          [ "Frame Count Considerations", "d9/d9a/recordplaytechniques.html#autocircfrmcnt", null ]
+        ] ],
+        [ "Monitoring AutoCirculate Activity", "d9/d9a/recordplaytechniques.html#autocirculatemon", [
+          [ "AutoCirculate Diagnostics", "d9/d9a/recordplaytechniques.html#autocirculatemsgs", null ]
+        ] ],
+        [ "AutoCirculate API Functions", "d9/d9a/recordplaytechniques.html#autocirculateapi", null ]
       ] ],
-      [ "Streaming DMA", "d9/d9a/recordplaytechniques.html#streamingdma", [
+      [ "Ping-Pong", "d9/d9a/recordplaytechniques.html#aboutpingpong", null ],
+      [ "Streaming DMA (Experimental)", "d9/d9a/recordplaytechniques.html#streamingdma", [
         [ "Streaming Capture", "d9/d9a/recordplaytechniques.html#strmcapture", null ],
         [ "Streaming Playback", "d9/d9a/recordplaytechniques.html#strmplayback", null ]
       ] ]

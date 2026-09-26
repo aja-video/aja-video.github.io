@@ -5,7 +5,7 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="AJA NTV2 SDK 18.1.0.2437" ref="index.html">
+      <section title="AJA NTV2 SDK 18.1.0.2439" ref="index.html">
         <section title="The NTV2 SDK" ref="index.html">
           <section title="The NTV2 Class Library" ref="index.html#ajantv2sdk">
             <section title="“libajabase” Classes" ref="index.html#ajabase" />
@@ -86,6 +86,12 @@
               <section title="Mixer/Keyer Operation" ref="d1/dc5/ntv2devops.html#vidop-mixerkeyer" />
             </section>
             <section title="Audio System Operation" ref="d1/dc5/ntv2devops.html#audop-section">
+              <section title="Firmware Implementation" ref="d1/dc5/ntv2devops.html#audop-fwimpl">
+                <section title="Audio System" ref="d1/dc5/ntv2devops.html#audop-fwimpl-audsys" />
+                <section title="Audio Channels" ref="d1/dc5/ntv2devops.html#audop-fwimpl-audchls" />
+                <section title="Audio Sample Rate" ref="d1/dc5/ntv2devops.html#audop-fwimpl-samprate" />
+                <section title="Audio Buffers" ref="d1/dc5/ntv2devops.html#audop-fwimpl-audbufs" />
+              </section>
               <section title="Audio Connectors" ref="d1/dc5/ntv2devops.html#audop-connectors">
                 <section title="AES Audio" ref="d1/dc5/ntv2devops.html#audop-aes" />
                 <section title="Analog Audio" ref="d1/dc5/ntv2devops.html#audop-analog" />
@@ -244,7 +250,7 @@
             <section title="Building &amp; Running the Demos" ref="d9/d07/demoapps.html#demoappsbuild">
               <section title="Running the Demos" ref="d9/d07/demoapps.html#demoappsrun" />
             </section>
-            <section title="Playout Demos" ref="d9/d07/demoapps.html#demoappsplay">
+            <section title="Playback Demos" ref="d9/d07/demoapps.html#demoappsplay">
               <section title="NTV2OutputTestPattern Demo" ref="d9/d07/demoapps.html#ntv2outputtestpattern" />
               <section title="NTV2Player Demo" ref="d9/d07/demoapps.html#ntv2player">
                 <section title="Ancillary Data Injection" ref="d9/d07/demoapps.html#ntv2playeranc" />
@@ -391,31 +397,32 @@
               <section title="HD RGB Playout Over 1 × 3G Dual-Link SDI From RGB Frame Buffer" ref="d0/dc3/ntv2signalrouting.html#recipe_out_hddlrgb" />
             </section>
           </section>
-          <section title="Capture and Playout Techniques" ref="d9/d9a/recordplaytechniques.html">
-            <section title="Playout Basics" ref="d9/d9a/recordplaytechniques.html#playoutbasics" />
-            <section title="Capture Basics" ref="d9/d9a/recordplaytechniques.html#capturebasics">
-              <section title="Input Detection" ref="d9/d9a/recordplaytechniques.html#playoutinputdetect" />
-            </section>
-            <section title="Ping-Pong" ref="d9/d9a/recordplaytechniques.html#aboutpingpong" />
+          <section title="Capture and Playback Techniques" ref="d9/d9a/recordplaytechniques.html">
             <section title="AutoCirculate" ref="d9/d9a/recordplaytechniques.html#aboutautocirculate">
               <section title="AutoCirculate Capture" ref="d9/d9a/recordplaytechniques.html#autocirculatecapture">
-                <section title="Per-Frame “Time Budget”" ref="d9/d9a/recordplaytechniques.html#autocirctimebudget" />
-                <section title="Frame Count Considerations (Capture)" ref="d9/d9a/recordplaytechniques.html#autocircfrmcnt" />
+                <section title="Program Flow" ref="d9/d9a/recordplaytechniques.html#autocirculateflow" />
               </section>
-              <section title="AutoCirculate Playout" ref="d9/d9a/recordplaytechniques.html#autocirculateplayout" />
-              <section title="AutoCirculate Capture and Playout" ref="d9/d9a/recordplaytechniques.html#autocirculateinandout" />
+              <section title="AutoCirculate Playback" ref="d9/d9a/recordplaytechniques.html#autocirculateplayout">
+                <section title="Pre-Loading Frames" ref="d9/d9a/recordplaytechniques.html#autocirculatepreload" />
+              </section>
+              <section title="AutoCirculate Capture and Playback" ref="d9/d9a/recordplaytechniques.html#autocirculateinandout" />
+              <section title="AutoCirculate Channel" ref="d9/d9a/recordplaytechniques.html#autocirculatechannels">
+                <section title="Ganging Multiple Channels" ref="d9/d9a/recordplaytechniques.html#autocirculateganging" />
+              </section>
+              <section title="Interlaced vs. Progressive Video" ref="d9/d9a/recordplaytechniques.html#autocirculateinterlace">
+                <section title="Field-Based Operation" ref="d9/d9a/recordplaytechniques.html#autocirculatefieldmode" />
+              </section>
+              <section title="Per-Frame “Time Budget”" ref="d9/d9a/recordplaytechniques.html#autocirctimebudget" />
+              <section title="Latency Considerations" ref="d9/d9a/recordplaytechniques.html#autocirculatelowlatency">
+                <section title="Frame Count Considerations" ref="d9/d9a/recordplaytechniques.html#autocircfrmcnt" />
+              </section>
+              <section title="Monitoring AutoCirculate Activity" ref="d9/d9a/recordplaytechniques.html#autocirculatemon">
+                <section title="AutoCirculate Diagnostics" ref="d9/d9a/recordplaytechniques.html#autocirculatemsgs" />
+              </section>
               <section title="AutoCirculate API Functions" ref="d9/d9a/recordplaytechniques.html#autocirculateapi" />
-              <section title="Recommended Program Flow" ref="d9/d9a/recordplaytechniques.html#autocirculateflow" />
-              <section title="AutoCirculate Channel" ref="d9/d9a/recordplaytechniques.html#autocirculatechannels" />
-              <section title="Pre-Loading Frames For Playback" ref="d9/d9a/recordplaytechniques.html#autocirculatepreload" />
-              <section title="Interlaced Versus Progressive Video" ref="d9/d9a/recordplaytechniques.html#autocirculateinterlace" />
-              <section title="Field-Based Operation" ref="d9/d9a/recordplaytechniques.html#autocirculatefieldmode" />
-              <section title="Latency Considerations" ref="d9/d9a/recordplaytechniques.html#autocirculatelowlatency" />
-              <section title="AutoCirculating Multiple Channels" ref="d9/d9a/recordplaytechniques.html#autocirculateganging" />
-              <section title="Monitoring AutoCirculate Activity with NTV2Watcher Tool" ref="d9/d9a/recordplaytechniques.html#autocirculatemon" />
-              <section title="AutoCirculate Diagnostic Messages" ref="d9/d9a/recordplaytechniques.html#autocirculatemsgs" />
             </section>
-            <section title="Streaming DMA" ref="d9/d9a/recordplaytechniques.html#streamingdma">
+            <section title="Ping-Pong" ref="d9/d9a/recordplaytechniques.html#aboutpingpong" />
+            <section title="Streaming DMA (Experimental)" ref="d9/d9a/recordplaytechniques.html#streamingdma">
               <section title="Streaming Capture" ref="d9/d9a/recordplaytechniques.html#strmcapture" />
               <section title="Streaming Playback" ref="d9/d9a/recordplaytechniques.html#strmplayback" />
             </section>
@@ -9575,76 +9582,80 @@
               <section title="mode" ref="d9/d08/struct_n_t_v2_color_correction_info__64.html#acd2cdfa2b62dc7e2fef2287cd5d9ad5b" />
               <section title="saturationValue" ref="d9/d08/struct_n_t_v2_color_correction_info__64.html#ade98cb523c00a93d18c88afa640310d5" />
             </section>
-            <section title="NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html">
-              <section title="NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9fa96a3311047b5c1593e193bda6909c" />
-              <section title="~NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0d6b1084354c47eaa2f7fcda6e6be907" />
-              <section title="clientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a353cc5a15451e79a66ea22bcf4661297" />
-              <section title="count" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af4424be9cab0ec11a9bd33b43dbfe315" />
-              <section title="doDisable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a14a0803d7f3e8f6d3f25a73ae2dec121" />
-              <section title="doEnable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af6c0b96053eb219fc6691ac293150808" />
-              <section title="doGetCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a99a89753bac1b77409a8db59373e1b99" />
-              <section title="doGetSubscribed" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a866d9b19abc0681d8ee8db982774fa24" />
-              <section title="doSetCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ae64632b632a7ad2ad641cda578ebe530" />
-              <section title="doSubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a247e7e151d678261860938c1770686ba" />
-              <section title="doSubscribeEvent" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af835764c94044bbfd47215746d4d8b69" />
-              <section title="doUnsubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4322e198c7b78410732800647fcc9a0b" />
-              <section title="eventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a851e35b82c435a700bbb721a09e3b6e0" />
-              <section title="flags" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a69efec9f472d97171269bd623d633a68" />
-              <section title="hasCreateHandleFlag" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a05bd0df1e979b402588b61859ced244f" />
-              <section title="hasIncludeGlobalsFlag" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0b6d648950acfba5b6ddfb1eb5f04a90" />
-              <section title="interruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a69165a9e674ad0e6ee8b358990507d1d" />
-              <section title="interruptIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad7b1bf98415f0d750f15ec2a580bab11" />
-              <section title="IntName" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a104801848bad17ee4e80c78916e98f6c" />
-              <section title="IntNames" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a6f7e135ce699bc5e557a60d54bbc7f1e" />
-              <section title="isSuccess" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3ce2e6aa432f03c3dcc21552a2f4891d" />
-              <section title="isValid" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3ebb12f34eda18d8cbf844ada58c78ea" />
-              <section title="maxHandleCapacity" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9b6e812e66a0497b2287e91210e7d022" />
-              <section title="operation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a90c74d403903dd47e5ce77bfcf2603ba" />
-              <section title="operator bool" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a244711af68de113b3c03b682769aa900" />
-              <section title="operator NTV2_HEADER *" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a17fb9547e2f59c728c35338d0b4197dd" />
-              <section title="OpName" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4d872219cbe962ae2c995b433b153b25" />
-              <section title="print" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a76d264e1853b3789b0daf7b02ddeb2a5" />
-              <section title="RPCDecode" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a8e8f7f66ac35dcae540355973403fbe0" />
-              <section title="RPCDecodeClient" ref="db/d7b/class_n_t_v2_configure_interrupt.html#afb86306e176335667e647c92c36a4c5b" />
-              <section title="RPCDecodeServer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a47dd5cf1ccb968001f8b832939f53468" />
-              <section title="RPCEncode" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a15b3a28e7375bab988e9498d59bb5ae1" />
-              <section title="RPCEncodeClient" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9289c4da641e67fbc11d1879b14bea98" />
-              <section title="RPCEncodeServer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9b8829cfe320f7d07e52ab587c8b609c" />
-              <section title="setClientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aeed6bcacc479557bc37b39c9c9106218" />
-              <section title="setCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3175d3a2283541a04e6902c2a54faa09" />
-              <section title="setCreateEvent" ref="db/d7b/class_n_t_v2_configure_interrupt.html#adb9327eeea92715399c3d79ebaedae49" />
-              <section title="setEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a1061db55391292afb39a5f96333b1440" />
-              <section title="setEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9477f09fdaf0fbd0a08db63da12d3acc" />
-              <section title="setFail" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0e3539921c8a57d84eab8f15803dfc52" />
-              <section title="setInterruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aa4406bde1d3eb54a8d7e48ddac91e7f1" />
-              <section title="setOperation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3624d3c349d4b09dc4b032b4acbd0949" />
-              <section title="setResult" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ac1f355c2fd52b52dcfe8889678ae5e00" />
-              <section title="setSuccess" ref="db/d7b/class_n_t_v2_configure_interrupt.html#acabf23179295e69bec4d93482ede6c85" />
-              <section title="kFlagMaskCreateHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a6e4a16db93e68b3fa69b6b2908dda09e" />
-              <section title="kFlagMaskIncludeGlobals" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ae1ffc60828cede13e315d3db30ce0a8f" />
-              <section title="kOpDisable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a23b8cbf1ad5bf9fe53e7109b2c6a1424" />
-              <section title="kOpEnable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0381333519d106a7ea7e53a85ee9d5fd" />
-              <section title="kOpFIRST" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9d587fbfca287d10d76a49e50811f9fd" />
-              <section title="kOpGetEnabledIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a75c0b684ca1dea9b2cfce59d7f93d4da" />
-              <section title="kOpGetIntCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a89aad46db4c5f8dd7755c2ac2271ae1c" />
-              <section title="kOpGetSubscribed" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a7bcc686b04cf6a079331e55054dbe651" />
-              <section title="kOpINVALID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#abf55b19388ca0a51fc8ac4c1111b7e61" />
-              <section title="kOpLAST" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a52a90f8a1d4bbc4185c93df1863faf59" />
-              <section title="kOpSetIntCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4d644f5954b8cd5ae980ca484f7558a1" />
-              <section title="kOpSubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9237d6e25af383c8a8aaa8a300be7418" />
-              <section title="kOpUnsubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad5c009306f1a39712dfe49d09df0e206" />
-              <section title="mClientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a903956d2f7603eaf0009c0bbaad25b44" />
-              <section title="mCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a16f7e18e36f4a0397d63b6a409952996" />
-              <section title="mEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aee12e9cbeac2a8c125c67e0ade98ac9b" />
-              <section title="mFlags" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ac91db56012330438cfe49dd68dd2baf1" />
-              <section title="mHandles" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aa36f46d0efb4b19cb582e66757729e75" />
-              <section title="mHeader" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aea5fd83e83ba4e04969773f17abfc7c8" />
-              <section title="mInterruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad1876b81dd06b2e5e8faa7aad6f08e9d" />
-              <section title="mInterruptIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a89055f2ae06f48e7edaa8eaf813d23d8" />
-              <section title="mOperation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a65c9c43b2142a4171476660da5bbf50c" />
-              <section title="mResult" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a265d94cfca9ed56864ed75290a977a90" />
-              <section title="mSpares" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a38d714332ce00194a42676a64ca3e0ad" />
-              <section title="mTrailer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a502566e014e7e0a128251bb747a9f066" />
+            <section title="NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html">
+              <section title="NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html#a35c6a2129a7b59c2f057bc5c2ea6563e" />
+              <section title="~NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html#a64aedf59f230596a94197c3b17eb68e1" />
+              <section title="clientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa53afda1b7c87d44e13b4b13ece0810c" />
+              <section title="clientPID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a06514fd14e1ee7414d8f48f8e133e9f5" />
+              <section title="clientTID" ref="df/d2b/class_n_t_v2_config_interrupt.html#ad42e8b4a699eee9d293c7a1c1a4c3fb1" />
+              <section title="count" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8ff19c7f278cd40bd3a66127976c677f" />
+              <section title="doDisable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3b3a85520b4c893b91f4806126901437" />
+              <section title="doEnable" ref="df/d2b/class_n_t_v2_config_interrupt.html#afe8cc5f4b6e9c86ea55f39d65809b89b" />
+              <section title="doGetCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#abbbb2a10850ef7b37a2017146dbdbad2" />
+              <section title="doGetSubscribed" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4dfc9b29d7e2ca9490820b2529d66465" />
+              <section title="doSetCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#ae7d4f48c811750dcff3a5c1f0214f4df" />
+              <section title="doSubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#a574e931a91b1f3cbf1f38aa47984938a" />
+              <section title="doSubscribeEvent" ref="df/d2b/class_n_t_v2_config_interrupt.html#a25c1f1bfe21f80bc75eef86cc5653678" />
+              <section title="doUnsubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#a778af117458d370d43274f30b88cf837" />
+              <section title="eventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6ea5c0abc20ffdb023c41c51357421f7" />
+              <section title="flags" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa3fee16528a632231123bf9c4e24a34d" />
+              <section title="hasCreateHandleFlag" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9571710932c277c9592b7d6465ff02c4" />
+              <section title="hasIncludeGlobalsFlag" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8e65bd240dd6eb6a40b7020c72f7bbe2" />
+              <section title="interruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa6131774578883567fe1d4603979eb28" />
+              <section title="interruptIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a2850b9acc1b21b59e6c4e81cf35be092" />
+              <section title="IntName" ref="df/d2b/class_n_t_v2_config_interrupt.html#a104801848bad17ee4e80c78916e98f6c" />
+              <section title="IntNames" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6f7e135ce699bc5e557a60d54bbc7f1e" />
+              <section title="isSuccess" ref="df/d2b/class_n_t_v2_config_interrupt.html#ad4925e36fdbce7e5ff9b485f4074eff3" />
+              <section title="isValid" ref="df/d2b/class_n_t_v2_config_interrupt.html#ac2db99e3a16ae19f2fb033f05982896b" />
+              <section title="maxHandleCapacity" ref="df/d2b/class_n_t_v2_config_interrupt.html#ae8f311ccfb99f1294c5d20ff19ec0b69" />
+              <section title="operation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1b3b94a4251b345d2488df8522603f86" />
+              <section title="operator bool" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa808fc856d23f99544f0331fe6a87a95" />
+              <section title="operator NTV2_HEADER *" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1bb99a7a5e562147ec1e44b39063fec0" />
+              <section title="OpName" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4d872219cbe962ae2c995b433b153b25" />
+              <section title="print" ref="df/d2b/class_n_t_v2_config_interrupt.html#a73d6ed6121b611152024f4616411b57c" />
+              <section title="RPCDecode" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9dce8728806370b1b4e6d41c0c632d3e" />
+              <section title="RPCDecodeClient" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1251f3192764a6a4e54792a1ed969896" />
+              <section title="RPCDecodeServer" ref="df/d2b/class_n_t_v2_config_interrupt.html#abc7bde3321efe04b36e27df9b3044952" />
+              <section title="RPCEncode" ref="df/d2b/class_n_t_v2_config_interrupt.html#a138ef6ce5ace29f6996f4947e2534aa0" />
+              <section title="RPCEncodeClient" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8c28d034d0cf8f13ca89c0a175bee56b" />
+              <section title="RPCEncodeServer" ref="df/d2b/class_n_t_v2_config_interrupt.html#a052015f761ba7f568850208c6f48018c" />
+              <section title="setClientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a374d8b1f47cecf75fdbb2c1e94b73b94" />
+              <section title="setCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9f4187b185b240a4dacf4e804b5b4ef5" />
+              <section title="setCreateEvent" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab30dcbc3de92ba17d9b441b275a45144" />
+              <section title="setEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a766819f7fb176a5d52f91a4e00611b82" />
+              <section title="setEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a211b8ee42144798a4d77e0a78868c5ea" />
+              <section title="setFail" ref="df/d2b/class_n_t_v2_config_interrupt.html#a561d0f0956da87096e66950cfc66a1f5" />
+              <section title="setInterruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a5192e10073a2fde66d81751a554eefa7" />
+              <section title="setOperation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a7949cb5c27931cee8e32fd5f0d1e17a3" />
+              <section title="setResult" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8f63d24a5f4f2b9cd286574ef7302298" />
+              <section title="setSuccess" ref="df/d2b/class_n_t_v2_config_interrupt.html#a17b0b5dbe4a67ed413045f0b7da19a20" />
+              <section title="kFlagMaskCreateHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a34ce3b41036c3d580ab222a13f746f4b" />
+              <section title="kFlagMaskIncludeGlobals" ref="df/d2b/class_n_t_v2_config_interrupt.html#a21aac6f658d8939bc8de8b2d52bca253" />
+              <section title="kOpDisable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a70d1c460c17f0393b904328b81b9e426" />
+              <section title="kOpEnable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1034201d756d16430eff63555590a3d6" />
+              <section title="kOpFIRST" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab549e2121c26b88443fdf00f5ddddbcc" />
+              <section title="kOpGetEnabledIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3ea08a4ccbdebbe78b10a0f1cb87658a" />
+              <section title="kOpGetIntCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#af5ce17f359175d939527b9bb4922e6c2" />
+              <section title="kOpGetSubscribed" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1273d38e6082188369b87cb466609e31" />
+              <section title="kOpINVALID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a5874f21678a384f80f701a5e5274a23c" />
+              <section title="kOpLAST" ref="df/d2b/class_n_t_v2_config_interrupt.html#a7c3d885ea26dec8968dd053e37ce3719" />
+              <section title="kOpSetIntCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3aab2539a104805032299b85e7658c81" />
+              <section title="kOpSubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab9fe537a22a554d640dde6101969330d" />
+              <section title="kOpUnsubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#af94088196ae23997acd4cdff16dbe135" />
+              <section title="mClientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a896e60cefebdf69878a30e5ec49e2bd2" />
+              <section title="mClientPID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a49b6be601d77834001d431c88acf7c02" />
+              <section title="mClientTID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4c8c91af29977d9014b245793057c09a" />
+              <section title="mCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a544377093fcf48ff048226a2594ac2e1" />
+              <section title="mEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#afa4b2319171793f53b3be6b84b56a746" />
+              <section title="mFlags" ref="df/d2b/class_n_t_v2_config_interrupt.html#adef618d48946a3bdd56c68fe23d15338" />
+              <section title="mHandles" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6486fcd828603bbe87043b45189bf33e" />
+              <section title="mHeader" ref="df/d2b/class_n_t_v2_config_interrupt.html#a00ccae344cfe5f85248c1d2a96a327cd" />
+              <section title="mInterruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4e2c99bf9d8a787440237b33d885c60e" />
+              <section title="mInterruptIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a21e10f53c3fba4e0919f14ebe99b5ca6" />
+              <section title="mOperation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a00a27449bc93af4b3a42f5e8a6fc264f" />
+              <section title="mResult" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1136e4cc1df3b6a1f11e62d05cb11472" />
+              <section title="mSpares" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa86f5e2f896b556863bfc35a919ecf8d" />
+              <section title="mTrailer" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab67c9e6d3ad5b7d776bd320ee58ec7b1" />
             </section>
             <section title="NTV2DebugLogging" ref="d8/dcd/class_n_t_v2_debug_logging.html">
               <section title="NTV2DebugLogging" ref="d8/dcd/class_n_t_v2_debug_logging.html#a85a2d105882841b68ed5a36484080874" />
@@ -12218,7 +12229,7 @@
             <section title="NTV2ColorCorrectionInfo" ref="d6/d30/struct_n_t_v2_color_correction_info.html" />
             <section title="NTV2ColorCorrectionInfo_32" ref="db/daf/struct_n_t_v2_color_correction_info__32.html" />
             <section title="NTV2ColorCorrectionInfo_64" ref="d9/d08/struct_n_t_v2_color_correction_info__64.html" />
-            <section title="NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html" />
+            <section title="NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html" />
             <section title="NTV2DebugLogging" ref="d8/dcd/class_n_t_v2_debug_logging.html" />
             <section title="NTV2DeviceInfo" ref="d6/d61/struct_n_t_v2_device_info.html" />
             <section title="NTV2DeviceSpecParser" ref="d3/d9a/class_n_t_v2_device_spec_parser.html" />
@@ -25848,76 +25859,80 @@
                       <section title="mIsWriting" ref="d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#a233e187c4de790eee62fab821c37bb3b" />
                       <section title="mTrailer" ref="d4/d6d/class_n_t_v2_bank_sel_get_set_regs.html#aab387e0ce051469a6445824d72557f19" />
                     </section>
-                    <section title="NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html">
-                      <section title="NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9fa96a3311047b5c1593e193bda6909c" />
-                      <section title="~NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0d6b1084354c47eaa2f7fcda6e6be907" />
-                      <section title="clientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a353cc5a15451e79a66ea22bcf4661297" />
-                      <section title="count" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af4424be9cab0ec11a9bd33b43dbfe315" />
-                      <section title="doDisable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a14a0803d7f3e8f6d3f25a73ae2dec121" />
-                      <section title="doEnable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af6c0b96053eb219fc6691ac293150808" />
-                      <section title="doGetCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a99a89753bac1b77409a8db59373e1b99" />
-                      <section title="doGetSubscribed" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a866d9b19abc0681d8ee8db982774fa24" />
-                      <section title="doSetCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ae64632b632a7ad2ad641cda578ebe530" />
-                      <section title="doSubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a247e7e151d678261860938c1770686ba" />
-                      <section title="doSubscribeEvent" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af835764c94044bbfd47215746d4d8b69" />
-                      <section title="doUnsubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4322e198c7b78410732800647fcc9a0b" />
-                      <section title="eventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a851e35b82c435a700bbb721a09e3b6e0" />
-                      <section title="flags" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a69efec9f472d97171269bd623d633a68" />
-                      <section title="hasCreateHandleFlag" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a05bd0df1e979b402588b61859ced244f" />
-                      <section title="hasIncludeGlobalsFlag" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0b6d648950acfba5b6ddfb1eb5f04a90" />
-                      <section title="interruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a69165a9e674ad0e6ee8b358990507d1d" />
-                      <section title="interruptIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad7b1bf98415f0d750f15ec2a580bab11" />
-                      <section title="IntName" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a104801848bad17ee4e80c78916e98f6c" />
-                      <section title="IntNames" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a6f7e135ce699bc5e557a60d54bbc7f1e" />
-                      <section title="isSuccess" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3ce2e6aa432f03c3dcc21552a2f4891d" />
-                      <section title="isValid" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3ebb12f34eda18d8cbf844ada58c78ea" />
-                      <section title="maxHandleCapacity" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9b6e812e66a0497b2287e91210e7d022" />
-                      <section title="operation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a90c74d403903dd47e5ce77bfcf2603ba" />
-                      <section title="operator bool" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a244711af68de113b3c03b682769aa900" />
-                      <section title="operator NTV2_HEADER *" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a17fb9547e2f59c728c35338d0b4197dd" />
-                      <section title="OpName" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4d872219cbe962ae2c995b433b153b25" />
-                      <section title="print" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a76d264e1853b3789b0daf7b02ddeb2a5" />
-                      <section title="RPCDecode" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a8e8f7f66ac35dcae540355973403fbe0" />
-                      <section title="RPCDecodeClient" ref="db/d7b/class_n_t_v2_configure_interrupt.html#afb86306e176335667e647c92c36a4c5b" />
-                      <section title="RPCDecodeServer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a47dd5cf1ccb968001f8b832939f53468" />
-                      <section title="RPCEncode" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a15b3a28e7375bab988e9498d59bb5ae1" />
-                      <section title="RPCEncodeClient" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9289c4da641e67fbc11d1879b14bea98" />
-                      <section title="RPCEncodeServer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9b8829cfe320f7d07e52ab587c8b609c" />
-                      <section title="setClientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aeed6bcacc479557bc37b39c9c9106218" />
-                      <section title="setCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3175d3a2283541a04e6902c2a54faa09" />
-                      <section title="setCreateEvent" ref="db/d7b/class_n_t_v2_configure_interrupt.html#adb9327eeea92715399c3d79ebaedae49" />
-                      <section title="setEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a1061db55391292afb39a5f96333b1440" />
-                      <section title="setEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9477f09fdaf0fbd0a08db63da12d3acc" />
-                      <section title="setFail" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0e3539921c8a57d84eab8f15803dfc52" />
-                      <section title="setInterruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aa4406bde1d3eb54a8d7e48ddac91e7f1" />
-                      <section title="setOperation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3624d3c349d4b09dc4b032b4acbd0949" />
-                      <section title="setResult" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ac1f355c2fd52b52dcfe8889678ae5e00" />
-                      <section title="setSuccess" ref="db/d7b/class_n_t_v2_configure_interrupt.html#acabf23179295e69bec4d93482ede6c85" />
-                      <section title="kFlagMaskCreateHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a6e4a16db93e68b3fa69b6b2908dda09e" />
-                      <section title="kFlagMaskIncludeGlobals" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ae1ffc60828cede13e315d3db30ce0a8f" />
-                      <section title="kOpDisable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a23b8cbf1ad5bf9fe53e7109b2c6a1424" />
-                      <section title="kOpEnable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0381333519d106a7ea7e53a85ee9d5fd" />
-                      <section title="kOpFIRST" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9d587fbfca287d10d76a49e50811f9fd" />
-                      <section title="kOpGetEnabledIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a75c0b684ca1dea9b2cfce59d7f93d4da" />
-                      <section title="kOpGetIntCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a89aad46db4c5f8dd7755c2ac2271ae1c" />
-                      <section title="kOpGetSubscribed" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a7bcc686b04cf6a079331e55054dbe651" />
-                      <section title="kOpINVALID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#abf55b19388ca0a51fc8ac4c1111b7e61" />
-                      <section title="kOpLAST" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a52a90f8a1d4bbc4185c93df1863faf59" />
-                      <section title="kOpSetIntCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4d644f5954b8cd5ae980ca484f7558a1" />
-                      <section title="kOpSubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9237d6e25af383c8a8aaa8a300be7418" />
-                      <section title="kOpUnsubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad5c009306f1a39712dfe49d09df0e206" />
-                      <section title="mClientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a903956d2f7603eaf0009c0bbaad25b44" />
-                      <section title="mCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a16f7e18e36f4a0397d63b6a409952996" />
-                      <section title="mEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aee12e9cbeac2a8c125c67e0ade98ac9b" />
-                      <section title="mFlags" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ac91db56012330438cfe49dd68dd2baf1" />
-                      <section title="mHandles" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aa36f46d0efb4b19cb582e66757729e75" />
-                      <section title="mHeader" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aea5fd83e83ba4e04969773f17abfc7c8" />
-                      <section title="mInterruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad1876b81dd06b2e5e8faa7aad6f08e9d" />
-                      <section title="mInterruptIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a89055f2ae06f48e7edaa8eaf813d23d8" />
-                      <section title="mOperation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a65c9c43b2142a4171476660da5bbf50c" />
-                      <section title="mResult" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a265d94cfca9ed56864ed75290a977a90" />
-                      <section title="mSpares" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a38d714332ce00194a42676a64ca3e0ad" />
-                      <section title="mTrailer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a502566e014e7e0a128251bb747a9f066" />
+                    <section title="NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html">
+                      <section title="NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html#a35c6a2129a7b59c2f057bc5c2ea6563e" />
+                      <section title="~NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html#a64aedf59f230596a94197c3b17eb68e1" />
+                      <section title="clientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa53afda1b7c87d44e13b4b13ece0810c" />
+                      <section title="clientPID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a06514fd14e1ee7414d8f48f8e133e9f5" />
+                      <section title="clientTID" ref="df/d2b/class_n_t_v2_config_interrupt.html#ad42e8b4a699eee9d293c7a1c1a4c3fb1" />
+                      <section title="count" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8ff19c7f278cd40bd3a66127976c677f" />
+                      <section title="doDisable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3b3a85520b4c893b91f4806126901437" />
+                      <section title="doEnable" ref="df/d2b/class_n_t_v2_config_interrupt.html#afe8cc5f4b6e9c86ea55f39d65809b89b" />
+                      <section title="doGetCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#abbbb2a10850ef7b37a2017146dbdbad2" />
+                      <section title="doGetSubscribed" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4dfc9b29d7e2ca9490820b2529d66465" />
+                      <section title="doSetCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#ae7d4f48c811750dcff3a5c1f0214f4df" />
+                      <section title="doSubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#a574e931a91b1f3cbf1f38aa47984938a" />
+                      <section title="doSubscribeEvent" ref="df/d2b/class_n_t_v2_config_interrupt.html#a25c1f1bfe21f80bc75eef86cc5653678" />
+                      <section title="doUnsubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#a778af117458d370d43274f30b88cf837" />
+                      <section title="eventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6ea5c0abc20ffdb023c41c51357421f7" />
+                      <section title="flags" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa3fee16528a632231123bf9c4e24a34d" />
+                      <section title="hasCreateHandleFlag" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9571710932c277c9592b7d6465ff02c4" />
+                      <section title="hasIncludeGlobalsFlag" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8e65bd240dd6eb6a40b7020c72f7bbe2" />
+                      <section title="interruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa6131774578883567fe1d4603979eb28" />
+                      <section title="interruptIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a2850b9acc1b21b59e6c4e81cf35be092" />
+                      <section title="IntName" ref="df/d2b/class_n_t_v2_config_interrupt.html#a104801848bad17ee4e80c78916e98f6c" />
+                      <section title="IntNames" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6f7e135ce699bc5e557a60d54bbc7f1e" />
+                      <section title="isSuccess" ref="df/d2b/class_n_t_v2_config_interrupt.html#ad4925e36fdbce7e5ff9b485f4074eff3" />
+                      <section title="isValid" ref="df/d2b/class_n_t_v2_config_interrupt.html#ac2db99e3a16ae19f2fb033f05982896b" />
+                      <section title="maxHandleCapacity" ref="df/d2b/class_n_t_v2_config_interrupt.html#ae8f311ccfb99f1294c5d20ff19ec0b69" />
+                      <section title="operation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1b3b94a4251b345d2488df8522603f86" />
+                      <section title="operator bool" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa808fc856d23f99544f0331fe6a87a95" />
+                      <section title="operator NTV2_HEADER *" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1bb99a7a5e562147ec1e44b39063fec0" />
+                      <section title="OpName" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4d872219cbe962ae2c995b433b153b25" />
+                      <section title="print" ref="df/d2b/class_n_t_v2_config_interrupt.html#a73d6ed6121b611152024f4616411b57c" />
+                      <section title="RPCDecode" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9dce8728806370b1b4e6d41c0c632d3e" />
+                      <section title="RPCDecodeClient" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1251f3192764a6a4e54792a1ed969896" />
+                      <section title="RPCDecodeServer" ref="df/d2b/class_n_t_v2_config_interrupt.html#abc7bde3321efe04b36e27df9b3044952" />
+                      <section title="RPCEncode" ref="df/d2b/class_n_t_v2_config_interrupt.html#a138ef6ce5ace29f6996f4947e2534aa0" />
+                      <section title="RPCEncodeClient" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8c28d034d0cf8f13ca89c0a175bee56b" />
+                      <section title="RPCEncodeServer" ref="df/d2b/class_n_t_v2_config_interrupt.html#a052015f761ba7f568850208c6f48018c" />
+                      <section title="setClientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a374d8b1f47cecf75fdbb2c1e94b73b94" />
+                      <section title="setCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9f4187b185b240a4dacf4e804b5b4ef5" />
+                      <section title="setCreateEvent" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab30dcbc3de92ba17d9b441b275a45144" />
+                      <section title="setEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a766819f7fb176a5d52f91a4e00611b82" />
+                      <section title="setEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a211b8ee42144798a4d77e0a78868c5ea" />
+                      <section title="setFail" ref="df/d2b/class_n_t_v2_config_interrupt.html#a561d0f0956da87096e66950cfc66a1f5" />
+                      <section title="setInterruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a5192e10073a2fde66d81751a554eefa7" />
+                      <section title="setOperation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a7949cb5c27931cee8e32fd5f0d1e17a3" />
+                      <section title="setResult" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8f63d24a5f4f2b9cd286574ef7302298" />
+                      <section title="setSuccess" ref="df/d2b/class_n_t_v2_config_interrupt.html#a17b0b5dbe4a67ed413045f0b7da19a20" />
+                      <section title="kFlagMaskCreateHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a34ce3b41036c3d580ab222a13f746f4b" />
+                      <section title="kFlagMaskIncludeGlobals" ref="df/d2b/class_n_t_v2_config_interrupt.html#a21aac6f658d8939bc8de8b2d52bca253" />
+                      <section title="kOpDisable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a70d1c460c17f0393b904328b81b9e426" />
+                      <section title="kOpEnable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1034201d756d16430eff63555590a3d6" />
+                      <section title="kOpFIRST" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab549e2121c26b88443fdf00f5ddddbcc" />
+                      <section title="kOpGetEnabledIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3ea08a4ccbdebbe78b10a0f1cb87658a" />
+                      <section title="kOpGetIntCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#af5ce17f359175d939527b9bb4922e6c2" />
+                      <section title="kOpGetSubscribed" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1273d38e6082188369b87cb466609e31" />
+                      <section title="kOpINVALID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a5874f21678a384f80f701a5e5274a23c" />
+                      <section title="kOpLAST" ref="df/d2b/class_n_t_v2_config_interrupt.html#a7c3d885ea26dec8968dd053e37ce3719" />
+                      <section title="kOpSetIntCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3aab2539a104805032299b85e7658c81" />
+                      <section title="kOpSubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab9fe537a22a554d640dde6101969330d" />
+                      <section title="kOpUnsubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#af94088196ae23997acd4cdff16dbe135" />
+                      <section title="mClientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a896e60cefebdf69878a30e5ec49e2bd2" />
+                      <section title="mClientPID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a49b6be601d77834001d431c88acf7c02" />
+                      <section title="mClientTID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4c8c91af29977d9014b245793057c09a" />
+                      <section title="mCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a544377093fcf48ff048226a2594ac2e1" />
+                      <section title="mEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#afa4b2319171793f53b3be6b84b56a746" />
+                      <section title="mFlags" ref="df/d2b/class_n_t_v2_config_interrupt.html#adef618d48946a3bdd56c68fe23d15338" />
+                      <section title="mHandles" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6486fcd828603bbe87043b45189bf33e" />
+                      <section title="mHeader" ref="df/d2b/class_n_t_v2_config_interrupt.html#a00ccae344cfe5f85248c1d2a96a327cd" />
+                      <section title="mInterruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4e2c99bf9d8a787440237b33d885c60e" />
+                      <section title="mInterruptIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a21e10f53c3fba4e0919f14ebe99b5ca6" />
+                      <section title="mOperation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a00a27449bc93af4b3a42f5e8a6fc264f" />
+                      <section title="mResult" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1136e4cc1df3b6a1f11e62d05cb11472" />
+                      <section title="mSpares" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa86f5e2f896b556863bfc35a919ecf8d" />
+                      <section title="mTrailer" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab67c9e6d3ad5b7d776bd320ee58ec7b1" />
                     </section>
                     <section title="NTV2VirtualData" ref="d7/d18/class_n_t_v2_virtual_data.html">
                       <section title="NTV2VirtualData" ref="d7/d18/class_n_t_v2_virtual_data.html#aac9be0a5bb723eb1bc028361fe492bd1" />
@@ -26953,13 +26968,13 @@
                     <section title="NTV2AudioSystemSetConstIter" ref="d4/dd7/ntv2publicinterface_8h.html#a27efabe4f0af7bba98e539af273dda91" />
                     <section title="NTV2AutoCircCmd" ref="d4/dd7/ntv2publicinterface_8h.html#a8bb665d73f7657da69d0a585c9eb34e2" />
                     <section title="NTV2AutoCirculateCommand" ref="d4/dd7/ntv2publicinterface_8h.html#aa6742d7c556c05eb106f484b585815c5" />
-                    <section title="NTV2CfgInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#a572bf97b611a42d6c79a129c411b2c48" />
+                    <section title="NTV2CfgInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#afe958b7f1eada58a74a64e4d9236db5d" />
                     <section title="NTV2ChannelList" ref="d4/dd7/ntv2publicinterface_8h.html#afb4c45ae11f12d643b47db3308c740d2" />
                     <section title="NTV2ChannelListConstIter" ref="d4/dd7/ntv2publicinterface_8h.html#ab4ab44b0f0e3976eef7c659da975ff4c" />
                     <section title="NTV2ChannelSet" ref="d4/dd7/ntv2publicinterface_8h.html#ae107918aba87f7ec9a3a52bc8c8d6783" />
                     <section title="NTV2ChannelSetConstIter" ref="d4/dd7/ntv2publicinterface_8h.html#a2b1673840a55fe55f7c9ef3745439924" />
                     <section title="NTV2ColorCorrectionInfo_64" ref="d4/dd7/ntv2publicinterface_8h.html#ad82956f8ba0eb001cbd562cd8ad0fadc" />
-                    <section title="NTV2ConfigInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#a981260d8df21f6337d0ca6ddcc709523" />
+                    <section title="NTV2ConfigureInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#aa95153e6aa81824720fcadcbcfaf0736" />
                     <section title="NTV2CSCCustomCoeffs" ref="d4/dd7/ntv2publicinterface_8h.html#a9e847cc05513da416aa24bd11b6aaa46" />
                     <section title="NTV2DID" ref="d4/dd7/ntv2publicinterface_8h.html#a338abb0afe7aabbea16ce7a614ae5e51" />
                     <section title="NTV2DIDSet" ref="d4/dd7/ntv2publicinterface_8h.html#ac815846292eb113e60b58c91ffc67708" />
@@ -30587,7 +30602,7 @@
                     <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a68868b2435a825a99afa53383f218dab" />
                     <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a472eb593c1d54a6f44c28f968e742733" />
                     <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#aa3ac70af1cb55ba4307f8a8f35631577" />
-                    <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a894c2f7e78eb69c14873d0916971a3ab" />
+                    <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a204654b829d0b42a60d89efe65c1bdc6" />
                     <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#af588fbed558dbeab89b14bad1df2cb43" />
                     <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a202f8a3797cc7565d83232c65fee4511" />
                     <section title="operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a1fa65e2466e3558a693f1b7fea4bedbe" />
@@ -34346,7 +34361,7 @@
                     <section title="operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#a0dc2b8ffbde6524dd3d9f59f7709d87e" />
                     <section title="operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#acedf285300db0864f0276039d4baeac5" />
                     <section title="operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#a9c28b78c4cc957896e180e33cccc7514" />
-                    <section title="operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#ac130989c6cce81d6d1343ec5eb62ebed" />
+                    <section title="operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#af767d5b49da76538865969520e1b3ac1" />
                     <section title="print_address_offset" ref="db/d4c/ntv2publicinterface_8cpp.html#a3060aec39e2dea461f1e754f167b6c80" />
                     <section title="INVALID_TIMECODE_VALUE" ref="db/d4c/ntv2publicinterface_8cpp.html#ad7e4d8dac581097f15ef92a2dc69eeac" />
                     <section title="sSegXferUnits" ref="db/d4c/ntv2publicinterface_8cpp.html#ac28aa113d51eaef3d56671d2baa38601" />
@@ -46049,8 +46064,8 @@
       <keyword name="NTV2RegisterValueMap" id="ntv2publicinterface.h::NTV2RegisterValueMap" ref="d4/dd7/ntv2publicinterface_8h.html#ac799ae1a4b8f98c07e9956c963c13aa1" />
       <keyword name="NTV2RegValueMapConstIter" id="ntv2publicinterface.h::NTV2RegValueMapConstIter" ref="d4/dd7/ntv2publicinterface_8h.html#adebe4d67bf9d7dd85634ce9c89e6e4de" />
       <keyword name="NTV2RegValueMapIter" id="ntv2publicinterface.h::NTV2RegValueMapIter" ref="d4/dd7/ntv2publicinterface_8h.html#a93bfecf406068da20b0b185b4757d011" />
-      <keyword name="NTV2ConfigInterrupt" id="ntv2publicinterface.h::NTV2ConfigInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#a981260d8df21f6337d0ca6ddcc709523" />
-      <keyword name="NTV2CfgInterrupt" id="ntv2publicinterface.h::NTV2CfgInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#a572bf97b611a42d6c79a129c411b2c48" />
+      <keyword name="NTV2ConfigureInterrupt" id="ntv2publicinterface.h::NTV2ConfigureInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#aa95153e6aa81824720fcadcbcfaf0736" />
+      <keyword name="NTV2CfgInterrupt" id="ntv2publicinterface.h::NTV2CfgInterrupt" ref="d4/dd7/ntv2publicinterface_8h.html#afe958b7f1eada58a74a64e4d9236db5d" />
       <keyword name="NTV2VideoFormatSet" id="ntv2publicinterface.h::NTV2VideoFormatSet" ref="d4/dd7/ntv2publicinterface_8h.html#ad951ca2ec50049dc479460ea39e0b130" />
       <keyword name="NTV2VideoFormatSetConstIter" id="ntv2publicinterface.h::NTV2VideoFormatSetConstIter" ref="d4/dd7/ntv2publicinterface_8h.html#abd2bf562cff229a703b67d7518938610" />
       <keyword name="NTV2FrameBufferFormatSet" id="ntv2publicinterface.h::NTV2FrameBufferFormatSet" ref="d4/dd7/ntv2publicinterface_8h.html#ae499d1edb379c786e7fa52c51afb0ec9" />
@@ -46134,7 +46149,7 @@
       <keyword name="operator&lt;&lt;" id="ntv2publicinterface.h::operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a472eb593c1d54a6f44c28f968e742733" />
       <keyword name="GetRegisterNumbers" id="ntv2publicinterface.h::GetRegisterNumbers" ref="d4/dd7/ntv2publicinterface_8h.html#aa19bbd17f4200b74055a421b11b69233" />
       <keyword name="operator&lt;&lt;" id="ntv2publicinterface.h::operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#aa3ac70af1cb55ba4307f8a8f35631577" />
-      <keyword name="operator&lt;&lt;" id="ntv2publicinterface.h::operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a894c2f7e78eb69c14873d0916971a3ab" />
+      <keyword name="operator&lt;&lt;" id="ntv2publicinterface.h::operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a204654b829d0b42a60d89efe65c1bdc6" />
       <keyword name="operator&lt;&lt;" id="ntv2publicinterface.h::operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#af588fbed558dbeab89b14bad1df2cb43" />
       <keyword name="operator&lt;&lt;" id="ntv2publicinterface.h::operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a202f8a3797cc7565d83232c65fee4511" />
       <keyword name="operator&lt;&lt;" id="ntv2publicinterface.h::operator&lt;&lt;" ref="d4/dd7/ntv2publicinterface_8h.html#a1fa65e2466e3558a693f1b7fea4bedbe" />
@@ -51647,7 +51662,7 @@
       <keyword name="FindFirstMatchingRegisterNumber" id="ntv2publicinterface.cpp::FindFirstMatchingRegisterNumber" ref="db/d4c/ntv2publicinterface_8cpp.html#a282d51427e6fe9a63ad715c706154670" />
       <keyword name="operator&lt;&lt;" id="ntv2publicinterface.cpp::operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#acedf285300db0864f0276039d4baeac5" />
       <keyword name="operator&lt;&lt;" id="ntv2publicinterface.cpp::operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#a9c28b78c4cc957896e180e33cccc7514" />
-      <keyword name="operator&lt;&lt;" id="ntv2publicinterface.cpp::operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#ac130989c6cce81d6d1343ec5eb62ebed" />
+      <keyword name="operator&lt;&lt;" id="ntv2publicinterface.cpp::operator&lt;&lt;" ref="db/d4c/ntv2publicinterface_8cpp.html#af767d5b49da76538865969520e1b3ac1" />
       <keyword name="sSegXferUnits" id="ntv2publicinterface.cpp::sSegXferUnits" ref="db/d4c/ntv2publicinterface_8cpp.html#ac28aa113d51eaef3d56671d2baa38601" />
       <keyword name="INVALID_TIMECODE_VALUE" id="ntv2publicinterface.cpp::INVALID_TIMECODE_VALUE" ref="db/d4c/ntv2publicinterface_8cpp.html#ad7e4d8dac581097f15ef92a2dc69eeac" />
       <keyword name="HEX16" id="ntv2register.cpp::HEX16" ref="d7/da9/ntv2register_8cpp.html#afe52b6652f9f5b1488156fd9b592bae6" />
@@ -53626,7 +53641,7 @@
       <keyword name="Dual-Link and 3G Overview" id="Dual-Link and 3G Overview" ref="d5/d73/duallinkoverview.html" />
       <keyword name="Getting Started" id="Getting Started" ref="db/d9b/gettingstarted.html" />
       <keyword name="Glossary of Terms" id="Glossary of Terms" ref="d1/d5d/glossary.html" />
-      <keyword name="Capture and Playout Techniques" id="Capture and Playout Techniques" ref="d9/d9a/recordplaytechniques.html" />
+      <keyword name="Capture and Playback Techniques" id="Capture and Playback Techniques" ref="d9/d9a/recordplaytechniques.html" />
       <keyword name="Widget Signal Routing" id="Widget Signal Routing" ref="d0/dc3/ntv2signalrouting.html" />
       <keyword name="The KONA XM™ Supplement" id="The KONA XM™ Supplement" ref="d7/dfa/xmsupplement.html" />
       <keyword name="Todo List" id="Todo List" ref="dd/da0/todo.html" />
@@ -65572,76 +65587,80 @@
       <keyword name="mode" id="NTV2ColorCorrectionInfo_64::mode" ref="d9/d08/struct_n_t_v2_color_correction_info__64.html#acd2cdfa2b62dc7e2fef2287cd5d9ad5b" />
       <keyword name="saturationValue" id="NTV2ColorCorrectionInfo_64::saturationValue" ref="d9/d08/struct_n_t_v2_color_correction_info__64.html#ade98cb523c00a93d18c88afa640310d5" />
       <keyword name="ccLookupTables" id="NTV2ColorCorrectionInfo_64::ccLookupTables" ref="d9/d08/struct_n_t_v2_color_correction_info__64.html#af973102e3a2781a42dcb1226537a41b9" />
-      <keyword name="NTV2ConfigureInterrupt" id="NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html" />
-      <keyword name="NTV2ConfigureInterrupt" id="NTV2ConfigureInterrupt::NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9fa96a3311047b5c1593e193bda6909c" />
-      <keyword name="~NTV2ConfigureInterrupt" id="NTV2ConfigureInterrupt::~NTV2ConfigureInterrupt" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0d6b1084354c47eaa2f7fcda6e6be907" />
-      <keyword name="operation" id="NTV2ConfigureInterrupt::operation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a90c74d403903dd47e5ce77bfcf2603ba" />
-      <keyword name="flags" id="NTV2ConfigureInterrupt::flags" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a69efec9f472d97171269bd623d633a68" />
-      <keyword name="interruptID" id="NTV2ConfigureInterrupt::interruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a69165a9e674ad0e6ee8b358990507d1d" />
-      <keyword name="interruptIDs" id="NTV2ConfigureInterrupt::interruptIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad7b1bf98415f0d750f15ec2a580bab11" />
-      <keyword name="isValid" id="NTV2ConfigureInterrupt::isValid" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3ebb12f34eda18d8cbf844ada58c78ea" />
-      <keyword name="operator bool" id="NTV2ConfigureInterrupt::operator bool" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a244711af68de113b3c03b682769aa900" />
-      <keyword name="isSuccess" id="NTV2ConfigureInterrupt::isSuccess" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3ce2e6aa432f03c3dcc21552a2f4891d" />
-      <keyword name="operator NTV2_HEADER *" id="NTV2ConfigureInterrupt::operator NTV2_HEADER *" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a17fb9547e2f59c728c35338d0b4197dd" />
-      <keyword name="print" id="NTV2ConfigureInterrupt::print" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a76d264e1853b3789b0daf7b02ddeb2a5" />
-      <keyword name="clientID" id="NTV2ConfigureInterrupt::clientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a353cc5a15451e79a66ea22bcf4661297" />
-      <keyword name="count" id="NTV2ConfigureInterrupt::count" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af4424be9cab0ec11a9bd33b43dbfe315" />
-      <keyword name="maxHandleCapacity" id="NTV2ConfigureInterrupt::maxHandleCapacity" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9b6e812e66a0497b2287e91210e7d022" />
-      <keyword name="eventHandle" id="NTV2ConfigureInterrupt::eventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a851e35b82c435a700bbb721a09e3b6e0" />
-      <keyword name="setEventHandle" id="NTV2ConfigureInterrupt::setEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a1061db55391292afb39a5f96333b1440" />
-      <keyword name="hasCreateHandleFlag" id="NTV2ConfigureInterrupt::hasCreateHandleFlag" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a05bd0df1e979b402588b61859ced244f" />
-      <keyword name="hasIncludeGlobalsFlag" id="NTV2ConfigureInterrupt::hasIncludeGlobalsFlag" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0b6d648950acfba5b6ddfb1eb5f04a90" />
-      <keyword name="doSubscribe" id="NTV2ConfigureInterrupt::doSubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a247e7e151d678261860938c1770686ba" />
-      <keyword name="doSubscribeEvent" id="NTV2ConfigureInterrupt::doSubscribeEvent" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af835764c94044bbfd47215746d4d8b69" />
-      <keyword name="doUnsubscribe" id="NTV2ConfigureInterrupt::doUnsubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4322e198c7b78410732800647fcc9a0b" />
-      <keyword name="doEnable" id="NTV2ConfigureInterrupt::doEnable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#af6c0b96053eb219fc6691ac293150808" />
-      <keyword name="doDisable" id="NTV2ConfigureInterrupt::doDisable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a14a0803d7f3e8f6d3f25a73ae2dec121" />
-      <keyword name="doGetCount" id="NTV2ConfigureInterrupt::doGetCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a99a89753bac1b77409a8db59373e1b99" />
-      <keyword name="doSetCount" id="NTV2ConfigureInterrupt::doSetCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ae64632b632a7ad2ad641cda578ebe530" />
-      <keyword name="doGetSubscribed" id="NTV2ConfigureInterrupt::doGetSubscribed" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a866d9b19abc0681d8ee8db982774fa24" />
-      <keyword name="setResult" id="NTV2ConfigureInterrupt::setResult" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ac1f355c2fd52b52dcfe8889678ae5e00" />
-      <keyword name="setFail" id="NTV2ConfigureInterrupt::setFail" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0e3539921c8a57d84eab8f15803dfc52" />
-      <keyword name="setSuccess" id="NTV2ConfigureInterrupt::setSuccess" ref="db/d7b/class_n_t_v2_configure_interrupt.html#acabf23179295e69bec4d93482ede6c85" />
-      <keyword name="setClientID" id="NTV2ConfigureInterrupt::setClientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aeed6bcacc479557bc37b39c9c9106218" />
-      <keyword name="setCount" id="NTV2ConfigureInterrupt::setCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3175d3a2283541a04e6902c2a54faa09" />
-      <keyword name="setOperation" id="NTV2ConfigureInterrupt::setOperation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a3624d3c349d4b09dc4b032b4acbd0949" />
-      <keyword name="setInterruptID" id="NTV2ConfigureInterrupt::setInterruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aa4406bde1d3eb54a8d7e48ddac91e7f1" />
-      <keyword name="setEventHandle" id="NTV2ConfigureInterrupt::setEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9477f09fdaf0fbd0a08db63da12d3acc" />
-      <keyword name="setCreateEvent" id="NTV2ConfigureInterrupt::setCreateEvent" ref="db/d7b/class_n_t_v2_configure_interrupt.html#adb9327eeea92715399c3d79ebaedae49" />
-      <keyword name="RPCEncode" id="NTV2ConfigureInterrupt::RPCEncode" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a15b3a28e7375bab988e9498d59bb5ae1" />
-      <keyword name="RPCDecode" id="NTV2ConfigureInterrupt::RPCDecode" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a8e8f7f66ac35dcae540355973403fbe0" />
-      <keyword name="RPCDecodeClient" id="NTV2ConfigureInterrupt::RPCDecodeClient" ref="db/d7b/class_n_t_v2_configure_interrupt.html#afb86306e176335667e647c92c36a4c5b" />
-      <keyword name="RPCEncodeClient" id="NTV2ConfigureInterrupt::RPCEncodeClient" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9289c4da641e67fbc11d1879b14bea98" />
-      <keyword name="RPCDecodeServer" id="NTV2ConfigureInterrupt::RPCDecodeServer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a47dd5cf1ccb968001f8b832939f53468" />
-      <keyword name="RPCEncodeServer" id="NTV2ConfigureInterrupt::RPCEncodeServer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9b8829cfe320f7d07e52ab587c8b609c" />
-      <keyword name="OpName" id="NTV2ConfigureInterrupt::OpName" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4d872219cbe962ae2c995b433b153b25" />
-      <keyword name="IntNames" id="NTV2ConfigureInterrupt::IntNames" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a6f7e135ce699bc5e557a60d54bbc7f1e" />
-      <keyword name="IntName" id="NTV2ConfigureInterrupt::IntName" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a104801848bad17ee4e80c78916e98f6c" />
-      <keyword name="mHeader" id="NTV2ConfigureInterrupt::mHeader" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aea5fd83e83ba4e04969773f17abfc7c8" />
-      <keyword name="mOperation" id="NTV2ConfigureInterrupt::mOperation" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a65c9c43b2142a4171476660da5bbf50c" />
-      <keyword name="mFlags" id="NTV2ConfigureInterrupt::mFlags" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ac91db56012330438cfe49dd68dd2baf1" />
-      <keyword name="mInterruptID" id="NTV2ConfigureInterrupt::mInterruptID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad1876b81dd06b2e5e8faa7aad6f08e9d" />
-      <keyword name="mResult" id="NTV2ConfigureInterrupt::mResult" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a265d94cfca9ed56864ed75290a977a90" />
-      <keyword name="mInterruptIDs" id="NTV2ConfigureInterrupt::mInterruptIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a89055f2ae06f48e7edaa8eaf813d23d8" />
-      <keyword name="mEventHandle" id="NTV2ConfigureInterrupt::mEventHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aee12e9cbeac2a8c125c67e0ade98ac9b" />
-      <keyword name="mClientID" id="NTV2ConfigureInterrupt::mClientID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a903956d2f7603eaf0009c0bbaad25b44" />
-      <keyword name="mCount" id="NTV2ConfigureInterrupt::mCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a16f7e18e36f4a0397d63b6a409952996" />
-      <keyword name="mHandles" id="NTV2ConfigureInterrupt::mHandles" ref="db/d7b/class_n_t_v2_configure_interrupt.html#aa36f46d0efb4b19cb582e66757729e75" />
-      <keyword name="mSpares" id="NTV2ConfigureInterrupt::mSpares" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a38d714332ce00194a42676a64ca3e0ad" />
-      <keyword name="mTrailer" id="NTV2ConfigureInterrupt::mTrailer" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a502566e014e7e0a128251bb747a9f066" />
-      <keyword name="kOpINVALID" id="NTV2ConfigureInterrupt::kOpINVALID" ref="db/d7b/class_n_t_v2_configure_interrupt.html#abf55b19388ca0a51fc8ac4c1111b7e61" />
-      <keyword name="kOpFIRST" id="NTV2ConfigureInterrupt::kOpFIRST" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9d587fbfca287d10d76a49e50811f9fd" />
-      <keyword name="kOpSubscribe" id="NTV2ConfigureInterrupt::kOpSubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a9237d6e25af383c8a8aaa8a300be7418" />
-      <keyword name="kOpUnsubscribe" id="NTV2ConfigureInterrupt::kOpUnsubscribe" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ad5c009306f1a39712dfe49d09df0e206" />
-      <keyword name="kOpEnable" id="NTV2ConfigureInterrupt::kOpEnable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a0381333519d106a7ea7e53a85ee9d5fd" />
-      <keyword name="kOpDisable" id="NTV2ConfigureInterrupt::kOpDisable" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a23b8cbf1ad5bf9fe53e7109b2c6a1424" />
-      <keyword name="kOpGetSubscribed" id="NTV2ConfigureInterrupt::kOpGetSubscribed" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a7bcc686b04cf6a079331e55054dbe651" />
-      <keyword name="kOpGetEnabledIDs" id="NTV2ConfigureInterrupt::kOpGetEnabledIDs" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a75c0b684ca1dea9b2cfce59d7f93d4da" />
-      <keyword name="kOpGetIntCount" id="NTV2ConfigureInterrupt::kOpGetIntCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a89aad46db4c5f8dd7755c2ac2271ae1c" />
-      <keyword name="kOpSetIntCount" id="NTV2ConfigureInterrupt::kOpSetIntCount" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a4d644f5954b8cd5ae980ca484f7558a1" />
-      <keyword name="kOpLAST" id="NTV2ConfigureInterrupt::kOpLAST" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a52a90f8a1d4bbc4185c93df1863faf59" />
-      <keyword name="kFlagMaskCreateHandle" id="NTV2ConfigureInterrupt::kFlagMaskCreateHandle" ref="db/d7b/class_n_t_v2_configure_interrupt.html#a6e4a16db93e68b3fa69b6b2908dda09e" />
-      <keyword name="kFlagMaskIncludeGlobals" id="NTV2ConfigureInterrupt::kFlagMaskIncludeGlobals" ref="db/d7b/class_n_t_v2_configure_interrupt.html#ae1ffc60828cede13e315d3db30ce0a8f" />
+      <keyword name="NTV2ConfigInterrupt" id="NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html" />
+      <keyword name="NTV2ConfigInterrupt" id="NTV2ConfigInterrupt::NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html#a35c6a2129a7b59c2f057bc5c2ea6563e" />
+      <keyword name="~NTV2ConfigInterrupt" id="NTV2ConfigInterrupt::~NTV2ConfigInterrupt" ref="df/d2b/class_n_t_v2_config_interrupt.html#a64aedf59f230596a94197c3b17eb68e1" />
+      <keyword name="operation" id="NTV2ConfigInterrupt::operation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1b3b94a4251b345d2488df8522603f86" />
+      <keyword name="flags" id="NTV2ConfigInterrupt::flags" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa3fee16528a632231123bf9c4e24a34d" />
+      <keyword name="interruptID" id="NTV2ConfigInterrupt::interruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa6131774578883567fe1d4603979eb28" />
+      <keyword name="interruptIDs" id="NTV2ConfigInterrupt::interruptIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a2850b9acc1b21b59e6c4e81cf35be092" />
+      <keyword name="isValid" id="NTV2ConfigInterrupt::isValid" ref="df/d2b/class_n_t_v2_config_interrupt.html#ac2db99e3a16ae19f2fb033f05982896b" />
+      <keyword name="operator bool" id="NTV2ConfigInterrupt::operator bool" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa808fc856d23f99544f0331fe6a87a95" />
+      <keyword name="isSuccess" id="NTV2ConfigInterrupt::isSuccess" ref="df/d2b/class_n_t_v2_config_interrupt.html#ad4925e36fdbce7e5ff9b485f4074eff3" />
+      <keyword name="operator NTV2_HEADER *" id="NTV2ConfigInterrupt::operator NTV2_HEADER *" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1bb99a7a5e562147ec1e44b39063fec0" />
+      <keyword name="print" id="NTV2ConfigInterrupt::print" ref="df/d2b/class_n_t_v2_config_interrupt.html#a73d6ed6121b611152024f4616411b57c" />
+      <keyword name="clientID" id="NTV2ConfigInterrupt::clientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa53afda1b7c87d44e13b4b13ece0810c" />
+      <keyword name="clientPID" id="NTV2ConfigInterrupt::clientPID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a06514fd14e1ee7414d8f48f8e133e9f5" />
+      <keyword name="clientTID" id="NTV2ConfigInterrupt::clientTID" ref="df/d2b/class_n_t_v2_config_interrupt.html#ad42e8b4a699eee9d293c7a1c1a4c3fb1" />
+      <keyword name="count" id="NTV2ConfigInterrupt::count" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8ff19c7f278cd40bd3a66127976c677f" />
+      <keyword name="maxHandleCapacity" id="NTV2ConfigInterrupt::maxHandleCapacity" ref="df/d2b/class_n_t_v2_config_interrupt.html#ae8f311ccfb99f1294c5d20ff19ec0b69" />
+      <keyword name="eventHandle" id="NTV2ConfigInterrupt::eventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6ea5c0abc20ffdb023c41c51357421f7" />
+      <keyword name="setEventHandle" id="NTV2ConfigInterrupt::setEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a766819f7fb176a5d52f91a4e00611b82" />
+      <keyword name="hasCreateHandleFlag" id="NTV2ConfigInterrupt::hasCreateHandleFlag" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9571710932c277c9592b7d6465ff02c4" />
+      <keyword name="hasIncludeGlobalsFlag" id="NTV2ConfigInterrupt::hasIncludeGlobalsFlag" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8e65bd240dd6eb6a40b7020c72f7bbe2" />
+      <keyword name="doSubscribe" id="NTV2ConfigInterrupt::doSubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#a574e931a91b1f3cbf1f38aa47984938a" />
+      <keyword name="doSubscribeEvent" id="NTV2ConfigInterrupt::doSubscribeEvent" ref="df/d2b/class_n_t_v2_config_interrupt.html#a25c1f1bfe21f80bc75eef86cc5653678" />
+      <keyword name="doUnsubscribe" id="NTV2ConfigInterrupt::doUnsubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#a778af117458d370d43274f30b88cf837" />
+      <keyword name="doEnable" id="NTV2ConfigInterrupt::doEnable" ref="df/d2b/class_n_t_v2_config_interrupt.html#afe8cc5f4b6e9c86ea55f39d65809b89b" />
+      <keyword name="doDisable" id="NTV2ConfigInterrupt::doDisable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3b3a85520b4c893b91f4806126901437" />
+      <keyword name="doGetCount" id="NTV2ConfigInterrupt::doGetCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#abbbb2a10850ef7b37a2017146dbdbad2" />
+      <keyword name="doSetCount" id="NTV2ConfigInterrupt::doSetCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#ae7d4f48c811750dcff3a5c1f0214f4df" />
+      <keyword name="doGetSubscribed" id="NTV2ConfigInterrupt::doGetSubscribed" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4dfc9b29d7e2ca9490820b2529d66465" />
+      <keyword name="setResult" id="NTV2ConfigInterrupt::setResult" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8f63d24a5f4f2b9cd286574ef7302298" />
+      <keyword name="setFail" id="NTV2ConfigInterrupt::setFail" ref="df/d2b/class_n_t_v2_config_interrupt.html#a561d0f0956da87096e66950cfc66a1f5" />
+      <keyword name="setSuccess" id="NTV2ConfigInterrupt::setSuccess" ref="df/d2b/class_n_t_v2_config_interrupt.html#a17b0b5dbe4a67ed413045f0b7da19a20" />
+      <keyword name="setClientID" id="NTV2ConfigInterrupt::setClientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a374d8b1f47cecf75fdbb2c1e94b73b94" />
+      <keyword name="setCount" id="NTV2ConfigInterrupt::setCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9f4187b185b240a4dacf4e804b5b4ef5" />
+      <keyword name="setOperation" id="NTV2ConfigInterrupt::setOperation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a7949cb5c27931cee8e32fd5f0d1e17a3" />
+      <keyword name="setInterruptID" id="NTV2ConfigInterrupt::setInterruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a5192e10073a2fde66d81751a554eefa7" />
+      <keyword name="setEventHandle" id="NTV2ConfigInterrupt::setEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a211b8ee42144798a4d77e0a78868c5ea" />
+      <keyword name="setCreateEvent" id="NTV2ConfigInterrupt::setCreateEvent" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab30dcbc3de92ba17d9b441b275a45144" />
+      <keyword name="RPCEncode" id="NTV2ConfigInterrupt::RPCEncode" ref="df/d2b/class_n_t_v2_config_interrupt.html#a138ef6ce5ace29f6996f4947e2534aa0" />
+      <keyword name="RPCDecode" id="NTV2ConfigInterrupt::RPCDecode" ref="df/d2b/class_n_t_v2_config_interrupt.html#a9dce8728806370b1b4e6d41c0c632d3e" />
+      <keyword name="RPCDecodeClient" id="NTV2ConfigInterrupt::RPCDecodeClient" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1251f3192764a6a4e54792a1ed969896" />
+      <keyword name="RPCEncodeClient" id="NTV2ConfigInterrupt::RPCEncodeClient" ref="df/d2b/class_n_t_v2_config_interrupt.html#a8c28d034d0cf8f13ca89c0a175bee56b" />
+      <keyword name="RPCDecodeServer" id="NTV2ConfigInterrupt::RPCDecodeServer" ref="df/d2b/class_n_t_v2_config_interrupt.html#abc7bde3321efe04b36e27df9b3044952" />
+      <keyword name="RPCEncodeServer" id="NTV2ConfigInterrupt::RPCEncodeServer" ref="df/d2b/class_n_t_v2_config_interrupt.html#a052015f761ba7f568850208c6f48018c" />
+      <keyword name="OpName" id="NTV2ConfigInterrupt::OpName" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4d872219cbe962ae2c995b433b153b25" />
+      <keyword name="IntNames" id="NTV2ConfigInterrupt::IntNames" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6f7e135ce699bc5e557a60d54bbc7f1e" />
+      <keyword name="IntName" id="NTV2ConfigInterrupt::IntName" ref="df/d2b/class_n_t_v2_config_interrupt.html#a104801848bad17ee4e80c78916e98f6c" />
+      <keyword name="mHeader" id="NTV2ConfigInterrupt::mHeader" ref="df/d2b/class_n_t_v2_config_interrupt.html#a00ccae344cfe5f85248c1d2a96a327cd" />
+      <keyword name="mOperation" id="NTV2ConfigInterrupt::mOperation" ref="df/d2b/class_n_t_v2_config_interrupt.html#a00a27449bc93af4b3a42f5e8a6fc264f" />
+      <keyword name="mFlags" id="NTV2ConfigInterrupt::mFlags" ref="df/d2b/class_n_t_v2_config_interrupt.html#adef618d48946a3bdd56c68fe23d15338" />
+      <keyword name="mInterruptID" id="NTV2ConfigInterrupt::mInterruptID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4e2c99bf9d8a787440237b33d885c60e" />
+      <keyword name="mResult" id="NTV2ConfigInterrupt::mResult" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1136e4cc1df3b6a1f11e62d05cb11472" />
+      <keyword name="mInterruptIDs" id="NTV2ConfigInterrupt::mInterruptIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a21e10f53c3fba4e0919f14ebe99b5ca6" />
+      <keyword name="mEventHandle" id="NTV2ConfigInterrupt::mEventHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#afa4b2319171793f53b3be6b84b56a746" />
+      <keyword name="mClientID" id="NTV2ConfigInterrupt::mClientID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a896e60cefebdf69878a30e5ec49e2bd2" />
+      <keyword name="mClientPID" id="NTV2ConfigInterrupt::mClientPID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a49b6be601d77834001d431c88acf7c02" />
+      <keyword name="mClientTID" id="NTV2ConfigInterrupt::mClientTID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a4c8c91af29977d9014b245793057c09a" />
+      <keyword name="mCount" id="NTV2ConfigInterrupt::mCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a544377093fcf48ff048226a2594ac2e1" />
+      <keyword name="mHandles" id="NTV2ConfigInterrupt::mHandles" ref="df/d2b/class_n_t_v2_config_interrupt.html#a6486fcd828603bbe87043b45189bf33e" />
+      <keyword name="mSpares" id="NTV2ConfigInterrupt::mSpares" ref="df/d2b/class_n_t_v2_config_interrupt.html#aa86f5e2f896b556863bfc35a919ecf8d" />
+      <keyword name="mTrailer" id="NTV2ConfigInterrupt::mTrailer" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab67c9e6d3ad5b7d776bd320ee58ec7b1" />
+      <keyword name="kOpINVALID" id="NTV2ConfigInterrupt::kOpINVALID" ref="df/d2b/class_n_t_v2_config_interrupt.html#a5874f21678a384f80f701a5e5274a23c" />
+      <keyword name="kOpFIRST" id="NTV2ConfigInterrupt::kOpFIRST" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab549e2121c26b88443fdf00f5ddddbcc" />
+      <keyword name="kOpSubscribe" id="NTV2ConfigInterrupt::kOpSubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#ab9fe537a22a554d640dde6101969330d" />
+      <keyword name="kOpUnsubscribe" id="NTV2ConfigInterrupt::kOpUnsubscribe" ref="df/d2b/class_n_t_v2_config_interrupt.html#af94088196ae23997acd4cdff16dbe135" />
+      <keyword name="kOpEnable" id="NTV2ConfigInterrupt::kOpEnable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1034201d756d16430eff63555590a3d6" />
+      <keyword name="kOpDisable" id="NTV2ConfigInterrupt::kOpDisable" ref="df/d2b/class_n_t_v2_config_interrupt.html#a70d1c460c17f0393b904328b81b9e426" />
+      <keyword name="kOpGetSubscribed" id="NTV2ConfigInterrupt::kOpGetSubscribed" ref="df/d2b/class_n_t_v2_config_interrupt.html#a1273d38e6082188369b87cb466609e31" />
+      <keyword name="kOpGetEnabledIDs" id="NTV2ConfigInterrupt::kOpGetEnabledIDs" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3ea08a4ccbdebbe78b10a0f1cb87658a" />
+      <keyword name="kOpGetIntCount" id="NTV2ConfigInterrupt::kOpGetIntCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#af5ce17f359175d939527b9bb4922e6c2" />
+      <keyword name="kOpSetIntCount" id="NTV2ConfigInterrupt::kOpSetIntCount" ref="df/d2b/class_n_t_v2_config_interrupt.html#a3aab2539a104805032299b85e7658c81" />
+      <keyword name="kOpLAST" id="NTV2ConfigInterrupt::kOpLAST" ref="df/d2b/class_n_t_v2_config_interrupt.html#a7c3d885ea26dec8968dd053e37ce3719" />
+      <keyword name="kFlagMaskCreateHandle" id="NTV2ConfigInterrupt::kFlagMaskCreateHandle" ref="df/d2b/class_n_t_v2_config_interrupt.html#a34ce3b41036c3d580ab222a13f746f4b" />
+      <keyword name="kFlagMaskIncludeGlobals" id="NTV2ConfigInterrupt::kFlagMaskIncludeGlobals" ref="df/d2b/class_n_t_v2_config_interrupt.html#a21aac6f658d8939bc8de8b2d52bca253" />
       <keyword name="NTV2DebugLogging" id="NTV2DebugLogging" ref="d8/dcd/class_n_t_v2_debug_logging.html" />
       <keyword name="NTV2DebugLogging" id="NTV2DebugLogging::NTV2DebugLogging" ref="d8/dcd/class_n_t_v2_debug_logging.html#a85a2d105882841b68ed5a36484080874" />
       <keyword name="Print" id="NTV2DebugLogging::Print" ref="d8/dcd/class_n_t_v2_debug_logging.html#a9f3de48603ee77738672ac0bdc7e779a" />
@@ -70527,14 +70546,14 @@
       <file>db/d9b/gettingstarted.html</file>
       <file>d1/d5d/glossary.html</file>
       <file>d9/d9a/recordplaytechniques.html</file>
-      <file>pingpong.png</file>
       <file>ac-overview.png</file>
       <file>ac-capture.png</file>
+      <file>ac-captureflowchart.png</file>
       <file>ac-playout.png</file>
       <file>ac-captureplayout.png</file>
-      <file>ac-captureflowchart.png</file>
       <file>ac-whichinterrupt.png</file>
       <file>watcher-inspector-ac.png</file>
+      <file>pingpong.png</file>
       <file>strm-capture.png</file>
       <file>strm-playback.png</file>
       <file>d0/dc3/ntv2signalrouting.html</file>
@@ -71529,9 +71548,9 @@
       <file>d1/d41/struct_n_t_v2_color_correction_info__32-members.html</file>
       <file>d9/d08/struct_n_t_v2_color_correction_info__64.html</file>
       <file>db/d53/struct_n_t_v2_color_correction_info__64-members.html</file>
-      <file>db/d7b/class_n_t_v2_configure_interrupt.html</file>
-      <file>d9/d8e/class_n_t_v2_configure_interrupt__coll__graph.svg</file>
-      <file>d3/d1d/class_n_t_v2_configure_interrupt-members.html</file>
+      <file>df/d2b/class_n_t_v2_config_interrupt.html</file>
+      <file>de/db1/class_n_t_v2_config_interrupt__coll__graph.svg</file>
+      <file>da/db7/class_n_t_v2_config_interrupt-members.html</file>
       <file>d8/dcd/class_n_t_v2_debug_logging.html</file>
       <file>de/d1d/class_n_t_v2_debug_logging__coll__graph.svg</file>
       <file>d8/dd6/class_n_t_v2_debug_logging-members.html</file>

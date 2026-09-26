@@ -1,5 +1,7 @@
 var NAVTREEINDEX77 =
 {
+"da/d4f/ntv2ccgrabber_8h_source.html":[9,0,0,3,5,2],
+"da/d58/deprecated.html":[4],
 "da/d5b/struct_test_line_data_str.html":[8,0,460],
 "da/d5b/struct_test_line_data_str.html#a1603fc5cfce912eecba9c9f4f156ba00":[8,0,460,1],
 "da/d5b/struct_test_line_data_str.html#a3b62c6d307e6a042e05f8d77395d0640":[8,0,460,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX77 =
 "da/daf/options__popt_8h.html#a864ab8631f3934774f7395858456783f":[9,0,0,1,0,22,36],
 "da/daf/options__popt_8h.html#a86d500a34c624c2cae56bc25a31b12f3":[9,0,0,1,0,22,67],
 "da/daf/options__popt_8h.html#a8f0347f05b72315b7a29abb013a9d162":[9,0,0,1,0,22,100],
-"da/daf/options__popt_8h.html#a916dc71c80b3afbf426d99bdcd03d4fe":[9,0,0,1,0,22,119],
-"da/daf/options__popt_8h.html#a922c332675c30038924eb94b30b2ded5":[9,0,0,1,0,22,122],
-"da/daf/options__popt_8h.html#a94b752bdfe50201136ceb0402fd93599":[9,0,0,1,0,22,58]
+"da/daf/options__popt_8h.html#a916dc71c80b3afbf426d99bdcd03d4fe":[9,0,0,1,0,22,119]
 };

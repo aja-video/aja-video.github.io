@@ -150,7 +150,7 @@ var searchData=
   ['_7entv2ccgrabber',['~NTV2CCGrabber',['../dc/d59/class_n_t_v2_c_c_grabber.html#ae420d9bebc014778c0f6cbbc3fc1a7d3',1,'NTV2CCGrabber']]],
   ['_7entv2ccplayer',['~NTV2CCPlayer',['../d8/d74/class_n_t_v2_c_c_player.html#acafbf1923c9a7f98f1654ce9016f898a',1,'NTV2CCPlayer']]],
   ['_7entv2colorcorrectiondata',['~NTV2ColorCorrectionData',['../d6/d24/class_n_t_v2_color_correction_data.html#a7191b86f49cc8cffb2eb760cf9f3a523',1,'NTV2ColorCorrectionData']]],
-  ['_7entv2configureinterrupt',['~NTV2ConfigureInterrupt',['../db/d7b/class_n_t_v2_configure_interrupt.html#a0d6b1084354c47eaa2f7fcda6e6be907',1,'NTV2ConfigureInterrupt']]],
+  ['_7entv2configinterrupt',['~NTV2ConfigInterrupt',['../df/d2b/class_n_t_v2_config_interrupt.html#a64aedf59f230596a94197c3b17eb68e1',1,'NTV2ConfigInterrupt']]],
   ['_7entv2dolbycapture',['~NTV2DolbyCapture',['../d1/d62/class_n_t_v2_dolby_capture.html#a9d03eb3395259e2b21860e3462f3bfcf',1,'NTV2DolbyCapture']]],
   ['_7entv2dolbyplayer',['~NTV2DolbyPlayer',['../d0/df0/class_n_t_v2_dolby_player.html#a30352d576ad0b68d62b62ae87965aa7a',1,'NTV2DolbyPlayer']]],
   ['_7entv2encodehevc',['~NTV2EncodeHEVC',['../d4/deb/class_n_t_v2_encode_h_e_v_c.html#a34b98bf6e572f800c5384d4a0c4ce68b',1,'NTV2EncodeHEVC']]],

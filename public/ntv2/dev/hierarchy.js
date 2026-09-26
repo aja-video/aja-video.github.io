@@ -659,7 +659,7 @@ var hierarchy =
     [ "NTV2ColorCorrectionInfo", "d6/d30/struct_n_t_v2_color_correction_info.html", null ],
     [ "NTV2ColorCorrectionInfo_32", "db/daf/struct_n_t_v2_color_correction_info__32.html", null ],
     [ "NTV2ColorCorrectionInfo_64", "d9/d08/struct_n_t_v2_color_correction_info__64.html", null ],
-    [ "NTV2ConfigureInterrupt", "db/d7b/class_n_t_v2_configure_interrupt.html", null ],
+    [ "NTV2ConfigInterrupt", "df/d2b/class_n_t_v2_config_interrupt.html", null ],
     [ "NTV2DebugLogging", "d8/dcd/class_n_t_v2_debug_logging.html", null ],
     [ "NTV2DeviceInfo", "d6/d61/struct_n_t_v2_device_info.html", null ],
     [ "NTV2DeviceSpecParser", "d3/d9a/class_n_t_v2_device_spec_parser.html", null ],

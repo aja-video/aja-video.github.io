@@ -1,5 +1,7 @@
 var NAVTREEINDEX81 =
 {
+"db/d02/toolsandutilities.html#watchertools":[0,4,7,11],
+"db/d03/class_c_source_position.html":[8,0,225],
 "db/d03/class_c_source_position.html#a0ad5a28a51a691638918b1f02eab39f1":[8,0,225,13],
 "db/d03/class_c_source_position.html#a0d5513fa2ac2b58ecf71fc90b91b4c54":[8,0,225,9],
 "db/d03/class_c_source_position.html#a1967aa22b3880cccf68059b64f76407e":[8,0,225,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX81 =
 "db/d32/class_device_capabilities.html#a99ce109045126af2378abd66211e8cb8":[8,0,240,195],
 "db/d32/class_device_capabilities.html#a9a8a868ec0556c39bb498f343edd12c7":[8,0,240,147],
 "db/d32/class_device_capabilities.html#a9ab19b3b6b4219f5a4576329958892e5":[8,0,240,24],
-"db/d32/class_device_capabilities.html#a9acd94e0a46bc5a5c18c3f3b53877fb1":[8,0,240,28],
-"db/d32/class_device_capabilities.html#a9c2deda32fec538b53ab0dfcd67d7b66":[8,0,240,59],
-"db/d32/class_device_capabilities.html#a9eeddd110f1589c2ebb67f4acd26e934":[8,0,240,122]
+"db/d32/class_device_capabilities.html#a9acd94e0a46bc5a5c18c3f3b53877fb1":[8,0,240,28]
 };

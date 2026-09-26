@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2437</span>
+   &#160;<span id="projectnumber">18.1.0.2439</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2439</div>
   </td>
  </tr>
  </tbody>
@@ -192,10 +192,10 @@ Corvid 44 (Gen3)</h2>
 </li>
 <li>Safe Storage Temperature (Power OFF): -40°C to 70°C (-40°F to 158°F)</li>
 <li>Operating Relative Humidity: 10-90% non-condensing</li>
-<li>Operating Altitude: under 3,000 meters (under 10,000 feet) <hr/>
-</li>
+<li>Operating Altitude: under 3,000 meters (under 10,000 feet)</li>
 </ul>
 </dd></dl>
+<hr/>
 <h2><a class="anchor" id="corvid4412g"></a>
 Corvid 44 12G</h2>
 <p>This page describes the <b>Corvid 44 12G</b> OEM capture/playout board, which features four 12G SDI connectors that can be programmatically configured as inputs or outputs. It’s identified by these device identifiers:</p><ul>
@@ -272,8 +272,8 @@ Corvid 44 12G</h2>
 <li>Safe Storage Temperature (Power OFF): -40°C to +70°C (-40° to +158°F)</li>
 </ul>
 </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The fanless (passively-cooled) version of this device requires airflow of 150LFM @30°C or lower. Most host systems have enough circulating airflow, neighboring vent holes, and/or ability to increase the case fan speed as necessary, such that additional steps or precautions are not required. However, if adequate cooling is not being achieved, then removal of the adjacent PCIe bracket next to the heatsink (adjacent to the CRV44-12G) is an option. <hr/>
-</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The fanless (passively-cooled) version of this device requires airflow of 150LFM @30°C or lower. Most host systems have enough circulating airflow, neighboring vent holes, and/or ability to increase the case fan speed as necessary, such that additional steps or precautions are not required. However, if adequate cooling is not being achieved, then removal of the adjacent PCIe bracket next to the heatsink (adjacent to the CRV44-12G) is an option.</dd></dl>
+<hr/>
 <h2><a class="anchor" id="corvid88gen3"></a>
 Corvid 88 (Gen3)</h2>
 <p>The <b>Corvid 88 (Gen3)</b> OEM capture/playout board features eight SDI connectors that can be programmatically configured as inputs or outputs. It’s the modern replacement for the original <a class="el" href="../../d0/d53/ntv2devices.html#corvid88">Corvid 88</a> and is identified by <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a39e69a3c1b48c9f17cc6a78c1b8475ba" title="See Corvid 88 (Gen3). ">DEVICE_ID_CORVID88_GEN3</a>.</p>
@@ -360,10 +360,10 @@ Corvid 88 (Gen3)</h2>
 </li>
 <li>Safe Storage Temperature (Power OFF): -40°C to 70°C (-40°F to 158°F)</li>
 <li>Operating Relative Humidity: 10-90% non-condensing</li>
-<li>Operating Altitude: under 3,000 meters (under 10,000 feet) <hr/>
-</li>
+<li>Operating Altitude: under 3,000 meters (under 10,000 feet)</li>
 </ul>
 </dd></dl>
+<hr/>
 <h1><a class="anchor" id="ntv2hwio"></a>
 Io (Thunderbolt) Devices</h1>
 <dl class="section user"><dt>Contents</dt><dd><ul>
@@ -1431,7 +1431,7 @@ KONA X™</h2>
 <p>This page describes the <b>KONA X</b> capture/playout board. It currently supports three different firmware personalities:</p><ul>
 <li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> — the normal two-channel firmware;</li>
 <li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a4cec6ba34c28ad307088d3d7e4920a3b" title="See KONA X™. ">DEVICE_ID_KONAX_4CH</a> — same as <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> but with two additional FrameStores;</li>
-<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a822697a35e0230021779fe78471bebe7" title="See KONA XM™. ">DEVICE_ID_KONAXM</a> — the “XM” firmware supports the experimental <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> feature (see <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> for more information).</li>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a822697a35e0230021779fe78471bebe7" title="See KONA XM™. ">DEVICE_ID_KONAXM</a> — the “XM” firmware supports the experimental <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> feature (see <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> for more information).</li>
 </ul>
 <div class="image">
 <img src="../../konax-diag.png" alt="konax-diag.png"/>
@@ -1554,14 +1554,14 @@ KONA X™</h2>
 <li>Safe Storage Temperature (Power OFF): -40°C to 60°C (-40°F to 140°F)</li>
 </ul>
 </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The fanless (passive) version of this device requires airflow of at least 80LFM, with recommended 100LFM at 25°C ambient (or lower), and the host chassis must vent to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 80LFM to 100LFM across the heatsink. <hr/>
-</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The fanless (passive) version of this device requires airflow of at least 80LFM, with recommended 100LFM at 25°C ambient (or lower), and the host chassis must vent to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 80LFM to 100LFM across the heatsink.</dd></dl>
+<hr/>
 <h2><a class="anchor" id="konaxm"></a>
 KONA XM™</h2>
 <p>This page describes the <b>KONA XM</b> capture/playout board. It supports three different firmware personalities:</p><ul>
 <li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> — the normal two-channel firmware;</li>
 <li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a4cec6ba34c28ad307088d3d7e4920a3b" title="See KONA X™. ">DEVICE_ID_KONAX_4CH</a> — same as <a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a707c123f75d09a8590621f2abf43f726" title="See KONA X™. ">DEVICE_ID_KONAX</a> but with two additional FrameStores;</li>
-<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a822697a35e0230021779fe78471bebe7" title="See KONA XM™. ">DEVICE_ID_KONAXM</a> — the “XM” firmware supports the experimental <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> feature (see <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> for more information).</li>
+<li><a class="el" href="../../d6/d0c/ntv2enums_8h.html#aaa90748f5a92082fa4f79c89698d9463a822697a35e0230021779fe78471bebe7" title="See KONA XM™. ">DEVICE_ID_KONAXM</a> — the “XM” firmware supports the experimental <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> feature (see <a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> for more information).</li>
 </ul>
 <p>The <b>KONA XM</b> is identical to the <a class="el" href="../../d0/d53/ntv2devices.html#konax">KONA X™</a> with the exceptions listed herein.</p>
 <div class="image">
@@ -2056,8 +2056,8 @@ Corvid 88</h2>
 <li>Safe Storage Temperature (Power OFF): -40°C to 70°C (-40°F to 158°F)</li>
 </ul>
 </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The fanless version of this device required airflow of 100LFM @25deg C or lower, and the host chassis needed to be vented to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 100LFM across the heatsink. <hr/>
-</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The fanless version of this device required airflow of 100LFM @25deg C or lower, and the host chassis needed to be vented to the exterior, immediately adjacent to the PCIe shield (heatsink side), to permit 100LFM across the heatsink.</dd></dl>
+<hr/>
 <h2><a class="anchor" id="corvidhbr"></a>
 Corvid HB-R</h2>
 <dl class="section note"><dt>Note</dt><dd>This product was EOL’d July 20, 2020.</dd></dl>
@@ -3211,7 +3211,7 @@ KONA XPAND™ Breakout Board</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 19:11:02 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Sep 25 2026 18:03:31 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

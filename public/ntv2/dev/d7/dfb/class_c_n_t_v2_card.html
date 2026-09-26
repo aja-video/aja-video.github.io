@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2437</span>
+   &#160;<span id="projectnumber">18.1.0.2439</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2439</div>
   </td>
  </tr>
  </tbody>
@@ -2971,7 +2971,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a9819d0163e2a08f3f19b97d12916ef98a3398f2c7745608d97449f09a3917867f"></a>NUM_COLORS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06620">6620</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06636">6636</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -4849,15 +4849,15 @@ Size changes apply to all SDI anc and HDMI aux extractors/inserters. </dd></dl>
 <li>This value is ignored if a legitimate frame range is specified by <code>inStartFrameNumber</code> and a non-zero <code>inEndFrameNumber</code> value (see below).</li>
 <li>Defaults to 7.</li>
 <li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a99b66e455cc2107a4c9ecd4999991963" title="Returns the device frame buffer numbers of the first unallocated contiguous band of frame buffers hav...">CNTV2Card::FindUnallocatedFrames</a> is called with this frame count value to determine the actual frame range to be used. That function is not thread-safe, making it easy for two or more threads or processes calling <b>AutoCirculateInit…</b> to end up using the same frame buffer memory. See fbconflict for more information.</li>
-<li><b>NOTE:</b> Fewer frames reduces latency, but increases the likelihood of frame drops. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocircfrmcnt">Frame Count Considerations (Capture)</a>. </li>
+<li><b>NOTE:</b> Fewer frames reduces latency, but increases the likelihood of frame drops. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocircfrmcnt">Frame Count Considerations</a>. </li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the Audio System to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the <a class="el" href="../../d1/dc5/ntv2devops.html#audop-fwimpl-audsys">Audio System</a> to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inOptionFlags</td><td>A bit mask that specifies additional AutoCirculate options (e.g., <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab257890d32e7a59d2bf10177c18a0abf" title="Use this to AutoCirculate with RP188. ">AUTOCIRCULATE_WITH_RP188</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a9844fc7ed12b837b5f3a4f39f0e3025e" title="Use this to AutoCirculate with analog LTC. ">AUTOCIRCULATE_WITH_LTC</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a>, etc.). Defaults to zero (no options). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inNumChannels</td><td>This unsigned integer parameter value is used to gang together multiple, contiguous ranges of FrameStores/channels by optionally specifying the number of channels/FrameStores to operate.<ul>
 <li>Defaults to 1 (i.e. only operate one FrameStore/channel).</li>
 <li>If specified, the parameter value must be at least one (1).</li>
-<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">AutoCirculating Multiple Channels</a> for more information. </li>
+<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">Ganging Multiple Channels</a> for more information. </li>
 </ul>
 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inStartFrameNumber</td><td>Specifies the first frame buffer index number of the AutoCirculate frame range as a zero-based unsigned decimal integer.<ul>
@@ -4877,23 +4877,25 @@ Size changes apply to all SDI anc and HDMI aux extractors/inserters. </dd></dl>
   </table>
   </dd>
 </dl>
+<p><b>NOTE:</b> For Multi-Channel or 4K/8K applications, AJA recommends specifying zero for <code>inFrameCount</code>, and explicitly specifying a frame range using <code>inStartFrameNumber</code> and <code>inEndFrameNumber</code>.</p>
 <p>Once the starting and ending device frame buffer range is ascertained and validated, this function causes the NTV2 kernel driver to:</p><ul>
-<li>Remember/assign the given/resulting device frame buffer range to the channel. (These are the frame buffer slots that will be written by the FrameStore into device SDRAM when AutoCirculate starts and runs.)</li>
+<li>Assigns the device frame buffer range to the channel. (These are the frame buffer slots that will be written by the FrameStore into device SDRAM when AutoCirculate starts and runs.)</li>
 <li>Switches the channel's AutoCirculate state to <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216aa4c156f67edf589aa1cf01d73012a1a7" title="The AutoCirculate channel is initializing, waiting for CNTV2Card::AutoCirculateStart to be called...">NTV2_AUTOCIRCULATE_INIT</a>. The channel will then be ready for a subsequent call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>.</li>
 <li>Sets the FrameStore's <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abcde4ccd2d4a6ac48298827bdbaac6dc" title="Input (capture) mode, which writes into device SDRAM. ">NTV2_MODE_INPUT</a>.<ul>
 <li><b>NOTE:</b> The driver leaves intact the FrameStore's Input Frame register and its enabled/disabled state. This mode change, however, could suddenly interfere with in-progress streaming in another channel, depending on the FrameStore's Input Frame register's value. See <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fbconflict">When FrameStores Access the Same Frame Buffer Memory</a>.</li>
 </ul>
 </li>
-<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data extractor (for the SDI/HDMI input that corresponds to <code>inChannel</code>) without yet enabling it to write into memory. <dl class="section note"><dt>Note</dt><dd>For Multi-Channel or 4K/8K applications, AJA recommends specifying zero for <code>inFrameCount</code>, and explicitly specifying a frame range using <code>inStartFrameNumber</code> and <code>inEndFrameNumber</code>. </dd>
-<dd>
-Most configuration should be completed prior to calling this function, especially:</dd></dl>
-</li>
+<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data extractor (for the SDI/HDMI input that corresponds to <code>inChannel</code>) without yet enabling it to write into memory.</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Most <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fswidget">FrameStore Widget</a> configuration should be completed prior to calling this function, especially:<ul>
 <li>FrameStore video format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16" title="Configures the AJA device to handle a specific video format. ">CNTV2Card::SetVideoFormat</a>);</li>
 <li>FrameStore pixel format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a93397b3f49ad2dea97a8555cf15fbeaa" title="Sets the frame buffer format for the given FrameStore on the AJA device. ">CNTV2Card::SetFrameBufferFormat</a>);</li>
-<li>All <a class="el" href="../../d0/dc3/ntv2signalrouting.html">Widget Signal Routing</a> to the FrameStore. <dl class="section note"><dt>Note</dt><dd>This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostic Messages</a> for a list of these messages. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatecapture">AutoCirculate Capture</a> </dd></dl>
-</li>
+<li>All <a class="el" href="../../d0/dc3/ntv2signalrouting.html">Widget Signal Routing</a> to the FrameStore.</li>
 </ul>
+</dd>
+<dd>
+This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostics</a> for a list of these messages. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatecapture">AutoCirculate Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -4957,12 +4959,12 @@ Most configuration should be completed prior to calling this function, especiall
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inChannel</td><td>Specifies the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> and thereby which <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fswidget">FrameStore Widget</a> to use. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inFrameRange</td><td>Specifies the device SDRAM frame range to be used using an <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="A helper class used in CNTV2Card::AutoCirculateInitForInput and CNTV2Card::AutoCirculateInitForOutput...">NTV2ACFrameRange</a>. Note that fewer frames reduces latency, but increases the likelihood of frame drops. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatelowlatency">Latency Considerations</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the Audio System to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the <a class="el" href="../../d1/dc5/ntv2devops.html#audop-fwimpl-audsys">Audio System</a> to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inOptionFlags</td><td>A bit mask that specifies additional AutoCirculate options (e.g., <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab257890d32e7a59d2bf10177c18a0abf" title="Use this to AutoCirculate with RP188. ">AUTOCIRCULATE_WITH_RP188</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a9844fc7ed12b837b5f3a4f39f0e3025e" title="Use this to AutoCirculate with analog LTC. ">AUTOCIRCULATE_WITH_LTC</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a>, etc.). Defaults to zero (no options). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inNumChannels</td><td>This unsigned integer parameter value is used to gang together multiple, contiguous ranges of FrameStores/channels by optionally specifying the number of channels/FrameStores to operate.<ul>
 <li>Defaults to 1 (i.e. only operate one FrameStore/channel).</li>
 <li>If specified, the parameter value must be at least one (1).</li>
-<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">AutoCirculating Multiple Channels</a> for more information.</li>
+<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">Ganging Multiple Channels</a> for more information.</li>
 </ul>
 </td></tr>
   </table>
@@ -4974,20 +4976,23 @@ Most configuration should be completed prior to calling this function, especiall
 <li>Otherwise the explicit frame range in <code>inFrameRange</code> is used, which is what AJA recommends for Multi-Channel or 4K/8K applications.</li>
 </ul>
 <p>Then the NTV2 kernel driver will:</p><ul>
-<li>Remember/assign the given/resulting device frame buffer range to the channel. (These are the frame buffer slots that will be written by the FrameStore into device SDRAM when AutoCirculate starts and runs.)</li>
+<li>Assigns the device frame buffer range to the channel. (These are the frame buffer slots that will be written by the FrameStore into device SDRAM when AutoCirculate starts and runs.)</li>
 <li>Switches the channel's AutoCirculate state to <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216aa4c156f67edf589aa1cf01d73012a1a7" title="The AutoCirculate channel is initializing, waiting for CNTV2Card::AutoCirculateStart to be called...">NTV2_AUTOCIRCULATE_INIT</a>. The channel will then be ready for a subsequent call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>.</li>
 <li>Sets the FrameStore's <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5abcde4ccd2d4a6ac48298827bdbaac6dc" title="Input (capture) mode, which writes into device SDRAM. ">NTV2_MODE_INPUT</a>.<ul>
 <li><b>NOTE:</b> The driver leaves intact the FrameStore's Input Frame register and its enabled/disabled state. This mode change, however, could suddenly interfere with in-progress streaming in another channel, depending on the FrameStore's Input Frame register's value. See <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fbconflict">When FrameStores Access the Same Frame Buffer Memory</a>.</li>
 </ul>
 </li>
-<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data extractor (for the SDI/HDMI input that corresponds to <code>inChannel</code>) without yet enabling it to write into memory. <dl class="section note"><dt>Note</dt><dd>Most configuration should be completed prior to calling this function, especially:</dd></dl>
-</li>
+<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data extractor (for the SDI/HDMI input that corresponds to <code>inChannel</code>) without yet enabling it to write into memory.</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Most <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fswidget">FrameStore Widget</a> configuration should be completed prior to calling this function, especially:<ul>
 <li>FrameStore video format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16" title="Configures the AJA device to handle a specific video format. ">CNTV2Card::SetVideoFormat</a>);</li>
 <li>FrameStore pixel format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a93397b3f49ad2dea97a8555cf15fbeaa" title="Sets the frame buffer format for the given FrameStore on the AJA device. ">CNTV2Card::SetFrameBufferFormat</a>);</li>
-<li>All <a class="el" href="../../d0/dc3/ntv2signalrouting.html">Widget Signal Routing</a> to the FrameStore. <dl class="section note"><dt>Note</dt><dd>This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostic Messages</a> for a list of these messages. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatecapture">AutoCirculate Capture</a> </dd></dl>
-</li>
+<li>All <a class="el" href="../../d0/dc3/ntv2signalrouting.html">Widget Signal Routing</a> to the FrameStore.</li>
 </ul>
+</dd>
+<dd>
+This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostics</a> for a list of these messages. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatecapture">AutoCirculate Capture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00352">352</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -5066,15 +5071,15 @@ Most configuration should be completed prior to calling this function, especiall
 <li>This value is ignored if a legitimate frame range is specified by <code>inStartFrameNumber</code> and a non-zero <code>inEndFrameNumber</code> value (see below).</li>
 <li>Defaults to 7.</li>
 <li><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a99b66e455cc2107a4c9ecd4999991963" title="Returns the device frame buffer numbers of the first unallocated contiguous band of frame buffers hav...">CNTV2Card::FindUnallocatedFrames</a> is called with this frame count value to determine the actual frame range to be used. That function is not thread-safe, making it easy for two or more threads or processes calling <b>AutoCirculateInit…</b> to end up using the same frame buffer memory. See fbconflict for more information.</li>
-<li><b>NOTE:</b> Fewer frames reduces latency, but increases the likelihood of frame drops. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocircfrmcnt">Frame Count Considerations (Capture)</a>. </li>
+<li><b>NOTE:</b> Fewer frames reduces latency, but increases the likelihood of frame drops. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocircfrmcnt">Frame Count Considerations</a>. </li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the Audio System to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the <a class="el" href="../../d1/dc5/ntv2devops.html#audop-fwimpl-audsys">Audio System</a> to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inOptionFlags</td><td>A bit mask that specifies additional AutoCirculate options (e.g., <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab257890d32e7a59d2bf10177c18a0abf" title="Use this to AutoCirculate with RP188. ">AUTOCIRCULATE_WITH_RP188</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a9844fc7ed12b837b5f3a4f39f0e3025e" title="Use this to AutoCirculate with analog LTC. ">AUTOCIRCULATE_WITH_LTC</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a>, etc.). Defaults to zero (no options). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inNumChannels</td><td>This unsigned integer parameter value is used to gang together multiple, contiguous ranges of FrameStores/channels by optionally specifying the number of channels/FrameStores to operate.<ul>
 <li>Defaults to 1 (i.e. only operate one FrameStore/channel).</li>
 <li>If specified, the parameter value must be at least one (1).</li>
-<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">AutoCirculating Multiple Channels</a> for more information. </li>
+<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">Ganging Multiple Channels</a> for more information. </li>
 </ul>
 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inStartFrameNumber</td><td>Specifies the first frame buffer index number of the AutoCirculate frame range as a zero-based unsigned decimal integer.<ul>
@@ -5094,19 +5099,21 @@ Most configuration should be completed prior to calling this function, especiall
   </table>
   </dd>
 </dl>
+<p><b>NOTE:</b> For Multi-Channel or 4K/8K applications, AJA recommends specifying zero for <code>inFrameCount</code>, and explicitly specifying a frame range using <code>inStartFrameNumber</code> and <code>inEndFrameNumber</code>.</p>
 <p>Once the starting and ending device frame buffer range is ascertained and validated, this function causes the NTV2 kernel driver to:</p><ul>
-<li>Remember/assign the given/resulting device frame buffer range to the channel. (These are the frame buffer slots that will be read by the FrameStore from device SDRAM when AutoCirculate starts and runs.)</li>
+<li>Assigns the device frame buffer range to the channel. (These are the frame buffer slots that will be read by the FrameStore from device SDRAM when AutoCirculate starts and runs.)</li>
 <li>Switches the channel's AutoCirculate state to <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216aa4c156f67edf589aa1cf01d73012a1a7" title="The AutoCirculate channel is initializing, waiting for CNTV2Card::AutoCirculateStart to be called...">NTV2_AUTOCIRCULATE_INIT</a>. The channel will then be ready for a subsequent call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>.</li>
 <li>Sets the FrameStore's <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a3f42800d2586d5c3caee453e1319fa1a" title="Output (playout, display) mode, which reads from device SDRAM. ">NTV2_MODE_OUTPUT</a>.</li>
-<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data inserter (for the SDI/HDMI output that corresponds to <code>inChannel</code>) without yet enabling it to read from memory. <dl class="section note"><dt>Note</dt><dd>For Multi-Channel or 4K/8K applications, AJA recommends specifying zero for <code>inFrameCount</code>, and explicitly specifying a frame range using <code>inStartFrameNumber</code> and <code>inEndFrameNumber</code>. </dd>
-<dd>
-Most configuration should be completed prior to calling this function, especially:</dd></dl>
-</li>
-<li>FrameStore video format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16" title="Configures the AJA device to handle a specific video format. ">CNTV2Card::SetVideoFormat</a>);</li>
-<li>FrameStore pixel format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a93397b3f49ad2dea97a8555cf15fbeaa" title="Sets the frame buffer format for the given FrameStore on the AJA device. ">CNTV2Card::SetFrameBufferFormat</a>); <dl class="section note"><dt>Note</dt><dd>This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostic Messages</a> for a list of these messages. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playout</a> </dd></dl>
-</li>
+<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data inserter (for the SDI/HDMI output that corresponds to <code>inChannel</code>) without yet enabling it to read from memory.</li>
 </ul>
+<dl class="section note"><dt>Note</dt><dd>Most <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fswidget">FrameStore Widget</a> configuration should be completed prior to calling this function, especially:<ul>
+<li>FrameStore video format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16" title="Configures the AJA device to handle a specific video format. ">CNTV2Card::SetVideoFormat</a>);</li>
+<li>FrameStore pixel format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a93397b3f49ad2dea97a8555cf15fbeaa" title="Sets the frame buffer format for the given FrameStore on the AJA device. ">CNTV2Card::SetFrameBufferFormat</a>);</li>
+</ul>
+</dd>
+<dd>
+This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostics</a> for a list of these messages. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playback</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00364">364</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -5170,12 +5177,12 @@ Most configuration should be completed prior to calling this function, especiall
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inChannel</td><td>Specifies the <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a00aeeb1c32a817cf8a5b71396c8e8dce" title="These enum values are mostly used to identify a specific widget_framestore. They&#39;re also commonly use...">NTV2Channel</a> and thereby which <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fswidget">FrameStore Widget</a> to use. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inFrameRange</td><td>Specifies the device SDRAM frame range to be used using an <a class="el" href="../../dd/de5/class_n_t_v2_a_c_frame_range.html" title="A helper class used in CNTV2Card::AutoCirculateInitForInput and CNTV2Card::AutoCirculateInitForOutput...">NTV2ACFrameRange</a>. Note that fewer frames reduces latency, but increases the likelihood of frame drops. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatelowlatency">Latency Considerations</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the Audio System to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inAudioSystem</td><td>Specifies the <a class="el" href="../../d1/dc5/ntv2devops.html#audop-fwimpl-audsys">Audio System</a> to use, if any. Defaults to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#abe5e1274885a1ba60e04e66bb0b41516a3c7784bc2df30c1d0dbd8ca2717d27b8">NTV2_AUDIOSYSTEM_INVALID</a> (no audio). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inOptionFlags</td><td>A bit mask that specifies additional AutoCirculate options (e.g., <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#ab257890d32e7a59d2bf10177c18a0abf" title="Use this to AutoCirculate with RP188. ">AUTOCIRCULATE_WITH_RP188</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a9844fc7ed12b837b5f3a4f39f0e3025e" title="Use this to AutoCirculate with analog LTC. ">AUTOCIRCULATE_WITH_LTC</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a>, etc.). Defaults to zero (no options). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inNumChannels</td><td>This unsigned integer parameter value is used to gang together multiple, contiguous ranges of FrameStores/channels by optionally specifying the number of channels/FrameStores to operate.<ul>
 <li>Defaults to 1 (i.e. only operate one FrameStore/channel).</li>
 <li>If specified, the parameter value must be at least one (1).</li>
-<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">AutoCirculating Multiple Channels</a> for more information.</li>
+<li>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateganging">Ganging Multiple Channels</a> for more information.</li>
 </ul>
 </td></tr>
   </table>
@@ -5190,13 +5197,16 @@ Most configuration should be completed prior to calling this function, especiall
 <li>Remember/assign the given/resulting device frame buffer range to the channel. (These are the frame buffer slots that will be read by the FrameStore from device SDRAM when AutoCirculate starts and runs.)</li>
 <li>Switches the channel's AutoCirculate state to <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216aa4c156f67edf589aa1cf01d73012a1a7" title="The AutoCirculate channel is initializing, waiting for CNTV2Card::AutoCirculateStart to be called...">NTV2_AUTOCIRCULATE_INIT</a>. The channel will then be ready for a subsequent call to <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a> or <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a>.</li>
 <li>Sets the FrameStore's <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5" title="Used to identify the mode of a widget_framestore, or the direction of an AutoCirculate stream: either...">NTV2Mode</a> to <a class="el" href="../../d6/d0c/ntv2enums_8h.html#a0e7716728e9df7086c72609f806dd4a5a3f42800d2586d5c3caee453e1319fa1a" title="Output (playout, display) mode, which reads from device SDRAM. ">NTV2_MODE_OUTPUT</a>.</li>
-<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data inserter (for the SDI/HDMI output that corresponds to <code>inChannel</code>) without yet enabling it to read from memory. <dl class="section note"><dt>Note</dt><dd>Most configuration should be completed prior to calling this function, especially:</dd></dl>
-</li>
-<li>FrameStore video format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16" title="Configures the AJA device to handle a specific video format. ">CNTV2Card::SetVideoFormat</a>);</li>
-<li>FrameStore pixel format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a93397b3f49ad2dea97a8555cf15fbeaa" title="Sets the frame buffer format for the given FrameStore on the AJA device. ">CNTV2Card::SetFrameBufferFormat</a>); <dl class="section note"><dt>Note</dt><dd>This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostic Messages</a> for a list of these messages. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playout</a> </dd></dl>
-</li>
+<li>If the <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#a17762d5a20d6047800541682dfe2cb9b" title="Use this to AutoCirculate with ancillary data. ">AUTOCIRCULATE_WITH_ANC</a> bit in <code>inOptionFlags</code> is set, initializes the ancillary/auxiliary data inserter (for the SDI/HDMI output that corresponds to <code>inChannel</code>) without yet enabling it to read from memory.</li>
 </ul>
+<dl class="section note"><dt>Note</dt><dd>Most <a class="el" href="../../d1/dc5/ntv2devops.html#vidop-fswidget">FrameStore Widget</a> configuration should be completed prior to calling this function, especially:<ul>
+<li>FrameStore video format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a9f0915bc38e35ce74dad187427d03e16" title="Configures the AJA device to handle a specific video format. ">CNTV2Card::SetVideoFormat</a>);</li>
+<li>FrameStore pixel format (see <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a93397b3f49ad2dea97a8555cf15fbeaa" title="Sets the frame buffer format for the given FrameStore on the AJA device. ">CNTV2Card::SetFrameBufferFormat</a>);</li>
+</ul>
+</dd>
+<dd>
+This function logs diagnostic messages into the <a class="el" href="../../index.html#debuglogging">AJA Debug Logging Facility</a> in the <code>AutoCirculate_39</code> message group. See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatemsgs">AutoCirculate Diagnostics</a> for a list of these messages. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#af8f8c43f63629d31d3f4c3dc4d71bbf5" title="Stops AutoCirculate for the given channel, and releases the on-device frame buffers that were allocat...">CNTV2Card::AutoCirculateStop</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a>, <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a>, <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playback</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00513">513</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -5295,7 +5305,7 @@ Most configuration should be completed prior to calling this function, especiall
   </dd>
 </dl>
 <p>Normally used for playout, this method instructs the driver to mark the given number of frames as valid. It's useful only in the rare case when, after <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a669e0e26f156eacbba892e1520489f5c" title="Prepares for subsequent AutoCirculate playback streaming, designating a contiguous block of frame buf...">CNTV2Card::AutoCirculateInitForOutput</a> was called, several frames have already been transferred to the device (perhaps using <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a258fc2b04b0773f539f49a8ea7116947" title="Transfers data from the host to the AJA device. ">CNTV2Card::DMAWrite</a>), and calling <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#ae617507f1b0562f866201a58c26e10e7" title="Starts AutoCirculate streaming for the specified channel that was previously initialized by CNTV2Card...">CNTV2Card::AutoCirculateStart</a> will ignore those pre-rolled frames without an intervening <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> call. </p><dl class="section note"><dt>Note</dt><dd>This method does nothing if the channel's state is not currently <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216af5016f17b832db36a8f0f5bb2778c76c" title="The AutoCirculate channel is starting, waiting for the first VBI and/or call to CNTV2Card::AutoCircul...">NTV2_AUTOCIRCULATE_STARTING</a>, <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216a691b349ef731cd442586b60a9baf61dc" title="The AutoCirculate channel is running. ">NTV2_AUTOCIRCULATE_RUNNING</a> or <a class="el" href="../../d4/dd7/ntv2publicinterface_8h.html#aa19f11fa49a3c9f68a5442bf1f191216a13a20c4abc9c4865704a0cbaf4e917d7" title="The AutoCirculate channel is paused. ">NTV2_AUTOCIRCULATE_PAUSED</a>, or if the channel was initialized by <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#aacca5b4dbd0ba69c049087aa2caf6fcb" title="Prepares for subsequent AutoCirculate ingest streaming, designating a contiguous block of frame buffe...">CNTV2Card::AutoCirculateInitForInput</a>. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playout</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playback</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html#l00650">650</a> of file <a class="el" href="../../df/dc3/ntv2autocirculate_8cpp_source.html">ntv2autocirculate.cpp</a>.</p>
 
@@ -6969,7 +6979,7 @@ For <b>capture</b> from IP devices running S2110 firmware, this method will auto
 </dl>
 <dl class="section see"><dt>See also</dt><dd>CNTV2Card::GetAuxRegionOffsetAndSize, <a class="el" href="../../d2/d06/auxiliarydata.html#auxcapture-dataspace">Auxiliary Data Space Limitations</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06200">6200</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06216">6216</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -10037,7 +10047,7 @@ This function will block and not return until the transfer has finished or faile
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Convenience method for accessing my <a class="el" href="../../d0/dbc/class_c_n_t_v2_driver_interface.html" title="I&#39;m the base class that undergirds the platform-specific derived classes (from which CNTV2Card is ult...">CNTV2DriverInterface</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06524">6524</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06540">6540</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -10809,6 +10819,7 @@ This function will block and not return until the transfer has finished or faile
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if successful; otherwise false. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function is not thread-safe! </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Prior to SDK 16.1, this function returned invalid frame numbers if any AutoCirculate channels were actively processing UHD/4K or UHD2/8K. In SDK 16.2, this function failed (returned false) if any AutoCirculate channels were actively processing UHD/4K or UHD2/8K. In SDK 16.3, the function was corrected to work with UHD/4K and UHD2/8K, but requires specifying a FrameStore of interest. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#aboutautocirculate">AutoCirculate</a> </dd></dl>
 
@@ -12890,7 +12901,7 @@ This function will block and not return until the transfer has finished or faile
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000107">Deprecated:</a></b></dt><dd>Use the function that uses NTV2AudioChannelPair and NTV2AudioSystem params. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06889">6889</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06905">6905</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -20453,7 +20464,7 @@ This function has nothing to do with firmware bitfiles that may be installed on 
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000093">Deprecated:</a></b></dt><dd>Use GetLTCInputEnable instead. First deprecated in SDK 16.3. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05321">5321</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05337">5337</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26042,7 +26053,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000091">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">CNTV2Card::features()</a>.HasCrosspointConnectROM() or IsSupported(kDeviceHasXptConnectROM) instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l04529">4529</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l04545">4545</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26070,7 +26081,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06877">6877</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06893">6893</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26099,7 +26110,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000104">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06639">6639</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06655">6655</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26128,7 +26139,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000098">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06633">6633</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06649">6649</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26157,7 +26168,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000103">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06638">6638</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06654">6654</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26208,7 +26219,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000100">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06635">6635</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06651">6651</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26237,7 +26248,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06636">6636</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06652">6652</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26266,7 +26277,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000102">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06637">6637</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06653">6653</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26317,7 +26328,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000099">Deprecated:</a></b></dt><dd>Corvid HEVC support dropped in SDK 17.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06634">6634</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06650">6650</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26428,7 +26439,7 @@ This function does not take into account an SDI output that's designated as a "m
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06895">6895</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06911">6911</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -26695,7 +26706,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000105">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a03c21b09974ff7b8895282ef5f87be62">features()</a>.HasBreakoutBoard() instead (new in SDK 17.0) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06884">6884</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06900">6900</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -30868,7 +30879,7 @@ This function does not take into account an SDI output that's designated as a "m
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000106">Deprecated:</a></b></dt><dd>Use the function that uses NTV2AudioChannelPair and NTV2AudioSystem params. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06888">6888</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06904">6904</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -35683,7 +35694,7 @@ If the designated FrameStore/channel is enabled and in <a class="el" href="../..
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000092">Deprecated:</a></b></dt><dd>Use SetLTCInputEnable instead. First deprecated in SDK 16.3. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05320">5320</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l05336">5336</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -40354,7 +40365,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Queue a buffer to the stream. The bufferCookie is a user defined identifier of the buffer used by the stream methods. </p>
 <dl class="section return"><dt>Returns</dt><dd>The queued buffer status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40396,7 +40407,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Remove the oldest buffer released by the streaming engine from the buffer queue. </p>
 <dl class="section return"><dt>Returns</dt><dd>The removed buffer status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40444,7 +40455,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Get the status of the buffer identified by the bufferCookie. </p>
 <dl class="section return"><dt>Returns</dt><dd>The buffer status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40486,7 +40497,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Flush a stream. Remove all the buffers from the stream except a currently active idle buffer. The stream must be in the initialize or idle state. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40517,7 +40528,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 </div><div class="memdoc">
 
 <p>Initialize a stream. Put the stream queue and hardware in a known good state ready for use. Releases all buffers remaining in the queue. At least one new buffer must be queued before starting the stream. </p>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40548,7 +40559,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 </div><div class="memdoc">
 
 <p>Release a stream. Releases all buffers remaining in the queue. </p>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40590,7 +40601,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Start a stream. Put the stream is the active state to start processing queued buffers. For frame based video, the stream will start with the current buffer on the next frame sync. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40632,7 +40643,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Get the current stream status. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40674,7 +40685,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Stop a stream. Put the stream is the idle state. For frame based video, the stream will idle on the buffer on air after the next frame sync. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -40716,7 +40727,7 @@ Applications using <a class="el" href="../../d9/d9a/recordplaytechniques.html#ab
 
 <p>Wait for any stream event. Returns for any state or buffer change. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current stream status. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="../../d9/d9a/recordplaytechniques.html#streamingdma">Streaming DMA (Experimental)</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d7/d30/ntv2stream_8cpp_source.html">ntv2stream.cpp</a>.</p>
 
@@ -42605,7 +42616,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06960">6960</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06976">6976</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -42632,7 +42643,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 
 <p>Used for default empty <a class="el" href="../../d5/dc4/class_n_t_v2_buffer.html" title="Describes a user-space buffer on the host computer. I have an address and a length, plus some optional attributes (allocated by SDK?, page-aligned? etc.). ">NTV2Buffer</a> parameters &ndash; do not modify. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06629">6629</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d4b/ntv2card_8h_source.html#l06645">6645</a> of file <a class="el" href="../../df/d4b/ntv2card_8h_source.html">ntv2card.h</a>.</p>
 
 </div>
 </div>
@@ -42661,7 +42672,7 @@ The "inOutputSpigot" parameter is respected only if the device is multi-format-c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html">CNTV2Card</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 19:11:02 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Sep 25 2026 18:03:32 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

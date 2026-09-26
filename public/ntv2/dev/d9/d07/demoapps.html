@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="../../AJALogoMini.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AJA NTV2 SDK
-   &#160;<span id="projectnumber">18.1.0.2437</span>
+   &#160;<span id="projectnumber">18.1.0.2439</span>
    </div>
-   <div id="projectbrief">NTV2 SDK 18.1.0.2437</div>
+   <div id="projectbrief">NTV2 SDK 18.1.0.2439</div>
   </td>
  </tr>
  </tbody>
@@ -141,7 +141,7 @@ Running the Demos</h2>
 </ul>
 <hr/>
 <h1><a class="anchor" id="demoappsplay"></a>
-Playout Demos</h1>
+Playback Demos</h1>
 <dl class="section user"><dt>Contents</dt><dd><ul>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2outputtestpattern">NTV2OutputTestPattern Demo</a></li>
 <li><a class="el" href="../../d9/d07/demoapps.html#ntv2player">NTV2Player Demo</a></li>
@@ -204,7 +204,7 @@ NTV2Player Demo</h2>
 </ul>
 <p><b>Command line usage:</b> </p><div class="fragment"><div class="line">ntv2player  [options...]</div><div class="line"></div><div class="line">-d|--device {spec}              Specifies the device to use by index number, serial number or <span class="keyword">generic</span> model name.</div><div class="line">                                Defaults to first device (index 0).</div><div class="line">                                If model name specified, uses lowest-numbered matching device.</div><div class="line"></div><div class="line">-c|--channel {channelNum}       Specifies the framestore/channel as an <span class="keywordtype">unsigned</span> integer number 1 thru 8.</div><div class="line"></div><div class="line">-v|--videoFormat {vidFormat}    Specifies the video format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div><div class="line"></div><div class="line">-p|--pixelFormat {pixFormat}    Specifies the pixel format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div><div class="line"></div><div class="line">-a|--anc {filePath}             Optionally injects ancillary data as read from the specified <a class="code" href="../../d3/d75/namespacenlohmann_1_1json__abi__v3__11__3_1_1detail.html#a6839c40559789afb345f9962ad91563fa9d7183f16acce70658f686ae7f1a4d20">binary</a> data file.</div><div class="line">                                These files can be recorded <span class="keyword">using</span> ntv2capture‘s ‘--ancʼ option.</div><div class="line"></div><div class="line">-m|--multiChannel               Enables multiformat mode, and tries to share the device with other processes.</div><div class="line"></div><div class="line">--noaudio                       Omits audio, so that only video is transferred to device.</div><div class="line"></div><div class="line">--novideo                       Omits video, so that only audio is transferred to device.</div><div class="line"></div><div class="line">--frames {spec}                 Optionally specifies device frame buffers to use, where {spec} is:</div><div class="line">                                    numFrames[@startFrame]    Specifies frame count (and optional start frame):</div><div class="line">                                                              e.g.      7      -- First free 7 frames</div><div class="line">                                                              e.g.      7@5    -- 7 frames starting at frame 5</div><div class="line">                                    startFrame-endFrame       Explicitly specifies start and <a class="code" href="../../d4/dc2/namespacenlohmann_1_1json__abi__v3__11__3_1_1detail2.html#a47e15ce984493b9b40071f8cad183b4b">end</a> frame numbers:</div><div class="line">                                                              e.g.      0-6    -- frames 0 thru 6 (inclusive)</div><div class="line">                                Defaults to the lowest-numbered unused 7 frames.</div><div class="line"></div><div class="line">-l|--ltc                        Transmit LTC instead of VITC.</div><div class="line"></div><div class="line">-?|--help|--usage               Shows how to use this command.</div></div><!-- fragment --><h3><a class="anchor" id="ntv2playeranc"></a>
 Ancillary Data Injection</h3>
-<p>The “&ndash;anc” command-line option allows a path to a binary data file to be specified, whose contents will be used to fill NTV2Playerʼs ancillary data buffers during <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playout</a>.</p>
+<p>The “&ndash;anc” command-line option allows a path to a binary data file to be specified, whose contents will be used to fill NTV2Playerʼs ancillary data buffers during <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculateplayout">AutoCirculate Playback</a>.</p>
 <p>NTV2Player::PlayFrames simply reads a fixed-size chunk of data (8K by default) into the anc buffer of the <a class="el" href="../../db/dd9/class_a_u_t_o_c_i_r_c_u_l_a_t_e___t_r_a_n_s_f_e_r.html" title="This object specifies the information that will be transferred to or from the AJA device in the CNTV2...">AUTOCIRCULATE_TRANSFER</a> object. If playing interlaced video, then another chunk of data is read from the file into the “field 2” ancillary data buffer. This all happens before <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> gets called, at which time it all gets transferred to the device (via DMA).</p>
 <p>The packet data in each per-field chunk in the file (typically 8K) is expected to be in the <a class="el" href="../../d7/dcb/ancillarydata.html#ancgumpformat">SDI Anc Buffer Data Format</a>. For <a class="el" href="../../d0/d53/ntv2devices.html#konaip">KONA IP</a> or <a class="el" href="../../d0/d53/ntv2devices.html#ioip">Io IP</a> devices running ST-2110 firmware, the data can also be in the <a class="el" href="../../d7/dcb/ancillarydata.html#ancrtpformat">RTP Anc Buffer Data Format</a>, and <a class="el" href="../../d7/dfb/class_c_n_t_v2_card.html#a487c000317d3bacdef53b1b088d83c4d" title="Transfers all or part of a frame as specified in the given AUTOCIRCULATE_TRANSFER object to/from the ...">CNTV2Card::AutoCirculateTransfer</a> will automatically convert the data into RTP if needed before transferring to the hardware.</p>
 <p>In the binary data file, packet data is expected to start at the front of each chunk, and subsequent bytes in the chunk should be zero.</p>
@@ -279,7 +279,7 @@ NTV2StreamPlayer Demo</h2>
 <p>The <a class="el" href="../../d1/d1e/class_n_t_v2_stream_player.html" title="I play out SD or HD test pattern (with timecode) to an output of an AJA device with or without audio ...">NTV2StreamPlayer</a> class is identical to the <a class="el" href="../../d9/d07/demoapps.html#ntv2player">NTV2Player Demo</a> except for…</p><ul>
 <li>how to stream video asynchronously using CNTV2Card’s Streaming API</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only!</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only! This is experimental and subject to change without notice.</dd></dl>
 <p><b>Command line usage:</b> </p><div class="fragment"><div class="line">ntv2player  [options...]</div><div class="line"></div><div class="line">-d|--device {spec}              Specifies the device to use by index number, serial number or <span class="keyword">generic</span> model name.</div><div class="line">                                Defaults to first device (index 0).</div><div class="line">                                If model name specified, uses lowest-numbered matching device.</div><div class="line"></div><div class="line">-c|--channel {channelNum}       Specifies the framestore/channel as an <span class="keywordtype">unsigned</span> integer number 1 thru 8.</div><div class="line"></div><div class="line">-v|--videoFormat {vidFormat}    Specifies the video format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div><div class="line"></div><div class="line">-p|--pixelFormat {pixFormat}    Specifies the pixel format to use. Use <span class="charliteral">&#39;?&#39;</span> or <span class="stringliteral">&#39;list&#39;</span> to list available formats.</div><div class="line"></div><div class="line">-m|--multiChannel               Enables multiformat mode, and tries to share the device with other processes.</div><div class="line"></div><div class="line">-l|--ltc                        Transmit LTC instead of VITC.</div><div class="line"></div><div class="line">-?|--help|--usage               Shows how to use <span class="keyword">this</span> command.</div></div><!-- fragment --><hr/>
 <h1><a class="anchor" id="demoappscapture"></a>
 Capture Demos</h1>
@@ -431,8 +431,8 @@ NTV2QtStreamPreview Demo</h2>
 <li>it uses the <a class="el" href="../../d1/dbc/class_a_j_a_preview_widget.html">AJAPreviewWidget</a>, a reusable <a href="https://doc.qt.io/" target="_qt">Qt</a>-based GUI element that displays realtime video;</li>
 <li>it uses the <a class="el" href="../../d0/df4/class_n_t_v2_frame_grabber.html" title="A QThread that captures audio/video from NTV2-compatible AJA devices and uses Qt signals to emit ARGB...">NTV2FrameGrabber</a> class, a QThread that captures a video stream using CNTV2Card’s streaming DMA APIs, and uses <a href="https://doc.qt.io/" target="_qt">Qt</a> signals to emit captured video.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only! <hr/>
-</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d0/d53/ntv2devices.html#konaxm">KONA XM™</a> only! This is experimental and subject to change without notice.</dd></dl>
+<hr/>
 <h2><a class="anchor" id="ntv2vcam"></a>
 NTV2VCAM Demo</h2>
 <p>This demo implements a <b>Virtual WebCam</b> on <b>Linux</b> through the <b>V4L2 loopback</b> interface, and on <b>Windows</b> through the <b>DirectShow</b> interface. It uses <a class="el" href="../../d9/d9a/recordplaytechniques.html#autocirculatecapture">AutoCirculate Capture</a> to perform the streaming of video and audio.</p>
@@ -443,9 +443,10 @@ NTV2VCAM Demo</h2>
 </li>
 <li><p class="startli"><b>Windows Implementation:</b> A DLL that when registered (with <em>Administrator</em> privileges) allows <b>DirectShow</b> applications to stream video and audio from an NTV2 device.</p>
 <dl class="section note"><dt>Note</dt><dd>The parameters that stipulate device, channel, pixel format, etc. are hard-coded in the Windows-specific source code to capture from the first device’s first SDI input through the first Channel/FrameStore as 8-bit YCbCr. To change any of these parameters, the source code must be changed, the DLL rebuilt, and re-registered.</dd></dl>
-<p>See the <b>README.md</b> (in <code>demos/ntv2vcam</code>) for detailed instructions on how to build, run and troubleshoot this demo. </p><hr/>
+<p>See the <b>README.md</b> (in <code>demos/ntv2vcam</code>) for detailed instructions on how to build, run and troubleshoot this demo.</p>
 </li>
 </ul>
+<hr/>
 <h1><a class="anchor" id="demoappsplaycapture"></a>
 Capture &amp; Playout Demos</h1>
 <dl class="section user"><dt>Contents</dt><dd><ul>
@@ -584,7 +585,7 @@ NTV2HDRSetup Demo</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../index.html">The NTV2 SDK</a></li>
-    <li class="footer">Generated on Thu Sep 24 2026 19:11:01 for AJA NTV2 SDK by
+    <li class="footer">Generated on Fri Sep 25 2026 18:03:31 for AJA NTV2 SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

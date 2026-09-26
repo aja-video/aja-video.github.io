@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"d9/dfb/ntv2devicefeatures_8hh.html#af96e09b54769bd2e8c35b5b85aa45b0e":[9,0,0,2,0,15,112],
+"d9/dfb/ntv2devicefeatures_8hh.html#afa45ca475eb6ea0bc3dc8f612885ba37":[9,0,0,2,0,15,10],
 "d9/dfb/ntv2devicefeatures_8hh.html#afc493740592804442187ff521df0968f":[9,0,0,2,0,15,122],
 "d9/dfb/ntv2devicefeatures_8hh.html#afe577bcc58a32e460101024faef4bff6":[9,0,0,2,0,15,102],
 "d9/dfb/ntv2devicefeatures_8hh.html#afe6e547f41728c0974b20f2281d83527":[9,0,0,2,0,15,72],
@@ -247,7 +249,5 @@ var NAVTREEINDEX75 =
 "da/d23/ntv2macpublicinterface_8h.html#a29679355f6e78c521eb201b529cc4b32a44acb25f1dec3ba3eff4e2c18062de57":[9,0,0,2,1,2,2,39,6],
 "da/d23/ntv2macpublicinterface_8h.html#a29679355f6e78c521eb201b529cc4b32a4c4de8479029aa59744166a963979506":[9,0,0,2,1,2,2,39,17],
 "da/d23/ntv2macpublicinterface_8h.html#a29679355f6e78c521eb201b529cc4b32a4c814eee70a3659775cc80e2afef26c8":[9,0,0,2,1,2,2,39,11],
-"da/d23/ntv2macpublicinterface_8h.html#a29679355f6e78c521eb201b529cc4b32a744d3879163cbfe0f32d5731d5d2866c":[9,0,0,2,1,2,2,39,35],
-"da/d23/ntv2macpublicinterface_8h.html#a29679355f6e78c521eb201b529cc4b32a755dc082b5f886fda1d98fca378094e4":[9,0,0,2,1,2,2,39,30],
-"da/d23/ntv2macpublicinterface_8h.html#a29679355f6e78c521eb201b529cc4b32a7abf4795b628b74aa049da5745252c47":[9,0,0,2,1,2,2,39,25]
+"da/d23/ntv2macpublicinterface_8h.html#a29679355f6e78c521eb201b529cc4b32a744d3879163cbfe0f32d5731d5d2866c":[9,0,0,2,1,2,2,39,35]
 };
